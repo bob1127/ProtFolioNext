@@ -8,7 +8,7 @@ import DragCarousel from "../components/DragCarousel/index.jsx";
 import dynamic from "next/dynamic";
 
 import TextHover from "../components/TextHover/index.jsx";
-// import SmoothParallaxScroll from "../components/SmoothParallaxScroll/idnex.jsx";
+// import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
 // import textReveal from '../components/TextReveal/index.jsx';
 // import Link from 'next/dist/client/link.js';
 // import Slider from '../components/Slider/slider.jsx';
@@ -19,10 +19,10 @@ import Trackeye from "../components/Trackeye/page.jsx";
 
 // import CarouselImg from '../components/CarouselImg/index.jsx'
 
-const PhysicsAnimationApp = dynamic(
-  () => import("../components/PhysicsAnimation/app.jsx"),
-  { ssr: false }
-);
+// const PhysicsAnimationApp = dynamic(
+//   () => import("../components/PhysicsAnimation/app.jsx"),
+//   { ssr: false }
+// );
 export default function Home() {
   return (
     <div className="">
@@ -140,6 +140,7 @@ CREACTIVEs</h1>
             </div>
           </div>
         </section>
+        {/* <SmoothParallaxScroll /> */}
 
         <section className="second_third border border-black h-[80vh] flex-col md:flex-row flex">
           <div className="left p-[100px] w-1/2 border-r-2 border-black">
@@ -189,11 +190,11 @@ Design in Life</h2>
           </div>
         </section>
 
-        <iframe
+        {/* <iframe
           src="https://my.spline.design/bmoadventuretimecopy-ad1d560a902337308bba76fc039dd3c2/"
           width="100%"
           height="600"
-        ></iframe>
+        ></iframe> */}
 
         <section className="h-[100vh] flex flex-col justify-center items-center">
           <DragCarousel />
@@ -203,9 +204,9 @@ Design in Life</h2>
           <div className="top"></div>
           <div className="bottom">{/* <PhysicsAnimation /> */}</div>
         </section>
-        <section className="border-2 relative border-black h-80vh">
+        {/* <section className="border-2 relative border-black h-80vh">
           <PhysicsAnimationApp />
-        </section>
+        </section> */}
 
         {/* <Slider/> */}
         {/* <CarouselImg/> */}

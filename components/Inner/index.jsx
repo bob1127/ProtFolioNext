@@ -23,8 +23,8 @@ export default function Inner({ children }) {
               Home-LOGO
             </Link>
             <Link href="/about">關於我們</Link>
-            <Link href="/contact">SEO 行銷</Link>
-            <Link className=" " href="/">
+            <Link href="/about-2">SEO 行銷</Link>
+            <Link className=" " href="/about-3">
               網頁行銷
             </Link>
             <Link href="/about">網站作品</Link>

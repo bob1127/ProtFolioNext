@@ -1,4 +1,6 @@
 import dynamic from 'next/dynamic';
+
+import Inner from "../components/Inner/index.jsx";
 import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 import { NextUIProvider } from "@nextui-org/react";
@@ -9,7 +11,10 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
 // Dynamically import the PhysicsAnimationApp component with ssr set to false
-
+const PhysicsAnimationApp = dynamic(
+  () => import("../components/PhysicsAnimation/app.jsx"),
+  { ssr: false }
+);
 
 export default function MyApp({ Component, pageProps, router }) {
     useEffect(() => {
@@ -19,6 +24,7 @@ export default function MyApp({ Component, pageProps, router }) {
     });
   }, []);
     return (
+      <Inner backgroundColor={"#B0AD98"}>
         <div className='main overflow-hidden'>
             <div className='max-w-[1920px] mx-auto'>
                 <NextUIProvider>
@@ -31,6 +37,7 @@ export default function MyApp({ Component, pageProps, router }) {
                         </div>
                        
                         <div className='bg-black'>
+                             <PhysicsAnimationApp/>
               <Marquee>
                 <div>
                   <p className='text-white w-full p-2'>
@@ -102,11 +109,14 @@ export default function MyApp({ Component, pageProps, router }) {
                   <p className='text-white w-[110px] p-2'>lorem🎡</p>
                 </div> */}
               </Marquee>
+               
             </div>
                         <Footer />
                     </AnimatePresence>
                 </NextUIProvider>
+            
             </div>
         </div>
+        </Inner>
     );
 }
