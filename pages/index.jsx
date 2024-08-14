@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import DragCarousel from "../components/DragCarousel/index.jsx";
 // import PhysicsAnimation from '../components/PhysicsAnimation/PhysicsAnimation.jsx';
 import dynamic from "next/dynamic";
+// import SlickCarousel from "../components/SlickCarousel/index.jsx";
 
 import TextHover from "../components/TextHover/index.jsx";
 // import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
@@ -95,21 +96,21 @@ CREACTIVEs</h1>
           </div>
         </div>
 
-        <section className="section_second border border-black h-[80vh] flex flex-col lg:flex-row">
+        <section className="section_second border border-black flex flex-col lg:flex-row">
           <div className="left p-[100px] w-full lg:w-1/2 border-r-2 border-black">
             <div>
-              <h2 className="text-[80px] flex justify-center  leading-[80px] w-full lg:w-2/3 pt-[100px] items-center">
+              <h2 className="text-[40px] lg:text-[80px] flex justify-center  leading-[80px] w-full lg:w-2/3 pt-0 lg:pt-[100px] items-center">
                 WHAT’S Design in Life
               </h2>
-              <div className="flex flex-row">
+              <div className="flex flex-row ">
                 <p>網站案例｜</p>
                 <p>合作案例｜</p>
                 <p>合作案例｜</p>
               </div>
             </div>
           </div>
-          <div className="right   h-full flex flex-col  w-1/2">
-            <div className="top flex sm:bg-red-500 md:bg-green-500 justify-center items-center h-1/2  flex-col w-full border-b-2 border-black">
+          <div className="right   h-full flex flex-col  w-full lg:w-1/2">
+            <div className="top py-[50px] lg:p-[40px] flex  bg-green-500 justify-center items-center h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
               <h4 className="text-[22px] text-light">
                 <span></span>數位設計，提升您的業務<span></span>
               </h4>
@@ -128,7 +129,7 @@ CREACTIVEs</h1>
                 無論您是需要全新網站設計、網站重構或是數位行銷策略，我們都能提供一站式的解決方案。期待與您合作，共同創造出色的線上體驗！
               </p>
             </div>
-            <div className="bottom flex p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
+            <div className="bottom  flex py-[50px] lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h4 className=" text-[22px] text-light">
                 <span></span>創意驅動，技術為本<span></span>
               </h4>
@@ -141,47 +142,44 @@ CREACTIVEs</h1>
           </div>
         </section>
         {/* <SmoothParallaxScroll /> */}
-
-        <section className="second_third border border-black h-[80vh] flex-col md:flex-row flex">
-          <div className="left p-[100px] w-1/2 border-r-2 border-black">
+        <section className="section_second border border-black flex flex-col lg:flex-row">
+          <div className="left p-[100px] w-full lg:w-1/2 border-r-2 border-black">
             <div>
-              {/* <h2 className='text-[80px] flex justify-center  leading-[80px] w-full lg:w-2/3 pt-[100px] items-center'>WHAT’S
-Design in Life</h2>
-         <div className='flex flex-row'>
-            <p>網站案例｜</p>
-          <p>合作案例｜</p>
-           <p>合作案例｜</p>
-               <p>網站案例｜</p>
-          <p>合作案例｜</p>
-           <p>合作案例｜</p>
-         </div> */}
-
-              <h3 className="text-[80px] text-green-600 leading-normal">
-                Title lotrem
-              </h3>
-
-              <iframe
-                src="https://my.spline.design/3dpathstubesletterscopy-eca436d2255a01ef6f6e53f205235fca/"
-                width="120%"
-                height="500"
-                className="mt-[-100px] z-[9999999]"
-              ></iframe>
+              <h2 className="text-[40px] lg:text-[80px] flex justify-center  leading-[80px] w-full lg:w-2/3 pt-0 lg:pt-[100px] items-center">
+                WHAT’S Design in Life
+              </h2>
+              <div className="flex flex-row ">
+                <p>網站案例｜</p>
+                <p>合作案例｜</p>
+                <p>合作案例｜</p>
+              </div>
             </div>
           </div>
-          <div className="right h-full  flex flex-row md:flex-col w-full md:w-1/2">
-            <div className="top flex justify-center items-center h-full md:h-1/2  flex-col w-full border-b-2 border-black">
+          <div className="right   h-full flex flex-col  w-full lg:w-1/2">
+            <div className="top py-[50px] lg:p-[40px] flex  bg-green-500 justify-center items-center h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
               <h4 className="text-[22px] text-light">
                 <span></span>數位設計，提升您的業務<span></span>
               </h4>
-              <h3 className="text-[38px] text-extrabold mt-[30px]">
+              {/* <Link
+                href='/Video'
+                className='text-white bg-green-500 border-2 rounded-[30px]'
+              >
+                {' '}
+                Go to about us
+              </Link> */}
+              <h3 className="text-[30px] text-extrabold mt-[30px]">
                 104年11月 11 日
               </h3>
+              <p className="text-[14px] text-black w-3/4 text-center ">
+                多年來，我一直深耕於網頁設計和開發領域，擁有豐富的經驗和技術知識。我了解每個企業都有其獨特的需求，因此我秉持著與客戶密切合作的理念，確保每個專案都能完美契合他們的品牌形象和業務目標。
+                無論您是需要全新網站設計、網站重構或是數位行銷策略，我們都能提供一站式的解決方案。期待與您合作，共同創造出色的線上體驗！
+              </p>
             </div>
-            <div className="bottom md:border-none border border-black bg-green-500 flex p-[40px] items-center  h-1/2 justify-start flex-col w-full ">
-              <h4 className="text-[22px] text-light">
+            <div className="bottom  flex py-[50px] lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
+              <h4 className=" text-[22px] text-light">
                 <span></span>創意驅動，技術為本<span></span>
               </h4>
-              <p className="mt-[20px] w-2/3">
+              <p className="mt-[20px]  text-cenrer lg:text-left w-2/3">
                 我們相信創意是設計的核心，技術是實現創意的橋樑。
                 我們致力於將最具創意的想法轉化為現實，通過尖端技
                 術提供卓越的數字體驗。
@@ -196,9 +194,10 @@ Design in Life</h2>
           height="600"
         ></iframe> */}
 
-        <section className="h-[100vh] flex flex-col justify-center items-center">
+        <section className="py-[100px] flex flex-col justify-center items-center">
           <DragCarousel />
         </section>
+        {/* <SlickCarousel /> */}
         {/* <SmoothParallaxScroll /> */}
         <section className="section_matter">
           <div className="top"></div>

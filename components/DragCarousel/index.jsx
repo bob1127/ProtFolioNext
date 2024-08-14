@@ -164,26 +164,24 @@ export default function SuggestedCarousel() {
         <div className="flex justify-center gap-4">
           <Link
             className="text-sm underline underline-offset-2 hover:text-lime-300"
-            href={"https://medium.com/@jeyprox"}
-            target="_blank"
+            href="/about"
             rel="noopener noreferrer"
           >
-            to the article
+            更多案例-網頁設計
           </Link>
           <Link
             className="text-sm underline underline-offset-2 hover:text-lime-300"
-            href={"https://github.com/jeyprox/framer-carousel"}
-            target="_blank"
+            href="/about-3"
             rel="noopener noreferrer"
           >
-            to the repo
+            跟我聯繫-了解更多
           </Link>
         </div>
         <h1 className="my-[20px] text-[40px] lg:text-6xl font-extrabold uppercase">
-          Framer Motion Carousel
+          網頁行銷案例
         </h1>
-        <p className="text-sm text-gray-400">
-          only really works on desktop for now
+        <p className="text-sm mb-5 text-gray-400">
+          一頁式網站｜SEO 行銷｜形象企業網站
         </p>
       </div>
       <div className="group container ">

@@ -240,7 +240,7 @@ const App = () => {
             p.fill(body.render.fillStyle);
             p.stroke(body.render.strokeStyle);
             p.strokeWeight(body.render.lineWidth);
-            p.rect(0, 0, text.length * 18 + 40, 60, 40);
+            p.rect(0, 0, text.length * 18 + 20, 40, 40);
             p.noStroke();
             p.fill("#0f0f0f");
             p.textSize(16);

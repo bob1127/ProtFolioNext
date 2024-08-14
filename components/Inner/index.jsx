@@ -18,13 +18,17 @@ export default function Inner({ children }) {
       <motion.div className="slide" {...anim(slide)} />
       <motion.div className="page" {...anim(perspective)}>
         <motion.div {...anim(opacity)}>
-          <div className="header z-[99999999]">
+          <div className="header hidden md:block  z-[99999999]">
             <Link className="Company-logo " href="/">
               Home-LOGO
             </Link>
-            <Link href="/about">關於我們</Link>
-            <Link href="/about-2">SEO 行銷</Link>
-            <Link className=" " href="/about-3">
+            <Link href="/about?reload=true" as="/about">
+              關於我們
+            </Link>
+            <Link href="/about-2?reload=true" as="/about-2">
+              SEO 行銷
+            </Link>
+            <Link className="" href="/about-3?reload=true" as="/about-3">
               網頁行銷
             </Link>
             <Link href="/about">網站作品</Link>

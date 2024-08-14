@@ -2856,12 +2856,12 @@ textarea.w-input,textarea.w-select{
     border-color:#3898ec;
     outline-style:none
 }
-.w-commerce-commercelayoutsidebar{
+/* .w-commerce-commercelayoutsidebar{
     flex:0 0 320px;
     position:-webkit-sticky;
     position:sticky;
     top:20px
-}
+} */
 .w-commerce-commercecheckoutordersummarywrapper{
     margin-bottom:20px
 }
@@ -4316,7 +4316,7 @@ blockquote{
     left:0%;
     right:0%
 }
-.article-progress-line{
+/* .article-progress-line{
     background-color:var(--main-color-8);
     width:2px;
     height:80vh;
@@ -4324,8 +4324,8 @@ blockquote{
     position:-webkit-sticky;
     position:sticky;
     top:10vh
-}
-.article-sidebar{
+} */
+/* .article-sidebar{
     flex-direction:column;
     justify-content:center;
     align-items:center;
@@ -4337,7 +4337,7 @@ blockquote{
     position:sticky;
     top:10vh;
     overflow:hidden
-}
+} */
 .social-item{
     flex:none
 }
@@ -6160,8 +6160,8 @@ blockquote{
   margin-top:20px;
 }
 .jobs{
-    grid-column-gap:1em;
-    grid-row-gap:1em;
+    /* grid-column-gap:1em;
+    grid-row-gap:1em; */
      flex-wrap:wrap;
   
     align-items:flex-start;
@@ -7937,9 +7937,9 @@ blockquote{
         line-height:1.5em
     }
     .paragraph.is-sticky{
-        writing-mode:horizontal-tb;
-        position:relative;
-        top:auto
+        writing-mode:horizontal-tb !important;
+        position:relative !important;
+        top:auto !important;
     }
     .form-field{
         font-size:1.3em
@@ -8773,7 +8773,7 @@ blockquote{
         grid-row-gap:2em
     }
     .paragraph.is-sticky{
-        writing-mode:horizontal-tb
+        writing-mode:horizontal-tb !important;
     }
     .checkbox-label{
         font-size:1.1em

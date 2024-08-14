@@ -22,7 +22,9 @@
 
 .header {
     a {
+        height: 100%;
         width: 200px;
+        display: block;
         border: solid 1px black !important;
     }
 }
