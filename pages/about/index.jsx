@@ -339,12 +339,12 @@ export default function Blog() {
                           <div className="button-bg" style={{}} />
                         </div>
                         <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc3da136783012f5769_arrow_downward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                          />
+                          <video
+                            src="https://ultraehp.com/images/test-portfolio/0001-0092.mp4"
+                            autoPlay
+                            loop
+                            className="w-full h-full "
+                          ></video>
                         </div>
                       </a>
                     </div>
@@ -459,13 +459,13 @@ export default function Blog() {
                                   className="slider-image-block-1"
                                   style={{}}
                                 >
-                                  <img
+                                  {/* <img
                                     src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adb899b075a55107d00_stada-img-16.webp"
                                     loading="eager"
                                     alt="Person use tech gadget"
                                     className="slider-image is-1st"
                                     style={{}}
-                                  />
+                                  /> */}
                                 </div>
                                 <div
                                   className="slider-image-block-2"
@@ -478,26 +478,51 @@ export default function Blog() {
                                     style={{}}
                                   />
                                 </div>
-                                <img
+                                {/* <img
                                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adbb359637979fee7b9_stada-img-8.webp"
                                   alt="Person use tech gadget"
                                   sizes="100vw"
                                   srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adbb359637979fee7b9_stada-img-8-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adbb359637979fee7b9_stada-img-8-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adbb359637979fee7b9_stada-img-8-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adbb359637979fee7b9_stada-img-8-p-1600.webp 1600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adbb359637979fee7b9_stada-img-8-p-2000.webp 2000w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adbb359637979fee7b9_stada-img-8.webp 2912w"
                                   className="slider-image-last"
                                   style={{}}
-                                />
+                                /> */}
                               </div>
                             </div>
                           </div>
                         </div>
-                        <img
+                        {/* <img
                           src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669ba9bfb5dd3fb12a1e0456_stada-img-16-phone.webp"
                           loading="eager"
                           alt=""
                           sizes="100vw"
                           srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669ba9bfb5dd3fb12a1e0456_stada-img-16-phone-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669ba9bfb5dd3fb12a1e0456_stada-img-16-phone-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669ba9bfb5dd3fb12a1e0456_stada-img-16-phone-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669ba9bfb5dd3fb12a1e0456_stada-img-16-phone.webp 1200w"
                           className="cover-image for-phone"
-                        />
+                        /> */}
+                        <div
+                          style={{
+                            position: "relative",
+                            paddingBottom: "56.25%",
+                            height: 0,
+                            overflow: "hidden",
+                            maxWidth: "100%",
+                            height: "auto",
+                          }}
+                        >
+                          <iframe
+                            src="https://www.youtube.com/embed/YZ84iQrbYjw?si=xwGpqR7AnXRY-AS3&autoplay=1"
+                            style={{
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                            }}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -653,7 +678,11 @@ export default function Blog() {
                 </div>
               </section>
               <section className="section with-borders">
-                <div className="padding">
+                <div className="title text-center">
+                  <h2 className="text-[40px] text-black">SEO OPTIMIXATIOIN </h2>
+                  <p className="text-[24px] my-5 text-gray-700">Seo 行銷</p>
+                </div>
+                <div className=" pb-4 pt-3">
                   <div className="main-container">
                     <div
                       id="w-node-fd94e481-9f57-042f-d7da-018c52aa2861-c41abecd"
@@ -663,9 +692,9 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Office desk"
-                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4.webp"
+                          src="https://wiki.matbao.net/wp-content/uploads/2020/11/tich-hop-facebook-chat-vao-website-11.jpg"
                           sizes="(max-width: 479px) 76.62890625px, (max-width: 991px) 26vw, (max-width: 1919px) 28vw, 29vw"
-                          srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4-p-1600.webp 1600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4-p-2000.webp 2000w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4-p-2600.webp 2600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8bef7d706d72b0918324_stada-potrait-img-4.webp 2912w"
+                          srcSet=""
                           className="cover-image"
                           style={{
                             transform:
@@ -691,7 +720,7 @@ export default function Blog() {
                           <img
                             loading="lazy"
                             alt="Portrait of the team"
-                            src="https://assets.website-files.com/6063be93db8e103fd1540700/6063c4d52832008f03eed114_With%20Relume%201%402x.png"
+                            src="https://kinsta.com/wp-content/uploads/2020/01/pingdom-tools-1.png"
                             sizes="(max-width: 479px) 154.6390380859375px, (max-width: 767px) 35vw, (max-width: 991px) 26vw, (max-width: 1439px) 50vw, (max-width: 1919px) 50vw, 50vw"
                             className="cover-image"
                             style={{
@@ -706,7 +735,7 @@ export default function Blog() {
                           />
                         </div>
                       </div>
-                      <p className="paragraph is-large">
+                      <p className="paragraph mb-[40px] is-large">
                         此slogan專注於定制化和品牌價值，強調公司能夠根據客戶的需求和品牌形象，創造出獨一無二的網站。這表明公司重視客戶的品牌，致力於通過精心設計來提升其品牌價值，使網站成為品牌增值的關鍵一環。
                       </p>
                     </div>
@@ -814,6 +843,12 @@ export default function Blog() {
                             />
                           </div>
                           <p className="card-paragraph">
+                            <img
+                              className="w-full my-3 rounded-2xl mx-auto"
+                              src="https://blog-cdn.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/2024/08/How-Do-Lottie-Animations-Help-with-SEO_.png"
+                              alt=""
+                            />
+                            <br></br>
                             <strong>
                               根據Google的數據，超過90%的消費者會使用搜索引擎來查找產品和服務。如果你的企業能夠在搜索結果中獲得較高的曝光率，潛在客戶就更容易記住你的品牌，從而提高品牌知名度。
                             </strong>
@@ -825,17 +860,22 @@ export default function Blog() {
                           className="card"
                           style={{}}
                         >
-                          <div className="card-icon">
+                          {/* <div className="card-icon">
                             <img
                               src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6844afe9fcdf5a1af_thumb_up_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
                               loading="lazy"
                               alt=""
                               className="icon is-card-icon"
                             />
-                          </div>
+                          </div> */}
                           <div className="card-content">
                             <p className="card-paragraph">降低營銷成本</p>
                             <p className="card-text-small">
+                              <img
+                                className="w-full rounded-lg my-3"
+                                src="https://assets-v2.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/https://i.ytimg.com/vi/_nbTlEKE8Ac/maxresdefault.jpg"
+                                alt=""
+                              />
                               比較傳統的廣告渠道，如電視或報紙，SEO和社交媒體營銷的成本較低，且效果持久。
                               Forrester
                               Research指出，內容營銷成本约为傳統廣告的62%，但能產生3倍的潜在客戶。
@@ -859,6 +899,11 @@ export default function Blog() {
                           <div className="card-content">
                             <p className="card-paragraph">Our Journey</p>
                             <p className="card-text-small">
+                              <img
+                                className="w-full rounded-lg my-3"
+                                src="https://assets-v2.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/https://i.ytimg.com/vi/7v13bzpJyYM/maxresdefault.jpg"
+                                alt=""
+                              />
                               對於中小企业而言，网站的曝光度不僅僅是吸引流量的問題，還直接影響到品牌的生存和成長。
                               透過提高網站曝光度，中小企业可以更更多的客戶信任、提升销售额、降低營銷成本，並在市場競爭中佔據有利位置。
                             </p>
@@ -912,7 +957,7 @@ export default function Blog() {
                                 <img
                                   loading="lazy"
                                   alt=""
-                                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19.webp"
+                                  src=""
                                   className="cover-image"
                                   style={{
                                     transform:
@@ -1046,7 +1091,7 @@ export default function Blog() {
                                 <img
                                   loading="lazy"
                                   alt=""
-                                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20.webp"
+                                  src="https://ultraehp.com/images/test-portfolio/Untitled-Camera-2.png"
                                   className="cover-image"
                                   style={{
                                     transform:

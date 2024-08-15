@@ -8,6 +8,9 @@
     box-sizing: border-box;
     overflow: hidden;
 
+    margin-top: 100px;
+    margin-bottom: 100px;
+
     .column {
         position: relative;
         height: 100%;
@@ -47,6 +50,13 @@
     }
 }
 
-.spacer {
-    height: 100vh;
+@media screen and (max-width:500) {
+    .gallery {
+        height: 60vh;
+    }
+
 }
+
+// .spacer {
+//     height: 100vh;
+// }

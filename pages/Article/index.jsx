@@ -3,7 +3,6 @@
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
-
 import { useState, useEffect } from "react";
 import Link from "next/link.js";
 import VanishList from "../../components/VanishList/page.jsx";
@@ -12,14 +11,6 @@ import Inner from "../../components/Inner/index.jsx";
 
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
-  const colors = [
-    "default",
-    "primary",
-    "secondary",
-    "success",
-    "warning",
-    "danger",
-  ];
 
   useEffect(() => {
     // 延遲 300ms 來啟動動畫
@@ -720,9 +711,6 @@ export default function Blog() {
       </div>
     </div>
   </section> */}
-            <section>
-              <div className="container"></div>
-            </section>
             <section>
               <div className="container">
                 <p></p>

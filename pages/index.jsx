@@ -9,7 +9,7 @@ import dynamic from "next/dynamic";
 // import SlickCarousel from "../components/SlickCarousel/index.jsx";
 import Link from "next/link";
 import TextHover from "../components/TextHover/index.jsx";
-// import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
+import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
 // import textReveal from '../components/TextReveal/index.jsx';
 // import Link from 'next/dist/client/link.js';
 // import Slider from '../components/Slider/slider.jsx';
@@ -51,28 +51,32 @@ CREACTIVEs</h1>
               <div className="absolute bg-black w-full bottom-0">
                 <Marquee>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem⏰</p>
+                    <p className="text-white w-[140px] p-2">SEO ⏰</p>
                   </div>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem💡</p>
+                    <p className="text-white w-[140px] p-2">Website</p>
                   </div>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem📸</p>
+                    <p className="text-white w-[140px] p-2">marketing</p>
                   </div>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem🎡</p>
+                    <p className="text-white w-[140px] p-2">SinglePage🎡</p>
                   </div>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem⏰</p>
+                    <p className="text-white w-[140px] p-2">
+                      GoogoleSearchConsole⏰
+                    </p>
                   </div>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem💡</p>
+                    <p className="text-white w-[140px] p-2">
+                      Google Anylitics💡
+                    </p>
                   </div>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem📸</p>
+                    <p className="text-white w-[140px] p-2">lorem📸</p>
                   </div>
                   <div>
-                    <p className="text-white w-[110px] p-2">lorem🎡</p>
+                    <p className="text-white w-[140px] p-2">lorem🎡</p>
                   </div>
                 </Marquee>
               </div>
@@ -196,6 +200,10 @@ CREACTIVEs</h1>
 
         <section className="py-[100px] flex flex-col justify-center items-center">
           <DragCarousel />
+        </section>
+
+        <section>
+          <SmoothParallaxScroll />
         </section>
         {/* <SlickCarousel /> */}
         {/* <SmoothParallaxScroll /> */}

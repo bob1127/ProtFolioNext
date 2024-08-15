@@ -1,5 +1,5 @@
 .gallery {
-  height: 175vh;
+  height: auto;
   background: black;
   position: relative;
   display: -webkit-box;

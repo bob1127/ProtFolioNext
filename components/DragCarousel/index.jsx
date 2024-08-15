@@ -4,7 +4,7 @@ import { MouseEvent as ReactMouseEvent, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { MoveLeft, MoveRight } from "lucide-react";
-
+import Image from "next/image.js";
 import { cn } from "../../lib/utils.js";
 
 const START_INDEX = 1;
@@ -269,10 +269,13 @@ export default function SuggestedCarousel() {
                     draggable={false}
                     onClick={disableDragClick}
                   >
-                    <img
+                    <Image
+                      loading="lazy"
+                      width={500}
+                      height={800}
+                      placeholder="empty"
                       src={article.url}
                       alt={article.title}
-                      className="w-full"
                     />
                   </Link>
                   <div

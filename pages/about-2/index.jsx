@@ -407,11 +407,11 @@ export default function Blog() {
                             href="/feature/design"
                             className="feature-title-link w-inline-block"
                           >
-                            <h2 className="heading is-feature-large-title">
+                            <h2 className="heading text-[20px] md:text-[30px] is-feature-large-title">
                               超極生技
                             </h2>
-                            <p className="w-full md:w-1/2 my-5">
-                              超越傳統感測技術，實現卓越的健康生活。我們引以為傲的PotentioStrip專利技術，為您帶來兩大品牌，第一款是針對醫療健康需求的極安簡測-胃幽門螺旋桿菌快速呼吸檢測組，第二款則是為改進檢測體驗而設計的拋棄式免校正pH檢測系列。{" "}
+                            <p className="w-full text-[13px] md:text-[16px] md:w-1/2 my-5">
+                              超越傳統感測技術，實現卓越的健康生活。我們引以為傲的PotentioStrip專利技術，為您帶來兩大品牌，{" "}
                             </p>
                             <div
                               data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
@@ -525,12 +525,11 @@ export default function Blog() {
                             href="/feature/innovation"
                             className="feature-title-link w-inline-block"
                           >
-                            <h2 className="heading is-feature-large-title">
+                            <h2 className="heading text-[20px] md:text-[30px] is-feature-large-title">
                               禪譜科技
                             </h2>
-                            <p className="w-full md:w-1/2 my-5">
-                              只專注於電化學的禪譜科技ZensorR&D,提供獨特的無線及模擬器功能的電化學分析儀(電化學工作站)，網版印刷電極(絲網印刷電極),
-                              客製化訂製(OEM/ODM）電化學產品化/小量產規劃等專業服務
+                            <p className="w-full text-[13px] md:text-[16px] md:w-1/2 my-5">
+                              只專注於電化學的禪譜科技ZensorR&D,提供獨特的無線及模擬器功能的電化學分析儀(電化學工作站)
                             </p>
                             <div
                               data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
@@ -573,7 +572,7 @@ export default function Blog() {
                                   <img
                                     loading="lazy"
                                     alt=""
-                                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697d6e4ed59380266d00266_stada-img-n-8.webp"
+                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-93.webp"
                                     className="cover-image"
                                     style={{
                                       transform:
@@ -595,7 +594,7 @@ export default function Blog() {
                                   <img
                                     loading="lazy"
                                     alt=""
-                                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697d6e4b75f918dc8608ccf_stada-img-n-2.webp"
+                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-88.webp"
                                     className="cover-image"
                                     style={{
                                       transform:
@@ -624,7 +623,7 @@ export default function Blog() {
                               <img
                                 loading="lazy"
                                 alt=""
-                                src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20.webp"
+                                src=""
                                 className="cover-image"
                                 style={{
                                   transform:

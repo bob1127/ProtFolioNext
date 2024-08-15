@@ -11,6 +11,8 @@ module.exports = {
 
   images: {
     domains: [
+
+      'www.zensor.com.tw',
     
       'i0.wp.com',
       '1.gravatar.com',
