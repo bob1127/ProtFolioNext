@@ -3,6 +3,7 @@
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
+import Img01 from "../../public/images/Untitled-Camera.png";
 import Inner from "../../components/Inner/index.jsx";
 // import Styles from "../../styles/portfolio.module.css";
 import { useState, useEffect } from "react";
@@ -357,8 +358,17 @@ export default function Blog() {
                   </div>
                 </div>
               </div> */}
-              <section className="bg-black items-center flex justify-center h-[60vh]">
-                <h2 className="text-[60px] text-white">PORTFOLIO</h2>
+              <section className="items-center flex justify-center h-[60vh] flex flex-col items-start justify-start">
+                <h2 className="text:[20px] lg:text-[60px] text-center leading-normal text-black  fontfblack">
+                  PORTFOLIO<br></br>作品案例
+                </h2>
+                <p className="text-center w-2/3 px-5">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Pariatur neque facilis repellat nostrum sunt libero accusamus
+                  doloremque inventore ut? Aliquid adipisci quas assumenda
+                  dignissimos quisquam rerum a reprehenderit recusandae
+                  voluptatum.
+                </p>
               </section>
               <section id="explore" className="section with-bg-dark">
                 <div className="padding small-paddings">
@@ -377,7 +387,7 @@ export default function Blog() {
                               <img
                                 loading="lazy"
                                 alt=""
-                                src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19.webp"
+                                src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/ECWP100-carousel-index.webp"
                                 className="cover-image"
                                 style={{
                                   transform:
@@ -398,8 +408,11 @@ export default function Blog() {
                             className="feature-title-link w-inline-block"
                           >
                             <h2 className="heading is-feature-large-title">
-                              Design
+                              超極生技
                             </h2>
+                            <p className="w-full md:w-1/2 my-5">
+                              超越傳統感測技術，實現卓越的健康生活。我們引以為傲的PotentioStrip專利技術，為您帶來兩大品牌，第一款是針對醫療健康需求的極安簡測-胃幽門螺旋桿菌快速呼吸檢測組，第二款則是為改進檢測體驗而設計的拋棄式免校正pH檢測系列。{" "}
+                            </p>
                             <div
                               data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
                               className="feature-title-link-line"
@@ -419,7 +432,7 @@ export default function Blog() {
                                   <img
                                     loading="lazy"
                                     alt=""
-                                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697d6cbed59380266cfeac2_stada-img-n-21.webp"
+                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-03.webp"
                                     className="cover-image"
                                     style={{
                                       transform:
@@ -441,7 +454,7 @@ export default function Blog() {
                                   <img
                                     loading="lazy"
                                     alt=""
-                                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697d6cbecf6f5dbebf0ceba_stada-img-n-18.webp"
+                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-18.webp"
                                     className="cover-image"
                                     style={{
                                       transform:
@@ -463,7 +476,7 @@ export default function Blog() {
                                   <img
                                     loading="lazy"
                                     alt=""
-                                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655332bb09bc39adf4ec7_stada-img-n-20.webp"
+                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/%E6%A5%AD%E7%95%8C%E6%9C%80%E5%B0%8F%E7%9A%84_%E7%84%A1%E7%B7%9A_%E9%9B%BB%E5%8C%96%E5%AD%B8%E5%88%86%E6%9E%90%E5%84%80-%E5%AF%A6%E6%93%AC%E5%8A%9F%E8%83%BD.webp"
                                     className="cover-image"
                                     style={{
                                       transform:
@@ -492,7 +505,7 @@ export default function Blog() {
                               <img
                                 loading="lazy"
                                 alt=""
-                                src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15.webp"
+                                src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
                                 className="cover-image"
                                 style={{
                                   transform:
@@ -513,10 +526,11 @@ export default function Blog() {
                             className="feature-title-link w-inline-block"
                           >
                             <h2 className="heading is-feature-large-title">
-                              纏普科技
+                              禪譜科技
                             </h2>
-                            <p>
-                              我們專注於為企業打造獨特而吸引人的網頁設計，幫助您的品牌在數位世界中脫穎而出。
+                            <p className="w-full md:w-1/2 my-5">
+                              只專注於電化學的禪譜科技ZensorR&D,提供獨特的無線及模擬器功能的電化學分析儀(電化學工作站)，網版印刷電極(絲網印刷電極),
+                              客製化訂製(OEM/ODM）電化學產品化/小量產規劃等專業服務
                             </p>
                             <div
                               data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
@@ -537,7 +551,7 @@ export default function Blog() {
                                   <img
                                     loading="lazy"
                                     alt=""
-                                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697d6e49ee8e710e1de70b0_stada-img-n-30.webp"
+                                    src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
                                     className="cover-image"
                                     style={{
                                       transform:
@@ -628,10 +642,10 @@ export default function Blog() {
                             aria-label="Feature link"
                             data-w-id="3693517e-89e9-2f96-cace-c1d04dc6f48a"
                             href="/feature/compatibility"
-                            className="feature-title-link w-inline-block"
+                            className="feature-title-link w-inline-block rounded-m"
                           >
                             <h2 className="heading is-feature-large-title">
-                              Compatibility
+                              購物網站-Clothes
                             </h2>
                             <div
                               data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
@@ -855,10 +869,10 @@ export default function Blog() {
                           className="text-black"
                           style={{ fontSize: 40, textAlign: "center" }}
                         >
-                          案例陸續更新中，歡迎商家互惠
+                          專案陸續更新中.... 商家互惠方案
                         </p>
                         <a
-                          href="www.zensor.com.tw"
+                          href="/Price"
                           className="bg-green-500 rounded-[30px] p-4 inline-block mx-auto"
                         >
                           與我們聯繫

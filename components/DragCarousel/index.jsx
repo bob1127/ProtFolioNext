@@ -17,16 +17,16 @@ const articles = [
   {
     title:
       "Building a fully customisable carousel slider with swipe gestures and navigation using Framer Motion",
-    url: "https://www.nikoand.jp/wp-content/uploads/2024/06/800_452.jpg",
+    url: "https://www.zensor.com.tw/images/Products-Detail-Img/ACIP100/電化學分析儀-模擬器-交流阻抗版-開箱.webp",
   },
   {
     title:
       "Building a customisable Input component with NextJS, ReactHookForm, TailwindCSS and TypeScript",
-    url: "https://www.nikoand.jp/wp-content/uploads/2024/02/bnr_nk_ws1.jpg",
+    url: "https://www.zensor.com.tw/images//Products-Detail-Img/ECAS100/電化學分析儀-模擬器-防滑材質.webp",
   },
   {
     title: "Handling Forms in NextJS with busboy, ReactHookForm and TypeScript",
-    url: "https://www.nikoand.jp/wp-content/uploads/2024/02/bnr_nk_10th_800_452-1.jpg",
+    url: "https://www.zensor.com.tw/images/Products-Detail-Img/GTE100/突破性的玻碳膜材質.webp",
   },
 ];
 

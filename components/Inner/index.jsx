@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { slide, opacity, perspective } from "./anim";
+import { useRouter } from "next/router";
+import { slide, opacity, perspective } from "./anim"; // Adjust this import if the anims are defined elsewhere
 
 const anim = (variants) => {
   return {
@@ -12,36 +12,43 @@ const anim = (variants) => {
   };
 };
 
-export default function Inner({ children }) {
+const Inner = ({ children }) => {
+  const router = useRouter();
+
+  const navigate = (e, href) => {
+    e.preventDefault();
+    router.push(href);
+  };
+
   return (
     <div className="inner">
       <motion.div className="slide" {...anim(slide)} />
       <motion.div className="page" {...anim(perspective)}>
         <motion.div {...anim(opacity)}>
-          <div className="header hidden md:block  z-[99999999]">
-            <Link className="Company-logo " href="/">
+          <div className="header hidden md:block z-[99999999]">
+            <a
+              href="/"
+              className="Company-logo"
+              onClick={(e) => navigate(e, "/")}
+            >
               Home-LOGO
-            </Link>
-            <Link href="/about?reload=true" as="/about">
-              關於我們
-            </Link>
-            <Link href="/about-2?reload=true" as="/about-2">
-              SEO 行銷
-            </Link>
-            <Link className="" href="/about-3?reload=true" as="/about-3">
-              網頁行銷
-            </Link>
-            <Link href="/about">網站作品</Link>
-            <Link href="/">合作案例</Link>
-            <Link className=" " href="/">
-              Home
-            </Link>
-            <Link href="/about">企業形象影片</Link>
-            <Link href="/about">聯絡我們</Link>
+            </a>
+            <a href="/about">關於我們</a>
+            <a href="/about-2">SEO 行銷</a>
+            <a href="/about-3">網頁行銷</a>
+            <a href="/about" onClick={(e) => navigate(e, "/about")}>
+              網站作品
+            </a>
+            <a href="/">合作案例</a>
+            <a href="/">Home</a>
+            <a href="/about">企業形象影片</a>
+            <a href="/about">聯絡我們</a>
           </div>
           {children}
         </motion.div>
       </motion.div>
     </div>
   );
-}
+};
+
+export default Inner;

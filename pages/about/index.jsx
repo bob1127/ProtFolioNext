@@ -314,11 +314,11 @@ export default function Blog() {
                       }}
                       className="heading is-home-title"
                     >
-                      MyCompany-網頁設計
+                      極客網頁設計<br></br>JEEK WEB DESIGN
                     </h1>
-                    <p className="text-[#242424] text-[22px]">
-                      花費小預算，增加大收益
-                    </p>
+                    <a href="/" className="text-[#242424] text-[22px]">
+                      個人工作室｜私人接案者 - 花費小預算，增加大收益
+                    </a>
                     <div
                       data-w-id="b3a43e50-789b-2236-6fea-b72c39d21884"
                       style={{
@@ -520,12 +520,12 @@ export default function Blog() {
                       opacity: 1,
                     }}
                   >
-                    企業形象網站
+                    無頭網站
                   </h2>
                   <br />
                   <br />
                   <div className="rounded-[30px] bg-[#333] text-[20px] text-white inline-block p-3">
-                    (套版網站｜RWD網站)
+                    (高性能｜SEO友善)
                   </div>
                   <div
                     data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfdc"
@@ -591,7 +591,7 @@ export default function Blog() {
                         </div>
                       </div>
                       <p className="paragraph">
-                        這句slogan強調了網站作為品牌形象的重要性，指出網站通常是客戶對品牌的第一印象。公司專注於創造讓人印象深刻的網站，確保客戶的品牌在網上擁有強大的吸引力，從而提高客戶的信任和參與度。
+                        使用Next.js和WordPress來建構無頭網站時，您將體驗到一系列卓越的優點和好處，這使它成為現代網頁設計的理想選擇
                       </p>
                       <div className="service-cms-page-links w-dyn-list">
                         <div
@@ -606,7 +606,10 @@ export default function Blog() {
                               href="/service/product"
                               className="link-with-arrows"
                             >
-                              「專業設計，助您領先數位時代」
+                              高效的性能與快速的頁面加載
+                              <p>
+                                Next.js結合了React的靈活性和靜態站點生成（SSG）的速度，使您的網站在任何設備上都能快速加載。這不僅提高了用戶體驗，還能改善SEO，讓您的網站在搜尋引擎中排名更高。
+                              </p>
                             </a>
                           </div>
                           <div
@@ -617,7 +620,10 @@ export default function Blog() {
                               href="/service/usability"
                               className="link-with-arrows"
                             >
-                              「讓您的網站成為客戶的第一印象」
+                              無縫的內容管理
+                              <p>
+                                透過WordPress作為後端管理系統，您可以輕鬆地管理網站內容。無需撰寫代碼，您便能透過熟悉的WordPress介面來更新文章、頁面和多媒體內容，同時仍能享受無頭CMS所帶來的靈活性和自由度。
+                              </p>
                             </a>
                           </div>
                           <div
@@ -628,7 +634,10 @@ export default function Blog() {
                               href="/service/development"
                               className="link-with-arrows"
                             >
-                              「打造專屬您的獨特網站，提升品牌價值」
+                              極致的設計與開發自由
+                              <p>
+                                無頭架構讓前端與後端分離，意味著您可以自由選擇和設計最符合品牌風格的前端界面，而不受限於WordPress預設的佈局或樣式。Next.js的靈活性讓開發人員能夠更快速地實現自訂設計，並整合各種前端技術。
+                              </p>
                             </a>
                           </div>
                         </div>
@@ -638,7 +647,7 @@ export default function Blog() {
                       id="w-node-_3e2ecc0f-542d-8997-9376-5ddc25760056-c41abecd"
                       className="paragraph is-sticky"
                     >
-                      一頁式網站
+                      Headless-無頭網站
                     </p>
                   </div>
                 </div>
@@ -779,14 +788,14 @@ export default function Blog() {
                     >
                       <div className="card-title-block">
                         <h2 className="heading is-extralarge text-[]">
-                          「創新設計，讓您的網站脫穎而出」
+                          你的產品很好，但卻沒讓更多人看見？
                         </h2>
                         <a
                           id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
                           href="/about"
                           className="simple-link"
                         >
-                          More about us
+                          「創新設計，讓您的網站脫穎而出」
                         </a>
                       </div>
                       <div className="cards">
@@ -806,7 +815,7 @@ export default function Blog() {
                           </div>
                           <p className="card-paragraph">
                             <strong>
-                              這句slogan突出了創新和差異化設計的重要性，表明公司專注於創造獨特且有影響力的網站。通過這個slogan，強調了公司致力於為客戶提供與眾不同的設計方案，幫助他們在競爭激烈的網絡世界中脫穎而出，從而吸引更多的潛在客戶。
+                              根據Google的數據，超過90%的消費者會使用搜索引擎來查找產品和服務。如果你的企業能夠在搜索結果中獲得較高的曝光率，潛在客戶就更容易記住你的品牌，從而提高品牌知名度。
                             </strong>
                           </p>
                         </div>
@@ -825,9 +834,11 @@ export default function Blog() {
                             />
                           </div>
                           <div className="card-content">
-                            <p className="card-paragraph">Our Values</p>
+                            <p className="card-paragraph">降低營銷成本</p>
                             <p className="card-text-small">
-                              這個slogan強調了公司專注於數位化的未來發展，目標是幫助客戶通過精心設計的網站在全球市場上脫穎而出。
+                              比較傳統的廣告渠道，如電視或報紙，SEO和社交媒體營銷的成本較低，且效果持久。
+                              Forrester
+                              Research指出，內容營銷成本约为傳統廣告的62%，但能產生3倍的潜在客戶。
                             </p>
                           </div>
                         </div>
@@ -848,7 +859,8 @@ export default function Blog() {
                           <div className="card-content">
                             <p className="card-paragraph">Our Journey</p>
                             <p className="card-text-small">
-                              此slogan專注於定制化和品牌價值，強調公司能夠根據客戶的需求和品牌形象，創造出獨一無二的網站。
+                              對於中小企业而言，网站的曝光度不僅僅是吸引流量的問題，還直接影響到品牌的生存和成長。
+                              透過提高網站曝光度，中小企业可以更更多的客戶信任、提升销售额、降低營銷成本，並在市場競爭中佔據有利位置。
                             </p>
                           </div>
                         </div>
@@ -1117,7 +1129,7 @@ export default function Blog() {
                     id="w-node-_7f252330-861b-fbf3-b542-876890600281-c41abecd"
                     className="heading is-extralarge"
                   >
-                    服務內容：
+                    一個良好的企業形象網站有多重要？
                   </h2>
                 </div>
                 <div
@@ -1130,7 +1142,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blog/sustainable-tech-how-green-innovations-are-transforming-world"
+                        href="/about"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1143,7 +1155,12 @@ export default function Blog() {
                           id="w-node-d055a34a-1b5f-c6f5-d42e-fc66c498a59a-c41abecd"
                           className="blog-article-name"
                         >
-                          它傳達了公司致力於通過專業設計來助力客戶的品牌成長和成功，成為其商業發展的合作夥伴。
+                          <span className="text-[30px] font-extrabold">
+                            {" "}
+                            專業形象與信任感
+                          </span>
+                          <br></br>
+                          展示企業專業的形象，讓客戶對品牌產生信任感。
                         </p>
                         <div
                           id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"
@@ -1178,7 +1195,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blog/the-role-of-ai-in-shaping-the-future-of-smart-devices"
+                        href="/about-2"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1191,7 +1208,12 @@ export default function Blog() {
                           id="w-node-d055a34a-1b5f-c6f5-d42e-fc66c498a59a-c41abecd"
                           className="blog-article-name"
                         >
-                          此slogan專注於定制化和品牌價值，強調公司能夠根據客戶的需求和品牌形象
+                          <span className="text-[30px] font-extrabold">
+                            {" "}
+                            提升品牌認知度
+                          </span>
+                          <br></br>
+                          透過網站展示企業的核心價值、文化和獨特性，增強品牌的認知度。
                         </p>
                         <div
                           id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"
@@ -1226,7 +1248,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blog/how-user-centric-design-is-revolutionizing-smart-gadgets"
+                        href="/about-2"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1239,105 +1261,12 @@ export default function Blog() {
                           id="w-node-d055a34a-1b5f-c6f5-d42e-fc66c498a59a-c41abecd"
                           className="blog-article-name"
                         >
-                          How User-Centric Design is Revolutionizing Smart
-                          Gadgets
-                        </p>
-                        <div
-                          id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"
-                          className="main-link in-blog"
-                        >
-                          <div className="main-link-icon-block">
-                            <div className="main-link-icon-bg is-2nd" />
-                            <img
-                              loading="lazy"
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                              alt=""
-                              className="main-link-icon"
-                            />
-                          </div>
-                          <div
-                            className="main-link-open-text in-blog"
-                            style={{}}
-                          >
-                            read
-                          </div>
-                        </div>
-                        <div
-                          id="w-node-_307ffc2e-8f32-75cb-4c48-36c38a9e2f4b-c41abecd"
-                          data-w-id="307ffc2e-8f32-75cb-4c48-36c38a9e2f4b"
-                          className="blog-line"
-                          style={{}}
-                        />
-                      </a>
-                    </div>
-                    <div role="listitem" className="blog-item w-dyn-item">
-                      <a
-                        aria-label="Blog post link"
-                        id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
-                        data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blog/the-future-of-wearable-tech-innovations-and-trends-to-watch"
-                        className="main-container is-blog-container w-inline-block"
-                      >
-                        <div
-                          id="w-node-cd4f4756-6402-be4a-e3ed-d2c7cff9f0e0-c41abecd"
-                          className="blog-small-text"
-                        >
-                          Jul 18
-                        </div>
-                        <p
-                          id="w-node-d055a34a-1b5f-c6f5-d42e-fc66c498a59a-c41abecd"
-                          className="blog-article-name"
-                        >
-                          The Future of Wearable Tech: Innovations and Trends to
-                          Watch
-                        </p>
-                        <div
-                          id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"
-                          className="main-link in-blog"
-                        >
-                          <div className="main-link-icon-block">
-                            <div className="main-link-icon-bg is-2nd" />
-                            <img
-                              loading="lazy"
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                              alt=""
-                              className="main-link-icon"
-                            />
-                          </div>
-                          <div
-                            className="main-link-open-text in-blog"
-                            style={{}}
-                          >
-                            read
-                          </div>
-                        </div>
-                        <div
-                          id="w-node-_307ffc2e-8f32-75cb-4c48-36c38a9e2f4b-c41abecd"
-                          data-w-id="307ffc2e-8f32-75cb-4c48-36c38a9e2f4b"
-                          className="blog-line"
-                          style={{}}
-                        />
-                      </a>
-                    </div>
-                    <div role="listitem" className="blog-item w-dyn-item">
-                      <a
-                        aria-label="Blog post link"
-                        id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
-                        data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blog/top-5-smart-devices-transforming-daily-life-in-2024"
-                        className="main-container is-blog-container w-inline-block"
-                      >
-                        <div
-                          id="w-node-cd4f4756-6402-be4a-e3ed-d2c7cff9f0e0-c41abecd"
-                          className="blog-small-text"
-                        >
-                          Jul 18
-                        </div>
-                        <p
-                          id="w-node-d055a34a-1b5f-c6f5-d42e-fc66c498a59a-c41abecd"
-                          className="blog-article-name"
-                        >
-                          Top 5 Smart Devices Transforming Daily Life in 2024
+                          <span className="text-[30px] font-extrabold">
+                            {" "}
+                            多設備友好體驗
+                          </span>
+                          <br></br>
+                          響應式設計確保網站在不同設備（如手機、平板、電腦）上都能提供優質的瀏覽體驗。
                         </p>
                         <div
                           id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"
@@ -1372,7 +1301,7 @@ export default function Blog() {
                 <div className="main-container medium-paddings">
                   <a
                     id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                    href="/journal"
+                    href="/about"
                     className="simple-link"
                   >
                     全部文章

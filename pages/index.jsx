@@ -7,7 +7,7 @@ import DragCarousel from "../components/DragCarousel/index.jsx";
 // import PhysicsAnimation from '../components/PhysicsAnimation/PhysicsAnimation.jsx';
 import dynamic from "next/dynamic";
 // import SlickCarousel from "../components/SlickCarousel/index.jsx";
-
+import Link from "next/link";
 import TextHover from "../components/TextHover/index.jsx";
 // import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
 // import textReveal from '../components/TextReveal/index.jsx';
@@ -149,7 +149,7 @@ CREACTIVEs</h1>
                 WHAT’S Design in Life
               </h2>
               <div className="flex flex-row ">
-                <p>網站案例｜</p>
+                <Link href="/about">網站案例｜</Link>
                 <p>合作案例｜</p>
                 <p>合作案例｜</p>
               </div>
