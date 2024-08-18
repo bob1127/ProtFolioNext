@@ -1,16 +1,69 @@
 "use client";
+import {
+  Table,
+  TableHeader,
+  TableColumn,
+  TableBody,
+  TableRow,
+  TableCell,
+  getKeyValue,
+} from "@nextui-org/react";
 
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
-
+import SpringModal from "../../components/SpringModal/page.jsx";
 import { useState, useEffect } from "react";
 import Link from "next/link.js";
 import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
-import Inner from "../../components/Inner/index.jsx";
+// import Inner from "../../components/Inner/index.jsx";
 
 export default function Blog() {
+  //compare table
+
+  const rows = [
+    {
+      key: "1",
+      name: "成本較低",
+      role: "成本較低",
+      status: "成本較低",
+    },
+    {
+      key: "2",
+      name: "高度定制",
+      role: "獨特性",
+      status: "優化性能",
+    },
+    {
+      key: "3",
+      name: "優化性能",
+      role: "優化性能",
+      status: "簡單易用",
+    },
+    {
+      key: "4",
+      name: "William Howard",
+      role: "靈活擴展性",
+      status: "大量的預設選項",
+    },
+  ];
+
+  const columns = [
+    {
+      key: "name",
+      label: "NAME",
+    },
+    {
+      key: "role",
+      label: "客製化網站",
+    },
+    {
+      key: "status",
+      label: "套版網站",
+    },
+  ];
+
   const [isVisible, setIsVisible] = useState(false);
   const colors = [
     "default",
@@ -31,261 +84,9 @@ export default function Blog() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <Inner>
+    <>
       <div>
-        <Head>
-          <link
-            href="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/css/stada-design-agency-template.webflow.9aa283b37.min.css"
-            rel="stylesheet"
-            type="text/css"
-          />
-        </Head>
-        <Script
-          src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
-          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-          crossorigin="anonymous"
-          strategy="beforeInteractive" // 可以使用 `beforeInteractive`, `lazyOnload`, `afterInteractive` 等策略
-        />
-
-        <Script
-          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
-          strategy="afterInteractive"
-        />
-
         <div id="webpage" className="page-wrapper">
-          <div className="fullscreen-menu" style={{ display: "none" }}>
-            <div className="menu-layout">
-              <div className="menu-socials" style={{ opacity: 0 }}>
-                <div className="menu-social-wrapper w-dyn-list">
-                  <div role="list" className="menu-social-list w-dyn-items">
-                    <div
-                      role="listitem"
-                      className="menu-social-item w-dyn-item"
-                    >
-                      <a href="#" className="menu-social-link w-inline-block">
-                        <img
-                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c39ba9cdf534275b8533_youtube-logo-black.svg"
-                          loading="lazy"
-                          alt=""
-                          className="icon is-social-menu-icon"
-                        />
-                      </a>
-                    </div>
-                    <div
-                      role="listitem"
-                      className="menu-social-item w-dyn-item"
-                    >
-                      <a href="#" className="menu-social-link w-inline-block">
-                        <img
-                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c3b3dd27ebf12436fc85_linkedin-logo-black.svg"
-                          loading="lazy"
-                          alt=""
-                          className="icon is-social-menu-icon"
-                        />
-                      </a>
-                    </div>
-                    <div
-                      role="listitem"
-                      className="menu-social-item w-dyn-item"
-                    >
-                      <a href="#" className="menu-social-link w-inline-block">
-                        <img
-                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c380c49a871545a7ce42_facebook-logo-black.svg"
-                          loading="lazy"
-                          alt=""
-                          className="icon is-social-menu-icon"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="menu-links-wrapper" style={{ opacity: 0 }}>
-                <div
-                  className="secondary-links"
-                  style={{
-                    opacity: 0,
-                    transform:
-                      "translate3d(0px, 3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                    transformStyle: "preserve-3d",
-                  }}
-                >
-                  <div className="secondary-links-block">
-                    <p className="menu-small-text">General</p>
-                    <a href="/store" className="menu-sesondary-link">
-                      Store
-                    </a>
-                    <a href="/contact" className="menu-sesondary-link">
-                      Contact
-                    </a>
-                  </div>
-                  <div className="secondary-links-block">
-                    <p className="menu-small-text">Get in touch</p>
-                    <a href="#" className="menu-sesondary-link">
-                      Email
-                    </a>
-                    <a href="#" className="menu-sesondary-link">
-                      Phone
-                    </a>
-                  </div>
-                  <div className="secondary-links-block">
-                    <p className="menu-small-text">Template</p>
-                    <a
-                      href="https://webflow.com/templates/html/stada-agency-website-template"
-                      target="_blank"
-                      className="menu-sesondary-link"
-                    >
-                      Buy template
-                    </a>
-                    <a
-                      href="https://www.metrik.studio/webflow-templates"
-                      target="_blank"
-                      className="menu-sesondary-link"
-                    >
-                      More templates
-                    </a>
-                  </div>
-                </div>
-                <div className="menu-main-links">
-                  <a
-                    data-w-id="6dce1659-1f78-7d00-7eed-5d600171ac2e"
-                    href="/"
-                    className="menu-link w-inline-block"
-                  >
-                    <div
-                      className="menu-link-text"
-                      style={{
-                        transform:
-                          "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    >
-                      Home
-                    </div>
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="icon is-menu-link-icon"
-                    />
-                  </a>
-                  <a
-                    data-w-id="9119eb55-b515-23ab-3ca6-d7a893b67ca0"
-                    href="/services"
-                    className="menu-link w-inline-block"
-                  >
-                    <div
-                      className="menu-link-text"
-                      style={{
-                        transform:
-                          "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    >
-                      Services
-                    </div>
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="icon is-menu-link-icon"
-                    />
-                  </a>
-                  <a
-                    data-w-id="bdd489b8-8031-113b-2ffa-b5e1c5758ce0"
-                    href="/features"
-                    className="menu-link w-inline-block"
-                  >
-                    <div
-                      className="menu-link-text"
-                      style={{
-                        transform:
-                          "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    >
-                      Features
-                    </div>
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="icon is-menu-link-icon"
-                    />
-                  </a>
-                  <a
-                    data-w-id="03e10da9-d56b-f42b-a87a-0d5fd44d5e75"
-                    href="/about"
-                    aria-current="page"
-                    className="menu-link w-inline-block w--current"
-                  >
-                    <div
-                      className="menu-link-text"
-                      style={{
-                        transform:
-                          "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    >
-                      About
-                    </div>
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="icon is-menu-link-icon"
-                    />
-                  </a>
-                  <a
-                    data-w-id="4f963323-4aa1-e2d1-d1f7-b679d51590a7"
-                    href="/journal"
-                    className="menu-link w-inline-block"
-                  >
-                    <div
-                      className="menu-link-text"
-                      style={{
-                        transform:
-                          "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    >
-                      Journal
-                    </div>
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="icon is-menu-link-icon"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div
-                data-w-id="b1ec2d20-05dc-077d-da18-86120beceaae"
-                className="close-button"
-                style={{ opacity: 0 }}
-              >
-                <img
-                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/6697fb309b7a20920ffdcdb1_close_24dp_181720_FILL0_wght500_GRAD0_opsz24.svg"
-                  loading="lazy"
-                  alt=""
-                  className="close-button-icon"
-                  style={{}}
-                />
-                <div className="menu-close-text">Close</div>
-              </div>
-              <div
-                className="menu-background-color"
-                style={{
-                  transform:
-                    "translate3d(0px, -101%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                  transformStyle: "preserve-3d",
-                }}
-              />
-              <div className="menu-delay-for-animations" />
-            </div>
-          </div>
-
           <main className="main">
             <div className="about-hero m-0 p-0">
               <div className="container">
@@ -314,7 +115,7 @@ export default function Blog() {
                       href="#explore"
                       className="simple-link is-explore"
                     >
-                      Get to know us
+                      了解更多
                     </a>
                   </div>
                   <RevealLinks />
@@ -334,6 +135,56 @@ export default function Blog() {
                 </div>
               </div>
             </div>
+
+            <section className="Hero-title p-6 h-[100vh]">
+              <div className="container border-2 border-green-500 overflow-hidden h-[95vh] flex justify-start flex-col items-center">
+                <div className="sign flex py-[40px] justify-center">
+                  <div className="border flex justify-center items-center border-gray-500 rounded-[30px] w-full px-8 py-3">
+                    致力於開發使用者體驗良好的網站
+                  </div>
+                </div>
+                <div className="title "></div>
+                <main>
+                  <div className="z-[99999] main-title static">
+                    <h1 className="text-[80px] text-center">WEBSITE DESIGN</h1>
+                    <h1 className="text-[80px] text-center leading-normal">
+                      BUILD FAST
+                    </h1>
+                    <p className="w-[400px] text-center mx-auto">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Commodi ducimus sequi a nobis reprehenderit! Architecto
+                      facilis, fugit eius mollitia ducimus saepe repudiandae
+                      perferendis! Ex doloribus inventore, facere eos delectus
+                      officia!
+                    </p>
+                  </div>
+                  <div className="box01  z-1 top-[200px] absolute left-[-160px] border border-black">
+                    <img
+                      className="w-[500px]"
+                      src="https://cdn.prod.website-files.com/669e85bc7c10a1b210e2fcd6/66abf8b62e53dbfa5fc2e5a0_hero-video-optimized.avif"
+                      alt=""
+                    />
+                    <img
+                      className="w-[260px] ml-[290px] mt-[40px]"
+                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="box02 absolute right-[-100px]">
+                    <img
+                      className="w-[260px] mt-[-370px] ml-[190px] mb-[40px]"
+                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
+                      alt=""
+                    />
+                    <img
+                      className="w-[500px]"
+                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/64575947bc71a0cf995a7b34_JEubAaiocBrAyYwOH51Q-ctbfZTy_wnJ_BaDpn7swZc.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </main>
+              </div>
+            </section>
             <section id="explore" className="section with-borders">
               <section className="section is-3d-content-section">
                 <div className="container">
@@ -344,7 +195,7 @@ export default function Blog() {
                           <img
                             loading="lazy"
                             alt="Portrait of the team"
-                            src="https://www.nikoand.jp/wp-content/uploads/2024/07/ws1.jpg"
+                            src=""
                             className="cover-image"
                             style={{
                               transform:
@@ -506,7 +357,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.nikoand.jp/wp-content/uploads/2024/07/KV-22-1024x1024.jpg"
+                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           className="cover-image"
                           style={{
@@ -526,7 +377,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.nikoand.jp/wp-content/uploads/2024/08/W_bnr_1080_2.jpg"
+                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           srcSet="
                                         
@@ -723,12 +574,46 @@ export default function Blog() {
             <section>
               <div className="container"></div>
             </section>
-            <section>
-              <div className="container">
-                <p></p>
+            <section className="px-[40px] py-[90px]">
+              <Table
+                className="bg-green-700 rounded-xl py-[50px]"
+                aria-label="Example table with dynamic content"
+              >
+                <TableHeader
+                  className="text-white border-b-2 text-[22px] border-white"
+                  columns={columns}
+                >
+                  {(column) => (
+                    <TableColumn
+                      className="text-white  text-[22px] border-b-2 border-white"
+                      key={column.key}
+                    >
+                      {column.label}
+                    </TableColumn>
+                  )}
+                </TableHeader>
+                <TableBody className="text-white" items={rows}>
+                  {(item) => (
+                    <TableRow className="text-white text-center" key={item.key}>
+                      {(columnKey) => (
+                        <TableCell>{getKeyValue(item, columnKey)}</TableCell>
+                      )}
+                    </TableRow>
+                  )}
+                </TableBody>
+              </Table>
+
+              <div className="  flex py-6 justify-center">
+                <b className=" text-[16px] w-full lg:w-2/3  text-center leading-normal">
+                  *選擇套版網站，您可以快速、低成本地建立一個簡單易用的網站，適合需要迅速上線的小型業務；而客製化網站則提供高度的設計和功能靈活性，讓您的品牌在數位世界中脫穎而出，並能隨業務成長進行擴展，是追求獨特性和長期效益的理想選擇。
+                </b>
               </div>
             </section>
-            <section className="section with-borders">
+            {/* <section></section>
+              <p>客製化網站跟套版網站比較</p>
+              <div className="container"></div>
+            </section> */}
+            <section className="section">
               <div className="container">
                 <div className="padding small-paddings">
                   <div className=" ">
@@ -737,7 +622,7 @@ export default function Blog() {
                       style={{ display: "flex", justifyContent: "center" }}
                     >
                       <h3
-                        className="heading is-regular"
+                        className="heading  text-[40px] mx-auto"
                         style={{
                           marginBottom: 30,
                           display: "flex",
@@ -745,7 +630,7 @@ export default function Blog() {
                           textAlign: "center",
                         }}
                       >
-                        Shape the future of tech with us
+                        選擇適合你的方案
                       </h3>
                     </div>
                     <div
@@ -889,12 +774,17 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
+              <div className="flex justify-center pb-6">
+                <b className="mx-auto text-[16px]">
+                  *方案價格皆為大約估算，實際可討論詳談
+                </b>
+              </div>
             </section>
             <VanishList />
           </main>
         </div>
       </div>
-    </Inner>
+    </>
   );
 }
 

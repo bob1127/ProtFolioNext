@@ -160,7 +160,7 @@ export default function SuggestedCarousel() {
 
   return (
     <>
-      <div className="text-center px-[30px]">
+      <div className="text-center mt-[60px] px-[30px]">
         <div className="flex justify-center gap-4">
           <Link
             className="text-sm underline underline-offset-2 hover:text-lime-300"
@@ -177,7 +177,7 @@ export default function SuggestedCarousel() {
             跟我聯繫-了解更多
           </Link>
         </div>
-        <h1 className="my-[20px] text-[40px] lg:text-6xl font-extrabold uppercase">
+        <h1 className="my-[10px] text-[40px] lg:text-6xl font-extrabold uppercase">
           網頁行銷案例
         </h1>
         <p className="text-sm mb-5 text-gray-400">

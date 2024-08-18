@@ -1,8 +1,16 @@
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
-import Inner from "../../components/Inner/index.jsx";
+import Image from "next/image.js";
+import TextMask from "../../components/TextMask/page.jsx";
+// import Inner from "../../components/Inner/index.jsx";
 import { useState, useEffect } from "react";
+import { WiSnowWind } from "react-icons/wi";
+const imageLoader = ({ src, width, quality }) => {
+  return `https://www.ultraehp.com/images/test-portfolio/${src}?w=${width}&q=${
+    quality || 75
+  }`;
+};
 
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,268 +26,9 @@ export default function Blog() {
   }, []);
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
-      <Inner>
+      <>
         <div className="about-root">
-          <style
-            dangerouslySetInnerHTML={{
-              __html:
-                '@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="5de2f2dd-e901-6701-f8f6-873bf69fa7c7"] {-webkit-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="2388d243-2369-6d3b-32f2-2b13ff7a6ace"] {-webkit-transform:translate3d(0, 101%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 101%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 101%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 101%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="4289e887-07ce-5274-3030-580c1ab92bcb"] {-webkit-transform:translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="8c408de9-d384-9933-3fee-e2e760e7e2a7"] {-webkit-transform:translate3d(0, 0, 0) scale3d(0, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="307ffc2e-8f32-75cb-4c48-36c38a9e2f4b"] {-webkit-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-101%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c26b"] {-webkit-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c274"] {-webkit-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c27c"] {-webkit-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 4rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}}',
-            }}
-          />
-
-          <Head>
-            {/* <link
-          href="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/css/stada-design-agency-template.webflow.9aa283b37.min.css"
-          rel="stylesheet"
-          type="text/css"
-        /> */}
-          </Head>
-
-          <Script
-            src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
-            strategy="beforeInteractive" // 可以使用 `beforeInteractive`, `lazyOnload`, `afterInteractive` 等策略
-          />
-
-          <Script
-            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
-            strategy="afterInteractive"
-          />
           <div id="webpage" className="page-wrapper">
-            <div className="fullscreen-menu" style={{ display: "none" }}>
-              <div className="menu-layout">
-                <div className="menu-socials" style={{ opacity: 0 }}>
-                  <div className="menu-social-wrapper w-dyn-list">
-                    <div role="list" className="menu-social-list w-dyn-items">
-                      <div
-                        role="listitem"
-                        className="menu-social-item w-dyn-item"
-                      >
-                        <a href="#" className="menu-social-link w-inline-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c39ba9cdf534275b8533_youtube-logo-black.svg"
-                            loading="lazy"
-                            alt=""
-                            className="icon is-social-menu-icon"
-                          />
-                        </a>
-                      </div>
-                      <div
-                        role="listitem"
-                        className="menu-social-item w-dyn-item"
-                      >
-                        <a href="#" className="menu-social-link w-inline-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c3b3dd27ebf12436fc85_linkedin-logo-black.svg"
-                            loading="lazy"
-                            alt=""
-                            className="icon is-social-menu-icon"
-                          />
-                        </a>
-                      </div>
-                      <div
-                        role="listitem"
-                        className="menu-social-item w-dyn-item"
-                      >
-                        <a href="#" className="menu-social-link w-inline-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c380c49a871545a7ce42_facebook-logo-black.svg"
-                            loading="lazy"
-                            alt=""
-                            className="icon is-social-menu-icon"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="menu-links-wrapper" style={{ opacity: 0 }}>
-                  <div
-                    className="secondary-links"
-                    style={{
-                      opacity: 0,
-                      transform:
-                        "translate3d(0px, 3em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      transformStyle: "preserve-3d",
-                    }}
-                  >
-                    <div className="secondary-links-block">
-                      <p className="menu-small-text">聯絡我們</p>
-                      <a href="/store" className="menu-sesondary-link">
-                        Line
-                      </a>
-                      <a href="/contact" className="menu-sesondary-link">
-                        Facebook
-                      </a>
-                    </div>
-                    <div className="secondary-links-block">
-                      <p className="menu-small-text">Get in touch</p>
-                      <a href="#" className="menu-sesondary-link">
-                        Email
-                      </a>
-                      <a href="#" className="menu-sesondary-link">
-                        電話
-                      </a>
-                    </div>
-                    <div className="secondary-links-block">
-                      <p className="menu-small-text">Template</p>
-                      <a
-                        href="https://webflow.com/templates/html/stada-agency-website-template"
-                        target="_blank"
-                        className="menu-sesondary-link"
-                      >
-                        關於我們
-                      </a>
-                      <a
-                        href="https://www.metrik.studio/webflow-templates"
-                        target="_blank"
-                        className="menu-sesondary-link"
-                      >
-                        網站作品｜案例
-                      </a>
-                    </div>
-                  </div>
-                  <div className="menu-main-links">
-                    <a
-                      data-w-id="6dce1659-1f78-7d00-7eed-5d600171ac2e"
-                      href="/"
-                      aria-current="page"
-                      className="menu-link w-inline-block w--current"
-                    >
-                      <div
-                        className="menu-link-text"
-                        style={{
-                          transform:
-                            "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      >
-                        關於我們
-                      </div>
-                      <img
-                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                        loading="lazy"
-                        alt=""
-                        className="icon is-menu-link-icon"
-                      />
-                    </a>
-                    <a
-                      data-w-id="9119eb55-b515-23ab-3ca6-d7a893b67ca0"
-                      href="www.zensorrd.com"
-                      className="menu-link w-inline-block"
-                    >
-                      <div
-                        className="menu-link-text"
-                        style={{
-                          transform:
-                            "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      >
-                        一頁式網站
-                      </div>
-                      <img
-                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                        loading="lazy"
-                        alt=""
-                        className="icon is-menu-link-icon"
-                      />
-                    </a>
-                    <a
-                      data-w-id="bdd489b8-8031-113b-2ffa-b5e1c5758ce0"
-                      href="/features"
-                      className="menu-link w-inline-block"
-                    >
-                      <div
-                        className="menu-link-text"
-                        style={{
-                          transform:
-                            "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      >
-                        商業攝影
-                      </div>
-                      <img
-                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                        loading="lazy"
-                        alt=""
-                        className="icon is-menu-link-icon"
-                      />
-                    </a>
-                    <a
-                      data-w-id="03e10da9-d56b-f42b-a87a-0d5fd44d5e75"
-                      href="/about"
-                      className="menu-link w-inline-block"
-                    >
-                      <div
-                        className="menu-link-text"
-                        style={{
-                          transform:
-                            "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      >
-                        企業形象網站
-                      </div>
-                      <img
-                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                        loading="lazy"
-                        alt=""
-                        className="icon is-menu-link-icon"
-                      />
-                    </a>
-                    <a
-                      data-w-id="4f963323-4aa1-e2d1-d1f7-b679d51590a7"
-                      href="/journal"
-                      className="menu-link w-inline-block"
-                    >
-                      <div
-                        className="menu-link-text"
-                        style={{
-                          transform:
-                            "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      >
-                        網站SEO
-                      </div>
-                      <img
-                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
-                        loading="lazy"
-                        alt=""
-                        className="icon is-menu-link-icon"
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div
-                  data-w-id="b1ec2d20-05dc-077d-da18-86120beceaae"
-                  className="close-button"
-                  style={{ opacity: 0 }}
-                >
-                  <img
-                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/6697fb309b7a20920ffdcdb1_close_24dp_181720_FILL0_wght500_GRAD0_opsz24.svg"
-                    loading="lazy"
-                    alt=""
-                    className="close-button-icon"
-                    style={{}}
-                  />
-                  <div className="menu-close-text">Close</div>
-                </div>
-                <div
-                  className="menu-background-color"
-                  style={{
-                    transform:
-                      "translate3d(0px, -101%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                    transformStyle: "preserve-3d",
-                  }}
-                />
-                <div className="menu-delay-for-animations" />
-              </div>
-            </div>
-
             <main className="main">
               <div className="home-hero">
                 <div className="home-hero-content">
@@ -304,7 +53,14 @@ export default function Blog() {
                       </div>
                       <p className="eyebrow-hero-text">design agency</p>
                     </div>
-                    <h1
+                    <TextMask />
+                    <a
+                      href="/"
+                      className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
+                    >
+                      個人工作室｜私人接案 - 花費小預算，增加大收益
+                    </a>
+                    {/* <h1
                       data-w-id="b3a43e50-789b-2236-6fea-b72c39d21870"
                       style={{
                         transform:
@@ -316,9 +72,7 @@ export default function Blog() {
                     >
                       極客網頁設計<br></br>JEEK WEB DESIGN
                     </h1>
-                    <a href="/" className="text-[#242424] text-[22px]">
-                      個人工作室｜私人接案者 - 花費小預算，增加大收益
-                    </a>
+                     */}
                     <div
                       data-w-id="b3a43e50-789b-2236-6fea-b72c39d21884"
                       style={{
@@ -580,12 +334,18 @@ export default function Blog() {
                     <div id="w-node-_0d97e7f2-7677-0103-d394-d8b1b529b132-c41abecd">
                       <div className="eyebrow-block">
                         <div className="icon-block">
-                          <img
+                          <Image
+                            src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
+                            width={800}
+                            height={500}
+                            loader={imageLoader}
+                          />
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6388edb8aa4cb4391_asterisk_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="icon is-eyebrow-icon"
-                          />
+                          /> */}
                         </div>
                         <p className="eyebrow-text">What we do</p>
                       </div>
@@ -596,19 +356,38 @@ export default function Blog() {
                     >
                       <div className="service-image">
                         <div className="reveal-image-trigger">
-                          <img
+                          <Image
+                            src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
+                            width={800}
+                            height={800}
+                            loader={imageLoader}
+                          />
+                          {/* <img
                             loading="lazy"
                             alt="Person use tech gadget"
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3.webp"
+                            src=""
                             sizes="(max-width: 479px) 128.6328125px, (max-width: 767px) 153.43238830566406px, (max-width: 991px) 21vw, (max-width: 1439px) 50vw, (max-width: 1919px) 754.1220703125px, 42vw"
-                            srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3-p-1600.webp 1600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3-p-2000.webp 2000w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3-p-2600.webp 2600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3.webp 2912w"
+                            srcSet=""
                             className="cover-image"
                             style={{
                               transform:
                                 "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                               transformStyle: "preserve-3d",
                             }}
-                          />
+                          /> */}
+                          {/* <img
+                            loading="lazy"
+                            alt="Person use tech gadget"
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668e6aca4fb399ee1389df93_stada-img-3.webp"
+                            sizes="(max-width: 479px) 128.6328125px, (max-width: 767px) 153.43238830566406px, (max-width: 991px) 21vw, (max-width: 1439px) 50vw, (max-width: 1919px) 754.1220703125px, 42vw"
+                            srcSet=""
+                            className="cover-image"
+                            style={{
+                              transform:
+                                "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                              transformStyle: "preserve-3d",
+                            }}
+                          /> */}
                           <div
                             className="bg-for-animation"
                             style={{ display: "block" }}
@@ -720,7 +499,7 @@ export default function Blog() {
                           <img
                             loading="lazy"
                             alt="Portrait of the team"
-                            src="https://kinsta.com/wp-content/uploads/2020/01/pingdom-tools-1.png"
+                            src="https://www.handz.design/assets/images/image22.jpg?v=02f8e9b2"
                             sizes="(max-width: 479px) 154.6390380859375px, (max-width: 767px) 35vw, (max-width: 991px) 26vw, (max-width: 1439px) 50vw, (max-width: 1919px) 50vw, 50vw"
                             className="cover-image"
                             style={{
@@ -843,11 +622,18 @@ export default function Blog() {
                             />
                           </div>
                           <p className="card-paragraph">
-                            <img
+                            <Image
+                              className="mb-4"
+                              src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
+                              width={800}
+                              height={800}
+                              loader={imageLoader}
+                            />
+                            {/* <img
                               className="w-full my-3 rounded-2xl mx-auto"
                               src="https://blog-cdn.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/2024/08/How-Do-Lottie-Animations-Help-with-SEO_.png"
                               alt=""
-                            />
+                            /> */}
                             <br></br>
                             <strong>
                               根據Google的數據，超過90%的消費者會使用搜索引擎來查找產品和服務。如果你的企業能夠在搜索結果中獲得較高的曝光率，潛在客戶就更容易記住你的品牌，從而提高品牌知名度。
@@ -957,7 +743,7 @@ export default function Blog() {
                                 <img
                                   loading="lazy"
                                   alt=""
-                                  src=""
+                                  src="https://www.ultraehp.com/images/test-portfolio/6697d9dae472fdc9bf452bfc_stada-img-n-9.png"
                                   className="cover-image"
                                   style={{
                                     transform:
@@ -1024,7 +810,7 @@ export default function Blog() {
                                 <img
                                   loading="lazy"
                                   alt=""
-                                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15.webp"
+                                  src="https://www.ultraehp.com/images/test-portfolio/668e6aca4fb399ee1389df93_stada-img-3-p-1600.webp"
                                   className="cover-image"
                                   style={{
                                     transform:
@@ -1356,7 +1142,7 @@ export default function Blog() {
             </main>
           </div>
         </div>
-      </Inner>
+      </>
     </div>
   );
 }

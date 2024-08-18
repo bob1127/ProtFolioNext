@@ -1,10 +1,17 @@
 // import Seo from '@/components/Seo';
 // "use client"
 // import CustomLink from '@/components/CustomLink';
-import Inner from "../components/Inner/index.jsx";
+// import Inner from "../components/Inner/index.jsx";
 import Marquee from "react-fast-marquee";
 import DragCarousel from "../components/DragCarousel/index.jsx";
+import styles from "../styles/Home.module.css";
+import Text3d from "../components/PerspectiveText/index.jsx";
+import CatoonCursor from "../components/CartoonCursor/page.jsx";
+import { useRef, useEffect } from "react";
 // import PhysicsAnimation from '../components/PhysicsAnimation/PhysicsAnimation.jsx';
+import Head from "next/head";
+import Script from "next/script.js";
+import Image from "next/image.js";
 import dynamic from "next/dynamic";
 // import SlickCarousel from "../components/SlickCarousel/index.jsx";
 import Link from "next/link";
@@ -15,6 +22,14 @@ import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
 // import Slider from '../components/Slider/slider.jsx';
 import MenuToggle from "../components/MenuToggle/index.jsx";
 import Trackeye from "../components/Trackeye/page.jsx";
+import { imageConfigDefault } from "next/dist/shared/lib/image-config.js";
+
+const imageLoader = ({ src, width, quality }) => {
+  return `https://www.ultraehp.com/images/test-portfolio/${src}?w=${width}&q=${
+    quality || 75
+  }`;
+};
+
 // import BannerCarousel from '../components/BannerCarousel/App.jsx';
 // import reportWebVitals from '../components/reportWebVitals.js';
 
@@ -25,11 +40,21 @@ import Trackeye from "../components/Trackeye/page.jsx";
 //   { ssr: false }
 // );
 export default function Home() {
+  const plane = useRef(null);
+  const maxRotate = 45;
+
+  const manageMouseMove = (e) => {
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+    const perspective = window.innerWidth * 4;
+    const rotateX = maxRotate * x - maxRotate / 2;
+    const rotateY = (maxRotate * y - maxRotate / 2) * -1;
+    plane.current.style.transform = `perspective(${perspective}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg)`;
+  };
+
   return (
     <div className="">
-      <MenuToggle />
-
-      <Inner backgroundColor={"#B0AD98"}>
+      <>
         <div className="Hero-secrion   border-1 border-black ">
           <div className="wrap flex flex-col  lg:flex-row">
             <div className="hero-left overflow-hidden mt-[38px] border border-blac relative w-full lg:w-[65%]">
@@ -82,11 +107,7 @@ CREACTIVEs</h1>
               </div>
             </div>
             <div className="hero-middle border border-black w-full lg:w-[20%] p-[50px] flex  justify-center relative flex-col items-center pt-[50px] border-1 ">
-              <h2 className="text-[20px] text-bold">
-                創意無限，設計未來 創意無限，
-                <br />
-                設計未來
-              </h2>
+              <h2 className="text-[27px] text-bold">創意無限，設計未來</h2>
               <br />
             </div>
             <div className="hero-right p-[50px] border-1 border-black border pt-[50px] flex flex-col  w-full lg:w-[15%]">
@@ -101,15 +122,20 @@ CREACTIVEs</h1>
         </div>
 
         <section className="section_second border border-black flex flex-col lg:flex-row">
-          <div className="left p-[100px] w-full lg:w-1/2 border-r-2 border-black">
+          <div className="left pl-[50px] py-[22px] w-full lg:w-1/2 border-r-2 border-black">
             <div>
-              <h2 className="text-[40px] lg:text-[80px] flex justify-center  leading-[80px] w-full lg:w-2/3 pt-0 lg:pt-[100px] items-center">
-                WHAT’S Design in Life
-              </h2>
-              <div className="flex flex-row ">
-                <p>網站案例｜</p>
-                <p>合作案例｜</p>
-                <p>合作案例｜</p>
+              <div
+                onMouseMove={(e) => {
+                  manageMouseMove(e);
+                }}
+                className={styles.container}
+              >
+                <div ref={plane} className={styles.body}>
+                  <Text3d primary={"3D 視覺網站"} secondary={"3D 視覺網站"} />
+                  <Text3d primary={"客製化網站"} secondary={"客製化網站"} />
+                  <Text3d primary={"商業攝影"} secondary={"商業攝影"} />
+                  <Text3d primary={"SEO行銷"} secondary={"SEO行銷"} />
+                </div>
               </div>
             </div>
           </div>
@@ -142,14 +168,38 @@ CREACTIVEs</h1>
                 我們致力於將最具創意的想法轉化為現實，通過尖端技
                 術提供卓越的數字體驗。
               </p>
+
+              <div className="img-wrap">
+                <div className="img"></div>
+                <div className="img w-1/2 h-full border-1 border-black">
+                  {/* <Image
+                    loader={imageLoader}
+                    className="border-2 border-black"
+                    src="/668e6aca4fb399ee1389df93_stada-img-3-p-1600.png "
+                    alt=""
+                    loading="lazy"
+                    width={800}
+                    height={600}
+                  /> */}
+                  {/* <div className="txt">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Expedita perspiciatis in accusamus odit consequuntur et,
+                      molestias totam tenetur dolorem! Facilis suscipit
+                      laudantium aliquid sint magni consectetur in, ratione
+                      optio possimus!
+                    </p>
+                  </div> */}
+                </div>
+              </div>
             </div>
           </div>
         </section>
         {/* <SmoothParallaxScroll /> */}
-        <section className="section_second border border-black flex flex-col lg:flex-row">
-          <div className="left p-[100px] w-full lg:w-1/2 border-r-2 border-black">
+        <section className="section_second bg-green-400 border border-black flex flex-col lg:flex-row">
+          <div className="left p-[60px] xl:p-[100px] w-full lg:w-1/2 border-r-2 border-black">
             <div>
-              <h2 className="text-[40px] lg:text-[80px] flex justify-center  leading-[80px] w-full lg:w-2/3 pt-0 lg:pt-[100px] items-center">
+              <h2 className="text-[40px] lg:text-[80px] flex justify-center   leading-[80px] w-full lg:w-4/5 pt-0 lg:pt-[100px] items-center">
                 WHAT’S Design in Life
               </h2>
               <div className="flex flex-row ">
@@ -179,7 +229,7 @@ CREACTIVEs</h1>
                 無論您是需要全新網站設計、網站重構或是數位行銷策略，我們都能提供一站式的解決方案。期待與您合作，共同創造出色的線上體驗！
               </p>
             </div>
-            <div className="bottom  flex py-[50px] lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
+            <div className="bottom  bg-white flex py-[50px] lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h4 className=" text-[22px] text-light">
                 <span></span>創意驅動，技術為本<span></span>
               </h4>
@@ -187,6 +237,80 @@ CREACTIVEs</h1>
                 我們相信創意是設計的核心，技術是實現創意的橋樑。
                 我們致力於將最具創意的想法轉化為現實，通過尖端技
                 術提供卓越的數字體驗。
+              </p>
+            </div>
+            <div className="wrap h-auto flex">
+              <div className="img overflow-hidden  w-full border-2 border-black relative ">
+                {/* <div className="img-cover hidden absolute z-2 top-0 left-0 w-full  h-full bg-green-500">
+                  <p className="text-white flex justify-center items-center text-[16px]">
+                    title
+                  </p>
+                </div> */}
+                <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
+                  <p className="text-white  text-[22px] text-center">
+                    3d-model
+                  </p>
+                </div>
+                <Image
+                  src="/668e6aca4fb399ee1389df93_stada-img-3-p-1600.png"
+                  className="  duration-500 hover:scale-105 z-1 top-0 left-0"
+                  loaging="lazy"
+                  width={800}
+                  height={400}
+                  loader={imageLoader}
+                />
+              </div>
+              <div className="img"></div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3">
+            <div className="border-2 overflow-hidden border-black w-full relative">
+              <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
+                <p className="text-white  text-[22px] text-center">3d-model</p>
+              </div>
+              <Image
+                className="hover:scale-105 duration-500"
+                width={800}
+                src="/6697d9dae472fdc9bf452bfc_stada-img-n-9.png"
+                loading="lazy"
+                loader={imageLoader}
+                height={500}
+              />
+            </div>
+            <div className="border-2 overflow-hidden border-black w-full relative">
+              <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
+                <p className="text-white  text-[22px] text-center">3d-model</p>
+              </div>
+              <Image
+                className="hover:scale-105 duration-500"
+                width={800}
+                src="/669655bf3caaa06f871273e4_stada-img-n-15.png"
+                loading="lazy"
+                loader={imageLoader}
+                height={500}
+              />{" "}
+            </div>
+            <div className="border-2 overflow-hidden border-black relative w-full ">
+              <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
+                <p className="text-white  text-[22px] text-center">3d-model</p>
+              </div>
+              <Image
+                className="hover:scale-105 duration-500"
+                width={800}
+                src="/6697db71df85f60ba51311ba_stada-img-n-3.png"
+                loading="lazy"
+                loader={imageLoader}
+                height={500}
+              />
+            </div>
+
+            <div className="border-2 flex flex-col justify-center items-center  p-5  xl:hidden">
+              <h4>網頁設計</h4>
+              <p className="text-[14px] w-2/3 text-center ">
+                {" "}
+                您的品牌在數位世界中大放異彩！我們專業的網頁設計團隊為您打造獨特且具吸引力的網站，提升用戶體驗，促進業務增長。立即聯絡我們，開啟您的數位成功之旅！
               </p>
             </div>
           </div>
@@ -211,13 +335,17 @@ CREACTIVEs</h1>
           <div className="top"></div>
           <div className="bottom">{/* <PhysicsAnimation /> */}</div>
         </section>
+        <CatoonCursor />
+        <footer>
+          <h2 className="text-white">lorem</h2>
+        </footer>
         {/* <section className="border-2 relative border-black h-80vh">
           <PhysicsAnimationApp />
         </section> */}
 
         {/* <Slider/> */}
         {/* <CarouselImg/> */}
-      </Inner>
+      </>
     </div>
   );
 }

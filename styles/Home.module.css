@@ -1,0 +1,73 @@
+.container {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform-style: preserve-3d;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+@media only screen and (max-width: 1200px) {
+   .body{
+  
+  position: relative !important;
+ 
+}
+.container {
+ padding:0;
+}
+}
+
+.textContainer{
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.textContainer p{
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0px;
+  transition: all 0.4s;
+  color: rgb(25, 25, 25);
+  line-height: 8s0px;
+}
+@media only screen and (max-width: 1200px) {
+ .textContainer p{
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px;
+  transition: all 0.4s;
+  color: rgb(25, 25, 25);
+  line-height: 50px;
+}
+}
+
+.textContainer .secondary{
+  transform: rotateX(-90deg) translateY(3.5vw);
+  transform-origin: bottom center;
+  position: absolute;
+  top: 0;
+  color: black;
+  opacity: 0;
+}
+
+.textContainer:hover{
+  transform: rotateX(90deg);
+}
+
+.textContainer:hover .secondary{
+  opacity: 1;
+}
+
+.textContainer:hover .primary{
+  transform: translateY(-100%);
+  opacity: 0;
+}
+

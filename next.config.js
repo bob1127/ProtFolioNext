@@ -11,6 +11,7 @@ module.exports = {
 
   images: {
     domains: [
+      'www.ultraehp.com',
 
       'www.zensor.com.tw',
     
