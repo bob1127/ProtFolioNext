@@ -7,7 +7,7 @@
 
 export default function Index() {
   return (
-    <div className="">
+    <div className="z-[99999999999] relative">
       <div className="fullscreen-menu" style={{ display: "none" }}>
         <div className="menu-layout">
           <div className="menu-socials" style={{ opacity: 0 }}>
@@ -118,7 +118,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="9119eb55-b515-23ab-3ca6-d7a893b67ca0"
-                href="www.zensorrd.com"
+                href="/"
                 className="menu-link w-inline-block"
               >
                 <div
@@ -140,7 +140,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="bdd489b8-8031-113b-2ffa-b5e1c5758ce0"
-                href="/features"
+                href="/"
                 className="menu-link w-inline-block"
               >
                 <div
@@ -420,22 +420,22 @@ export default function Index() {
                 <div className="nav-text">Home</div>
               </a>
               <link rel="prefetch" href="/" /> */}
-              <a href="/services" className="nav-link-block w-inline-block">
+              <a href="/about-3" className="nav-link-block ">
                 <div className="nav-text">價格方案</div>
               </a>
-              <link rel="prefetch" href="/services" />
-              <a href="/features" className="nav-link-block w-inline-block">
+              {/* <link rel="prefetch" href="/services" /> */}
+              <a href="/about-3" className="nav-link-block ">
                 <div className="nav-text">客戶案例</div>
               </a>
-              <link rel="prefetch" href="/features" />
-              <a href="/about" className="nav-link-block w-inline-block">
+              {/* <link rel="prefetch" href="/features" /> */}
+              <a href="/about" className="nav-link-block ">
                 <div className="nav-text">關於極客</div>
               </a>
-              <link rel="prefetch" href="/about" />
+              {/* <link rel="prefetch" href="/about" /> */}
               <a href="/journal" className="nav-link-block w-inline-block">
                 <div className="nav-text">Journal</div>
               </a>
-              <a
+              {/* <a
                 href="/store"
                 aria-current="page"
                 className="nav-link-block w-inline-block w--current"
@@ -444,7 +444,7 @@ export default function Index() {
               </a>
               <a href="/contact" className="nav-link-block w-inline-block">
                 <div className="nav-text">Contact</div>
-              </a>
+              </a> */}
             </div>
           </div>
           <div
@@ -555,7 +555,7 @@ quickCheckoutEnabled
             data-wf-page-link-href-prefix=""
             className="w-commerce-commercecartwrapper cart"
           >
-            <a
+            {/* <a
               href="#"
               data-node-type="commerce-cart-open-link"
               aria-haspopup="dialog"
@@ -577,7 +577,7 @@ quickCheckoutEnabled
                   9
                 </div>
               </div>
-            </a>
+            </a> */}
             <div
               data-node-type="commerce-cart-container-wrapper"
               style={{ display: "none" }}

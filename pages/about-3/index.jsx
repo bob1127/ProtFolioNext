@@ -8,20 +8,30 @@ import {
   TableCell,
   getKeyValue,
 } from "@nextui-org/react";
-
+import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
 import SpringModal from "../../components/SpringModal/page.jsx";
+import SwiperScroll from "../../components/SwiperScroll/page.jsx";
 import { useState, useEffect } from "react";
 import Link from "next/link.js";
 import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
-
+import Image from "next/image.js";
 export default function Blog() {
   //compare table
-
+  const imageLoader = ({ src, width, quality }) => {
+    return `https://www.clipartmax.com/png/small/${src}?w=${width}&q=${
+      quality || 75
+    }`;
+  };
+  const imageLoader02 = ({ src, width, quality }) => {
+    return `https://cdn.prod.website-files.com/65961828f21f96309de14a8f/${src}?w=${width}&q=${
+      quality || 75
+    }`;
+  };
   const rows = [
     {
       key: "1",
@@ -88,6 +98,132 @@ export default function Blog() {
       <div>
         <div id="webpage" className="page-wrapper">
           <main className="main">
+            <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
+              <div className="container duration-500  bg-green-400  border-4 border-green-500 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
+                <div className="sign flex py-2 sm:py-[40px] justify-center">
+                  <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
+                    💡致力於開發使用者體驗良好的網站
+                  </div>
+                </div>
+                <div className="title "></div>
+                <main className="h-full w-full relative ">
+                  <div className="z-[99999]   w-full h-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 main-title absolute">
+                    <h1 className="block sm:hidden tex-[32px] md:text-[45px] lg:text-[60px] xl:text-[80px] font-black text-center  leading-[40px] xl:leading-[80px]">
+                      WEBSITE DESIGN - JEEK
+                    </h1>
+                    <RevealLinks />
+
+                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-extrabold p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-black mx-auto">
+                      HELLO！Jeek
+                      是一個網頁接案者創立的一個小小工作室，專注於幫助中小企業、餐飲業與美容業打造專屬網站的設計公司。我們相信，每個企業都有自己的風格和故事，而這些都應該在網站上得到最佳展現。不僅如此，我們還會特別注重網站的SEO優化，讓您的網站在搜尋引擎上更容易被找到，從而提升曝光度，吸引更多潛在客戶，最終增加收益。
+                    </div>
+                  </div>
+                  <div className="box01  hidden lg:block z-1 top-[100px] absolute left-[-260px] border border-black">
+                    <img
+                      className="w-[500px]"
+                      src="https://cdn.prod.website-files.com/669e85bc7c10a1b210e2fcd6/66abf8b62e53dbfa5fc2e5a0_hero-video-optimized.avif"
+                      alt=""
+                    />
+                    <img
+                      className="w-[260px] ml-[290px] mt-[40px]"
+                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="box02 hidden lg:block absolute top-[220px] right-[-200px]">
+                    <img
+                      className="w-[260px] mt-[-170px] ml-[190px]"
+                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
+                      alt=""
+                    />
+                    <img
+                      className="w-[400px]"
+                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/64575947bc71a0cf995a7b34_JEubAaiocBrAyYwOH51Q-ctbfZTy_wnJ_BaDpn7swZc.jpeg"
+                      alt=""
+                    />
+                  </div>
+                </main>
+              </div>
+            </section>
+            <section className="discount px-[10px] md:px-[70px] pt-[30px] md:pt-[50px] py-0 lg:py-6 ">
+              <div className=" w-full flex flex-col lg:flex-row justify-around">
+                <div className="bg-white mr-2 w-full lg:w-1/2 border-4 border-gray-800 mt-3  relative rounded-2xl ">
+                  <div className="top py-8">
+                    <Marquee>
+                      <div className="flex">
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                      </div>
+                    </Marquee>
+                  </div>
+                  <div className="content flex py-10 justify-center  px-10 items-center">
+                    <h2 className="text-center py-10">
+                      初期草創階段，只要選擇任何方案內容 即送形象影片拍攝
+                    </h2>
+                  </div>
+                  <a href="" className="absolute bottom-0 left-0 w-full">
+                    <div className="bottom  px-4 hover:py-10 duration-300  bg-gray-800 py-5 text-white ">
+                      立刻選擇您的方案 <span className="text-white">↘︎</span>
+                    </div>
+                  </a>
+                </div>
+                <div className="bg-white mt-3  w-full lg:w-1/2 border-4 border-gray-800  rounded-2xl ">
+                  <div className="top py-8">
+                    <Marquee>
+                      <div className="flex">
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                        <p className="text-[45px] font-bold mx-4">NEWS!</p>
+                      </div>
+                    </Marquee>
+                  </div>
+                  <div className="content flex py-10 justify-center flex-col items-center">
+                    <div className="flex items-center flex-col justify-center">
+                      <h4 className="text-[40px] font-light text-black">
+                        免費基本SEO 優化
+                      </h4>
+                      <p className="w-4/5 text-center text-[20px] mt-3">
+                        SEO
+                        優化能提升網站可見性，增加搜尋引擎排名，吸引更多自然流量。
+                      </p>
+                    </div>
+                    <Image
+                      loader={imageLoader02}
+                      width={700}
+                      height={700}
+                      loading="lazy"
+                      placeholder="empty"
+                      src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
             <div className="about-hero m-0 p-0">
               <div className="container">
                 <div className="about-hero-content">
@@ -118,7 +254,7 @@ export default function Blog() {
                       了解更多
                     </a>
                   </div>
-                  <RevealLinks />
+
                   <div className="about-hero-line" />
                   <div className="about-hero-content-grid">
                     <div
@@ -136,63 +272,14 @@ export default function Blog() {
               </div>
             </div>
 
-            <section className="Hero-title p-6 h-[100vh]">
-              <div className="container border-2 border-green-500 overflow-hidden h-[95vh] flex justify-start flex-col items-center">
-                <div className="sign flex py-[40px] justify-center">
-                  <div className="border flex justify-center items-center border-gray-500 rounded-[30px] w-full px-8 py-3">
-                    致力於開發使用者體驗良好的網站
-                  </div>
-                </div>
-                <div className="title "></div>
-                <main>
-                  <div className="z-[99999] main-title static">
-                    <h1 className="text-[80px] text-center">WEBSITE DESIGN</h1>
-                    <h1 className="text-[80px] text-center leading-normal">
-                      BUILD FAST
-                    </h1>
-                    <p className="w-[400px] text-center mx-auto">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Commodi ducimus sequi a nobis reprehenderit! Architecto
-                      facilis, fugit eius mollitia ducimus saepe repudiandae
-                      perferendis! Ex doloribus inventore, facere eos delectus
-                      officia!
-                    </p>
-                  </div>
-                  <div className="box01  z-1 top-[200px] absolute left-[-160px] border border-black">
-                    <img
-                      className="w-[500px]"
-                      src="https://cdn.prod.website-files.com/669e85bc7c10a1b210e2fcd6/66abf8b62e53dbfa5fc2e5a0_hero-video-optimized.avif"
-                      alt=""
-                    />
-                    <img
-                      className="w-[260px] ml-[290px] mt-[40px]"
-                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="box02 absolute right-[-100px]">
-                    <img
-                      className="w-[260px] mt-[-370px] ml-[190px] mb-[40px]"
-                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
-                      alt=""
-                    />
-                    <img
-                      className="w-[500px]"
-                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/64575947bc71a0cf995a7b34_JEubAaiocBrAyYwOH51Q-ctbfZTy_wnJ_BaDpn7swZc.jpeg"
-                      alt=""
-                    />
-                  </div>
-                </main>
-              </div>
-            </section>
-            <section id="explore" className="section with-borders">
+            <section id="explore" className="section with-borders hidden">
               <section className="section is-3d-content-section">
                 <div className="container">
                   <div className="_3d-content-padding">
                     <div className="_3d-block" style={{}}>
                       <div className="_3d-content-image" style={{}}>
                         <div className="reveal-image-trigger">
-                          <img
+                          {/* <img
                             loading="lazy"
                             alt="Portrait of the team"
                             src=""
@@ -202,7 +289,7 @@ export default function Blog() {
                                 "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                               transformStyle: "preserve-3d",
                             }}
-                          />
+                          /> */}
                           <div
                             className="bg-for-animation"
                             style={{ display: "block" }}
@@ -237,7 +324,7 @@ export default function Blog() {
                 </div>
               </section>
             </section>
-            <section id="logos" className="section with-borders">
+            {/* <section id="logos" className="section with-borders">
               <div className="padding small-paddings">
                 <div
                   data-w-id="e8ad4759-879f-965a-e711-3a6051ba16a9"
@@ -329,7 +416,35 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-            </section>
+            </section> */}
+            <Marquee>
+              <div className=" bg-black flex w-[100vw] w-full py-[40px]">
+                <div className="text-[60px] mx-5  text-white font-black">
+                  SEO
+                </div>
+                <div className="text-[60px] mx-5  text-white font-black">
+                  WEBSITE
+                </div>
+                <div className="text-[60px] mx-5  text-white font-black">
+                  MARKETING
+                </div>
+                <div className="text-[60px] mx-5  text-white font-black">
+                  PHOTOGRAPHY
+                </div>
+                <div className="text-[60px] mx-5  text-white font-black">
+                  STAGE
+                </div>
+                <div className="text-[60px] mx-5  text-white font-black">
+                  STAGE
+                </div>
+                <div className="text-[60px] mx-5  text-white font-black">
+                  STAGE
+                </div>
+                <div className="text-[60px] mx-5  text-white font-black">
+                  STAGE
+                </div>
+              </div>
+            </Marquee>
             <section className="section">
               <div className="container">
                 <div className="padding">
@@ -338,17 +453,37 @@ export default function Blog() {
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
                       className="about-grid-content"
                     >
-                      <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">Our journey</p>
-                      </div>
                       <h2 className="heading is-medium-title">
-                        "溝通無障礙 更加快速變ㄓㄧㄝ"
+                        "不要再認為自己的品牌做網頁行銷很花錢了！"
                       </h2>
-                      <p className="paragraph">
-                        這些slogan強調了設計的創新性、專業性以及對客戶品牌的提升效果，應該能夠很好地傳達你的品牌價值。
+                      <p className=" text-[16px] leading-normal text-left ">
+                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
+                        <br></br> <br></br>
+                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過網站設計和SEO優化，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
                       </p>
+                      <a
+                        href="/"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            案例sample
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          />
+                        </div>
+                      </a>
                     </div>
+
                     <div
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
                       className="about-grid-image"
@@ -399,34 +534,51 @@ export default function Blog() {
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
                       className="about-grid-content"
                     >
-                      <div className="text-dot-block">
+                      {/* <div className="text-dot-block">
                         <div className="dot" />
                         <p className="paragraph">網頁設計</p>
-                      </div>
+                      </div> */}
                       <h2 className="heading is-medium-title">
                         "個人接案，彈性更高，效率更高"
                       </h2>
                       <div className="flex items-start flex-col ">
-                        <p className="text-left leading-normal mt-3">
-                          -
-                          通常比大型設計公司價格更具競爭力，適合預算有限的小型企業或初創公司。
-                        </p>
-                        <p className="text-left mt-3">
-                          -
-                          能提供量身訂做的解決方案，更能符合客戶的需求和品牌形象。
-                        </p>
-                        <p className="text-left mt-3">
-                          - 與設計師直接溝通，減少中間環節，提高效率。
-                        </p>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">成本效益高</b>
+                          <p className="text-left leading-normal mt-3">
+                            -
+                            由於沒有大型團隊和高額管理費用，個人接案者能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">專注度高</b>
+                          <p className="text-left leading-normal mt-3">
+                            -
+                            個人接案者通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">靈活性強</b>
+                          <p className="text-left leading-normal mt-3">
+                            -
+                            作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">溝通便捷</b>
+                          <p className="text-left leading-normal mt-3">
+                            -
+                            您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
+                          </p>
+                        </div>
                       </div>
-                      <Link
+                      <a
                         href="/"
                         data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
                         className="button-wrapper w-inline-block"
                       >
                         <div className="button-layout">
                           <p href="/about" className="button-text" style={{}}>
-                            了解更多
+                            立即聯絡
                           </p>
                           <div className="button-bg" style={{}} />
                         </div>
@@ -439,7 +591,133 @@ export default function Blog() {
                             style={{}}
                           />
                         </div>
-                      </Link>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className="marketing ">
+              <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 mx-auto">
+                <h2 className="heading is-medium-title text-center">
+                  "對於增加網路曝光度，我該如何選擇我的行銷方式"
+                </h2>
+                <p className="w-full lg:w-2/3 mt-4  text-[14px] sm:text-[16px] lg:text-[20px] text-center mb-4 leading-normal">
+                  在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
+                </p>
+              </div>
+              <div className="Marketing-method px-[5vw] grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2  gap-3">
+                <div className="px-6 bg-white hover:bg-green-200 duration-200 delay-100 relative overflow-hidden group border-2 border-gray-800 rounded-[20px]">
+                  <div className="img absolute bottom-[130px] right-[-100px] group-hover:right-[30px] opacity-0 duration-300 group-hover:opacity-100 z-[999]">
+                    <Image
+                      loader={imageLoader}
+                      width={80}
+                      height={80}
+                      src="137-1375168_instagram-logo-free-social-media-icons-flaticon-instagram-logo-png.png"
+                      loading="lazy"
+                      placeholder="empty"
+                    />
+                  </div>
+                  <div className="text  mt-[30px] group-hover:mt-[0px] duration-300 scale-100 group-hover:scale-90  flex flex-col items-center ">
+                    <h3 className="text-[30px] font-semibold">社交媒體行銷</h3>
+                    <b className="text-[18px]  text-center leading-normal">
+                      通過平台如Facebook、Instagram、LinkedIn和Twitter進行品牌宣傳和互動。
+                    </b>
+                    <div>
+                      <p className="text-[16px] mt-4">
+                        <b>優點：</b>
+                        高互動性，適合建立品牌形象和與客戶建立關係。
+                      </p>
+                      <p className="text-[16px] mt-4">
+                        <b>優點：</b>
+                        高互動性，適合建立品牌形象和與客戶建立關係。
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative  overflow-hidden">
+                    <div className="img-wrap rounded-2xl overflow-hidden">
+                      <iframe
+                        src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
+                        frameborder="0"
+                        width="100%"
+                        height="240px"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div className="px-6 bg-white hover:bg-yellow-200 duration-200 delay-100 relative overflow-hidden group border-2 border-gray-800 rounded-[20px]">
+                  <div className="img absolute bottom-[130px] right-[-100px] group-hover:right-[30px] opacity-0 duration-300 group-hover:opacity-100 z-[999]">
+                    <Image
+                      loader={imageLoader}
+                      width={80}
+                      height={80}
+                      src="137-1375168_instagram-logo-free-social-media-icons-flaticon-instagram-logo-png.png"
+                      loading="lazy"
+                      placeholder="empty"
+                    />
+                  </div>
+                  <div className="text  mt-[30px] group-hover:mt-[0px] duration-300 scale-100 group-hover:scale-90  flex flex-col items-center ">
+                    <h3 className="text-[30px] font-semibold">社交媒體行銷</h3>
+                    <b className="text-[18px]  text-center leading-normal">
+                      通過平台如Facebook、Instagram、LinkedIn和Twitter進行品牌宣傳和互動。
+                    </b>
+                    <div>
+                      <p className="text-[16px] mt-4">
+                        <b>優點：</b>
+                        高互動性，適合建立品牌形象和與客戶建立關係。
+                      </p>
+                      <p className="text-[16px] mt-4">
+                        <b>優點：</b>
+                        高互動性，適合建立品牌形象和與客戶建立關係。
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative  overflow-hidden">
+                    <div className="img-wrap rounded-2xl overflow-hidden">
+                      <iframe
+                        src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
+                        frameborder="0"
+                        width="100%"
+                        height="240px"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div className="px-6 bg-white hover:bg-rose-200 duration-200 delay-100 relative overflow-hidden group border-2 border-gray-800 py-6 rounded-[20px]">
+                  <div className="img absolute bottom-[130px] right-[-100px] group-hover:right-[30px] opacity-0 duration-300 group-hover:opacity-100 z-[999]">
+                    <Image
+                      loader={imageLoader}
+                      width={80}
+                      height={80}
+                      src="137-1375168_instagram-logo-free-social-media-icons-flaticon-instagram-logo-png.png"
+                      loading="lazy"
+                      placeholder="empty"
+                    />
+                  </div>
+                  <div className="text  mt-[30px] group-hover:mt-[0px] duration-300 scale-100 group-hover:scale-90  flex flex-col items-center ">
+                    <h3 className="text-[30px] font-semibold">社交媒體行銷</h3>
+                    <b className="text-[18px]  text-center leading-normal">
+                      通過平台如Facebook、Instagram、LinkedIn和Twitter進行品牌宣傳和互動。
+                    </b>
+                    <div>
+                      <p className="text-[16px] mt-4">
+                        <b>優點：</b>
+                        高互動性，適合建立品牌形象和與客戶建立關係。
+                      </p>
+                      <p className="text-[16px] mt-4">
+                        <b>優點：</b>
+                        高互動性，適合建立品牌形象和與客戶建立關係。
+                      </p>
+                    </div>
+                  </div>
+                  <div className="relative  overflow-hidden">
+                    <div className="img-wrap rounded-2xl overflow-hidden">
+                      <iframe
+                        src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
+                        frameborder="0"
+                        width="100%"
+                        height="240px"
+                      ></iframe>
                     </div>
                   </div>
                 </div>
@@ -645,10 +923,41 @@ export default function Blog() {
                         <p className="job-card-role">套版網站(NT.40000)</p>
                         <span>
                           <div style={{ margin: 0, padding: 0 }}>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
-                            <p className="plan-item">套版網站</p>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                現成模板選擇：
+                              </span>
+                              <p className="text-[16px]">
+                                從我們的模板庫中選擇符合需求的現成設計。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                基本功能配置：
+                              </span>
+                              <p className="text-[16px]">
+                                包括聯絡表單、基本 SEO 設置、社交媒體集成等。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                預設設計風格：
+                              </span>
+                              <p className="text-[16px]">
+                                根據選擇的模板風格進行色彩和圖片的調整。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                含首年年度維護與主機空間:
+                              </span>
+                              <p className="text-[16px]">
+                                根據選擇的模板風格進行色彩和圖片的調整。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              可依需求客製化功能
+                            </p>
                           </div>
                         </span>
                         {/* <div class="job-card-categories">
@@ -695,10 +1004,41 @@ export default function Blog() {
                         <p className="job-card-role">購物網站(NT.60000)</p>
                         <span>
                           <div style={{ margin: 0, padding: 0 }}>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
-                            <p className="plan-item">套版網站</p>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                電子商務功能：
+                              </span>
+                              <p className="text-[16px]">
+                                包括產品目錄、購物車、結帳系統和支付閘道集成。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                響應式設計：
+                              </span>
+                              <p className="text-[16px]">
+                                確保網站在各種設備上良好顯示，並支持移動設備購物。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                SEO 和行銷工具：
+                              </span>
+                              <p className="text-[16px]">
+                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                含首年年度維護與主機空間:
+                              </span>
+                              <p className="text-[16px]">
+                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              可依需求客製化功能
+                            </p>
                           </div>
                         </span>
                         {/* <div class="job-card-categories">
@@ -736,10 +1076,41 @@ export default function Blog() {
                         <p className="job-card-role">客製化網站(NT.80000)</p>
                         <span>
                           <div style={{ margin: 0, padding: 0 }}>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
-                            <p className="plan-item">套版網站</p>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
-                            <p className="plan-item">形象網站 ＋ ＳＥＯ 優化</p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                電子商務功能：
+                              </span>
+                              <p className="text-[16px]">
+                                包括產品目錄、購物車、結帳系統和支付閘道集成。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                響應式設計：
+                              </span>
+                              <p className="text-[16px]">
+                                確保網站在各種設備上良好顯示，並支持移動設備購物。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                SEO 和行銷工具：
+                              </span>
+                              <p className="text-[16px]">
+                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                含首年年度維護與主機空間:
+                              </span>
+                              <p className="text-[16px]">
+                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              可依需求客製化功能
+                            </p>
                           </div>
                         </span>
                         {/* <div class="job-card-categories">
@@ -780,7 +1151,26 @@ export default function Blog() {
                 </b>
               </div>
             </section>
-            <VanishList />
+            <section className="bg-gray-100  py-[70px] px-[20px] flex flex-col lg:flex-row">
+              <div className="w-full lg:w-1/2">
+                <div className="flex  flex-col  pl-10  mx-auto">
+                  <div className="title mb-6 w-full">
+                    <h2 className="text-[40px]  text-black font-extrabold">
+                      網頁設計流程
+                    </h2>
+                    <p className="text-[14px]">
+                      您可以跟我們溝通需求，並確認流程
+                    </p>
+                  </div>
+                  <div className="px-4">
+                    <SwiperScroll />
+                  </div>
+                </div>
+              </div>
+              <div className=" w-full lg:w-1/2">
+                <VanishList />
+              </div>
+            </section>
           </main>
         </div>
       </div>

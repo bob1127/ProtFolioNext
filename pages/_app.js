@@ -27,7 +27,7 @@ export default function MyApp({ Component, pageProps, router }) {
   }, []);
     return (
 
-      <>
+      <div className='bg-white'>
 
  <Script
         src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
@@ -284,6 +284,6 @@ export default function MyApp({ Component, pageProps, router }) {
             
             </div>
         </div>
-        </>
+        </div>
     );
 }

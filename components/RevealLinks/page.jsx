@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 
 export default function Index() {
   return (
-    <section className="grid place-content-center gap-2 bg-green-400 px-8 py-24 text-black">
-      <FlipLink href="#">WEB DESIGN</FlipLink>
-      <FlipLink href="#">SEO</FlipLink>
-      <FlipLink href="#">PHOTOGRSPHY</FlipLink>
-      <FlipLink href="#">MARKETING</FlipLink>
+    <section className="hidden sm:block px-8 py-5 text-black">
+      <FlipLink href="#">WEBSITE-DESIGN</FlipLink>
+
+      <FlipLink href="#">Sir JEEEK</FlipLink>
+      {/* <FlipLink href="#">PHOTOGRSPHY</FlipLink>
+      <FlipLink href="#">MARKETING</FlipLink> */}
     </section>
   );
 }
@@ -21,10 +22,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
-      style={{
-        lineHeight: 0.75,
-      }}
+      className="relative block overflow-hidden  text-[40px] md:text-[45px] lg:text-[60px] xl:text-[80px] font-black text-center leading-normal xl:leading-[80px]"
     >
       <div>
         {children.split("").map((l, i) => (

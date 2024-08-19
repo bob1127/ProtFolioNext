@@ -1,34 +1,20 @@
-import { AnimatePresence, useAnimate, usePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FiClock, FiPlus, FiTrash2 } from "react-icons/fi";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import TodoList from "./Todo"; // 引入新的 TodoList 組件
 
 export default function Home() {
   const [todos, setTodos] = useState([
-    {
-      id: 1,
-      text: "套版網站",
-      checked: false,
-      time: "5 mins",
-    },
-    {
-      id: 2,
-      text: "客製化網站",
-      checked: false,
-      time: "10 mins",
-    },
+    { id: 1, text: "套版網站", checked: false, time: "5 mins", price: 7000 },
+    { id: 2, text: "客製化網站", checked: false, time: "10 mins", price: 7000 },
     {
       id: 3,
       text: "Have existential crisis",
       checked: true,
       time: "12 hrs",
+      price: 0,
     },
-    {
-      id: 4,
-      text: "Get dog food",
-      checked: false,
-      time: "1 hrs",
-    },
+    { id: 4, text: "Get dog food", checked: false, time: "1 hrs", price: 0 },
   ]);
 
   const handleCheck = (id) => {
@@ -41,29 +27,36 @@ export default function Home() {
     setTodos((pv) => pv.filter((t) => t.id !== id));
   };
 
+  // Calculate the total price of all todos
+  const totalPrice = todos.reduce((sum, todo) => sum + todo.price, 0);
+
   return (
     <section className="min-h-screen relative py-24">
       <div className="mx-auto w-full max-w-xl px-4">
         <Header />
-        <Todos
+        <TodoList
           removeElement={removeElement}
           todos={todos}
           handleCheck={handleCheck}
         />
+        <div className="mt-6 rounded border border-zinc-700 bg-zinc-900 p-4 text-white">
+          <h2 className="text-lg font-medium">總金額</h2>
+          <p className="text-xl">NT.{totalPrice}</p>
+        </div>
       </div>
       <Form setTodos={setTodos} />
     </section>
   );
 }
 
-const Header = () => {
-  return (
-    <div className="mb-6">
-      <h1 className="text-xl font-medium text-white">Good morning! ☀️</h1>
-      <p className="text-black">請選擇你的需求</p>
-    </div>
-  );
-};
+const Header = () => (
+  <div className="mb-6">
+    <p className="text-black font-extrabold text-[30px]">
+      {" "}
+      "依您的需求 加購項目"
+    </p>
+  </div>
+);
 
 const Form = ({ setTodos }) => {
   const [visible, setVisible] = useState(false);
@@ -72,10 +65,21 @@ const Form = ({ setTodos }) => {
   const [unit, setUnit] = useState("mins");
 
   const taskOptions = [
-    "頁面優化 - 價格:NT.4000",
+    "頁面客製化/單純版面設計克制(一頁) - 價格:NT.4000",
     "套版網站 - 價格:NT.7000",
+    "套版網站 - 價格:NT.7000",
+    "活動/促銷 LandingPage(基本板型和功能，含基本seo)- 價格:NT.15000",
     "商品攝影 - 價格:NT.7000",
-    "基本seo行銷 - 價格:NT.7000",
+    "短影音(拍攝+剪輯) - 價格:NT.3000",
+    "企業形象影片(拍攝+剪輯) - 價格:NT.30000",
+    "影像後製(基本去背 1-10張) - 價格:NT.7000",
+    "影像後製(複雜後製 1-5張) - 價格:NT.7000",
+    "產品建模(簡易) - 價格:NT.4000",
+    "產品建模(複雜) - 價格:NT.8000",
+    "產品建模(簡易+交互功能或動畫) - 價格:NT.15000",
+    "產品建模(複雜+交互功能或動畫) - 價格:NT.20000",
+    "seo優化(網頁結構/meta標籤) - 價格:NT.7000",
+    "額外需求",
     "Banner設計- 價格:NT.7000",
   ]; // 限定的選項
 
@@ -84,12 +88,15 @@ const Form = ({ setTodos }) => {
       return;
     }
 
+    const selectedPrice = parseInt(selectedTask.split("NT.")[1], 10);
+
     setTodos((pv) => [
       {
         id: Math.random(),
-        text: selectedTask,
+        text: selectedTask.split(" - 價格:")[0],
         checked: false,
         time: `${time} ${unit}`,
+        price: selectedPrice,
       },
       ...pv,
     ]);
@@ -100,7 +107,7 @@ const Form = ({ setTodos }) => {
   };
 
   return (
-    <div className=" absolute bottom-4 border-white  w-full max-w-xl -translate-x-1/2 mx-auto  left-[50%]  px-4">
+    <div className="absolute bottom-4 border-white w-full max-w-xl -translate-x-1/2 mx-auto left-[50%] px-4">
       <AnimatePresence>
         {visible && (
           <motion.form
@@ -129,13 +136,13 @@ const Form = ({ setTodos }) => {
             </select>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-1.5">
-                <input
+                {/* <input
                   type="number"
                   className="w-24 rounded bg-zinc-700 px-1.5 py-1 text-sm text-zinc-50 focus:outline-0"
                   value={time}
-                  onChange={(e) => setTime(parseInt(e.target.value))}
-                />
-                <button
+                  onChange={(e) => setTime(parseInt(e.target.value, 10))}
+                /> */}
+                {/* <button
                   type="button"
                   onClick={() => setUnit("mins")}
                   className={`rounded px-1.5 py-1 text-xs ${
@@ -145,8 +152,8 @@ const Form = ({ setTodos }) => {
                   }`}
                 >
                   mins
-                </button>
-                <button
+                </button> */}
+                {/* <button
                   type="button"
                   onClick={() => setUnit("hrs")}
                   className={`rounded px-1.5 py-1 text-xs ${
@@ -156,7 +163,7 @@ const Form = ({ setTodos }) => {
                   }`}
                 >
                   hrs
-                </button>
+                </button> */}
               </div>
               <button
                 type="submit"
@@ -178,110 +185,6 @@ const Form = ({ setTodos }) => {
           }`}
         />
       </button>
-    </div>
-  );
-};
-
-const Todos = ({ todos, handleCheck, removeElement }) => {
-  return (
-    <div className="w-full space-y-3">
-      <AnimatePresence>
-        {todos.map((t) => (
-          <Todo
-            handleCheck={handleCheck}
-            removeElement={removeElement}
-            id={t.id}
-            key={t.id}
-            checked={t.checked}
-            time={t.time}
-          >
-            {t.text}
-          </Todo>
-        ))}
-      </AnimatePresence>
-    </div>
-  );
-};
-
-const Todo = ({ removeElement, handleCheck, id, children, checked, time }) => {
-  const [isPresent, safeToRemove] = usePresence();
-  const [scope, animate] = useAnimate();
-
-  useEffect(() => {
-    if (!isPresent) {
-      const exitAnimation = async () => {
-        animate(
-          "p",
-          {
-            color: checked ? "#6ee7b7" : "#fca5a5",
-          },
-          {
-            ease: "easeIn",
-            duration: 0.125,
-          }
-        );
-        await animate(
-          scope.current,
-          {
-            scale: 1.025,
-          },
-          {
-            ease: "easeIn",
-            duration: 0.125,
-          }
-        );
-
-        await animate(
-          scope.current,
-          {
-            opacity: 0,
-            x: checked ? 24 : -24,
-          },
-          {
-            delay: 0.75,
-          }
-        );
-        safeToRemove();
-      };
-
-      exitAnimation();
-    }
-  }, [isPresent]);
-
-  return (
-    <div>
-      <motion.div
-        ref={scope}
-        layout
-        className="relative flex w-full items-center gap-3 rounded border border-zinc-700 bg-zinc-900 p-3"
-      >
-        <input
-          type="checkbox"
-          checked={checked}
-          onChange={() => handleCheck(id)}
-          className="size-4 accent-indigo-400"
-        />
-
-        <p
-          className={`text-white transition-colors ${
-            checked && "text-zinc-400"
-          }`}
-        >
-          {children}
-        </p>
-        <div className="ml-auto flex gap-1.5">
-          <div className="flex items-center gap-1.5 whitespace-nowrap rounded bg-zinc-800 px-1.5 py-1 text-xs text-zinc-400">
-            <FiClock />
-            <span>{time}</span>
-          </div>
-          <button
-            onClick={() => removeElement(id)}
-            className="rounded bg-red-300/20 px-1.5 py-1 text-xs text-red-300 transition-colors hover:bg-red-600 hover:text-red-200"
-          >
-            <FiTrash2 />
-          </button>
-        </div>
-      </motion.div>
     </div>
   );
 };

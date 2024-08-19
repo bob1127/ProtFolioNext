@@ -4,6 +4,7 @@
 // import Inner from "../components/Inner/index.jsx";
 import Marquee from "react-fast-marquee";
 import DragCarousel from "../components/DragCarousel/index.jsx";
+import SwiperScroll from "../components/SwiperScroll/page.jsx";
 import styles from "../styles/Home.module.css";
 import Text3d from "../components/PerspectiveText/index.jsx";
 import CatoonCursor from "../components/CartoonCursor/page.jsx";
@@ -29,7 +30,16 @@ const imageLoader = ({ src, width, quality }) => {
     quality || 75
   }`;
 };
-
+const imageLoader01 = ({ src, width, quality }) => {
+  return `https://www.shutterstock.com/image-vector/${src}?w=${width}&q=${
+    quality || 75
+  }`;
+};
+const imageLoader02 = ({ src, width, quality }) => {
+  return `https://uploads-ssl.webflow.com/6147a6d56f14047ebc7a47bd/${src}?w=${width}&q=${
+    quality || 75
+  }`;
+};
 // import BannerCarousel from '../components/BannerCarousel/App.jsx';
 // import reportWebVitals from '../components/reportWebVitals.js';
 
@@ -195,6 +205,70 @@ CREACTIVEs</h1>
             </div>
           </div>
         </section>
+        <section className="RWD  border-t-2 border-b-2 border-l-2 border-black">
+          <div className="w-full flex-col items-center justify-center lg:flex-row flex">
+            <div className="w-full lg:w-1/2 border-r-2 border-black p-[25px] sm:p-[60px] lg:p-[70px] overflow-y-scroll">
+              <div className="txt">
+                <h2 className="">"提升SEO排名，響應式網頁設計（RWD）的力量"</h2>
+                <p>
+                  在現代網站設計中，響應式網頁設計（RWD）已成為不可或缺的標準。RWD不僅提升了用戶體驗，也對SEO排名起到了至關重要的作用。根據Google的數據和研究，RWD對於網站的搜尋引擎排名有著直接而深遠的影響。
+                </p>
+              </div>
+              <div className="img my-5">
+                <Image
+                  src="realistic-set-monitor-laptop-tablet-260nw-2430661189.jpg"
+                  loader={imageLoader01}
+                  loading="lazy"
+                  width={500}
+                  height={300}
+                />
+              </div>
+              <div className=" overflow-x-scroll w-full  ">
+                <div className="w-[1000px] 2xl:w-full grid grid-cols-4 2xl:grid-cols-2  gap-2">
+                  <div className="mt-5 border border-black  bg-white rounded-xl p-5">
+                    <b className="text-[20px] font-extrabold">
+                      1. 提升用戶體驗
+                    </b>
+                    <p className="mt-2">
+                      RWD提升瀏覽流暢性，減少跳出率，優化SEO排名。
+                    </p>
+                  </div>
+                  <div className="mt-5 border border-black bg-white rounded-xl p-5">
+                    <b className="text-[20px] font-extrabold">
+                      2. 確保網站速度
+                    </b>
+                    <p className="mt-2">
+                      響應式設計提高加載速度，改善用戶滿意度和SEO排名。
+                    </p>
+                  </div>
+                  <div className="mt-5 border border-black bg-white rounded-xl p-5">
+                    <b className="text-[20px] font-extrabold">3. 集中管理SEO</b>
+                    <p className="mt-2">
+                      單一URL結構簡化SEO，集中權重，提升搜尋排名。
+                    </p>
+                  </div>
+                  <div className="mt-5 border border-black bg-white rounded-xl p-5">
+                    <b className="text-[20px] font-extrabold">
+                      4. 迎合Google算法
+                    </b>
+                    <p className="mt-2">
+                      Google偏愛行動友好的RWD網站，有助於提高搜尋排名。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2">
+              <Image
+                src="6154f4061315715828dd75d6_smudgge-hero-image%20(1).png"
+                loader={imageLoader02}
+                loading="lazy"
+                width={1000}
+                height={1000}
+              />
+            </div>
+          </div>
+        </section>
         {/* <SmoothParallaxScroll /> */}
         <section className="section_second bg-green-400 border border-black flex flex-col lg:flex-row">
           <div className="left p-[60px] xl:p-[100px] w-full lg:w-1/2 border-r-2 border-black">
@@ -264,6 +338,7 @@ CREACTIVEs</h1>
             </div>
           </div>
         </section>
+
         <section>
           <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3">
             <div className="border-2 overflow-hidden border-black w-full relative">
@@ -321,21 +396,34 @@ CREACTIVEs</h1>
           width="100%"
           height="600"
         ></iframe> */}
+        <section>
+          <SmoothParallaxScroll />
+        </section>
 
+        <section className="bg-gray-100  py-[70px] px-[20px]">
+          <div className="flex flex-col w-2/3 mx-auto">
+            <div className="title mb-6 w-full">
+              <h2 className="text-[40px]  text-black font-extrabold">
+                網頁設計流程
+              </h2>
+              <p className="text-[14px]"> 您可以跟我們溝通需求，並確認流程</p>
+            </div>
+            <div className="px-4">
+              <SwiperScroll />
+            </div>
+          </div>
+        </section>
         <section className="py-[100px] flex flex-col justify-center items-center">
           <DragCarousel />
         </section>
 
-        <section>
-          <SmoothParallaxScroll />
-        </section>
         {/* <SlickCarousel /> */}
         {/* <SmoothParallaxScroll /> */}
         <section className="section_matter">
           <div className="top"></div>
           <div className="bottom">{/* <PhysicsAnimation /> */}</div>
         </section>
-        <CatoonCursor />
+        {/* <CatoonCursor /> */}
         <footer>
           <h2 className="text-white">lorem</h2>
         </footer>

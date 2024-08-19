@@ -11,7 +11,11 @@ const imageLoader = ({ src, width, quality }) => {
     quality || 75
   }`;
 };
-
+const imageLoader01 = ({ src, width, quality }) => {
+  return `https://s3.amazonaws.com/images.seroundtable.com/${src}?w=${width}&q=${
+    quality || 75
+  }`;
+};
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -624,10 +628,10 @@ export default function Blog() {
                           <p className="card-paragraph">
                             <Image
                               className="mb-4"
-                              src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
+                              src="google-logo-exploding-1681647430.jpg"
                               width={800}
                               height={800}
-                              loader={imageLoader}
+                              loader={imageLoader01}
                             />
                             {/* <img
                               className="w-full my-3 rounded-2xl mx-auto"
