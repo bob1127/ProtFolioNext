@@ -12,6 +12,8 @@ import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
+import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
+import BannerSwiper from "../../components/BannerSwiper/page.jsx";
 import SpringModal from "../../components/SpringModal/page.jsx";
 import SwiperScroll from "../../components/SwiperScroll/page.jsx";
 import { useState, useEffect } from "react";
@@ -723,132 +725,215 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            {/* <section class="section with-flex">
-    <div class="container">
-      <div class="padding">
-        <div class="spectacular-images">
-          <div
-            data-w-id="3ed0f563-c951-0c1a-bb4b-0e2d9352990f"
-            class="spectacular-image-large"
-            style="will-change: transform; transform: translate3d(0px, -1.9996rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-            <div class="parallax-trigger">
-              <div
-                class="parallax-layout"
-                style="will-change: transform; transform: translate3d(0px, 4.9984%, 0px) scale3d(1.00001, 1.00001, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                <img
-                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669b8e4485f1cc5406b2cbec_stada-potrait-img-8.webp"
-                  loading="lazy" alt="Portrait of the team"
-                  class="cover-image" />
-                <div class="bg-for-animation"></div>
+
+            <section className="section">
+              <div className="container">
+                <div className="padding">
+                  <div className="w-layout-grid about-content">
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
+                      className="about-grid-content"
+                    >
+                      <h2 className="heading is-medium-title">
+                        "網頁結構優化"
+                      </h2>
+                      <div className="flex flex-col ">
+                        <h5 className="text-[20px] text-left mt-4 font-black">
+                          有效的標題標籤 (Heading Tags) 使用
+                        </h5>
+                        <div className="flex items-start flex-col">
+                          <b className="mt-2 text-[18px] font-extrabold">
+                            分層次使用 H1 到 H6 標籤：
+                          </b>
+                          <p className="text-[14px] text-left">
+                            H1 標籤應用於頁面的主標題，每個頁面應僅有一個
+                            H1。次要標題依次使用 H2、H3 等標籤，形成清晰的結構。
+                          </p>
+                        </div>
+                        <h5 className="text-[20px] text-left mt-4 font-black">
+                          有效的標題標籤 (Heading Tags) 使用
+                        </h5>
+                        結構化數據
+                        <div className="flex items-start flex-col">
+                          <b className="mt-2 text-[18px] font-extrabold">
+                            添加結構化數據標記 (Schema.org)：
+                          </b>
+                          <p className="text-[14px] text-left">
+                            幫助搜索引擎更好地理解網站內容，提升網站在搜索引擎結果頁面
+                            (SERP) 中的展示效果，如豐富摘要 (Rich Snippets)。
+                          </p>
+                        </div>
+                        <h5 className="text-[20px] text-left mt-4 font-black">
+                          快速加載和性能優化
+                        </h5>
+                        <div className="flex items-start flex-col">
+                          <b className="mt-2 text-[18px] font-extrabold">
+                            優化圖片和資源:
+                          </b>
+                          <p className="text-[14px] text-left">
+                            使用正確的格式和大小的圖片，並利用壓縮工具減少文件體積。
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="/"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            案例sample
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          />
+                        </div>
+                      </a>
+                    </div>
+
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
+                      className="about-grid-image"
+                    >
+                      <div className="reveal-image-trigger">
+                        <img
+                          loading="lazy"
+                          alt="Portrait of the team"
+                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          className="cover-image"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="bg-for-animation"
+                          style={{ display: "block" }}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="about-grid-image">
+                      <div className="reveal-image-trigger">
+                        <SwiperScroll01 />
+                        {/* <img
+                          loading="lazy"
+                          alt="Portrait of the team"
+                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          srcSet="
+                                        
+                                      "
+                          className="cover-image"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        /> */}
+                        <div
+                          className="bg-for-animation"
+                          style={{ display: "block" }}
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
+                      className="about-grid-content"
+                    >
+                      {/* <div className="text-dot-block">
+                        <div className="dot" />
+                        <p className="paragraph">網頁設計</p>
+                      </div> */}
+                      <h2 className="heading flex items-start justify-start  is-medium-title">
+                        "3D 建模"
+                      </h2>
+                      <div className="flex w-full  flex-col items-start">
+                        <b className="mb-3 text-[16px]">3d model for website</b>
+                        <div className="flex">
+                          <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                            Banner
+                          </span>
+                          <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                            Image
+                          </span>
+                          <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                            Product Display
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex items-start flex-col ">
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">視覺衝擊力強</b>
+                          <p className="text-left leading-normal mt-3">
+                            - 3D
+                            建模能夠創建出極具深度和細節的視覺效果，這種真實感和立體感可以吸引訪客的注意，提升網站的視覺吸引力，進而增加用戶的停留時間和互動率。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]"> 多元應用場景</b>
+                          <p className="text-left leading-normal mt-3">
+                            - 3D
+                            模型可以在不同平台和媒體上使用，包括網站、社交媒體、動畫視頻等，這種多功能性使得投資於
+                            3D 建模的回報更具價值。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">靈活性強</b>
+                          <p className="text-left leading-normal mt-3">
+                            -
+                            作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">提升互動體驗</b>
+                          <p className="text-left leading-normal mt-3">
+                            - 3D
+                            圖片或動畫可以與用戶進行互動，如滑動或旋轉產品視圖，這種互動性不僅增加了用戶的參與感，還能讓用戶更深入了解產品。
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="/"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            立即聯絡
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </section>
+            {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}
+            <div>
+              <BannerSwiper />
             </div>
-          </div>
-          <div
-            data-w-id="21f8228d-903f-f406-0ef6-35dca888068a"
-            class="spectacular-image-medium"
-            style="will-change: transform; transform: translate3d(0px, -2.9994rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-            <div class="parallax-trigger">
-              <div
-                class="parallax-layout"
-                style="will-change: transform; transform: translate3d(0px, 4.9984%, 0px) scale3d(1.00001, 1.00001, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                <img
-                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/6696a2d60214feb41cb313bb_stada-img-new-2.webp"
-                  loading="lazy" alt class="cover-image" />
-                <div class="bg-for-animation"></div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-w-id="2dc9d7e7-658f-2f6d-9837-108851dbe9fd"
-            class="spectacular-image-small"
-            style="will-change: transform; transform: translate3d(0px, -3.9992rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-            <div class="parallax-trigger">
-              <div
-                class="parallax-layout"
-                style="will-change: transform; transform: translate3d(0px, 4.9984%, 0px) scale3d(1.00001, 1.00001, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                <img
-                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/6696a2d6c9f3c1e5f2dcd7aa_stada-img-new-1.webp"
-                  loading="lazy" alt class="cover-image" />
-                <div class="bg-for-animation"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div data-w-id="8b6021f9-e74a-17c5-611d-dff67e2d94ce"
-      class="layout-for-large-paragraphs" style>
-      <div class="large-bg-paragraphs">
-        <p
-          data-w-id="8ccb961c-6524-79d6-7485-b2eb0779e880"
-          class="large-bg-paragraph is-2nd"
-          style="transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
-          Company
-        </p>
-        <p
-          data-w-id="8ccb961c-6524-79d6-7485-b2eb0779e882"
-          class="large-bg-paragraph"
-          style="transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
-          Company
-        </p>
-        <p
-          data-w-id="8ccb961c-6524-79d6-7485-b2eb0779e884"
-          class="large-bg-paragraph is-2nd"
-          style="transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;">
-          Company
-        </p>
-      </div>
-    </div>
-  </section> */}
-            {/* <section class="section">
-    <div class="container">
-      <div class="padding">
-        <div class="vertical-flex with-gap">
-          <div
-            data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765ae"
-            style="transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
-            class="about-grid">
-            <a data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765af"
-              href="/journal" class="about-grid-block w-inline-block">
-              <div class="about-title-block">
-                <h3 class="heading is-large-cta-title">Journal</h3>
-                <div data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765b3"
-                  class="about-grid-title-line" style></div>
-              </div>
-              <div class="about-grid-description">
-                <div class="max-width-25" style><p
-                    class="paragraph">Follow our journal for expert
-                    articles and tips to keep you ahead of the
-                    curve.</p></div>
-                <p data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765b8"
-                  class="simple-link" style>Read the Journal</p>
-              </div>
-              <div data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765ba"
-                class="about-grid-bg" style></div>
-            </a>
-            <a data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765bb"
-              href="/store"
-              class="about-grid-block is-2nd w-inline-block">
-              <div class="about-title-block">
-                <h3 class="heading is-large-cta-title">Store</h3>
-                <div data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765bf"
-                  class="about-grid-title-line" style></div>
-              </div>
-              <div class="about-grid-description">
-                <div class="max-width-25" style><p class="paragraph">Find
-                    the perfect smart devices to enhance your everyday
-                    life.</p></div>
-                <p data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765c4"
-                  class="simple-link" style>Show now</p>
-              </div>
-              <div data-w-id="82a778c7-2af0-72ec-3fc8-7b421f1765c6"
-                class="about-grid-bg" style></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> */}
+
             <section>
               <div className="container"></div>
             </section>
@@ -900,7 +985,7 @@ export default function Blog() {
                       style={{ display: "flex", justifyContent: "center" }}
                     >
                       <h3
-                        className="heading  text-[40px] mx-auto"
+                        className="heading  text-[32px] mx-auto"
                         style={{
                           marginBottom: 30,
                           display: "flex",
@@ -908,7 +993,7 @@ export default function Blog() {
                           textAlign: "center",
                         }}
                       >
-                        選擇適合你的方案
+                        "選擇適合你的方案"
                       </h3>
                     </div>
                     <div
@@ -999,7 +1084,7 @@ export default function Blog() {
                       </div>
                       <div
                         id="w-node-_90fc4fc9-5875-a940-a16d-30733a08bafa-35a2ecda"
-                        className="job-card"
+                        className="job-card mx-4"
                       >
                         <p className="job-card-role">購物網站(NT.60000)</p>
                         <span>
@@ -1151,6 +1236,7 @@ export default function Blog() {
                 </b>
               </div>
             </section>
+
             <section className="bg-gray-100  py-[70px] px-[20px] flex flex-col lg:flex-row">
               <div className="w-full lg:w-1/2">
                 <div className="flex  flex-col  pl-10  mx-auto">
@@ -1170,7 +1256,9 @@ export default function Blog() {
               <div className=" w-full lg:w-1/2">
                 <VanishList />
               </div>
+              <div></div>
             </section>
+            <b className="text-[20px]">以上價格皆為大約 實際價格可以再討論</b>
           </main>
         </div>
       </div>

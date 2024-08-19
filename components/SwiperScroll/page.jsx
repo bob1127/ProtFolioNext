@@ -26,6 +26,7 @@ export default function App() {
       <Swiper
         spaceBetween={30}
         slidesPerView={1}
+        speed={1000}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,

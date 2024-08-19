@@ -52,7 +52,6 @@ export default function Home() {
 const Header = () => (
   <div className="mb-6">
     <p className="text-black font-extrabold text-[30px]">
-      {" "}
       "依您的需求 加購項目"
     </p>
   </div>
