@@ -92,32 +92,29 @@ CREACTIVEs</h1>
                     <p className="text-white w-[140px] p-2">Website</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">marketing</p>
+                    <p className="text-white w-[140px] p-2">marketing🎡</p>
                   </div>
                   <div>
                     <p className="text-white w-[140px] p-2">SinglePage🎡</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">
-                      GoogoleSearchConsole⏰
-                    </p>
+                    <p className="text-white w-[140px] p-2">GA4⏰</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">
-                      Google Anylitics💡
-                    </p>
+                    <p className="text-white w-[140px] p-2">Search Egine💡</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">lorem📸</p>
+                    <p className="text-white w-[140px] p-2">Photography📸</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">lorem🎡</p>
+                    <p className="text-white w-[140px] p-2">Seo🎡</p>
                   </div>
                 </Marquee>
               </div>
             </div>
             <div className="hero-middle border border-black w-full lg:w-[20%] p-[50px] flex  justify-center relative flex-col items-center pt-[50px] border-1 ">
-              <h2 className="text-[27px] text-bold">創意無限，設計未來</h2>
+              <h2 className="text-[32px] text-bold">創意無限，設計未來</h2>
+              <h2 className="text-[32px] text-bold">為你的品牌增值</h2>
               <br />
             </div>
             <div className="hero-right p-[50px] border-1 border-black border pt-[50px] flex flex-col  w-full lg:w-[15%]">
@@ -171,11 +168,14 @@ CREACTIVEs</h1>
             </div>
             <div className="bottom  flex py-[50px] lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h4 className=" text-[22px] text-light">
-                <span></span>創意驅動，技術為本<span></span>
+                <span></span>
+                <span className="text-[32px]">
+                  "創意無限，讓您的品牌脫穎而出。"
+                </span>
               </h4>
-              <p className="mt-[20px]  w-2/3">
-                我們相信創意是設計的核心，技術是實現創意的橋樑。
-                我們致力於將最具創意的想法轉化為現實，通過尖端技
+              <p className="mt-[14px] p-10 w-2/3">
+                創意是設計的核心，技術是實現創意的橋樑。
+                致力於將最具創意的想法轉化為現實，通過尖端技
                 術提供卓越的數字體驗。
               </p>
 
@@ -403,19 +403,46 @@ CREACTIVEs</h1>
         <section className="bg-gray-100  py-[70px] px-[20px]">
           <div className="flex flex-col w-2/3 mx-auto">
             <div className="title mb-6 w-full">
-              <h2 className="text-[40px]  text-black font-extrabold">
-                網頁設計流程
+              <h2 className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black font-extrabold">
+                "設計網站不難 做出好的網站才不容易"
               </h2>
-              <p className="text-[14px]"> 您可以跟我們溝通需求，並確認流程</p>
+
+              <p className="text-[18px]  text-center lg:text-[22px] 2xl:text-[30px]">
+                總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
+                來跟我討論吧
+              </p>
+              <div className="mx-auto w-[170px]">
+                <a
+                  href="/"
+                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                  className="button-wrapper w-inline-block"
+                >
+                  <div className="button-layout">
+                    <p href="/about" className="button-text" style={{}}>
+                      立即聯絡
+                    </p>
+                    <div className="button-bg" style={{}} />
+                  </div>
+                  <div className="button-icon-block">
+                    <img
+                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                      loading="lazy"
+                      alt=""
+                      className="button-icon"
+                      style={{}}
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
-            <div className="px-4">
+            {/* <div className="px-4">
               <SwiperScroll />
-            </div>
+            </div> */}
           </div>
         </section>
-        <section className="py-[100px] flex flex-col justify-center items-center">
+        {/* <section className="py-[100px] flex flex-col justify-center items-center">
           <DragCarousel />
-        </section>
+        </section> */}
 
         {/* <SlickCarousel /> */}
         {/* <SmoothParallaxScroll /> */}

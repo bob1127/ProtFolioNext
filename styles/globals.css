@@ -12,6 +12,10 @@
 @tailwind utilities;
 /* Stop purging. */
 
+
+.section-hidden{
+    display: none !important;
+}
 /* Your own custom utilities */
 .sticky-container {
   position: -webkit-sticky; /* 兼容性支持 */

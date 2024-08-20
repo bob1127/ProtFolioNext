@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+       boxShadow: {
+        'custom': '8px 8px 0px rgba(107, 222, 31, 1)',
+      },
       animation: {
         moveit: 'moveit 900ms ease forwards',
         moveitback: 'moveitback 400ms ease forwards',

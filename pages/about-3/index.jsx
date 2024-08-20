@@ -147,9 +147,91 @@ export default function Blog() {
                 </main>
               </div>
             </section>
-            <section className="discount px-[10px] md:px-[70px] pt-[30px] md:pt-[50px] py-0 lg:py-6 ">
+
+            <section className="w-full px-[100px] xl:flex-row flex-col flex">
+              <a
+                href=""
+                className="xl:w-1/2 w-full mr-4 hover:shadow-custom 
+                border-1
+                
+              duration-300
+              hover:border-3
+              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
+              >
+                <h4 className="text-[40px] font-light text-black">
+                  網頁SEO很重要嗎？
+                </h4>
+                <div className="flex">
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    搜尋引擎優化
+                  </span>
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    網頁結構優化
+                  </span>
+                </div>
+                <p className=" text-[16px] mt-3">
+                  在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
+                </p>
+                <div className="flex w-full  flex-col items-start">
+                  <b className="mb-3 text-[16px]">3d model for website</b>
+
+                  <Image
+                    loader={imageLoader02}
+                    width={700}
+                    height={700}
+                    loading="lazy"
+                    placeholder="empty"
+                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
+                  />
+                </div>
+              </a>
+              <a
+                href=""
+                className="xl:w-1/2 w-full ml-4 hover:shadow-custom 
+              duration-300
+              
+              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
+              >
+                <h4
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  className="text-[40px] font-light text-black"
+                >
+                  SEO能帶來哪些好處？
+                </h4>
+                <div className="flex my-4">
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    搜尋引擎優化
+                  </span>
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    網頁結構優化
+                  </span>
+                </div>
+                <p className="  font-bold text-[20px] mt-3">長期效益：</p>
+                <div className="flex w-full  flex-col items-start">
+                  <b className="mb-3 text-[14px] font-normal leading-normal">
+                    SEO的效果是持久且累積的。一旦網站建立了良好的搜尋引擎排名，即使停止大規模的SEO投入，仍然能持續受益於這些排名，這意味著可以在未來不斷帶來穩定的收入流，增強企業的長期盈利能力。
+                  </b>
+                  <p className=" font-bold text-[20px] mt-3">提升競爭優勢:</p>
+                  <b className="mb-3 text-[14px] font-normal leading-normal">
+                    在競爭激烈的市場中，擁有良好SEO策略的企業能夠超越競爭對手，成為行業領先者。這種競爭優勢將直接轉化為更高的市場份額和利潤。
+                  </b>
+
+                  <Image
+                    loader={imageLoader02}
+                    width={700}
+                    height={700}
+                    loading="lazy"
+                    placeholder="empty"
+                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
+                  />
+                </div>
+              </a>
+            </section>
+
+            <section className="discount hidden px-[10px] md:px-[70px] pt-[30px] md:pt-[50px] flex justify-center items-center py-0 lg:py-6 ">
               <div className=" w-full flex flex-col lg:flex-row justify-around">
-                <div className="bg-white mr-2 w-full lg:w-1/2 border-4 border-gray-800 mt-3  relative rounded-2xl ">
+                <div className="bg-white mr-2 w-full lg:w-1/2 border-4 border-gray-800 section-hidden mt-3  relative rounded-2xl ">
                   <div className="top py-8">
                     <Marquee>
                       <div className="flex">
@@ -182,7 +264,8 @@ export default function Blog() {
                     </div>
                   </a>
                 </div>
-                <div className="bg-white mt-3  w-full lg:w-1/2 border-4 border-gray-800  rounded-2xl ">
+
+                <div className="bg-white mt-3  w-full lg:w-1/2 border-4 border-gray-800 section-hidden  rounded-2xl ">
                   <div className="top py-8">
                     <Marquee>
                       <div className="flex">
@@ -214,14 +297,6 @@ export default function Blog() {
                         優化能提升網站可見性，增加搜尋引擎排名，吸引更多自然流量。
                       </p>
                     </div>
-                    <Image
-                      loader={imageLoader02}
-                      width={700}
-                      height={700}
-                      loading="lazy"
-                      placeholder="empty"
-                      src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                    />
                   </div>
                 </div>
               </div>
@@ -604,7 +679,7 @@ export default function Blog() {
                 <h2 className="heading is-medium-title text-center">
                   "對於增加網路曝光度，我該如何選擇我的行銷方式"
                 </h2>
-                <p className="w-full lg:w-2/3 mt-4  text-[14px] sm:text-[16px] lg:text-[20px] text-center mb-4 leading-normal">
+                <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
                   在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
                 </p>
               </div>
