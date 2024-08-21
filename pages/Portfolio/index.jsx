@@ -133,7 +133,7 @@ export default function Blog() {
                 </a>
                 <a
                   data-w-id="9119eb55-b515-23ab-3ca6-d7a893b67ca0"
-                  href="/services"
+                  href="/"
                   aria-current="page"
                   className="menu-link w-inline-block w--current"
                 >
@@ -156,7 +156,7 @@ export default function Blog() {
                 </a>
                 <a
                   data-w-id="bdd489b8-8031-113b-2ffa-b5e1c5758ce0"
-                  href="/features"
+                  href="/"
                   className="menu-link w-inline-block"
                 >
                   <div

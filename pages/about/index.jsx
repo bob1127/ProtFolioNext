@@ -62,7 +62,10 @@ export default function Blog() {
                       href="/"
                       className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
                     >
-                      個人工作室｜私人接案 - 花費小預算，增加大收益
+                      個人工作室｜私人接案 - 花費小預算，
+                      <span className="bg-green-500 inline-block px-4 py-3  w-[150px] text-center">
+                        增加大收益
+                      </span>
                     </a>
                     {/* <h1
                       data-w-id="b3a43e50-789b-2236-6fea-b72c39d21870"
@@ -308,7 +311,7 @@ export default function Blog() {
                   <br />
                   <br />
                   <div className="rounded-[30px] bg-[#333] text-[20px] text-white inline-block p-3">
-                    (高性能｜SEO友善)
+                    (高性能｜SEO友善 / 3D交互式網站)
                   </div>
                   <div
                     data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfdc"
@@ -449,6 +452,21 @@ export default function Blog() {
                             </a>
                           </div>
                         </div>
+                      </div>
+                      <div>
+                        <h3 className="text-[50px] font-extrabold">
+                          3D 交互式網頁
+                        </h3>
+                        <p>3d 建模產品運用在網頁上</p>
+                      </div>
+                      <div>
+                        <Image
+                          src="up100-10-PhotoRoom.png"
+                          loader={imageLoader}
+                          loading="lazy"
+                          height={1000}
+                          width={1000}
+                        />
                       </div>
                     </div>
                     <p
@@ -977,7 +995,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/about"
+                        href="/Blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -992,10 +1010,10 @@ export default function Blog() {
                         >
                           <span className="text-[30px] font-extrabold">
                             {" "}
-                            專業形象與信任感
+                            如何增加搜尋引擎曝光度和排名?
                           </span>
                           <br></br>
-                          展示企業專業的形象，讓客戶對品牌產生信任感。
+                          優化網站內容與結構，快速提升搜尋引擎排名，增加線上曝光
                         </p>
                         <div
                           id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"
@@ -1030,7 +1048,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/about-2"
+                        href="/Blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1045,10 +1063,10 @@ export default function Blog() {
                         >
                           <span className="text-[30px] font-extrabold">
                             {" "}
-                            提升品牌認知度
+                            網頁設計很花錢嗎？
                           </span>
                           <br></br>
-                          透過網站展示企業的核心價值、文化和獨特性，增強品牌的認知度。
+                          網頁設計真的很花錢嗎？透過精心規劃和明智選擇，不僅能控制成本，還能有效提升品牌形象與業務效益。
                         </p>
                         <div
                           id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"
@@ -1083,7 +1101,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/about-2"
+                        href="/Blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1098,10 +1116,10 @@ export default function Blog() {
                         >
                           <span className="text-[30px] font-extrabold">
                             {" "}
-                            多設備友好體驗
+                            SEO能帶來哪些好處？
                           </span>
                           <br></br>
-                          響應式設計確保網站在不同設備（如手機、平板、電腦）上都能提供優質的瀏覽體驗。
+                          SEO能顯著提高網站的搜尋引擎排名，增加有機流量，提升品牌知名度，並促進業務增長。透過優化策略，您能獲得更高的曝光率和轉換率。
                         </p>
                         <div
                           id="w-node-aa54c5ef-16d2-8b80-7625-e8417a7c9eeb-c41abecd"

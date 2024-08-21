@@ -211,7 +211,7 @@ export default function Blog() {
             transformStyle: "preserve-3d",
           }}
         >
-          <a href="/" className="fixed-button w-inline-block">
+          <a href="/about-3" className="fixed-button w-inline-block">
             <div className="fixed-button-icon-wrap">
               <img
                 src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
@@ -269,8 +269,9 @@ export default function Blog() {
               }}
               className="title-medium text-align-center text-word-caps"
             >
-              網頁設計很花錢嗎？
+              如何增加搜尋引擎曝光度和排名?
             </h1>
+
             <div
               className="article-infos-wrap align-center"
               style={{
@@ -421,49 +422,54 @@ export default function Blog() {
             data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"
             className="article-content-container"
           >
-            <div className="article-abstract">
+            <div className="txt bg-gray-100 text-[14px] leading-normal p-10">
+              在當今數位化的時代，擁有一個能夠吸引流量並轉化為潛在客戶的網站已成為每個企業成功的關鍵。搜尋引擎優化（SEO）不僅是提升網站曝光度的工具，更是確保您的業務在競爭中脫穎而出的必要策略。本文將深入探討如何透過優化網站設計來增加搜尋引擎的曝光度和排名。
+            </div>
+            {/* <div className="article-abstract">
               <div className="text-[16px] leading-normal">
                 SEO（搜尋引擎優化）對企業的利潤有直接且顯著的影響。以下是一些具體方式，說明SEO如何影響企業的利潤：
               </div>
-            </div>
+            </div> */}
 
             <div className="paragraph" data-aos="fade-up">
-              <h2 className="text-[40px] mb-3" data-aos="fade-up">
-                網頁設計真的很花錢嗎？其實不然！
+              <h2 className="text-[40px] leading-normal mb-[20px] mt-[30px] ">
+                一、了解SEO的重要性
               </h2>
-              <img
-                src="
-               "
-                alt=""
-              />
-              <div className="text-[24px] font-bold mt-5 ">高昂費用的迷思</div>
-              <p className="font-normal leading-[26px]">
-                許多小企業和新創公司在考慮建立網站時，往往擔心高昂的設計費用會給財務帶來負擔。畢竟，企業在成長階段，每一筆支出都至關重要。然而，網站設計真的需要這麼貴嗎？我們來打破這個迷思。
+              <p>
+                SEO是指透過一系列技術和策略來提高網站在搜尋引擎結果頁面（SERP）中的排名。當潛在客戶在搜尋引擎中查詢與您的業務相關的關鍵字時，您的網站能夠排名越高，曝光的機會就越大。SEO不僅能帶來更多的訪問量，還能提高轉化率，最終增加銷售和收益。
               </p>
-            </div>
-            <div className="paragraph-content" data-aos="fade-up">
               <div className="paragraph">
-                <h2 className="text-[40px] mb-3"></h2>
-                <div className="text-[24px] font-bold mt-5 ">
-                  理解你的擔憂，量身定制解決方案
+                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
+                  1. 影響搜尋引擎排名的因素
                 </div>
                 <p className="font-normal leading-[26px]">
-                  作為一家專注於為小型企業提供網頁設計服務的公司，我們完全理解您的擔憂。我們知道，當您考慮為您的企業建立一個網站時，您希望這個網站不僅能展現您的品牌，還能有效地吸引顧客並提升轉化率。然而，高昂的設計費用常常讓人猶豫不決。
+                  許多小企業和新創公司在考慮建立網站時，往往擔心高昂的設計費用會給財務帶來負擔。畢竟，企業在成長階段，每一筆支出都至關重要。然而，網站設計真的需要這麼貴嗎？我們來打破這個迷思。
+                </p>
+              </div>
+            </div>
+
+            <div className="paragraph-content" data-aos="fade-up">
+              <div className="paragraph">
+                <h2 className="text-[40px] leading-normal  mb-[20px] mt-[30px] ">
+                  二、關鍵字研究與內容優化
+                </h2>
+                <div className="text-[24px] mb-[20px] font-bold mt-5 ">
+                  1. 選擇合適的關鍵字
+                </div>
+                <p className="font-normal leading-[26px]">
+                  關鍵字是SEO的核心。選擇合適的關鍵字能夠幫助搜尋引擎理解您的網站內容。進行關鍵字研究時，應考慮用戶的搜尋意圖，選擇那些搜尋量大但競爭相對較低的關鍵字。使用工具如Google
+                  Keyword
+                  Planner或Ahrefs來尋找相關的關鍵字，並將其自然地融入到網站內容中。
                 </p>{" "}
                 <br />
-                <p className="font-normal leading-[26px]">
-                  我們深知這種平衡的重要性。這就是為什麼我們的服務旨在為您提供高性價比的解決方案，無論您的預算是多少。我們的設計團隊具備豐富的經驗，能夠根據您的需求和預算，量身定制出一個最適合您業務的網站。這樣，您就不必因為擔心成本而妥協網站的質量，也不用因為費用問題而放棄提升品牌的機會。
-                </p>
               </div>
               <div className="paragraph">
                 <h2 className="text-[40px] mb-3"></h2>
-                <div className="text-[24px] font-bold mt-5 ">
-                  什麼樣的網站設計能帶來最大價值？
+                <div className="text-[24px] mb-[20px] font-bold mt-5 ">
+                  2. 高質量內容的重要性
                 </div>
                 <p className="font-normal leading-[26px]">
-                  在設計網站時，我們不僅僅關注其外觀，我們更加重視網站能為您帶來什麼樣的實際效益。網站應該是您與顧客之間的橋樑，是展示您品牌價值和吸引潛在客戶的工具。
-                  因此，我們採用的設計方案不僅注重美觀，更加強調其功能性和使用者體驗。無論是簡潔的導航、清晰的內容佈局，還是快速的加載速度，我們都力求完美，確保訪客在使用您的網站時感到愉快，並且願意停留更長時間，最終轉化為您的忠實客戶。
-                  而這一切，都可以在不超出您預算的情況下實現。我們的設計團隊將與您緊密合作，確保每一個細節都符合您的期望，同時保持費用的合理性。
+                  內容是SEO中最重要的部分之一。創建高質量且與您的受眾相關的內容可以吸引更多訪客，並提高網站的停留時間，這對搜尋引擎來說是一個正面信號。此外，您的內容應該具備清晰的結構，標題、副標題和段落應該清楚明瞭，並使用關鍵字來增強搜尋引擎的理解。
                 </p>
               </div>
             </div>
@@ -537,17 +543,14 @@ export default function Blog() {
                   role="listitem"
                   className="w-dyn-item hover:border-black p-5 hover:border"
                 >
-                  <a
-                    href="/blog-posts/echoes-of-the-mind-tracing-the-footprints-of-memory"
-                    className="article-item w-inline-block"
-                  >
+                  <a href="/Blog-01" className="article-item w-inline-block">
                     <div className="article-item-img-wrap">
                       <img
                         alt=""
                         loading="lazy"
-                        src=""
+                        src="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
                         sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet=""
+                        srcSet="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
                         className="img-cover-absolute"
                       />
                       <div
@@ -595,7 +598,7 @@ export default function Blog() {
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                           className="element-trigger"
                         >
-                          seo文章
+                          SEO對於網站的重要性
                         </h5>
                       </div>
                       <div className="article-infos-wrap">
@@ -637,10 +640,7 @@ export default function Blog() {
                   role="listitem"
                   className="w-dyn-item hover:border-black p-5 hover:border"
                 >
-                  <a
-                    href="/blog-posts/celestial-serendipity-aligning-with-the-cosmic-dance-of-chance"
-                    className="article-item w-inline-block"
-                  >
+                  <a href="/Blog-02" className="article-item w-inline-block">
                     <div className="article-item-img-wrap">
                       <img
                         alt=""
@@ -690,15 +690,14 @@ export default function Blog() {
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
                           className="tag-text-style category"
                         >
-                          Politics
+                          SEO
                         </div>
                         <h5
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                           className="element-trigger"
                           style={{}}
                         >
-                          Celestial Serendipity: Aligning with the Cosmic Dance
-                          of Chance
+                          網頁設計很花錢嗎？
                         </h5>
                       </div>
                       <div className="article-infos-wrap">

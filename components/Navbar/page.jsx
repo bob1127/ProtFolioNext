@@ -8,7 +8,7 @@
 export default function Index() {
   return (
     <div className="z-[99999999999] relative">
-      <div className="fullscreen-menu" style={{ display: "none" }}>
+      <div className="fullscreen-menu bg-green-500" style={{ display: "none" }}>
         <div className="menu-layout">
           <div className="menu-socials" style={{ opacity: 0 }}>
             <div className="menu-social-wrapper w-dyn-list">
@@ -100,14 +100,14 @@ export default function Index() {
                 className="menu-link w-inline-block w--current"
               >
                 <div
-                  className="menu-link-text"
+                  className="menu-link-text w-inline-block"
                   style={{
                     transform:
                       "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  關於我們
+                  關於JEEK
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
@@ -122,7 +122,7 @@ export default function Index() {
                 className="menu-link w-inline-block"
               >
                 <div
-                  className="menu-link-text"
+                  className="menu-link-text w-inline-block"
                   style={{
                     transform:
                       "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -151,7 +151,7 @@ export default function Index() {
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  商業攝影
+                  商業/商品攝影
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
@@ -195,7 +195,7 @@ export default function Index() {
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  網站SEO
+                  3D互動網站 /
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
@@ -241,7 +241,7 @@ export default function Index() {
               data-delay={0}
               data-hover="true"
               data-w-id="9db95670-a172-eb68-49e7-0e2e01445857"
-              className="dropdown w-dropdown"
+              className="dropdown w-dropdown "
             >
               <div
                 data-w-id="9db95670-a172-eb68-49e7-0e2e01445858"
@@ -274,7 +274,7 @@ export default function Index() {
               </div>
               <nav
                 className="dropdown-list w-dropdown-list"
-                id="w-dropdown-list-0"
+                id="w-dropdown-list-0 "
                 aria-labelledby="w-dropdown-toggle-0"
                 style={{
                   transform:
@@ -283,8 +283,8 @@ export default function Index() {
                   opacity: 0,
                 }}
               >
-                <div className="dropdown-links-wrapper">
-                  <div className="menu-features-wrapper w-dyn-list">
+                <div className="dropdown-links-wrapper  ">
+                  <div className="menu-features-wrapper ">
                     <div role="list" className="menu-features-list w-dyn-items">
                       <div
                         role="listitem"
@@ -423,7 +423,7 @@ export default function Index() {
               <a href="/about-3" className="nav-link-block ">
                 <div className="nav-text">價格方案</div>
               </a>
-              {/* <link rel="prefetch" href="/services" /> */}
+
               <a href="/about-3" className="nav-link-block ">
                 <div className="nav-text">客戶案例</div>
               </a>

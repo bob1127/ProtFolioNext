@@ -98,7 +98,7 @@ export default function MyApp({ Component, pageProps, router }) {
                         >
                           <a
                             data-w-id="224d6c80-9f0d-e6d1-431a-b5fa62444ed2"
-                            href="/services"
+                            href="/"
                             className="text-white footer-large-link"
                             
                           >
@@ -109,7 +109,7 @@ export default function MyApp({ Component, pageProps, router }) {
                           </a>
                           <a
                             data-w-id="224d6c80-9f0d-e6d1-431a-b5fa62444ed2"
-                            href="/services"
+                            href="/"
                             className="footer-large-link"
                             
                           >
@@ -120,7 +120,7 @@ export default function MyApp({ Component, pageProps, router }) {
                           </a>
                           <a
                             data-w-id="224d6c80-9f0d-e6d1-431a-b5fa62444ed2"
-                            href="/services"
+                            href="/"
                             className="footer-large-link"
                             
                           >

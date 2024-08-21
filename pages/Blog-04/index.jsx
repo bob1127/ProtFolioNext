@@ -28,6 +28,7 @@ export default function Blog() {
     // 清除計時器
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <>
       <Head>
@@ -211,7 +212,7 @@ export default function Blog() {
             transformStyle: "preserve-3d",
           }}
         >
-          <a href="/" className="fixed-button w-inline-block">
+          <a href="/about-3" className="fixed-button w-inline-block">
             <div className="fixed-button-icon-wrap">
               <img
                 src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
@@ -241,7 +242,7 @@ export default function Blog() {
             <img
               alt=""
               loading="eager"
-              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg"
+              src="https://www.accorder.co.jp/cms/wp-content/uploads/MG_0131_re-1-1920x919.jpg"
               sizes="100vw"
               className="img-cover"
             />
@@ -269,8 +270,9 @@ export default function Blog() {
               }}
               className="title-medium text-align-center text-word-caps"
             >
-              網頁設計很花錢嗎？
+              如何優化你的網站?
             </h1>
+
             <div
               className="article-infos-wrap align-center"
               style={{
@@ -421,320 +423,329 @@ export default function Blog() {
             data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"
             className="article-content-container"
           >
-            <div className="article-abstract">
+            <h1>提升網站效能，創造最佳用戶體驗</h1>
+            <div className="txt bg-gray-100 text-[14px] leading-normal p-10">
+              在這個數位時代，一個優化良好的網站不僅僅是品牌形象的延伸，更是吸引潛在客戶、提高搜尋引擎排名和增加銷售轉換的關鍵。你是否遇到網站加載速度慢、用戶流失率高、搜尋引擎排名下降等問題？透過以下策略，我們將幫助你優化網站，解決這些痛點，實現業務目標。
+            </div>
+            {/* <div className="article-abstract">
               <div className="text-[16px] leading-normal">
                 SEO（搜尋引擎優化）對企業的利潤有直接且顯著的影響。以下是一些具體方式，說明SEO如何影響企業的利潤：
               </div>
-            </div>
+            </div> */}
 
             <div className="paragraph" data-aos="fade-up">
-              <h2 className="text-[40px] mb-3" data-aos="fade-up">
-                網頁設計真的很花錢嗎？其實不然！
+              <h2 className="text-[40px] leading-normal mb-[20px] mt-[30px] ">
+                1. 提升網站速度：
               </h2>
-              <img
-                src="
-               "
-                alt=""
-              />
-              <div className="text-[24px] font-bold mt-5 ">高昂費用的迷思</div>
-              <p className="font-normal leading-[26px]">
-                許多小企業和新創公司在考慮建立網站時，往往擔心高昂的設計費用會給財務帶來負擔。畢竟，企業在成長階段，每一筆支出都至關重要。然而，網站設計真的需要這麼貴嗎？我們來打破這個迷思。
+              <p>
+                訪客對網站的第一印象往往來自於它的加載速度。通過壓縮圖片、精簡代碼、使用CDN等技術，我們將使你的网站在短時間內快速響應，減少跳出率，提升用戶滿意度。
               </p>
-            </div>
-            <div className="paragraph-content" data-aos="fade-up">
               <div className="paragraph">
-                <h2 className="text-[40px] mb-3"></h2>
-                <div className="text-[24px] font-bold mt-5 ">
-                  理解你的擔憂，量身定制解決方案
+                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
+                  2. 強化SEO：
                 </div>
                 <p className="font-normal leading-[26px]">
-                  作為一家專注於為小型企業提供網頁設計服務的公司，我們完全理解您的擔憂。我們知道，當您考慮為您的企業建立一個網站時，您希望這個網站不僅能展現您的品牌，還能有效地吸引顧客並提升轉化率。然而，高昂的設計費用常常讓人猶豫不決。
-                </p>{" "}
-                <br />
-                <p className="font-normal leading-[26px]">
-                  我們深知這種平衡的重要性。這就是為什麼我們的服務旨在為您提供高性價比的解決方案，無論您的預算是多少。我們的設計團隊具備豐富的經驗，能夠根據您的需求和預算，量身定制出一個最適合您業務的網站。這樣，您就不必因為擔心成本而妥協網站的質量，也不用因為費用問題而放棄提升品牌的機會。
+                  優化你的網站結構和內容，確保它對搜尋引擎友好。我們將協助你進行關鍵字研究、內部鏈接調整以及元數據優化，提升搜尋引擎曝光度，讓更多潛在客戶找到你。
                 </p>
               </div>
               <div className="paragraph">
-                <h2 className="text-[40px] mb-3"></h2>
-                <div className="text-[24px] font-bold mt-5 ">
-                  什麼樣的網站設計能帶來最大價值？
+                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
+                  3. 提供流暢的用戶體驗：
+                  <p className="font-normal leading-[26px]">
+                    用戶體驗是網站成功的核心。我們將改善網站的導航結構、簡化購物流程、優化移動端體驗，讓你的訪客可以輕鬆找到他們需要的資訊，並轉化為你的忠實客戶。
+                  </p>
                 </div>
-                <p className="font-normal leading-[26px]">
-                  在設計網站時，我們不僅僅關注其外觀，我們更加重視網站能為您帶來什麼樣的實際效益。網站應該是您與顧客之間的橋樑，是展示您品牌價值和吸引潛在客戶的工具。
-                  因此，我們採用的設計方案不僅注重美觀，更加強調其功能性和使用者體驗。無論是簡潔的導航、清晰的內容佈局，還是快速的加載速度，我們都力求完美，確保訪客在使用您的網站時感到愉快，並且願意停留更長時間，最終轉化為您的忠實客戶。
-                  而這一切，都可以在不超出您預算的情況下實現。我們的設計團隊將與您緊密合作，確保每一個細節都符合您的期望，同時保持費用的合理性。
-                </p>
               </div>
-            </div>
 
-            <div className="article-content-social-share bg-white border-2 border-black rounded-[40px]">
-              <div className="social-share-label-text div-relative">SHARE</div>
-              <div className="w-layout-grid social-share-icons-grid horizontal">
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b0-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4376d11af30a10e56_icon-fb-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b2-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a484ecff6b46ae1a04_icon-linkedin-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b4-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a584ecff6b46ae1ac2_icon-x-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b6-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4eed91fe3a17704f6_icon-link-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
+              <div className="paragraph-content" data-aos="fade-up">
+                <div className="paragraph">
+                  <h2 className="text-[40px] leading-normal  mb-[20px] mt-[30px] ">
+                    二、關鍵字研究與內容優化
+                  </h2>
+                  <div className="text-[24px] mb-[20px] font-bold mt-5 ">
+                    1. 選擇合適的關鍵字
+                  </div>
+                  <p className="font-normal leading-[26px]">
+                    關鍵字是SEO的核心。選擇合適的關鍵字能夠幫助搜尋引擎理解您的網站內容。進行關鍵字研究時，應考慮用戶的搜尋意圖，選擇那些搜尋量大但競爭相對較低的關鍵字。使用工具如Google
+                    Keyword
+                    Planner或Ahrefs來尋找相關的關鍵字，並將其自然地融入到網站內容中。
+                  </p>{" "}
+                  <br />
+                </div>
+                <div className="paragraph">
+                  <h2 className="text-[40px] mb-3"></h2>
+                  <div className="text-[24px] mb-[20px] font-bold mt-5 ">
+                    2. 高質量內容的重要性
+                  </div>
+                  <p className="font-normal leading-[26px]">
+                    內容是SEO中最重要的部分之一。創建高質量且與您的受眾相關的內容可以吸引更多訪客，並提高網站的停留時間，這對搜尋引擎來說是一個正面信號。此外，您的內容應該具備清晰的結構，標題、副標題和段落應該清楚明瞭，並使用關鍵字來增強搜尋引擎的理解。
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="article-divider" />
-          </div>
-          <div className="article-related-posts-section">
-            <div className="bg-green-500 px-4 py-3  inline-block mx-auto">
-              你可能也有興趣
-            </div>
-            <div className="articles-grid-cms margin-small w-dyn-list">
-              <div role="list" className="articles-grid related w-dyn-items">
-                <div
-                  role="listitem"
-                  className="w-dyn-item hover:border-black p-5 hover:border"
-                >
+
+              <div className="article-content-social-share bg-white border-2 border-black rounded-[40px]">
+                <div className="social-share-label-text div-relative">
+                  SHARE
+                </div>
+                <div className="w-layout-grid social-share-icons-grid horizontal">
                   <a
-                    href="/blog-posts/echoes-of-the-mind-tracing-the-footprints-of-memory"
-                    className="article-item w-inline-block"
+                    id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b0-ac15a7a8"
+                    href="#"
+                    target="_blank"
+                    className="social-share-icon w-inline-block"
                   >
-                    <div className="article-item-img-wrap">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        src=""
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet=""
-                        className="img-cover-absolute"
-                      />
-                      <div
-                        className="img-left-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-right-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-top-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-btm-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                    <div className="article-content-wrap">
-                      <div className="article-item-head-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                          className="tag-text-style category"
-                        >
-                          Design/seo
-                        </div>
-                        <h5
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                          className="element-trigger"
-                        >
-                          seo文章
-                        </h5>
-                      </div>
-                      <div className="article-infos-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Written by</div>
-                          <div>&nbsp;</div>
-                          <div>Owen</div>
-                        </div>
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                          className="chip opacity-50 hide-mobile-landscape"
-                        />
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Published on</div>
-                          <div>&nbsp;</div>
-                          <div>Jan 14, 2024</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="line-trigger">
-                      <div
-                        className="line-moves"
-                        style={{
-                          transform:
-                            "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4376d11af30a10e56_icon-fb-black.svg"
+                      loading="lazy"
+                      alt=""
+                      className="img-cover"
+                    />
+                  </a>
+                  <a
+                    id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b2-ac15a7a8"
+                    href="#"
+                    target="_blank"
+                    className="social-share-icon w-inline-block"
+                  >
+                    <img
+                      src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a484ecff6b46ae1a04_icon-linkedin-black.svg"
+                      loading="lazy"
+                      alt=""
+                      className="img-cover"
+                    />
+                  </a>
+                  <a
+                    id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b4-ac15a7a8"
+                    href="#"
+                    target="_blank"
+                    className="social-share-icon w-inline-block"
+                  >
+                    <img
+                      src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a584ecff6b46ae1ac2_icon-x-black.svg"
+                      loading="lazy"
+                      alt=""
+                      className="img-cover"
+                    />
+                  </a>
+                  <a
+                    id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b6-ac15a7a8"
+                    href="#"
+                    target="_blank"
+                    className="social-share-icon w-inline-block"
+                  >
+                    <img
+                      src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4eed91fe3a17704f6_icon-link-black.svg"
+                      loading="lazy"
+                      alt=""
+                      className="img-cover"
+                    />
                   </a>
                 </div>
-                <div
-                  role="listitem"
-                  className="w-dyn-item hover:border-black p-5 hover:border"
-                >
-                  <a
-                    href="/blog-posts/celestial-serendipity-aligning-with-the-cosmic-dance-of-chance"
-                    className="article-item w-inline-block"
+              </div>
+              <div className="article-divider" />
+            </div>
+            <div className="article-related-posts-section">
+              <div className="bg-green-500 px-4 py-3  inline-block mx-auto">
+                你可能也有興趣
+              </div>
+              <div className="articles-grid-cms margin-small w-dyn-list">
+                <div role="list" className="articles-grid related w-dyn-items">
+                  <div
+                    role="listitem"
+                    className="w-dyn-item hover:border-black p-5 hover:border"
                   >
-                    <div className="article-item-img-wrap">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        src="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18-p-500.jpg 500w, https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg 720w"
-                        className="img-cover-absolute"
-                        style={{}}
-                      />
-                      <div
-                        className="img-left-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-right-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-top-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-btm-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                    <div className="article-content-wrap">
-                      <div className="article-item-head-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                          className="tag-text-style category"
-                        >
-                          Politics
-                        </div>
-                        <h5
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                          className="element-trigger"
-                          style={{}}
-                        >
-                          Celestial Serendipity: Aligning with the Cosmic Dance
-                          of Chance
-                        </h5>
-                      </div>
-                      <div className="article-infos-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Written by</div>
-                          <div>&nbsp;</div>
-                          <div>Isabella</div>
-                        </div>
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                          className="chip opacity-50 hide-mobile-landscape"
+                    <a href="/Blog-01" className="article-item w-inline-block">
+                      <div className="article-item-img-wrap">
+                        <img
+                          alt=""
+                          loading="lazy"
+                          src="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                          sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
+                          srcSet="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                          className="img-cover-absolute"
                         />
                         <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Published on</div>
-                          <div>&nbsp;</div>
-                          <div>Jan 10, 2024</div>
+                          className="img-left-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="img-right-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="img-top-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="img-btm-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                      </div>
+                      <div className="article-content-wrap">
+                        <div className="article-item-head-wrap">
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
+                            className="tag-text-style category"
+                          >
+                            Design/seo
+                          </div>
+                          <h5
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
+                            className="element-trigger"
+                          >
+                            SEO對於網站的重要性
+                          </h5>
+                        </div>
+                        <div className="article-infos-wrap">
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
+                            className="article-info-item"
+                          >
+                            <div className="opacity-50">Written by</div>
+                            <div>&nbsp;</div>
+                            <div>Owen</div>
+                          </div>
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
+                            className="chip opacity-50 hide-mobile-landscape"
+                          />
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
+                            className="article-info-item"
+                          >
+                            <div className="opacity-50">Published on</div>
+                            <div>&nbsp;</div>
+                            <div>Jan 14, 2024</div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="line-trigger">
-                      <div
-                        className="line-moves"
-                        style={{
-                          transform:
-                            "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                  </a>
+                      <div className="line-trigger">
+                        <div
+                          className="line-moves"
+                          style={{
+                            transform:
+                              "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    role="listitem"
+                    className="w-dyn-item hover:border-black p-5 hover:border"
+                  >
+                    <a href="/Blog-02" className="article-item w-inline-block">
+                      <div className="article-item-img-wrap">
+                        <img
+                          alt=""
+                          loading="lazy"
+                          src="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg"
+                          sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
+                          srcSet="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18-p-500.jpg 500w, https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg 720w"
+                          className="img-cover-absolute"
+                          style={{}}
+                        />
+                        <div
+                          className="img-left-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="img-right-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="img-top-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="img-btm-panel"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                      </div>
+                      <div className="article-content-wrap">
+                        <div className="article-item-head-wrap">
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
+                            className="tag-text-style category"
+                          >
+                            SEO
+                          </div>
+                          <h5
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
+                            className="element-trigger"
+                            style={{}}
+                          >
+                            網頁設計很花錢嗎？
+                          </h5>
+                        </div>
+                        <div className="article-infos-wrap">
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
+                            className="article-info-item"
+                          >
+                            <div className="opacity-50">Written by</div>
+                            <div>&nbsp;</div>
+                            <div>Isabella</div>
+                          </div>
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
+                            className="chip opacity-50 hide-mobile-landscape"
+                          />
+                          <div
+                            id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
+                            className="article-info-item"
+                          >
+                            <div className="opacity-50">Published on</div>
+                            <div>&nbsp;</div>
+                            <div>Jan 10, 2024</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="line-trigger">
+                        <div
+                          className="line-moves"
+                          style={{
+                            transform:
+                              "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
