@@ -12,6 +12,7 @@ import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
+import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
 import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
 import BannerSwiper from "../../components/BannerSwiper/page.jsx";
 import SpringModal from "../../components/SpringModal/page.jsx";
@@ -22,6 +23,7 @@ import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
 import Image from "next/image.js";
+
 export default function Blog() {
   //compare table
   const imageLoader = ({ src, width, quality }) => {
@@ -31,6 +33,17 @@ export default function Blog() {
   };
   const imageLoader02 = ({ src, width, quality }) => {
     return `https://cdn.prod.website-files.com/65961828f21f96309de14a8f/${src}?w=${width}&q=${
+      quality || 75
+    }`;
+  };
+  const imageLoader03 = ({ src, width, quality }) => {
+    return `https://miro.medium.com/v2/resize:fit:1400/${src}?w=${width}&q=${
+      quality || 75
+    }`;
+  };
+
+  const imageLoader04 = ({ src, width, quality }) => {
+    return `https://www.ultraehp.com/images/test-portfolio/${src}?w=${width}&q=${
       quality || 75
     }`;
   };
@@ -115,7 +128,7 @@ export default function Blog() {
                     </h1>
                     <RevealLinks />
 
-                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-extrabold p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-black mx-auto">
+                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-normal p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-black mx-auto">
                       HELLO！Jeek
                       是一個網頁接案者創立的一個小小工作室，專注於幫助中小企業、餐飲業與美容業打造專屬網站的設計公司。我們相信，每個企業都有自己的風格和故事，而這些都應該在網站上得到最佳展現。不僅如此，我們還會特別注重網站的SEO優化，讓您的網站在搜尋引擎上更容易被找到，從而提升曝光度，吸引更多潛在客戶，最終增加收益。
                     </div>
@@ -146,87 +159,6 @@ export default function Blog() {
                   </div>
                 </main>
               </div>
-            </section>
-
-            <section className="w-full px-[100px] xl:flex-row flex-col flex">
-              <a
-                href=""
-                className="xl:w-1/2 w-full mr-4 hover:shadow-custom 
-                border-1
-                
-              duration-300
-              hover:border-3
-              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
-              >
-                <h4 className="text-[40px] font-light text-black">
-                  網頁SEO很重要嗎？
-                </h4>
-                <div className="flex">
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    搜尋引擎優化
-                  </span>
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    網頁結構優化
-                  </span>
-                </div>
-                <p className=" text-[16px] mt-3">
-                  在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
-                </p>
-                <div className="flex w-full  flex-col items-start">
-                  <b className="mb-3 text-[16px]">3d model for website</b>
-
-                  <Image
-                    loader={imageLoader02}
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    placeholder="empty"
-                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                  />
-                </div>
-              </a>
-              <a
-                href=""
-                className="xl:w-1/2 w-full ml-4 hover:shadow-custom 
-              duration-300
-              
-              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
-              >
-                <h4
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  className="text-[40px] font-light text-black"
-                >
-                  SEO能帶來哪些好處？
-                </h4>
-                <div className="flex my-4">
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    搜尋引擎優化
-                  </span>
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    網頁結構優化
-                  </span>
-                </div>
-                <p className="  font-bold text-[20px] mt-3">長期效益：</p>
-                <div className="flex w-full  flex-col items-start">
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    SEO的效果是持久且累積的。一旦網站建立了良好的搜尋引擎排名，即使停止大規模的SEO投入，仍然能持續受益於這些排名，這意味著可以在未來不斷帶來穩定的收入流，增強企業的長期盈利能力。
-                  </b>
-                  <p className=" font-bold text-[20px] mt-3">提升競爭優勢:</p>
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    在競爭激烈的市場中，擁有良好SEO策略的企業能夠超越競爭對手，成為行業領先者。這種競爭優勢將直接轉化為更高的市場份額和利潤。
-                  </b>
-
-                  <Image
-                    loader={imageLoader02}
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    placeholder="empty"
-                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                  />
-                </div>
-              </a>
             </section>
 
             <section className="discount hidden px-[10px] md:px-[70px] pt-[30px] md:pt-[50px] flex justify-center items-center py-0 lg:py-6 ">
@@ -373,7 +305,11 @@ export default function Blog() {
                           />
                         </div>
                       </div>
-                      <h2 className="heading is-3d-content-title" style={{}}>
+                      <h2
+                        className="heading is-3d-content-title"
+                        id="exploref"
+                        style={{}}
+                      >
                         "個人接案者，溝通更快速"
                       </h2>
                     </div>
@@ -536,7 +472,9 @@ export default function Blog() {
                       <p className=" text-[16px] leading-normal text-left ">
                         大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
                         <br></br> <br></br>
-                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過網站設計和SEO優化，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
+                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
+                        <span className="bg-green-400">網站設計和SEO優化</span>
+                        ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
                       </p>
                       <a
                         href="/"
@@ -550,12 +488,13 @@ export default function Blog() {
                           <div className="button-bg" style={{}} />
                         </div>
                         <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                          <Image
+                            src="三電線02.png"
+                            placeholder="empty"
                             loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
+                            width={800}
+                            height={800}
+                            loader={imageLoader04}
                           />
                         </div>
                       </a>
@@ -569,7 +508,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
+                          src="https://www.ultraehp.com/images/test-portfolio/三電線02.png"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           className="cover-image"
                           style={{
@@ -587,14 +526,13 @@ export default function Blog() {
                     <div className="about-grid-image">
                       <div className="reveal-image-trigger">
                         <img
+                          className="w-[80%] mx-auto"
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          src="https://www.ultraehp.com/images/test-portfolio/三電線捲起.png"
                           srcSet="
                                         
                                       "
-                          className="cover-image"
                           style={{
                             transform:
                               "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -646,6 +584,332 @@ export default function Blog() {
                             -
                             您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
                           </p>
+                        </div>
+                      </div>
+                      <a
+                        href="/"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            立即聯絡
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className="section">
+              <div className="container">
+                <div className="padding">
+                  <div className="w-layout-grid about-content">
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
+                      className="about-grid-content"
+                    >
+                      <h2 className="heading is-medium-title">
+                        "商業/產品攝影"
+                      </h2>
+                      <p className=" text-[16px] leading-normal text-left ">
+                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
+                        <br></br> <br></br>
+                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過網站設計和SEO優化，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
+                      </p>
+                      <a
+                        href="/"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            案例sample
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          />
+                        </div>
+                      </a>
+                    </div>
+
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
+                      className="about-grid-image"
+                    >
+                      <div className="reveal-image-trigger">
+                        <img
+                          loading="lazy"
+                          alt="Portrait of the team"
+                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          className="cover-image"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="bg-for-animation"
+                          style={{ display: "block" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="about-grid-image">
+                      <div className="reveal-image-trigger">
+                        {/* <img
+                          loading="lazy"
+                          alt="Portrait of the team"
+                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          srcSet="
+                                        
+                                      "
+                          className="cover-image"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        /> */}
+                        <iframe
+                          src="https://my.spline.design/iphone14procopy-fdd3e2365e4a03f380783eb3384cb838/"
+                          frameborder="0"
+                          width="100%"
+                          height="800"
+                        ></iframe>
+                        <div
+                          className="bg-for-animation"
+                          style={{ display: "block" }}
+                        />
+                      </div>
+                    </div>
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
+                      className="about-grid-content"
+                    >
+                      {/* <div className="text-dot-block">
+                        <div className="dot" />
+                        <p className="paragraph">網頁設計</p>
+                      </div> */}
+                      <h2 className="heading is-medium-title">
+                        "移動設備體驗優化 "
+                      </h2>
+                      <div className="flex items-start flex-col ">
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px] leading-normal">
+                            1. 移動優先索引（Mobile-First Indexing）
+                          </b>
+                          <p className="text-left leading-normal mt-3">
+                            - Google 目前使用{" "}
+                            <span className="bg-green-400">
+                              「移動優先索引」
+                            </span>
+                            ，這意味著 Google
+                            搜索引擎主要基於網站的移動版本來進行索引和排名。因此，確保你的網站在移動設備上的表現是至關重要的。如果你的網站在桌面和移動設備上有不同的內容，Google
+                            會優先考慮移動設備上的內容。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]"> 頁面加載速度</b>
+                          <p className="text-left leading-normal mt-3">
+                            - Google
+                            對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
+                            的{" "}
+                            <span className="bg-green-400">「頁面體驗」</span>
+                            更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
+                            <span className="bg-green-400">
+                              Google PageSpeed Insights
+                            </span>{" "}
+                            來測試和改進頁面速度。
+                          </p>
+                          <img
+                            className="w-full h-auto"
+                            src="https://www.cloudways.com/blog/wp-content/uploads/Page-Speed-Insights-Field-Data.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <a
+                        href="/"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            立即聯絡
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className="section">
+              <div className="container">
+                <div className="padding">
+                  <div className="w-layout-grid about-content">
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
+                      className="about-grid-content"
+                    >
+                      <h2 className="heading is-medium-title">
+                        "商業/產品攝影"
+                      </h2>
+                      <p className=" text-[16px] leading-normal text-left ">
+                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
+                        <br></br> <br></br>
+                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過網站設計和SEO優化，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
+                      </p>
+                      <a
+                        href="/"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            案例sample
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          />
+                        </div>
+                      </a>
+                    </div>
+
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
+                      className="about-grid-image"
+                    >
+                      <div className="reveal-image-trigger">
+                        <img
+                          loading="lazy"
+                          alt="Portrait of the team"
+                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          className="cover-image"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        />
+                        <div
+                          className="bg-for-animation"
+                          style={{ display: "block" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="about-grid-image">
+                      <div className="reveal-image-trigger">
+                        {/* <img
+                          loading="lazy"
+                          alt="Portrait of the team"
+                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          srcSet="
+                                        
+                                      "
+                          className="cover-image"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        /> */}
+                        <iframe
+                          src="https://my.spline.design/iphone14procopy-fdd3e2365e4a03f380783eb3384cb838/"
+                          frameborder="0"
+                          width="100%"
+                          height="800"
+                        ></iframe>
+                        <div
+                          className="bg-for-animation"
+                          style={{ display: "block" }}
+                        />
+                      </div>
+                    </div>
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
+                      className="about-grid-content"
+                    >
+                      {/* <div className="text-dot-block">
+                        <div className="dot" />
+                        <p className="paragraph">網頁設計</p>
+                      </div> */}
+                      <h2 className="heading is-medium-title">
+                        "移動設備體驗優化 "
+                      </h2>
+                      <div className="flex items-start flex-col ">
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px] leading-normal">
+                            1. 移動優先索引（Mobile-First Indexing）
+                          </b>
+                          <p className="text-left leading-normal mt-3">
+                            - Google 目前使用{" "}
+                            <span className="bg-green-400">
+                              「移動優先索引」
+                            </span>
+                            ，這意味著 Google
+                            搜索引擎主要基於網站的移動版本來進行索引和排名。因此，確保你的網站在移動設備上的表現是至關重要的。如果你的網站在桌面和移動設備上有不同的內容，Google
+                            會優先考慮移動設備上的內容。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]"> 頁面加載速度</b>
+                          <p className="text-left leading-normal mt-3">
+                            - Google
+                            對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
+                            的{" "}
+                            <span className="bg-green-400">「頁面體驗」</span>
+                            更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
+                            <span className="bg-green-400">
+                              Google PageSpeed Insights
+                            </span>{" "}
+                            來測試和改進頁面速度。
+                          </p>
+                          <img
+                            className="w-full h-auto"
+                            src="https://www.cloudways.com/blog/wp-content/uploads/Page-Speed-Insights-Field-Data.jpg"
+                            alt=""
+                          />
                         </div>
                       </div>
                       <a
@@ -801,6 +1065,87 @@ export default function Blog() {
               </div>
             </section>
 
+            <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
+              <a
+                href=""
+                className="xl:w-1/2 w-full mr-4 hover:shadow-custom 
+                border-1
+                
+              duration-300
+              hover:border-3
+              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
+              >
+                <h4 className="text-[40px] font-light text-black leading-normal">
+                  網頁SEO很重要嗎？
+                </h4>
+                <div className="flex">
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    搜尋引擎優化
+                  </span>
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    網頁結構優化
+                  </span>
+                </div>
+                <p className=" text-[16px] mt-3">
+                  在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
+                </p>
+                <div className="flex w-full  flex-col items-start">
+                  <b className="mb-3 text-[16px]">3d model for website</b>
+
+                  <Image
+                    loader={imageLoader02}
+                    width={700}
+                    height={700}
+                    loading="lazy"
+                    placeholder="empty"
+                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
+                  />
+                </div>
+              </a>
+              <a
+                href=""
+                className="xl:w-1/2 w-full mt-5 md:mt-0 ml-0 xl:ml-4 hover:shadow-custom 
+              duration-300
+              
+              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
+              >
+                <h4
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  className="text-[40px] leading-normal font-light text-black"
+                >
+                  SEO能帶來哪些好處？
+                </h4>
+                <div className="flex my-4">
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    搜尋引擎優化
+                  </span>
+                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    網頁結構優化
+                  </span>
+                </div>
+                <p className="  font-bold text-[20px] mt-3">長期效益：</p>
+                <div className="flex w-full  flex-col items-start">
+                  <b className="mb-3 text-[14px] font-normal leading-normal">
+                    SEO的效果是持久且累積的。一旦網站建立了良好的搜尋引擎排名，即使停止大規模的SEO投入，仍然能持續受益於這些排名，這意味著可以在未來不斷帶來穩定的收入流，增強企業的長期盈利能力。
+                  </b>
+                  <p className=" font-bold text-[20px] mt-3">提升競爭優勢:</p>
+                  <b className="mb-3 text-[14px] font-normal leading-normal">
+                    在競爭激烈的市場中，擁有良好SEO策略的企業能夠超越競爭對手，成為行業領先者。這種競爭優勢將直接轉化為更高的市場份額和利潤。
+                  </b>
+
+                  <Image
+                    loader={imageLoader02}
+                    width={700}
+                    height={700}
+                    loading="lazy"
+                    placeholder="empty"
+                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
+                  />
+                </div>
+              </a>
+            </section>
+
             <section className="section">
               <div className="container">
                 <div className="padding">
@@ -937,13 +1282,13 @@ export default function Blog() {
                         <b className="mb-3 text-[16px]">3d model for website</b>
                         <div className="flex">
                           <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                            Banner
+                            3D 形象影片
                           </span>
                           <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                            Image
+                            交互式網站
                           </span>
                           <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                            Product Display
+                            產品展示
                           </span>
                         </div>
                       </div>
@@ -1004,6 +1349,43 @@ export default function Blog() {
                 </div>
               </div>
             </section>
+            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px] lg:px-[30px]  xl:px-[50px] 2xl:px-[80px]">
+              <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
+                <div className="txt">
+                  <div className="logo pl-[20px]">
+                    <b className="font-bold text-[30px]">JEEK</b>
+                  </div>
+                  <div className="bottom " data-aos="fade-up">
+                    <p className="text-[12px] font-bold">B:MING by BEAMS</p>
+                    <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
+                      使用 3D 模型製作網頁橫幅和產品圖的好處
+                    </h3>
+
+                    <b className="text-[22px] mt-[50px]">Author Name</b>
+                    <br />
+                    <div class="flex mt-5">
+                      <span class="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        3D 形象影片
+                      </span>
+                      <span class="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        交互式網站
+                      </span>
+                      <span class="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        產品展示
+                      </span>
+                    </div>
+
+                    <p className="text-[16px] w-2/3  xl:w-full mt-[40px]">
+                      將 3D
+                      模型應用於網頁橫幅和產品圖中，可以顯著提升品牌的視覺吸引力和客戶互動
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full pt-10 xl:w-[60%]">
+                <DragCaroudelSlider />
+              </div>
+            </section>
             {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}
             <div>
               <BannerSwiper />
@@ -1012,39 +1394,81 @@ export default function Blog() {
             <section>
               <div className="container"></div>
             </section>
-            <section className="px-[40px] py-[90px]">
-              <Table
-                className="bg-green-700 rounded-xl py-[50px]"
-                aria-label="Example table with dynamic content"
-              >
-                <TableHeader
-                  className="text-white border-b-2 text-[22px] border-white"
-                  columns={columns}
+            <section className=" px-[40px] py-[90px]">
+              {/* <div className="w-full hidden overflow-scroll">
+                <Table
+                  className="bg-green-700 w-full rounded-xl py-[50px]"
+                  aria-label="Example table with dynamic content"
                 >
-                  {(column) => (
-                    <TableColumn
-                      className="text-white  text-[22px] border-b-2 border-white"
-                      key={column.key}
-                    >
-                      {column.label}
-                    </TableColumn>
-                  )}
-                </TableHeader>
-                <TableBody className="text-white" items={rows}>
-                  {(item) => (
-                    <TableRow className="text-white text-center" key={item.key}>
-                      {(columnKey) => (
-                        <TableCell>{getKeyValue(item, columnKey)}</TableCell>
-                      )}
-                    </TableRow>
-                  )}
-                </TableBody>
-              </Table>
+                  <TableHeader
+                    className="text-white border-b-2 text-[22px] border-white"
+                    columns={columns}
+                  >
+                    {(column) => (
+                      <TableColumn
+                        className="text-white  text-[22px] border-b-2 border-white"
+                        key={column.key}
+                      >
+                        {column.label}
+                      </TableColumn>
+                    )}
+                  </TableHeader>
+                  <TableBody className="text-white" items={rows}>
+                    {(item) => (
+                      <TableRow
+                        className="text-white text-center"
+                        key={item.key}
+                      >
+                        {(columnKey) => (
+                          <TableCell>{getKeyValue(item, columnKey)}</TableCell>
+                        )}
+                      </TableRow>
+                    )}
+                  </TableBody>
+                </Table>
+              </div> */}
 
-              <div className="  flex py-6 justify-center">
-                <b className=" text-[16px] w-full lg:w-2/3  text-center leading-normal">
-                  *選擇套版網站，您可以快速、低成本地建立一個簡單易用的網站，適合需要迅速上線的小型業務；而客製化網站則提供高度的設計和功能靈活性，讓您的品牌在數位世界中脫穎而出，並能隨業務成長進行擴展，是追求獨特性和長期效益的理想選擇。
-                </b>
+              <div className="  flex flex-col items-center py-6 justify-center">
+                <h2 className="heading is-medium-title">
+                  "客製網站 or 套版網站？"
+                </h2>
+                <p className="text-[22px] bg-green-400  text-center mb-4 mt-2">
+                  沒有哪種比較好，適合你的才是好的網站
+                </p>
+                <div className="flex flex-col xl:flex-row justify-center items-center text-[16px]  px-[100px] text-center leading-normal">
+                  <div className="p-10 w-full xl:w-1/2">
+                    <span className="font-bold text-[22px]">選擇套版網站</span>
+                    <p className="w-full mx-auto lg:w-2/3">
+                      ，您可以快速、低成本地建立一個簡單易用的網站，適合需要迅速上線的小型業務
+                    </p>
+                    <div className="img mt-10" data-aos="fade-up">
+                      <Image
+                        loader={imageLoader03}
+                        loading="lazy"
+                        width={800}
+                        height={600}
+                        placeholder="empty"
+                        src="format:webp/1*VXCxYzjtYlUlLUy7LTamfQ.png"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="p-10 w-full xl:w-1/2">
+                    <span className="font-bold text-[22px]">客製化網站</span>
+                    <p>
+                      {" "}
+                      則提供高度的設計和功能靈活性，讓您的品牌在數位世界中脫穎而出，並能隨業務成長進行擴展，是追求獨特性和長期效益的理想選擇。
+                    </p>
+                    <img
+                      data-aos-delay="300"
+                      data-aos="fade-up"
+                      src="
+                  https://www.handz.design/assets/images/gallery01/2ebd4515.jpg?v=02f8e9b2"
+                      alt=""
+                      className="w-full"
+                    />
+                  </div>
+                </div>
               </div>
             </section>
             {/* <section></section>
@@ -1060,7 +1484,7 @@ export default function Blog() {
                       style={{ display: "flex", justifyContent: "center" }}
                     >
                       <h3
-                        className="heading  text-[32px] mx-auto"
+                        className="heading text-[24px] xl:text-[32px] mx-auto"
                         style={{
                           marginBottom: 30,
                           display: "flex",

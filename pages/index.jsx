@@ -138,10 +138,18 @@ CREACTIVEs</h1>
                 className={styles.container}
               >
                 <div ref={plane} className={styles.body}>
-                  <Text3d primary={"3D 視覺網站"} secondary={"3D 視覺網站"} />
-                  <Text3d primary={"客製化網站"} secondary={"客製化網站"} />
-                  <Text3d primary={"商業攝影"} secondary={"商業攝影"} />
-                  <Text3d primary={"SEO行銷"} secondary={"SEO行銷"} />
+                  <a href="/about-2">
+                    <Text3d primary={"3D 視覺網站"} secondary={"3D 視覺網站"} />
+                  </a>
+                  <a href="/Blogs">
+                    <Text3d primary={"客製化網站"} secondary={"客製化網站"} />
+                  </a>
+                  <a href="Blog-03">
+                    <Text3d primary={"商業攝影"} secondary={"商業攝影"} />
+                  </a>
+                  <a href="/about">
+                    <Text3d primary={"SEO行銷"} secondary={"SEO行銷"} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -321,9 +329,12 @@ CREACTIVEs</h1>
                   </p>
                 </div> */}
                 <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
-                  <p className="text-white  text-[22px] text-center">
+                  <a
+                    href="/about"
+                    className="text-white  text-[22px] text-center"
+                  >
                     3d-model
-                  </p>
+                  </a>
                 </div>
                 <Image
                   src="/668e6aca4fb399ee1389df93_stada-img-3-p-1600.png"
@@ -343,7 +354,12 @@ CREACTIVEs</h1>
           <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3">
             <div className="border-2 overflow-hidden border-black w-full relative">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
-                <p className="text-white  text-[22px] text-center">3d-model</p>
+                <a
+                  href="/about"
+                  className="text-white  text-[22px] text-center"
+                >
+                  3d-model
+                </a>
               </div>
               <Image
                 className="hover:scale-105 duration-500"

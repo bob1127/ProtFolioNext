@@ -104,10 +104,11 @@ const HorizontalScroll = () => {
               width={600}
               height={600}
             />
-            <div className="txt group  p-[20px]">
+            <div className="txt group  p-[10px] xl:p-[20px]">
               <b className=" text-[14px] xl:text-[20px] scale-100 group-hover:scale-105 font-bold">
                 網頁設計會很花錢嗎？
               </b>
+              <p>lorem</p>
               <p className="text-[10px] xl:text-[14px] leading-normal ">
                 在當今數位化的時代，擁有一個能夠吸引流量並轉化為潛在客戶的網站已成為每個企業成功的關鍵。搜尋引擎優化（SEO）不僅是提升網站曝光度的工具，更是確保您的業務在競爭中脫穎而出的必要策略。本文將深入探討如何透過優化網站設計來增加搜尋引擎的曝光度和排名。
               </p>
@@ -122,7 +123,7 @@ const HorizontalScroll = () => {
               width={600}
               height={600}
             />
-            <div className="txt group  p-[20px]">
+            <div className="txt group  px-0 xl:p-[20px]">
               <b className=" text-[14px] xl:text-[20px] scale-100 group-hover:scale-105 font-bold">
                 網頁設計會很花錢嗎？
               </b>
@@ -140,7 +141,7 @@ const HorizontalScroll = () => {
               width={600}
               height={600}
             />
-            <div className="txt group  p-[20px]">
+            <div className="txt group  p-0 xl:p-[20px]">
               <b className=" text-[14px] xl:text-[20px] scale-100 group-hover:scale-105 font-bold">
                 網頁設計會很花錢嗎？
               </b>

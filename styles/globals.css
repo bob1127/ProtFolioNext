@@ -10,9 +10,34 @@
 
 /* Start purging... */
 @tailwind utilities;
+
+
+
+
+/* dragcarouselslider css */
+/* 自定義 Swiper 分頁點樣式 */
+.swiper-pagination-bullet {
+  width: 20px; /* 滾輪的寬度 */
+  height: 10px; /* 滾輪的高度 */
+  background: #999; /* 滾輪的顏色 */
+  border-radius: 10px; /* 圓角使其看起來像滾輪 */
+  opacity: 1; /* 讓滾輪完全可見 */
+  transition: background-color 0.3s; /* 滑動時滾輪顏色變化的過渡效果 */
+}
+
+.swiper-pagination-bullet-active {
+  background: #007bff; /* 活躍狀態下的顏色 */
+}
+
+/* 設定 Swiper 滾輪的位置 */
+.swiper-pagination {
+  bottom: 10px; /* 根據需要調整滾輪的位置 */
+}
+
 /* Stop purging. */
-
-
+::selection {
+	background: rgb(188, 226, 50);
+}
 .section-hidden{
     display: none !important;
 }

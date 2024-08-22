@@ -422,35 +422,40 @@ export default function Blog() {
         </div>
 
         <section className="bg-green-300 py-[80px] flex justify-center flex-col items-center">
-          <h3 className="text-[50px]  font-bold" data-aos="fade-up">
-            Title
+          <h3
+            className="  text-[26px] sm:text-[40px] 2xl:text-[50px]  font-bold"
+            data-ao-delay="300"
+            data-aos="fade-up"
+          >
+            "你的產品很好，想讓更多人看見嗎 ??"
           </h3>
           <div
-            className="w-1/2 text-center mt-4 "
+            className="w-1/2 text-[22px] mt-5 text-center  "
             data-aos-delay="300"
             data-aos="fade-up"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia
-            possimus eos vitae minima, iure voluptas ullam quisquam iste
+            {/* 你的產品很好，想讓更多人看見嗎 */}
           </div>
         </section>
 
         <section className="py-[50px]  section-scroll-bg bg-green-300">
           <HorizontalScroll />
         </section>
-        <div className="w-full py-[50px] border border-black">
-          <div className="txt  w-[3/4] h-auto xl:w-2/3 2xl:w-1/3 mx-auto border-1 border-rose-500">
+        <div className="w-full border border-green-400 py-[50px] ">
+          <div className="txt my-5 px-[30px] w-[3/4] h-auto xl:w-2/3 2xl:w-1/3 mx-auto border-1 border-rose-500">
             <h2
+              data-aos-delay="300"
               data-aos="fade-up"
-              className="text-[50px] text-center mx-auto font-bold"
+              className="text-[24px] lg:text-[32px] xl:text-[50px] mb-5 text-center mx-auto font-bold"
             >
-              Title
+              "更多網頁設計案例"
             </h2>
-            <p className="mx-auto text-center" data-aos="fade-up">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              quas? Quas eum quasi odio, vel est repellendus rem esse voluptates
-              deleniti temporibus laudantium nam repellat, at hic quia, natus
-              pariatur.
+            <p
+              data-aos-delay="300"
+              className="text-[25px] mb-5 xl:text-[32px] 2xl:text-[40px] mx-auto text-center"
+              data-aos="fade-up"
+            >
+              想看更多案例嗎？
             </p>
             <div className="flex">
               <img

@@ -22,6 +22,7 @@
     "framer-motion": "^11.3.27",
     "graphql": "^16.9.0",
     "gsap": "^3.12.5",
+    "lottie-react": "^2.4.0",
     "lucide-react": "^0.427.0",
     "matter-js": "^0.20.0",
     "next": "latest",

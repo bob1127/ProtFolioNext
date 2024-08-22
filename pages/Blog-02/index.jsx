@@ -468,7 +468,7 @@ export default function Blog() {
               </div>
             </div>
 
-            <div className="article-content-social-share bg-white border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share bg-green-500 border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a
