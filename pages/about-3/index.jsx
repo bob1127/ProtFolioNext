@@ -711,7 +711,10 @@ export default function Blog() {
                         <div className="dot" />
                         <p className="paragraph">網頁設計</p>
                       </div> */}
-                      <h2 className="heading is-medium-title">
+                      <h2
+                        className="heading is-medium-title"
+                        data-aos="fade-up"
+                      >
                         "移動設備體驗優化 "
                       </h2>
                       <div className="flex items-start flex-col ">
@@ -1356,7 +1359,7 @@ export default function Blog() {
                     <b className="font-bold text-[30px]">JEEK</b>
                   </div>
                   <div className="bottom " data-aos="fade-up">
-                    <p className="text-[12px] font-bold">B:MING by BEAMS</p>
+                    <p className="text-[12px] font-bold">Design by Website</p>
                     <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
                       使用 3D 模型製作網頁橫幅和產品圖的好處
                     </h3>

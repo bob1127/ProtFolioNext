@@ -24,9 +24,9 @@ export default function App() {
   // Array of image file names
   const images = [
     "Black-03_f9884945-38e0-49fe-91b5-dba4449b9152_3078x.jpg.png",
-    "A25M0121-DT07-V1_3078x.jpg.webp",
+
     "行動電源03.png",
-    "A25M0121-DT03-V1_DTC_3078x.jpg.webp",
+
     "B-38e0-49fe-91b5-dba4449b9152_3078x.jpg.png",
     "3ft-05_ad957ae9-9adc-45af-951f-ca7b0e84803a_2878x.jpg.png",
     "untitl55ed.png",

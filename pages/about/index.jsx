@@ -31,6 +31,25 @@ export default function Blog() {
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
       <>
+        <Head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Your Website Name",
+                url: "https://yourwebsite.com",
+                potentialAction: {
+                  "@type": "SearchAction",
+                  target:
+                    "https://yourwebsite.com/search?q={search_term_string}",
+                  "query-input": "required name=search_term_string",
+                },
+              }),
+            }}
+          />
+        </Head>
         <div className="about-root">
           <div id="webpage" className="page-wrapper">
             <main className="main">
@@ -657,9 +676,9 @@ export default function Blog() {
                               alt=""
                             /> */}
                             <br></br>
-                            <strong>
+                            <p className="text-[16px] font-normal">
                               根據Google的數據，超過90%的消費者會使用搜索引擎來查找產品和服務。如果你的企業能夠在搜索結果中獲得較高的曝光率，潛在客戶就更容易記住你的品牌，從而提高品牌知名度。
-                            </strong>
+                            </p>
                           </p>
                         </div>
                         <div

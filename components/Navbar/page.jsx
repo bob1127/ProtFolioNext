@@ -14,14 +14,14 @@ export default function Index() {
             <div className="menu-social-wrapper w-dyn-list">
               <div role="list" className="menu-social-list w-dyn-items">
                 <div role="listitem" className="menu-social-item w-dyn-item">
-                  <a href="#" className="menu-social-link w-inline-block">
+                  {/* <a href="#" className="menu-social-link w-inline-block">
                     <img
                       src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c39ba9cdf534275b8533_youtube-logo-black.svg"
                       loading="lazy"
                       alt=""
                       className="icon is-social-menu-icon"
                     />
-                  </a>
+                  </a> */}
                 </div>
                 <div role="listitem" className="menu-social-item w-dyn-item">
                   <a href="#" className="menu-social-link w-inline-block">

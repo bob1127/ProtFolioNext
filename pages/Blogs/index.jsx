@@ -448,7 +448,7 @@ export default function Blog() {
               data-aos="fade-up"
               className="text-[24px] lg:text-[32px] xl:text-[50px] mb-5 text-center mx-auto font-bold"
             >
-              "更多網頁設計案例"
+              "更多網頁設計相關知識"
             </h2>
             <p
               data-aos-delay="300"
@@ -458,11 +458,21 @@ export default function Blog() {
               想看更多案例嗎？
             </p>
             <div className="flex">
-              <img
-                src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/65d3c889459c1244c9b18495_74-9AkKzjzsxBJMdKpoUixuZrpnxoBKHjIx7Ux33H74.png"
-                className="w-[1200px] h-[400px]"
-                alt=""
-              />
+              <a
+                href="/Blog-02"
+                className="blog-item inline-block p-10 border-1 border-black"
+              >
+                <div className="txt">
+                  <h3 className="text-[20px] font-bold">
+                    如何增加搜尋引擎曝光度和排名?
+                  </h3>
+                </div>
+                <img
+                  src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/65d3c889459c1244c9b18495_74-9AkKzjzsxBJMdKpoUixuZrpnxoBKHjIx7Ux33H74.png"
+                  className="w-[1200px] h-[400px]"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>
