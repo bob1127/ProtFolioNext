@@ -1173,7 +1173,7 @@ export default function Blog() {
                 <div className="main-container medium-paddings">
                   <a
                     id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                    href="/about"
+                    href="/Blogs"
                     className="simple-link"
                   >
                     全部文章

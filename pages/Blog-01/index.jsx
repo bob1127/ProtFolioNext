@@ -489,7 +489,7 @@ export default function Blog() {
                 SEO是一項強大且多方面的行銷策略，能夠顯著提升網站的曝光度、信任度和轉化率，為您的業務帶來持續的成長。無論您是剛起步的小型企業還是已經擁有穩定客群的大型公司，SEO都應該成為您的行銷計畫中的重要一環。透過不斷優化網站並適應市場和搜尋引擎的變化，您將能夠在競爭中脫穎而出，實現長期的成功。
               </p>
             </section>
-            <div className="article-content-social-share">
+            <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a

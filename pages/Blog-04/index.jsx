@@ -538,7 +538,7 @@ export default function Blog() {
                 </div>
               </div>
 
-              <div className="article-content-social-share bg-white border-2 border-black rounded-[40px]">
+              <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
                 <div className="social-share-label-text div-relative">
                   SHARE
                 </div>
