@@ -262,7 +262,7 @@ export default function MyApp({ Component, pageProps, router }) {
                       </div>
                       <div className="footer-utility-links">
                         <a
-                          href="https://www.metrik.studio/webflow-templates"
+                          href="  "
                           target="_blank"
                           className="footer-utility-link"
                         >

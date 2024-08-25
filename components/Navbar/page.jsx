@@ -76,18 +76,10 @@ export default function Index() {
               </div>
               <div className="secondary-links-block">
                 <p className="menu-small-text">Template</p>
-                <a
-                  href="https://webflow.com/templates/html/stada-agency-website-template"
-                  target="_blank"
-                  className="menu-sesondary-link"
-                >
+                <a href=" " target="_blank" className="menu-sesondary-link">
                   關於我們
                 </a>
-                <a
-                  href="https://www.metrik.studio/webflow-templates"
-                  target="_blank"
-                  className="menu-sesondary-link"
-                >
+                <a href="  " target="_blank" className="menu-sesondary-link">
                   網站作品｜案例
                 </a>
               </div>

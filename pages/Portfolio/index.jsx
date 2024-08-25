@@ -92,18 +92,10 @@ export default function Blog() {
                 </div>
                 <div className="secondary-links-block">
                   <p className="menu-small-text">Template</p>
-                  <a
-                    href="https://webflow.com/templates/html/stada-agency-website-template"
-                    target="_blank"
-                    className="menu-sesondary-link"
-                  >
+                  <a href=" " target="_blank" className="menu-sesondary-link">
                     Buy template
                   </a>
-                  <a
-                    href="https://www.metrik.studio/webflow-templates"
-                    target="_blank"
-                    className="menu-sesondary-link"
-                  >
+                  <a href="  " target="_blank" className="menu-sesondary-link">
                     More templates
                   </a>
                 </div>
@@ -1557,7 +1549,7 @@ export default function Blog() {
                   </div>
                   <div className="footer-utility-links">
                     <a
-                      href="https://www.metrik.studio/webflow-templates"
+                      href="  "
                       target="_blank"
                       className="footer-utility-link"
                     >
