@@ -212,7 +212,13 @@ export default function Blog() {
             transformStyle: "preserve-3d",
           }}
         >
-          <a href="/about-3" className="fixed-button w-inline-block">
+          <a
+            data-aos="fade-down"
+            data-aos-delay="300"
+            href="javascript:void(0);"
+            onclick="window.history.back();"
+            className="z-[999999999999999999] border-2 border-black fixed-button w-inline-block"
+          >
             <div className="fixed-button-icon-wrap">
               <img
                 src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
@@ -242,7 +248,7 @@ export default function Blog() {
             <img
               alt=""
               loading="eager"
-              src="https://www.accorder.co.jp/cms/wp-content/uploads/MG_0131_re-1-1920x919.jpg"
+              src="https://www.ultraehp.com/images/test-portfolio/Adrian_-Filmaker-to-Motion-Designer.png.webp"
               sizes="100vw"
               className="img-cover"
             />
@@ -358,7 +364,10 @@ export default function Blog() {
           }}
           className="article-social-share"
         >
-          <div className="social-share-component">
+          <div
+            className="social-share-component border border-black"
+            data-aos="fade-left"
+          >
             <div className="social-share-label-text flex flex-col div-relative">
               SHARE
             </div>
@@ -447,7 +456,11 @@ export default function Blog() {
                   2. 短影音的獨特特點
                 </div>
                 <p className="font-normal leading-[26px]">
-                  短影音的核心特點在於其簡潔和直觀。與傳統的長篇影片相比，短影音通常在15秒到60秒之間，要求創作者在有限的時間內傳達清晰的信息。這種格式鼓勵創意和創新，促使品牌在短時間內引起觀眾的注意。短影音的形式通常包括音樂、特效和快速剪輯，這些都能夠提升觀眾的參與感和記憶點。
+                  短影音的核心特點在於其簡潔和直觀。與傳統的長篇影片相比，
+                  <span className="bg-green-400">
+                    短影音通常在15秒到60秒之間
+                  </span>
+                  ，要求創作者在有限的時間內傳達清晰的信息。這種格式鼓勵創意和創新，促使品牌在短時間內引起觀眾的注意。短影音的形式通常包括音樂、特效和快速剪輯，這些都能夠提升觀眾的參與感和記憶點。
                 </p>
               </div>
               <img
@@ -463,11 +476,18 @@ export default function Blog() {
                       <span className="font-bold text-[16px]">
                         高參與度和分享率：
                       </span>
-                      短影音通常具有高度的娛樂性和創意性，這使得觀眾更容易參與和分享內容。根據研究，短影音的分享率比長篇影片高出30%以上，這意味著您的品牌有更多機會通過用戶的分享來擴大影響力。
+                      短影音通常具有高度的娛樂性和創意性，這使得觀眾更容易參與和分享內容。根據研究，
+                      <span className="bg-green-400">
+                        短影音的分享率比長篇影片高出30%以上
+                      </span>
+                      ，這意味著您的品牌有更多機會通過用戶的分享來擴大影響力。
                     </li>
                     <li className="text-[16px] leading-normal font-normal">
                       <span className="font-bold text-[16px]">成本效益</span>
-                      成本效益：相對於傳統的廣告和長篇影片，短影音的製作成本較低。這使得即使是中小型企業也能夠利用短影音來進行行銷，並且能夠在較低的預算下獲得較高的曝光率和參與度。
+                      成本效益：相對於傳統的廣告和長篇影片，
+                      <span className="bg-green-400">短影音的製作成本較低</span>
+                      。這使得即使是中小型企業也能夠利用短影音來進行行銷，並且能夠在較低的預算下獲得較高的
+                      <span className="bg-green-400">曝光率和參與度</span>。
                     </li>
                     <li className="text-[16px] leading-normal font-normal">
                       <span className="font-bold text-[16px]">即時反饋</span>
@@ -481,7 +501,7 @@ export default function Blog() {
                     </li>
                   </ul>
                 </div>
-                <div className="paragraph">
+                <div className="paragraph" data-aos="fade-up">
                   <div className="text-[24px] mb-[15px] font-bold mt-5 ">
                     如何有效利用短影音行銷
                   </div>
@@ -496,7 +516,11 @@ export default function Blog() {
                       <span className="font-bold text-[16px]">
                         創造引人注目的內容
                       </span>
-                      短影音需要在短時間內抓住觀眾的注意力。因此，內容必須具有高度的吸引力和創意。使用鮮豔的顏色、音效和創意剪輯來提高內容的視覺衝擊力，並確保信息傳達清晰明了。
+                      短影音需要在
+                      <span className="bg-green-400">
+                        短時間內抓住觀眾的注意力
+                      </span>
+                      。因此，內容必須具有高度的吸引力和創意。使用鮮豔的顏色、音效和創意剪輯來提高內容的視覺衝擊力，並確保信息傳達清晰明了。
                     </li>
                     <li className="text-[16px] leading-normal font-normal">
                       <span className="font-bold text-[16px]">保持一制性</span>
@@ -515,26 +539,95 @@ export default function Blog() {
               <div className="paragraph-content" data-aos="fade-up">
                 <div className="paragraph">
                   <h2 className="text-[40px] leading-normal  mb-[20px] mt-[30px] ">
-                    二、關鍵字研究與內容優化
+                    . 什麼樣的人適合短影音行銷
                   </h2>
-                  <div className="text-[24px] mb-[20px] font-bold mt-5 ">
-                    1. 選擇合適的關鍵字
-                  </div>
-                  <p className="font-normal leading-[26px]">
-                    關鍵字是SEO的核心。選擇合適的關鍵字能夠幫助搜尋引擎理解您的網站內容。進行關鍵字研究時，應考慮用戶的搜尋意圖，選擇那些搜尋量大但競爭相對較低的關鍵字。使用工具如Google
-                    Keyword
-                    Planner或Ahrefs來尋找相關的關鍵字，並將其自然地融入到網站內容中。
-                  </p>{" "}
-                  <br />
-                </div>
-                <div className="paragraph">
-                  <h2 className="text-[40px] mb-3"></h2>
-                  <div className="text-[24px] mb-[20px] font-bold mt-5 ">
-                    2. 高質量內容的重要性
-                  </div>
-                  <p className="font-normal leading-[26px]">
-                    內容是SEO中最重要的部分之一。創建高質量且與您的受眾相關的內容可以吸引更多訪客，並提高網站的停留時間，這對搜尋引擎來說是一個正面信號。此外，您的內容應該具備清晰的結構，標題、副標題和段落應該清楚明瞭，並使用關鍵字來增強搜尋引擎的理解。
+                  <p>
+                    短影音行銷適合於多種背景和行業的創作者和品牌，尤其是那些希望在短時間內獲得高曝光率和觀眾參與的個人或企業。以下是一些適合短影音行銷的群體
                   </p>
+
+                  <div
+                    className="grid mt-4 grid-cols-1 md:grid-cols-2 gap-2"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div
+                      className="border-2  p-5 rounded-xl border-black bg-green-400"
+                      data-aos="zoom-in"
+                      data-aos-duration="500"
+                    >
+                      <div className="txt">
+                        <b>小型和新興企業</b>
+                        <p className="font-normal text-[14px]">
+                          短影音行銷對於資金有限的小型和新興企業尤為適合。由於短影音的製作成本相對較低，這些企業可以在有限的預算內創造出吸引人的內容，並迅速觸及大量潛在客戶。此外，短影音的高互動性和易於分享的特性，能夠幫助小型企業快速建立品牌知名度。
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      className="border-2 p-5  rounded-xl border-black bg-green-400"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                      data-aos-duration="500"
+                    >
+                      <div className="txt">
+                        <b>想要吸引年輕受眾的品牌：</b>
+                        <p className="font-normal text-[14px]">
+                          短影音平台的主要用戶群體是年輕人，因此，想要吸引這一受眾群體的品牌應積極投入短影音行銷。這些品牌可以通過創意的短影音內容來吸引年輕消費者，增強品牌的吸引力和忠誠度。同時，年輕受眾對社交媒體的依賴，也意味著短影音更容易在這一群體中廣泛傳播。
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      className="border-2 p-5 rounded-xl border-black bg-green-400"
+                      data-aos="zoom-in"
+                      data-aos-delay="200"
+                      data-aos-duration="500"
+                    >
+                      <div className="txt">
+                        <b>需要快速回饋的行銷活動：</b>
+                        <p className="font-normal text-[14px]">
+                          短影音行銷非常適合那些需要即時回饋的行銷活動，如限時促銷、突發新聞或社交媒體挑戰等。品牌可以通過短影音迅速推廣活動內容，並立即獲得觀眾的反應和參與，從而及時調整行銷策略，以達到最佳效果。
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      className="border-2 p-5 rounded-xl border-black bg-green-400"
+                      data-aos="zoom-in"
+                      data-aos-duration="500"
+                      data-aos-delay="400"
+                    >
+                      <div className="txt">
+                        <b>小型和新興企業</b>
+                        <p className="font-normal text-[14px]">
+                          短影音行銷對於資金有限的小型和新興企業尤為適合。由於短影音的製作成本相對較低，這些企業可以在有限的預算內創造出吸引人的內容，並迅速觸及大量潛在客戶。此外，短影音的高互動性和易於分享的特性，能夠幫助小型企業快速建立品牌知名度。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="w-[200px] mx-auto">
+                    <a
+                      href="/"
+                      data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                      className="button-wrapper mt-[20px] mb-[100px] w-[250px]"
+                    >
+                      <div className="button-layout">
+                        <p href="/about" className="button-text" style={{}}>
+                          立即聯絡
+                        </p>
+                        <div className="button-bg" style={{}} />
+                      </div>
+                      <div className="button-icon-block">
+                        <img
+                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                          loading="lazy"
+                          alt=""
+                          className="button-icon"
+                          style={{}}
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <br />
                 </div>
               </div>
 
@@ -609,14 +702,17 @@ export default function Blog() {
                     role="listitem"
                     className="w-dyn-item hover:border-black p-5 hover:border"
                   >
-                    <a href="/Blog-01" className="article-item w-inline-block">
+                    <a
+                      href="/blog-posts/echoes-of-the-mind-tracing-the-footprints-of-memory"
+                      className="article-item w-inline-block"
+                    >
                       <div className="article-item-img-wrap">
                         <img
                           alt=""
                           loading="lazy"
-                          src="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                          src=""
                           sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                          srcSet="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                          srcSet=""
                           className="img-cover-absolute"
                         />
                         <div
@@ -664,7 +760,7 @@ export default function Blog() {
                             id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                             className="element-trigger"
                           >
-                            SEO對於網站的重要性
+                            seo文章
                           </h5>
                         </div>
                         <div className="article-infos-wrap">
@@ -706,7 +802,10 @@ export default function Blog() {
                     role="listitem"
                     className="w-dyn-item hover:border-black p-5 hover:border"
                   >
-                    <a href="/Blog-02" className="article-item w-inline-block">
+                    <a
+                      href="/blog-posts/celestial-serendipity-aligning-with-the-cosmic-dance-of-chance"
+                      className="article-item w-inline-block"
+                    >
                       <div className="article-item-img-wrap">
                         <img
                           alt=""
@@ -756,14 +855,15 @@ export default function Blog() {
                             id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
                             className="tag-text-style category"
                           >
-                            SEO
+                            Politics
                           </div>
                           <h5
                             id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                             className="element-trigger"
                             style={{}}
                           >
-                            網頁設計很花錢嗎？
+                            Celestial Serendipity: Aligning with the Cosmic
+                            Dance of Chance
                           </h5>
                         </div>
                         <div className="article-infos-wrap">

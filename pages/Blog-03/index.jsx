@@ -211,7 +211,11 @@ export default function Blog() {
             transformStyle: "preserve-3d",
           }}
         >
-          <a href="/about-3" className="fixed-button w-inline-block">
+          <a
+            href="javascript:void(0);"
+            onclick="window.history.back();"
+            className="fixed-button w-inline-block"
+          >
             <div className="fixed-button-icon-wrap">
               <img
                 src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
@@ -241,7 +245,7 @@ export default function Blog() {
             <img
               alt=""
               loading="eager"
-              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg"
+              src="https://www.ultraehp.com/images/test-portfolio/All-New-LottieFiles-blog-cover---NEW.png.avif"
               sizes="100vw"
               className="img-cover"
             />
@@ -452,6 +456,7 @@ export default function Blog() {
                   都至關重要。然而，網站設計真的需要這麼貴嗎？我們來打破這個迷思。
                 </p>
               </div>
+
               <div className="paragraph">
                 <div className="text-[24px] mb-[15px] font-bold mt-5 ">
                   優化網站結構和內部連結
@@ -496,7 +501,29 @@ export default function Blog() {
                 </p>
               </div>
             </div>
-
+            <div className="mx-auto">
+              <a
+                href="/about"
+                data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                className="button-wrapper mt-[20px] mb-[100px] w-[175px] mx-auto"
+              >
+                <div className="button-layout">
+                  <p href="/about" className="button-text" style={{}}>
+                    立即聯絡
+                  </p>
+                  <div className="button-bg" style={{}} />
+                </div>
+                <div className="button-icon-block">
+                  <img
+                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                    loading="lazy"
+                    alt=""
+                    className="button-icon"
+                    style={{}}
+                  />
+                </div>
+              </a>
+            </div>
             <div className="paragraph-content" data-aos="fade-up"></div>
 
             <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
@@ -568,14 +595,17 @@ export default function Blog() {
                   role="listitem"
                   className="w-dyn-item hover:border-black p-5 hover:border"
                 >
-                  <a href="/Blog-01" className="article-item w-inline-block">
+                  <a
+                    href="/blog-posts/echoes-of-the-mind-tracing-the-footprints-of-memory"
+                    className="article-item w-inline-block"
+                  >
                     <div className="article-item-img-wrap">
                       <img
                         alt=""
                         loading="lazy"
-                        src="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                        src=""
                         sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                        srcSet=""
                         className="img-cover-absolute"
                       />
                       <div
@@ -623,7 +653,7 @@ export default function Blog() {
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                           className="element-trigger"
                         >
-                          SEO對於網站的重要性
+                          seo文章
                         </h5>
                       </div>
                       <div className="article-infos-wrap">
@@ -665,7 +695,10 @@ export default function Blog() {
                   role="listitem"
                   className="w-dyn-item hover:border-black p-5 hover:border"
                 >
-                  <a href="/Blog-02" className="article-item w-inline-block">
+                  <a
+                    href="/blog-posts/celestial-serendipity-aligning-with-the-cosmic-dance-of-chance"
+                    className="article-item w-inline-block"
+                  >
                     <div className="article-item-img-wrap">
                       <img
                         alt=""
@@ -715,14 +748,15 @@ export default function Blog() {
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
                           className="tag-text-style category"
                         >
-                          SEO
+                          Politics
                         </div>
                         <h5
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                           className="element-trigger"
                           style={{}}
                         >
-                          網頁設計很花錢嗎？
+                          Celestial Serendipity: Aligning with the Cosmic Dance
+                          of Chance
                         </h5>
                       </div>
                       <div className="article-infos-wrap">

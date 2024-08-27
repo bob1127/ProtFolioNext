@@ -96,6 +96,9 @@ const HorizontalScroll = () => {
           eveniet iste quia autem cumque ipsum incidunt odit recusandae dolore
           tempore.
         </h4> */}
+        {/* <div className="txt">
+          <b className="text-[40px] font-extrabold">WEBSITE</b>
+        </div> */}
         <a href="Blog-02" className="w-[400px] duration-150 hover:scale-95">
           <section className="w-[40vw] xl:w-[24vw] bg-white mx-1 xl:mx-5 border border-black p-2">
             <Image
@@ -133,6 +136,9 @@ const HorizontalScroll = () => {
             </div>
           </section>
         </a>
+        <div className="txt flex flex-col ">
+          <b className="text-[70px] font-extrabold">WEBSITE</b>
+        </div>
         <a href="Blog-02" className="w-[400px] duration-150 hover:scale-95">
           <section className="w-[40vw] xl:w-[27vw] bg-white border xl:mx-5 mx-1 border-black p-2">
             <Image

@@ -177,7 +177,7 @@ CREACTIVEs</h1>
             <div className="bottom  flex py-[50px] lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h4 className=" text-[22px] text-light">
                 <span></span>
-                <span className="text-[32px]">
+                <span className="text-[32px] text-center">
                   "創意無限，讓您的品牌脫穎而出。"
                 </span>
               </h4>
@@ -241,21 +241,24 @@ CREACTIVEs</h1>
                       RWD提升瀏覽流暢性，減少跳出率，優化SEO排名。
                     </p>
                   </div>
-                  <div className="mt-5 border border-black bg-white rounded-xl p-5">
+                  <a
+                    href="/Blog-04"
+                    className="mt-5 hover:scale-95 hover:border-2 duration-300  bg-green-500 border border-black  rounded-xl p-5"
+                  >
                     <b className="text-[20px] font-extrabold">
                       2. 確保網站速度
                     </b>
                     <p className="mt-2">
                       響應式設計提高加載速度，改善用戶滿意度和SEO排名。
                     </p>
-                  </div>
-                  <div className="mt-5 border border-black bg-white rounded-xl p-5">
+                  </a>
+                  <div className="mt-5 hover:border-2 hover:scale-95 duration-300 border border-black bg-white rounded-xl p-5">
                     <b className="text-[20px] font-extrabold">3. 集中管理SEO</b>
                     <p className="mt-2">
                       單一URL結構簡化SEO，集中權重，提升搜尋排名。
                     </p>
                   </div>
-                  <div className="mt-5 border border-black bg-white rounded-xl p-5">
+                  <div className="mt-5 bg-green-500 border border-black rounded-xl p-5">
                     <b className="text-[20px] font-extrabold">
                       4. 迎合Google算法
                     </b>

@@ -47,12 +47,12 @@ const Form = ({ setTodos }) => {
               e.preventDefault();
               handleSubmit();
             }}
-            className="mb-6 w-full rounded border border-zinc-700 bg-zinc-900 p-3"
+            className="mb-6 w-full rounded border border-zinc-700 bg-green-400 p-3"
           >
             <select
               value={selectedTask}
               onChange={(e) => setSelectedTask(e.target.value)}
-              className="mb-3 w-full rounded bg-zinc-900 p-3 text-sm text-zinc-50 placeholder-zinc-500 focus:outline-0"
+              className="mb-3 w-full rounded bg--900 p-3 text-sm text-zinc-50 placeholder-zinc-500 focus:outline-0"
             >
               <option value="" disabled>
                 Select a task
@@ -66,7 +66,7 @@ const Form = ({ setTodos }) => {
             <div className="flex items-center justify-between">
               <input
                 type="number"
-                className="w-24 rounded bg-zinc-700 px-1.5 py-1 text-sm text-zinc-50 focus:outline-0"
+                className="w-24 rounded bg-green-700 px-1.5 py-1 text-sm text-zinc-50 focus:outline-0"
                 value={time}
                 onChange={(e) => setTime(parseInt(e.target.value))}
               />
@@ -82,7 +82,7 @@ const Form = ({ setTodos }) => {
       </AnimatePresence>
       <button
         onClick={() => setVisible((pv) => !pv)}
-        className="grid w-full place-content-center rounded-full border border-zinc-700 bg-zinc-900 py-3 text-lg text-white transition-colors hover:bg-zinc-800 active:bg-zinc-900"
+        className="grid w-full place-content-center rounded-full border border-zinc-700 bg-green-400-900 py-3 text-lg text-white transition-colors hover:bg-zinc-800 active:bg-zinc-900"
       >
         <FiPlus
           className={`transition-transform ${

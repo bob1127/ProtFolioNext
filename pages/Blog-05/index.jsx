@@ -211,7 +211,7 @@ export default function Blog() {
             transformStyle: "preserve-3d",
           }}
         >
-          <a href="/about-3" className="fixed-button w-inline-block">
+          <a href="/Blog-04" className="fixed-button w-inline-block">
             <div className="fixed-button-icon-wrap">
               <img
                 src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
@@ -241,7 +241,7 @@ export default function Blog() {
             <img
               alt=""
               loading="eager"
-              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg"
+              src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
               sizes="100vw"
               className="img-cover"
             />
@@ -599,14 +599,17 @@ export default function Blog() {
                   role="listitem"
                   className="w-dyn-item hover:border-black p-5 hover:border"
                 >
-                  <a href="/Blog-01" className="article-item w-inline-block">
+                  <a
+                    href="/blog-posts/echoes-of-the-mind-tracing-the-footprints-of-memory"
+                    className="article-item w-inline-block"
+                  >
                     <div className="article-item-img-wrap">
                       <img
                         alt=""
                         loading="lazy"
-                        src="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                        src=""
                         sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet="https://happynutsday.com/wp/wp-content/uploads/2023/06/38025753-ACD1-494D-949F-3AFE8181C263.jpg"
+                        srcSet=""
                         className="img-cover-absolute"
                       />
                       <div
@@ -654,7 +657,7 @@ export default function Blog() {
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                           className="element-trigger"
                         >
-                          SEO對於網站的重要性
+                          seo文章
                         </h5>
                       </div>
                       <div className="article-infos-wrap">
@@ -696,7 +699,10 @@ export default function Blog() {
                   role="listitem"
                   className="w-dyn-item hover:border-black p-5 hover:border"
                 >
-                  <a href="/Blog-02" className="article-item w-inline-block">
+                  <a
+                    href="/blog-posts/celestial-serendipity-aligning-with-the-cosmic-dance-of-chance"
+                    className="article-item w-inline-block"
+                  >
                     <div className="article-item-img-wrap">
                       <img
                         alt=""
@@ -746,14 +752,15 @@ export default function Blog() {
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
                           className="tag-text-style category"
                         >
-                          SEO
+                          Politics
                         </div>
                         <h5
                           id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
                           className="element-trigger"
                           style={{}}
                         >
-                          網頁設計很花錢嗎？
+                          Celestial Serendipity: Aligning with the Cosmic Dance
+                          of Chance
                         </h5>
                       </div>
                       <div className="article-infos-wrap">

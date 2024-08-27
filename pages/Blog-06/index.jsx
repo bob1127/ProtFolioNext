@@ -211,11 +211,7 @@ export default function Blog() {
             transformStyle: "preserve-3d",
           }}
         >
-          <a
-            href="javascript:void(0);"
-            onclick="window.history.back();"
-            className="fixed-button w-inline-block"
-          >
+          <a href="Blog-03" className="fixed-button w-inline-block">
             <div className="fixed-button-icon-wrap">
               <img
                 src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
@@ -245,7 +241,7 @@ export default function Blog() {
             <img
               alt=""
               loading="eager"
-              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg"
+              src="https://www.ultraehp.com/images/test-portfolio/Adrian_-Filmaker-to-Motion-Designer.png.webp"
               sizes="100vw"
               className="img-cover"
             />
@@ -273,8 +269,9 @@ export default function Blog() {
               }}
               className="title-medium text-align-center text-word-caps"
             >
-              SEO能帶來哪些好處？
+              時代的趨勢-短影音行銷
             </h1>
+
             <div
               className="article-infos-wrap align-center"
               style={{
@@ -425,74 +422,112 @@ export default function Blog() {
             data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"
             className="article-content-container"
           >
-            <div className="article-abstract">
-              <div className="bg-none text-[16px] w-full leading-normal">
-                <h3>SEO的好處：提升網站曝光度和業務增長的關鍵</h3>
-                <p>
-                  在當今競爭激烈的數位世界中，搜尋引擎優化 (SEO)
-                  已成為企業成功不可或缺的一環。無論是大型企業還是小型商家，透過有效的SEO策略，網站可以在搜尋引擎中獲得更高的排名，從而吸引更多的訪客，增強品牌認知度，並最終促進業務增長。本文將詳細探討SEO能為您的業務帶來的多方面好處。
-                </p>
-              </div>
+            <div className="txt bg-gray-100 text-[14px] leading-normal p-10">
+              在當今數位時代，一個專業且引人注目的網站對於企業的成功至關重要。然而，許多中小企業往往擔心高昂的網頁設計費用。事實上，您不必花費巨額資金，也能擁有一個符合需求、引人注目的網站。
+              我們提供的“網頁設計
+              五萬內”方案，專為預算有限的企業量身定制。無論您是初創公司還是希望重新設計現有網站的中小企業，我們的方案都能幫助您實現網頁設計的目標，且不會超出預算。
             </div>
-            <div className="blog-rich-text w-richtext">
-              <div>
-                <div data-aos="fade-up">
-                  <h2 className="text-[40px] font-black"> 增加網站流量</h2>
-                  <p>
-                    SEO的首要目標之一是提升網站的自然流量。當您的網站在搜尋引擎結果頁面
-                    (SERP)
-                    中排名靠前時，將吸引更多點擊，進而增加訪問量。根據研究，超過90%的用戶會點擊第一頁的搜尋結果，其中排名前五的結果更是佔據了超過70%的點擊率。透過有效的SEO策略，如優化關鍵字、改進網頁結構和提升頁面速度，您的網站可以更容易地被目標受眾發現。
-                  </p>
-                  <h3 className="">提升品牌信任度和權威性</h3>
-                  <p>
-                    在搜尋引擎中排名靠前的網站通常被視為更具信任度和權威性。用戶傾向於認為排名較高的網站提供了更有價值和可信的內容。透過SEO策略，您可以提升網站的內容質量、獲取更多的外部鏈接
-                    (backlinks)
-                    以及提升用戶體驗，這些都將幫助您在目標受眾中建立信任和權威。
-                  </p>
-                  <h3 className="">更高的投資回報率 (ROI)</h3>
-                  <p>
-                    SEO是一種長期投資，與付費廣告相比，其效果更加持久。一旦您的網站排名上升，將持續吸引自然流量，這意味著您可以在不增加廣告支出的情況下，不斷獲取潛在客戶。儘管SEO的初始投入可能較大，但隨著時間的推移，SEO能夠帶來穩定且持續的回報，成為一種高效且經濟的行銷策略。
-                  </p>
-                  <h3 className="">精準的目標受眾定位</h3>
-                  <p>
-                    SEO不僅能帶來更多的訪問量，還能幫助您吸引更精準的目標受眾。透過關鍵字研究和優化，您可以針對那些對您的產品或服務有潛在需求的用戶進行定位。這意味著您吸引到的訪客更有可能轉化為實際的客戶，從而提高網站的轉化率
-                    (conversion rate)。
-                  </p>
-                  <h3 className="">增加本地業務的曝光</h3>
-                  <p>
-                    對於小型商家來說，本地SEO是一個強大的工具，能夠顯著提升在本地搜尋中的曝光度。透過優化Google商家資料
-                    (Google My
-                    Business)、使用本地關鍵字以及獲取本地評論，您的業務可以在目標地區的搜尋結果中脫穎而出，吸引更多的本地客戶。
-                  </p>
-                  <h3 className="">增強用戶體驗</h3>
-                  <p>
-                    SEO不僅關注搜尋引擎的優化，同時也重視用戶體驗。高效的SEO策略包括提升網站的載入速度、改善移動裝置的瀏覽體驗、確保網站結構清晰易懂以及提供高質量的內容。這些都將為訪客帶來更好的使用體驗，進而增加用戶的停留時間和參與度，減少跳出率
-                    (bounce rate)。
-                  </p>
-                </div>
-                <figure
-                  style={{ maxWidth: "1800pxpx" }}
-                  className="w-richtext-align-fullwidth w-richtext-figure-type-image"
-                >
-                  <div data-aos="">
-                    <img
-                      src="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15b3a7ee9e217bfffaf09_blog_img-big-01.jpg"
-                      loading="lazy"
-                      alt=""
-                    />
-                  </div>
-                </figure>
-                <h3 className="">長期競爭優勢</h3>
-                <p>
-                  SEO是一個不斷優化和調整的過程，但一旦建立了穩固的SEO基礎，您的網站將在競爭中佔據有利位置。隨著搜尋引擎演算法的更新，SEO策略也需要隨之調整，但一個經過優化的網站將能夠更快地適應變化，保持競爭力。
-                </p>
+            {/* <div className="article-abstract">
+              <div className="text-[16px] leading-normal">
+                SEO（搜尋引擎優化）對企業的利潤有直接且顯著的影響。以下是一些具體方式，說明SEO如何影響企業的利潤：
               </div>
-            </div>
-            <section className=" w-full">
-              <p className="text-[16px] mb-5 leading-normal">
-                SEO是一項強大且多方面的行銷策略，能夠顯著提升網站的曝光度、信任度和轉化率，為您的業務帶來持續的成長。無論您是剛起步的小型企業還是已經擁有穩定客群的大型公司，SEO都應該成為您的行銷計畫中的重要一環。透過不斷優化網站並適應市場和搜尋引擎的變化，您將能夠在競爭中脫穎而出，實現長期的成功。
+            </div> */}
+
+            <div className="paragraph" data-aos="fade-up">
+              <h2 className="text-[40px] leading-normal mb-[20px] mt-[30px] ">
+                短影音 可以為企業帶來的效益
+              </h2>
+              <p>
+                在當今數位時代，擁有一個吸引人的網站對於任何企業或個人品牌都是至關重要的。然而，對於預算有限的中小企業或個人來說，如何在五萬元內完成一個視覺上吸引人的網站是一個常見的挑戰。本文將提供一些實用的建議，幫助您在預算內打造一個引人注目的網站。
               </p>
-            </section>
+              <div className="paragraph">
+                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
+                  提高品牌曝光度
+                </div>
+                <p className="font-normal leading-[26px]">
+                  短影音因其簡短、容易分享的特性，能迅速在社群平台上擴散，讓品牌信息在短時間內觸及大量潛在客戶。
+                </p>
+              </div>
+              <div className="paragraph">
+                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
+                  2. 增強用戶互動
+                </div>
+                <p className="font-normal leading-[26px]">
+                  生動有趣的短影音能吸引觀眾的注意並激發互動，如按讚、分享、留言等，這些互動不僅提升了品牌的社群活躍度，還有助於建立忠誠的客戶群。
+                </p>
+              </div>
+              <div className="paragraph">
+                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
+                  3.傳遞關鍵信息
+                </div>
+                <p className="font-normal leading-[26px]">
+                  透過創意短影音，企業能夠在短短幾秒鐘內傳達關鍵信息，如新產品發布、促銷活動或品牌故事，讓觀眾快速理解並記住品牌價值。
+                </p>
+              </div>
+              <div className="paragraph">
+                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
+                  1. 提升轉換率
+                </div>
+                <p className="font-normal leading-[26px]">
+                  短影音能有效吸引消費者的注意，並引導他們進一步探索產品或服務，從而提升網站流量和銷售轉換率。
+                </p>
+              </div>
+
+              <div className=" flex flex-col lg:flex-row ">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="400"
+                  className="w-full lg:w-1/2  bg-green-500 flex justify-center items-center m-3 p-10 border border-black"
+                >
+                  <div className="txt ">
+                    <h3 className="font-extrabold text-[40px]">3到5秒</h3>
+                    <p className="text-[14px] mt-4">
+                      由於觀眾的注意力有限，影片的前幾秒對於吸引觀眾並傳達關鍵信息至關重要。透過快速、明確地表達主題，能夠有效地吸引觀眾繼續觀看，並增強影片的影響力和分享率。
+                    </p>
+                  </div>
+                </div>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                  data-aos-duration="400"
+                  className="w-full lg:w-1/2 m-3 bg-green-500 p-10 border border-black"
+                >
+                  <div className="txt ">
+                    <h3 className="font-extrabold text-[40px]">3到5秒</h3>
+                    <p className="text-[14px] mt-4">
+                      由於觀眾的注意力有限，影片的前幾秒對於吸引觀眾並傳達關鍵信息至關重要。透過快速、明確地表達主題，能夠有效地吸引觀眾繼續觀看，並增強影片的影響力和分享率。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="paragraph-content" data-aos="fade-up">
+              <div className="paragraph">
+                <h2 className="text-[40px] leading-normal  mb-[20px] mt-[30px] ">
+                  二、關鍵字研究與內容優化
+                </h2>
+                <div className="text-[24px] mb-[20px] font-bold mt-5 ">
+                  1. 選擇合適的關鍵字
+                </div>
+                <p className="font-normal leading-[26px]">
+                  關鍵字是SEO的核心。選擇合適的關鍵字能夠幫助搜尋引擎理解您的網站內容。進行關鍵字研究時，應考慮用戶的搜尋意圖，選擇那些搜尋量大但競爭相對較低的關鍵字。使用工具如Google
+                  Keyword
+                  Planner或Ahrefs來尋找相關的關鍵字，並將其自然地融入到網站內容中。
+                </p>{" "}
+                <br />
+              </div>
+              <div className="paragraph">
+                <h2 className="text-[40px] mb-3"></h2>
+                <div className="text-[24px] mb-[20px] font-bold mt-5 ">
+                  2. 高質量內容的重要性
+                </div>
+                <p className="font-normal leading-[26px]">
+                  內容是SEO中最重要的部分之一。創建高質量且與您的受眾相關的內容可以吸引更多訪客，並提高網站的停留時間，這對搜尋引擎來說是一個正面信號。此外，您的內容應該具備清晰的結構，標題、副標題和段落應該清楚明瞭，並使用關鍵字來增強搜尋引擎的理解。
+                </p>
+              </div>
+            </div>
+
             <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">

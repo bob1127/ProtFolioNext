@@ -842,13 +842,13 @@ export default function Blog() {
                     </div>
                     <div className="about-grid-image">
                       <div className="reveal-image-trigger">
-                        {/* <img
+                        <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
+                          src="https://www.ultraehp.com/images/test-portfolio/v1017-05.jpg"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           srcSet="
-                                        
+                                        https://www.ultraehp.com/images/test-portfolio/v1017-05.jpg
                                       "
                           className="cover-image"
                           style={{
@@ -856,13 +856,8 @@ export default function Blog() {
                               "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                             transformStyle: "preserve-3d",
                           }}
-                        /> */}
-                        <iframe
-                          src="https://my.spline.design/iphone14procopy-fdd3e2365e4a03f380783eb3384cb838/"
-                          frameborder="0"
-                          width="100%"
-                          height="800"
-                        ></iframe>
+                        />
+
                         <div
                           className="bg-for-animation"
                           style={{ display: "block" }}
@@ -1106,7 +1101,7 @@ export default function Blog() {
                 </div>
               </a>
               <a
-                href=""
+                href="/Blog-02"
                 className="xl:w-1/2 w-full mt-5 md:mt-0 ml-0 xl:ml-4 hover:shadow-custom 
               duration-300
               
@@ -1117,7 +1112,7 @@ export default function Blog() {
                   data-aos-delay="400"
                   className="text-[40px] leading-normal font-light text-black"
                 >
-                  SEO能帶來哪些好處？
+                  網頁設計其實沒有很花錢
                 </h4>
                 <div className="flex my-4">
                   <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">

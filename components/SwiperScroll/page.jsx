@@ -96,15 +96,15 @@ export default function App() {
             收取訂金以啟動項目，確保雙方承諾。
           </div>
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center items-center text-lg">
-          <div className="txt">
-            <h4 className="text-[30px] mb-4 font-bold">Step3. 開始製作</h4>
+        <SwiperSlide className="flex justify-center boder-2 border-black p-5 items-center text-lg">
+          <div className="txt boder-2 border-black">
+            <h4 className="text-[30px] mb-4 font-bold">Step3. </h4>
           </div>
-          <Image
-            width={600}
-            src="6591c4db3a320cb81ce28c1d_Relume.svg"
-            height={400}
-            loader={imageLoader}
+          <img
+            className="w-full"
+            src="
+          https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
+            alt=""
           />
           <div className="text-[13px]">
             <span className="font-bold">開始製作：</span>
@@ -126,12 +126,18 @@ export default function App() {
           <div className="txt">
             <h4 className="text-[30px] mb-4 font-bold">Step4. 結案</h4>
           </div>
-          <Image
+          <img
+            className="w-full"
+            src="https://www.handz.design/assets/images/image16.jpg?v=02f8e9b2
+          "
+            alt=""
+          />
+          {/* <Image
             width={600}
             src="6591c4db3a320cb81ce28c1d_Relume.svg"
             height={400}
             loader={imageLoader}
-          />
+          /> */}
           <div className="text-[13px]">
             <span className="font-bold">開始製作：</span>
             <br></br>

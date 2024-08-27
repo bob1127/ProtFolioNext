@@ -69,7 +69,7 @@ const TodoItem = ({
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.3 }}
-      className="relative flex w-full items-center gap-3 rounded border border-zinc-700 bg-zinc-900 p-3"
+      className="relative flex w-full items-center gap-3 rounded border border-zinc-700 bg-green-400 p-3"
     >
       <input
         type="checkbox"
@@ -78,7 +78,7 @@ const TodoItem = ({
         className="size-4 accent-indigo-400"
       />
       <p
-        className={`text-white transition-colors ${checked && "text-zinc-400"}`}
+        className={`text-black transition-colors ${checked && "text-zinc-400"}`}
       >
         {text}
       </p>
