@@ -9,6 +9,19 @@ if (!process.env.WORDPRESS_API_URL) {
 module.exports = {
   // output: 'export',
 
+  optimization: {
+    minimize: true,  // 確保開啟縮小 (Minification)
+    // minimizer: [
+    //   new TerserPlugin({
+    //     terserOptions: {
+    //       compress: {
+    //         drop_console: true, // 移除 console.log 語句
+    //       },
+    //     },
+    //   }),
+    // ],
+  },
+   compress:true,
   images: {
     domains: [
       'www.ultraehp.com',

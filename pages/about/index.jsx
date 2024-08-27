@@ -32,14 +32,19 @@ export default function Blog() {
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
       <>
         <Head>
+          {/* <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          /> */}
+
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "WebSite",
-                name: "Your Website Name",
-                url: "https://yourwebsite.com",
+                name: "極客網頁設計-提升搜尋排名",
+                url: "https://www.ultraehp.com",
                 potentialAction: {
                   "@type": "SearchAction",
                   target:
@@ -288,7 +293,7 @@ export default function Blog() {
                             height: "auto",
                           }}
                         >
-                          <iframe
+                          {/* <iframe
                             src="https://www.youtube.com/embed/YZ84iQrbYjw?si=xwGpqR7AnXRY-AS3&autoplay=1"
                             style={{
                               position: "absolute",
@@ -301,7 +306,7 @@ export default function Blog() {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
-                          ></iframe>
+                          ></iframe> */}
                         </div>
                       </div>
                     </div>
