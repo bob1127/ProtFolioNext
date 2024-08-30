@@ -42,7 +42,7 @@ export default function Blog() {
             "了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。",
           images: [
             {
-              url: "https://www.example.com/og-image.jpg",
+              url: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg",
               width: 1200,
               height: 630,
               alt: "社交媒體行銷策略",
