@@ -5195,7 +5195,7 @@ blockquote{
     backdrop-filter:blur(10px);
     color:var(--main-color-6);
     text-align:center;
-    background-color:rgba(3,34,70,.21);
+    background-color:rgba(46, 46, 46, 0.21);
     border:1px solid rgba(144,179,219,.45);
     border-radius:5px;
     flex-direction:column;

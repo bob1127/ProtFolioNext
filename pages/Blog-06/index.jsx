@@ -480,8 +480,10 @@ export default function Blog() {
                   className="w-full lg:w-1/2  bg-green-500 flex justify-center items-center m-3 p-10 border border-black"
                 >
                   <div className="txt ">
-                    <h3 className="font-extrabold text-[40px]">3到5秒</h3>
-                    <p className="text-[14px] mt-4">
+                    <h3 className="text-white font-extrabold text-[40px]">
+                      3到5秒
+                    </h3>
+                    <p className="text-[14px] text-gray-800 mt-4">
                       由於觀眾的注意力有限，影片的前幾秒對於吸引觀眾並傳達關鍵信息至關重要。透過快速、明確地表達主題，能夠有效地吸引觀眾繼續觀看，並增強影片的影響力和分享率。
                     </p>
                   </div>
@@ -493,8 +495,10 @@ export default function Blog() {
                   className="w-full lg:w-1/2 m-3 bg-green-500 p-10 border border-black"
                 >
                   <div className="txt ">
-                    <h3 className="font-extrabold text-[40px]">3到5秒</h3>
-                    <p className="text-[14px] mt-4">
+                    <h3 className="text-white font-extrabold text-[40px]">
+                      3到5秒
+                    </h3>
+                    <p className="text-[14px] text-gray-800 mt-4">
                       由於觀眾的注意力有限，影片的前幾秒對於吸引觀眾並傳達關鍵信息至關重要。透過快速、明確地表達主題，能夠有效地吸引觀眾繼續觀看，並增強影片的影響力和分享率。
                     </p>
                   </div>

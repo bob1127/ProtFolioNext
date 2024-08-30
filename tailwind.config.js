@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+       fontFamily: {
+        mono: ['Basier Square Mono', 'monospace'],
+        sans: ['Segment A Key Trial', 'sans-serif'],
+      },
        boxShadow: {
         'custom': '8px 8px 0px rgba(107, 222, 31, 1)',
       },

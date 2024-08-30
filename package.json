@@ -1,15 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && npm run minify",
-    "minify": "npm run minify-js && npm run minify-css",
-    "minify-js": "terser out/**/*.js --compress --mangle --output out/",
-    "minify-css": "cssnano out/**/*.css --output out/",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export && next-image-export-optimizer"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "export": "next build && next export && next-image-export-optimizer"
+},
   "dependencies": {
     "@apollo/client": "^3.11.4",
     "@nextui-org/react": "^2.4.6",
@@ -25,6 +22,7 @@
     "framer-motion": "^11.3.27",
     "graphql": "^16.9.0",
     "gsap": "^3.12.5",
+    "locomotive-scroll": "^4.1.4",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.427.0",
     "matter-js": "^0.20.0",
@@ -44,9 +42,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "cssnano": "^7.0.5",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.4.9",
-    "terser": "^5.31.6"
+    "tailwindcss": "^3.4.9"
   }
 }

@@ -8,6 +8,8 @@ import Head from "next/head";
 import Script from "next/script";
 // import "../styles/globals.css";
 import { AnimatePresence } from "framer-motion";
+import { NextSeo } from "next-seo";
+
 import { NextUIProvider } from "@nextui-org/react";
 // import Navbar from "../components/sideTabs/index.jsx";
 // import Footer from "../components/Footer/index.jsx";
@@ -30,6 +32,30 @@ export default function Blog() {
   }, []);
   return (
     <>
+      <NextSeo
+        title="提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略"
+        description="了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。"
+        openGraph={{
+          url: "https://www.example.com",
+          title: "提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略",
+          description:
+            "了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。",
+          images: [
+            {
+              url: "https://www.example.com/og-image.jpg",
+              width: 1200,
+              height: 630,
+              alt: "社交媒體行銷策略",
+            },
+          ],
+          site_name: "你的網站名稱",
+        }}
+        twitter={{
+          handle: "@twitterhandle",
+          site: "@twitterhandle",
+          cardType: "summary_large_image",
+        }}
+      />
       <Head>
         <link
           rel="stylesheet"

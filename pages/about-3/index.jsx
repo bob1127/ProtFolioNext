@@ -432,28 +432,58 @@ export default function Blog() {
             </section> */}
             <Marquee>
               <div className=" bg-black flex w-[100vw] w-full py-[40px]">
-                <div className="text-[60px] mx-5  text-white font-black">
-                  SEO
-                </div>
-                <div className="text-[60px] mx-5  text-white font-black">
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   WEBSITE
+                  <img
+                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                    alt=""
+                    className="mx-3 w-[220px]"
+                  />
                 </div>
-                <div className="text-[60px] mx-5  text-white font-black">
-                  MARKETING
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
+                  SEO
+                  <img
+                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                    alt=""
+                    className="mx-3 w-[220px]"
+                  />
                 </div>
-                <div className="text-[60px] mx-5  text-white font-black">
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   PHOTOGRAPHY
+                  <img
+                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                    alt=""
+                    className="mx-3 w-[220px]"
+                  />
                 </div>
-                <div className="text-[60px] mx-5  text-white font-black">
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
+                  STAGE
+                  <img
+                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                    alt=""
+                    className="mx-3 w-[220px]"
+                  />
+                </div>
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
+                  STAGE
+                  <img
+                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                    alt=""
+                    className="mx-3 w-[220px]"
+                  />
+                </div>
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
+                  STAGE
+                  <img
+                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                    alt=""
+                    className="mx-3 w-[220px]"
+                  />
+                </div>
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   STAGE
                 </div>
-                <div className="text-[60px] mx-5  text-white font-black">
-                  STAGE
-                </div>
-                <div className="text-[60px] mx-5  text-white font-black">
-                  STAGE
-                </div>
-                <div className="text-[60px] mx-5  text-white font-black">
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   STAGE
                 </div>
               </div>
@@ -841,8 +871,31 @@ export default function Blog() {
                       </div>
                     </div>
                     <div className="about-grid-image">
+                      {/* <video
+                        autoPlay
+                        loop
+                        src="/medias/mobile-phone.mov"
+                      ></video> */}
                       <div className="reveal-image-trigger">
-                        <img
+                        <video
+                          width="600" // 可以根据需要调整宽度
+                          height="400" // 可以根据需要调整高度
+                          controls // 可选，显示播放控件
+                          autoPlay // 自动播放
+                          muted // 自动播放时需要静音
+                          loop // 循环播放
+                        >
+                          <source
+                            src="/medias/mobile-phone.mov"
+                            type="video/mp4"
+                          />
+                        </video>
+                        {/* <video
+                          autoPlay
+                          loop
+                          src="/medias/mobile-phone.mov"
+                        ></video> */}
+                        {/* <img
                           loading="lazy"
                           alt="Portrait of the team"
                           src="https://www.ultraehp.com/images/test-portfolio/v1017-05.jpg"
@@ -856,7 +909,7 @@ export default function Blog() {
                               "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                             transformStyle: "preserve-3d",
                           }}
-                        />
+                        /> */}
 
                         <div
                           className="bg-for-animation"

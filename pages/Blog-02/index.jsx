@@ -425,6 +425,12 @@ export default function Blog() {
             data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"
             className="article-content-container"
           >
+            <img
+              data-aos="zoom-in"
+              className="w-full"
+              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/6432604c10440971857a2488_rominosgallery2.jpeg"
+              alt=""
+            />
             <div className="article-abstract">
               <div className="text-[16px] leading-normal">
                 <h3>網頁設計很花錢嗎？探索成本與價值的平衡</h3>
@@ -451,6 +457,12 @@ export default function Blog() {
                 網頁設計的成本取決於多種因素，包括設計的複雜性、功能需求、網站的規模以及設計師的專業水平。簡單的企業網站可能只需幾百到幾千美元，而功能豐富的電子商務網站或定制化網站則可能花費數千甚至數萬美元。這些成本通常包括設計、開發、測試、優化以及持續的維護費用。
               </p>
             </div>
+            <img
+              data-aos="zoom-in"
+              className="w-full"
+              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/6432604c10440971857a2488_rominosgallery2.jpeg"
+              alt=""
+            />
             <div className="paragraph-content" data-aos="fade-up">
               <div className="paragraph">
                 <h2 className="text-[40px] mb-3"></h2>
@@ -506,6 +518,12 @@ export default function Blog() {
                 SEO是一項長期投資，其價值遠遠超過短期的投入。與付費廣告不同，SEO的效果是持久的，一旦網站在搜尋引擎中獲得了穩定的高排名，它將持續吸引自然流量，無需再為每一次點擊付費。這種持續的流量能為企業帶來穩定的曝光和潛在客戶，從而促進長期的業務增長。
               </p>
             </div>
+            <img
+              data-aos="zoom-in"
+              className="w-full mb-4"
+              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/6432604c104409005b7a2487_rominosgallery1.jpeg"
+              alt=""
+            />
 
             <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>

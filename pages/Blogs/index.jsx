@@ -14,7 +14,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import Marquee from "react-fast-marquee";
 import AOS from "aos";
 import HorizontalScroll from "../../components/HorizontalScroll/page.jsx";
-// import Nav from "../components/Navbar/page.jsx";
+import PortfolioSample from "../../components/PortfolioSample/page.jsx";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
@@ -423,7 +423,7 @@ export default function Blog() {
 
         <section className="bg-green-300 py-[80px] flex justify-center flex-col items-center">
           <h3
-            className="  text-[26px] sm:text-[40px] 2xl:text-[50px]  font-bold"
+            className=" text-[26px] sm:text-[40px] 2xl:text-[50px]  font-bold"
             data-ao-delay="300"
             data-aos="fade-up"
           >
@@ -691,6 +691,10 @@ export default function Blog() {
             </div>
           </div>
         </div>
+
+        <section className="section-dropdown py-[100px]">
+          <PortfolioSample />
+        </section>
       </div>
     </>
   );
