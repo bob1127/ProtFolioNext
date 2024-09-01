@@ -14,6 +14,7 @@ import { NextUIProvider } from "@nextui-org/react";
 // import Footer from "../components/Footer/index.jsx";
 import Marquee from "react-fast-marquee";
 import AOS from "aos";
+import Link from "next/link";
 // import Nav from "../components/Navbar/page.jsx";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
@@ -310,7 +311,9 @@ export default function Blog() {
           </div>
           <div className="nav-trigger-labels-wrap">
             <div className="nav-trigger-label-relative">
-              <div className="nav-label">Menu</div>
+              <Link href="/Blogs" className="nav-label">
+                Go Back
+              </Link>
             </div>
             <div
               className="nav-trigger-label-absolute"

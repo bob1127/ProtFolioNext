@@ -3,10 +3,11 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import Head from "next/head";
-
+import { NextSeo } from "next-seo";
 // import Inner from "../components/Inner/index.jsx";
 import Script from "next/script";
 // import "../styles/globals.css";
+import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 import { NextUIProvider } from "@nextui-org/react";
 // import Navbar from "../components/sideTabs/index.jsx";
@@ -30,6 +31,30 @@ export default function Blog() {
   }, []);
   return (
     <>
+      <NextSeo
+        title="提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略"
+        description="了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。"
+        openGraph={{
+          url: "https://www.example.com",
+          title: "提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略",
+          description:
+            "了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。",
+          images: [
+            {
+              url: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg",
+              width: 1200,
+              height: 630,
+              alt: "社交媒體行銷策略",
+            },
+          ],
+          site_name: "你的網站名稱",
+        }}
+        twitter={{
+          handle: "@twitterhandle",
+          site: "@twitterhandle",
+          cardType: "summary_large_image",
+        }}
+      />
       <Head>
         <link
           rel="stylesheet"
@@ -144,7 +169,9 @@ export default function Blog() {
           </div>
           <div className="nav-trigger-labels-wrap">
             <div className="nav-trigger-label-relative">
-              <div className="nav-label">Menu</div>
+              <Link href="/Blogs" className="nav-label">
+                Go Back
+              </Link>
             </div>
             <div
               className="nav-trigger-label-absolute"
@@ -477,7 +504,7 @@ export default function Blog() {
                   3. 運用現成模板和主題
                 </div>
                 <p className="font-normal leading-[26px]">
-                  <span clasName="bg-green-400 mx-1">現成的模板和主題 </span>
+                  <span clasName="bg-[#2b72e5] mx-1">現成的模板和主題 </span>
                   可以幫助您以較低的成本快速建立視覺上吸引人的網站。許多平台提供免費或付費的模板，這些模板已經過優化，適合不同類型的網站。選擇一個設計精美且符合您業務需求的模板，可以節省自訂設計的時間和成本。記住，在選擇模板時，要確保其響應式設計，能夠在不同設備上良好顯示。
                 </p>
               </div>
@@ -487,7 +514,7 @@ export default function Blog() {
                 </div>
                 <p className="font-normal leading-[26px]">
                   在預算有限的情況下，簡化設計和功能是控制成本的有效方法。避免過於複雜的設計和不必要的功能，
-                  <span clasName="bg-green-400 mx-1">
+                  <span clasName="bg-[#2b72e5] mx-1">
                     {" "}
                     專注於網站的核心需求
                   </span>
@@ -530,7 +557,7 @@ export default function Blog() {
               </div>
             </div>
 
-            <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a

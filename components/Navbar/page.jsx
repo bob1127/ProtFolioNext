@@ -8,7 +8,7 @@
 export default function Index() {
   return (
     <div className="z-[99999999999] relative">
-      <div className="fullscreen-menu bg-green-500" style={{ display: "none" }}>
+      <div className="fullscreen-menu bg-[#1a1a1a]" style={{ display: "none" }}>
         <div className="menu-layout">
           <div className="menu-socials" style={{ opacity: 0 }}>
             <div className="menu-social-wrapper w-dyn-list">

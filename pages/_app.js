@@ -9,6 +9,7 @@ import Navbar from '../components/sideTabs/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
+
 import Nav from '../components/Navbar/page.jsx'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
@@ -84,7 +85,7 @@ export default function MyApp({ Component, pageProps, router }) {
             </div>
              <Marquee>
                 <a href='/about' >
-                  <div className='border-3 bg-green-500 border-white'>
+                  <div className='border-3 bg-[#c5f91a] border-white'>
                   <p className='text-black font-normal w-full p-2'>
                   JEEK像您的好夥伴一樣，會與您一同探索、設計，打造出真正適合您的網站和品牌形象。不管您是 <span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"餐飲業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"美業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"中小企業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"服飾業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"傳統產業"</span>，我們都在這裡，為您提供簡單、實用且有效的解決方案。
                   </p>
@@ -93,7 +94,7 @@ export default function MyApp({ Component, pageProps, router }) {
             
               </Marquee>
                
-            <div className="footer  border-t-3 border-white">
+            <div className="bg-[#181818]">
                 <div className="footer-layout">
                   <div className="footer-wrapper">
                     <div className="main-container">
@@ -279,28 +280,7 @@ export default function MyApp({ Component, pageProps, router }) {
                     </div>
                   </div>
                 </div>
-                <div className="footer-bg">
-                  <div className="parallax-trigger">
-                    <div
-                      className="parallax-layout"
-                      style={{
-                        willChange: "transform",
-                        transform:
-                          "translate3d(0px, -0.5804%, 0px) scale3d(1.0279, 1.0279, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    >
-                      <img
-                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/66914adb5cdd9676a6900347_stada-img-3.webp"
-                        loading="lazy"
-                        alt=""
-                        className="cover-image"
-                      />
-                      <div className="bg-for-animation" />
-                    </div>
-                  </div>
-                  <div className="footer-bg-gradient" />
-                </div>
+                
               </div>
                         {/* <Footer /> */}
                     </AnimatePresence>

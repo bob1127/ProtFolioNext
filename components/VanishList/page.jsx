@@ -176,7 +176,7 @@ const Form = ({ setTodos }) => {
       </AnimatePresence>
       <button
         onClick={() => setVisible((pv) => !pv)}
-        className="grid w-full place-content-center rounded-full border border-zinc-700 bg-green-400 py-3 text-lg text-white transition-colors hover:bg-zinc-800 active:bg-zinc-900"
+        className="grid w-full place-content-center rounded-full border border-zinc-700 bg-[#2b72e5] py-3 text-lg text-white transition-colors hover:bg-zinc-800 active:bg-zinc-900"
       >
         <FiPlus
           className={`transition-transform ${

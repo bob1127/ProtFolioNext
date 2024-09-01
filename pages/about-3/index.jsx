@@ -23,8 +23,20 @@ import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
 import Image from "next/image.js";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export default function Blog() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: require("/public/Animation.json"),
+    renderer: "canvas",
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   //compare table
   const imageLoader = ({ src, width, quality }) => {
     return `https://www.clipartmax.com/png/small/${src}?w=${width}&q=${
@@ -114,7 +126,7 @@ export default function Blog() {
         <div id="webpage" className="page-wrapper">
           <main className="main">
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
-              <div className="container duration-500  bg-green-400  border-4 border-green-500 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
+              <div className="container duration-500  bg-[#2b72e5]  border-4 border-green-500 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
                   <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
                     💡致力於開發使用者體驗良好的網站
@@ -503,7 +515,7 @@ export default function Blog() {
                         大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
                         <br></br> <br></br>
                         行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
-                        <span className="bg-green-400">網站設計和SEO優化</span>
+                        <span className="bg-[#2b72e5]">網站設計和SEO優化</span>
                         ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
                       </p>
                       <a
@@ -754,7 +766,7 @@ export default function Blog() {
                           </b>
                           <p className="text-left leading-normal mt-3">
                             - Google 目前使用{" "}
-                            <span className="bg-green-400">
+                            <span className="bg-[#2b72e5]">
                               「移動優先索引」
                             </span>
                             ，這意味著 Google
@@ -768,9 +780,9 @@ export default function Blog() {
                             - Google
                             對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
                             的{" "}
-                            <span className="bg-green-400">「頁面體驗」</span>
+                            <span className="bg-[#2b72e5]">「頁面體驗」</span>
                             更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-green-400">
+                            <span className="bg-[#2b72e5]">
                               Google PageSpeed Insights
                             </span>{" "}
                             來測試和改進頁面速度。
@@ -935,7 +947,7 @@ export default function Blog() {
                           </b>
                           <p className="text-left leading-normal mt-3">
                             - Google 目前使用{" "}
-                            <span className="bg-green-400">
+                            <span className="bg-[#2b72e5]">
                               「移動優先索引」
                             </span>
                             ，這意味著 Google
@@ -949,9 +961,9 @@ export default function Blog() {
                             - Google
                             對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
                             的{" "}
-                            <span className="bg-green-400">「頁面體驗」</span>
+                            <span className="bg-[#2b72e5]">「頁面體驗」</span>
                             更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-green-400">
+                            <span className="bg-[#2b72e5]">
                               Google PageSpeed Insights
                             </span>{" "}
                             來測試和改進頁面速度。
@@ -1011,29 +1023,32 @@ export default function Blog() {
                     />
                   </div>
                   <div className="text  mt-[30px] group-hover:mt-[0px] duration-300 scale-100 group-hover:scale-90  flex flex-col items-center ">
-                    <h3 className="text-[30px] font-semibold">社交媒體行銷</h3>
+                    <h3 className="text-[30px] font-semibold">
+                      {" "}
+                      網頁行銷 (Web Marketing)
+                    </h3>
                     <b className="text-[18px]  text-center leading-normal">
-                      通過平台如Facebook、Instagram、LinkedIn和Twitter進行品牌宣傳和互動。
+                      網頁行銷是一個廣泛的概念，涵蓋了所有在網頁上進行的行銷活動。它包括網站設計、內容行銷、用戶體驗
+                      (UX) 優化、網站分析
                     </b>
                     <div>
                       <p className="text-[16px] mt-4">
                         <b>優點：</b>
-                        高互動性，適合建立品牌形象和與客戶建立關係。
+                        提升網站整體效能，增加用戶轉化，並可利用數據分析優化策略。
                       </p>
                       <p className="text-[16px] mt-4">
-                        <b>優點：</b>
-                        高互動性，適合建立品牌形象和與客戶建立關係。
+                        <b>缺點：</b>
+                        實施和維護成本高，效果量化可能需時間。
                       </p>
                     </div>
                   </div>
                   <div className="relative  overflow-hidden">
                     <div className="img-wrap rounded-2xl overflow-hidden">
-                      <iframe
-                        src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
-                        frameborder="0"
-                        width="100%"
-                        height="240px"
-                      ></iframe>
+                      <Lottie
+                        options={defaultOptions}
+                        height={400}
+                        width={400}
+                      />
                     </div>
                   </div>
                 </div>
@@ -1049,18 +1064,23 @@ export default function Blog() {
                     />
                   </div>
                   <div className="text  mt-[30px] group-hover:mt-[0px] duration-300 scale-100 group-hover:scale-90  flex flex-col items-center ">
-                    <h3 className="text-[30px] font-semibold">社交媒體行銷</h3>
+                    <h3 className="text-[30px] font-semibold">
+                      搜尋引擎優化 (SEO)
+                    </h3>
                     <b className="text-[18px]  text-center leading-normal">
-                      通過平台如Facebook、Instagram、LinkedIn和Twitter進行品牌宣傳和互動。
+                      SEO
+                      是網頁行銷中的一個專門領域，旨在提高網站在搜尋引擎結果頁
+                      (SERPs)
+                      中的排名。這樣可以增加網站的有機流量，即免費流量，而不是付費廣告。
                     </b>
                     <div>
                       <p className="text-[16px] mt-4">
                         <b>優點：</b>
-                        高互動性，適合建立品牌形象和與客戶建立關係。
+                        提供長期的有機流量，成本效益高且提升網站可信度。
                       </p>
                       <p className="text-[16px] mt-4">
-                        <b>優點：</b>
-                        高互動性，適合建立品牌形象和與客戶建立關係。
+                        <b>缺點：</b>
+                        見效時間長，技術要求高且受搜尋引擎算法變化影響。
                       </p>
                     </div>
                   </div>
@@ -1483,7 +1503,7 @@ export default function Blog() {
                 <h2 className="heading is-medium-title">
                   "客製網站 or 套版網站？"
                 </h2>
-                <p className="text-[22px] bg-green-400  text-center mb-4 mt-2">
+                <p className="text-[22px] bg-[#2b72e5]  text-center mb-4 mt-2">
                   沒有哪種比較好，適合你的才是好的網站
                 </p>
                 <div className="flex flex-col xl:flex-row justify-center items-center text-[16px]  px-[100px] text-center leading-normal">

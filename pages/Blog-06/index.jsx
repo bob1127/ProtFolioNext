@@ -13,6 +13,7 @@ import { NextUIProvider } from "@nextui-org/react";
 // import Footer from "../components/Footer/index.jsx";
 import Marquee from "react-fast-marquee";
 import AOS from "aos";
+import { NextSeo } from "next-seo";
 // import Nav from "../components/Navbar/page.jsx";
 import { useEffect } from "react";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
@@ -30,6 +31,30 @@ export default function Blog() {
   }, []);
   return (
     <>
+      <NextSeo
+        title="提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略"
+        description="了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。"
+        openGraph={{
+          url: "https://www.example.com",
+          title: "提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略",
+          description:
+            "了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。",
+          images: [
+            {
+              url: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg",
+              width: 1200,
+              height: 630,
+              alt: "社交媒體行銷策略",
+            },
+          ],
+          site_name: "你的網站名稱",
+        }}
+        twitter={{
+          handle: "@twitterhandle",
+          site: "@twitterhandle",
+          cardType: "summary_large_image",
+        }}
+      />
       <Head>
         <link
           rel="stylesheet"
@@ -477,7 +502,7 @@ export default function Blog() {
                 <div
                   data-aos="zoom-in"
                   data-aos-duration="400"
-                  className="w-full lg:w-1/2  bg-green-500 flex justify-center items-center m-3 p-10 border border-black"
+                  className="w-full lg:w-1/2  bg-green-300 flex justify-center items-center m-3 p-10 border border-black"
                 >
                   <div className="txt ">
                     <h3 className="text-white font-extrabold text-[40px]">
@@ -532,7 +557,7 @@ export default function Blog() {
               </div>
             </div>
 
-            <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a

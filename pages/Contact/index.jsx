@@ -12,6 +12,8 @@
 //   () => import("../components/PhysicsAnimation/app.jsx"),
 //   { ssr: false }
 // );
+
+import mailchimp from "../../components/mailchimp/page.jsx";
 export default function Home() {
   //   const plane = useRef(null);
   //   const maxRotate = 45;
@@ -25,23 +27,7 @@ export default function Home() {
   //     plane.current.style.transform = `perspective(${perspective}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg)`;
   //   };
 
-  return (
-    <div className="h-[100vh]">
-      <div className="flex flex-col justify-center h-full items-center">
-        <h1 className="text-[80px]  font-extrabold">聯絡我們</h1>
-        <form className="w-[900px] border">
-          <p className="text-[16px] font-bold">mailchimp </p>
-          <input type="text" /> oki
-          <textarea
-            className="h-[80px] w-full border-2 border-black rounded-m"
-            name=""
-            id=""
-          ></textarea>
-          <button type="submit"> </button>
-        </form>
-      </div>
-    </div>
-  );
+  return <div className="h-[100vh]"></div>;
 }
 
 // reportWebVitals();

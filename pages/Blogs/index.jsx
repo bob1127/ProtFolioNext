@@ -12,6 +12,7 @@ import { NextUIProvider } from "@nextui-org/react";
 // import Navbar from "../components/sideTabs/index.jsx";
 // import Footer from "../components/Footer/index.jsx";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 import AOS from "aos";
 import HorizontalScroll from "../../components/HorizontalScroll/page.jsx";
 import PortfolioSample from "../../components/PortfolioSample/page.jsx";
@@ -147,7 +148,9 @@ export default function Blog() {
           </div>
           <div className="nav-trigger-labels-wrap">
             <div className="nav-trigger-label-relative">
-              <div className="nav-label">Menu</div>
+              <Link href="/Blogs" className="nav-label">
+                Go Back
+              </Link>
             </div>
             <div
               className="nav-trigger-label-absolute"
@@ -457,6 +460,7 @@ export default function Blog() {
             >
               想看更多案例嗎？
             </p>
+            <p>更多內容</p>
             <div className="flex">
               <a
                 href="/Blog-02"

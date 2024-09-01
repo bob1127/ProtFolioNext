@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import Head from "next/head";
-
+import { NextSeo } from "next-seo";
 // import Inner from "../components/Inner/index.jsx";
 import Script from "next/script";
 // import "../styles/globals.css";
@@ -30,6 +30,30 @@ export default function Blog() {
   }, []);
   return (
     <>
+      <NextSeo
+        title="提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略"
+        description="了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。"
+        openGraph={{
+          url: "https://www.example.com",
+          title: "提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略",
+          description:
+            "了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。",
+          images: [
+            {
+              url: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg",
+              width: 1200,
+              height: 630,
+              alt: "社交媒體行銷策略",
+            },
+          ],
+          site_name: "你的網站名稱",
+        }}
+        twitter={{
+          handle: "@twitterhandle",
+          site: "@twitterhandle",
+          cardType: "summary_large_image",
+        }}
+      />
       <Head>
         <link
           rel="stylesheet"
@@ -463,12 +487,12 @@ export default function Blog() {
                 </div>
                 <p className="font-normal leading-[26px]">
                   網站結構和內部連結對於SEO排名至關重要。確保網站擁有
-                  <span className="bg-green-400 mx-1"> 清晰的導航</span>
-                  <span className="bg-green-400 mx-1"> 合適的url結構</span>
+                  <span className="bg-[#2b72e5] mx-1"> 清晰的導航</span>
+                  <span className="bg-[#2b72e5] mx-1"> 合適的url結構</span>
                   ，以便搜尋引擎可以輕鬆索引您的網站內容。利用
-                  <span className="bg-green-400 mx-1"> 利用內部連結</span>
+                  <span className="bg-[#2b72e5] mx-1"> 利用內部連結</span>
                   提升網站頁面之間的相關性，進而提高重要
-                  <span className="bg-green-400 mx-1"> 頁面的權重</span>
+                  <span className="bg-[#2b72e5] mx-1"> 頁面的權重</span>
                 </p>
               </div>
               <div className="paragraph">
@@ -477,9 +501,9 @@ export default function Blog() {
                 </div>
                 <p className="font-normal leading-[26px]">
                   網站的載入速度和使用者體驗對SEO排名有直接影響。快速且易於導航的網站能夠提高用戶的停留時間和參與度。
-                  <span className="bg-green-400 mx-1"> 優化圖片</span>
-                  <span className="bg-green-400 mx-1"> 減少代碼體積</span>
-                  <span className="bg-green-400 mx-1"> 和使用快取技術</span>
+                  <span className="bg-[#2b72e5] mx-1"> 優化圖片</span>
+                  <span className="bg-[#2b72e5] mx-1"> 減少代碼體積</span>
+                  <span className="bg-[#2b72e5] mx-1"> 和使用快取技術</span>
                   、，可以提升網站的載入速度。確保網站在各種設備上都有良好的顯示效果，尤其是移動設備，對於提升排名也至關重要。
                 </p>
               </div>
@@ -489,13 +513,13 @@ export default function Blog() {
                 </div>
                 <p className="font-normal leading-[26px]">
                   高質量的內容能夠吸引訪客並提升搜尋引擎排名。內容應該具備{" "}
-                  <span className="bg-green-400 mx-1"> 價值</span>
-                  <span className="bg-green-400 mx-1"> 訊息性</span>
-                  <span className="bg-green-400 mx-1"> 吸引力</span>
+                  <span className="bg-[#2b72e5] mx-1"> 價值</span>
+                  <span className="bg-[#2b72e5] mx-1"> 訊息性</span>
+                  <span className="bg-[#2b72e5] mx-1"> 吸引力</span>
                   並且圍繞{" "}
-                  <span className="bg-green-400 mx-1"> 目標關鍵字</span>
+                  <span className="bg-[#2b72e5] mx-1"> 目標關鍵字</span>
                   進行優化。{" "}
-                  <span className="bg-green-400 mx-1"> 定期更新網站內容</span>
+                  <span className="bg-[#2b72e5] mx-1"> 定期更新網站內容</span>
                   ，保持內容的新鮮度和相關性，有助於提升網站在搜尋引擎中的地位。
                   都至關重要。然而，網站設計真的需要這麼貴嗎？我們來打破這個迷思。
                 </p>
@@ -526,7 +550,7 @@ export default function Blog() {
             </div>
             <div className="paragraph-content" data-aos="fade-up"></div>
 
-            <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a

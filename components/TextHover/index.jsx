@@ -6,7 +6,7 @@ const STAGGER = 0.025;
 
 export default function Home() {
   return (
-    <section className="grid place-content-center gap-2 bg-green-400 relative z-[9999999] px-8 py-24 text-black">
+    <section className="grid place-content-center gap-2 bg-[#2b72e5] relative z-[9999999] text-white px-8 py-24 ">
       <FlipLink href="#">Website</FlipLink>
       <FlipLink href="#">design-Life</FlipLink>
       {/* <FlipLink href="#">Facebook</FlipLink>
@@ -21,7 +21,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden whitespace-nowrap text-[45px] font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl"
+      className="relative text-[#f5f5f5] block overflow-hidden whitespace-nowrap text-[45px] uppercase sm:text-7xl md:text-8xl lg:text-9xl"
       style={{ lineHeight: 0.75 }}
     >
       <div>

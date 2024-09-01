@@ -112,7 +112,7 @@ const App = () => {
           <a href="#">Vancouver, British Columbia</a>
         </div>
       </footer> */}
-      <div className="wrapper bg-green-500 static z-[-1]  mt-[-100px] md:mt-[-300px] lg:mt-[-400px]">
+      <div className="wrapper bg-[#0184d5] static z-[-1]  mt-[-100px] md:mt-[-300px] lg:mt-[-400px]">
         <svg id="svg" viewBox="0 0 1000 1000">
           <g id="left-eye">
             <circle

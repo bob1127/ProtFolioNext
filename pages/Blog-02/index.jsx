@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import Head from "next/head";
-
+import { NextSeo } from "next-seo";
 // import Inner from "../components/Inner/index.jsx";
 import Script from "next/script";
 // import "../styles/globals.css";
@@ -30,6 +30,29 @@ export default function Blog() {
   }, []);
   return (
     <>
+      <NextSeo
+        title=""
+        description=""
+        openGraph={{
+          url: "",
+          title: "",
+          description: "",
+          images: [
+            {
+              url: "",
+              width: 1200,
+              height: 630,
+              alt: "社交媒體行銷策略",
+            },
+          ],
+          site_name: "你的網站名稱",
+        }}
+        twitter={{
+          handle: "@twitterhandle",
+          site: "@twitterhandle",
+          cardType: "summary_large_image",
+        }}
+      />
       <Head>
         <link
           rel="stylesheet"
@@ -525,7 +548,7 @@ export default function Blog() {
               alt=""
             />
 
-            <div className="article-content-social-share duration-300 hover:bg-green-400 border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a
