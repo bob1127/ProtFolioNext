@@ -69,7 +69,7 @@ const TodoItem = ({
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.3 }}
-      className="relative flex w-full items-center gap-3 rounded border border-zinc-700 bg-[#2b72e5] p-3"
+      className="relative flex w-full items-center gap-3 rounded border border-zinc-700 bg-blue-100 p-3"
     >
       <input
         type="checkbox"

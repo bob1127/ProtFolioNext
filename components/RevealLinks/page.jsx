@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Index() {
   return (
-    <section className="hidden sm:block px-8 py-5 text-black">
+    <section className="hidden sm:block px-8 py-5 text-white">
       <FlipLink href="#">WEBSITE-DESIGN</FlipLink>
 
       <FlipLink href="#">Sir JEEEK</FlipLink>
@@ -22,7 +22,7 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className="relative block overflow-hidden  text-[40px] md:text-[45px] lg:text-[60px] xl:text-[80px] font-black text-center leading-normal xl:leading-[80px]"
+      className="relative block overflow-hidden  text-[40px] md:text-[45px] lg:text-[60px] text-white xl:text-[80px] font-black text-center leading-normal xl:leading-[80px]"
     >
       <div>
         {children.split("").map((l, i) => (

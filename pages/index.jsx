@@ -295,7 +295,7 @@ CREACTIVEs</h1>
           </div>
         </section>
         {/* <SmoothParallaxScroll /> */}
-        <section className="section_second bg-[#2b72e5] border border-black flex flex-col lg:flex-row">
+        <section className="section_second bg-[#0184d5] border border-black flex flex-col lg:flex-row">
           <div className="left p-[60px] xl:p-[100px] w-full lg:w-1/2 border-r-2 border-black">
             <div>
               <div>
@@ -367,7 +367,9 @@ CREACTIVEs</h1>
                 利用 3D
                 技術，創建產品的動態展示效果。讓產品在網站上旋轉、縮放，並可在互動中查看不同角度和細節。這種動態效果能夠幫助客戶更好地理解產品特點和功能，提高轉化率。
               </p>
-              <EmblaCarousel01 />
+              <div className="pt-5 w-full">
+                <EmblaCarousel01 />
+              </div>
             </div>
             <div className="wrap h-auto hidden flex">
               <div className="img overflow-hidden  w-full border-2 border-black relative ">

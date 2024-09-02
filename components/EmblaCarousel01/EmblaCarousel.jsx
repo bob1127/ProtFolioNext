@@ -94,7 +94,7 @@ const EmblaCarousel = (props) => {
 
   return (
     <div
-      className="embla w-[100%] border border-black m-auto"
+      className="embla w-[100%] py-[30px] border border-black m-auto"
       style={{
         "--slide-height": "19rem",
         "--slide-spacing": "1rem",
@@ -124,9 +124,23 @@ const EmblaCarousel = (props) => {
                   height: "var(--slide-height)",
                   userSelect: "none",
                 }}
-                className="embla__slide__number border border-black flex items-center justify-center font-semibold"
+                className="embla__slide__number border py-[30px] border-black py-[30px] flex flex-col  items-center justify-center font-semibold"
               >
                 {index + 1}
+                <div className="flex flex-col justify-center items-center ">
+                  <img
+                    src="/images/untitled拷貝.png"
+                    className="w-[300px]"
+                    alt=""
+                  />
+                  <div className="txt mt-[20px] flex-col flex justify-center items-center w-[80%] mx-auto">
+                    <b className="text-[18px] text-center">title</b>
+                    <p className="text-[14px] font-normal text-center">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Officia aspernatur sunt reprehenderit fugit{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

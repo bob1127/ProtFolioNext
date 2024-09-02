@@ -481,7 +481,7 @@ export default function Blog() {
                 </div>
                 <p className="font-normal leading-[26px]">
                   短影音的核心特點在於其簡潔和直觀。與傳統的長篇影片相比，
-                  <span className="bg-[#2b72e5]">
+                  <span className="bg-blue-100">
                     短影音通常在15秒到60秒之間
                   </span>
                   ，要求創作者在有限的時間內傳達清晰的信息。這種格式鼓勵創意和創新，促使品牌在短時間內引起觀眾的注意。短影音的形式通常包括音樂、特效和快速剪輯，這些都能夠提升觀眾的參與感和記憶點。
@@ -501,7 +501,7 @@ export default function Blog() {
                         高參與度和分享率：
                       </span>
                       短影音通常具有高度的娛樂性和創意性，這使得觀眾更容易參與和分享內容。根據研究，
-                      <span className="bg-[#2b72e5]">
+                      <span className="bg-blue-100">
                         短影音的分享率比長篇影片高出30%以上
                       </span>
                       ，這意味著您的品牌有更多機會通過用戶的分享來擴大影響力。
@@ -509,9 +509,9 @@ export default function Blog() {
                     <li className="text-[16px] leading-normal font-normal">
                       <span className="font-bold text-[16px]">成本效益</span>
                       成本效益：相對於傳統的廣告和長篇影片，
-                      <span className="bg-[#2b72e5]">短影音的製作成本較低</span>
+                      <span className="bg-blue-100">短影音的製作成本較低</span>
                       。這使得即使是中小型企業也能夠利用短影音來進行行銷，並且能夠在較低的預算下獲得較高的
-                      <span className="bg-[#2b72e5]">曝光率和參與度</span>。
+                      <span className="bg-blue-100">曝光率和參與度</span>。
                     </li>
                     <li className="text-[16px] leading-normal font-normal">
                       <span className="font-bold text-[16px]">即時反饋</span>
@@ -541,7 +541,7 @@ export default function Blog() {
                         創造引人注目的內容
                       </span>
                       短影音需要在
-                      <span className="bg-[#2b72e5]">
+                      <span className="bg-blue-100">
                         短時間內抓住觀眾的注意力
                       </span>
                       。因此，內容必須具有高度的吸引力和創意。使用鮮豔的顏色、音效和創意剪輯來提高內容的視覺衝擊力，並確保信息傳達清晰明了。
@@ -575,7 +575,7 @@ export default function Blog() {
                     data-aos-delay="200"
                   >
                     <div
-                      className="border-2  p-5 rounded-xl border-black bg-[#2b72e5]"
+                      className="border-2  p-5 rounded-xl border-black bg-blue-100"
                       data-aos="zoom-in"
                       data-aos-duration="500"
                     >
@@ -587,7 +587,7 @@ export default function Blog() {
                       </div>
                     </div>
                     <div
-                      className="border-2 p-5  rounded-xl border-black bg-[#2b72e5]"
+                      className="border-2 p-5  rounded-xl border-black bg-blue-100"
                       data-aos="zoom-in"
                       data-aos-delay="300"
                       data-aos-duration="500"
@@ -600,7 +600,7 @@ export default function Blog() {
                       </div>
                     </div>
                     <div
-                      className="border-2 p-5 rounded-xl border-black bg-[#2b72e5]"
+                      className="border-2 p-5 rounded-xl border-black bg-blue-100"
                       data-aos="zoom-in"
                       data-aos-delay="200"
                       data-aos-duration="500"
@@ -613,7 +613,7 @@ export default function Blog() {
                       </div>
                     </div>
                     <div
-                      className="border-2 p-5 rounded-xl border-black bg-[#2b72e5]"
+                      className="border-2 p-5 rounded-xl border-black bg-blue-100"
                       data-aos="zoom-in"
                       data-aos-duration="500"
                       data-aos-delay="400"
@@ -655,7 +655,7 @@ export default function Blog() {
                 </div>
               </div>
 
-              <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
+              <div className="article-content-social-share duration-300 hover:bg-blue-100 border-2 border-black rounded-[40px]">
                 <div className="social-share-label-text div-relative">
                   SHARE
                 </div>

@@ -6,7 +6,7 @@ const STAGGER = 0.025;
 
 export default function Home() {
   return (
-    <section className="grid place-content-center gap-2 bg-[#2b72e5] relative z-[9999999] text-white px-8 py-24 ">
+    <section className="grid place-content-center gap-2 bg-[#15a4fd] relative z-[9999999] text-white px-8 py-24 ">
       <FlipLink href="#">Website</FlipLink>
       <FlipLink href="#">design-Life</FlipLink>
       {/* <FlipLink href="#">Facebook</FlipLink>

@@ -548,7 +548,7 @@ export default function Blog() {
               alt=""
             />
 
-            <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share duration-300 hover:bg-blue-100 border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a

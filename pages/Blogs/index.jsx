@@ -424,7 +424,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <section className="bg-green-300 py-[80px] flex justify-center flex-col items-center">
+        <section className="py-[80px] flex justify-center flex-col items-center">
           <h3
             className=" text-[26px] sm:text-[40px] 2xl:text-[50px]  font-bold"
             data-ao-delay="300"
@@ -441,7 +441,7 @@ export default function Blog() {
           </div>
         </section>
 
-        <section className="py-[50px]  section-scroll-bg bg-green-300">
+        <section className="py-[50px]  section-scroll-bg ">
           <HorizontalScroll />
         </section>
         <div className="w-full border border-green-400 py-[50px] ">

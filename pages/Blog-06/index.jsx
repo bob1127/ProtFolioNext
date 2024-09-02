@@ -502,7 +502,7 @@ export default function Blog() {
                 <div
                   data-aos="zoom-in"
                   data-aos-duration="400"
-                  className="w-full lg:w-1/2  bg-green-300 flex justify-center items-center m-3 p-10 border border-black"
+                  className="w-full lg:w-1/2  bg-blue-500 flex justify-center items-center m-3 p-10 border border-black"
                 >
                   <div className="txt ">
                     <h3 className="text-white font-extrabold text-[40px]">
@@ -517,7 +517,7 @@ export default function Blog() {
                   data-aos="zoom-in"
                   data-aos-delay="300"
                   data-aos-duration="400"
-                  className="w-full lg:w-1/2 m-3 bg-green-500 p-10 border border-black"
+                  className="w-full lg:w-1/2 m-3 bg-blue-500 p-10 border border-black"
                 >
                   <div className="txt ">
                     <h3 className="text-white font-extrabold text-[40px]">
@@ -557,7 +557,7 @@ export default function Blog() {
               </div>
             </div>
 
-            <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share duration-300 hover:bg-blue-100 border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a

@@ -7,6 +7,7 @@ import {
 } from "./EmblaCarouselArrowButtons"; // Ensure this path is correct
 import { DotButton, useDotButton } from "./EmblaCarosuelDotButton";
 import { gsap } from "gsap";
+import Modal from "../../components/Modal/page.jsx"; // Import the Modal component
 
 const TWEEN_FACTOR_BASE = 0.2;
 
@@ -15,6 +16,9 @@ const EmblaCarousel = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [isHovered, setIsHovered] = useState(false);
   const dragLabelRef = useRef(null);
+
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const [currentImageSrc, setCurrentImageSrc] = useState(""); // State for the current image in the modal
 
   const tweenFactor = useRef(0);
   const tweenNodes = useRef([]);
@@ -119,6 +123,15 @@ const EmblaCarousel = (props) => {
     });
   };
 
+  const handleImageClick = (imageSrc) => {
+    setCurrentImageSrc(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   useEffect(() => {
     if (!emblaApi) return;
 
@@ -147,7 +160,7 @@ const EmblaCarousel = (props) => {
   return (
     <div className="embla w-full py-8">
       <div
-        className="embla__viewport w-[100%] border border-black overflow-hidden cursor-none" // Set default cursor to none
+        className="embla__viewport w-[100%] border border-black overflow-hidden cursor-none"
         ref={emblaRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -156,12 +169,19 @@ const EmblaCarousel = (props) => {
       >
         <div className="embla__container flex">
           {slides.map((index) => (
-            <div className="embla__slide flex-none pl-4" key={index}>
-              <div className="embla__parallax rounded-lg h-full overflow-hidden">
-                <div className="embla__parallax__layer flex justify-center relative h-full w-[100%]">
+            <div className="embla__slide w-[600px] flex-none pl-4" key={index}>
+              <div className="embla__parallax h-full overflow-hidden">
+                <div
+                  className="embla__parallax__layer flex justify-center relative h-full w-[100%]"
+                  onClick={() =>
+                    handleImageClick(
+                      "https://cdn.prod.website-files.com/61789b489343c8242282a0ae/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.jpeg"
+                    )
+                  }
+                >
                   <img
                     className="embla__slide__img embla__parallax__img w-full h-full object-cover "
-                    src={`https://picsum.photos/600/350?v=${index}`}
+                    src={`https://cdn.prod.website-files.com/61789b489343c8242282a0ae/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.jpeg`}
                     alt="Your alt text"
                   />
                 </div>
@@ -186,34 +206,32 @@ const EmblaCarousel = (props) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            fontSize: "16px",
-            pointerEvents: "none",
-            opacity: 0, // 初始状态不可见
-            zIndex: 10,
+            opacity: 0,
           }}
         >
           Drag
         </div>
       </div>
 
-      {/* 控制按钮和导航点 */}
-      <div className="embla__controls grid grid-cols-[auto_1fr] justify-between gap-3 mt-4">
-        <div className="embla__buttons grid grid-cols-2 gap-1.5 items-center">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
-        <div className="embla__dots flex flex-wrap justify-end items-center -mr-3">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
-              )}
-            />
-          ))}
-        </div>
+      <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+      <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+
+      <div className="flex justify-center">
+        {scrollSnaps.map((_, index) => (
+          <DotButton
+            key={index}
+            selected={index === selectedIndex}
+            onClick={() => onDotButtonClick(index)}
+          />
+        ))}
       </div>
+
+      {/* Modal Component */}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleModalClose}
+        imageSrc={currentImageSrc}
+      />
     </div>
   );
 };

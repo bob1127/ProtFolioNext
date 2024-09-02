@@ -8,6 +8,7 @@ import {
   TableCell,
   getKeyValue,
 } from "@nextui-org/react";
+import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
@@ -126,7 +127,7 @@ export default function Blog() {
         <div id="webpage" className="page-wrapper">
           <main className="main">
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
-              <div className="container duration-500  bg-[#2b72e5]  border-4 border-green-500 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
+              <div className="container duration-500  bg-[#15a4fd]  border-4 border-gray-400 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
                   <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
                     💡致力於開發使用者體驗良好的網站
@@ -140,7 +141,7 @@ export default function Blog() {
                     </h1>
                     <RevealLinks />
 
-                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-normal p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-black mx-auto">
+                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-normal p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-[#dadada] mx-auto">
                       HELLO！Jeek
                       是一個網頁接案者創立的一個小小工作室，專注於幫助中小企業、餐飲業與美容業打造專屬網站的設計公司。我們相信，每個企業都有自己的風格和故事，而這些都應該在網站上得到最佳展現。不僅如此，我們還會特別注重網站的SEO優化，讓您的網站在搜尋引擎上更容易被找到，從而提升曝光度，吸引更多潛在客戶，最終增加收益。
                     </div>
@@ -515,7 +516,7 @@ export default function Blog() {
                         大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
                         <br></br> <br></br>
                         行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
-                        <span className="bg-[#2b72e5]">網站設計和SEO優化</span>
+                        <span className="bg-blue-100">網站設計和SEO優化</span>
                         ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
                       </p>
                       <a
@@ -766,7 +767,7 @@ export default function Blog() {
                           </b>
                           <p className="text-left leading-normal mt-3">
                             - Google 目前使用{" "}
-                            <span className="bg-[#2b72e5]">
+                            <span className="bg-blue-100">
                               「移動優先索引」
                             </span>
                             ，這意味著 Google
@@ -779,10 +780,9 @@ export default function Blog() {
                           <p className="text-left leading-normal mt-3">
                             - Google
                             對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
-                            的{" "}
-                            <span className="bg-[#2b72e5]">「頁面體驗」</span>
+                            的 <span className="bg-blue-100">「頁面體驗」</span>
                             更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-[#2b72e5]">
+                            <span className="bg-blue-100">
                               Google PageSpeed Insights
                             </span>{" "}
                             來測試和改進頁面速度。
@@ -820,6 +820,10 @@ export default function Blog() {
                 </div>
               </div>
             </section>
+            {/* <div className="h-[100vh] bg-green-300">
+              <threeDCarousel />
+            </div> */}
+
             <section className="section">
               <div className="container">
                 <div className="padding">
@@ -947,7 +951,7 @@ export default function Blog() {
                           </b>
                           <p className="text-left leading-normal mt-3">
                             - Google 目前使用{" "}
-                            <span className="bg-[#2b72e5]">
+                            <span className="bg-blue-100">
                               「移動優先索引」
                             </span>
                             ，這意味著 Google
@@ -960,10 +964,9 @@ export default function Blog() {
                           <p className="text-left leading-normal mt-3">
                             - Google
                             對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
-                            的{" "}
-                            <span className="bg-[#2b72e5]">「頁面體驗」</span>
+                            的 <span className="bg-blue-100">「頁面體驗」</span>
                             更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-[#2b72e5]">
+                            <span className="bg-blue-100">
                               Google PageSpeed Insights
                             </span>{" "}
                             來測試和改進頁面速度。
@@ -1004,7 +1007,7 @@ export default function Blog() {
             <section className="marketing ">
               <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 mx-auto">
                 <h2 className="heading is-medium-title text-center">
-                  "對於增加網路曝光度，我該如何選擇我的行銷方式"
+                  "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
                 </h2>
                 <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
                   在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
@@ -1086,12 +1089,19 @@ export default function Blog() {
                   </div>
                   <div className="relative  overflow-hidden">
                     <div className="img-wrap rounded-2xl overflow-hidden">
-                      <iframe
+                      <div className="img-wrap rounded-2xl overflow-hidden">
+                        <Lottie
+                          options={defaultOptions}
+                          height={400}
+                          width={400}
+                        />
+                      </div>
+                      {/* <iframe
                         src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
                         frameborder="0"
                         width="100%"
                         height="240px"
-                      ></iframe>
+                      ></iframe> */}
                     </div>
                   </div>
                 </div>
@@ -1124,12 +1134,11 @@ export default function Blog() {
                   </div>
                   <div className="relative  overflow-hidden">
                     <div className="img-wrap rounded-2xl overflow-hidden">
-                      <iframe
-                        src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
-                        frameborder="0"
-                        width="100%"
-                        height="240px"
-                      ></iframe>
+                      <Lottie
+                        options={defaultOptions}
+                        height={400}
+                        width={400}
+                      />
                     </div>
                   </div>
                 </div>
@@ -1139,7 +1148,7 @@ export default function Blog() {
             <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
               <a
                 href=""
-                className="xl:w-1/2 w-full mr-4 hover:shadow-custom 
+                className="xl:w-1/2 w-full mr-4 hover:shadow-custom
                 border-1
                 
               duration-300
@@ -1150,10 +1159,10 @@ export default function Blog() {
                   網頁SEO很重要嗎？
                 </h4>
                 <div className="flex">
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     搜尋引擎優化
                   </span>
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     網頁結構優化
                   </span>
                 </div>
@@ -1188,10 +1197,10 @@ export default function Blog() {
                   網頁設計其實沒有很花錢
                 </h4>
                 <div className="flex my-4">
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     搜尋引擎優化
                   </span>
-                  <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     網頁結構優化
                   </span>
                 </div>
@@ -1352,13 +1361,13 @@ export default function Blog() {
                       <div className="flex w-full  flex-col items-start">
                         <b className="mb-3 text-[16px]">3d model for website</b>
                         <div className="flex">
-                          <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                             3D 形象影片
                           </span>
-                          <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                             交互式網站
                           </span>
-                          <span className="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                             產品展示
                           </span>
                         </div>
@@ -1435,13 +1444,13 @@ export default function Blog() {
                     <b className="text-[22px] mt-[50px]">Author Name</b>
                     <br />
                     <div class="flex mt-5">
-                      <span class="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                         3D 形象影片
                       </span>
-                      <span class="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                         交互式網站
                       </span>
-                      <span class="bg-green-500 rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                         產品展示
                       </span>
                     </div>
@@ -1503,7 +1512,7 @@ export default function Blog() {
                 <h2 className="heading is-medium-title">
                   "客製網站 or 套版網站？"
                 </h2>
-                <p className="text-[22px] bg-[#2b72e5]  text-center mb-4 mt-2">
+                <p className="text-[22px] bg-blue-400  text-center mb-4 mt-2">
                   沒有哪種比較好，適合你的才是好的網站
                 </p>
                 <div className="flex flex-col xl:flex-row justify-center items-center text-[16px]  px-[100px] text-center leading-normal">
@@ -1726,7 +1735,7 @@ export default function Blog() {
                       </div>
                       <div
                         id="w-node-_01078e3d-0c2e-e80d-0be2-5a38ca83ccf4-35a2ecda"
-                        className="job-card bg-green-500"
+                        className="job-card bg-blue-200"
                       >
                         <p className="job-card-role">客製化網站(NT.80000)</p>
                         <span>

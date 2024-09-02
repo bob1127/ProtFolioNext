@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        blue: {
+          100: '#2ddcff', // 将此值替换为你想要的颜色
+        },
+      },
+       
        fontFamily: {
         mono: ['Basier Square Mono', 'monospace'],
         sans: ['Segment A Key Trial', 'sans-serif'],

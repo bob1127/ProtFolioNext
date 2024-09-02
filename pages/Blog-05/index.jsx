@@ -504,7 +504,7 @@ export default function Blog() {
                   3. 運用現成模板和主題
                 </div>
                 <p className="font-normal leading-[26px]">
-                  <span clasName="bg-[#2b72e5] mx-1">現成的模板和主題 </span>
+                  <span clasName="bg-blue-100 mx-1">現成的模板和主題 </span>
                   可以幫助您以較低的成本快速建立視覺上吸引人的網站。許多平台提供免費或付費的模板，這些模板已經過優化，適合不同類型的網站。選擇一個設計精美且符合您業務需求的模板，可以節省自訂設計的時間和成本。記住，在選擇模板時，要確保其響應式設計，能夠在不同設備上良好顯示。
                 </p>
               </div>
@@ -514,10 +514,7 @@ export default function Blog() {
                 </div>
                 <p className="font-normal leading-[26px]">
                   在預算有限的情況下，簡化設計和功能是控制成本的有效方法。避免過於複雜的設計和不必要的功能，
-                  <span clasName="bg-[#2b72e5] mx-1">
-                    {" "}
-                    專注於網站的核心需求
-                  </span>
+                  <span clasName="bg-blue-100 mx-1"> 專注於網站的核心需求</span>
                   。簡單而清晰的設計不僅能夠降低開發成本，還能提升用戶體驗。確保網站的色彩搭配、排版和圖像能夠吸引目光，這樣能夠有效地吸引和留住訪客。
                 </p>
               </div>
@@ -557,7 +554,7 @@ export default function Blog() {
               </div>
             </div>
 
-            <div className="article-content-social-share duration-300 hover:bg-[#2b72e5] border-2 border-black rounded-[40px]">
+            <div className="article-content-social-share duration-300 hover:bg-blue-100 border-2 border-black rounded-[40px]">
               <div className="social-share-label-text div-relative">SHARE</div>
               <div className="w-layout-grid social-share-icons-grid horizontal">
                 <a
