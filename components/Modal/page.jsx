@@ -49,17 +49,13 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="content w-full xl:w-1/2 p-5">
-            <p className="text-[14px] font-normal">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-              quibusdam perspiciatis voluptas aliquid consequatur vitae dolore
-              mollitia eaque voluptatibus libero ullam similique unde expedita,
-              cum eum, ea maiores ex dolorum!
-            </p>
-            <a
+          <div className="content  mx-[20px] p-[40px] rounded-xl border border-black w-full xl:w-1/2 ">
+            <b className="text-[30px] text-center font-normal">專案名稱</b>
+            <p className="text-[14px] font-normal">專案苗去 內容</p>
+            {/* <a
               href="/"
               data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-              className="button-wrapper w-inline-block"
+              className="button-wrapper w-[120px] w-inline-block"
             >
               <div className="button-layout">
                 <p href="/about" className="button-text" style={{}}>
@@ -76,7 +72,22 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
                   style={{}}
                 />
               </div>
-            </a>
+            </a> */}
+            {/* <div
+              data-w-id="60710c24-c4e8-9d65-10d7-1ada286361b6"
+              class="footre-page-links"
+              style="transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
+            >
+              <a href="/" class="simple-link-blue w--current">
+                形象影片
+              </a>
+              <a href="/about" class="simple-link-blue">
+                產品攝影
+              </a>
+              <a href="/journal" class="simple-link-blue">
+                社群短視頻
+              </a>
+            </div> */}
           </div>
         </div>
       </div>

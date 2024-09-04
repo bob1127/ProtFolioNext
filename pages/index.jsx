@@ -465,9 +465,9 @@ CREACTIVEs</h1>
           width="100%"
           height="600"
         ></iframe> */}
-        <section>
+        {/* <section>
           <SmoothParallaxScroll />
-        </section>
+        </section> */}
 
         <section className="bg-gray-100  py-[70px] px-[20px]">
           <div className="flex flex-col w-2/3 mx-auto">

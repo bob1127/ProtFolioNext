@@ -5,7 +5,7 @@ import Script from 'next/script';
 import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 import { NextUIProvider } from "@nextui-org/react";
-import Navbar from '../components/sideTabs/index.jsx';
+// import Navbar from '../components/sideTabs/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
@@ -21,6 +21,11 @@ const PhysicsAnimationApp = dynamic(
 );
 
 export default function MyApp({ Component, pageProps, router }) {
+    const noNavbarRoutes = ['/toys' , '/Lego']; // 指定不需要顯示 Navbar 的路由
+       const nophyRoutes = ['/toys' , '/Lego']; // 指定不需要顯示 Navbar 的路由
+   
+
+
     useEffect(() => {
     AOS.init({
       duration: 1000, // 动画持续时间（毫秒）
@@ -65,7 +70,7 @@ export default function MyApp({ Component, pageProps, router }) {
         src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
         type="text/javascript"
       />
-       <Nav/>
+       {!noNavbarRoutes.includes(router.pathname) && <Nav />}
 
 
         <div className='main overflow-hidden'>
@@ -76,7 +81,8 @@ export default function MyApp({ Component, pageProps, router }) {
                         <Component key={router.route} {...pageProps} />
 
                         <div className='border-t-2 border-black'>
-                             <PhysicsAnimationApp />
+                              {!nophyRoutes.includes(router.pathname) &&  <PhysicsAnimationApp />}
+                            
                         </div>
                        
                         <div className=''>
@@ -94,8 +100,8 @@ export default function MyApp({ Component, pageProps, router }) {
             
               </Marquee>
                
-            <div className="bg-[#181818]">
-                <div className="footer-layout">
+            <div className="bg-[#181818] z-[99999] static">
+                <div className="footer-layout z-[99999] static">
                   <div className="footer-wrapper">
                     <div className="main-container">
                       <div
@@ -182,7 +188,7 @@ export default function MyApp({ Component, pageProps, router }) {
                     </div>
                   </div>
                 </div>
-                <div className="footer-utility-section">
+                <div className="footer-utility-section z-[99999] static">
                   <div className="main-container align-center">
                     <div
                       id="w-node-_4f1c3f96-9351-ef46-d1ee-e61c42e6a5bd-cdf922c7"
