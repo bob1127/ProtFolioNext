@@ -153,9 +153,29 @@ CREACTIVEs</h1>
               <h2 className="text-[32px] text-bold">為你的品牌增值</h2>
               <br />
             </div>
-            <div className="hero-right p-[50px] border-1 border-black border pt-[50px] flex flex-col  w-full lg:w-[15%]">
-              <div className="top">
-                <p className="text-[22px]">contact</p>
+            <div className="hero-right p-[50px] border-1 border-black border pt-[50px] flex flex-col justify-center items-center  w-full lg:w-[15%]">
+              <div className="top flex flex-col justify-center items-center">
+                <a href="/Contact" className="mt-4 hover:scale-95 duration-300">
+                  <img
+                    className="w-[60px]"
+                    src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
+                    alt=""
+                  />
+                </a>
+                <a href="/Contact" className="mt-4 hover:scale-95 duration-300">
+                  <img
+                    className="w-[60px]"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4xB1s17gDuk8Gas9rHwGpaHBUh11qqtoMw&s"
+                    alt=""
+                  />
+                </a>
+                <a href="/Contact" className="mt-4 hover:scale-95 duration-300">
+                  <img
+                    className="w-[60px]"
+                    src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
+                    alt=""
+                  />
+                </a>
               </div>
               <div className="bottom">
                 <div className="contact-icon "></div>
@@ -480,15 +500,6 @@ CREACTIVEs</h1>
             </div>
           </div>
         </section>
-
-        {/* <iframe
-          src="https://my.spline.design/bmoadventuretimecopy-ad1d560a902337308bba76fc039dd3c2/"
-          width="100%"
-          height="600"
-        ></iframe> */}
-        {/* <section>
-          <SmoothParallaxScroll />
-        </section> */}
 
         <section className="bg-gray-100  py-[70px] px-[20px]">
           <div className="flex flex-col w-2/3 mx-auto">

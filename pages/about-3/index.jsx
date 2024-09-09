@@ -24,6 +24,7 @@ import React from "react";
 import Script from "next/script";
 import Head from "next/head";
 import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
+import { NextSeo } from "next-seo";
 import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
 import BannerSwiper from "../../components/BannerSwiper/page.jsx";
 import SpringModal from "../../components/SpringModal/page.jsx";
@@ -144,6 +145,23 @@ export default function Blog() {
   }, []);
   return (
     <div className="">
+      <NextSeo
+        title="極客網頁設計｜JEEK WEBDESIGN - 關於我們"
+        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        openGraph={{
+          title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          description:
+            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+          images: [
+            {
+              url: "https://www.example.com/og-home.jpg",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+            },
+          ],
+        }}
+      />
       <Modal
         backdrop={backdrop}
         isOpen={isOpen}
@@ -285,7 +303,7 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            <div className="about-hero m-0 p-0">
+            <div className="about-hero m-0 hidden p-0">
               <div className="container">
                 <div className="about-hero-content">
                   <div className="about-hero-title-block">
@@ -301,7 +319,7 @@ export default function Blog() {
                     >
                       About
                     </h1>
-                    <a
+                    {/* <a
                       data-w-id="70be419f-58bd-64a7-48cc-18d3ea7f1d52"
                       style={{
                         transform:
@@ -309,11 +327,11 @@ export default function Blog() {
                         transformStyle: "preserve-3d",
                         opacity: 0,
                       }}
-                      href="#explore"
-                      className="simple-link is-explore"
+                      href="#free"
+                      className="border border-black"
                     >
                       了解更多
-                    </a>
+                    </a> */}
                   </div>
 
                   <div className="about-hero-line" />
@@ -531,7 +549,7 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="">
+            <section className="mt-[100px]" id="free">
               <h2
                 data-aos="fade-up"
                 data-aos-delay="400"
@@ -910,7 +928,7 @@ export default function Blog() {
                 </div>
               </div>
 
-              <div className="w-full flex ">
+              <div className="w-full flex flex-col xl:flex-row">
                 <div className="w-full lg:w-1/2">
                   <div className="flex  flex-col  pl-10  mx-auto">
                     <div className="px-4">

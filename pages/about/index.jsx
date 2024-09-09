@@ -568,7 +568,7 @@ export default function Blog() {
                           />
                         </div>
                       </div>
-                      <p className="paragraph mb-[40px] is-large">
+                      <p className="paragraph text-[20px] mb-[40px] is-large">
                         此slogan專注於定制化和品牌價值，強調公司能夠根據客戶的需求和品牌形象，創造出獨一無二的網站。這表明公司重視客戶的品牌，致力於通過精心設計來提升其品牌價值，使網站成為品牌增值的關鍵一環。
                       </p>
                     </div>

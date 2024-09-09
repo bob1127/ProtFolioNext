@@ -87,7 +87,7 @@ export default function Index() {
             <div className="menu-main-links">
               <a
                 data-w-id="6dce1659-1f78-7d00-7eed-5d600171ac2e"
-                href="/"
+                href="/about-3"
                 aria-current="page"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block w--current"
               >
@@ -110,7 +110,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="9119eb55-b515-23ab-3ca6-d7a893b67ca0"
-                href="/"
+                href="/about-2"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
@@ -132,7 +132,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="bdd489b8-8031-113b-2ffa-b5e1c5758ce0"
-                href="/"
+                href="/Service"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
@@ -154,7 +154,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="03e10da9-d56b-f42b-a87a-0d5fd44d5e75"
-                href="/about"
+                href="/Blogs"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
@@ -176,7 +176,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="4f963323-4aa1-e2d1-d1f7-b679d51590a7"
-                href="/journal"
+                href="/Contact"
                 className="menu-link hover:text-[#f3f3f3] duration-400 w-inline-block"
               >
                 <div
@@ -422,7 +422,7 @@ export default function Index() {
                 <div className="nav-text">About</div>
               </a>
               {/* <link rel="prefetch" href="/about" /> */}
-              <a href="/journal" className="nav-link-block w-inline-block">
+              <a href="/Contact" className="nav-link-block w-inline-block">
                 <div className="nav-text">Contact</div>
               </a>
               {/* <a

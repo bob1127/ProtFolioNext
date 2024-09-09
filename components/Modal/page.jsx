@@ -24,10 +24,10 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black overflow:hidden bg-opacity-75">
       <div
         ref={modalRef}
-        className="relative p-4 bg-[#4982d7] border-2 border-black rounded-md"
+        className="relative p-4   h-auto bg-[#4982d7] border-2 border-black rounded-md"
         style={{
           width: "70vw",
           height: "80vh",
@@ -50,8 +50,18 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
             />
           </div>
           <div className="content  mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full xl:w-1/2 ">
-            <b className="text-[30px] text-center font-normal">專案名稱</b>
-            <p className="text-[14px] font-normal">專案苗去 內容</p>
+            <div className="project-type px-2 bg-blue-400 rounded-[30px] w-[30%] py-1 flex justify-center mb-4  items-center">
+              官網建置
+            </div>
+            <b className="text-[20px] text-center font-normal">
+              專案名稱:禪譜科技官網建置
+            </b>
+            <p className="text-[20px] mt-4 font-normal">專案內容:</p>
+            <p className="text-[15px] font-bold">
+              使用Bootstrap + Scss + Jquery 建置 另外加商品影片剪輯 商品攝影
+              商品3D建模 圖片後製 網頁性能優化 Seo優化
+            </p>
+            <p></p>
             {/* <a
               href="/"
               data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"

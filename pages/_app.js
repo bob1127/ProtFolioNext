@@ -9,7 +9,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
-
+import PolicyModal from '../components/PolicyModal.jsx'
 import Nav from '../components/Navbar/page.jsx'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
@@ -74,7 +74,7 @@ export default function MyApp({ Component, pageProps, router }) {
       />
        {!noNavbarRoutes.includes(router.pathname) && <Nav />}
 
-
+<PolicyModal/>
         <div className='main overflow-hidden'>
             <div className='max-w-[1920px] mx-auto'>
                 <NextUIProvider>
