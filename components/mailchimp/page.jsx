@@ -1,35 +1,18 @@
-import { useEffect } from "react";
+import React, { useState } from "react";
 
 const MailchimpForm = () => {
-  useEffect(() => {
-    // Load the Mailchimp validation script when the component mounts
-    const script = document.createElement("script");
-    script.src = "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div id="mc_embed_shell">
-      <link
-        href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
-        rel="stylesheet"
-        type="text/css"
-      />
-      <style type="text/css">
-        {`
-          #mc_embed_signup {
-            background: #fff;
-            clear: left;
-            font: 14px Helvetica, Arial, sans-serif;
-            width: 600px;
-          }
-        `}
-      </style>
+      {/* External CSS can be included in a <head> tag in the main document */}
+      {/* For inline styles in React, use JavaScript objects */}
+      <style>{`
+        #mc_embed_signup {
+          background: #fff;
+          clear: left;
+          font: 14px Helvetica, Arial, sans-serif;
+          width: 600px;
+        }
+      `}</style>
       <div id="mc_embed_signup">
         <form
           action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"
@@ -57,17 +40,75 @@ const MailchimpForm = () => {
               />
             </div>
             <div className="mc-field-group">
-              <label htmlFor="mce-LNAME">您的姓名</label>
-              <input type="text" name="LNAME" className="text" id="mce-LNAME" />
+              <label htmlFor="mce-NAME">您的姓名</label>
+              <input type="text" name="NAME" className="text" id="mce-NAME" />
             </div>
             <div className="mc-field-group">
               <label htmlFor="mce-PHONE">聯絡電話</label>
               <input
-                type="text"
+                type="number"
                 name="PHONE"
-                className="REQ_CSS"
+                className="number"
                 id="mce-PHONE"
               />
+            </div>
+            <div className="mc-field-group input-group">
+              <strong>選擇您需要的方案</strong>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43793][1]"
+                    id="mce-group[43793]-43793-0"
+                  />
+                  <label htmlFor="mce-group[43793]-43793-0">方案一</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43793][2]"
+                    id="mce-group[43793]-43793-1"
+                  />
+                  <label htmlFor="mce-group[43793]-43793-1">方案二</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43793][4]"
+                    id="mce-group[43793]-43793-2"
+                  />
+                  <label htmlFor="mce-group[43793]-43793-2">方案三</label>
+                </li>
+              </ul>
+            </div>
+            <div className="mc-field-group input-group">
+              <strong>您接受的聯繫方式</strong>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43794][8]"
+                    id="mce-group[43794]-43794-0"
+                  />
+                  <label htmlFor="mce-group[43794]-43794-0">Line</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43794][16]"
+                    id="mce-group[43794]-43794-1"
+                  />
+                  <label htmlFor="mce-group[43794]-43794-1">Facebook</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43794][32]"
+                    id="mce-group[43794]-43794-2"
+                  />
+                  <label htmlFor="mce-group[43794]-43794-2">Email</label>
+                </li>
+              </ul>
             </div>
             <div id="mce-responses" className="clear foot">
               <div
@@ -85,12 +126,10 @@ const MailchimpForm = () => {
               aria-hidden="true"
               style={{ position: "absolute", left: "-5000px" }}
             >
-              {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
               <input
                 type="text"
                 name="b_e4fe6f68e70ec50f3def8801d_9042884b3e"
                 tabIndex="-1"
-                value=""
               />
             </div>
             <div className="optionalParent">
@@ -102,34 +141,6 @@ const MailchimpForm = () => {
                   className="button"
                   value="Subscribe"
                 />
-                <p style={{ margin: "0px auto" }}>
-                  <a
-                    href="http://eepurl.com/iX1Z9M"
-                    title="Mailchimp - email marketing made easy and fun"
-                  >
-                    <span
-                      style={{
-                        display: "inline-block",
-                        backgroundColor: "transparent",
-                        borderRadius: "4px",
-                      }}
-                    >
-                      <img
-                        className="refferal_badge"
-                        src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                        alt="Intuit Mailchimp"
-                        style={{
-                          width: "220px",
-                          height: "40px",
-                          display: "flex",
-                          padding: "2px 0px",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                      />
-                    </span>
-                  </a>
-                </p>
               </div>
             </div>
           </div>

@@ -89,7 +89,7 @@ export default function Index() {
                 data-w-id="6dce1659-1f78-7d00-7eed-5d600171ac2e"
                 href="/"
                 aria-current="page"
-                className="menu-link w-inline-block w--current"
+                className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block w--current"
               >
                 <div
                   className="menu-link-text w-inline-block"
@@ -111,7 +111,7 @@ export default function Index() {
               <a
                 data-w-id="9119eb55-b515-23ab-3ca6-d7a893b67ca0"
                 href="/"
-                className="menu-link w-inline-block"
+                className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
                   className="menu-link-text w-inline-block"
@@ -121,7 +121,7 @@ export default function Index() {
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  一頁式網站
+                  網站案例
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
@@ -133,7 +133,7 @@ export default function Index() {
               <a
                 data-w-id="bdd489b8-8031-113b-2ffa-b5e1c5758ce0"
                 href="/"
-                className="menu-link w-inline-block"
+                className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
                   className="menu-link-text"
@@ -143,7 +143,7 @@ export default function Index() {
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  商業/商品攝影
+                  服務項目
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
@@ -155,7 +155,7 @@ export default function Index() {
               <a
                 data-w-id="03e10da9-d56b-f42b-a87a-0d5fd44d5e75"
                 href="/about"
-                className="menu-link w-inline-block"
+                className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
                   className="menu-link-text"
@@ -165,7 +165,7 @@ export default function Index() {
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  企業形象網站
+                  相關文章
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
@@ -177,7 +177,7 @@ export default function Index() {
               <a
                 data-w-id="4f963323-4aa1-e2d1-d1f7-b679d51590a7"
                 href="/journal"
-                className="menu-link w-inline-block"
+                className="menu-link hover:text-[#f3f3f3] duration-400 w-inline-block"
               >
                 <div
                   className="menu-link-text"
@@ -187,7 +187,7 @@ export default function Index() {
                     transformStyle: "preserve-3d",
                   }}
                 >
-                  3D互動網站 /
+                  聯絡我們
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
@@ -284,11 +284,11 @@ export default function Index() {
                       >
                         <div className="menu-feature-image">
                           <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19.webp"
+                            src="https://static.wixstatic.com/media/0784b1_c0ab312fc95448b6b14aa403fd46fb15~mv2.jpg/v1/fill/w_1042,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Desktop%20-%20Main%20Image.jpg"
                             loading="lazy"
                             alt="Design"
                             sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
-                            srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19-p-1600.webp 1600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19-p-2000.webp 2000w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6696552b7e4bc56feab537e8_stada-img-n-19.webp 2912w"
+                            srcSet="https://static.wixstatic.com/media/0784b1_c0ab312fc95448b6b14aa403fd46fb15~mv2.jpg/v1/fill/w_1042,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Desktop%20-%20Main%20Image.jpg"
                             className="cover-image"
                           />
                         </div>
@@ -298,7 +298,7 @@ export default function Index() {
                           className="menu-feature-content-link w-inline-block "
                           tabIndex={0}
                         >
-                          <div className="menu-feature-title ">價格方案</div>
+                          <div className="menu-feature-title ">服務內容</div>
                           <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
@@ -312,14 +312,12 @@ export default function Index() {
                         className="menu-feature-item w-dyn-item"
                       >
                         <div className="menu-feature-image">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15.webp"
-                            loading="lazy"
-                            alt="Innovation"
-                            sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
-                            srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15-p-1600.webp 1600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15-p-2000.webp 2000w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/669655bf3caaa06f871273e4_stada-img-n-15.webp 2912w"
-                            className="cover-image"
-                          />
+                          <video
+                            className="w-full h-full"
+                            autoPlay
+                            loop
+                            src="https://spline.design/_assets/_videos/content_modes-compressed.mp4"
+                          ></video>
                         </div>
                         <a
                           aria-label="Feature link"
@@ -342,21 +340,21 @@ export default function Index() {
                       >
                         <div className="menu-feature-image">
                           <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20.webp"
+                            src="https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
                             loading="lazy"
                             alt="Compatibility"
                             sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
-                            srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20-p-1600.webp 1600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20-p-2000.webp 2000w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20-p-2600.webp 2600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/66969d6f695ce27515bc9718_stada-img-20.webp 2912w"
+                            srcSet="https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
                             className="cover-image"
                           />
                         </div>
                         <a
                           aria-label="Feature link"
-                          href="/about"
+                          href="/about-3"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
-                          <div className="menu-feature-title">服務項目</div>
+                          <div className="menu-feature-title">關於我們</div>
                           <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
@@ -371,17 +369,17 @@ export default function Index() {
                       >
                         <div className="menu-feature-image">
                           <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697db71df85f60ba51311ba_stada-img-n-3.webp"
+                            src="https://static.wixstatic.com/media/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg/v1/fill/w_596,h_374,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg"
                             loading="lazy"
                             alt="Quality"
                             sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
-                            srcSet="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697db71df85f60ba51311ba_stada-img-n-3-p-500.webp 500w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697db71df85f60ba51311ba_stada-img-n-3-p-800.webp 800w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697db71df85f60ba51311ba_stada-img-n-3-p-1080.webp 1080w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697db71df85f60ba51311ba_stada-img-n-3-p-1600.webp 1600w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697db71df85f60ba51311ba_stada-img-n-3-p-2000.webp 2000w, https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697db71df85f60ba51311ba_stada-img-n-3.webp 2912w"
+                            srcSet="https://static.wixstatic.com/media/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg/v1/fill/w_596,h_374,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg"
                             className="cover-image"
                           />
                         </div>
                         <a
                           aria-label="Feature link"
-                          href="/Blogs"
+                          href="/Contact"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
@@ -413,19 +411,19 @@ export default function Index() {
               </a>
               <link rel="prefetch" href="/" /> */}
               <a href="/about-3" className="nav-link-block ">
-                <div className="nav-text">價格方案</div>
+                <div className="nav-text">Service</div>
               </a>
 
               <a href="/about-3" className="nav-link-block ">
-                <div className="nav-text">客戶案例</div>
+                <div className="nav-text">Portfolio</div>
               </a>
               {/* <link rel="prefetch" href="/features" /> */}
               <a href="/about" className="nav-link-block ">
-                <div className="nav-text">關於極客</div>
+                <div className="nav-text">About</div>
               </a>
               {/* <link rel="prefetch" href="/about" /> */}
               <a href="/journal" className="nav-link-block w-inline-block">
-                <div className="nav-text">Journal</div>
+                <div className="nav-text">Contact</div>
               </a>
               {/* <a
                 href="/store"

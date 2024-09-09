@@ -160,7 +160,7 @@ const EmblaCarousel = (props) => {
   return (
     <div className="embla w-full py-8">
       <div
-        className="embla__viewport w-[100%] border border-black overflow-hidden cursor-none"
+        className="embla__viewport w-[100%] overflow-hidden cursor-none"
         ref={emblaRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -170,9 +170,9 @@ const EmblaCarousel = (props) => {
         <div className="embla__container flex">
           {slides.map((index) => (
             <div className="embla__slide w-[600px] flex-none pl-4" key={index}>
-              <div className="embla__parallax h-full overflow-hidden">
+              <div className="embla__parallax border border-black h-full overflow-hidden">
                 <div
-                  className="embla__parallax__layer flex justify-center relative h-full w-[100%]"
+                  className="embla__parallax__layer flex justify-center relative h-full w-[100%] "
                   onClick={() =>
                     handleImageClick(
                       "https://cdn.prod.website-files.com/61789b489343c8242282a0ae/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.jpeg"

@@ -10252,7 +10252,7 @@ blockquote{
   transform: scale(2);
 }
 
-.card-slider .item {
+/* .card-slider .item {
   position: absolute;
   top: 0;
   left: 0;
@@ -10326,8 +10326,8 @@ blockquote{
 }
 .circular-marquee {
   position: relative;
-  width: 300px; /* Adjust size as needed */
-  height: 300px; /* Adjust size as needed */
+  width: 300px; 
+  height: 300px; 
   overflow: hidden;
 }
 
@@ -10355,4 +10355,4 @@ blockquote{
   to {
     transform: rotate(360deg);
   }
-}
+} */

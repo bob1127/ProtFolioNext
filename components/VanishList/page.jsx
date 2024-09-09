@@ -51,9 +51,7 @@ export default function Home() {
 
 const Header = () => (
   <div className="mb-6">
-    <p className="text-black font-extrabold text-[30px]">
-      "依您的需求 加購項目"
-    </p>
+    <p className="text-black font-extrabold text-[30px]">"費用計算"</p>
   </div>
 );
 
@@ -125,7 +123,7 @@ const Form = ({ setTodos }) => {
               className="mb-3 w-full rounded bg-green-900 p-3 text-sm text-zinc-50 placeholder-zinc-500 focus:outline-0"
             >
               <option value="" disabled>
-                Select a task
+                選擇所需方案
               </option>
               {taskOptions.map((option) => (
                 <option key={option} value={option}>
@@ -166,9 +164,9 @@ const Form = ({ setTodos }) => {
               </div>
               <button
                 type="submit"
-                className="rounded bg-indigo-600 px-1.5 py-1 text-xs text-indigo-50 transition-colors hover:bg-indigo-500"
+                className="rounded  px-1.5 py-1 text-xs text-black w-full border-white border bg-blue-100 py-3 transition-colors hover:bg-blue-500"
               >
-                Submit
+                添加
               </button>
             </div>
           </motion.form>
@@ -176,7 +174,7 @@ const Form = ({ setTodos }) => {
       </AnimatePresence>
       <button
         onClick={() => setVisible((pv) => !pv)}
-        className="grid w-full place-content-center rounded-full border border-zinc-700 bg-blue-100 py-3 text-lg text-white transition-colors hover:bg-zinc-800 active:bg-zinc-900"
+        className="grid w-full place-content-center rounded-full border border-zinc-700 bg-black py-3 text-lg text-white transition-colors hover:bg-zinc-800 active:bg-zinc-900"
       >
         <FiPlus
           className={`transition-transform ${

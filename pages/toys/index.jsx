@@ -35,7 +35,7 @@ export default function Blog() {
   return (
     <div className="bg-[#f0f2f3] h-[400vh]">
       <div className="nav shadow-md z-[9999999] px-[30px] fixed top-0 left-[12%] w-[80%] bg-white py-[20px] border border-t-none border-[#a1a1a1] flex justify-center rounded-b-[20px]">
-        <div className="logo w-[20%] border border-black">
+        <div className="logo w-[20%] ">
           <img
             className="w-[300px]"
             src="https://gacha-lab.tech/assets/img/common/logo.svg"
@@ -167,6 +167,20 @@ export default function Blog() {
             {/* <Emblacarousel /> */}
           </div>
         </div>
+      </section>
+      <section>
+        <div className="left">
+          <div className="wrap bg-white p-[30px] rounded-xl">
+            <h3 className="text-[30px] font-bold">title</h3>
+            <p className="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis excepturi officia atque mollitia quas eos voluptatum
+              blanditiis inventore, quidem tenetur rerum quia odit aspernatur
+              cupiditate corporis distinctio in veritatis! Fuga.{" "}
+            </p>
+          </div>
+        </div>
+        <div className="right"></div>
       </section>
     </div>
   );

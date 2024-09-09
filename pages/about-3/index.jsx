@@ -8,6 +8,16 @@ import {
   TableCell,
   getKeyValue,
 } from "@nextui-org/react";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
+import MailchimpForm from "../../components/NewsletterForm.jsx";
 import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
@@ -25,9 +35,20 @@ import RevealLinks from "../../components/RevealLinks/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
 import Image from "next/image.js";
 import dynamic from "next/dynamic";
+import Carousel04 from "../../components/EmblaCarousel04/EmblaCarousel.jsx";
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export default function Blog() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [backdrop, setBackdrop] = React.useState("opaque");
+
+  const backdrops = ["ContactUs"];
+
+  const handleOpen = (backdrop) => {
+    setBackdrop(backdrop);
+    onOpen();
+  };
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -122,7 +143,25 @@ export default function Blog() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <>
+    <div className="">
+      <Modal
+        backdrop={backdrop}
+        isOpen={isOpen}
+        onClose={onClose}
+        className="bg-white z-[99999] p-[30px] m-5 sm:p-0 absolute w-[95%]  sm:w-[500px] border-2 border-black rounded-xl"
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1"></ModalHeader>
+              <ModalBody>
+                <MailchimpForm />
+              </ModalBody>
+              <ModalFooter></ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
       <div>
         <div id="webpage" className="page-wrapper">
           <main className="main">
@@ -142,8 +181,8 @@ export default function Blog() {
                     <RevealLinks />
 
                     <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-normal p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-[#dadada] mx-auto">
-                      HELLO！Jeek
-                      是一個網頁接案者創立的一個小小工作室，專注於幫助中小企業、餐飲業與美容業打造專屬網站的設計公司。我們相信，每個企業都有自己的風格和故事，而這些都應該在網站上得到最佳展現。不僅如此，我們還會特別注重網站的SEO優化，讓您的網站在搜尋引擎上更容易被找到，從而提升曝光度，吸引更多潛在客戶，最終增加收益。
+                      HELLO！我是一位懷抱夢想的網頁接案者，創立了一個小小工作室，
+                      專注於幫助中小企業、餐飲業與美容業打造專屬網站的設計公司。我相信，每個企業都有自己的風格和故事，而這些都應該在網站上得到最佳展現。不僅如此，我們還會特別注重網站的SEO優化，讓您的網站在搜尋引擎上更容易被找到，從而提升曝光度，吸引更多潛在客戶，最終增加收益。
                     </div>
                   </div>
                   <div className="box01  hidden lg:block z-1 top-[100px] absolute left-[-260px] border border-black">
@@ -350,661 +389,8 @@ export default function Blog() {
                 </div>
               </section>
             </section>
-            {/* <section id="logos" className="section with-borders">
-              <div className="padding small-paddings">
-                <div
-                  data-w-id="e8ad4759-879f-965a-e711-3a6051ba16a9"
-                  className="logo-carousel"
-                >
-                  <div className="logo-carousel-block" style={{}}>
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf0f_logoipsum-256%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abefd_logoipsum-286%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf08_logoipsum-239%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf06_logoipsum-297%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf01_logoipsum-317%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                  </div>
-                  <div className="logo-carousel-block" style={{}}>
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf0f_logoipsum-256%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abefd_logoipsum-286%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf08_logoipsum-239%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf06_logoipsum-297%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf01_logoipsum-317%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section> */}
-            <Marquee>
-              <div className=" bg-black flex w-[100vw] w-full py-[40px]">
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  WEBSITE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
-                    alt=""
-                    className="mx-3 w-[220px]"
-                  />
-                </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  SEO
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
-                    alt=""
-                    className="mx-3 w-[220px]"
-                  />
-                </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  PHOTOGRAPHY
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
-                    alt=""
-                    className="mx-3 w-[220px]"
-                  />
-                </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  STAGE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
-                    alt=""
-                    className="mx-3 w-[220px]"
-                  />
-                </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  STAGE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
-                    alt=""
-                    className="mx-3 w-[220px]"
-                  />
-                </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  STAGE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
-                    alt=""
-                    className="mx-3 w-[220px]"
-                  />
-                </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  STAGE
-                </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  STAGE
-                </div>
-              </div>
-            </Marquee>
-            <section className="section">
-              <div className="container">
-                <div className="padding">
-                  <div className="w-layout-grid about-content">
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                      className="about-grid-content"
-                    >
-                      <h2 className="heading is-medium-title">
-                        "不要再認為自己的品牌做網頁行銷很花錢了！"
-                      </h2>
-                      <p className=" text-[16px] leading-normal text-left ">
-                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
-                        <br></br> <br></br>
-                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
-                        <span className="bg-blue-100">網站設計和SEO優化</span>
-                        ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
-                      </p>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <Image
-                            src="三電線02.png"
-                            placeholder="empty"
-                            loading="lazy"
-                            width={800}
-                            height={800}
-                            loader={imageLoader04}
-                          />
-                        </div>
-                      </a>
-                    </div>
 
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                      className="about-grid-image"
-                    >
-                      <div className="reveal-image-trigger">
-                        <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.ultraehp.com/images/test-portfolio/三電線02.png"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="about-grid-image">
-                      <div className="reveal-image-trigger">
-                        <img
-                          className="w-[80%] mx-auto"
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.ultraehp.com/images/test-portfolio/三電線捲起.png"
-                          srcSet="
-                                        
-                                      "
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                      <h2 className="heading is-medium-title">
-                        "個人接案，彈性更高，效率更高"
-                      </h2>
-                      <div className="flex items-start flex-col ">
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">成本效益高</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            由於沒有大型團隊和高額管理費用，個人接案者能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">專注度高</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            個人接案者通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">靈活性強</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">溝通便捷</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
-                          </p>
-                        </div>
-                      </div>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section className="section">
-              <div className="container">
-                <div className="padding">
-                  <div className="w-layout-grid about-content">
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                      className="about-grid-content"
-                    >
-                      <h2 className="heading is-medium-title">
-                        "商業/產品攝影"
-                      </h2>
-                      <p className=" text-[16px] leading-normal text-left ">
-                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
-                        <br></br> <br></br>
-                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過網站設計和SEO優化，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
-                      </p>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                      className="about-grid-image"
-                    >
-                      <div className="reveal-image-trigger">
-                        <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="about-grid-image">
-                      <div className="reveal-image-trigger">
-                        {/* <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          srcSet="
-                                        
-                                      "
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        /> */}
-                        <iframe
-                          src="https://my.spline.design/iphone14procopy-fdd3e2365e4a03f380783eb3384cb838/"
-                          frameborder="0"
-                          width="100%"
-                          height="800"
-                        ></iframe>
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                      <h2
-                        className="heading is-medium-title"
-                        data-aos="fade-up"
-                      >
-                        "移動設備體驗優化 "
-                      </h2>
-                      <div className="flex items-start flex-col ">
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px] leading-normal">
-                            1. 移動優先索引（Mobile-First Indexing）
-                          </b>
-                          <p className="text-left leading-normal mt-3">
-                            - Google 目前使用{" "}
-                            <span className="bg-blue-100">
-                              「移動優先索引」
-                            </span>
-                            ，這意味著 Google
-                            搜索引擎主要基於網站的移動版本來進行索引和排名。因此，確保你的網站在移動設備上的表現是至關重要的。如果你的網站在桌面和移動設備上有不同的內容，Google
-                            會優先考慮移動設備上的內容。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]"> 頁面加載速度</b>
-                          <p className="text-left leading-normal mt-3">
-                            - Google
-                            對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
-                            的 <span className="bg-blue-100">「頁面體驗」</span>
-                            更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-blue-100">
-                              Google PageSpeed Insights
-                            </span>{" "}
-                            來測試和改進頁面速度。
-                          </p>
-                          <img
-                            className="w-full h-auto"
-                            src="https://www.cloudways.com/blog/wp-content/uploads/Page-Speed-Insights-Field-Data.jpg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            {/* <div className="h-[100vh] bg-green-300">
-              <threeDCarousel />
-            </div> */}
-
-            <section className="section">
-              <div className="container">
-                <div className="padding">
-                  <div className="w-layout-grid about-content">
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                      className="about-grid-content"
-                    >
-                      <h2 className="heading is-medium-title">
-                        "商業/產品攝影"
-                      </h2>
-                      <p className=" text-[16px] leading-normal text-left ">
-                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
-                        <br></br> <br></br>
-                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過網站設計和SEO優化，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
-                      </p>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                      className="about-grid-image"
-                    >
-                      <div className="reveal-image-trigger">
-                        <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="about-grid-image">
-                      {/* <video
-                        autoPlay
-                        loop
-                        src="/medias/mobile-phone.mov"
-                      ></video> */}
-                      <div className="reveal-image-trigger">
-                        <video
-                          width="600" // 可以根据需要调整宽度
-                          height="400" // 可以根据需要调整高度
-                          controls // 可选，显示播放控件
-                          autoPlay // 自动播放
-                          muted // 自动播放时需要静音
-                          loop // 循环播放
-                        >
-                          <source
-                            src="/medias/mobile-phone.mov"
-                            type="video/mp4"
-                          />
-                        </video>
-                        {/* <video
-                          autoPlay
-                          loop
-                          src="/medias/mobile-phone.mov"
-                        ></video> */}
-                        {/* <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.ultraehp.com/images/test-portfolio/v1017-05.jpg"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          srcSet="
-                                        https://www.ultraehp.com/images/test-portfolio/v1017-05.jpg
-                                      "
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        /> */}
-
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                      <h2 className="heading is-medium-title">
-                        "移動設備體驗優化 "
-                      </h2>
-                      <div className="flex items-start flex-col ">
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px] leading-normal">
-                            1. 移動優先索引（Mobile-First Indexing）
-                          </b>
-                          <p className="text-left leading-normal mt-3">
-                            - Google 目前使用{" "}
-                            <span className="bg-blue-100">
-                              「移動優先索引」
-                            </span>
-                            ，這意味著 Google
-                            搜索引擎主要基於網站的移動版本來進行索引和排名。因此，確保你的網站在移動設備上的表現是至關重要的。如果你的網站在桌面和移動設備上有不同的內容，Google
-                            會優先考慮移動設備上的內容。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]"> 頁面加載速度</b>
-                          <p className="text-left leading-normal mt-3">
-                            - Google
-                            對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
-                            的 <span className="bg-blue-100">「頁面體驗」</span>
-                            更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-blue-100">
-                              Google PageSpeed Insights
-                            </span>{" "}
-                            來測試和改進頁面速度。
-                          </p>
-                          <img
-                            className="w-full h-auto"
-                            src="https://www.cloudways.com/blog/wp-content/uploads/Page-Speed-Insights-Field-Data.jpg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section className="marketing ">
+            <section className="marketing hidden">
               <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 mx-auto">
                 <h2 className="heading is-medium-title text-center">
                   "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
@@ -1145,412 +531,72 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
-              <a
-                href=""
-                className="xl:w-1/2 w-full mr-4 hover:shadow-custom
-                border-1
-                
-              duration-300
-              hover:border-3
-              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
+            <section className="">
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="400"
+                className=" md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
+                style={{
+                  marginBottom: 30,
+                  display: "flex",
+                  justifyContent: "center",
+                  textAlign: "center",
+                }}
               >
-                <h4 className="text-[40px] font-light text-black leading-normal">
-                  網頁SEO很重要嗎？
-                </h4>
-                <div className="flex">
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    搜尋引擎優化
-                  </span>
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    網頁結構優化
-                  </span>
-                </div>
-                <p className=" text-[16px] mt-3">
-                  在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
-                </p>
-                <div className="flex w-full  flex-col items-start">
-                  <b className="mb-3 text-[16px]">3d model for website</b>
-
-                  <Image
-                    loader={imageLoader02}
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    placeholder="empty"
-                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                  />
-                </div>
-              </a>
-              <a
-                href="/Blog-02"
-                className="xl:w-1/2 w-full mt-5 md:mt-0 ml-0 xl:ml-4 hover:shadow-custom 
-              duration-300
-              
-              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
-              >
-                <h4
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  className="text-[40px] leading-normal font-light text-black"
-                >
-                  網頁設計其實沒有很花錢
-                </h4>
-                <div className="flex my-4">
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    搜尋引擎優化
-                  </span>
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    網頁結構優化
-                  </span>
-                </div>
-                <p className="  font-bold text-[20px] mt-3">長期效益：</p>
-                <div className="flex w-full  flex-col items-start">
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    SEO的效果是持久且累積的。一旦網站建立了良好的搜尋引擎排名，即使停止大規模的SEO投入，仍然能持續受益於這些排名，這意味著可以在未來不斷帶來穩定的收入流，增強企業的長期盈利能力。
-                  </b>
-                  <p className=" font-bold text-[20px] mt-3">提升競爭優勢:</p>
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    在競爭激烈的市場中，擁有良好SEO策略的企業能夠超越競爭對手，成為行業領先者。這種競爭優勢將直接轉化為更高的市場份額和利潤。
-                  </b>
-
-                  <Image
-                    loader={imageLoader02}
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    placeholder="empty"
-                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                  />
-                </div>
-              </a>
-            </section>
-
-            <section className="section">
-              <div className="container">
-                <div className="padding">
-                  <div className="w-layout-grid about-content">
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                      className="about-grid-content"
-                    >
-                      <h2 className="heading is-medium-title">
-                        "網頁結構優化"
-                      </h2>
-                      <div className="flex flex-col ">
-                        <h5 className="text-[20px] text-left mt-4 font-black">
-                          有效的標題標籤 (Heading Tags) 使用
-                        </h5>
-                        <div className="flex items-start flex-col">
-                          <b className="mt-2 text-[18px] font-extrabold">
-                            分層次使用 H1 到 H6 標籤：
-                          </b>
-                          <p className="text-[14px] text-left">
-                            H1 標籤應用於頁面的主標題，每個頁面應僅有一個
-                            H1。次要標題依次使用 H2、H3 等標籤，形成清晰的結構。
-                          </p>
-                        </div>
-                        <h5 className="text-[20px] text-left mt-4 font-black">
-                          有效的標題標籤 (Heading Tags) 使用
-                        </h5>
-                        結構化數據
-                        <div className="flex items-start flex-col">
-                          <b className="mt-2 text-[18px] font-extrabold">
-                            添加結構化數據標記 (Schema.org)：
-                          </b>
-                          <p className="text-[14px] text-left">
-                            幫助搜索引擎更好地理解網站內容，提升網站在搜索引擎結果頁面
-                            (SERP) 中的展示效果，如豐富摘要 (Rich Snippets)。
-                          </p>
-                        </div>
-                        <h5 className="text-[20px] text-left mt-4 font-black">
-                          快速加載和性能優化
-                        </h5>
-                        <div className="flex items-start flex-col">
-                          <b className="mt-2 text-[18px] font-extrabold">
-                            優化圖片和資源:
-                          </b>
-                          <p className="text-[14px] text-left">
-                            使用正確的格式和大小的圖片，並利用壓縮工具減少文件體積。
-                          </p>
-                        </div>
-                      </div>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                      className="about-grid-image"
-                    >
-                      <div className="reveal-image-trigger">
-                        <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-
-                    <div className="about-grid-image">
-                      <div className="reveal-image-trigger">
-                        <SwiperScroll01 />
-                        {/* <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          srcSet="
-                                        
-                                      "
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        /> */}
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                      <h2 className="heading flex items-start justify-start  is-medium-title">
-                        "3D 建模"
-                      </h2>
-                      <div className="flex w-full  flex-col items-start">
-                        <b className="mb-3 text-[16px]">3d model for website</b>
-                        <div className="flex">
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                            3D 形象影片
-                          </span>
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                            交互式網站
-                          </span>
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                            產品展示
-                          </span>
-                        </div>
-                      </div>
-                      <div className="flex items-start flex-col ">
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">視覺衝擊力強</b>
-                          <p className="text-left leading-normal mt-3">
-                            - 3D
-                            建模能夠創建出極具深度和細節的視覺效果，這種真實感和立體感可以吸引訪客的注意，提升網站的視覺吸引力，進而增加用戶的停留時間和互動率。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]"> 多元應用場景</b>
-                          <p className="text-left leading-normal mt-3">
-                            - 3D
-                            模型可以在不同平台和媒體上使用，包括網站、社交媒體、動畫視頻等，這種多功能性使得投資於
-                            3D 建模的回報更具價值。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">靈活性強</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">提升互動體驗</b>
-                          <p className="text-left leading-normal mt-3">
-                            - 3D
-                            圖片或動畫可以與用戶進行互動，如滑動或旋轉產品視圖，這種互動性不僅增加了用戶的參與感，還能讓用戶更深入了解產品。
-                          </p>
-                        </div>
-                      </div>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px] lg:px-[30px]  xl:px-[50px] 2xl:px-[80px]">
-              <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
-                <div className="txt">
-                  <div className="logo pl-[20px]">
-                    <b className="font-bold text-[30px]">JEEK</b>
-                  </div>
-                  <div className="bottom " data-aos="fade-up">
-                    <p className="text-[12px] font-bold">Design by Website</p>
-                    <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
-                      使用 3D 模型製作網頁橫幅和產品圖的好處
-                    </h3>
-
-                    <b className="text-[22px] mt-[50px]">Author Name</b>
-                    <br />
-                    <div class="flex mt-5">
-                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        3D 形象影片
-                      </span>
-                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        交互式網站
-                      </span>
-                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        產品展示
-                      </span>
-                    </div>
-
-                    <p className="text-[16px] w-2/3  xl:w-full mt-[40px]">
-                      將 3D
-                      模型應用於網頁橫幅和產品圖中，可以顯著提升品牌的視覺吸引力和客戶互動
+                "為什麼要選擇自由接案者？"
+              </h2>
+              <p className="text-center text-[22px] md:text-[26px] ">
+                選擇JEEK 幫助您實現創意發想
+              </p>
+              <section className="section-carousel  flex-col mt-10  px-[70px] md:flex-row flex mb-[50px]">
+                <div className="left-txt flex-col flex justify-start items-center  w-full mt-5 md:w-[30%]">
+                  <div>
+                    <h2 className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold">
+                      靈活性
+                    </h2>
+                    <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
+                      Flexibility
+                    </h2>
+                    <p className="text-[16px] text-center mt-3">
+                      根據客戶的時間表和需求快速調整工作安排，適應變化。
                     </p>
                   </div>
-                </div>
-              </div>
-              <div className="w-full pt-10 xl:w-[60%]">
-                <DragCaroudelSlider />
-              </div>
-            </section>
-            {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}
-            <div>
-              <BannerSwiper />
-            </div>
-
-            <section>
-              <div className="container"></div>
-            </section>
-            <section className=" px-[40px] py-[90px]">
-              {/* <div className="w-full hidden overflow-scroll">
-                <Table
-                  className="bg-green-700 w-full rounded-xl py-[50px]"
-                  aria-label="Example table with dynamic content"
-                >
-                  <TableHeader
-                    className="text-white border-b-2 text-[22px] border-white"
-                    columns={columns}
+                  <a
+                    href="/Contact"
+                    className="bg-[#1c2fd5] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-blue-800 hover:scale-95 shadow-xl text-center py-3 w-[140px]"
                   >
-                    {(column) => (
-                      <TableColumn
-                        className="text-white  text-[22px] border-b-2 border-white"
-                        key={column.key}
-                      >
-                        {column.label}
-                      </TableColumn>
-                    )}
-                  </TableHeader>
-                  <TableBody className="text-white" items={rows}>
-                    {(item) => (
-                      <TableRow
-                        className="text-white text-center"
-                        key={item.key}
-                      >
-                        {(columnKey) => (
-                          <TableCell>{getKeyValue(item, columnKey)}</TableCell>
-                        )}
-                      </TableRow>
-                    )}
-                  </TableBody>
-                </Table>
-              </div> */}
-
-              <div className="  flex flex-col items-center py-6 justify-center">
-                <h2 className="heading is-medium-title">
-                  "客製網站 or 套版網站？"
-                </h2>
-                <p className="text-[22px] bg-blue-400  text-center mb-4 mt-2">
-                  沒有哪種比較好，適合你的才是好的網站
-                </p>
-                <div className="flex flex-col xl:flex-row justify-center items-center text-[16px]  px-[100px] text-center leading-normal">
-                  <div className="p-10 w-full xl:w-1/2">
-                    <span className="font-bold text-[22px]">選擇套版網站</span>
-                    <p className="w-full mx-auto lg:w-2/3">
-                      ，您可以快速、低成本地建立一個簡單易用的網站，適合需要迅速上線的小型業務
-                    </p>
-                    <div className="img mt-10" data-aos="fade-up">
-                      <Image
-                        loader={imageLoader03}
-                        loading="lazy"
-                        width={800}
-                        height={600}
-                        placeholder="empty"
-                        src="format:webp/1*VXCxYzjtYlUlLUy7LTamfQ.png"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="p-10 w-full xl:w-1/2">
-                    <span className="font-bold text-[22px]">客製化網站</span>
-                    <p>
-                      {" "}
-                      則提供高度的設計和功能靈活性，讓您的品牌在數位世界中脫穎而出，並能隨業務成長進行擴展，是追求獨特性和長期效益的理想選擇。
-                    </p>
-                    <img
-                      data-aos-delay="300"
-                      data-aos="fade-up"
-                      src="
-                  https://www.handz.design/assets/images/gallery01/2ebd4515.jpg?v=02f8e9b2"
-                      alt=""
-                      className="w-full"
-                    />
-                  </div>
+                    Contact
+                  </a>
                 </div>
-              </div>
+                <div className="img xl:my-0  mb-[30px] w-full md:w-[40%] overflow-hidden">
+                  <img
+                    className="w-full "
+                    src="https://www.avatarz.design/assets/images/image15.jpg?v=7b7356d5"
+                    alt=""
+                  />
+                </div>
+                <div className="right-txt flex flex-col justify-start items-center w-full mt-5 md:mt-0 md:w-[30%]">
+                  <div>
+                    <h2 className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold">
+                      一對一
+                    </h2>
+                    <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
+                      One By One
+                    </h2>
+                    <p className="text-[16px] text-center mt-3">
+                      直接與客戶溝通，提供專注且個性化的服務。
+                    </p>
+                  </div>
+                  <a
+                    href="/Contact"
+                    className="bg-[#ffffff] mt-3 duration-200 text-[18px] rounded-md text-black border border-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 w-[140px]"
+                  >
+                    Contact
+                  </a>
+                </div>
+              </section>
             </section>
+            {/* <Carousel04 /> */}
             {/* <section></section>
               <p>客製化網站跟套版網站比較</p>
               <div className="container"></div>
@@ -1563,8 +609,8 @@ export default function Blog() {
                       className="vertical-flex with-small-gap plans-wrap "
                       style={{ display: "flex", justifyContent: "center" }}
                     >
-                      <h3
-                        className="heading text-[24px] xl:text-[32px] mx-auto"
+                      <h2
+                        className=" md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
                         style={{
                           marginBottom: 30,
                           display: "flex",
@@ -1573,7 +619,7 @@ export default function Blog() {
                         }}
                       >
                         "選擇適合你的方案"
-                      </h3>
+                      </h2>
                     </div>
                     <div
                       className="jobs"
@@ -1653,9 +699,21 @@ export default function Blog() {
                             color: "white",
                           }}
                         >
-                          <a href="/contact" className="simple-link">
-                            Contact us
-                          </a>
+                          <p className="simple-link">
+                            <div className="flex flex-wrap  gap-3">
+                              {backdrops.map((b) => (
+                                <Button
+                                  key={b}
+                                  variant="flat"
+                                  color="warning"
+                                  onPress={() => handleOpen(b)}
+                                  className="capitalize"
+                                >
+                                  {b}
+                                </Button>
+                              ))}
+                            </div>
+                          </p>
                         </div>
                         {/* <div style="height: 400px;">
                 Title
@@ -1728,9 +786,21 @@ export default function Blog() {
                 </div>
               </div> */}
                         <div className="job-card-link-flex">
-                          <a href="/contact" className="simple-link">
-                            Contact us
-                          </a>
+                          <p className="simple-link">
+                            <div className="flex flex-wrap  gap-3">
+                              {backdrops.map((b) => (
+                                <Button
+                                  key={b}
+                                  variant="flat"
+                                  color="warning"
+                                  onPress={() => handleOpen(b)}
+                                  className="capitalize"
+                                >
+                                  {b}
+                                </Button>
+                              ))}
+                            </div>
+                          </p>
                         </div>
                       </div>
                       <div
@@ -1777,32 +847,23 @@ export default function Blog() {
                             </p>
                           </div>
                         </span>
-                        {/* <div class="job-card-categories">
-                <div class="job-card-category">
-                  <div class="job-card-icon">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f61d3e81308165ce58_responsive_layout_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt
-                      class="icon is-job-icon" />
-                  </div>
-                  <p class="job-card-text-small">Remote or office</p>
-                </div>
-                <div class="job-card-category">
-                  <div class="job-card-icon">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6844afe9fcdf5a1af_thumb_up_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt
-                      class="icon is-job-icon" />
-                  </div>
-                  <p class="job-card-text-small">$120,000 per year</p>
-                </div>
-              </div> */}
+
                         <div className="job-card-link-flex">
-                          <a href="/contact" className="simple-link">
-                            Contact us
-                          </a>
+                          <p className="simple-link">
+                            <div className="flex flex-wrap  gap-3">
+                              {backdrops.map((b) => (
+                                <Button
+                                  key={b}
+                                  variant="flat"
+                                  color="warning"
+                                  onPress={() => handleOpen(b)}
+                                  className="capitalize"
+                                >
+                                  {b}
+                                </Button>
+                              ))}
+                            </div>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -1816,32 +877,60 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="bg-gray-100  py-[70px] px-[20px] flex flex-col lg:flex-row">
-              <div className="w-full lg:w-1/2">
-                <div className="flex  flex-col  pl-10  mx-auto">
-                  <div className="title mb-6 w-full">
-                    <h2 className="text-[40px]  text-black font-extrabold">
-                      網頁設計流程
-                    </h2>
-                    <p className="text-[14px]">
-                      您可以跟我們溝通需求，並確認流程
-                    </p>
-                  </div>
-                  <div className="px-4">
-                    <SwiperScroll />
-                  </div>
+            <section className="bg-gray-100  py-[70px] px-[20px] flex flex-col ">
+              <div className="flex justify-center w-full">
+                <div className="title  mb-6 ">
+                  <h2 className="text-[40px]  text-black font-extrabold">
+                    網頁設計流程
+                  </h2>
+                  <p className="text-[14px]">
+                    您可以跟我們溝通需求，並確認流程
+                  </p>
+                  <a
+                    href="/"
+                    data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                    className="button-wrapper w-inline-block w-[175px] mx-auto mt-5"
+                  >
+                    <div className="button-layout">
+                      <p href="/about" className="button-text" style={{}}>
+                        立即聯絡
+                      </p>
+                      <div className="button-bg" style={{}} />
+                    </div>
+                    <div className="button-icon-block">
+                      <img
+                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                        loading="lazy"
+                        alt=""
+                        className="button-icon"
+                        style={{}}
+                      />
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div className=" w-full lg:w-1/2">
-                <VanishList />
+
+              <div className="w-full flex ">
+                <div className="w-full lg:w-1/2">
+                  <div className="flex  flex-col  pl-10  mx-auto">
+                    <div className="px-4">
+                      <SwiperScroll />
+                    </div>
+                  </div>
+                </div>
+                <div className=" w-full lg:w-1/2">
+                  <VanishList />
+                </div>
               </div>
-              <div></div>
             </section>
-            <b className="text-[20px]">以上價格皆為大約 實際價格可以再討論</b>
+
+            <a href="/Contact" className="text-[20px]">
+              實際價格可以再討論 請聯繫我
+            </a>
           </main>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

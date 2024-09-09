@@ -6,7 +6,7 @@ export default function Index() {
     <section className="hidden sm:block px-8 py-5 text-white">
       <FlipLink href="#">WEBSITE-DESIGN</FlipLink>
 
-      <FlipLink href="#">Sir JEEEK</FlipLink>
+      <FlipLink href="#">JEEEK</FlipLink>
       {/* <FlipLink href="#">PHOTOGRSPHY</FlipLink>
       <FlipLink href="#">MARKETING</FlipLink> */}
     </section>

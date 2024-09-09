@@ -71,12 +71,12 @@ const TodoItem = ({
       transition={{ duration: 0.3 }}
       className="relative flex w-full items-center gap-3 rounded border border-zinc-700 bg-blue-100 p-3"
     >
-      <input
+      {/* <input
         type="checkbox"
         checked={checked}
         onChange={() => handleCheck(id)}
         className="size-4 accent-indigo-400"
-      />
+      /> */}
       <p
         className={`text-black transition-colors ${checked && "text-zinc-400"}`}
       >

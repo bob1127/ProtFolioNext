@@ -29,6 +29,8 @@ import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
 import MenuToggle from "../components/MenuToggle/index.jsx";
 import Trackeye from "../components/Trackeye/page.jsx";
 import { imageConfigDefault } from "next/dist/shared/lib/image-config.js";
+import { NextSeo } from "next-seo";
+
 const Lottie = dynamic(() => import("react-lottie"), {
   ssr: false,
 });
@@ -82,6 +84,23 @@ export default function Home() {
   return (
     <div className="">
       <>
+        <NextSeo
+          title="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+          description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          openGraph={{
+            title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+            description:
+              "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+            images: [
+              {
+                url: "https://www.example.com/og-home.jpg",
+                width: 800,
+                height: 600,
+                alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+              },
+            ],
+          }}
+        />
         <div className="Hero-secrion   border-1 border-black ">
           <div className="wrap flex flex-col  lg:flex-row">
             <div className="hero-left overflow-hidden mt-[38px] border border-blac relative w-full lg:w-[65%]">
@@ -409,9 +428,9 @@ CREACTIVEs</h1>
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
                 <a
                   href="/about"
-                  className="text-white  text-[22px] text-center"
+                  className="text-[#ffffff]   text-[22px] text-center"
                 >
-                  3d-model
+                  產品攝影
                 </a>
               </div>
               <Image
@@ -425,7 +444,7 @@ CREACTIVEs</h1>
             </div>
             <div className="border-2 overflow-hidden border-black w-full relative">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
-                <p className="text-white  text-[22px] text-center">3d-model</p>
+                <p className="text-white  text-[22px] text-center">網頁設計</p>
               </div>
               <Image
                 className="hover:scale-105 duration-500"
@@ -438,7 +457,9 @@ CREACTIVEs</h1>
             </div>
             <div className="border-2 overflow-hidden border-black relative w-full ">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
-                <p className="text-white  text-[22px] text-center">3d-model</p>
+                <p className="text-white  text-[22px] text-center">
+                  3D建模應用
+                </p>
               </div>
               <Image
                 className="hover:scale-105 duration-500"

@@ -477,12 +477,7 @@ export default function Blog() {
                           </div>
                         </div>
                       </div>
-                      <div>
-                        <h3 className="text-[50px] font-extrabold">
-                          3D 交互式網頁
-                        </h3>
-                        <p>3d 建模產品運用在網頁上</p>
-                      </div>
+
                       <div>
                         <Image
                           src="up100-10-PhotoRoom.png"
@@ -500,6 +495,19 @@ export default function Blog() {
                       Headless-無頭網站
                     </p>
                   </div>
+                </div>
+              </section>
+              <section className="3Dmodel-interaction flex-col flex justify-center items-center">
+                <h2 className="text-[50px] font-extrabold">
+                  "3D運用-交互式網頁"
+                </h2>
+                <p>3d 建模產品運用在網頁上</p>
+                <div className="flex justify-center">
+                  <img
+                    className="w-[80%] rounded-xl mx-auto"
+                    src="https://www.vectary.com/website_assets/636cc984003871e3cda597bb/64b9124624a0d8fc835bf4cc_AR%20v2.jpg"
+                    alt=""
+                  />
                 </div>
               </section>
               <section className="section with-borders">

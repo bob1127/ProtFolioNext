@@ -27,7 +27,7 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
       <div
         ref={modalRef}
-        className="relative p-4 bg-white rounded-md"
+        className="relative p-4 bg-[#4982d7] border-2 border-black rounded-md"
         style={{
           width: "70vw",
           height: "80vh",
@@ -49,7 +49,7 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="content  mx-[20px] p-[40px] rounded-xl border border-black w-full xl:w-1/2 ">
+          <div className="content  mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full xl:w-1/2 ">
             <b className="text-[30px] text-center font-normal">專案名稱</b>
             <p className="text-[14px] font-normal">專案苗去 內容</p>
             {/* <a

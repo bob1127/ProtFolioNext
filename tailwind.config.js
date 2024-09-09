@@ -6,6 +6,8 @@ module.exports = {
     "./styles/**/*.{css,scss}", // Include your styles directory
   ],
   theme: {
+      darkMode: 'class', // 启用 class-based dark mode
+
     extend: {
       colors: {
         blue: {
@@ -18,7 +20,7 @@ module.exports = {
         sans: ['Segment A Key Trial', 'sans-serif'],
       },
        boxShadow: {
-        'custom': '8px 8px 0px rgba(107, 222, 31, 1)',
+        'custom': '8px 8px 0px rgba(45, 85, 255 ,.9)',
       },
       animation: {
         moveit: 'moveit 900ms ease forwards',

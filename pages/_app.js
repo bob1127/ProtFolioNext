@@ -14,6 +14,8 @@ import Nav from '../components/Navbar/page.jsx'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
+import { DefaultSeo } from 'next-seo';
+import defaultSEOConfig from '../next-seo.config.js';
 // Dynamically import the PhysicsAnimationApp component with ssr set to false
 const PhysicsAnimationApp = dynamic(
   () => import("../components/PhysicsAnimation/app.jsx"),
@@ -21,8 +23,8 @@ const PhysicsAnimationApp = dynamic(
 );
 
 export default function MyApp({ Component, pageProps, router }) {
-    const noNavbarRoutes = ['/toys' , '/Lego']; // 指定不需要顯示 Navbar 的路由
-       const nophyRoutes = ['/toys' , '/Lego']; // 指定不需要顯示 Navbar 的路由
+    const noNavbarRoutes = ['/toys' , '/Lego','/toys02']; // 指定不需要顯示 Navbar 的路由
+       const nophyRoutes = ['/toys' ,'toys02' , '/Lego']; // 指定不需要顯示 Navbar 的路由
    
 
 
@@ -78,6 +80,7 @@ export default function MyApp({ Component, pageProps, router }) {
                 <NextUIProvider>
                     <AnimatePresence mode='wait'>
                         {/* <Navbar/> */}
+                          <DefaultSeo {...defaultSEOConfig} />
                         <Component key={router.route} {...pageProps} />
 
                         <div className='border-t-2 border-black'>
