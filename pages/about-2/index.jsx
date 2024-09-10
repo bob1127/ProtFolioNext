@@ -43,242 +43,246 @@ export default function Blog() {
                         role="list"
                         className="large-features-list w-dyn-items"
                       >
-                        <div
-                          role="listitem"
-                          className="large-feature-item w-dyn-item"
-                        >
-                          <div className="feature-image">
-                            <div className="reveal-image-trigger">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/ECWP100-carousel-index.webp"
-                                className="cover-image"
-                                style={{
-                                  transform:
-                                    "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                  transformStyle: "preserve-3d",
-                                }}
-                              />
-                              <div
-                                className="bg-for-animation is-dark-color"
-                                style={{ display: "block" }}
-                              />
-                            </div>
-                          </div>
-                          <a
-                            aria-label="Feature link"
-                            data-w-id="3693517e-89e9-2f96-cace-c1d04dc6f48a"
-                            href="/feature/design"
-                            className="feature-title-link w-inline-block"
+                        <a href="/Contact">
+                          <div
+                            role="listitem"
+                            className="large-feature-item w-dyn-item"
                           >
-                            <h2 className="heading text-[20px] md:text-[30px] is-feature-large-title">
-                              超極生技
-                            </h2>
-                            <p className="w-full text-[13px] md:text-[16px] md:w-1/2 my-5">
-                              超越傳統感測技術，實現卓越的健康生活。我們引以為傲的PotentioStrip專利技術，為您帶來兩大品牌，{" "}
-                            </p>
-                            <div
-                              data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
-                              className="feature-title-link-line"
-                              style={{}}
-                            />
-                          </a>
-                          <div className="large-feature-gallery w-dyn-list">
-                            <div
-                              role="list"
-                              className="large-feature-gallery-list w-dyn-items"
+                            <div className="feature-image">
+                              <div className="reveal-image-trigger">
+                                <img
+                                  loading="lazy"
+                                  alt=""
+                                  src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/ECWP100-carousel-index.webp"
+                                  className="cover-image"
+                                  style={{
+                                    transform:
+                                      "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                    transformStyle: "preserve-3d",
+                                  }}
+                                />
+                                <div
+                                  className="bg-for-animation is-dark-color"
+                                  style={{ display: "block" }}
+                                />
+                              </div>
+                            </div>
+                            <a
+                              aria-label="Feature link"
+                              data-w-id="3693517e-89e9-2f96-cace-c1d04dc6f48a"
+                              href="/feature/design"
+                              className="feature-title-link w-inline-block"
                             >
+                              <h2 className="heading text-[20px] md:text-[30px] is-feature-large-title">
+                                超極生技
+                              </h2>
+                              <p className="w-full text-[13px] md:text-[16px] md:w-1/2 my-5">
+                                超越傳統感測技術，實現卓越的健康生活。我們引以為傲的PotentioStrip專利技術，為您帶來兩大品牌，{" "}
+                              </p>
                               <div
-                                role="listitem"
-                                className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
+                                data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
+                                className="feature-title-link-line"
+                                style={{}}
+                              />
+                            </a>
+                            <div className="large-feature-gallery w-dyn-list">
+                              <div
+                                role="list"
+                                className="large-feature-gallery-list w-dyn-items"
                               >
-                                <div className="reveal-image-trigger">
-                                  <img
-                                    loading="lazy"
-                                    alt=""
-                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-03.webp"
-                                    className="cover-image"
-                                    style={{
-                                      transform:
-                                        "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                      transformStyle: "preserve-3d",
-                                    }}
-                                  />
-                                  <div
-                                    className="bg-for-animation is-dark-color"
-                                    style={{ display: "block" }}
-                                  />
+                                <div
+                                  role="listitem"
+                                  className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
+                                >
+                                  <div className="reveal-image-trigger">
+                                    <img
+                                      loading="lazy"
+                                      alt=""
+                                      src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-03.webp"
+                                      className="cover-image"
+                                      style={{
+                                        transform:
+                                          "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                        transformStyle: "preserve-3d",
+                                      }}
+                                    />
+                                    <div
+                                      className="bg-for-animation is-dark-color"
+                                      style={{ display: "block" }}
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  role="listitem"
+                                  className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
+                                >
+                                  <div className="reveal-image-trigger">
+                                    <img
+                                      loading="lazy"
+                                      alt=""
+                                      src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-18.webp"
+                                      className="cover-image"
+                                      style={{
+                                        transform:
+                                          "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                        transformStyle: "preserve-3d",
+                                      }}
+                                    />
+                                    <div
+                                      className="bg-for-animation is-dark-color"
+                                      style={{ display: "block" }}
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  role="listitem"
+                                  className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
+                                >
+                                  <div className="reveal-image-trigger">
+                                    <img
+                                      loading="lazy"
+                                      alt=""
+                                      src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/%E6%A5%AD%E7%95%8C%E6%9C%80%E5%B0%8F%E7%9A%84_%E7%84%A1%E7%B7%9A_%E9%9B%BB%E5%8C%96%E5%AD%B8%E5%88%86%E6%9E%90%E5%84%80-%E5%AF%A6%E6%93%AC%E5%8A%9F%E8%83%BD.webp"
+                                      className="cover-image"
+                                      style={{
+                                        transform:
+                                          "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                        transformStyle: "preserve-3d",
+                                      }}
+                                    />
+                                    <div
+                                      className="bg-for-animation is-dark-color"
+                                      style={{ display: "block" }}
+                                    />
+                                  </div>
                                 </div>
                               </div>
-                              <div
-                                role="listitem"
-                                className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
-                              >
-                                <div className="reveal-image-trigger">
-                                  <img
-                                    loading="lazy"
-                                    alt=""
-                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-18.webp"
-                                    className="cover-image"
-                                    style={{
-                                      transform:
-                                        "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                      transformStyle: "preserve-3d",
-                                    }}
-                                  />
-                                  <div
-                                    className="bg-for-animation is-dark-color"
-                                    style={{ display: "block" }}
-                                  />
-                                </div>
+                              <div className="empty-state-hidden w-dyn-hide w-dyn-empty">
+                                <div>No items found.</div>
                               </div>
-                              <div
-                                role="listitem"
-                                className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
-                              >
-                                <div className="reveal-image-trigger">
-                                  <img
-                                    loading="lazy"
-                                    alt=""
-                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/%E6%A5%AD%E7%95%8C%E6%9C%80%E5%B0%8F%E7%9A%84_%E7%84%A1%E7%B7%9A_%E9%9B%BB%E5%8C%96%E5%AD%B8%E5%88%86%E6%9E%90%E5%84%80-%E5%AF%A6%E6%93%AC%E5%8A%9F%E8%83%BD.webp"
-                                    className="cover-image"
-                                    style={{
-                                      transform:
-                                        "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                      transformStyle: "preserve-3d",
-                                    }}
-                                  />
-                                  <div
-                                    className="bg-for-animation is-dark-color"
-                                    style={{ display: "block" }}
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div className="empty-state-hidden w-dyn-hide w-dyn-empty">
-                              <div>No items found.</div>
                             </div>
                           </div>
-                        </div>
-                        <div
-                          role="listitem"
-                          className="large-feature-item w-dyn-item"
-                        >
-                          <div className="feature-image">
-                            <div className="reveal-image-trigger">
-                              <img
-                                loading="lazy"
-                                alt=""
-                                src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
-                                className="cover-image"
-                                style={{
-                                  transform:
-                                    "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                  transformStyle: "preserve-3d",
-                                }}
-                              />
-                              <div
-                                className="bg-for-animation is-dark-color"
-                                style={{ display: "block" }}
-                              />
-                            </div>
-                          </div>
-                          <a
-                            aria-label="Feature link"
-                            data-w-id="3693517e-89e9-2f96-cace-c1d04dc6f48a"
-                            href="/feature/innovation"
-                            className="feature-title-link w-inline-block"
+                        </a>
+                        <a href="/Contact">
+                          <div
+                            role="listitem"
+                            className="large-feature-item w-dyn-item"
                           >
-                            <h2 className="heading text-[20px] md:text-[30px] is-feature-large-title">
-                              禪譜科技
-                            </h2>
-                            <p className="w-full text-[13px] md:text-[16px] md:w-1/2 my-5">
-                              只專注於電化學的禪譜科技ZensorR&D,提供獨特的無線及模擬器功能的電化學分析儀(電化學工作站)
-                            </p>
-                            <div
-                              data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
-                              className="feature-title-link-line"
-                              style={{}}
-                            />
-                          </a>
-                          <div className="large-feature-gallery w-dyn-list">
-                            <div
-                              role="list"
-                              className="large-feature-gallery-list w-dyn-items"
-                            >
-                              <div
-                                role="listitem"
-                                className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
-                              >
-                                <div className="reveal-image-trigger">
-                                  <img
-                                    loading="lazy"
-                                    alt=""
-                                    src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
-                                    className="cover-image"
-                                    style={{
-                                      transform:
-                                        "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                      transformStyle: "preserve-3d",
-                                    }}
-                                  />
-                                  <div
-                                    className="bg-for-animation is-dark-color"
-                                    style={{ display: "block" }}
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                role="listitem"
-                                className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
-                              >
-                                <div className="reveal-image-trigger">
-                                  <img
-                                    loading="lazy"
-                                    alt=""
-                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-93.webp"
-                                    className="cover-image"
-                                    style={{
-                                      transform:
-                                        "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                      transformStyle: "preserve-3d",
-                                    }}
-                                  />
-                                  <div
-                                    className="bg-for-animation is-dark-color"
-                                    style={{ display: "block" }}
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                role="listitem"
-                                className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
-                              >
-                                <div className="reveal-image-trigger">
-                                  <img
-                                    loading="lazy"
-                                    alt=""
-                                    src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-88.webp"
-                                    className="cover-image"
-                                    style={{
-                                      transform:
-                                        "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                      transformStyle: "preserve-3d",
-                                    }}
-                                  />
-                                  <div
-                                    className="bg-for-animation is-dark-color"
-                                    style={{ display: "block" }}
-                                  />
-                                </div>
+                            <div className="feature-image">
+                              <div className="reveal-image-trigger">
+                                <img
+                                  loading="lazy"
+                                  alt=""
+                                  src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
+                                  className="cover-image"
+                                  style={{
+                                    transform:
+                                      "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                    transformStyle: "preserve-3d",
+                                  }}
+                                />
+                                <div
+                                  className="bg-for-animation is-dark-color"
+                                  style={{ display: "block" }}
+                                />
                               </div>
                             </div>
-                            <div className="empty-state-hidden w-dyn-hide w-dyn-empty">
-                              <div>No items found.</div>
+                            <a
+                              aria-label="Feature link"
+                              data-w-id="3693517e-89e9-2f96-cace-c1d04dc6f48a"
+                              href="/feature/innovation"
+                              className="feature-title-link w-inline-block"
+                            >
+                              <h2 className="heading text-[20px] md:text-[30px] is-feature-large-title">
+                                禪譜科技
+                              </h2>
+                              <p className="w-full text-[13px] md:text-[16px] md:w-1/2 my-5">
+                                只專注於電化學的禪譜科技ZensorR&D,提供獨特的無線及模擬器功能的電化學分析儀(電化學工作站)
+                              </p>
+                              <div
+                                data-w-id="d2d71c0e-fe7a-b314-737c-3742dc22a2df"
+                                className="feature-title-link-line"
+                                style={{}}
+                              />
+                            </a>
+                            <div className="large-feature-gallery w-dyn-list">
+                              <div
+                                role="list"
+                                className="large-feature-gallery-list w-dyn-items"
+                              >
+                                <div
+                                  role="listitem"
+                                  className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
+                                >
+                                  <div className="reveal-image-trigger">
+                                    <img
+                                      loading="lazy"
+                                      alt=""
+                                      src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
+                                      className="cover-image"
+                                      style={{
+                                        transform:
+                                          "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                        transformStyle: "preserve-3d",
+                                      }}
+                                    />
+                                    <div
+                                      className="bg-for-animation is-dark-color"
+                                      style={{ display: "block" }}
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  role="listitem"
+                                  className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
+                                >
+                                  <div className="reveal-image-trigger">
+                                    <img
+                                      loading="lazy"
+                                      alt=""
+                                      src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-93.webp"
+                                      className="cover-image"
+                                      style={{
+                                        transform:
+                                          "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                        transformStyle: "preserve-3d",
+                                      }}
+                                    />
+                                    <div
+                                      className="bg-for-animation is-dark-color"
+                                      style={{ display: "block" }}
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  role="listitem"
+                                  className="large-feature-gallery-item w-dyn-item w-dyn-repeater-item"
+                                >
+                                  <div className="reveal-image-trigger">
+                                    <img
+                                      loading="lazy"
+                                      alt=""
+                                      src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-88.webp"
+                                      className="cover-image"
+                                      style={{
+                                        transform:
+                                          "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                        transformStyle: "preserve-3d",
+                                      }}
+                                    />
+                                    <div
+                                      className="bg-for-animation is-dark-color"
+                                      style={{ display: "block" }}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="empty-state-hidden w-dyn-hide w-dyn-empty">
+                                <div>No items found.</div>
+                              </div>
                             </div>
                           </div>
-                        </div>
+                        </a>
                         <div
                           role="listitem"
                           className="large-feature-item w-dyn-item"

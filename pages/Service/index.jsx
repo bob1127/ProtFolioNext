@@ -8,7 +8,7 @@ import {
   TableCell,
   getKeyValue,
 } from "@nextui-org/react";
-import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
+// import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
@@ -24,6 +24,7 @@ import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
 import Image from "next/image.js";
+import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
 import dynamic from "next/dynamic";
 import Carousel04 from "../../components/EmblaCarousel04/EmblaCarousel.jsx";
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
@@ -256,25 +257,15 @@ export default function Blog() {
                 </div>
               </div>
             </div>
-
-            <section id="explore" className="section with-borders hidden">
+            {/* 
+            <section id="explore" className="section with-borders">
               <section className="section is-3d-content-section">
                 <div className="container">
                   <div className="_3d-content-padding">
                     <div className="_3d-block" style={{}}>
                       <div className="_3d-content-image" style={{}}>
                         <div className="reveal-image-trigger">
-                          {/* <img
-                            loading="lazy"
-                            alt="Portrait of the team"
-                            src=""
-                            className="cover-image"
-                            style={{
-                              transform:
-                                "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                              transformStyle: "preserve-3d",
-                            }}
-                          /> */}
+                        
                           <div
                             className="bg-for-animation"
                             style={{ display: "block" }}
@@ -312,100 +303,80 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
-            </section>
-            {/* <section id="logos" className="section with-borders">
-              <div className="padding small-paddings">
-                <div
-                  data-w-id="e8ad4759-879f-965a-e711-3a6051ba16a9"
-                  className="logo-carousel"
-                >
-                  <div className="logo-carousel-block" style={{}}>
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf0f_logoipsum-256%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abefd_logoipsum-286%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf08_logoipsum-239%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf06_logoipsum-297%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf01_logoipsum-317%20(1).svg"
-                      className="logo-carousel-image"
-                    />
+            </section> */}
+
+            <div className="service-hero-section mt-[-600px]">
+              <section className=" mt-[30px]  z-[999] bg-[#e3e3e3] pt-[100px] h-[135vh]">
+                <div className="absolute top-[60%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
+                  <Carousel05 />
+                </div>
+                <div className="relative relative">
+                  <div className="drag-circle absolute items-center flex justify-center z-[999999] left-[40%] bg-black w-[60px] h-[60px] rounded-full text-white  text-[20px] font-bold">
+                    Dtag
                   </div>
-                  <div className="logo-carousel-block" style={{}}>
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf0f_logoipsum-256%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abefd_logoipsum-286%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf08_logoipsum-239%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf06_logoipsum-297%20(1).svg"
-                      className="logo-carousel-image"
-                    />
-                    <img
-                      width={600}
-                      height={400}
-                      alt=""
-                      loading="lazy"
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41abf01_logoipsum-317%20(1).svg"
-                      className="logo-carousel-image"
-                    />
+
+                  <div className="circle bg-[#f5f3f0] z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[700px]"></div>
+                  <div className="absolute w-full  left-0 top-0 z-[9]">
+                    <iframe
+                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                      frameborder="0"
+                      width="100%"
+                      height="500px"
+                    ></iframe>
+                  </div>
+                  <div className="left-txt z-[999] top-[40%] absolute left-[90px]">
+                    <h1 className="text-[60px] mt-[200px] font-bold">
+                      庫柏力克熊-限量版
+                    </h1>
+                    <p className="text-[26px] font-normal ">
+                      Lorem, ipsum dolor sit
+                    </p>
+                    <a
+                      href=""
+                      className="bg-blue-900 inline-block w-[120px] py-3  mt-3 inline-block  text-white flex justify-center items-center  rounded-[30px]"
+                    >
+                      Nore
+                    </a>
+                  </div>
+                  <div className="left-txt  z-[9999]  top-0 absolute right-[90px]">
+                    <h1
+                      data-aos="fade-up"
+                      className="text-[30px] bg-blue-900 mt-[200px] font-bold text-white"
+                    >
+                      限量發售
+                    </h1>
+                    <p
+                      data-aos-delay="300"
+                      data-aos="fade-up"
+                      className="text-[20px] font-normal "
+                    >
+                      Lorem, ipsum dolor sit
+                    </p>
+                    <h1
+                      data-aos="fade-up"
+                      className="text-[30px] bg-blue-900 mt-[10px] font-bold text-white"
+                    >
+                      現實搶購
+                    </h1>
+                    <p
+                      data-aos-delay="300"
+                      data-aos="fade-up"
+                      className="text-[20px] font-normal "
+                    >
+                      Lorem, ipsum dolor sit
+                    </p>
+
+                    <a
+                      href=""
+                      className="bg-blue-900 inline-block w-[120px] py-3  mt-3 inline-block  text-white flex justify-center items-center  rounded-[30px]"
+                    >
+                      More
+                    </a>
                   </div>
                 </div>
-              </div>
-            </section> */}
+              </section>
+            </div>
+
             <Marquee>
               <div className=" bg-black flex w-[100vw] w-full py-[40px]">
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">

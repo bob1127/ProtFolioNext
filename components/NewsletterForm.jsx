@@ -63,8 +63,8 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className=" w-full md:w-[430px] mx-auto bg-white rounded-lg">
-      <h2 className="text-2xl font-semibold mb-4">提出需求，聯繫JEEK</h2>
+    <div className=" w-full md:w-[430px]   mx-auto bg-white rounded-lg">
+      <h2 className="text-2xl font-semibold mb-4 ">提出需求，聯繫JEEK</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label
