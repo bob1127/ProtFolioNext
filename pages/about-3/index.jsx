@@ -557,7 +557,7 @@ export default function Blog() {
               <h2
                 data-aos="fade-up"
                 data-aos-delay="400"
-                className=" md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
+                className="  md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
                 style={{
                   marginBottom: 30,
                   display: "flex",
@@ -567,10 +567,10 @@ export default function Blog() {
               >
                 "為什麼要選擇自由接案者？"
               </h2>
-              <p className="text-center text-[22px] md:text-[26px] ">
+              <p className="text-center text-[16px] xl:text-[22px] md:text-[26px] ">
                 選擇JEEK 幫助您實現創意發想
               </p>
-              <section className="section-carousel  flex-col mt-10  px-[70px] md:flex-row flex mb-[50px]">
+              <section className="section-carousel  flex-col mt-10  px-0 xl:px-[70px] md:flex-row flex mb-[50px]">
                 <div className="left-txt flex-col flex justify-start items-center  w-full mt-5 md:w-[30%]">
                   <div>
                     <h2 className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold">
@@ -579,7 +579,7 @@ export default function Blog() {
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
                       Flexibility
                     </h2>
-                    <p className="text-[16px] text-center mt-3">
+                    <p className="text-[16px] xl:w-full w-[80%] mx-auto text-center mt-3">
                       根據客戶的時間表和需求快速調整工作安排，適應變化。
                     </p>
                   </div>
@@ -590,7 +590,7 @@ export default function Blog() {
                     Contact
                   </a>
                 </div>
-                <div className="img xl:my-0  mb-[30px] w-full md:w-[40%] overflow-hidden">
+                <div className="img mt-4 xl:mt-0 xl:my-0  mb-0 xl:mb-[30px] w-full md:w-[40%] overflow-hidden">
                   <img
                     className="w-full "
                     src="https://www.avatarz.design/assets/images/image15.jpg?v=7b7356d5"
@@ -936,7 +936,7 @@ export default function Blog() {
 
               <div className="w-full flex flex-col xl:flex-row">
                 <div className="w-full lg:w-1/2">
-                  <div className="flex  flex-col  pl-10  mx-auto">
+                  <div className="flex  flex-col  pl-0 md:pl-3  xl:pl-10  mx-auto">
                     <div className="px-4">
                       <SwiperScroll />
                     </div>
