@@ -42,62 +42,79 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
           &times;
         </button>
         <div className="flex px-[30px] xl:flex-row flex-col justify-center items-center h-full ">
-          <div className="w-full xl:w-1/2">
-            <img
-              src={imageSrc}
-              alt="Expanded view"
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="content  mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full xl:w-1/2 ">
-            <div className="project-type px-2 bg-blue-400 rounded-[30px] w-[30%] py-1 flex justify-center mb-4  items-center">
-              官網建置
+          <div className="w-full border border-white relative overflow-y-scroll h-full overflow:scroll xl:w-1/2">
+            <div className="img-wrap w-[90%] mx-auto h-[300px]">
+              <img
+                src={imageSrc}
+                alt="Expanded view"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <b className="text-[20px] text-center font-normal">
-              專案名稱:禪譜科技官網建置
-            </b>
-            <p className="text-[20px] mt-4 font-normal">專案內容:</p>
-            <p className="text-[15px] font-bold">
-              使用Bootstrap + Scss + Jquery 建置 另外加商品影片剪輯 商品攝影
-              商品3D建模 圖片後製 網頁性能優化 Seo優化
-            </p>
-            <p></p>
-            {/* <a
-              href="/"
-              data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-              className="button-wrapper w-[120px] w-inline-block"
-            >
-              <div className="button-layout">
-                <p href="/about" className="button-text" style={{}}>
-                  立即聯絡
-                </p>
-                <div className="button-bg" style={{}} />
+
+            <div className="txt leading-normal text-[14px] font-normal text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus, nemo porro? Itaque soluta eveniet cumque illo nisi
+              veritatis doloribus. Nulla, quos officia expedita enim at
+              inventore molestias molestiae aut aliquam?
+            </div>
+            <div className="img-wrap w-[90%] mx-auto h-[300px]">
+              <img
+                src={imageSrc}
+                alt="Expanded view"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="txt leading-normal font-normal text-white text-[16px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus, nemo porro? Itaque soluta eveniet cumque illo nisi
+              veritatis doloribus. Nulla, quos officia expedita enim at
+              inventore molestias molestiae aut aliquam?
+            </div>
+            <div className="img-wrap w-[90%] mx-auto h-[300px]">
+              <img
+                src={imageSrc}
+                alt="Expanded view"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="txt leading-normal font-normal text-white text-[16px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus, nemo porro? Itaque soluta eveniet cumque illo nisi
+              veritatis doloribus. Nulla, quos officia expedita enim at
+              inventore molestias molestiae aut aliquam?
+            </div>
+          </div>
+          <div className="flex flex-col w-1/2 justify-start">
+            <div className="content  mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full  ">
+              <div className="project-type px-2 bg-blue-400 rounded-[30px] w-[30%] py-1 flex justify-center mb-4  items-center">
+                官網建置
               </div>
-              <div className="button-icon-block">
-                <img
-                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                  loading="lazy"
-                  alt=""
-                  className="button-icon"
-                  style={{}}
-                />
+              <b className="text-[20px] text-center font-normal">
+                專案名稱:禪譜科技官網建置
+              </b>
+              <p className="text-[20px] mt-4 font-normal">專案內容:</p>
+              <p className="text-[15px] font-bold">
+                使用Bootstrap + Scss + Jquery 建置 另外加商品影片剪輯 商品攝影
+                商品3D建模 圖片後製 網頁性能優化 Seo優化
+              </p>
+              <p></p>
+            </div>
+            <div className="content mt-4  mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full ">
+              <div className="project-type px-2 bg-blue-400 rounded-[30px] w-[30%] py-1 flex justify-center mb-4  items-center">
+                官網建置
               </div>
-            </a> */}
-            {/* <div
-              data-w-id="60710c24-c4e8-9d65-10d7-1ada286361b6"
-              class="footre-page-links"
-              style="transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"
-            >
-              <a href="/" class="simple-link-blue w--current">
-                形象影片
-              </a>
-              <a href="/about" class="simple-link-blue">
-                產品攝影
-              </a>
-              <a href="/journal" class="simple-link-blue">
-                社群短視頻
-              </a>
-            </div> */}
+              <b className="text-[20px] text-center font-normal">
+                專案名稱:禪譜科技官網建置
+              </b>
+              <p className="text-[20px] mt-4 font-normal">專案內容:</p>
+              <p className="text-[15px] font-bold">
+                使用Bootstrap + Scss + Jquery 建置 另外加商品影片剪輯 商品攝影
+                商品3D建模 圖片後製 網頁性能優化 Seo優化
+              </p>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>

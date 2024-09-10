@@ -50,6 +50,16 @@ export default function Blog() {
     onOpen();
   };
 
+  // const defaultOptions02 = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: require("/public/tangle.json"),
+  //   renderer: "canvas",
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -492,7 +502,7 @@ export default function Blog() {
                     </div>
                   </div>
                   <div className="relative  overflow-hidden">
-                    <div className="img-wrap rounded-2xl overflow-hidden">
+                    <div className="relative  overflow-hidden">
                       <div className="img-wrap rounded-2xl overflow-hidden">
                         <Lottie
                           options={defaultOptions}
@@ -500,12 +510,6 @@ export default function Blog() {
                           width={400}
                         />
                       </div>
-                      {/* <iframe
-                        src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
-                        frameborder="0"
-                        width="100%"
-                        height="240px"
-                      ></iframe> */}
                     </div>
                   </div>
                 </div>
@@ -904,27 +908,29 @@ export default function Blog() {
                   <p className="text-[14px]">
                     您可以跟我們溝通需求，並確認流程
                   </p>
-                  <a
-                    href="/"
-                    data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                    className="button-wrapper w-inline-block w-[175px] mx-auto mt-5"
-                  >
-                    <div className="button-layout">
-                      <p href="/about" className="button-text" style={{}}>
-                        立即聯絡
-                      </p>
-                      <div className="button-bg" style={{}} />
-                    </div>
-                    <div className="button-icon-block">
-                      <img
-                        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                        loading="lazy"
-                        alt=""
-                        className="button-icon"
-                        style={{}}
-                      />
-                    </div>
-                  </a>
+                  <div className="flex  justify-center items-center">
+                    <a
+                      href="/Contact"
+                      data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                      className="button-wrapper  w-inline-block mb-5 mt-4"
+                    >
+                      <div className="button-layout">
+                        <p href="/about" className="button-text" style={{}}>
+                          立即聯絡
+                        </p>
+                        <div className="button-bg" style={{}} />
+                      </div>
+                      <div className="button-icon-block">
+                        <img
+                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                          loading="lazy"
+                          alt=""
+                          className="button-icon"
+                          style={{}}
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
 

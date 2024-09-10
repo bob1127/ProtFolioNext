@@ -81,7 +81,7 @@ export default function MyApp({ Component, pageProps, router }) {
                     <AnimatePresence mode='wait'>
                         {/* <Navbar/> */}
                           <DefaultSeo {...defaultSEOConfig} />
-                        <Component key={router.route} {...pageProps} />
+                        <Component  key={router.route} {...pageProps} />
 
                         <div className='border-t-2 border-black'>
                               {!nophyRoutes.includes(router.pathname) &&  <PhysicsAnimationApp />}

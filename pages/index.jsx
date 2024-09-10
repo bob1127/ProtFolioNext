@@ -5,6 +5,7 @@
 import Marquee from "react-fast-marquee";
 import DragCarousel from "../components/DragCarousel/index.jsx";
 import SwiperScroll from "../components/SwiperScroll/page.jsx";
+
 import styles from "../styles/Home.module.css";
 import EmblaCarousel from "../components/EmblaCarousel/index.jsx";
 import EmblaCarousel01 from "../components/EmblaCarousel01/index.jsx";
@@ -50,6 +51,7 @@ const imageLoader02 = ({ src, width, quality }) => {
     quality || 75
   }`;
 };
+
 // import BannerCarousel from '../components/BannerCarousel/App.jsx';
 // import reportWebVitals from '../components/reportWebVitals.js';
 
@@ -154,24 +156,33 @@ CREACTIVEs</h1>
               <br />
             </div>
             <div className="hero-right p-[50px] border-1 border-black border pt-[50px] flex flex-col justify-center items-center  w-full lg:w-[15%]">
-              <div className="top flex flex-col justify-center items-center">
-                <a href="/Contact" className="mt-4 hover:scale-95 duration-300">
+              <div className="top  flex-row  md:flex-col flex justify-center items-center">
+                <a
+                  href="/Contact"
+                  className="mt-4 mx-2 md:mx-0  hover:scale-95 duration-300"
+                >
                   <img
-                    className="w-[60px]"
+                    className="w-[40px]"
                     src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
                     alt=""
                   />
                 </a>
-                <a href="/Contact" className="mt-4 hover:scale-95 duration-300">
+                <a
+                  href="/Contact"
+                  className="mt-4 mx-2 md:mx-0 hover:scale-95 duration-300"
+                >
                   <img
-                    className="w-[60px]"
+                    className="w-[40px]"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4xB1s17gDuk8Gas9rHwGpaHBUh11qqtoMw&s"
                     alt=""
                   />
                 </a>
-                <a href="/Contact" className="mt-4 hover:scale-95 duration-300">
+                <a
+                  href="/Contact"
+                  className="mt-4 mx-2 md:mx-0 hover:scale-95 duration-300"
+                >
                   <img
-                    className="w-[60px]"
+                    className="w-[40px]"
                     src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
                     alt=""
                   />
@@ -512,15 +523,15 @@ CREACTIVEs</h1>
                 總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
                 來跟我討論吧
               </p>
-              <div className="mx-auto w-[170px]">
+              <div className="h-full flex my-auto justify-center items-center">
                 <a
-                  href="/"
+                  href="/Contact"
                   data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                  className="button-wrapper w-inline-block"
+                  className="button-wrapper  w-inline-block"
                 >
                   <div className="button-layout">
                     <p href="/about" className="button-text" style={{}}>
-                      立即聯絡
+                      更多網頁設計案例
                     </p>
                     <div className="button-bg" style={{}} />
                   </div>

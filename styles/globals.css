@@ -11,8 +11,9 @@
 /* Start purging... */
 @tailwind utilities;
 
-
-
+.spline-watermark{
+    display: none !important;
+}
 .refferal_badge{
     display: none !important;
 }

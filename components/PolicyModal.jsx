@@ -38,7 +38,7 @@ const PolicyModal = () => {
     <div className="fixed inset-0 flex  bottom-0 items-center justify-center bg-black bg-opacity-50 z-[999999999]">
       <div
         ref={modalRef}
-        className="bg-white border-2 border-black rounded-lg shadow-lg overflow-hidden sm:w-[500px]   w-full right-0 md:right-[25px] fixed bottom-[25px] z-[99999999]"
+        className="bg-white border-2 border-black rounded-lg shadow-lg overflow-hidden  sm:w-[500px] right-[6.5 px] md:right-[25px] fixed bottom-[6px] sm:bottom-[25px] w-[96%] mx-auto z-[99999999]"
       >
         {/* Close button */}
         <button

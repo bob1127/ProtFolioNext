@@ -29,6 +29,16 @@ import Carousel04 from "../../components/EmblaCarousel04/EmblaCarousel.jsx";
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export default function Blog() {
+  // const defaultOptions02 = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: require("/public/tangle.json"),
+  //   renderer: "canvas",
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+
   const defaultOptions = {
     loop: true,
     autoplay: true,

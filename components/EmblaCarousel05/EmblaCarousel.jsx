@@ -108,7 +108,7 @@ const EmblaCarousel = (props) => {
         >
           {slides.map((slide, index) => (
             <div
-              className=" embla__slide transform flex-none h-full min-w-0 "
+              className=" embla__slides transform flex-none h-full min-w-0 "
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
@@ -124,7 +124,7 @@ const EmblaCarousel = (props) => {
                   height: "100%",
                   userSelect: "none",
                 }}
-                className="embla__slide__number  border-none  md:border py-[30px] md:border-black  flex flex-col  items-center justify-center font-semibold"
+                className="embla__slide__number  border-none  md:border bg-white py-[30px] md:border-black  flex flex-col  items-center justify-center font-semibold "
               >
                 {/* {index + 1} */}
                 <div className="flex flex-col justify-center items-center ">
@@ -150,8 +150,8 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls grid grid-cols-[auto_1fr] justify-between gap-[1.2rem] mt-[1.8rem]">
-        <div className="embla__buttons grid grid-cols-2 gap-[0.6rem] items-center">
+      <div className="embla__controls absolute bottom-0 left-[25px] grid grid-cols-[auto_1fr] justify-between flex inline-block border border-black  gap-[1.2rem] mt-[1.8rem]">
+        <div className="embla__buttons flex justify-center">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

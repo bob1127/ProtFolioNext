@@ -1,5 +1,5 @@
 import React from "react";
-import LottieAnimation from "../../components/Lottie/LottieAnimation01.js";
+import LottieAnimation from "../Lottie/LottieAnimation01.js";
 
 const Header = () => (
   <header className="pt-[30px] xl:pt-[80px] pb-[15px] xl:pb-[30px] relative flex-col flex justify-center">
