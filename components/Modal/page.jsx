@@ -41,39 +41,11 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
         >
           &times;
         </button>
-        <div className="flex px-[30px] xl:flex-row flex-col justify-center items-center h-full ">
-          <div className="w-full border border-white relative overflow-y-scroll h-full overflow:scroll xl:w-1/2">
+        <div className="flex px-[10px] xl:px-[30px] xl:flex-row flex-col justify-center items-center h-full ">
+          <div className="w-full border  h-[500px] overflow-scroll border-white relative overflow-y-scroll h-full overflow:scroll xl:w-1/2">
             <div className="img-wrap w-[90%] mx-auto h-[300px]">
               <img
-                src={imageSrc}
-                alt="Expanded view"
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            <div className="txt leading-normal text-[14px] font-normal text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, nemo porro? Itaque soluta eveniet cumque illo nisi
-              veritatis doloribus. Nulla, quos officia expedita enim at
-              inventore molestias molestiae aut aliquam?
-            </div>
-            <div className="img-wrap w-[90%] mx-auto h-[300px]">
-              <img
-                src={imageSrc}
-                alt="Expanded view"
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            <div className="txt leading-normal font-normal text-white text-[16px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, nemo porro? Itaque soluta eveniet cumque illo nisi
-              veritatis doloribus. Nulla, quos officia expedita enim at
-              inventore molestias molestiae aut aliquam?
-            </div>
-            <div className="img-wrap w-[90%] mx-auto h-[300px]">
-              <img
-                src={imageSrc}
+                src="https://www.apple.com/tw/ipad-10.9/images/overview/design/fan__e9709q800z6u_large_2x.jpg"
                 alt="Expanded view"
                 className="w-full h-full object-contain"
               />
@@ -86,7 +58,7 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
               inventore molestias molestiae aut aliquam?
             </div>
           </div>
-          <div className="flex flex-col w-1/2 justify-start">
+          <div className="flex flex-col mt-[20px] w-full xl:w-1/2 justify-start">
             <div className="content  mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full  ">
               <div className="project-type px-2 bg-blue-400 rounded-[30px] w-[30%] py-1 flex justify-center mb-4  items-center">
                 官網建置

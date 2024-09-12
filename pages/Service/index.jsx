@@ -305,7 +305,7 @@ export default function Blog() {
               </section>
             </section> */}
 
-            <div className="service-hero-section mt-[-600px]">
+            {/* <div className="service-hero-section mt-[-600px]">
               <section className=" mt-[30px]  z-[999] bg-[#e3e3e3] pt-[100px] h-[135vh]">
                 <div className="absolute top-[60%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
                   <Carousel05 />
@@ -375,7 +375,7 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
-            </div>
+            </div> */}
 
             <Marquee>
               <div className=" bg-black flex w-[100vw] w-full py-[40px]">

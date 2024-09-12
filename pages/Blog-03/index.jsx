@@ -463,48 +463,39 @@ export default function Blog() {
             </div> */}
 
             <div className="paragraph" data-aos="fade-up">
-              <h2 className="text-[40px] leading-normal mb-[20px] mt-[30px] ">
-                1. 進行關鍵字研究
+              <h2 className="text-[26px] leading-normal mb-[20px] mt-[30px] ">
+                1. 關鍵字研究
               </h2>
               <p>
-                關鍵字研究是SEO的基礎。透過了解目標受眾的搜尋行為，您可以選擇合適的關鍵字來優化您的網站內容。使用工具如Google
-                Keyword
-                Planner或Ahrefs，找出相關且高搜尋量的關鍵字，並將其有效地融入網站的標題、描述和內容中。
+                關鍵字是用戶在搜尋引擎中輸入的詞語。選擇合適的關鍵字是提升排名的第一步。使用關鍵字工具（如
+                Google Keyword Planner 或
+                SEMrush）找到與你的業務相關的熱門搜尋詞。將這些關鍵字自然地融入到你的网站內容、標題、描述和標籤中，但要避免過度堆砌。
               </p>
               <div className="paragraph">
                 <div className="text-[24px] mb-[15px] font-bold mt-5 ">
-                  創建高質量內容
+                  2. 優化頁面標題和描述
                 </div>
                 <p className="font-normal leading-[26px]">
-                  高質量的內容能夠吸引訪客並提升搜尋引擎排名。內容應該具備價值、信息性和吸引力，並且圍繞目標關鍵字進行優化。定期更新網站內容，保持內容的新鮮度和相關性，有助於提升網站在搜尋引擎中的地位。
-                  都至關重要。然而，網站設計真的需要這麼貴嗎？我們來打破這個迷思。
+                  每個頁面都應有一個獨特的標題和描述，這不僅幫助搜尋引擎了解頁面內容，還能吸引用戶點擊。標題應簡潔明了，包含主要關鍵字；描述則應概括頁面的核心內容，並引導用戶進一步閱讀。確保標題不超過
+                  60 個字元，描述不超過 160
+                  個字元，以便它們在搜尋結果中完整顯示。
                 </p>
               </div>
 
               <div className="paragraph">
                 <div className="text-[24px] mb-[15px] font-bold mt-5 ">
-                  優化網站結構和內部連結
+                  3. 提高頁面加載速度
                 </div>
-                <p className="font-normal leading-[26px]">
-                  網站結構和內部連結對於SEO排名至關重要。確保網站擁有
-                  <span className="bg-blue-100 mx-1"> 清晰的導航</span>
-                  <span className="bg-blue-100 mx-1"> 合適的url結構</span>
-                  ，以便搜尋引擎可以輕鬆索引您的網站內容。利用
-                  <span className="bg-blue-100 mx-1"> 利用內部連結</span>
-                  提升網站頁面之間的相關性，進而提高重要
-                  <span className="bg-blue-100 mx-1"> 頁面的權重</span>
-                </p>
+                網站加載速度對用戶體驗和搜尋引擎排名都至關重要。使用工具（如
+                Google PageSpeed
+                Insights）檢查你的网站速度，並根據建議進行優化。常見的優化措施包括壓縮圖片、減少不必要的插件、使用內容分發網絡（CDN）等。
               </div>
               <div className="paragraph">
                 <div className="text-[24px] mb-[15px] font-bold mt-5 ">
-                  提高網站速度和使用者體驗
+                  4. 創建高質量內容
                 </div>
                 <p className="font-normal leading-[26px]">
-                  網站的載入速度和使用者體驗對SEO排名有直接影響。快速且易於導航的網站能夠提高用戶的停留時間和參與度。
-                  <span className="bg-blue-100 mx-1"> 優化圖片</span>
-                  <span className="bg-blue-100 mx-1"> 減少代碼體積</span>
-                  <span className="bg-blue-100 mx-1"> 和使用快取技術</span>
-                  、，可以提升網站的載入速度。確保網站在各種設備上都有良好的顯示效果，尤其是移動設備，對於提升排名也至關重要。
+                  內容是吸引用戶和搜尋引擎的關鍵。創建有價值、有趣的內容，解決用戶的問題或提供他們感興趣的信息。定期更新你的博客或新聞頁面，不僅能吸引用戶回訪，還能提高搜尋引擎對你網站的抓取頻率。
                 </p>
               </div>
               <div className="paragraph">

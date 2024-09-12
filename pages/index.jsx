@@ -531,7 +531,7 @@ CREACTIVEs</h1>
                 >
                   <div className="button-layout">
                     <p href="/about" className="button-text" style={{}}>
-                      更多網頁設計案例
+                      馬上聯繫
                     </p>
                     <div className="button-bg" style={{}} />
                   </div>

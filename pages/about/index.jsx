@@ -2,6 +2,7 @@ import React from "react";
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image.js";
+import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
 import TextMask from "../../components/TextMask/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
 import { useState, useEffect } from "react";
@@ -477,23 +478,50 @@ export default function Blog() {
                           </div>
                         </div>
                       </div>
-
-                      <div>
-                        <Image
-                          src="up100-10-PhotoRoom.png"
-                          loader={imageLoader}
-                          loading="lazy"
-                          height={1000}
-                          width={1000}
-                        />
-                      </div>
                     </div>
+                    <section>
+                      <div className="service-hero-section mt-[-600px]"></div>
+                    </section>
                     <p
                       id="w-node-_3e2ecc0f-542d-8997-9376-5ddc25760056-c41abecd"
                       className="paragraph is-sticky"
                     >
                       Headless-無頭網站
                     </p>
+                  </div>
+                </div>
+              </section>
+              <section className=" my-[150px]  relative  z-[999] bg-[#e3e3e3] pt-[100px] h-[135vh]">
+                <div className="absolute top-[40%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
+                  <Carousel05 />
+                </div>
+                <div className="relative relative">
+                  <div className="drag-circle absolute items-center flex justify-center z-[999999] left-[40%] bg-black w-[60px] h-[60px] rounded-full text-white  text-[20px] font-bold">
+                    Dtag
+                  </div>
+
+                  <div className="circle bg-[#f5f3f0] z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[700px]"></div>
+                  <div className="absolute w-full  left-0 top-0 z-[9]">
+                    <iframe
+                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                      frameborder="0"
+                      width="100%"
+                      height="500px"
+                    ></iframe>
+                  </div>
+                  <div className="left-txt z-[999] top-[40%] absolute left-[90px]">
+                    <h1 className="text-[60px] mt-[200px] font-bold">
+                      產品建模
+                    </h1>
+                    <p className="text-[26px] font-normal ">
+                      試用Blender建模 加上 Spline 3d 做出交互式
+                    </p>
+                    <a
+                      href=""
+                      className="bg-blue-900 inline-block w-[120px] py-3  mt-3 inline-block  text-white flex justify-center items-center  rounded-[30px]"
+                    >
+                      Nore
+                    </a>
                   </div>
                 </div>
               </section>
@@ -510,7 +538,7 @@ export default function Blog() {
                   />
                 </div>
               </section>
-              <section className="section with-borders">
+              <section className="section mt-[80px] with-borders">
                 <div className="title text-center">
                   <h2 className="text-[40px] text-black">SEO OPTIMIXATIOIN </h2>
                   <p className="text-[24px] my-5 text-gray-700">Seo 行銷</p>

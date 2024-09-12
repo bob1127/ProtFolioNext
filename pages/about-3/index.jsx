@@ -194,7 +194,7 @@ export default function Blog() {
         <div id="webpage" className="page-wrapper">
           <main className="main">
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
-              <div className="container duration-500  bg-[#15a4fd]  border-4 border-gray-400 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
+              <div className="container duration-500  bg-[#15a4fd]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
                   <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
                     💡致力於開發使用者體驗良好的網站

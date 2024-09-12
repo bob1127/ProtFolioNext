@@ -43,7 +43,7 @@ export default function Blog() {
                         role="list"
                         className="large-features-list w-dyn-items"
                       >
-                        <a href="/Contact">
+                        <a href="www.ultraehp.com">
                           <div
                             role="listitem"
                             className="large-feature-item w-dyn-item"
@@ -163,7 +163,10 @@ export default function Blog() {
                             </div>
                           </div>
                         </a>
-                        <a href="/Contact">
+                        <a
+                          href="www.zensor.com.tw"
+                          // onClick={url("www.zensor.com.tw")}
+                        >
                           <div
                             role="listitem"
                             className="large-feature-item w-dyn-item"
