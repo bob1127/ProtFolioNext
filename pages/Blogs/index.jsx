@@ -459,7 +459,7 @@ export default function Blog() {
           </div>
         </section>
 
-        <section className="py-[50px]  section-scroll-bg ">
+        <section className="py-[50px] hidden md:block  section-scroll-bg ">
           <HorizontalScroll />
         </section>
         <div className="w-full border border-green-400 py-[50px] ">

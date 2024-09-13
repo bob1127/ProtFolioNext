@@ -7497,22 +7497,29 @@ blockquote{
     position:relative;
     overflow:hidden
 }
-.fullwidth-link{
-    z-index:10;
-    grid-column-gap:1vw;
-    grid-row-gap:1vw;
-    border-bottom:1px solid var(--main-color-1);
-    color:var(--main-color-1);
-    text-align:left;
-    flex-flow:row;
-    justify-content:space-between;
-    align-items:center;
-    width:100%;
-    padding:4em 5vw;
-    display:flex;
-    position:relative;
-    overflow:hidden
+.fullwidth-link {
+    z-index: 10;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    border-bottom: 1px solid var(--main-color-1);
+    color: var(--main-color-1);
+    text-align: left;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 4em 5vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
 }
+
+@media screen and (max-width: 500px) {
+    .fullwidth-link {
+        flex-direction: column !important;
+    }
+}
+
 .paragraph-border{
     border:2px solid var(--main-color-1);
     padding:.5em

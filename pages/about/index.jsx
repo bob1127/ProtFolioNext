@@ -2,6 +2,7 @@ import React from "react";
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image.js";
+import Marquee from "react-fast-marquee";
 import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
 import TextMask from "../../components/TextMask/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
@@ -100,7 +101,7 @@ export default function Blog() {
                       className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
                     >
                       個人工作室｜私人接案 - 花費小預算，
-                      <span className="bg-blue-700 inline-block px-4 border border-black text-white py-3  w-[150px] text-center">
+                      <span className="bg-blue-700 inline-block px-4 border border-black text-white py-3  w-[150px] mt-4 md:mt-0 text-center">
                         增加大收益
                       </span>
                     </a>
@@ -117,7 +118,7 @@ export default function Blog() {
                       極客網頁設計<br></br>JEEK WEB DESIGN
                     </h1>
                      */}
-                    <div
+                    {/* <div
                       data-w-id="b3a43e50-789b-2236-6fea-b72c39d21884"
                       style={{
                         transform:
@@ -145,7 +146,7 @@ export default function Blog() {
                           ></video>
                         </div>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="bg-lines">
                     <div className="bg-lines-gradient" />
@@ -237,7 +238,7 @@ export default function Blog() {
                     </div>
                   </div>
                 </div>
-                <div className="home-hero-bg">
+                <div className="home-hero-bg hidden">
                   <div className="parallax-trigger">
                     <div
                       className="parallax-layout"
@@ -248,7 +249,7 @@ export default function Blog() {
                         transformStyle: "preserve-3d",
                       }}
                     >
-                      <div className="slider">
+                      <div className="slider ">
                         <div className="custom-slider">
                           <div className="slider-backgrounds">
                             <div className="slider-inner">
@@ -330,7 +331,7 @@ export default function Blog() {
                 <a
                   data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfd9"
                   href="https://www.zensor.com.tw"
-                  className="fullwidth-link w-inline-block"
+                  className="fullwidth-link  w-inline-block"
                   style={{}}
                 >
                   <h2
@@ -345,9 +346,8 @@ export default function Blog() {
                   >
                     無頭網站
                   </h2>
-                  <br />
-                  <br />
-                  <div className="rounded-[30px] bg-[#333] text-[20px] text-white inline-block p-3">
+
+                  <div className="rounded-[30px] bg-[#333] text-[14px] mb-3 md:mb-0 md:text-[20px] text-white inline-block p-3">
                     (高性能｜SEO友善 / 3D交互式網站)
                   </div>
                   <div
@@ -371,6 +371,35 @@ export default function Blog() {
                   </div>
                   <div className="fullwidth-link-bg" style={{}} />
                 </a>
+              </section>
+              <section className="high-performance mt-5 flex  flex-col xl:flex-row justify-center">
+                <div className="justify-center w-full flex-col xl:w-4/5 xl:flex-row flex">
+                  <div className=" w-full xl:w-1/2" data-aos="fade-up">
+                    <img
+                      className="w-full"
+                      src="https://img-c.udemycdn.com/course/750x422/3791116_0ef4_7.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="w-full xl:w-1/2  flex justify-center  items-center">
+                    <div
+                      className="txt p-[20px] xl:p-[40px]"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <b className="text-[40px] font-bold leading-normal">
+                        Next.js + WordPress !!{" "}
+                      </b>
+                      <p className="mt-[10px] leading-[30px]">
+                        Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
+                        的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
+                        CDN 和缓存优化，页面加载速度更快。Next.js
+                        的图像优化和代码拆分功能进一步提升性能。WordPress
+                        提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </section>
               <section className="section">
                 <div className="padding">
@@ -491,6 +520,7 @@ export default function Blog() {
                         </div>
                       </div>
                     </div>
+
                     <section>
                       <div className="service-hero-section mt-[-600px]"></div>
                     </section>
@@ -503,7 +533,97 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
-              <section className=" my-[150px]  relative  z-[999] bg-[#e3e3e3] pt-[100px] h-[135vh]">
+              <section className="section-movie  flex-col xl:flex-row flex">
+                <div className="w-full xl:w-1/2">
+                  <div className="txt p-[20px] xl:p-[60px]">
+                    <h3 className=" text-[40px]">title</h3>
+                    <p className="text-[40px]">tile</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iure nobis, odit quo voluptate enim neque delectus nostrum
+                      ab iusto, laboriosam cumque repellendus, maxime adipisci
+                      sapiente ipsum ratione eaque consequatur ullam.
+                    </p>
+                    <a
+                      href=""
+                      className="bg-blue-700 text-center w-[150px] text-white border inline-block mt-[20px] border-black p-1 "
+                    >
+                      MOEW SAMPLE
+                    </a>
+                  </div>
+                </div>
+                <div className="w-full xl:w-1/2 overflow-hidden">
+                  <Marquee>
+                    <div className="flex">
+                      <div className="w-[500px]  relative border-3 border-[#11a3f7]">
+                        <div className="txt absolute translate-x-1/2 translate-y-1/2 top-[36%] left-[25%]">
+                          <p className="text-[22px] text-white">
+                            title: 企業形象影片
+                          </p>
+                        </div>
+                        <video
+                          poster="/images/Untiteeled-Camera.png"
+                          preload="metadata"
+                          className="w-full"
+                          controls
+                        >
+                          <source
+                            poster="/images/Untiteeled-Camera.png"
+                            autoplay
+                            loop
+                            src="/video/20230215 EIWP數據操作-1080.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div className="w-[500px]  relative border-3 border-[#11a3f7]">
+                        <div className="txt absolute translate-x-1/2 translate-y-1/2 top-[36%] left-[25%]">
+                          <p className="text-[22px] text-white">
+                            title: 企業形象影片
+                          </p>
+                        </div>
+                        <video
+                          poster="/images/788.png"
+                          preload="metadata"
+                          className="w-full"
+                          controls
+                        >
+                          <source
+                            poster="/images/788.png"
+                            autoplay
+                            loop
+                            src="/video/20230215 EIWP數據操作-1080.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div className="w-[500px] group relative border-3 border-[#11a3f7]">
+                        <div className="txt group-hover:top-[30%] duration-700 absolute translate-x-1/2 translate-y-1/2 top-[36%] opacity-0  group-hover:opacity-100 left-[25%]">
+                          <p className="text-[22px] text-white">
+                            title: 企業形象影片
+                          </p>
+                        </div>
+                        <video
+                          poster="/images/行動電源03.png"
+                          preload="metadata"
+                          className="w-full"
+                          controls
+                        >
+                          <source
+                            poster="/images/行動電源03.png"
+                            autoplay
+                            loop
+                            src="/video/20230215 EIWP數據操作-1080.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </div>
+                  </Marquee>
+                </div>
+              </section>
+              s
+              <section className=" my-[150px]  relative  z-[999] bg-[#e3e3e3] pt-[100px] h-[100vh]">
                 <div className="absolute top-[35%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
                   <Carousel05 />
                 </div>
@@ -535,8 +655,11 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
-              <section className="3Dmodel-interaction flex-col flex justify-center items-center">
-                <h2 data-aos="fade-up" className="text-[50px] font-extrabold">
+              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px] md:px-0 items-center">
+                <h2
+                  data-aos="fade-up"
+                  className="text-[26px] xl:text-[50px] font-extrabold"
+                >
                   "3D運用-交互式網頁"
                 </h2>
                 <p
@@ -550,7 +673,7 @@ export default function Blog() {
                   <img
                     data-aos="fade-up"
                     data-aos-delay="500"
-                    className="w-[80%] rounded-xl mx-auto"
+                    className=" w-full xl:w-[80%] rounded-xl mx-auto"
                     src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
                     alt=""
                   />
@@ -566,9 +689,42 @@ export default function Blog() {
                   </div> */}
                 </div>
               </section>
+              <section className="coding-section">
+                <div className="container items-center justify-center  flex-col xl:flex-row py-[50px]  px-0 xl:px-[100px] flex">
+                  <div className="left   w-full xl:w-1/2  p-0 xl:p-[50px]">
+                    <div
+                      className="txt  xl:w-4/5 md:w-2/3 w-full"
+                      data-aos="fade-up"
+                    >
+                      <h4 className="text-[26px] md:text-[50px] font-bold">
+                        title
+                      </h4>
+                      <p>RWD WEBSITE </p>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Expedita nesciunt ipsum, neque incidunt quae
+                        pariatur ipsa odit earum delectus numquam corporis
+                        recusandae nihil reprehenderit ullam nisi atque fuga
+                        beatae! Quasi?
+                      </p>
+                    </div>
+                  </div>
+                  <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
+                    <img
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                      className="rounded-xl"
+                      src="https://cdn.prod.website-files.com/61cbe22a00483909d327afc6/66393c273702f024a84f242c_65e8b9f506df42cdd9122e71_Slide%252016_9%2520-%25208.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </section>
               <section className="section mt-[80px] with-borders">
                 <div className="title text-center">
-                  <h2 className="text-[40px] text-black">SEO OPTIMIXATIOIN </h2>
+                  <h2 className="text-[30px] xl:text-[40px] text-black">
+                    SEO OPTIMIXATIOIN{" "}
+                  </h2>
                   <p className="text-[24px] my-5 text-gray-700">Seo 行銷</p>
                 </div>
                 <div className=" pb-4 pt-3">
@@ -624,7 +780,7 @@ export default function Blog() {
                           />
                         </div>
                       </div>
-                      <p className="paragraph text-[20px] mb-[40px] is-large">
+                      <p className="paragraph text-[16px] xl:text-[20px] mb-[40px] is-large">
                         此slogan專注於定制化和品牌價值，強調公司能夠根據客戶的需求和品牌形象，創造出獨一無二的網站。這表明公司重視客戶的品牌，致力於通過精心設計來提升其品牌價值，使網站成為品牌增值的關鍵一環。
                       </p>
                     </div>
