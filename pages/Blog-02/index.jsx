@@ -443,6 +443,52 @@ export default function Blog() {
             </div>
           </div>
         </div>
+        <Marquee className="bg-black z-[1]">
+          <div className="flex justify-center  py-[20px] items-center">
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+          </div>
+        </Marquee>
         <div id="article-content" className="article-content-section">
           <div
             data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"

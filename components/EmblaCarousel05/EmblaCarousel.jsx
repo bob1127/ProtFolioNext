@@ -98,7 +98,7 @@ const EmblaCarousel = (props) => {
       style={{
         "--slide-height": "19rem",
         "--slide-spacing": "1rem",
-        "--slide-size": "55%",
+        "--slide-size": "22%",
       }}
     >
       <div className="embla__viewport overflow-hidden" ref={emblaRef}>
@@ -124,7 +124,7 @@ const EmblaCarousel = (props) => {
                   height: "100%",
                   userSelect: "none",
                 }}
-                className="embla__slide__number  border-none  md:border bg-white py-[30px] md:border-black  flex flex-col  items-center justify-center font-semibold "
+                className="embla__slide__number  border-none  md:border  py-[30px] md:border-black  flex flex-col  items-center justify-center font-semibold "
               >
                 {/* {index + 1} */}
                 <div className="flex flex-col justify-center items-center ">

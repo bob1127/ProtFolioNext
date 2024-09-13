@@ -31,7 +31,18 @@ export default function Blog() {
   }, []);
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
-      <>
+      <div className="relative">
+        <div className="flex flex-col fixed z-[99999999999] right-0 top-1/2 ">
+          <div className="sidebar bg-blue-700 border border-black  p-1 hover:scale-105 text-white duration-500 ">
+            <b>Welcom to JEEK !!</b>
+          </div>
+          <div className="sidebar border bg-blue-100 text-white border-black  p-1 hover:scale-105 duration-500 ">
+            <b>Welcom to JEEK !!</b>
+          </div>
+          <div className="sidebar bg-blue-700 text-white border border-black  p-1 hover:scale-105 duration-500 ">
+            <b>Welcom to JEEK !!</b>
+          </div>
+        </div>
         <Head>
           {/* <script
             type="application/ld+json"
@@ -56,6 +67,7 @@ export default function Blog() {
             }}
           />
         </Head>
+
         <div className="about-root">
           <div id="webpage" className="page-wrapper">
             <main className="main">
@@ -88,7 +100,7 @@ export default function Blog() {
                       className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
                     >
                       個人工作室｜私人接案 - 花費小預算，
-                      <span className="bg-green-500 inline-block px-4 py-3  w-[150px] text-center">
+                      <span className="bg-blue-700 inline-block px-4 border border-black text-white py-3  w-[150px] text-center">
                         增加大收益
                       </span>
                     </a>
@@ -492,7 +504,7 @@ export default function Blog() {
                 </div>
               </section>
               <section className=" my-[150px]  relative  z-[999] bg-[#e3e3e3] pt-[100px] h-[135vh]">
-                <div className="absolute top-[40%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
+                <div className="absolute top-[35%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
                   <Carousel05 />
                 </div>
                 <div className="relative relative">
@@ -500,7 +512,7 @@ export default function Blog() {
                     Dtag
                   </div>
 
-                  <div className="circle bg-[#f5f3f0] z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[700px]"></div>
+                  <div className="circle bg-[#f5f3f0] z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[400px]"></div>
                   <div className="absolute w-full  left-0 top-0 z-[9]">
                     <iframe
                       src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
@@ -509,33 +521,49 @@ export default function Blog() {
                       height="500px"
                     ></iframe>
                   </div>
-                  <div className="left-txt z-[999] top-[40%] absolute left-[90px]">
-                    <h1 className="text-[60px] mt-[200px] font-bold">
-                      產品建模
+                  <div className="left-txt z-[999] top-[40%] absolute left-[160px]">
+                    <h1 className="text-[30px] mt-[200px] font-bold">
+                      產品建模|商業建模|3D形象影片
                     </h1>
-                    <p className="text-[26px] font-normal ">
-                      試用Blender建模 加上 Spline 3d 做出交互式
+                    <p className=" mb-4 text-[26px] inline-block font-normal ">
+                      試用Blender建模<br></br>Spline 3d 做出交互式
+                    </p>{" "}
+                    <br></br>
+                    <p className="bg-blue-700 inline-block text-white  border-black border">
+                      各類3d建模模型，工業產品
                     </p>
-                    <a
-                      href=""
-                      className="bg-blue-900 inline-block w-[120px] py-3  mt-3 inline-block  text-white flex justify-center items-center  rounded-[30px]"
-                    >
-                      Nore
-                    </a>
                   </div>
                 </div>
               </section>
               <section className="3Dmodel-interaction flex-col flex justify-center items-center">
-                <h2 className="text-[50px] font-extrabold">
+                <h2 data-aos="fade-up" className="text-[50px] font-extrabold">
                   "3D運用-交互式網頁"
                 </h2>
-                <p>3d 建模產品運用在網頁上</p>
-                <div className="flex justify-center">
+                <p
+                  data-aos="fade-up"
+                  className="bg-blue-600 px-6 py-2 text-white border-black border mt-2"
+                  data-aos-delay="300"
+                >
+                  3d 建模產品運用在網頁上
+                </p>
+                <div className="flex mt-[25px] justify-center">
                   <img
+                    data-aos="fade-up"
+                    data-aos-delay="500"
                     className="w-[80%] rounded-xl mx-auto"
-                    src="https://www.vectary.com/website_assets/636cc984003871e3cda597bb/64b9124624a0d8fc835bf4cc_AR%20v2.jpg"
+                    src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
                     alt=""
                   />
+                  {/* <div>
+                    <div className="left"></div>
+                    <div className="right">
+                      <img
+                        className="w-[80%] mx-auto"
+                        src="https://www.vectary.com/website_assets/636cc984003871e3cda597bb/6644c6a1cff6e0d6b867232f_Vectary%20Business%20plan.png"
+                        alt=""
+                      />
+                    </div>
+                  </div> */}
                 </div>
               </section>
               <section className="section mt-[80px] with-borders">
@@ -677,7 +705,10 @@ export default function Blog() {
                       className="cards-wrapper"
                     >
                       <div className="card-title-block">
-                        <h2 className="heading is-extralarge text-[]">
+                        <h2
+                          data-aos="fade-up"
+                          className="heading is-extralarge text-[]"
+                        >
                           你的產品很好，但卻沒讓更多人看見？
                         </h2>
                         <a
@@ -690,6 +721,7 @@ export default function Blog() {
                       </div>
                       <div className="cards">
                         <div
+                          data-aos="fade-down"
                           id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c26b-c41abecd"
                           data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c26b"
                           className="card"
@@ -723,6 +755,7 @@ export default function Blog() {
                           </p>
                         </div>
                         <div
+                          data-aos="fade-right"
                           id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c274-c41abecd"
                           data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c274"
                           className="card"
@@ -751,9 +784,10 @@ export default function Blog() {
                           </div>
                         </div>
                         <div
+                          data-aos="fade-left"
                           id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c27c-c41abecd"
                           data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c27c"
-                          className="card"
+                          className="card group hover:bg-[#ede653] duration-150"
                           style={{}}
                         >
                           <div className="card-icon">
@@ -765,7 +799,9 @@ export default function Blog() {
                             />
                           </div>
                           <div className="card-content">
-                            <p className="card-paragraph">Our Journey</p>
+                            <p className="card-paragraph group-hover:text-white duration-500">
+                              Our Journey
+                            </p>
                             <p className="card-text-small">
                               <img
                                 className="w-full rounded-lg my-3"
@@ -1224,7 +1260,7 @@ export default function Blog() {
             </main>
           </div>
         </div>
-      </>
+      </div>
     </div>
   );
 }

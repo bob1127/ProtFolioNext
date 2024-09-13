@@ -276,6 +276,7 @@ export default function Blog() {
             <div className="gradient-overlay-absolute" />
           </div>
           <div></div>
+
           <div className="article-hero-wrap">
             <div
               style={{
