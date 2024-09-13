@@ -452,6 +452,77 @@ CREACTIVEs</h1>
         <section className="section-embla">
           <EmblaCarousel />
         </section>
+        <section className="section-movie">
+          <div className="movies">
+            <Marquee>
+              <div className="flex">
+                <div className="w-[500px]  relative border-3 border-[#11a3f7]">
+                  <div className="txt absolute translate-x-1/2 translate-y-1/2 top-[36%] left-[25%]">
+                    <p className="text-[22px] text-white">
+                      title: 企業形象影片
+                    </p>
+                  </div>
+                  <video
+                    poster="/images/Untiteeled-Camera.png"
+                    preload="metadata"
+                    className="w-full"
+                    controls
+                  >
+                    <source
+                      poster="/images/Untiteeled-Camera.png"
+                      autoplay
+                      loop
+                      src="/video/20230215 EIWP數據操作-1080.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+                <div className="w-[500px]  relative border-3 border-[#11a3f7]">
+                  <div className="txt absolute translate-x-1/2 translate-y-1/2 top-[36%] left-[25%]">
+                    <p className="text-[22px] text-white">
+                      title: 企業形象影片
+                    </p>
+                  </div>
+                  <video
+                    poster="/images/788.png"
+                    preload="metadata"
+                    className="w-full"
+                    controls
+                  >
+                    <source
+                      poster="/images/788.png"
+                      autoplay
+                      loop
+                      src="/video/20230215 EIWP數據操作-1080.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+                <div className="w-[500px] group relative border-3 border-[#11a3f7]">
+                  <div className="txt group-hover:top-[30%] duration-700 absolute translate-x-1/2 translate-y-1/2 top-[36%] opacity-0  group-hover:opacity-100 left-[25%]">
+                    <p className="text-[22px] text-white">
+                      title: 企業形象影片
+                    </p>
+                  </div>
+                  <video
+                    poster="/images/行動電源03.png"
+                    preload="metadata"
+                    className="w-full"
+                    controls
+                  >
+                    <source
+                      poster="/images/行動電源03.png"
+                      autoplay
+                      loop
+                      src="/video/20230215 EIWP數據操作-1080.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </Marquee>
+          </div>
+        </section>
 
         <section>
           <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3">
@@ -502,8 +573,10 @@ CREACTIVEs</h1>
               />
             </div>
 
-            <div className="border-2 flex flex-col justify-center items-center  p-5  xl:hidden">
-              <h4>網頁設計</h4>
+            <div className="border-2 flex flex-col justify-center items-center p-[50px] xl:p-5  xl:hidden">
+              <h4 className=" text-[24px] xl:text-[30px] font-bold">
+                網頁設計
+              </h4>
               <p className="text-[14px] w-2/3 text-center ">
                 {" "}
                 您的品牌在數位世界中大放異彩！我們專業的網頁設計團隊為您打造獨特且具吸引力的網站，提升用戶體驗，促進業務增長。立即聯絡我們，開啟您的數位成功之旅！

@@ -151,9 +151,17 @@ const EmblaCarousel = (props) => {
       </div>
 
       <div className="embla__controls grid grid-cols-[auto_1fr] justify-between gap-[1.2rem] mt-[1.8rem]">
-        <div className="embla__buttons grid grid-cols-2 gap-[0.6rem] items-center">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        <div className="w-full justify-center items-center">
+          <div className=" w-full mx-auto border border-blue-400">
+            <PrevButton
+              onClick={onPrevButtonClick}
+              disabled={prevBtnDisabled}
+            />
+            <NextButton
+              onClick={onNextButtonClick}
+              disabled={nextBtnDisabled}
+            />
+          </div>
         </div>
 
         <div className="embla__dots">

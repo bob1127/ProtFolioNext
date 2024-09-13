@@ -42,20 +42,13 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
           &times;
         </button>
         <div className="flex px-[10px] xl:px-[30px] xl:flex-row flex-col justify-center items-center h-full ">
-          <div className="w-full border  h-[500px] overflow-scroll border-white relative overflow-y-scroll h-full overflow:scroll xl:w-1/2">
-            <div className="img-wrap w-[90%] mx-auto h-[300px]">
+          <div className="w-full border  overflow-scroll border-white relative overflow-y-scroll h-full overflow:scroll xl:w-1/2">
+            <div className="img-wrap w-full mx-auto ">
               <img
-                src="https://www.apple.com/tw/ipad-10.9/images/overview/design/fan__e9709q800z6u_large_2x.jpg"
+                src="https://craftwork-images.b-cdn.net/wp-content/uploads/edd/2022/10/3-4.png"
                 alt="Expanded view"
-                className="w-full h-full object-contain"
+                className="w-full   object-contain"
               />
-            </div>
-
-            <div className="txt leading-normal font-normal text-white text-[16px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Doloribus, nemo porro? Itaque soluta eveniet cumque illo nisi
-              veritatis doloribus. Nulla, quos officia expedita enim at
-              inventore molestias molestiae aut aliquam?
             </div>
           </div>
           <div className="flex flex-col mt-[20px] w-full xl:w-1/2 justify-start">
