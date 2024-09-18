@@ -14,7 +14,7 @@ import CatoonCursor from "../components/CartoonCursor/page.jsx";
 import { useRef, useEffect } from "react";
 // import PhysicsAnimation from '../components/PhysicsAnimation/PhysicsAnimation.jsx';
 import dynamic from "next/dynamic";
-
+import GsapText from "../components/RevealText/index";
 import VelocityText from "../components/VelocityText/page.jsx";
 import Head from "next/head";
 import Script from "next/script.js";
@@ -352,9 +352,13 @@ CREACTIVEs</h1>
                 <h2
                   data-aos="fade-up"
                   className="text-[40px] lg:text-[80px] flex justify-center  text-[#f5f5f5] leading-[85px] w-full  pt-0 lg:pt-[100px] items-center"
-                >
-                  用視覺創意點亮你的網站
-                </h2>
+                ></h2>{" "}
+                <GsapText
+                  text="  用視覺創意點亮你的網站"
+                  lineHeight="80px"
+                  id="text2"
+                  fontSize="70px"
+                />{" "}
               </div>
 
               <div>

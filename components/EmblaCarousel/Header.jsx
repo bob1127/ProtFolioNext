@@ -1,6 +1,6 @@
 import React from "react";
 import LottieAnimation from "../../components/Lottie/LottieAnimation01.js";
-
+import GsapText from "../../components/RevealText/index";
 const Header = () => (
   <header className="pt-[30px] xl:pt-[80px] pb-[15px] xl:pb-[30px] relative flex-col flex justify-center">
     <div className="absolute w-[200px] md:w-[330px] h-auto right-[-10%] md:right-[15%] top-[5%]">
@@ -11,7 +11,12 @@ const Header = () => (
         className="header text-[#1e1e1e] xl:text-[100px]
     font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] text-[32px]"
       >
-        Website Portfolio
+        <GsapText
+          text="  Website Portfolio"
+          lineHeight="80px"
+          id="text2"
+          fontSize="70px"
+        />{" "}
       </h1>
     </div>
     <div className="absolute left-[-10%] md:left-[10%]   w-[200px] md:w-[330px] h-auto  top-[23%]">

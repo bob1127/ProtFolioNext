@@ -3,6 +3,7 @@ import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image.js";
 import Marquee from "react-fast-marquee";
+import GsapText from "../../components/RevealText/index";
 import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
 import TextMask from "../../components/TextMask/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
@@ -33,7 +34,7 @@ export default function Blog() {
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
       <div className="relative">
-        <div className="flex flex-col fixed z-[99999999999] right-0 top-1/2 ">
+        <div className="md:flex hidden flex-col fixed z-[99999999999] right-0 top-1/2 ">
           <div className="sidebar bg-blue-700 border border-black  p-1 hover:scale-105 text-white duration-500 ">
             <b>Welcom to JEEK !!</b>
           </div>
@@ -387,9 +388,12 @@ export default function Blog() {
                       data-aos="fade-up"
                       data-aos-delay="300"
                     >
-                      <b className="text-[40px] font-bold leading-normal">
-                        Next.js + WordPress !!{" "}
-                      </b>
+                      <GsapText
+                        text=" Next.js + Wordpress"
+                        lineHeight="80px"
+                        id="text2"
+                        fontSize="70px"
+                      />{" "}
                       <p className="mt-[10px] leading-[30px]">
                         Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
                         的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
@@ -398,6 +402,36 @@ export default function Blog() {
                         提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
                       </p>
                     </div>
+                  </div>
+                </div>
+              </section>
+              <section className="px-[100px]">
+                <div className="top mt-4 mb-4 text-[40px] text-center"></div>
+
+                <div className="flex">
+                  <div className="w-1/2 p-8">
+                    <GsapText
+                      text=" 不只快，要美觀"
+                      lineHeight="80px"
+                      id="text2"
+                      fontSize="70px"
+                    />
+
+                    <p className="mt-[10px] leading-[30px]">
+                      Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
+                      的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
+                      CDN 和缓存优化，页面加载速度更快。Next.js
+                      的图像优化和代码拆分功能进一步提升性能。WordPress
+                      提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
+                    </p>
+                  </div>
+                  <div className="w-1/2 p-8">
+                    <Image
+                      src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
+                      width={800}
+                      height={500}
+                      loader={imageLoader}
+                    />
                   </div>
                 </div>
               </section>
@@ -485,7 +519,10 @@ export default function Blog() {
                             >
                               高效的性能與快速的頁面加載
                               <p>
-                                Next.js結合了React的靈活性和靜態站點生成（SSG）的速度，使您的網站在任何設備上都能快速加載。這不僅提高了用戶體驗，還能改善SEO，讓您的網站在搜尋引擎中排名更高。
+                                Next.js結合了React的靈活性和靜態站點生成（SSG）的速度，使您的網站在任何設備上都能快速加載。這不僅提高了用戶體驗，還能改善SEO，
+                                <span className="bg-blue-100">
+                                  讓您的網站在搜尋引擎中排名更高。
+                                </span>
                               </p>
                             </a>
                           </div>
@@ -623,8 +660,8 @@ export default function Blog() {
                 </div>
               </section>
               s
-              <section className=" my-[150px]  relative  z-[999] bg-[#e3e3e3] pt-[100px] h-[100vh]">
-                <div className="absolute top-[35%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
+              <section className=" my-[150px]  relative  z-[999] bg-[#e3e3e3] pt-[100px] h-[110vh]">
+                <div className="absolute top-[50%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
                   <Carousel05 />
                 </div>
                 <div className="relative relative">
@@ -632,7 +669,7 @@ export default function Blog() {
                     Dtag
                   </div>
 
-                  <div className="circle bg-[#f5f3f0] z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[400px]"></div>
+                  <div className="circle z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[400px]"></div>
                   <div className="absolute w-full  left-0 top-0 z-[9]">
                     <iframe
                       src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
@@ -641,10 +678,16 @@ export default function Blog() {
                       height="500px"
                     ></iframe>
                   </div>
-                  <div className="left-txt z-[999] top-[40%] absolute left-[160px]">
+                  <div className="left-txt z-[999] top-[40%] absolute left-[100px]">
                     <h1 className="text-[30px] mt-[200px] font-bold">
                       產品建模|商業建模|3D形象影片
                     </h1>
+                    <GsapText
+                      text=" Spline + Blender"
+                      lineHeight="70px"
+                      id="text2"
+                      fontSize="60px"
+                    />{" "}
                     <p className=" mb-4 text-[26px] inline-block font-normal ">
                       試用Blender建模<br></br>Spline 3d 做出交互式
                     </p>{" "}
@@ -861,12 +904,16 @@ export default function Blog() {
                       className="cards-wrapper"
                     >
                       <div className="card-title-block">
+                        <GsapText
+                          text=" 你的產品很好，但卻沒讓更多人看見？"
+                          lineHeight="80px"
+                          id="text2"
+                          fontSize="70px"
+                        />{" "}
                         <h2
                           data-aos="fade-up"
                           className="heading is-extralarge text-[]"
-                        >
-                          你的產品很好，但卻沒讓更多人看見？
-                        </h2>
+                        ></h2>
                         <a
                           id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
                           href="/about"
@@ -1001,8 +1048,14 @@ export default function Blog() {
                       className="features-content-flex"
                     >
                       <h2 className="heading is-extralarge text-black">
-                        不必高價，也能擁有卓越網頁
+                        <GsapText
+                          text="  不必高價，也能擁有卓越網頁"
+                          lineHeight="80px"
+                          id="text2"
+                          fontSize="70px"
+                        />{" "}
                       </h2>
+
                       <p className="text-[20px] text-black">
                         高效能設計，實惠價格，成就您的品牌
                       </p>

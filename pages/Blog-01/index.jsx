@@ -141,7 +141,7 @@ export default function Blog() {
         </div>
         <div
           id="w-node-_5f982de6-354e-887e-0847-31d84c7e05cc-4c7e05c1"
-          className="nav-trigger"
+          className="nav-trigger hidden md:flex"
         >
           <div className="nav-icon-wrap">
             <div className="nav-burger-icon">
@@ -240,7 +240,7 @@ export default function Blog() {
           <a
             href="javascript:void(0);"
             onclick="window.history.back();"
-            className="fixed-button w-inline-block"
+            className="fixed-button w-inline-block "
           >
             <div className="fixed-button-icon-wrap">
               <img

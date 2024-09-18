@@ -98,7 +98,7 @@ const EmblaCarousel = (props) => {
       style={{
         "--slide-height": "19rem",
         "--slide-spacing": "1rem",
-        "--slide-size": "22%",
+        "--slide-size": "32%",
       }}
     >
       <div className="embla__viewport overflow-hidden" ref={emblaRef}>
@@ -137,6 +137,9 @@ const EmblaCarousel = (props) => {
                       alt={`Slide ${index + 1}`}
                     />
                   )}
+                  <p className="text-[14px] font-light mt-2">
+                    blender + photoshop
+                  </p>
                   <div className="txt mt-[20px] flex-col flex justify-center items-center w-[80%] mx-auto">
                     <b className="text-[18px] text-center">{slide.title}</b>
                     <p className="text-[14px] font-normal text-center">

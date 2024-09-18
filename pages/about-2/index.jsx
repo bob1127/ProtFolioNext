@@ -3,7 +3,7 @@
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
-
+import GsapText from "../../components/RevealText/index";
 import SpringModel from "../../components/SpringModal/page.jsx";
 import Img01 from "../../public/images/Untitled-Camera.png";
 // import Inner from "../../components/Inner/index.jsx";
@@ -28,9 +28,15 @@ export default function Blog() {
           <div id="webpage" className="page-wrapper">
             <main className="main">
               <section className="items-center flex justify-center h-[60vh] flex flex-col items-start justify-start">
-                <h2 className="text:[20px] lg:text-[60px] text-center leading-normal text-black  fontfblack">
+                <GsapText
+                  text=" PortFolio-作品案例"
+                  lineHeight="80px"
+                  id="text2"
+                  fontSize="70px"
+                />{" "}
+                {/* <h2 className="text:[20px] lg:text-[60px] text-center leading-normal text-black  fontfblack">
                   PORTFOLIO<br></br>作品案例
-                </h2>
+                </h2> */}
                 <p className="text-center w-2/3 px-5">
                   這段文字介紹了專案的目標、功能和效果，同時突出了專案的成果。
                 </p>

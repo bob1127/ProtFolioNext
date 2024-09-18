@@ -27,6 +27,8 @@ import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
 import { NextSeo } from "next-seo";
 import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
 import BannerSwiper from "../../components/BannerSwiper/page.jsx";
+import GsapText from "../../components/RevealText/index";
+
 import SpringModal from "../../components/SpringModal/page.jsx";
 import SwiperScroll from "../../components/SwiperScroll/page.jsx";
 import { useState, useEffect } from "react";

@@ -490,10 +490,7 @@ export default function Blog() {
           </div>
         </Marquee>
         <div id="article-content" className="article-content-section">
-          <div
-            data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"
-            className="article-content-container"
-          >
+          <div className="article-content-container w-full sm:w-[80%] xl:w-[60%]">
             <img
               data-aos="zoom-in"
               className="w-full"
@@ -522,7 +519,7 @@ export default function Blog() {
                 {" "}
                 網頁設計的成本因素
               </div>
-              <p className="font-normal leading-[26px]">
+              <p className="font-normal leading-[26px] mb-4 text-[16px]  md:text-[18px]">
                 網頁設計的成本取決於多種因素，包括設計的複雜性、功能需求、網站的規模以及設計師的專業水平。
               </p>
             </div>
@@ -538,25 +535,16 @@ export default function Blog() {
                 <div className="text-[24px] font-bold mt-5 ">
                   理解你的擔憂，量身定制解決方案
                 </div>
-                <p className="font-normal leading-[26px]">
+                <p className="font-normal leading-[30px] text-[16px] md:text-[18px]">
                   作為一家專注於為小型企業提供網頁設計服務的公司，我們完全理解您的擔憂。我們知道，當您考慮為您的企業建立一個網站時，您希望這個網站不僅能展現您的品牌，還能有效地吸引顧客並提升轉化率。然而，高昂的設計費用常常讓人猶豫不決。
                 </p>{" "}
-                <br />
-                <h2 className="text-[40px] mb-3"></h2>
-                <div className="text-[24px] font-bold mt-5 ">
-                  2. 廉價選擇與隱藏成本
-                </div>
-                <p className="font-normal leading-[26px]">
-                  市場上也有許多低成本的網頁設計選擇，如模板網站建設工具或廉價的自由設計師。然而，這些選擇往往帶來隱藏的成本，如功能限制、缺乏定制化、較差的SEO表現，以及未來修改或擴展網站時的額外費用。選擇廉價方案可能在短期內節省成本，但長期來看，可能需要花費更多時間和金錢來解決由此帶來的問題。
-                </p>{" "}
-                <br />
               </div>
               <div className="paragraph" data-aos="fade-up">
                 <h2 className="text-[40px] mb-3"></h2>
                 <div className="text-[24px] font-bold mt-5 ">
                   什麼樣的網站設計能帶來最大價值？
                 </div>
-                <p className="font-normal leading-[26px]">
+                <p className="font-normal leading-[30px] text-[16px] md:text-[18px]">
                   在設計網站時，我們不僅僅關注其外觀，我們更加重視網站能為您帶來什麼樣的實際效益。網站應該是您與顧客之間的橋樑，是展示您品牌價值和吸引潛在客戶的工具。
                   因此，我們採用的設計方案不僅注重美觀，更加強調其功能性和使用者體驗。無論是簡潔的導航、清晰的內容佈局，還是快速的加載速度，我們都力求完美，確保訪客在使用您的網站時感到愉快，並且願意停留更長時間，最終轉化為您的忠實客戶。
                   而這一切，都可以在不超出您預算的情況下實現。我們與您緊密合作，確保每一個細節都符合您的期望，同時保持費用的合理性。
@@ -568,7 +556,7 @@ export default function Blog() {
                 <div className="text-[24px] font-bold mt-5 ">
                   網頁設計的投資回報
                 </div>
-                <p className="font-normal leading-[26px]">
+                <p className="font-normal leading-[30px] text-[16px] md:text-[18px]">
                   雖然高質量的網頁設計初期投入較大，但其帶來的長期回報不容忽視。一個精心設計的網站不僅能吸引更多的訪客，還能提高轉化率，從而直接促進銷售增長。根據研究，消費者通常會根據網站的設計來判斷企業的可信度和專業性。一個優質的網站能夠為您的品牌形象增值，並帶來持續的商機。
                 </p>
               </div>
