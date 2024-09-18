@@ -410,11 +410,11 @@ export default function Index() {
                 <div className="nav-text">Home</div>
               </a>
               <link rel="prefetch" href="/" /> */}
-              <a href="/about-3" className="nav-link-block ">
+              <a href="/Service" className="nav-link-block ">
                 <div className="nav-text">Service</div>
               </a>
 
-              <a href="/about-3" className="nav-link-block ">
+              <a href="/about-2" className="nav-link-block ">
                 <div className="nav-text">Portfolio</div>
               </a>
               {/* <link rel="prefetch" href="/features" /> */}

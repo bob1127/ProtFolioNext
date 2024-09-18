@@ -407,13 +407,11 @@ export default function Blog() {
                       data-aos="fade-up"
                       data-aos-delay="300"
                     >
-                      <GsapText
-                        text=" Next.js + Wordpress"
-                        lineHeight="80px"
-                        id="text2"
-                        fontSize="70px"
-                      />{" "}
-                      <p className="mt-[10px] leading-[30px]">
+                      <GsapText text=" Next.js + Wordpress" id="text1" />{" "}
+                      <p
+                        className="mt-[10px] leading-[30px]"
+                        data-aos="fade-up"
+                      >
                         Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
                         的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
                         CDN 和缓存优化，页面加载速度更快。Next.js
@@ -427,30 +425,47 @@ export default function Blog() {
               <section className="px-[100px]">
                 <div className="top mt-4 mb-4 text-[40px] text-center"></div>
 
-                <div className="flex">
-                  <div className="w-1/2 p-8">
+                <div className="flex  flex-col xl:flex-row">
+                  <div className="xl:w-1/2 w-full p-0 md:p-8">
                     <GsapText
+                      className="responsive-text"
                       text=" 不只快，要美觀"
-                      lineHeight="80px"
                       id="text2"
-                      fontSize="70px"
                     />
-
-                    <p className="mt-[10px] leading-[30px]">
+                    <p className="mt-[10px] leading-[30px]" data-aos="fade-up">
                       Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
                       的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
                       CDN 和缓存优化，页面加载速度更快。Next.js
                       的图像优化和代码拆分功能进一步提升性能。WordPress
                       提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
                     </p>
+                    <a
+                      href="https://next-wp0004.vercel.app"
+                      data-aos="fade-up"
+                      className="bg-blue-600  px-6 py-2 text-white border-black border mt-4"
+                      data-aos-delay="300"
+                    >
+                      看範例 GO
+                    </a>
                   </div>
-                  <div className="w-1/2 p-8">
-                    <Image
+                  <div className=" w-full xl:w-1/2 h-[600px] relative overflow-hidden p-8">
+                    {/* <Image
                       src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
                       width={800}
                       height={500}
                       loader={imageLoader}
-                    />
+                    /> */}
+                    {/* <img
+                      className="w-[500px]"
+                      src="./images/peromace.png"
+                      alt=""
+                    /> */}
+                    <Image
+                      src="https://www.ultraehp.com/images/peromace.png"
+                      className="scale-105  absolute right-0  md:right-[-100px]"
+                      height={500}
+                      width={600}
+                    ></Image>
                   </div>
                 </div>
               </section>
@@ -704,7 +719,7 @@ export default function Blog() {
                     <GsapText
                       text=" Spline + Blender"
                       lineHeight="70px"
-                      id="text2"
+                      id="text3"
                       fontSize="60px"
                     />{" "}
                     <p className=" mb-4 text-[26px] inline-block font-normal ">
@@ -925,9 +940,7 @@ export default function Blog() {
                       <div className="card-title-block">
                         <GsapText
                           text=" 你的產品很好，但卻沒讓更多人看見？"
-                          lineHeight="80px"
-                          id="text2"
-                          fontSize="70px"
+                          id="text4"
                         />{" "}
                         <h2
                           data-aos="fade-up"
@@ -1069,9 +1082,7 @@ export default function Blog() {
                       <h2 className="heading is-extralarge text-black">
                         <GsapText
                           text="  不必高價，也能擁有卓越網頁"
-                          lineHeight="80px"
-                          id="text2"
-                          fontSize="70px"
+                          id="text5"
                         />{" "}
                       </h2>
 

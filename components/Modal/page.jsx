@@ -44,11 +44,11 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
         <div className="flex px-[10px] xl:px-[30px] xl:flex-row flex-col justify-center items-center h-full ">
           <div className="w-full border  overflow-scroll border-white relative overflow-y-scroll h-full overflow:scroll xl:w-1/2">
             <div className="img-wrap w-full mx-auto ">
-              <img
+              {/* <img
                 src="https://craftwork-images.b-cdn.net/wp-content/uploads/edd/2022/10/3-4.png"
                 alt="Expanded view"
                 className="w-full   object-contain"
-              />
+              /> */}
             </div>
           </div>
           <div className="flex flex-col mt-[20px] w-full xl:w-1/2 justify-start">

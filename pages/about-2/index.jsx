@@ -27,19 +27,21 @@ export default function Blog() {
         <div className="about-root">
           <div id="webpage" className="page-wrapper">
             <main className="main">
-              <section className="items-center flex justify-center h-[60vh] flex flex-col items-start justify-start">
-                <GsapText
-                  text=" PortFolio-作品案例"
-                  lineHeight="80px"
-                  id="text2"
-                  fontSize="70px"
-                />{" "}
+              <section className="items-center flex justify-center h-auto mt-[150px] flex flex-col items-start justify-start">
+                <div className="flex justify-center flex-col items-center">
+                  <GsapText
+                    text=" PortFolio-作品案例"
+                    lineHeight="80px"
+                    id="text2"
+                    fontSize="70px"
+                  />
+                  <p className="text-center w-2/3 px-5">
+                    這段文字介紹了專案的目標、功能和效果，同時突出了專案的成果。
+                  </p>
+                </div>
                 {/* <h2 className="text:[20px] lg:text-[60px] text-center leading-normal text-black  fontfblack">
                   PORTFOLIO<br></br>作品案例
                 </h2> */}
-                <p className="text-center w-2/3 px-5">
-                  這段文字介紹了專案的目標、功能和效果，同時突出了專案的成果。
-                </p>
               </section>
               <section id="explore" className="section with-bg-dark">
                 <div className="padding small-paddings">

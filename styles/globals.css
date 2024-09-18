@@ -10273,6 +10273,29 @@ blockquote{
   left: 4rem;
   transform: scale(2);
 }
+/* styles.css */
+.responsive-text {
+  font-size: 50px !important; /* 默认大小 */
+  line-height: 60px !important; /* 设定的行高 */
+}
+
+@media (max-width: 1200px) {
+  .responsive-text {
+    font-size: 50px; /* 中等屏幕大小 */
+  }
+}
+
+@media (max-width: 800px) {
+  .responsive-text {
+     font-size: 50px; /* 小屏幕大小 */
+  }
+}
+
+@media (max-width: 500px) {
+  .responsive-text {
+    font-size: 50px; /* 非常小屏幕大小 */
+  }
+}
 
 /* .card-slider .item {
   position: absolute;

@@ -19,6 +19,8 @@ import {
 } from "@nextui-org/react";
 import MailchimpForm from "../../components/NewsletterForm.jsx";
 import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
+// import GsapText from "../components/RevealText/index";
+
 import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
@@ -422,9 +424,15 @@ export default function Blog() {
 
             <section className="marketing hidden">
               <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 mx-auto">
-                <h2 className="heading is-medium-title text-center">
+                <GsapText
+                  text=' "對於增加網路曝光度，我該如何選擇我的行銷方式" '
+                  lineHeight="60px"
+                  id="text1"
+                  fontSize="50px"
+                />
+                {/* <h2 className="heading is-medium-title text-center">
                   "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
-                </h2>
+                </h2> */}
                 <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
                   在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
                 </p>
@@ -567,7 +575,13 @@ export default function Blog() {
                   textAlign: "center",
                 }}
               >
-                "為什麼要選擇自由接案者？"
+                <GsapText
+                  text=' "為什麼要選擇FreeLancer" '
+                  lineHeight="70px"
+                  id="text2"
+                  fontSize="60px"
+                />
+                {/* "為什麼要選擇自由接案者？" */}
               </h2>
               <p className="text-center text-[16px] xl:text-[22px] md:text-[26px] ">
                 選擇JEEK 幫助您實現創意發想
@@ -642,10 +656,17 @@ export default function Blog() {
                           textAlign: "center",
                         }}
                       >
-                        "選擇適合你的方案"
+                        {/* "選擇適合你的方案" */}
+                        <GsapText
+                          text=' "選擇適合你的方案" '
+                          lineHeight="70px"
+                          id="text3"
+                          fontSize="60px"
+                        />
                       </h2>
                     </div>
                     <div
+                      data-aos="fade-up"
                       className="jobs"
                       style={{ display: "flex", padding: 0 }}
                     >
@@ -654,9 +675,13 @@ export default function Blog() {
                         className="job-card"
                         srtyle="width:400px; display:flex; flex-direction:column"
                       >
-                        <p className="job-card-role">套版網站(NT.40000)</p>
+                        <p className="job-card-role">套版網站(NT.35000)</p>
+
                         <span>
                           <div style={{ margin: 0, padding: 0 }}>
+                            <p className="plan-item  text-[20px] font-bold">
+                              首頁+分頁五頁
+                            </p>
                             <p className="plan-item text-[22px]">
                               <span className="text-[20px] font-bold">
                                 現成模板選擇：
@@ -675,6 +700,14 @@ export default function Blog() {
                             </p>
                             <p className="plan-item text-[22px]">
                               <span className="text-[20px] font-bold">
+                                基本網頁圖片：
+                              </span>
+                              <p className="text-[16px]">
+                                基本產品圖 ｜ 形象圖 ｜ Hero Image
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
                                 預設設計風格：
                               </span>
                               <p className="text-[16px]">
@@ -683,14 +716,9 @@ export default function Blog() {
                             </p>
                             <p className="plan-item text-[22px]">
                               <span className="text-[20px] font-bold">
-                                含首年年度維護與主機空間:
+                                含首年度主機空間＋網域
                               </span>
-                              <p className="text-[16px]">
-                                根據選擇的模板風格進行色彩和圖片的調整。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              可依需求客製化功能
+                              <p className="text-[16px]">如有需求可在加購</p>
                             </p>
                           </div>
                         </span>
@@ -742,6 +770,70 @@ export default function Blog() {
                         {/* <div style="height: 400px;">
                 Title
               </div> */}
+                      </div>
+                      <div
+                        id="w-node-_01078e3d-0c2e-e80d-0be2-5a38ca83ccf4-35a2ecda"
+                        className="job-card bg-blue-200"
+                      >
+                        <p className="job-card-role">客製化網站(NT.80000)</p>
+                        <span>
+                          <div style={{ margin: 0, padding: 0 }}>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                電子商務功能：
+                              </span>
+                              <p className="text-[16px]">
+                                購物車、結帳系統和金流串接。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                響應式設計：
+                              </span>
+                              <p className="text-[16px]">
+                                確保網站在各種設備上良好顯示，並支持移動設備購物。
+                              </p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                SEO 和行銷工具：
+                              </span>
+                              <p className="text-[16px]">SEO 優化和行銷工具</p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                含首年度主機空間+網域:
+                              </span>
+                              <p className="text-[16px]"></p>
+                            </p>
+                            <p className="plan-item text-[22px]">
+                              <span className="text-[20px] font-bold">
+                                可以需求客製化
+                              </span>
+                              <p className="text-[16px]">
+                                可依顧客需求客製化版面
+                              </p>
+                            </p>
+                          </div>
+                        </span>
+
+                        <div className="job-card-link-flex">
+                          <p className="simple-link">
+                            <div className="flex flex-wrap  gap-3">
+                              {backdrops.map((b) => (
+                                <Button
+                                  key={b}
+                                  variant="flat"
+                                  color="warning"
+                                  onPress={() => handleOpen(b)}
+                                  className="capitalize"
+                                >
+                                  {b}
+                                </Button>
+                              ))}
+                            </div>
+                          </p>
+                        </div>
                       </div>
                       <div
                         id="w-node-_90fc4fc9-5875-a940-a16d-30733a08bafa-35a2ecda"
@@ -827,69 +919,6 @@ export default function Blog() {
                           </p>
                         </div>
                       </div>
-                      <div
-                        id="w-node-_01078e3d-0c2e-e80d-0be2-5a38ca83ccf4-35a2ecda"
-                        className="job-card bg-blue-200"
-                      >
-                        <p className="job-card-role">客製化網站(NT.80000)</p>
-                        <span>
-                          <div style={{ margin: 0, padding: 0 }}>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                電子商務功能：
-                              </span>
-                              <p className="text-[16px]">
-                                包括產品目錄、購物車、結帳系統和支付閘道集成。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                響應式設計：
-                              </span>
-                              <p className="text-[16px]">
-                                確保網站在各種設備上良好顯示，並支持移動設備購物。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                SEO 和行銷工具：
-                              </span>
-                              <p className="text-[16px]">
-                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                含首年年度維護與主機空間:
-                              </span>
-                              <p className="text-[16px]">
-                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              可依需求客製化功能
-                            </p>
-                          </div>
-                        </span>
-
-                        <div className="job-card-link-flex">
-                          <p className="simple-link">
-                            <div className="flex flex-wrap  gap-3">
-                              {backdrops.map((b) => (
-                                <Button
-                                  key={b}
-                                  variant="flat"
-                                  color="warning"
-                                  onPress={() => handleOpen(b)}
-                                  className="capitalize"
-                                >
-                                  {b}
-                                </Button>
-                              ))}
-                            </div>
-                          </p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -905,7 +934,12 @@ export default function Blog() {
               <div className="flex justify-center w-full">
                 <div className="title  mb-6 ">
                   <h2 className="text-[40px]  text-black font-extrabold">
-                    網頁設計流程
+                    <GsapText
+                      text=' " 網頁設計流程" '
+                      lineHeight="70px"
+                      id="text4"
+                      fontSize="60px"
+                    />
                   </h2>
                   <p className="text-[14px]">
                     您可以跟我們溝通需求，並確認流程

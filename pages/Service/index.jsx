@@ -13,6 +13,7 @@ import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
+import GsapText from "../../components/RevealText/index";
 import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
 import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
 import BannerSwiper from "../../components/BannerSwiper/page.jsx";
@@ -688,12 +689,18 @@ export default function Blog() {
                         <div className="dot" />
                         <p className="paragraph">網頁設計</p>
                       </div> */}
-                      <h2
+                      {/* <h2
                         className="heading is-medium-title"
                         data-aos="fade-up"
                       >
                         "移動設備體驗優化 "
-                      </h2>
+                      </h2> */}
+                      <GsapText
+                        text=' "移動設備體驗優化" '
+                        lineHeight="60px"
+                        id="text1"
+                        fontSize="50px"
+                      />
                       <div className="flex items-start flex-col ">
                         <div className="mb-6 flex flex-col items-start">
                           <b className="text-[22px] leading-normal">
@@ -875,9 +882,15 @@ export default function Blog() {
                         <div className="dot" />
                         <p className="paragraph">網頁設計</p>
                       </div> */}
-                      <h2 className="heading is-medium-title">
+                      {/* <h2 className="heading is-medium-title">
                         "移動設備體驗優化 "
-                      </h2>
+                      </h2> */}
+                      <GsapText
+                        text=' "移動設備體驗優化" '
+                        lineHeight="60px"
+                        id="text2"
+                        fontSize="50px"
+                      />
                       <div className="flex items-start flex-col ">
                         <div className="mb-6 flex flex-col items-start">
                           <b className="text-[22px] leading-normal">
@@ -940,9 +953,21 @@ export default function Blog() {
             </section>
             <section className="marketing ">
               <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 mx-auto">
-                <h2 className="heading is-medium-title text-center">
+                {/* <h2 className="heading is-medium-title text-center">
                   "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
-                </h2>
+                </h2> */}
+                <GsapText
+                  text=' "對於增加網路曝光度" '
+                  lineHeight="60px"
+                  id="text3"
+                  fontSize="50px"
+                />
+                <GsapText
+                  text=' "我該如何選擇行銷方式" '
+                  lineHeight="60px"
+                  id="text4"
+                  fontSize="50px"
+                />
                 <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
                   在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
                 </p>
@@ -1168,9 +1193,15 @@ export default function Blog() {
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
                       className="about-grid-content"
                     >
-                      <h2 className="heading is-medium-title">
+                      {/* <h2 className="heading is-medium-title">
                         "網頁結構優化"
-                      </h2>
+                      </h2> */}
+                      <GsapText
+                        text=' "網頁結構優化" '
+                        lineHeight="60px"
+                        id="text5"
+                        fontSize="50px"
+                      />
                       <div className="flex flex-col ">
                         <h5 className="text-[20px] text-left mt-4 font-black">
                           有效的標題標籤 (Heading Tags) 使用
@@ -1289,9 +1320,15 @@ export default function Blog() {
                         <div className="dot" />
                         <p className="paragraph">網頁設計</p>
                       </div> */}
-                      <h2 className="heading flex items-start justify-start  is-medium-title">
-                        "3D 建模"
-                      </h2>
+
+                      {/* </h2> */}
+
+                      <GsapText
+                        text=' "3D 建模" '
+                        lineHeight="60px"
+                        id="text6"
+                        fontSize="50px"
+                      />
                       <div className="flex w-full  flex-col items-start">
                         <b className="mb-3 text-[16px]">3d model for website</b>
                         <div className="flex">
@@ -1371,9 +1408,18 @@ export default function Blog() {
                   </div>
                   <div className="bottom " data-aos="fade-up">
                     <p className="text-[12px] font-bold">Design by Website</p>
+                    {/* 
+
                     <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
                       使用 3D 模型製作網頁橫幅和產品圖的好處
-                    </h3>
+                    </h3> */}
+
+                    <GsapText
+                      text="  使用 3D 模型製作網頁橫幅和產品圖的好處"
+                      lineHeight="60px"
+                      id="text7"
+                      fontSize="50px"
+                    />
 
                     <b className="text-[22px] mt-[50px]">Author Name</b>
                     <br />

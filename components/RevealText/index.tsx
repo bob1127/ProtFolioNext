@@ -1,37 +1,46 @@
-// GsapText.tsx
-"use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
 
 interface GsapTextProps {
   text: string;
-  fontSize?: string;
-  lineHeight?: string;
-  id?: string; // Add id or className prop for unique identification
+  id?: string;
 }
 
-const GsapText: React.FC<GsapTextProps> = ({
-  text,
-  fontSize = "7rem",
-  lineHeight = "90px",
-  id, // Accept id prop
-}) => {
+const GsapText: React.FC<GsapTextProps> = ({ text, id }) => {
   const textRef = useRef<HTMLParagraphElement>(null);
+  const [fontSize, setFontSize] = useState<string>("50px"); // 默认字体大小
+
+  useEffect(() => {
+    const updateFontSize = () => {
+      const width = window.innerWidth;
+      if (width < 500) {
+        setFontSize("32px");
+      } else if (width < 800) {
+        setFontSize("40px");
+      } else if (width < 1200) {
+        setFontSize("50px");
+      } else {
+        setFontSize("50px");
+      }
+    };
+
+    updateFontSize(); // 设置初始字体大小
+    window.addEventListener("resize", updateFontSize); // 监听窗口大小变化
+
+    return () => {
+      window.removeEventListener("resize", updateFontSize); // 清理事件监听
+    };
+  }, []);
 
   useEffect(() => {
     if (!textRef.current) return;
 
     const myText = new SplitType(textRef.current, { types: "chars" });
-
-    // Add some debugging
-    console.log("SplitType Result:", myText);
-
     const handleAnimation = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           gsap.to(`#${id} .char`, {
-            // Use the unique id to target the chars
             y: 0,
             stagger: 0.03,
             delay: 0.4,
@@ -46,24 +55,20 @@ const GsapText: React.FC<GsapTextProps> = ({
       threshold: 0.1,
     });
 
-    if (textRef.current) {
-      observer.observe(textRef.current);
-    }
+    observer.observe(textRef.current);
 
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
-      }
+      observer.unobserve(textRef.current);
     };
   }, [text, id]);
 
   return (
     <p
       ref={textRef}
-      id={id} // Set the id for unique targeting
+      id={id}
       style={{
-        fontSize,
-        lineHeight,
+        fontSize, // 使用动态字体大小
+        lineHeight: "80px", // 设置行高
         textTransform: "uppercase",
         fontFamily: "'Bebas Neue', sans-serif",
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
