@@ -52,7 +52,7 @@ export default function Blog() {
         }}
       />
       <div className="relative">
-        <div className="md:flex hidden flex-col fixed z-[99999999999] right-0 top-1/2 ">
+        <div className="md:flex hidden flex-col fixed z-[99999999999] hover:right-0 duration-500 right-[-100px] top-1/2 ">
           <div className="sidebar bg-blue-700 text-white border border-black  p-1 hover:scale-105 duration-500 ">
             <b>Welcom to JEEK !!</b>
           </div>
