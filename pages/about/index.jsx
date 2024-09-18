@@ -50,7 +50,6 @@ export default function Blog() {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
           /> */}
-
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -58,12 +57,32 @@ export default function Blog() {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 name: "極客網頁設計-提升搜尋排名",
-                url: "https://www.ultraehp.com",
+                url: "https://prot-folio-next.vercel.app",
+                description:
+                  "提供專業的網頁設計與搜尋引擎優化服務，幫助客戶提升線上能見度。",
                 potentialAction: {
                   "@type": "SearchAction",
                   target:
-                    "https://yourwebsite.com/search?q={search_term_string}",
+                    "https://prot-folio-next.vercel.app/search?query={search_term_string}",
                   "query-input": "required name=search_term_string",
+                },
+                sameAs: [
+                  "https://www.facebook.com/yourpage",
+                  "https://www.instagram.com/yourprofile",
+                  "https://www.twitter.com/yourprofile",
+                ],
+                image: "https://prot-folio-next.vercel.app/logo.png",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://prot-folio-next.vercel.app/logo.png",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "極客網頁設計",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://prot-folio-next.vercel.app/logo.png",
+                  },
                 },
               }),
             }}
