@@ -2,6 +2,7 @@ import React from "react";
 import Script from "next/script";
 import Head from "next/head";
 import Image from "next/image.js";
+import { NextSeo } from "next-seo";
 import Marquee from "react-fast-marquee";
 import GsapText from "../../components/RevealText/index";
 import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
@@ -33,16 +34,35 @@ export default function Blog() {
   }, []);
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
+      <NextSeo
+        title="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        openGraph={{
+          title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          description:
+            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+          images: [
+            {
+              url: "https://www.example.com/og-home.jpg",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+            },
+          ],
+        }}
+      />
       <div className="relative">
         <div className="md:flex hidden flex-col fixed z-[99999999999] right-0 top-1/2 ">
-          <div className="sidebar bg-blue-700 border border-black  p-1 hover:scale-105 text-white duration-500 ">
+          <div className="sidebar bg-blue-700 text-white border border-black  p-1 hover:scale-105 duration-500 ">
             <b>Welcom to JEEK !!</b>
           </div>
           <div className="sidebar border bg-blue-100 text-white border-black  p-1 hover:scale-105 duration-500 ">
-            <b>Welcom to JEEK !!</b>
+            <a href="/Contact" className="text-whtie font-bold">
+              Send Message to Email
+            </a>
           </div>
-          <div className="sidebar bg-blue-700 text-white border border-black  p-1 hover:scale-105 duration-500 ">
-            <b>Welcom to JEEK !!</b>
+          <div className="sidebar bg-blue-700 border border-black  p-1 hover:scale-105 text-white  duration-500 ">
+            <b>Contact with Line</b>
           </div>
         </div>
         <Head>
@@ -50,6 +70,7 @@ export default function Blog() {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
           /> */}
+
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
@@ -57,32 +78,11 @@ export default function Blog() {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 name: "極客網頁設計-提升搜尋排名",
-                url: "https://prot-folio-next.vercel.app",
-                description:
-                  "提供專業的網頁設計與搜尋引擎優化服務，幫助客戶提升線上能見度。",
+                url: "https://www.ultraehp.com",
                 potentialAction: {
                   "@type": "SearchAction",
-                  target:
-                    "https://prot-folio-next.vercel.app/search?query={search_term_string}",
+                  target: "https://prot-folio-next.vercel.app/about",
                   "query-input": "required name=search_term_string",
-                },
-                sameAs: [
-                  "https://www.facebook.com/yourpage",
-                  "https://www.instagram.com/yourprofile",
-                  "https://www.twitter.com/yourprofile",
-                ],
-                image: "https://prot-folio-next.vercel.app/logo.png",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://prot-folio-next.vercel.app/logo.png",
-                },
-                publisher: {
-                  "@type": "Organization",
-                  name: "極客網頁設計",
-                  logo: {
-                    "@type": "ImageObject",
-                    url: "https://prot-folio-next.vercel.app/logo.png",
-                  },
                 },
               }),
             }}
