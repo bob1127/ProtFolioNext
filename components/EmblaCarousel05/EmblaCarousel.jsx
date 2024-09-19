@@ -94,7 +94,7 @@ const EmblaCarousel = (props) => {
 
   return (
     <div
-      className="embla w-[100%] py-[30px] m-auto"
+      className="embla w-[100vw] md:w-[100%] py-[30px] m-auto"
       style={{
         "--slide-height": "19rem",
         "--slide-spacing": "1rem",
@@ -103,12 +103,12 @@ const EmblaCarousel = (props) => {
     >
       <div className="embla__viewport overflow-hidden" ref={emblaRef}>
         <div
-          className="embla__container flex touch-pan-y touch-pinch-zoom h-[400px] "
+          className="embla__container flex touch-pan-y touch-pinch-zoom h-[200px] md:h-[400px] "
           style={{ marginLeft: "calc(var(--slide-spacing) * -1)" }}
         >
           {slides.map((slide, index) => (
             <div
-              className=" embla__slides transform flex-none h-full min-w-0 "
+              className=" embla__slides transform flex-none h-[200px] md:h-full min-w-0 "
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",

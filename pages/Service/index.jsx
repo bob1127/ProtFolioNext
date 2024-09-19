@@ -9,6 +9,8 @@ import {
   getKeyValue,
 } from "@nextui-org/react";
 // import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
+import { NextSeo } from "next-seo";
+
 import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
@@ -136,6 +138,58 @@ export default function Blog() {
   }, []);
   return (
     <>
+      <NextSeo
+        title="服務項目-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        openGraph={{
+          title: "服務項目-極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          description:
+            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+          images: [
+            {
+              url: "https://www.example.com/og-home.jpg",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+            },
+          ],
+        }}
+        additionalLinkTags={[
+          {
+            rel: "alternate",
+            hrefLang: "zh-TW",
+            href: "https://www.example.com/tw", // 設定台灣地區的 URL
+          },
+          {
+            rel: "alternate",
+            hrefLang: "en-US",
+            href: "https://www.example.com/us", // 設定美國地區的 URL
+          },
+          {
+            rel: "alternate",
+            hrefLang: "x-default",
+            href: "https://www.example.com", // 預設語言版本
+          },
+        ]}
+        additionalMetaTags={[
+          {
+            name: "geo.region",
+            content: "TW-TXG", // 台中地區代碼
+          },
+          {
+            name: "geo.placename",
+            content: "Taichung", // 台中市
+          },
+          {
+            name: "geo.position",
+            content: "24.1477;120.6736", // 台中的經緯度
+          },
+          {
+            name: "ICBM",
+            content: "24.1477, 120.6736", // 與 geo.position 相同
+          },
+        ]}
+      />
       <div>
         <div id="webpage" className="page-wrapper">
           <main className="main">
@@ -379,7 +433,7 @@ export default function Blog() {
             </div> */}
 
             <Marquee>
-              <div className=" bg-black flex w-[100vw] w-full py-[40px]">
+              <div className=" bg-blue-700 flex w-[100vw] w-full py-[40px]">
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   WEBSITE
                   <img
@@ -388,7 +442,7 @@ export default function Blog() {
                     className="mx-3 w-[220px]"
                   />
                 </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white border-r border-[#b6b6b6] font-black">
                   SEO
                   <img
                     src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
@@ -396,7 +450,7 @@ export default function Blog() {
                     className="mx-3 w-[220px]"
                   />
                 </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
+                <div className="text-[20px] border-r border-[#b6b6b6] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   PHOTOGRAPHY
                   <img
                     src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
@@ -404,7 +458,7 @@ export default function Blog() {
                     className="mx-3 w-[220px]"
                   />
                 </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
+                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white border-r border-[#b0b0b0] font-black">
                   STAGE
                   <img
                     src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
@@ -951,6 +1005,19 @@ export default function Blog() {
                 </div>
               </div>
             </section>
+            {/* <section className="bg-blue-700 my-[50px] py-[80px]">
+              <div className="txt flex flex-col justify-center items-center">
+                <h1 className="text-white text-center text-[60px]">
+                  歡迎聯繫我
+                </h1>
+                <p className="text-white">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero accusantium eaque ipsum culpa porro. Ab minima
+                  consectetur recusandae facilis, omnis nemo maxime quis illum
+                  ad. Provident sint sunt ex debitis.
+                </p>
+              </div>
+            </section> */}
             <section className="marketing ">
               <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 mx-auto">
                 {/* <h2 className="heading is-medium-title text-center">
@@ -1447,9 +1514,9 @@ export default function Blog() {
               </div>
             </section>
             {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}
-            <div>
+            {/* <div>
               <BannerSwiper />
-            </div>
+            </div> */}
 
             <b className="text-[20px]">以上價格皆為大約 實際價格可以再討論</b>
           </main>

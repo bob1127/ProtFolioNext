@@ -229,7 +229,7 @@ CREACTIVEs</h1>
                 alt=""
               />
             </div>
-            <div className="bottom  flex py-[50px] lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
+            <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h2 className=" ">"創意無限，讓您的品牌脫穎而出。"</h2>
               <p className=" text-center">
                 專注打造符合您品牌形象的網站，量身定制<br></br>
@@ -407,7 +407,7 @@ CREACTIVEs</h1>
                 Go to about us
               </Link> */}
               <h2 className="text-white">網頁主體視覺</h2>
-              <p className=" text-[#292929] w-3/4 text-center ">
+              <p className="  text-white w-3/4 text-center ">
                 創造一個引人入勝的網頁主體視覺，通過精心設計的 Banner、震撼的
                 Hero Image
                 和高質量的產品攝影來強化品牌形象並吸引訪客。這種多層次的視覺策略將幫助您在用戶進入網站的第一時間就感受到品牌的獨特魅力。
@@ -453,7 +453,7 @@ CREACTIVEs</h1>
             </div>
           </div>
         </section>
-        <section className="section-embla">
+        <section className="section-embla my-[60px] md:my-0">
           <EmblaCarousel />
         </section>
         <section className="section-movie">

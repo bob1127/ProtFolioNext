@@ -422,7 +422,7 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
-              <section className="px-[100px]">
+              <section className="px-[20px] md:px-[50px] xl:px-[100px]">
                 <div className="top mt-4 mb-4 text-[40px] text-center"></div>
 
                 <div className="flex  flex-col xl:flex-row">
@@ -448,7 +448,7 @@ export default function Blog() {
                       看範例 GO
                     </a>
                   </div>
-                  <div className=" w-full xl:w-1/2 h-[600px] relative overflow-hidden p-8">
+                  <div className=" w-full xl:w-1/2 h-auto xl:h-[600px] relative overflow-hidden p-8">
                     {/* <Image
                       src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
                       width={800}
@@ -462,7 +462,7 @@ export default function Blog() {
                     /> */}
                     <Image
                       src="https://www.ultraehp.com/images/peromace.png"
-                      className="scale-105  absolute right-0  md:right-[-100px]"
+                      className="scale-105  static md:absolute right-0  md:right-[-100px]"
                       height={500}
                       width={600}
                     ></Image>
@@ -694,26 +694,15 @@ export default function Blog() {
                 </div>
               </section>
               s
-              <section className=" my-[150px]  relative  z-[999] bg-[#e3e3e3] pt-[100px] h-[110vh]">
-                <div className="absolute top-[50%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
-                  <Carousel05 />
-                </div>
+              <section className=" my-[50px]  md:my-[150px]  relative  z-[999] bg-[#e3e3e3] md:pt-[100px] pt-0  md:h-[110vh]">
                 <div className="relative relative">
-                  <div className="drag-circle absolute items-center flex justify-center z-[999999] left-[40%] bg-black w-[60px] h-[60px] rounded-full text-white  text-[20px] font-bold">
+                  <div className="drag-circle absolute items-center md:flex justify-center z-[999999] left-[40%] hidden  bg-black w-[60px] h-[60px] rounded-full text-white  text-[20px] font-bold">
                     Dtag
                   </div>
 
-                  <div className="circle z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[400px]"></div>
-                  <div className="absolute w-full  left-0 top-0 z-[9]">
-                    <iframe
-                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
-                      frameborder="0"
-                      width="100%"
-                      height="500px"
-                    ></iframe>
-                  </div>
-                  <div className="left-txt z-[999] top-[40%] absolute left-[100px]">
-                    <h1 className="text-[30px] mt-[200px] font-bold">
+                  {/* <div className="circle z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[400px]"></div> */}
+                  <div className="left-txt z-[999] top-0 md:top-[40%] static md:absolute left-[100px] md:px-0 p-[30px]">
+                    <h1 className="text-[30px] mt-[20px] md:mt-[200px] font-bold">
                       產品建模|商業建模|3D形象影片
                     </h1>
                     <GsapText
@@ -730,9 +719,20 @@ export default function Blog() {
                       各類3d建模模型，工業產品
                     </p>
                   </div>
+                  <div className=" static md:absolute w-full  left-0 top-0 z-[9]">
+                    <iframe
+                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                      frameborder="0"
+                      width="100%"
+                      height="500px"
+                    ></iframe>
+                  </div>
+                </div>
+                <div className="static md:absolute top-0 md:top-[50%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
+                  <Carousel05 />
                 </div>
               </section>
-              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px] md:px-0 items-center">
+              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 items-center">
                 <h2
                   data-aos="fade-up"
                   className="text-[26px] xl:text-[50px] font-extrabold"
@@ -750,7 +750,7 @@ export default function Blog() {
                   <img
                     data-aos="fade-up"
                     data-aos-delay="500"
-                    className=" w-full xl:w-[80%] rounded-xl mx-auto"
+                    className=" w-full xl:w-[80%] rounded-none md:rounded-xl mx-auto"
                     src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
                     alt=""
                   />
@@ -790,7 +790,7 @@ export default function Blog() {
                     <img
                       data-aos="fade-up"
                       data-aos-delay="300"
-                      className="rounded-xl"
+                      className="rounded-none md:rounded-xl"
                       src="https://cdn.prod.website-files.com/61cbe22a00483909d327afc6/66393c273702f024a84f242c_65e8b9f506df42cdd9122e71_Slide%252016_9%2520-%25208.webp"
                       alt=""
                     />
@@ -1054,10 +1054,69 @@ export default function Blog() {
                       id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c284-c41abecd"
                       className="paragraph is-sticky"
                     >
-                      商業攝影
+                      SEO 優化
                     </p>
                   </div>
                 </div>
+
+                <section>
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="txt px-[20px]  flex justify-center items-center flex-col">
+                      <GsapText
+                        text=" 提升網站效能，贏得搜尋排名"
+                        id="text09"
+                      />
+
+                      <h3>
+                        {" "}
+                        使用{" "}
+                        <span className="bg-blue-700 text-white border border-black mx-2 font-bold">
+                          {" "}
+                          Page Speed Insight{" "}
+                        </span>{" "}
+                        讓您的網站更快、更優化
+                      </h3>
+                      <p className="mt-3 leading-[26px] text-[16px] w-[90%] md:w-2/3  xl:w-1/2 text-center">
+                        在數位時代，網站速度不僅影響使用者體驗，更是影響 SEO
+                        排名的重要因素。Google Speed Insight
+                        是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，精確指出需要改進的地方，讓您能輕鬆優化網站。
+                      </p>
+                    </div>
+                    <div className=" md:flex-row flex-col   flex w-full mx-auto md:w-2/3 xl:w-3/4 p-10 justify-center bottom-section">
+                      <div className="left p-0 md:p-4 w-full md:w-1/2">
+                        <ul className="pl-0 md:pl-5">
+                          <li className="font-bold text-[20px]  mt-5">
+                            ◉ 提升速度 = 提升排名
+                          </li>
+                          <li className="leading-[26px]">
+                            網站速度是 Google
+                            排名算法中的關鍵因素之一。透過優化速度，您將有更高的機會排在搜尋結果的前列。
+                          </li>
+                          <li className="font-bold text-[20px]  mt-5">
+                            ◉ 改善用戶體驗
+                          </li>
+                          <li className="leading-[26px]">
+                            速度慢的網站容易流失訪客。Google Speed Insight
+                            幫助您確保網站以最佳效能運行，提供順暢的使用者體驗，提升訪客的停留時間。
+                          </li>
+                          <li className="font-bold text-[20px]  mt-5">
+                            ◉ 優化指引一步到位
+                          </li>
+                          <li className="leading-[26px]">
+                            不只檢測，還提供實際可行的優化建議。從圖片壓縮、程式碼精簡到資源載入管理，所有細節都能輕鬆掌握。
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="right w-full md:w-1/2">
+                        <img
+                          className="w-full"
+                          src="http://localhost:3000/_next/image?url=https%3A%2F%2Fwww.ultraehp.com%2Fimages%2Fperomace.png&w=1200&q=75"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </section>
               <section className="section with-bg-dark">
                 <div className="padding">
@@ -1312,13 +1371,16 @@ export default function Blog() {
                 </div>
               </section>
               <section className="section">
-                <div className="main-container large-paddings">
-                  <h2
-                    id="w-node-_7f252330-861b-fbf3-b542-876890600281-c41abecd"
-                    className="heading is-extralarge"
-                  >
-                    一個良好的企業形象網站有多重要？
-                  </h2>
+                <div className="w-full md:w-2/3  flex justify-center items-center flex-col mx-auto pt-[60px] px-[20px] pb-[30px]">
+                  <GsapText
+                    className="text-center"
+                    text=" 一個良好的企業形象網站有多重要？"
+                    id="text12"
+                  />
+
+                  <p className="text-center w-full md:w-4/5">
+                    網站就像企業的「門面」。想像一下，當潛在客戶搜尋您的品牌時，第一眼看到的就是您的網站。如果網站設計老舊、資訊不清楚或載入速度慢，客戶可能會立刻關掉，甚至選擇競爭對手。良好的企業形象網站不僅是宣傳平台，更是建立信任的第一步。它讓客戶感受到專業、可靠，並增加品牌的可信度。
+                  </p>
                 </div>
                 <div
                   id="w-node-c71144d9-2650-daf1-da99-a2639c7ddcaf-c41abecd"

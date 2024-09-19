@@ -220,7 +220,7 @@ export default function NewsletterForm() {
         </div>
         <button
           type="submit"
-          className="px-4  w-full py-4 inline-block rounded-[6px] bg-blue-500 text-white font-semibold shadow-sm hover:bg-blue-600"
+          className="px-4  w-full py-4 inline-block rounded-[6px] bg-blue-700 text-white font-semibold shadow-sm hover:bg-blue-600"
         >
           送出
         </button>

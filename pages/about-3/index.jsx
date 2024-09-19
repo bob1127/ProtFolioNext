@@ -563,7 +563,7 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="mt-[100px]" id="free">
+            <section className="mt-0 md:mt-[100px] mx-[20px] md:px-0" id="free">
               <h2
                 data-aos="fade-up"
                 data-aos-delay="400"
@@ -586,7 +586,7 @@ export default function Blog() {
               <p className="text-center text-[16px] xl:text-[22px] md:text-[26px] ">
                 選擇JEEK 幫助您實現創意發想
               </p>
-              <section className="section-carousel  flex-col mt-10  px-0 xl:px-[70px] md:flex-row flex mb-[50px]">
+              <section className="section-carousel  flex-col mt-0 md:mt-10  px-0 xl:px-[70px] md:flex-row flex mb-[50px]">
                 <div className="left-txt flex-col flex justify-start items-center  w-full mt-5 md:w-[30%]">
                   <div>
                     <h2 className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold">
@@ -672,7 +672,7 @@ export default function Blog() {
                     >
                       <div
                         id="w-node-_9d02a341-146a-d088-349b-f68535a2ecdc-35a2ecda"
-                        className="job-card"
+                        className="job-card mx-0"
                         srtyle="width:400px; display:flex; flex-direction:column"
                       >
                         <p className="job-card-role">套版網站(NT.35000)</p>
@@ -773,7 +773,7 @@ export default function Blog() {
                       </div>
                       <div
                         id="w-node-_01078e3d-0c2e-e80d-0be2-5a38ca83ccf4-35a2ecda"
-                        className="job-card bg-blue-200"
+                        className="job-card mx-0 md:mx-4  bg-blue-200"
                       >
                         <p className="job-card-role">客製化網站(NT.80000)</p>
                         <span>
@@ -837,7 +837,7 @@ export default function Blog() {
                       </div>
                       <div
                         id="w-node-_90fc4fc9-5875-a940-a16d-30733a08bafa-35a2ecda"
-                        className="job-card mx-4"
+                        className="job-card mx-0"
                       >
                         <p className="job-card-role">購物網站(NT.60000)</p>
                         <span>
