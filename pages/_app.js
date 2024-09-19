@@ -74,7 +74,13 @@ export default function MyApp({ Component, pageProps, router }) {
         src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
         type="text/javascript"
       />
-       {!noNavbarRoutes.includes(router.pathname) && <Nav />}
+
+
+
+          <div className='hidden md:block'>
+                {!noNavbarRoutes.includes(router.pathname) && <Nav />}
+          </div>
+   
 
 {/* <PolicyModal/> */}
         <div className='main overflow-hidden'>
