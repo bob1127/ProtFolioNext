@@ -161,11 +161,11 @@ CREACTIVEs</h1>
                   href="/Contact"
                   className="mt-4 mx-2 md:mx-0  hover:scale-95 duration-300"
                 >
-                  {/* <img
+                  <img
                     className="w-[40px]"
                     src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
                     alt=""
-                  /> */}
+                  />
                 </a>
                 <a
                   href="/Contact"
@@ -181,11 +181,11 @@ CREACTIVEs</h1>
                   href="/Contact"
                   className="mt-4 mx-2 md:mx-0 hover:scale-95 duration-300"
                 >
-                  {/* <img
+                  <img
                     className="w-[40px]"
                     src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
                     alt=""
-                  /> */}
+                  />
                 </a>
               </div>
               <div className="bottom">
@@ -223,11 +223,11 @@ CREACTIVEs</h1>
           </div>
           <div className="right   h-full flex flex-col  w-full lg:w-1/2">
             <div className="top  flex  justify-center items-center h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
-              {/* <img
+              <img
                 className="w-full"
                 src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
                 alt=""
-              /> */}
+              />
             </div>
             <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h2 className=" ">"創意無限，讓您的品牌脫穎而出。"</h2>
@@ -334,13 +334,13 @@ CREACTIVEs</h1>
               </div>
             </div>
             <div className="w-full lg:w-1/2">
-              {/* <Image
+              <Image
                 src="6154f4061315715828dd75d6_smudgge-hero-image%20(1).png"
                 loader={imageLoader02}
                 loading="lazy"
                 width={1000}
                 height={1000}
-              /> */}
+              />
             </div>
           </div>
         </section>
@@ -421,7 +421,9 @@ CREACTIVEs</h1>
                 利用 3D
                 技術，創建產品的動態展示效果。讓產品在網站上旋轉、縮放，並可在互動中查看不同角度和細節。這種動態效果能夠幫助客戶更好地理解產品特點和功能，提高轉化率。
               </p>
-              <div className="pt-5 w-full">{/* <EmblaCarousel01 /> */}</div>
+              <div className="pt-5 w-full">
+                <EmblaCarousel01 />
+              </div>
             </div>
             <div className="wrap h-auto hidden flex">
               <div className="img overflow-hidden  w-full border-2 border-black relative ">
@@ -438,21 +440,21 @@ CREACTIVEs</h1>
                     3d-model
                   </a>
                 </div>
-                {/* <Image
+                <Image
                   src="/668e6aca4fb399ee1389df93_stada-img-3-p-1600.png"
                   className="  duration-500 hover:scale-105 z-1 top-0 left-0"
                   loaging="lazy"
                   width={800}
                   height={400}
                   loader={imageLoader}
-                /> */}
+                />
               </div>
               <div className="img"></div>
             </div>
           </div>
         </section>
         <section className="section-embla my-[60px] md:my-0">
-          {/* <EmblaCarousel /> */}
+          <EmblaCarousel />
         </section>
         <section className="section-movie">
           <div className="movies">
@@ -464,7 +466,7 @@ CREACTIVEs</h1>
                       title: 企業形象影片
                     </p>
                   </div>
-                  {/* <video
+                  <video
                     poster="/images/Untiteeled-Camera.png"
                     preload="metadata"
                     className="w-full"
@@ -477,7 +479,7 @@ CREACTIVEs</h1>
                       src="/video/20230215 EIWP數據操作-1080.mp4"
                       type="video/mp4"
                     />
-                  </video> */}
+                  </video>
                 </div>
                 <div className="w-[500px]  relative border-3 border-[#11a3f7]">
                   <div className="txt absolute translate-x-1/2 translate-y-1/2 top-[36%] left-[25%]">
@@ -485,7 +487,7 @@ CREACTIVEs</h1>
                       title: 企業形象影片
                     </p>
                   </div>
-                  {/* <video
+                  <video
                     poster="/images/788.png"
                     preload="metadata"
                     className="w-full"
@@ -498,7 +500,7 @@ CREACTIVEs</h1>
                       src="/video/20230215 EIWP數據操作-1080.mp4"
                       type="video/mp4"
                     />
-                  </video> */}
+                  </video>
                 </div>
                 <div className="w-[500px] group relative border-3 border-[#11a3f7]">
                   <div className="txt group-hover:top-[30%] duration-700 absolute translate-x-1/2 translate-y-1/2 top-[36%] opacity-0  group-hover:opacity-100 left-[25%]">
@@ -506,7 +508,7 @@ CREACTIVEs</h1>
                       title: 企業形象影片
                     </p>
                   </div>
-                  {/* <video
+                  <video
                     poster="/images/行動電源03.png"
                     preload="metadata"
                     className="w-full"
@@ -519,7 +521,7 @@ CREACTIVEs</h1>
                       src="/video/20230215 EIWP數據操作-1080.mp4"
                       type="video/mp4"
                     />
-                  </video> */}
+                  </video>
                 </div>
               </div>
             </Marquee>
@@ -537,27 +539,27 @@ CREACTIVEs</h1>
                   產品攝影
                 </a>
               </div>
-              {/* <Image
+              <Image
                 className="hover:scale-105 duration-500"
                 width={800}
                 src="/6697d9dae472fdc9bf452bfc_stada-img-n-9.png"
                 loading="lazy"
                 loader={imageLoader}
                 height={500}
-              /> */}
+              />
             </div>
             <div className="border-2 overflow-hidden border-black w-full relative">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
                 <p className="text-white  text-[22px] text-center">網頁設計</p>
               </div>
-              {/* <Image
+              <Image
                 className="hover:scale-105 duration-500"
                 width={800}
                 src="/669655bf3caaa06f871273e4_stada-img-n-15.png"
                 loading="lazy"
                 loader={imageLoader}
                 height={500}
-              />{" "} */}
+              />{" "}
             </div>
             <div className="border-2 overflow-hidden border-black relative w-full ">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
@@ -565,14 +567,14 @@ CREACTIVEs</h1>
                   3D建模應用
                 </p>
               </div>
-              {/* <Image
+              <Image
                 className="hover:scale-105 duration-500"
                 width={800}
                 src="/6697db71df85f60ba51311ba_stada-img-n-3.png"
                 loading="lazy"
                 loader={imageLoader}
                 height={500}
-              /> */}
+              />
             </div>
 
             <div className="border-2 flex flex-col justify-center items-center p-[50px] xl:p-5  xl:hidden">

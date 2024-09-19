@@ -95,7 +95,7 @@ export default function Blog() {
               <div className="home-hero">
                 <div className="home-hero-content">
                   <div className="home-hero-wrapper">
-                    <div
+                    {/* <div
                       data-w-id="b3a43e50-789b-2236-6fea-b72c39d21874"
                       style={{
                         transform:
@@ -114,7 +114,7 @@ export default function Blog() {
                         />
                       </div>
                       <p className="eyebrow-hero-text">design agency</p>
-                    </div>
+                    </div> */}
                     <TextMask />
                     <a
                       href="/"
@@ -604,7 +604,7 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
-              <section className="section-movie  flex-col xl:flex-row flex">
+              {/* <section className="section-movie  flex-col xl:flex-row flex">
                 <div className="w-full xl:w-1/2">
                   <div className="txt p-[20px] xl:p-[60px]">
                     <h3 className=" text-[40px]">title</h3>
@@ -692,9 +692,9 @@ export default function Blog() {
                     </div>
                   </Marquee>
                 </div>
-              </section>
+              </section> */}
               s
-              <section className=" my-[50px]  md:my-[150px]  relative  z-[999] bg-[#e3e3e3] md:pt-[100px] pt-0  md:h-[110vh]">
+              <section className=" hidden md:block my-[50px]  md:my-[150px]  relative  z-[999] bg-[#e3e3e3] md:pt-[100px] pt-0  md:h-[110vh]">
                 <div className="relative relative">
                   <div className="drag-circle absolute items-center md:flex justify-center z-[999999] left-[40%] hidden  bg-black w-[60px] h-[60px] rounded-full text-white  text-[20px] font-bold">
                     Dtag
@@ -719,7 +719,7 @@ export default function Blog() {
                       各類3d建模模型，工業產品
                     </p>
                   </div>
-                  <div className=" static md:absolute w-full  left-0 top-0 z-[9]">
+                  <div className="  static md:absolute w-full  left-0 top-0 z-[9]">
                     <iframe
                       src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
                       frameborder="0"
