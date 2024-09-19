@@ -283,14 +283,14 @@ export default function Index() {
                         className="menu-feature-item w-dyn-item"
                       >
                         <div className="menu-feature-image">
-                          <img
+                          {/* <img
                             src="https://static.wixstatic.com/media/0784b1_c0ab312fc95448b6b14aa403fd46fb15~mv2.jpg/v1/fill/w_1042,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Desktop%20-%20Main%20Image.jpg"
                             loading="lazy"
                             alt="Design"
                             sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
                             srcSet="https://static.wixstatic.com/media/0784b1_c0ab312fc95448b6b14aa403fd46fb15~mv2.jpg/v1/fill/w_1042,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Desktop%20-%20Main%20Image.jpg"
                             className="cover-image"
-                          />
+                          /> */}
                         </div>
                         <a
                           aria-label="Feature link"
@@ -299,12 +299,12 @@ export default function Index() {
                           tabIndex={0}
                         >
                           <div className="menu-feature-title ">服務內容</div>
-                          <img
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="icon is-large"
-                          />
+                          /> */}
                         </a>
                       </div>
                       <div
@@ -312,12 +312,12 @@ export default function Index() {
                         className="menu-feature-item w-dyn-item"
                       >
                         <div className="menu-feature-image">
-                          <video
+                          {/* <video
                             className="w-full h-full"
                             autoPlay
                             loop
                             src="https://spline.design/_assets/_videos/content_modes-compressed.mp4"
-                          ></video>
+                          ></video> */}
                         </div>
                         <a
                           aria-label="Feature link"
@@ -326,12 +326,12 @@ export default function Index() {
                           tabIndex={0}
                         >
                           <div className="menu-feature-title">網站案例</div>
-                          <img
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="icon is-large"
-                          />
+                          /> */}
                         </a>
                       </div>
                       <div
@@ -339,14 +339,14 @@ export default function Index() {
                         className="menu-feature-item w-dyn-item"
                       >
                         <div className="menu-feature-image">
-                          <img
+                          {/* <img
                             src="https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
                             loading="lazy"
                             alt="Compatibility"
                             sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
                             srcSet="https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
                             className="cover-image"
-                          />
+                          /> */}
                         </div>
                         <a
                           aria-label="Feature link"
@@ -355,12 +355,12 @@ export default function Index() {
                           tabIndex={0}
                         >
                           <div className="menu-feature-title">關於我們</div>
-                          <img
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="icon is-large"
-                          />
+                          /> */}
                         </a>
                       </div>
                       <div
