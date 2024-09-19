@@ -705,12 +705,12 @@ export default function Blog() {
                     <h1 className="text-[30px] mt-[20px] md:mt-[200px] font-bold">
                       產品建模|商業建模|3D形象影片
                     </h1>
-                    <GsapText
+                    {/* <GsapText
                       text=" Spline + Blender"
                       lineHeight="70px"
                       id="text3"
                       fontSize="60px"
-                    />{" "}
+                    />{" "} */}
                     <p className=" mb-4 text-[26px] inline-block font-normal ">
                       試用Blender建模<br></br>Spline 3d 做出交互式
                     </p>{" "}
@@ -729,7 +729,7 @@ export default function Blog() {
                   </div> */}
                 </div>
                 <div className="static md:absolute top-0 md:top-[50%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
-                  <Carousel05 />
+                  {/* <Carousel05 /> */}
                 </div>
               </section>
               <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 items-center">
@@ -787,13 +787,13 @@ export default function Blog() {
                     </div>
                   </div>
                   <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
-                    <img
+                    {/* <img
                       data-aos="fade-up"
                       data-aos-delay="300"
                       className="rounded-none md:rounded-xl"
                       src="https://cdn.prod.website-files.com/61cbe22a00483909d327afc6/66393c273702f024a84f242c_65e8b9f506df42cdd9122e71_Slide%252016_9%2520-%25208.webp"
                       alt=""
-                    />
+                    /> */}
                   </div>
                 </div>
               </section>
