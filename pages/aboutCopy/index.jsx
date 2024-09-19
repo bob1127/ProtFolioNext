@@ -115,7 +115,7 @@ export default function Blog() {
                       </div>
                       <p className="eyebrow-hero-text">design agency</p>
                     </div>
-                    <TextMask />
+                    {/* <TextMask /> */}
                     <a
                       href="/"
                       className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
