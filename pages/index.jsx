@@ -470,7 +470,7 @@ CREACTIVEs</h1>
                       title: 企業形象影片
                     </p>
                   </div>
-                  <video
+                  {/* <video
                     poster="/images/Untiteeled-Camera.png"
                     preload="metadata"
                     className="w-full"
@@ -483,7 +483,7 @@ CREACTIVEs</h1>
                       src="/video/20230215 EIWP數據操作-1080.mp4"
                       type="video/mp4"
                     />
-                  </video>
+                  </video> */}
                 </div>
                 <div className="w-[500px]  relative border-3 border-[#11a3f7]">
                   <div className="txt absolute translate-x-1/2 translate-y-1/2 top-[36%] left-[25%]">
@@ -491,7 +491,7 @@ CREACTIVEs</h1>
                       title: 企業形象影片
                     </p>
                   </div>
-                  <video
+                  {/* <video
                     poster="/images/788.png"
                     preload="metadata"
                     className="w-full"
@@ -504,7 +504,7 @@ CREACTIVEs</h1>
                       src="/video/20230215 EIWP數據操作-1080.mp4"
                       type="video/mp4"
                     />
-                  </video>
+                  </video> */}
                 </div>
                 <div className="w-[500px] group relative border-3 border-[#11a3f7]">
                   <div className="txt group-hover:top-[30%] duration-700 absolute translate-x-1/2 translate-y-1/2 top-[36%] opacity-0  group-hover:opacity-100 left-[25%]">
@@ -512,7 +512,7 @@ CREACTIVEs</h1>
                       title: 企業形象影片
                     </p>
                   </div>
-                  <video
+                  {/* <video
                     poster="/images/行動電源03.png"
                     preload="metadata"
                     className="w-full"
@@ -525,7 +525,7 @@ CREACTIVEs</h1>
                       src="/video/20230215 EIWP數據操作-1080.mp4"
                       type="video/mp4"
                     />
-                  </video>
+                  </video> */}
                 </div>
               </div>
             </Marquee>
