@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-
+import Head from 'next/head';
 // import Inner from "../components/Inner/index.jsx";
 import Script from 'next/script';
 import '../styles/globals.css';
@@ -62,7 +62,7 @@ export default function MyApp({ Component, pageProps, router }) {
         cardType: 'summary_large_image',
       }}
     />
- <Script
+ {/* <Script
         src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
         type="text/javascript"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -74,7 +74,16 @@ export default function MyApp({ Component, pageProps, router }) {
         src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
         type="text/javascript"
         strategy="lazyOnload"
-      />
+      /> */}
+
+      <Head>
+           <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/Screenshot-2023-07-17-112049.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/Screenshot-2023-07-17-112049.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/Screenshot-2023-07-17-112049.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
+      </Head>
 
 
 

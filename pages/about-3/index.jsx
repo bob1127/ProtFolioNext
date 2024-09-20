@@ -180,7 +180,7 @@ export default function Blog() {
         backdrop={backdrop}
         isOpen={isOpen}
         onClose={onClose}
-        className="bg-white z-[99999] p-[30px] m-5 sm:p-0 absolute w-[95%]  sm:w-[500px] border-2 border-black rounded-xl"
+        className="bg-white z-[99999] p-0 md:p-[30px] m-5 sm:p-0 absolute w-[95%]  sm:w-[500px] border-2 border-black rounded-xl"
       >
         <ModalContent>
           {(onClose) => (
@@ -595,13 +595,13 @@ export default function Blog() {
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
                       Flexibility
                     </h2>
-                    <p className="text-[16px] xl:w-full w-[80%] mx-auto text-center mt-3">
+                    <p className="text-[16px]  xl:w-full w-2/3  mx-auto text-center mt-3">
                       根據客戶的時間表和需求快速調整工作安排，適應變化。
                     </p>
                   </div>
                   <a
                     href="/Contact"
-                    className="bg-[#1c2fd5] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-blue-800 hover:scale-95 shadow-xl text-center py-3 w-[140px]"
+                    className="bg-[#1c2fd5] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-blue-800 hover:scale-95 shadow-xl text-center py-3 mb-5 w-[140px]"
                   >
                     Contact
                   </a>
@@ -621,7 +621,7 @@ export default function Blog() {
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
                       One By One
                     </h2>
-                    <p className="text-[16px] text-center mt-3">
+                    <p className="text-[16px] mx-auto w-2/3 md:w-full text-center mt-3">
                       直接與客戶溝通，提供專注且個性化的服務。
                     </p>
                   </div>
