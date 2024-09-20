@@ -1,35 +1,15 @@
-// import Seo from '@/components/Seo';
-// "use client"
-// import CustomLink from '@/components/CustomLink';
-// import Inner from "../components/Inner/index.jsx";
 import Marquee from "react-fast-marquee";
-import DragCarousel from "../components/DragCarousel/index.jsx";
-import SwiperScroll from "../components/SwiperScroll/page.jsx";
-
 import styles from "../styles/Home.module.css";
 import EmblaCarousel from "../components/EmblaCarousel/index.jsx";
 import EmblaCarousel01 from "../components/EmblaCarousel01/index.jsx";
 import Text3d from "../components/PerspectiveText/index.jsx";
-import CatoonCursor from "../components/CartoonCursor/page.jsx";
 import { useRef, useEffect } from "react";
-// import PhysicsAnimation from '../components/PhysicsAnimation/PhysicsAnimation.jsx';
 import dynamic from "next/dynamic";
 import GsapText from "../components/RevealText/index";
 import VelocityText from "../components/VelocityText/page.jsx";
-import Head from "next/head";
-import Script from "next/script.js";
 import Image from "next/image.js";
-// import dynamic from "next/dynamic";
-// import SlickCarousel from "../components/SlickCarousel/index.jsx";
-import Link from "next/link";
 import TextHover from "../components/TextHover/index.jsx";
-import SmoothParallaxScroll from "../components/SmoothParallaxScroll/index.js";
-// import textReveal from '../components/TextReveal/index.jsx';
-// import Link from 'next/dist/client/link.js';
-// import Slider from '../components/Slider/slider.jsx';
-import MenuToggle from "../components/MenuToggle/index.jsx";
 import Trackeye from "../components/Trackeye/page.jsx";
-import { imageConfigDefault } from "next/dist/shared/lib/image-config.js";
 import { NextSeo } from "next-seo";
 
 const Lottie = dynamic(() => import("react-lottie"), {
@@ -52,15 +32,6 @@ const imageLoader02 = ({ src, width, quality }) => {
   }`;
 };
 
-// import BannerCarousel from '../components/BannerCarousel/App.jsx';
-// import reportWebVitals from '../components/reportWebVitals.js';
-
-// import CarouselImg from '../components/CarouselImg/index.jsx'
-
-// const PhysicsAnimationApp = dynamic(
-//   () => import("../components/PhysicsAnimation/app.jsx"),
-//   { ssr: false }
-// );
 export default function Home() {
   const defaultOptions = {
     loop: true,
