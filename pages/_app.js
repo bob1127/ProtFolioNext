@@ -1,22 +1,17 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-// import Inner from "../components/Inner/index.jsx";
 import Script from 'next/script';
 import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 import { NextUIProvider } from "@nextui-org/react";
-// import Navbar from '../components/sideTabs/index.jsx';
-import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
-// import PolicyModal from '../components/PolicyModal.jsx'
 import Nav from '../components/Navbar/page.jsx'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
 import { DefaultSeo } from 'next-seo';
 import defaultSEOConfig from '../next-seo.config.js';
-// Dynamically import the PhysicsAnimationApp component with ssr set to false
 const PhysicsAnimationApp = dynamic(
   () => import("../components/PhysicsAnimation/app.jsx"),
   { ssr: false }
@@ -62,7 +57,7 @@ export default function MyApp({ Component, pageProps, router }) {
         cardType: 'summary_large_image',
       }}
     />
- {/* <Script
+ <Script
         src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
         type="text/javascript"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -74,7 +69,7 @@ export default function MyApp({ Component, pageProps, router }) {
         src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
         type="text/javascript"
         strategy="lazyOnload"
-      /> */}
+      />
 
       <Head>
            <link rel="icon" href="/favicon.ico" />
