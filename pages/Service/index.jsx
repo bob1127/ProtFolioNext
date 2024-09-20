@@ -16,7 +16,7 @@ import React from "react";
 import Script from "next/script";
 import Head from "next/head";
 import GsapText from "../../components/RevealText/index";
-import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
+import DragCaroudelSlider from "../../components/DragCarousel/index.jsx";
 import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
 import BannerSwiper from "../../components/BannerSwiper/page.jsx";
 import SpringModal from "../../components/SpringModal/page.jsx";
@@ -1024,17 +1024,18 @@ export default function Blog() {
                   "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
                 </h2> */}
                 <GsapText
-                  text=' "對於增加網路曝光度" '
+                  text=' "增加網路曝光度" '
                   lineHeight="60px"
                   id="text3"
                   fontSize="50px"
                 />
-                <GsapText
+                {/* <GsapText
                   text=' "我該如何選擇行銷方式" '
                   lineHeight="60px"
-                  id="text4"
+                  id="text10"
                   fontSize="50px"
-                />
+                /> */}
+                <h2 className="text-center">我該如何選擇行銷方式</h2>
                 <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
                   在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
                 </p>
@@ -1482,22 +1483,20 @@ export default function Blog() {
                     </h3> */}
 
                     <GsapText
-                      text="  使用 3D 模型製作網頁橫幅和產品圖的好處"
+                      text=" 3D產品應用"
                       lineHeight="60px"
                       id="text7"
                       fontSize="50px"
                     />
 
-                    <b className="text-[22px] mt-[50px]">Author Name</b>
-                    <br />
-                    <div class="flex mt-5">
-                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        3D 形象影片
+                    <div class="flex md:flex-row flex-col mt-5">
+                      <span class="bg-[#15a4fd] border mt-3 md:mt-0 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        3D 產品Banner | 形象圖
                       </span>
-                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        交互式網站
+                      <span class="bg-[#15a4fd] border mt-3 md:mt-0 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        DM 製作
                       </span>
-                      <span class="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      <span class="bg-[#15a4fd] border mt-3 md:mt-0 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
                         產品展示
                       </span>
                     </div>

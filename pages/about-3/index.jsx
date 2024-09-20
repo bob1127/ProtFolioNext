@@ -25,7 +25,7 @@ import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
-import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
+// import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
 import { NextSeo } from "next-seo";
 import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
 import BannerSwiper from "../../components/BannerSwiper/page.jsx";

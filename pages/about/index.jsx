@@ -407,11 +407,12 @@ export default function Blog() {
                       data-aos="fade-up"
                       data-aos-delay="300"
                     >
-                      <GsapText text=" Next.js + Wordpress" id="text1" />{" "}
+                      <GsapText text="Headless " id="text1" />{" "}
                       <p
                         className="mt-[10px] leading-[30px]"
                         data-aos="fade-up"
                       >
+                        <h2>Next.js + Wordpress</h2>
                         Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
                         的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
                         CDN 和缓存优化，页面加载速度更快。Next.js
@@ -432,6 +433,7 @@ export default function Blog() {
                       text=" 不只快，要美觀"
                       id="text2"
                     />
+                    <h2> Page Speed Insight</h2>
                     <p className="mt-[10px] leading-[30px]" data-aos="fade-up">
                       Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
                       的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
@@ -439,14 +441,16 @@ export default function Blog() {
                       的图像优化和代码拆分功能进一步提升性能。WordPress
                       提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
                     </p>
+                  </div>
+                  <div>
                     <a
                       href="https://next-wp0004.vercel.app"
-                      data-aos="fade-up"
-                      className="bg-blue-600  px-6 py-2 text-white border-black border mt-4"
+                      className="bg-blue-600  mt-[35px] px-6 py-2 text-white border-black border"
                       data-aos-delay="300"
                     >
-                      看範例 GO
+                      看範例
                     </a>
+                    <b>以上是自建的Blog網站 使用 next.js + wordpress</b>
                   </div>
                   <div className=" w-full xl:w-1/2 h-auto xl:h-[600px] relative overflow-hidden p-8">
                     {/* <Image
@@ -694,17 +698,19 @@ export default function Blog() {
                 </div>
               </section> */}
               s
-              <section className=" hidden md:block my-[50px]  md:my-[150px]  relative  z-[999] bg-[#e3e3e3] md:pt-[100px] pt-0  md:h-[110vh]">
-                <div className="relative relative">
-                  <div className="drag-circle absolute items-center md:flex justify-center z-[999999] left-[40%] hidden  bg-black w-[60px] h-[60px] rounded-full text-white  text-[20px] font-bold">
-                    Dtag
-                  </div>
-
-                  {/* <div className="circle z-[1] top-[-100px] absolute left-[30%] rounded-full w-[700px] h-[400px]"></div> */}
-                  <div className="left-txt z-[999] top-0 md:top-[40%] static md:absolute left-[100px] md:px-0 p-[30px]">
-                    <h1 className="text-[30px] mt-[20px] md:mt-[200px] font-bold">
-                      產品建模|商業建模|3D形象影片
-                    </h1>
+              <section className="flex flex-col md:flex-row">
+                <div className=" w-full md:w-1/2 h-[400px] overflow-hidden flex justify-center items-center border relative border-black">
+                  <iframe
+                    className="absolute top-0 left-0 z-[999]"
+                    src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                    frameborder="0"
+                    width="100%"
+                    height="500px"
+                  ></iframe>
+                </div>
+                <div className=" w-full md:w-1/2">
+                  <div className="pl-8">
+                    <h1 className="">產品建模|商業建模|3D形象影片</h1>
                     <GsapText
                       text=" Spline + Blender"
                       lineHeight="70px"
@@ -719,20 +725,10 @@ export default function Blog() {
                       各類3d建模模型，工業產品
                     </p>
                   </div>
-                  <div className="  static md:absolute w-full  left-0 top-0 z-[9]">
-                    <iframe
-                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
-                      frameborder="0"
-                      width="100%"
-                      height="500px"
-                    ></iframe>
-                  </div>
-                </div>
-                <div className="static md:absolute top-0 md:top-[50%] sm:px-[30px] px-[10px] md:px-[70px] xl:px-[100px] left-[22%] w-2/3 z-[999] ">
                   <Carousel05 />
                 </div>
               </section>
-              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 items-center">
+              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
                 <h2
                   data-aos="fade-up"
                   className="text-[26px] xl:text-[50px] font-extrabold"
@@ -774,15 +770,24 @@ export default function Blog() {
                       data-aos="fade-up"
                     >
                       <h4 className="text-[26px] md:text-[50px] font-bold">
-                        title
+                        3d 交互式網站優點
                       </h4>
-                      <p>RWD WEBSITE </p>
+                      <p className="text-[22px] font-bold">
+                        Interection Website Design{" "}
+                      </p>
+                      <b className="text-[20px] mt-3"> 提升用戶體驗：</b>
                       <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Expedita nesciunt ipsum, neque incidunt quae
-                        pariatur ipsa odit earum delectus numquam corporis
-                        recusandae nihil reprehenderit ullam nisi atque fuga
-                        beatae! Quasi?
+                        3D
+                        環境讓用戶感受到沉浸式體驗，增加與產品的互動，吸引他們更長時間停留在網站上。
+                      </p>
+                      <b className="text-[20px] mt-3"> 增加轉換率：</b>
+                      <p>
+                        用戶能夠更直觀地查看產品細節，這有助於消除購物時的疑慮，從而提高購買意願。
+                      </p>
+                      <b className="text-[20px] mt-3"> 增強品牌形象：</b>
+                      <p>
+                        獨特的 3D
+                        設計可以讓品牌更具吸引力，給人留下深刻印象，從而提升品牌忠誠度。
                       </p>
                     </div>
                   </div>
@@ -797,12 +802,11 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
-              <section className="section mt-[80px] with-borders">
+              {/* <section className="section mt-[80px] with-borders">
                 <div className="title text-center">
                   <h2 className="text-[30px] xl:text-[40px] text-black">
-                    SEO OPTIMIXATIOIN{" "}
+                    SEO Optimization - seo 優化
                   </h2>
-                  <p className="text-[24px] my-5 text-gray-700">Seo 行銷</p>
                 </div>
                 <div className=" pb-4 pt-3">
                   <div className="main-container">
@@ -869,11 +873,11 @@ export default function Blog() {
                     </p>
                   </div>
                 </div>
-              </section>
+              </section> */}
               <section id="services" className="section">
                 <a
                   data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfd9"
-                  className="fullwidth-link w-inline-block"
+                  className="fullwidth-link text-black w-inline-block"
                   style={{}}
                   href="https://www.zensor.com.tw"
                 >
@@ -1067,16 +1071,16 @@ export default function Blog() {
                         id="text09"
                       />
 
-                      <h3>
+                      <h3 className="leading-[40px]">
                         {" "}
                         使用{" "}
-                        <span className="bg-blue-700 text-white border border-black mx-2 font-bold">
+                        <span className="bg-blue-700 text-white border border-black mx-2 font-bold   ">
                           {" "}
                           Page Speed Insight{" "}
                         </span>{" "}
                         讓您的網站更快、更優化
                       </h3>
-                      <p className="mt-3 leading-[26px] text-[16px] w-[90%] md:w-2/3  xl:w-1/2 text-center">
+                      <p className="mt-3 leading-[26px] text-[16px] w-[100%] md:w-4/5  xl:w-1/2 text-center">
                         在數位時代，網站速度不僅影響使用者體驗，更是影響 SEO
                         排名的重要因素。Google Speed Insight
                         是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，精確指出需要改進的地方，讓您能輕鬆優化網站。
@@ -1374,7 +1378,7 @@ export default function Blog() {
                 <div className="w-full md:w-2/3  flex justify-center items-center flex-col mx-auto pt-[60px] px-[20px] pb-[30px]">
                   <GsapText
                     className="text-center"
-                    text=" 一個良好的企業形象網站有多重要？"
+                    text=" 企業形象網站有多重要？"
                     id="text12"
                   />
 

@@ -407,7 +407,8 @@ export default function Blog() {
                       data-aos="fade-up"
                       data-aos-delay="300"
                     >
-                      <GsapText text=" Next.js + Wordpress" id="text1" />{" "}
+                      <GsapText text="Headless " id="text1" />{" "}
+                      <h2>Next.js + Wordpress</h2>
                       <p
                         className="mt-[10px] leading-[30px]"
                         data-aos="fade-up"

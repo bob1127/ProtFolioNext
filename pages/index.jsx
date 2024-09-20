@@ -151,7 +151,9 @@ CREACTIVEs</h1>
               </div>
             </div>
             <div className="hero-middle border border-black w-full lg:w-[20%] p-[50px] flex  justify-center relative flex-col items-center pt-[50px] border-1 ">
-              <h2 className="text-[32px] text-bold">創意無限，設計未來</h2>
+              <h2 className="text-[32px] md:text-left text-center text-bold">
+                創意無限，設計未來
+              </h2>
               <h2 className="text-[32px] text-bold">為你的品牌增值</h2>
               <br />
             </div>
@@ -230,10 +232,9 @@ CREACTIVEs</h1>
               />
             </div>
             <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
-              <h2 className=" ">"創意無限，讓您的品牌脫穎而出。"</h2>
-              <p className=" text-center">
-                專注打造符合您品牌形象的網站，量身定制<br></br>
-                ，細緻呈現品牌價值
+              <h2 className=" text-center">"創意無限，讓您的品牌脫穎而出。"</h2>
+              <p className="text-[18px] leading-[26px] text-center">
+                專注打造符合您品牌形象的網站，量身定制 ，細緻呈現品牌價值
               </p>
 
               <div className="img-wrap">
@@ -356,6 +357,7 @@ CREACTIVEs</h1>
                 <GsapText
                   text="  用視覺創意點亮你的網站"
                   lineHeight="80px"
+                  className="text-white"
                   id="text2"
                   fontSize="70px"
                 />{" "}
@@ -397,7 +399,7 @@ CREACTIVEs</h1>
             </div>
           </div>
           <div className="right   h-full flex flex-col  w-full lg:w-1/2">
-            <div className="top py-[50px] lg:p-[40px] flex  bg-[#15a4fd] justify-center items-center h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
+            <div className="top py-[50px] lg:p-[40px] flex  bg-[#15a4fd] justify-center items-center h-1/2  lg:border-t-0 px-[20px] md:px-0 border-t-2 flex-col w-full border-b-2 border-black">
               <h2 className="text-[22px] text-light"></h2>
               {/* <Link
                 href='/Video'
@@ -407,17 +409,17 @@ CREACTIVEs</h1>
                 Go to about us
               </Link> */}
               <h2 className="text-white">網頁主體視覺</h2>
-              <p className="  text-white w-3/4 text-center ">
+              <p className="  text-white   text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3 ">
                 創造一個引人入勝的網頁主體視覺，通過精心設計的 Banner、震撼的
                 Hero Image
                 和高質量的產品攝影來強化品牌形象並吸引訪客。這種多層次的視覺策略將幫助您在用戶進入網站的第一時間就感受到品牌的獨特魅力。
               </p>
             </div>
 
-            <div className="bottom  bg-white flex py-[50px]  items-center   h-1/2 justify-start flex-col w-full ">
+            <div className="bottom  bg-white flex px-[20px] md:px-0 py-[50px]  items-center   h-1/2 justify-start flex-col w-full ">
               {/* <VelocityText /> */}
               <h2 className="  text-light">3D 產品視覺</h2>
-              <p className="mt-[20px]  text-cenrer lg:text-left w-2/3">
+              <p className="mt-[20px]  text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3">
                 利用 3D
                 技術，創建產品的動態展示效果。讓產品在網站上旋轉、縮放，並可在互動中查看不同角度和細節。這種動態效果能夠幫助客戶更好地理解產品特點和功能，提高轉化率。
               </p>
@@ -456,7 +458,7 @@ CREACTIVEs</h1>
         <section className="section-embla my-[60px] md:my-0">
           <EmblaCarousel />
         </section>
-        <section className="section-movie">
+        <section className="section-movie hidden">
           <div className="movies">
             <Marquee>
               <div className="flex">
@@ -528,7 +530,7 @@ CREACTIVEs</h1>
           </div>
         </section>
 
-        <section>
+        <section className="">
           <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3">
             <div className="border-2 overflow-hidden border-black w-full relative">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
@@ -577,11 +579,11 @@ CREACTIVEs</h1>
               />
             </div>
 
-            <div className="border-2 flex flex-col justify-center items-center p-[50px] xl:p-5  xl:hidden">
+            <div className="border-2 flex flex-col justify-center items-center py-[50px] px-[20px] xl:p-5  xl:hidden">
               <h4 className=" text-[24px] xl:text-[30px] font-bold">
                 網頁設計
               </h4>
-              <p className="text-[14px] w-2/3 text-center ">
+              <p className="  text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3 ">
                 {" "}
                 您的品牌在數位世界中大放異彩！我們專業的網頁設計團隊為您打造獨特且具吸引力的網站，提升用戶體驗，促進業務增長。立即聯絡我們，開啟您的數位成功之旅！
               </p>
@@ -590,13 +592,13 @@ CREACTIVEs</h1>
         </section>
 
         <section className="bg-gray-100  py-[70px] px-[20px]">
-          <div className="flex flex-col w-2/3 mx-auto">
+          <div className="flex flex-col w-full md:w-2/3 mx-auto">
             <div className="title mb-6 w-full">
-              <h2 className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black font-extrabold">
+              <h2 className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black  font-extrabold">
                 "設計網站不難 做出好的網站才不容易"
               </h2>
 
-              <p className="text-[18px]  text-center lg:text-[22px] 2xl:text-[30px]">
+              <p className=" text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3 mb-4">
                 總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
                 來跟我討論吧
               </p>

@@ -158,7 +158,7 @@ const EmblaCarousel = (props) => {
   }, [emblaApi, tweenParallax]);
 
   return (
-    <div className="embla w-full py-8">
+    <div className="embla w-full">
       <div
         className="embla__viewport w-[100%] overflow-hidden cursor-none"
         ref={emblaRef}

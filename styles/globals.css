@@ -3428,12 +3428,12 @@ blockquote{
     text-indent:-.5vw;
     font-size:10vw
 }
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
     .heading.is-fullwidth-title{
         font-size: 22px !important;
         color:red !important;
 }
-}
+} */
 .heading.is-contact-hero-title{
     margin-bottom:.3em;
     font-size:8em;

@@ -27,7 +27,7 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black overflow:hidden bg-opacity-75">
       <div
         ref={modalRef}
-        className="relative p-4   h-auto bg-[#4982d7] border-2 border-black rounded-md"
+        className="relative p-4   h-auto bg-[#4982d7] border-2 border-[#878787] rounded-md"
         style={{
           width: "70vw",
           height: "80vh",
@@ -43,13 +43,7 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
         </button>
         <div className="flex px-[10px] xl:px-[30px] xl:flex-row flex-col justify-center items-center h-full ">
           <div className="w-full border  overflow-scroll border-white relative overflow-y-scroll h-full overflow:scroll xl:w-1/2">
-            <div className="img-wrap w-full mx-auto ">
-              {/* <img
-                src="https://craftwork-images.b-cdn.net/wp-content/uploads/edd/2022/10/3-4.png"
-                alt="Expanded view"
-                className="w-full   object-contain"
-              /> */}
-            </div>
+            <div className="img-wrap border border-white w-full mx-auto "></div>
           </div>
           <div className="flex flex-col mt-[20px] w-full xl:w-1/2 justify-start">
             <div className="content  mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full  ">
