@@ -1,0 +1,66 @@
+.App {
+  position: relative;
+  font-family: "Roboto", 'Helvetica Neue', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+.App h1 {
+  position: fixed;
+  top: 3vw;
+  left: 3vw;
+}
+
+.App .slider {
+  position: fixed;
+  top: 50%;
+  left: 6vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .slider .slide:not(:first-child) {
+  margin-left: 6vw;
+}
+
+.App .slider .slide .preview {
+  height: 350px;
+  width: 350px;
+  background: #c4c4c4;
+  overflow: hidden;
+}
+
+.App .slider .slide .preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.App .slider .slide .infos {
+  font-weight: light;
+}
+
+.App .slider .slide .infos h3,
+.App .slider .slide .infos h2 {
+  font: inherit;
+}
+
+.App .slider .slide .infos h3 {
+  padding-top: 15px;
+  color: #635D5D;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.App .slider .slide .infos h2 {
+  font-size: 18px;
+  color: #000;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=DragCarousel.module.css.map */
