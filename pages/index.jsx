@@ -225,11 +225,13 @@ CREACTIVEs</h1>
           </div>
           <div className="right   h-full flex flex-col  w-full lg:w-1/2">
             <div className="top  flex  justify-center items-center h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
-              <img
-                className="w-full"
-                src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
-                alt=""
-              />
+              <Image
+                src="/images/heroimg.webp"
+                width={800}
+                height={500}
+                placeholder="empty"
+                priority
+              ></Image>
             </div>
             <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h2 className=" text-center">"創意無限，讓您的品牌脫穎而出。"</h2>
@@ -336,11 +338,11 @@ CREACTIVEs</h1>
             </div>
             <div className="w-full lg:w-1/2">
               <Image
-                src="6154f4061315715828dd75d6_smudgge-hero-image%20(1).png"
-                loader={imageLoader02}
+                src="/images/RWDmobile.webp"
                 loading="lazy"
-                width={1000}
-                height={1000}
+                placeholder="empty"
+                width={800}
+                height={500}
               />
             </div>
           </div>
@@ -544,9 +546,8 @@ CREACTIVEs</h1>
               <Image
                 className="hover:scale-105 duration-500"
                 width={800}
-                src="/6697d9dae472fdc9bf452bfc_stada-img-n-9.png"
+                src="/images/plan04.webp"
                 loading="lazy"
-                loader={imageLoader}
                 height={500}
               />
             </div>
@@ -557,9 +558,8 @@ CREACTIVEs</h1>
               <Image
                 className="hover:scale-105 duration-500"
                 width={800}
-                src="/669655bf3caaa06f871273e4_stada-img-n-15.png"
+                src="/images/plan02.webp"
                 loading="lazy"
-                loader={imageLoader}
                 height={500}
               />{" "}
             </div>
@@ -572,9 +572,8 @@ CREACTIVEs</h1>
               <Image
                 className="hover:scale-105 duration-500"
                 width={800}
-                src="/6697db71df85f60ba51311ba_stada-img-n-3.png"
+                src="/images/plan01.webp"
                 loading="lazy"
-                loader={imageLoader}
                 height={500}
               />
             </div>

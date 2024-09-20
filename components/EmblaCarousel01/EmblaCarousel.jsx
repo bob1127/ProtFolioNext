@@ -6,6 +6,7 @@ import {
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "./EmblaCarosuelDotButton";
+import Image from "next/image";
 import Styles from "../../styles/embla.module.css";
 
 const TWEEN_FACTOR_BASE = 0.52;
@@ -131,9 +132,11 @@ const EmblaCarousel = (props) => {
                   {slide.content ? (
                     slide.content // Render iframe or other HTML content directly
                   ) : (
-                    <img
+                    <Image
                       src={slide.image}
-                      className="w-[300px]  md:h-full rounded-xl"
+                      className="rounded-xl"
+                      width={500}
+                      height={500}
                       alt={`Slide ${index + 1}`}
                     />
                   )}

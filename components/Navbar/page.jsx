@@ -384,12 +384,12 @@ export default function Index() {
                           tabIndex={0}
                         >
                           <div className="menu-feature-title">聯絡方式</div>
-                          <img
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="icon is-large"
-                          />
+                          /> */}
                         </a>
                       </div>
                     </div>

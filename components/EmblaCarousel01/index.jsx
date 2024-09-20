@@ -8,27 +8,27 @@ const OPTIONS = { dragFree: true, loop: true };
 // Define an array of slide objects with iframe content
 const SLIDES = [
   {
-    image: "/images/untitled拷貝.png", // Image for the first slide
+    image: "/images/3dmodel01.webp", // Image for the first slide
     title: "First Slide",
     description: "Description for the first slide.",
   },
   {
-    image: "/images/7878.png",
+    image: "/images/3dmodel02.webp",
     title: "Fourth Slide",
     description: "Description for the fourth slide.",
   },
   {
-    image: "/images/7878.png",
+    image: "/images/3dmodel03.webp",
     title: "Fourth Slide",
     description: "Description for the fourth slide.",
   },
   {
-    image: "/images/7878.png",
+    image: "/images/3dmodel02.webp",
     title: "Fourth Slide",
     description: "Description for the fourth slide.",
   },
   {
-    image: "/images/untitl55ed拷貝.png",
+    image: "/images/3dmodel03.webp",
     title: "Fifth Slide",
     description: "Description for the fifth slide.",
   },

@@ -8,6 +8,7 @@ import {
 import { DotButton, useDotButton } from "./EmblaCarosuelDotButton";
 import { gsap } from "gsap";
 import Modal from "../../components/Modal/page.jsx"; // Import the Modal component
+import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.2;
 
@@ -179,10 +180,12 @@ const EmblaCarousel = (props) => {
                     )
                   }
                 >
-                  <img
+                  <Image
                     className="embla__slide__img embla__parallax__img w-full h-full object-cover "
-                    src={`https://cdn.prod.website-files.com/61789b489343c8242282a0ae/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.jpeg`}
+                    src="/images/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.webp"
                     alt="Your alt text"
+                    width={500}
+                    height={500}
                   />
                 </div>
               </div>
