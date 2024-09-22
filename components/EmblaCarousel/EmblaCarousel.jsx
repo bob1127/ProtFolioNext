@@ -12,14 +12,12 @@ import Image from "next/image";
 
 const TWEEN_FACTOR_BASE = 0.2;
 
-const EmblaCarousel = (props) => {
-  const { slides, options } = props;
+const EmblaCarousel = ({ slides, options }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [isHovered, setIsHovered] = useState(false);
   const dragLabelRef = useRef(null);
-
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-  const [currentImageSrc, setCurrentImageSrc] = useState(""); // State for the current image in the modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImageSrc, setCurrentImageSrc] = useState("");
 
   const tweenFactor = useRef(0);
   const tweenNodes = useRef([]);
@@ -169,23 +167,22 @@ const EmblaCarousel = (props) => {
         style={{ position: "relative" }}
       >
         <div className="embla__container flex">
-          {slides.map((index) => (
-            <div className="embla__slide w-[600px] flex-none pl-4" key={index}>
+          {slides.map((slide) => (
+            <div
+              className="embla__slide w-[600px] flex-none pl-4"
+              key={slide.id}
+            >
               <div className="embla__parallax border border-black h-full overflow-hidden">
                 <div
-                  className="embla__parallax__layer flex justify-center relative h-full w-[100%] "
-                  onClick={() =>
-                    handleImageClick(
-                      "https://cdn.prod.website-files.com/61789b489343c8242282a0ae/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.jpeg"
-                    )
-                  }
+                  className="embla__parallax__layer flex justify-center relative h-full w-[100%]"
+                  onClick={() => handleImageClick(slide.src)} // 點擊時顯示對應圖片的 Modal
                 >
                   <Image
-                    className="embla__slide__img embla__parallax__img w-full h-full object-cover "
-                    src="/images/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.webp"
+                    className="embla__slide__img embla__parallax__img object-cover" // 移除 w-full 和 h-full
+                    src={slide} // 使用正確的 slide 路徑
                     alt="Your alt text"
-                    width={500}
-                    height={300}
+                    layout="fill" // 使用 fill 讓圖片填滿父容器
+                    objectFit="cover" // 使用 cover 保持比例
                   />
                 </div>
               </div>
@@ -193,7 +190,7 @@ const EmblaCarousel = (props) => {
           ))}
         </div>
 
-        {/* 添加 Drag 提示的 div */}
+        {/* Drag Label */}
         <div
           ref={dragLabelRef}
           style={{

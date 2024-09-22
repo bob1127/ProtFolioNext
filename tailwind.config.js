@@ -10,6 +10,7 @@ module.exports = {
 
     extend: {
       colors: {
+        'black-rgba': 'rgba(0, 0, 0, 0.25)',
         blue: {
           100: '#2ddcff', // 将此值替换为你想要的颜色
         },

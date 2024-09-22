@@ -120,7 +120,7 @@ export default function Blog() {
                       href="/"
                       className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
                     >
-                      個人工作室｜私人接案 - 花費小預算，
+                      個人工作室 - 花費小預算，
                       <span className="bg-blue-700 inline-block px-4 border border-black text-white py-3  w-[150px] mt-4 md:mt-0 text-center">
                         增加大收益
                       </span>
@@ -443,7 +443,7 @@ export default function Blog() {
                     </p>
                     <div className="mt-5">
                       <a
-                        href="https://next-wp0004.vercel.app"
+                        href="https://next-wp0004.vercel.app/posts"
                         className="bg-blue-600  mt-[35px] px-6 py-2 text-white border-black border"
                         data-aos-delay="300"
                       >
@@ -697,18 +697,9 @@ export default function Blog() {
                   </Marquee>
                 </div>
               </section> */}
-              s
-              <section className="flex flex-col md:flex-row">
-                <div className=" w-full md:w-1/2 h-[400px] overflow-hidden flex justify-center items-center border relative border-black">
-                  <iframe
-                    className="absolute top-0 left-0 z-[999]"
-                    src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
-                    frameborder="0"
-                    width="100%"
-                    height="500px"
-                  ></iframe>
-                </div>
-                <div className=" w-full md:w-1/2">
+
+              <section className="md:px-[50px] px-[20px] xl:px-[100px]">
+                <div>
                   <div className="pl-8">
                     <h1 className="">產品建模、3D形象影片</h1>
                     <GsapText
@@ -732,7 +723,20 @@ export default function Blog() {
                       Spline
                     </p> */}
                   </div>
-                  <Carousel05 />
+                </div>
+                <div className="flex">
+                  <div className=" w-full md:w-1/2">
+                    <Carousel05 />
+                  </div>
+                  <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden flex justify-center items-center relative border-black mt-[20px]">
+                    <iframe
+                      className="absolute top-0 left-0 z-[999]"
+                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                      frameborder="0"
+                      width="100%"
+                      height="500px"
+                    ></iframe>
+                  </div>
                 </div>
               </section>
               <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">

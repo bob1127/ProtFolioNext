@@ -10383,3 +10383,8 @@ blockquote{
     transform: rotate(360deg);
   }
 } */
+.embla__parallax__layer {
+  position: relative; /* 確保父容器的定位 */
+  width: 100%; /* 100% 寬度 */
+  height:300px; /* 100% 高度 */
+}

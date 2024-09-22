@@ -441,7 +441,7 @@ export default function Blog() {
                       提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
                     </p>
                     <a
-                      href="https://next-wp0004.vercel.app"
+                      href="https://next-wp0004.vercel.app/posts"
                       data-aos="fade-up"
                       className="bg-blue-600  px-6 py-2 text-white border-black border mt-4"
                       data-aos-delay="300"

@@ -562,44 +562,6 @@ CREACTIVEs</h1>
         </section>
 
         <section className="bg-gray-100  py-[70px] px-[20px]">
-          <div className="flex flex-col w-full md:w-2/3 mx-auto">
-            <div className="title mb-6 w-full">
-              <h2 className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black  font-extrabold">
-                "設計網站不難 做出好的網站才不容易"
-              </h2>
-
-              <p className=" text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3 mb-4">
-                總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
-                來跟我討論吧
-              </p>
-              <div className="h-full flex my-auto justify-center items-center">
-                <a
-                  href="/Contact"
-                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                  className="button-wrapper  w-inline-block"
-                >
-                  <div className="button-layout">
-                    <p href="/about" className="button-text" style={{}}>
-                      Contact
-                    </p>
-                    <div className="button-bg" style={{}} />
-                  </div>
-                  <div className="button-icon-block">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="button-icon"
-                      style={{}}
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-            {/* <div className="px-4">
-              <SwiperScroll />
-            </div> */}
-          </div>
           <div className="flex flex-col  px-[20px] md:px-[50px] xl:px-[100px]">
             <div className="flex justify-center items-center flex-col">
               <h3 className="text-[26px] md:text-[35px]">
@@ -660,6 +622,44 @@ CREACTIVEs</h1>
                 <p className="text-[20px] mt-3">◉高效的內容管理</p>
               </div>
             </div>
+          </div>
+          <div className="flex mt-10 flex-col w-full md:w-2/3 mx-auto">
+            <div className="title mb-6 w-full">
+              <h2 className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black  font-extrabold">
+                "設計網站不難 做出好的網站才不容易"
+              </h2>
+
+              <p className=" text-center text-[18px] leading-[26px] ">
+                總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
+                來跟我討論吧
+              </p>
+              <div className="h-full mt-5 flex my-auto justify-center items-center">
+                <a
+                  href="/Contact"
+                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                  className="button-wrapper  w-inline-block"
+                >
+                  <div className="button-layout">
+                    <p href="/about" className="button-text" style={{}}>
+                      Contact
+                    </p>
+                    <div className="button-bg" style={{}} />
+                  </div>
+                  <div className="button-icon-block">
+                    <img
+                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                      loading="lazy"
+                      alt=""
+                      className="button-icon"
+                      style={{}}
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            {/* <div className="px-4">
+              <SwiperScroll />
+            </div> */}
           </div>
         </section>
         {/* <section className="py-[100px] flex flex-col justify-center items-center">
