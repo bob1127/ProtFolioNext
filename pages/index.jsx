@@ -580,7 +580,7 @@ CREACTIVEs</h1>
                 >
                   <div className="button-layout">
                     <p href="/about" className="button-text" style={{}}>
-                      馬上聯繫
+                      Contact
                     </p>
                     <div className="button-bg" style={{}} />
                   </div>
@@ -599,6 +599,67 @@ CREACTIVEs</h1>
             {/* <div className="px-4">
               <SwiperScroll />
             </div> */}
+          </div>
+          <div className="flex flex-col  px-[20px] md:px-[50px] xl:px-[100px]">
+            <div className="flex justify-center items-center flex-col">
+              <h3 className="text-[26px] md:text-[35px]">
+                探索無頭網站：突破傳統 WordPress 的界限
+              </h3>
+              <p>
+                傳統 WordPress
+                網站雖然功能強大，但往往受限於固定的前後端架構，影響網站的速度、靈活性及擴展性。
+              </p>
+              <div className="h-full mt-5 flex my-auto justify-center items-center">
+                <a
+                  href="/Contact"
+                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                  className="button-wrapper  w-inline-block"
+                >
+                  <div className="button-layout">
+                    <p href="/about" className="button-text" style={{}}>
+                      Sample
+                    </p>
+                    <div className="button-bg" style={{}} />
+                  </div>
+                  <div className="button-icon-block">
+                    <img
+                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                      loading="lazy"
+                      alt=""
+                      className="button-icon"
+                      style={{}}
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div className="flex md:flex-row flex-col mt-8 justify-center">
+              <div className=" w-full md:w-1/2  p-2 md:p-4 xl:p-10">
+                <h3 className="text-[26px] md:text-[35px]">
+                  傳統Wordpress網站
+                </h3>
+                <p className="text-[20px] mt-3">
+                  ◉前後端緊密耦合，影響網站速度
+                </p>
+                <p className="text-[20px] mt-3">◉設計與功能受限於主題和插件</p>
+                <p className="text-[20px] mt-3">◉性能優化挑戰大</p>
+                <Image
+                  src="/images/wordpressWeb.jpg"
+                  width={800}
+                  className="mt-5"
+                  height={500}
+                ></Image>
+              </div>
+
+              <div className="w-full  md:w-1/2  p-2 md:p-4 xl:p-10">
+                <h3 className="text-[26px] md:text-[35px]">
+                  無頭 Wordpress網站
+                </h3>
+                <p className="text-[20px] mt-3">◉更快的網站速度</p>
+                <p className="text-[20px] mt-3">◉無限的設計自由與靈活性</p>
+                <p className="text-[20px] mt-3">◉高效的內容管理</p>
+              </div>
+            </div>
           </div>
         </section>
         {/* <section className="py-[100px] flex flex-col justify-center items-center">

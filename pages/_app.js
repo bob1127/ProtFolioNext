@@ -1,22 +1,21 @@
 import dynamic from 'next/dynamic';
-import Head from 'next/head';
-// import Inner from "../components/Inner/index.jsx";
+
+
 import Script from 'next/script';
 import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 import { NextUIProvider } from "@nextui-org/react";
-// import Navbar from '../components/sideTabs/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
+import Head from 'next/head';
 import AOS from 'aos';
-// import PolicyModal from '../components/PolicyModal.jsx'
 import Nav from '../components/Navbar/page.jsx'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
 import { DefaultSeo } from 'next-seo';
 import defaultSEOConfig from '../next-seo.config.js';
-// Dynamically import the PhysicsAnimationApp component with ssr set to false
+
 const PhysicsAnimationApp = dynamic(
   () => import("../components/PhysicsAnimation/app.jsx"),
   { ssr: false }
@@ -39,6 +38,9 @@ export default function MyApp({ Component, pageProps, router }) {
    
 
       <html   lang="zh-TW" className='bg-white' >
+        <Head>
+  <link rel="icon" type="image/webp" href="/images/JeekLogo.webp" />
+</Head>
         <NextSeo
       title="極客網頁設計-提升搜尋排名， 讓你的業務被發現讓您的業務被發現"
       description="我們專注於設計優化的網站，確保您的業務在搜尋引擎中獲得更高曝光率。透過專業的SEO策略，讓您的網站在競爭中脫穎而出，吸引更多目標客戶"
@@ -76,18 +78,11 @@ export default function MyApp({ Component, pageProps, router }) {
         strategy="lazyOnload"
       />
 
-      <Head>
-           <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/Screenshot-2023-07-17-112049.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/Screenshot-2023-07-17-112049.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/Screenshot-2023-07-17-112049.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#ffffff" />
-      </Head>
+     
 
 
 
-          <div className='hidden md:block'>
+          <div className=''>
                 {!noNavbarRoutes.includes(router.pathname) && <Nav />}
           </div>
    
@@ -215,94 +210,25 @@ export default function MyApp({ Component, pageProps, router }) {
                       id="w-node-_4f1c3f96-9351-ef46-d1ee-e61c42e6a5bd-cdf922c7"
                       className="w-dyn-list"
                     >
-                      <div
-                        role="list"
-                        className="footer-socials-list w-dyn-items"
-                      >
-                        <div role="listitem" className="w-dyn-item">
-                          <a
-                            aria-label="Social link"
-                            href="#"
-                            className="footer-social-link w-inline-block"
-                          >
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c3a8b2f927ce7f896c3a_youtube-logo-black.svg"
-                              loading="lazy"
-                              alt=""
-                              className="icon is-footer-social"
-                            />
-                          </a>
-                        </div>
-                        <div role="listitem" className="w-dyn-item">
-                          <a
-                            aria-label="Social link"
-                            href="#"
-                            className="footer-social-link w-inline-block"
-                          >
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c3be86afee09c6670653_linkedin-logo-black.svg"
-                              loading="lazy"
-                              alt=""
-                              className="icon is-footer-social"
-                            />
-                          </a>
-                        </div>
-                        <div role="listitem" className="w-dyn-item">
-                          <a
-                            aria-label="Social link"
-                            href="#"
-                            className="footer-social-link w-inline-block"
-                          >
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c393feb96a6a38785fc6_facebook-logo-black.svg"
-                              loading="lazy"
-                              alt=""
-                              className="icon is-footer-social"
-                            />
-                          </a>
-                        </div>
-                      </div>
+                       <Marquee>
+                         <div className='text-white'>
+                          JEEK Design
+                         </div>
+                       </Marquee>
                     </div>
                     <div
                       id="w-node-_4b3c50e8-fd47-cca7-b90c-0c893a2a7de9-cdf922c7"
                       className="footer-utility-wrapper"
                     >
+                       <div className='text-white flex'>
+                        <p className='text-white mx-2'>DM</p>
+                        <p className='text-white mx-2'>Banner</p>
+                          <p className='text-white mx-2'>Website</p>
+                        
+                       </div>
+                      
                       <div className="footer-utility-links">
-                        <a
-                          href="/utility-pages/instructions"
-                          className="footer-utility-link"
-                        >
-                        Website
-                        </a>
-                        <a
-                          href="/utility-pages/licenses"
-                          className="footer-utility-link"
-                        >
-                          Banner
-                        </a>
-                        <a
-                          href="http://www.webflow.com"
-                          target="_blank"
-                          className="footer-utility-link"
-                        >
-                           DM
-                        </a>
-                      </div>
-                      <div className="footer-utility-links">
-                        <a
-                          href="  "
-                          target="_blank"
-                          className="footer-utility-link"
-                        >
-                          More Template
-                        </a>
-                        <a
-                          href="https://webflow.com/templates/designers/metrik"
-                          target="_blank"
-                          className="footer-utility-link"
-                        >
-                          Logo.Deaign.io
-                        </a>
+                       
                       </div>
                     </div>
                   </div>

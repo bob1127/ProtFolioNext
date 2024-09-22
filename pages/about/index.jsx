@@ -35,7 +35,7 @@ export default function Blog() {
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
       <NextSeo
-        title="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        title="關於我們-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
         openGraph={{
           title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
@@ -393,7 +393,7 @@ export default function Blog() {
                 </a>
               </section>
               <section className="high-performance mt-5 flex  flex-col xl:flex-row justify-center">
-                <div className="justify-center w-full flex-col xl:w-4/5 xl:flex-row flex">
+                <div className="justify-center items-center w-full flex-col xl:w-4/5 xl:flex-row flex">
                   <div className=" w-full xl:w-1/2" data-aos="fade-up">
                     <img
                       className="w-full"
@@ -426,7 +426,7 @@ export default function Blog() {
               <section className="px-[20px] md:px-[50px] xl:px-[100px]">
                 <div className="top mt-4 mb-4 text-[40px] text-center"></div>
 
-                <div className="flex  flex-col xl:flex-row">
+                <div className="flex  ">
                   <div className="xl:w-1/2 w-full p-0 md:p-8">
                     <GsapText
                       className="responsive-text"
@@ -441,17 +441,17 @@ export default function Blog() {
                       的图像优化和代码拆分功能进一步提升性能。WordPress
                       提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
                     </p>
+                    <div className="mt-5">
+                      <a
+                        href="https://next-wp0004.vercel.app"
+                        className="bg-blue-600  mt-[35px] px-6 py-2 text-white border-black border"
+                        data-aos-delay="300"
+                      >
+                        看範例
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <a
-                      href="https://next-wp0004.vercel.app"
-                      className="bg-blue-600  mt-[35px] px-6 py-2 text-white border-black border"
-                      data-aos-delay="300"
-                    >
-                      看範例
-                    </a>
-                    <b>以上是自建的Blog網站 使用 next.js + wordpress</b>
-                  </div>
+
                   <div className=" w-full xl:w-1/2 h-auto xl:h-[600px] relative overflow-hidden p-8">
                     {/* <Image
                       src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
@@ -710,20 +710,27 @@ export default function Blog() {
                 </div>
                 <div className=" w-full md:w-1/2">
                   <div className="pl-8">
-                    <h1 className="">產品建模|商業建模|3D形象影片</h1>
+                    <h1 className="">產品建模、3D形象影片</h1>
                     <GsapText
-                      text=" Spline + Blender"
+                      text="  3D-Interactive"
                       lineHeight="70px"
                       id="text3"
                       fontSize="60px"
                     />{" "}
-                    <p className=" mb-4 text-[26px] inline-block font-normal ">
-                      試用Blender建模<br></br>Spline 3d 做出交互式
-                    </p>{" "}
-                    <br></br>
-                    <p className="bg-blue-700 inline-block text-white  border-black border">
-                      各類3d建模模型，工業產品
+                    <p className="w-[95%] md:w-2/3">
+                      {" "}
+                      3D
+                      網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
                     </p>
+                    <p className="bg-blue-700 inline-block text-white mt-4 px-3 py-1 border-black border">
+                      Spline
+                    </p>
+                    <p className="bg-blue-700 inline-block text-white ml-4 px-3 py-1 border-black border">
+                      Blender
+                    </p>
+                    {/* <p className="bg-blue-700 inline-block text-white  border-black border">
+                      Spline
+                    </p> */}
                   </div>
                   <Carousel05 />
                 </div>
@@ -1066,10 +1073,8 @@ export default function Blog() {
                 <section>
                   <div className="flex flex-col items-center justify-center">
                     <div className="txt px-[20px]  flex justify-center items-center flex-col">
-                      <GsapText
-                        text=" 提升網站效能，贏得搜尋排名"
-                        id="text09"
-                      />
+                      <GsapText text="更快、更優化 " id="text09" />
+                      <h2>提升網站效能，贏得搜尋排名</h2>
 
                       <h3 className="leading-[40px]">
                         {" "}
@@ -1078,13 +1083,22 @@ export default function Blog() {
                           {" "}
                           Page Speed Insight{" "}
                         </span>{" "}
-                        讓您的網站更快、更優化
+                        檢測您的網站
                       </h3>
                       <p className="mt-3 leading-[26px] text-[16px] w-[100%] md:w-4/5  xl:w-1/2 text-center">
                         在數位時代，網站速度不僅影響使用者體驗，更是影響 SEO
                         排名的重要因素。Google Speed Insight
                         是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，精確指出需要改進的地方，讓您能輕鬆優化網站。
                       </p>
+                      <div className="main-container medium-paddings mx-auto flex justify-center border ">
+                        <a
+                          id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                          href="/Blogs"
+                          className="simple-link"
+                        >
+                          全部文章
+                        </a>
+                      </div>
                     </div>
                     <div className=" md:flex-row flex-col   flex w-full mx-auto md:w-2/3 xl:w-3/4 p-10 justify-center bottom-section">
                       <div className="left p-0 md:p-4 w-full md:w-1/2">
@@ -1149,9 +1163,7 @@ export default function Blog() {
                         />{" "}
                       </h2>
 
-                      <p className="text-[20px] text-black">
-                        高效能設計，實惠價格，成就您的品牌
-                      </p>
+                      <h3 className=" text-black">網頁Banner設計</h3>
                       <div className="features-wrapper w-dyn-list">
                         <div role="list" className="features-grid w-dyn-items">
                           <div
@@ -1160,17 +1172,12 @@ export default function Blog() {
                           >
                             <div className="feature-image">
                               <div className="reveal-image-trigger">
-                                <img
-                                  loading="lazy"
-                                  alt=""
-                                  src="https://www.ultraehp.com/images/test-portfolio/6697d9dae472fdc9bf452bfc_stada-img-n-9.png"
+                                <Image
                                   className="cover-image"
-                                  style={{
-                                    transform:
-                                      "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                    transformStyle: "preserve-3d",
-                                  }}
-                                />
+                                  src="/images/ECWP100-carousel-index.webp"
+                                  width={800}
+                                  height={400}
+                                ></Image>
                                 <div
                                   className="bg-for-animation is-dark-color"
                                   style={{ display: "block" }}

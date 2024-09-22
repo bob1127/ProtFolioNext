@@ -185,7 +185,7 @@ const EmblaCarousel = (props) => {
                     src="/images/652c56c4c18971baca8fc8c8_D1WT9WXkIWp69gUxTZCSaVbkfvxy1AJTpJapWsMszh4.webp"
                     alt="Your alt text"
                     width={500}
-                    height={500}
+                    height={300}
                   />
                 </div>
               </div>
