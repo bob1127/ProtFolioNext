@@ -8,7 +8,10 @@ export default function Home() {
   return (
     <section className="grid place-content-center gap-2 bg-[#15a4fd] relative z-[9999999] text-white px-8 py-24 ">
       <FlipLink href="#">Website</FlipLink>
-      <FlipLink href="#">design-Life</FlipLink>
+      <FlipLink href="#">Design</FlipLink>
+
+      <p className="text-[22px] mt-3  ml-3"> 創意無限，設計未來</p>
+      <p className="text-[22px] ml-3"> 為您的品牌增值</p>
       {/* <FlipLink href="#">Facebook</FlipLink>
       <FlipLink href="#">Instagram</FlipLink> */}
     </section>

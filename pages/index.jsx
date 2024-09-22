@@ -121,50 +121,35 @@ CREACTIVEs</h1>
                 </Marquee>
               </div>
             </div>
-            <div className="hero-middle border border-black w-full lg:w-[20%] p-[50px] flex  justify-center relative flex-col items-center pt-[50px] border-1 ">
-              <h2 className="text-[32px] md:text-left text-center text-bold">
-                創意無限，設計未來
-              </h2>
-              <h2 className="text-[32px] text-bold">為你的品牌增值</h2>
-              <br />
-            </div>
-            <div className="hero-right p-[50px] border-1 border-black border pt-[50px] flex flex-col justify-center items-center  w-full lg:w-[15%]">
-              <div className="top  flex-row  md:flex-col flex justify-center items-center">
-                <a
-                  href="/Contact"
-                  className="mt-4 mx-2 md:mx-0  hover:scale-95 duration-300"
-                >
-                  <img
-                    className="w-[40px]"
-                    src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
-                    alt=""
-                  />
-                </a>
-                <a
-                  href="/Contact"
-                  className="mt-4 mx-2 md:mx-0 hover:scale-95 duration-300"
-                >
-                  <img
-                    className="w-[40px]"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn4xB1s17gDuk8Gas9rHwGpaHBUh11qqtoMw&s"
-                    alt=""
-                  />
-                </a>
-                <a
-                  href="/Contact"
-                  className="mt-4 mx-2 md:mx-0 hover:scale-95 duration-300"
-                >
-                  <img
-                    className="w-[40px]"
-                    src="https://static-00.iconduck.com/assets.00/email-icon-512x408-pcaze3fq.png"
-                    alt=""
-                  />
-                </a>
+            <a
+              href="/Contact"
+              className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[500px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
+              style={{ backgroundImage: "url(/images/man-1839500_1920.webp)" }}
+            >
+              <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
+                <Marquee>
+                  <div className="text-white text-[18px]">
+                    網頁設計，SEO優化，產品銷售，Banner/DM 設計
+                  </div>
+                </Marquee>
               </div>
-              <div className="bottom">
-                <div className="contact-icon "></div>
+            </a>
+            <a
+              href="/Contact"
+              className="hero-right duration-500 border-blac  ease-in-out lg:hover:w-[35%] group overflow-hidden delay-150  border-1 border-black border pt-[50px] flex flex-col justify-center bg-cover bg-no-repeat h-[500px] xl:h-auto bg-center items-center  w-full lg:w-[15%]"
+              style={{ backgroundImage: "url(/images/photographer.webp)" }}
+            >
+              <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
+                <Marquee>
+                  <div className="text-white text-[18px]">
+                    商品攝影，產品建模，網站形象影片
+                  </div>
+                </Marquee>
+                {/* <a href=" px-4 py-1 bg-[#333] txet-white border  border-black ">
+                  聯繫我
+                </a> */}
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -579,7 +564,7 @@ CREACTIVEs</h1>
                 >
                   <div className="button-layout">
                     <p href="/about" className="button-text" style={{}}>
-                      Sample
+                      READ
                     </p>
                     <div className="button-bg" style={{}} />
                   </div>
