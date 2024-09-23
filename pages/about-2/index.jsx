@@ -22,7 +22,7 @@ export default function Blog() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className={`content ${isVisible ? "fade-in" : ""}`}>
+    <div className={`content ${isVisible ? "fade-in" : ""}`} data-aos="fade-up">
       <>
         <div className="about-root">
           <div id="webpage" className="page-wrapper">

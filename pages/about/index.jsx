@@ -33,7 +33,7 @@ export default function Blog() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className={`content ${isVisible ? "fade-in" : ""}`}>
+    <div className={`content ${isVisible ? "fade-in" : ""}`} data-aos="fade-up">
       <NextSeo
         title="關於我們-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
@@ -413,11 +413,14 @@ export default function Blog() {
                         data-aos="fade-up"
                       >
                         <h2>Next.js + Wordpress</h2>
-                        Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
-                        的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
-                        CDN 和缓存优化，页面加载速度更快。Next.js
-                        的图像优化和代码拆分功能进一步提升性能。WordPress
-                        提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
+                        <p className="mt-[10px] leading-[30px]">
+                          {" "}
+                          Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
+                          的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
+                          CDN 和缓存优化，页面加载速度更快。Next.js
+                          的图像优化和代码拆分功能进一步提升性能。WordPress
+                          提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
+                        </p>
                       </p>
                     </div>
                   </div>
@@ -426,7 +429,7 @@ export default function Blog() {
               <section className="px-[20px] md:px-[50px] xl:px-[100px]">
                 <div className="top mt-4 mb-4 text-[40px] text-center"></div>
 
-                <div className="flex  ">
+                <div className="flex flex-col md:flex-row ">
                   <div className="xl:w-1/2 w-full p-0 md:p-8">
                     <GsapText
                       className="responsive-text"
@@ -1078,9 +1081,11 @@ export default function Blog() {
                   <div className="flex flex-col items-center justify-center">
                     <div className="txt px-[20px]  flex justify-center items-center flex-col">
                       <GsapText text="更快、更優化 " id="text09" />
-                      <h2>提升網站效能，贏得搜尋排名</h2>
+                      <h2 className="text-center">
+                        提升網站效能，贏得搜尋排名
+                      </h2>
 
-                      <h3 className="leading-[40px]">
+                      <h3 className="leading-[40px] text-center">
                         {" "}
                         使用{" "}
                         <span className="bg-blue-700 text-white border border-black mx-2 font-bold   ">
@@ -1089,7 +1094,7 @@ export default function Blog() {
                         </span>{" "}
                         檢測您的網站
                       </h3>
-                      <p className="mt-3 leading-[26px] text-[16px] w-[100%] md:w-4/5  xl:w-1/2 text-center">
+                      <p className="mt-3 leading-[26px] xl:text-[18px] text-[16px] w-[100%] md:w-4/5  xl:w-1/2 text-center">
                         在數位時代，網站速度不僅影響使用者體驗，更是影響 SEO
                         排名的重要因素。Google Speed Insight
                         是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，精確指出需要改進的地方，讓您能輕鬆優化網站。

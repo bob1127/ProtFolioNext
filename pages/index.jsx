@@ -55,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className="" data-aos="fade-up">
       <div>
         <NextSeo
           title="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
@@ -191,7 +191,7 @@ CREACTIVEs</h1>
             </div>
             <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h2 className=" text-center">"創意無限，讓您的品牌脫穎而出。"</h2>
-              <p className="text-[18px] leading-[26px] text-center">
+              <p className=" text-[16px] xl:text-[18px] leading-[26px] text-center">
                 專注打造符合您品牌形象的網站，量身定制 ，細緻呈現品牌價值
               </p>
 
@@ -367,7 +367,7 @@ CREACTIVEs</h1>
                 Go to about us
               </Link> */}
               <h2 className="text-white">網頁主體視覺</h2>
-              <p className="  text-white   text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3 ">
+              <p className="  text-white   text-cenrer lg:text-left text-center w-full text-[16px] xl:text-[18px] leading-[26px] xl:w-2/3 ">
                 創造一個引人入勝的網頁主體視覺，通過精心設計的 Banner、震撼的
                 Hero Image
                 和高質量的產品攝影來強化品牌形象並吸引訪客。這種多層次的視覺策略將幫助您在用戶進入網站的第一時間就感受到品牌的獨特魅力。
@@ -377,7 +377,7 @@ CREACTIVEs</h1>
             <div className="bottom  bg-white flex px-[20px] md:px-0 py-[50px]  items-center   h-1/2 justify-start flex-col w-full ">
               {/* <VelocityText /> */}
               <h2 className="  text-light">3D 產品視覺</h2>
-              <p className="mt-[20px]  text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3">
+              <p className="mt-[20px]  text-cenrer lg:text-left text-center w-full text-[16px] xl:text-[18px] leading-[26px] xl:w-2/3">
                 利用 3D
                 技術，創建產品的動態展示效果。讓產品在網站上旋轉、縮放，並可在互動中查看不同角度和細節。這種動態效果能夠幫助客戶更好地理解產品特點和功能，提高轉化率。
               </p>
@@ -538,7 +538,7 @@ CREACTIVEs</h1>
               <h4 className=" text-[24px] xl:text-[30px] font-bold">
                 網頁設計
               </h4>
-              <p className="  text-cenrer lg:text-left text-center w-full text-[18px] leading-[26px] xl:w-2/3 ">
+              <p className="  text-cenrer lg:text-left text-center text-[16px] w-full xl:text-[18px] leading-[26px] xl:w-2/3 ">
                 {" "}
                 您的品牌在數位世界中大放異彩！我們專業的網頁設計團隊為您打造獨特且具吸引力的網站，提升用戶體驗，促進業務增長。立即聯絡我們，開啟您的數位成功之旅！
               </p>
@@ -549,10 +549,10 @@ CREACTIVEs</h1>
         <section className="bg-gray-100  py-[70px] px-[20px]">
           <div className="flex flex-col  px-[20px] md:px-[50px] xl:px-[100px]">
             <div className="flex justify-center items-center flex-col">
-              <h3 className="text-[26px] md:text-[35px]">
+              <h3 className="text-[26px] text-center md:text-[35px]">
                 探索無頭網站：突破傳統 WordPress 的界限
               </h3>
-              <p>
+              <p className="text-center">
                 傳統 WordPress
                 網站雖然功能強大，但往往受限於固定的前後端架構，影響網站的速度、靈活性及擴展性。
               </p>

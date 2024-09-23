@@ -93,7 +93,7 @@ export default function Blog() {
           ></Image>
         </div>
         <div className="article-content p-0 xl:px-[200px]">
-          <div data-aos="fade-up" className="patagrph p-10">
+          <div data-aos="fade-up" className="patagrph p-2 xl:p-10">
             <div className="title  " data-aos="fade-up">
               <h1></h1>
               <p className="xl:text-[18px] tracking-wide leading-relaxed">
@@ -108,7 +108,7 @@ export default function Blog() {
             height={768}
             placeholder="empty"
           ></Image>
-          <div data-aos="fade-up" className="patagrph p-10">
+          <div data-aos="fade-up" className="patagrph p-2 xl:p-10">
             <h2>SEO成效要多久？深入了解SEO見效時間和影響因素</h2>
             <p className="xl:text-[18px] tracking-wide leading-relaxed">
               SEO是一項長期投資，效果通常在3到6個月內開始顯現，但完全達到最佳效果可能需要6到12個月甚至更久。根據Google的數據顯示，大多數網站在持續進行SEO後的6個月內會看到50%以上的流量增長。在9到12個月期間，許多網站的自然流量有機會增長2到3倍，但這取決於競爭程度、關鍵字難度、網站結構和內容品質等因素。
@@ -119,7 +119,7 @@ export default function Blog() {
             </p>
           </div>
 
-          <div data-aos="fade-up" className="patagrph p-10">
+          <div data-aos="fade-up" className="patagrph p-2 xl:p-10">
             <h2>餐飲業SEO行銷成效案例</h2>
             <p className="xl:text-[18px] tracking-wide leading-relaxed">
               某家專營素食料理的餐廳希望透過SEO提升線上曝光度，以吸引更多健康飲食和環保意識的消費者。他們的主要目標是提升餐廳網站的搜尋排名，吸引更多的預約和外帶訂單。
@@ -132,7 +132,7 @@ export default function Blog() {
             <br></br>
             <p className="xl:text-[18px] tracking-wide leading-relaxed">
               <p className="font-bold">成效時間：</p>
-              <ul>
+              <ul className="p-0 md:pl-[32px]">
                 <li className="font-extrabold text-[16px] mt-3 pl-0 ml-0">
                   1.
                   1到3個月：開始看到小幅流量提升，尤其是針對特定長尾關鍵字（例如“台北健康素食晚餐”），網頁的曝光度逐漸增加。

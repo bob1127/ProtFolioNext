@@ -4,7 +4,7 @@
 // import Button from "./Button";
 // import styles from "./style.module.scss";
 // import Nav from "./Nav";
-
+import Image from "next/image";
 export default function Index() {
   return (
     <div className="z-[99999999999] relative">
@@ -283,22 +283,24 @@ export default function Index() {
                         className="menu-feature-item w-dyn-item"
                       >
                         <div className="menu-feature-image">
-                          {/* <img
-                            src="https://static.wixstatic.com/media/0784b1_c0ab312fc95448b6b14aa403fd46fb15~mv2.jpg/v1/fill/w_1042,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Desktop%20-%20Main%20Image.jpg"
-                            loading="lazy"
-                            alt="Design"
-                            sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
-                            srcSet="https://static.wixstatic.com/media/0784b1_c0ab312fc95448b6b14aa403fd46fb15~mv2.jpg/v1/fill/w_1042,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Desktop%20-%20Main%20Image.jpg"
-                            className="cover-image"
-                          /> */}
+                          <Image
+                            src="/images/S__35962890-2.webp"
+                            alt="Navbar-ServiceImg" // 替代文字
+                            width={700} // 圖片寬度
+                            height={700} // 圖片高度
+                            priority // 高優先級載入
+                            layout="responsive" // 響應式設計
+                            placeholder="empty" // 模糊佔位符
+                            quality={80} // 圖片質量
+                          />
                         </div>
                         <a
                           aria-label="Feature link"
-                          href="/about-3"
-                          className="menu-feature-content-link w-inline-block "
+                          href="/about-2"
+                          className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
-                          <div className="menu-feature-title ">服務內容</div>
+                          <div className="menu-feature-title">網站案例</div>
                           {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
@@ -312,12 +314,16 @@ export default function Index() {
                         className="menu-feature-item w-dyn-item"
                       >
                         <div className="menu-feature-image">
-                          {/* <video
-                            className="w-full h-full"
-                            autoPlay
-                            loop
-                            src="https://spline.design/_assets/_videos/content_modes-compressed.mp4"
-                          ></video> */}
+                          <Image
+                            src="/images/S__359362890-2.webp"
+                            alt="Navbar-ServiceImg" // 替代文字
+                            width={700} // 圖片寬度
+                            height={700} // 圖片高度
+                            priority // 高優先級載入
+                            layout="responsive" // 響應式設計
+                            placeholder="empty" // 模糊佔位符
+                            quality={80} // 圖片質量
+                          />
                         </div>
                         <a
                           aria-label="Feature link"
