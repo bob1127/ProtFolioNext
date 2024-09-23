@@ -60,7 +60,7 @@ export default function Home() {
       <Head>
         <meta
           property="og:title"
-          content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+          content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 高CP網站｜你的創意，我來實踐"
         />
         <meta
           property="og:description"
@@ -83,7 +83,7 @@ export default function Home() {
               "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
             images: [
               {
-                url: "https://www.example.com/og-home.jpg",
+                url: "https://www.ultraehp.com/images/index/carousel-img/1920x768/蜂鳥探針主視覺圖-無字1920X768.webp?w=3840?p=undefined",
                 width: 800,
                 height: 600,
                 alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -597,7 +597,11 @@ CREACTIVEs</h1>
                 </a>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col mt-8 justify-center">
+            <div
+              className="flex md:flex-row flex-col mt-8 justify-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className=" w-full md:w-1/2  p-2 md:p-4 xl:p-10">
                 <h3 className="text-[26px] md:text-[35px]">
                   傳統Wordpress網站
@@ -615,7 +619,10 @@ CREACTIVEs</h1>
                 ></Image>
               </div>
 
-              <div className="w-full  md:w-1/2  p-2 md:p-4 xl:p-10">
+              <div
+                className="w-full  md:w-1/2  p-2 md:p-4 xl:p-10"
+                data-aos="fade-up"
+              >
                 <h3 className="text-[26px] md:text-[35px]">
                   無頭 Wordpress網站
                 </h3>
@@ -625,13 +632,22 @@ CREACTIVEs</h1>
               </div>
             </div>
           </div>
-          <div className="flex  flex-col w-full mt-[50px] md:w-2/3 mx-auto">
+          <div
+            className="flex  flex-col w-full mt-[50px] md:w-2/3 mx-auto"
+            data-aos="zoom-in"
+          >
             <div className="title mb-6 w-full">
-              <h2 className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black  font-extrabold">
+              <h2
+                className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black  font-extrabold"
+                data-aos="fade-up"
+              >
                 "設計網站不難 做出好的網站才不容易"
               </h2>
 
-              <p className=" text-center text-[18px] leading-[26px] ">
+              <p
+                className=" text-center text-[18px] leading-[26px] "
+                data-aos="fade-up"
+              >
                 總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
                 來跟我討論吧
               </p>
@@ -646,51 +662,53 @@ CREACTIVEs</h1>
                 </p>
               </div>
               <Digital />
-              <div className="flex md:flex-row flex-wrap justify-center items-center flex-row">
-                <div className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex  justify-center flex-col items-center mx-4">
+              <div className="flex md:flex-row flex-wrap justify-center items-start mt-10  flex-row">
+                <div className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4">
                   <p>Basic</p>
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
+                    NT30,000
+                  </div>
                   <h3 className="text-[40px]">基本網站</h3>
                   <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p>
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">
-                      {" "}
-                      {/* <Image src="" width={50} height={50}></Image>{" "} */}
-                      包含第一年網域空間費用
-                    </p>
                     <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">基本網頁版型設計</p>
+                    <p className="mt-4">基本seo優化</p>
+                    <p className="mt-4">sitemap|</p>
                   </div>
                 </div>
-                <div className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex justify-center flex-col items-center mx-4">
-                  <p>Basic</p>
+                <div className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4">
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
+                    NT45,000
+                  </div>
+                  <p>Plus</p>
                   <h3 className="text-[40px]">進階方案</h3>
-                  <p className="text-[20px]">
+                  {/* <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
-                  </p>
+                  </p> */}
 
                   <div className="plan-content mt-5">
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">商品攝影｜形象影片</p>
+                    <p className="mt-4">客製化版面設計｜特殊動畫效果</p>
+                    <p className="mt-4">購物車網站系統</p>
                     <p className="mt-4">
-                      {" "}
-                      {/* <Image src="" width={50} height={50}></Image>{" "} */}
-                      包含第一年網域空間費用
+                      SEO優化｜串接GTM、GA4、GoogleSearchConsole
                     </p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
                   </div>
                 </div>
-                <div className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex justify-center flex-col items-center mx-4">
-                  <p>Basic</p>
+                <div className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex relative w-[400px]  justify-center flex-col items-center mx-4">
+                  <p>Customized</p>
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] shadow-xl font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
+                    跟我討論
+                  </div>
                   <h3 className="text-[40px]">客製化網站</h3>
-                  <p className="text-[20px]">
+                  {/* <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
-                  </p>
+                  </p> */}
 
                   <div className="plan-content mt-5">
                     <p className="mt-4">
@@ -699,9 +717,11 @@ CREACTIVEs</h1>
                       包含第一年網域空間費用
                     </p>
                     <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">商品攝影｜形象影片</p>
+                    <p className="mt-4">特書版面效果</p>
+                    <p className="mt-4">3d產品建模｜互動式網頁</p>
+                    <p className="mt-4">3d 影片動畫</p>
+                    <p className="mt-4">高質感網頁</p>
                   </div>
                 </div>
               </div>

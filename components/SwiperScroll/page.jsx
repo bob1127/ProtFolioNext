@@ -54,17 +54,17 @@ export default function App() {
           />
           <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
             <div className="text-[16px]">
-              <span className="font-bold">了解客戶需求：</span>
+              <span className="font-bold text-[22px]">了解客戶需求：</span>
               <br></br>
               通過溝通了解業務目標、受眾和網站功能。
             </div>
             <div className="text-[16px]">
-              <span className="font-bold">提供建議:</span>
+              <span className="font-bold text-[22px]">提供建議:</span>
               <br></br>
               提出設計和技術建議，並討論預算和時間表。
             </div>
             <div className="text-[16px]">
-              <span className="font-bold">確定合作:</span>
+              <span className="font-bold text-[22px]">確定合作:</span>
               <br></br>
               確認需求和預算，為下一步做準備。
             </div>
@@ -74,33 +74,38 @@ export default function App() {
           <div className="txt">
             <h4 className="text-[30px] mb-4 font-bold">Step2. 簽付訂金</h4>
           </div>
-          <Image
+          <img
+            className="w-full"
+            src="https://characterz.design/assets/images/image08.jpg?v=fff5c05b"
+            alt=""
+          />
+          {/* <img
             width={600}
-            src="6591c4db3a320cb81ce28c1d_Relume.svg"
+            src="https://characterz.design/assets/images/image08.jpg?v=fff5c05b"
             height={400}
             loader={imageLoader}
-          />
+          /> */}
           <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
             <div className="text-[16px]">
-              <span className="font-bold">制定報價</span>
+              <span className="font-bold text-[22px]">制定報價</span>
               <br></br>
               根據需求製作報價單，涵蓋所有項目內容。
             </div>
             <div className="text-[16px]">
-              <span className="font-bold">簽訂合同:</span>
+              <span className="font-bold text-[22px]">簽訂合約:</span>
               <br></br>
-              確定合同條款，包括工作範圍和付款方式。
+              確定合約條款，包括工作範圍和付款方式。
             </div>
             <div className="text-[16px]">
-              <span className="font-bold">收取訂金:</span>
+              <span className="font-bold text-[22px]">收取訂金:</span>
               <br></br>
-              收取訂金以啟動項目，確保雙方承諾。
+              收取訂金以啟動項目，確保雙方承諾 。
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center boder-2 border-black p-5 items-center text-lg">
           <div className="txt boder-2 border-black">
-            <h4 className="text-[30px] mb-4 font-bold">Step3. </h4>
+            <h4 className="text-[30px] mb-4 font-bold">Step3. 開始製作</h4>
           </div>
           <img
             className="w-full"
@@ -110,17 +115,17 @@ export default function App() {
           />
           <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
             <div className="text-[16px]">
-              <span className="font-bold">開始製作：</span>
+              <span className="font-bold text-[22px]">開始製作：</span>
               <br></br>
               根據需求進行網站設計和開發工作。
             </div>
             <div className="text-[16px]">
-              <span className="font-bold">中期審核：</span>
+              <span className="font-bold text-[22px]">中期審核：</span>
               <br></br>
               定期與客戶審核進展，確保符合預期
             </div>
             <div className="text-[16px]">
-              <span className="font-bold"> 進行調整：</span>
+              <span className="font-bold text-[22px]"> 進行調整：</span>
               <br></br>
               根據反饋進行必要的調整，準備最終交付。
             </div>
@@ -144,19 +149,16 @@ export default function App() {
           /> */}
           <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
             <div className="text-[16px]">
-              <span className="font-bold">開始製作：</span>
+              <span className="font-bold text-[22px]">網站驗收與測試：</span>
               <br></br>
-              根據需求進行網站設計和開發工作。
+              與客戶進行最終驗收，確認網站功能、設計、內容是否符合需求。
             </div>
             <div className="text-[16px]">
-              <span className="font-bold">中期審核：</span>
+              <span className="font-bold text-[22px]">
+                後續支援與維護計劃：
+              </span>
               <br></br>
-              定期與客戶審核進展，確保符合預期
-            </div>
-            <div className="text-[16px]">
-              <span className="font-bold"> 進行調整：</span>
-              <br></br>
-              根據反饋進行必要的調整，準備最終交付。
+              結案後，提供後續支援服務的方案，如例行維護、功能更新或安全性檢查。與客戶討論未來的合作機會，並提供維護服務的相關建議，確保網站能長期穩定運作。
             </div>
           </div>
         </SwiperSlide>
