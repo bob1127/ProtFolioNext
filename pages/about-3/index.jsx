@@ -18,7 +18,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import MailchimpForm from "../../components/NewsletterForm.jsx";
-import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
+
 // import GsapText from "../components/RevealText/index";
 
 import Marquee from "react-fast-marquee";
@@ -27,20 +27,15 @@ import Script from "next/script";
 import Head from "next/head";
 // import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
 import { NextSeo } from "next-seo";
-import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
-import BannerSwiper from "../../components/BannerSwiper/page.jsx";
-import GsapText from "../../components/RevealText/index";
 
-import SpringModal from "../../components/SpringModal/page.jsx";
+import GsapText from "../../components/RevealText/index";
 import SwiperScroll from "../../components/SwiperScroll/page.jsx";
 import { useState, useEffect } from "react";
 import Link from "next/link.js";
 import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
-// import Inner from "../../components/Inner/index.jsx";
 import Image from "next/image.js";
 import dynamic from "next/dynamic";
-import Carousel04 from "../../components/EmblaCarousel04/EmblaCarousel.jsx";
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export default function Blog() {
@@ -198,7 +193,7 @@ export default function Blog() {
         <div id="webpage" className="page-wrapper">
           <main className="main">
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
-              <div className="container duration-500  bg-[#15a4fd]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[48vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
+              <div className="container duration-500  bg-[#15a4fd]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[60vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
                   <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
                     💡致力於開發使用者體驗良好的網站
@@ -207,14 +202,21 @@ export default function Blog() {
                 <div className="title "></div>
                 <main className="h-full w-full relative ">
                   <div className="z-[99999]   w-full h-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 main-title absolute">
-                    <h1 className="block sm:hidden tex-[32px] md:text-[45px] lg:text-[60px] xl:text-[80px] font-black text-center  leading-[40px] xl:leading-[80px]">
+                    <h1 className="block text-white sm:hidden tex-[32px] md:text-[45px] lg:text-[60px] xl:text-[80px] font-black text-center  leading-[40px] xl:leading-[80px]">
                       WEBSITE DESIGN - JEEK
                     </h1>
                     <RevealLinks />
 
-                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-normal p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-[#dadada] mx-auto">
-                      HELLO！我是一位懷抱夢想的網頁接案者，創立了一個小小工作室，
-                      專注於幫助中小企業、餐飲業與美容業打造專屬網站的設計公司。我相信，每個企業都有自己的風格和故事，而這些都應該在網站上得到最佳展現。不僅如此，我們還會特別注重網站的SEO優化，讓您的網站在搜尋引擎上更容易被找到，從而提升曝光度，吸引更多潛在客戶，最終增加收益。
+                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-normal p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-[#ffffff] mx-auto">
+                      HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
+                      本來是 在一家化學生技公司創業基地擔任"網頁工程師 一職"
+                      因為負責都是新創公司
+                      所以公司網頁的設計和商品拍攝影片剪輯SEO的優化
+                      都是由我完成，但這也讓我學習不同的技能。而我秉持的觀念也是不斷精進
+                      雖然我的網頁作品不多 但我忍為我的技術已可以
+                      為客戶帶來收益。我是一個追求理想和目標的人
+                      希望有理想、想法 、和目標想要讓公司網頁更好的客戶
+                      與我聯繫。
                     </div>
                   </div>
                   <div className="box01  hidden lg:block z-1 top-[100px] absolute left-[-260px] border border-black">
@@ -951,7 +953,7 @@ export default function Blog() {
                       className="button-wrapper  w-inline-block mb-5 mt-4"
                     >
                       <div className="button-layout">
-                        <p href="/about" className="button-text" style={{}}>
+                        <p className="button-text" style={{}}>
                           立即聯絡
                         </p>
                         <div className="button-bg" style={{}} />

@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <div
-      className=" py-[100px] flex justify-center items-center"
+      className=" py-[100px] flex justify-center px-[40px] items-center"
       data-aos="fade-up"
     >
       <NextSeo

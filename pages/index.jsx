@@ -4,6 +4,7 @@ import EmblaCarousel from "../components/EmblaCarousel/index.jsx";
 import EmblaCarousel01 from "../components/EmblaCarousel01/index.jsx";
 import Text3d from "../components/PerspectiveText/index.jsx";
 import { useRef, useEffect } from "react";
+import Digital from "../components/ShiftingCountdown.jsx";
 import dynamic from "next/dynamic";
 import GsapText from "../components/RevealText/index";
 import VelocityText from "../components/VelocityText/page.jsx";
@@ -123,7 +124,7 @@ CREACTIVEs</h1>
             </div>
             <a
               href="/Contact"
-              className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[500px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
+              className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[450px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
               style={{ backgroundImage: "url(/images/man-1839500_1920.webp)" }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
@@ -136,7 +137,7 @@ CREACTIVEs</h1>
             </a>
             <a
               href="/Contact"
-              className="hero-right duration-500 border-blac  ease-in-out lg:hover:w-[35%] group overflow-hidden delay-150  border-1 border-black border pt-[50px] flex flex-col justify-center bg-cover bg-no-repeat h-[500px] xl:h-auto bg-center items-center  w-full lg:w-[15%]"
+              className="hero-right duration-500 border-blac  ease-in-out lg:hover:w-[35%] group overflow-hidden delay-150  border-1 border-black border pt-[50px] flex flex-col justify-center bg-cover bg-no-repeat h-[450px] xl:h-auto bg-center items-center  w-full lg:w-[15%]"
               style={{ backgroundImage: "url(/images/photographer.webp)" }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
@@ -608,7 +609,7 @@ CREACTIVEs</h1>
               </div>
             </div>
           </div>
-          <div className="flex mt-10 flex-col w-full md:w-2/3 mx-auto">
+          <div className="flex  flex-col w-full mt-[50px] md:w-2/3 mx-auto">
             <div className="title mb-6 w-full">
               <h2 className="text-[30px] md:text-[32px] lg:text-[40px] 2xl:text-[60px]  text-center text-black  font-extrabold">
                 "設計網站不難 做出好的網站才不容易"
@@ -618,6 +619,77 @@ CREACTIVEs</h1>
                 總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
                 來跟我討論吧
               </p>
+              <span className="mt-4">價格可以再跟我討論</span>
+
+              <div className="flex flex-col mt-[30px] justify-center items-center">
+                <p className="bg-blue-700 text-white text-center mx-auto border border-black mb-3 text-[32px] font-bold inline-block">
+                  最新優惠
+                </p>
+                <p className="text-[20px] text-center">
+                  現在選擇網頁設計方案及包含公司形象影片拍攝和商品形象攝影
+                </p>
+              </div>
+              <Digital />
+              <div className="flex md:flex-row flex-wrap justify-center items-center flex-row">
+                <div className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex  justify-center flex-col items-center mx-4">
+                  <p>Basic</p>
+                  <h3 className="text-[40px]">基本網站</h3>
+                  <p className="text-[20px]">
+                    價格： <span className="font-extrabold">20000up</span>
+                  </p>
+
+                  <div className="plan-content mt-5">
+                    <p className="mt-4">
+                      {" "}
+                      {/* <Image src="" width={50} height={50}></Image>{" "} */}
+                      包含第一年網域空間費用
+                    </p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                  </div>
+                </div>
+                <div className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex justify-center flex-col items-center mx-4">
+                  <p>Basic</p>
+                  <h3 className="text-[40px]">進階方案</h3>
+                  <p className="text-[20px]">
+                    價格： <span className="font-extrabold">20000up</span>
+                  </p>
+
+                  <div className="plan-content mt-5">
+                    <p className="mt-4">
+                      {" "}
+                      {/* <Image src="" width={50} height={50}></Image>{" "} */}
+                      包含第一年網域空間費用
+                    </p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                  </div>
+                </div>
+                <div className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex justify-center flex-col items-center mx-4">
+                  <p>Basic</p>
+                  <h3 className="text-[40px]">客製化網站</h3>
+                  <p className="text-[20px]">
+                    價格： <span className="font-extrabold">20000up</span>
+                  </p>
+
+                  <div className="plan-content mt-5">
+                    <p className="mt-4">
+                      {" "}
+                      {/* <Image src="" width={50} height={50}></Image>{" "} */}
+                      包含第一年網域空間費用
+                    </p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                  </div>
+                </div>
+              </div>
+
               <div className="h-full mt-5 flex my-auto justify-center items-center">
                 <a
                   href="/Contact"

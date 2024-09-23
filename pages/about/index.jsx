@@ -33,7 +33,7 @@ export default function Blog() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className={`content ${isVisible ? "fade-in" : ""}`} data-aos="fade-up">
+    <div className={`content ${isVisible ? "fade-in" : ""}`}>
       <NextSeo
         title="關於我們-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
@@ -395,11 +395,18 @@ export default function Blog() {
               <section className="high-performance mt-5 flex  flex-col xl:flex-row justify-center">
                 <div className="justify-center items-center w-full flex-col xl:w-4/5 xl:flex-row flex">
                   <div className=" w-full xl:w-1/2" data-aos="fade-up">
-                    <img
+                    {/* <img
                       className="w-full"
                       src="https://img-c.udemycdn.com/course/750x422/3791116_0ef4_7.jpg"
                       alt=""
-                    />
+                    /> */}
+                    <Image
+                      src="/images/3791116_0ef4_7 (1).webp"
+                      width={700}
+                      loading="lazy"
+                      placeholder="empty"
+                      height={450}
+                    ></Image>
                   </div>
                   <div className="w-full xl:w-1/2  flex justify-center  items-center">
                     <div
@@ -467,11 +474,18 @@ export default function Blog() {
                       src="./images/peromace.png"
                       alt=""
                     /> */}
-                    <Image
+                    {/* <Image
                       src="https://www.ultraehp.com/images/peromace.png"
                       className="scale-105  static md:absolute right-0  md:right-[-100px]"
                       height={500}
                       width={600}
+                    ></Image> */}
+                    <Image
+                      src="/images/peromace.webp"
+                      width={700}
+                      loading="lazy"
+                      placeholder="empty"
+                      height={450}
                     ></Image>
                   </div>
                 </div>
@@ -505,10 +519,11 @@ export default function Blog() {
                       <div className="service-image">
                         <div className="reveal-image-trigger">
                           <Image
-                            src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
+                            src="/images/665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946 (1).webp"
                             width={800}
                             height={800}
-                            loader={imageLoader}
+                            loading="lazy"
+                            placeholder="empty"
                           />
                           {/* <img
                             loading="lazy"
@@ -728,10 +743,10 @@ export default function Blog() {
                   </div>
                 </div>
                 <div className="flex">
-                  <div className=" w-full md:w-1/2">
+                  <div className=" hidden md:block w-full md:w-1/2">
                     <Carousel05 />
                   </div>
-                  <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden flex justify-center items-center relative border-black mt-[20px]">
+                  <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
                     <iframe
                       className="absolute top-0 left-0 z-[999]"
                       src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
@@ -757,13 +772,20 @@ export default function Blog() {
                   3d 建模產品運用在網頁上
                 </p>
                 <div className="flex mt-[25px] justify-center">
-                  <img
+                  {/* <img
                     data-aos="fade-up"
                     data-aos-delay="500"
                     className=" w-full xl:w-[80%] rounded-none md:rounded-xl mx-auto"
                     src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
                     alt=""
-                  />
+                  /> */}
+                  <Image
+                    src="/images/blender_vfx-1280x720.webp"
+                    loading="lazy"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                  ></Image>
                   {/* <div>
                     <div className="left"></div>
                     <div className="right">
@@ -806,13 +828,13 @@ export default function Blog() {
                     </div>
                   </div>
                   <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
-                    <img
-                      data-aos="fade-up"
-                      data-aos-delay="300"
-                      className="rounded-none md:rounded-xl"
-                      src="https://cdn.prod.website-files.com/61cbe22a00483909d327afc6/66393c273702f024a84f242c_65e8b9f506df42cdd9122e71_Slide%252016_9%2520-%25208.webp"
-                      alt=""
-                    />
+                    <Image
+                      src="/images/maxresdefault.webp"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                      placeholder="empty"
+                    ></Image>
                   </div>
                 </div>
               </section>
@@ -981,20 +1003,23 @@ export default function Blog() {
                           style={{}}
                         >
                           <div className="card-icon with-margin">
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6388edb8aa4cb4391_asterisk_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
+                            <Image
+                              className="mb-4"
+                              src="/images/maxresdefault.webp"
+                              width={800}
+                              height={800}
+                              placeholder="empty"
                               loading="lazy"
-                              alt=""
-                              className="icon is-card-icon"
                             />
                           </div>
                           <p className="card-paragraph">
                             <Image
                               className="mb-4"
-                              src="google-logo-exploding-1681647430.jpg"
+                              src="/images/google-logo-exploding-1681647430.webp"
                               width={800}
                               height={800}
-                              loader={imageLoader01}
+                              placeholder="empty"
+                              loading="lazy"
                             />
                             {/* <img
                               className="w-full my-3 rounded-2xl mx-auto"
@@ -1025,10 +1050,13 @@ export default function Blog() {
                           <div className="card-content">
                             <p className="card-paragraph">降低營銷成本</p>
                             <p className="card-text-small">
-                              <img
-                                className="w-full rounded-lg my-3"
-                                src="https://assets-v2.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/https://i.ytimg.com/vi/_nbTlEKE8Ac/maxresdefault.jpg"
-                                alt=""
+                              <Image
+                                className="mb-4"
+                                src="/images/maxresdefault.webp"
+                                width={800}
+                                height={800}
+                                placeholder="empty"
+                                loading="lazy"
                               />
                               比較傳統的廣告渠道，如電視或報紙，SEO和社交媒體營銷的成本較低，且效果持久。
                               Forrester
@@ -1044,11 +1072,13 @@ export default function Blog() {
                           style={{}}
                         >
                           <div className="card-icon">
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6f994f099c6fa0af1_visibility_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
+                            <Image
+                              className="mb-4"
+                              src="/images/maxresdefault.webp"
+                              width={800}
+                              height={800}
+                              placeholder="empty"
                               loading="lazy"
-                              alt=""
-                              className="icon is-card-icon"
                             />
                           </div>
                           <div className="card-content">
@@ -1135,261 +1165,24 @@ export default function Blog() {
                         </ul>
                       </div>
                       <div className="right w-full md:w-1/2">
-                        <img
+                        {/* <img
                           className="w-full"
                           src="http://localhost:3000/_next/image?url=https%3A%2F%2Fwww.ultraehp.com%2Fimages%2Fperomace.png&w=1200&q=75"
                           alt=""
-                        />
+                        /> */}
+                        <Image
+                          srgc="/images/peromace.webp"
+                          loading="lazy"
+                          width={800}
+                          placeholder="empty"
+                          height={500}
+                        ></Image>
                       </div>
                     </div>
                   </div>
                 </section>
               </section>
-              <section className="section with-bg-dark">
-                <div className="padding">
-                  <div className="main-container">
-                    <div id="w-node-_8370794b-f6ab-a9b0-56de-0c1faa6af515-c41abecd">
-                      <div className="eyebrow-block">
-                        <div className="icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6695ce27515b5811a_deployed_code_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="icon is-eyebrow-icon"
-                          />
-                        </div>
-                        <p className="eyebrow-text">Features</p>
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-_17adc12d-78a0-5543-81dd-4bc4bf3b431c-c41abecd"
-                      className="features-content-flex"
-                    >
-                      <h2 className="heading is-extralarge text-black">
-                        <GsapText
-                          text="  不必高價，也能擁有卓越網頁"
-                          id="text5"
-                        />{" "}
-                      </h2>
 
-                      <h3 className=" text-black">網頁Banner設計</h3>
-                      <div className="features-wrapper w-dyn-list">
-                        <div role="list" className="features-grid w-dyn-items">
-                          <div
-                            role="listitem"
-                            className="feature-item w-dyn-item"
-                          >
-                            <div className="feature-image">
-                              <div className="reveal-image-trigger">
-                                <Image
-                                  className="cover-image"
-                                  src="/images/ECWP100-carousel-index.webp"
-                                  width={800}
-                                  height={400}
-                                ></Image>
-                                <div
-                                  className="bg-for-animation is-dark-color"
-                                  style={{ display: "block" }}
-                                />
-                              </div>
-                            </div>
-                            <a
-                              aria-label="Feature link"
-                              data-w-id="07d9a56e-d643-2bf8-806a-32751f6a64a2"
-                              style={{
-                                transform:
-                                  "translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                transformStyle: "preserve-3d",
-                                opacity: 0,
-                              }}
-                              href="/feature/design"
-                              className="feature-content-link w-inline-block"
-                            >
-                              <h3
-                                data-w-id="5de2f2dd-e901-6701-f8f6-873bf69fa7c7"
-                                className="heading is-feature-title"
-                                style={{}}
-                              >
-                                Design
-                              </h3>
-                              <div
-                                data-w-id="8c408de9-d384-9933-3fee-e2e760e7e2a7"
-                                className="feature-line"
-                                style={{}}
-                              />
-                              <div
-                                data-w-id="4289e887-07ce-5274-3030-580c1ab92bcb"
-                                className="feature-more-block"
-                                style={{}}
-                              >
-                                <p className="case-study-category-text">More</p>
-                                <img
-                                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                                  loading="lazy"
-                                  alt=""
-                                  className="icon in-feature-icon"
-                                />
-                              </div>
-                              <div
-                                data-w-id="2388d243-2369-6d3b-32f2-2b13ff7a6ace"
-                                className="feature-bg"
-                                style={{}}
-                              />
-                            </a>
-                          </div>
-                          <div
-                            role="listitem"
-                            className="feature-item w-dyn-item"
-                          >
-                            <div className="feature-image">
-                              <div className="reveal-image-trigger">
-                                <img
-                                  loading="lazy"
-                                  alt=""
-                                  src="https://www.ultraehp.com/images/test-portfolio/668e6aca4fb399ee1389df93_stada-img-3-p-1600.webp"
-                                  className="cover-image"
-                                  style={{
-                                    transform:
-                                      "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                    transformStyle: "preserve-3d",
-                                  }}
-                                />
-                                <div
-                                  className="bg-for-animation is-dark-color"
-                                  style={{ display: "block" }}
-                                />
-                              </div>
-                            </div>
-                            <a
-                              aria-label="Feature link"
-                              data-w-id="07d9a56e-d643-2bf8-806a-32751f6a64a2"
-                              style={{
-                                transform:
-                                  "translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                transformStyle: "preserve-3d",
-                                opacity: 0,
-                              }}
-                              href="https://www.zensorrd.com"
-                              className="feature-content-link w-inline-block"
-                            >
-                              <h3
-                                data-w-id="5de2f2dd-e901-6701-f8f6-873bf69fa7c7"
-                                className="heading is-feature-title"
-                                style={{}}
-                              >
-                                Innovation
-                              </h3>
-                              <div
-                                data-w-id="8c408de9-d384-9933-3fee-e2e760e7e2a7"
-                                className="feature-line"
-                                style={{}}
-                              />
-                              <div
-                                data-w-id="4289e887-07ce-5274-3030-580c1ab92bcb"
-                                className="feature-more-block"
-                                style={{}}
-                              >
-                                <p className="case-study-category-text">More</p>
-                                <img
-                                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                                  loading="lazy"
-                                  alt=""
-                                  className="icon in-feature-icon"
-                                />
-                              </div>
-                              <div
-                                data-w-id="2388d243-2369-6d3b-32f2-2b13ff7a6ace"
-                                className="feature-bg"
-                                style={{}}
-                              />
-                            </a>
-                          </div>
-                          <div
-                            role="listitem"
-                            className="feature-item w-dyn-item"
-                          >
-                            <div className="feature-image">
-                              <div className="reveal-image-trigger">
-                                <img
-                                  loading="lazy"
-                                  alt=""
-                                  src="https://ultraehp.com/images/test-portfolio/Untitled-Camera-2.png"
-                                  className="cover-image"
-                                  style={{
-                                    transform:
-                                      "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                    transformStyle: "preserve-3d",
-                                  }}
-                                />
-                                <div
-                                  className="bg-for-animation is-dark-color"
-                                  style={{ display: "block" }}
-                                />
-                              </div>
-                            </div>
-                            <a
-                              aria-label="Feature link"
-                              data-w-id="07d9a56e-d643-2bf8-806a-32751f6a64a2"
-                              style={{
-                                transform:
-                                  "translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                transformStyle: "preserve-3d",
-                                opacity: 0,
-                              }}
-                              href="/feature/compatibility"
-                              className="feature-content-link w-inline-block"
-                            >
-                              <h3
-                                data-w-id="5de2f2dd-e901-6701-f8f6-873bf69fa7c7"
-                                className="heading is-feature-title"
-                                style={{}}
-                              >
-                                Compatibility
-                              </h3>
-                              <div
-                                data-w-id="8c408de9-d384-9933-3fee-e2e760e7e2a7"
-                                className="feature-line"
-                                style={{}}
-                              />
-                              <div
-                                data-w-id="4289e887-07ce-5274-3030-580c1ab92bcb"
-                                className="feature-more-block"
-                                style={{}}
-                              >
-                                <p className="case-study-category-text">More</p>
-                                <img
-                                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                                  loading="lazy"
-                                  alt=""
-                                  className="icon in-feature-icon"
-                                />
-                              </div>
-                              <div
-                                data-w-id="2388d243-2369-6d3b-32f2-2b13ff7a6ace"
-                                className="feature-bg"
-                                style={{}}
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <a
-                        id="w-node-b11b5a39-657b-4d88-a15d-8479a328e955-c41abecd"
-                        href="/features"
-                        className="simple-link-blue"
-                      >
-                        All features
-                      </a>
-                    </div>
-                    <p
-                      id="w-node-_9db66ef5-79ba-ccf2-b611-2ffbbcc49659-c41abecd"
-                      className="paragraph text-black is-sticky"
-                    >
-                      其他行銷
-                    </p>
-                  </div>
-                </div>
-              </section>
               <section className="section">
                 <div className="w-full md:w-2/3  flex justify-center items-center flex-col mx-auto pt-[60px] px-[20px] pb-[30px]">
                   <GsapText
