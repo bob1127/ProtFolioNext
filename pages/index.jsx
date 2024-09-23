@@ -12,7 +12,7 @@ import Image from "next/image.js";
 import TextHover from "../components/TextHover/index.jsx";
 import Trackeye from "../components/Trackeye/page.jsx";
 import { NextSeo } from "next-seo";
-
+import Head from "next/head";
 const Lottie = dynamic(() => import("react-lottie"), {
   ssr: false,
 });
@@ -57,6 +57,22 @@ export default function Home() {
 
   return (
     <div className="" data-aos="fade-up">
+      <Head>
+        <meta
+          property="og:title"
+          content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        />
+        <meta
+          property="og:description"
+          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        />
+        <meta
+          property="og:image"
+          content="https://prot-folio-next.vercel.app/"
+        />
+        <meta property="og:url" content="https://prot-folio-next.vercel.app/" />
+        <meta property="og:type" content="website" />
+      </Head>
       <div>
         <NextSeo
           title="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
@@ -625,7 +641,7 @@ CREACTIVEs</h1>
                 <p className="bg-blue-700 text-white text-center mx-auto border border-black mb-3 text-[32px] font-bold inline-block">
                   最新優惠
                 </p>
-                <p className="text-[20px] text-center">
+                <p className=" tetx-[16px] xl:text-[20px] text-center">
                   現在選擇網頁設計方案及包含公司形象影片拍攝和商品形象攝影
                 </p>
               </div>

@@ -5,21 +5,11 @@ import Image from "next/image.js";
 import { NextSeo } from "next-seo";
 import Marquee from "react-fast-marquee";
 import GsapText from "../../components/RevealText/index";
-import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
+// import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
 import TextMask from "../../components/TextMask/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
 import { useState, useEffect } from "react";
-import { WiSnowWind } from "react-icons/wi";
-const imageLoader = ({ src, width, quality }) => {
-  return `https://www.ultraehp.com/images/test-portfolio/${src}?w=${width}&q=${
-    quality || 75
-  }`;
-};
-const imageLoader01 = ({ src, width, quality }) => {
-  return `https://s3.amazonaws.com/images.seroundtable.com/${src}?w=${width}&q=${
-    quality || 75
-  }`;
-};
+
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -393,7 +383,7 @@ export default function Blog() {
                 </a>
               </section>
               <section className="high-performance mt-5 flex  flex-col xl:flex-row justify-center">
-                <div className="justify-center items-center w-full flex-col xl:w-4/5 xl:flex-row flex">
+                <div className="justify-center items-center w-full flex-col xl:w-4/5 md:flex-row flex">
                   <div className=" w-full xl:w-1/2" data-aos="fade-up">
                     {/* <img
                       className="w-full"
@@ -403,9 +393,10 @@ export default function Blog() {
                     <Image
                       src="/images/3791116_0ef4_7 (1).webp"
                       width={700}
-                      loading="lazy"
+                      loading="eager"
                       placeholder="empty"
                       height={450}
+                      priority={true}
                     ></Image>
                   </div>
                   <div className="w-full xl:w-1/2  flex justify-center  items-center">
@@ -422,11 +413,11 @@ export default function Blog() {
                         <h2>Next.js + Wordpress</h2>
                         <p className="mt-[10px] leading-[30px]">
                           {" "}
-                          Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
-                          的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
-                          CDN 和缓存优化，页面加载速度更快。Next.js
-                          的图像优化和代码拆分功能进一步提升性能。WordPress
-                          提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
+                          Next.js 和 WordPress 結合能顯著提升性能。利用 Next.js
+                          的靜態生成和增量靜態生成（ISR），網站可以快速加載並自動更新內容。服務端渲染（SSR）確保實時數據的即時展示。通過
+                          CDN 和緩存優化，頁面加載速度更快。Next.js
+                          的圖像優化和代碼拆分功能進一步提升性能。WordPress
+                          提供強大的內容管理，結合以上技術，能構建高效、快速的網站。
                         </p>
                       </p>
                     </div>
@@ -496,12 +487,12 @@ export default function Blog() {
                     <div id="w-node-_0d97e7f2-7677-0103-d394-d8b1b529b132-c41abecd">
                       <div className="eyebrow-block">
                         <div className="icon-block">
-                          <Image
+                          {/* <Image
                             src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
                             width={800}
                             height={500}
                             loader={imageLoader}
-                          />
+                          /> */}
                           {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6388edb8aa4cb4391_asterisk_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
@@ -743,17 +734,17 @@ export default function Blog() {
                   </div>
                 </div>
                 <div className="flex">
-                  <div className=" hidden md:block w-full md:w-1/2">
+                  {/* <div className=" hidden md:block w-full md:w-1/2">
                     <Carousel05 />
-                  </div>
+                  </div> */}
                   <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
-                    <iframe
+                    {/* <iframe
                       className="absolute top-0 left-0 z-[999]"
                       src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
                       frameborder="0"
                       width="100%"
                       height="500px"
-                    ></iframe>
+                    ></iframe> */}
                   </div>
                 </div>
               </section>
@@ -1086,11 +1077,11 @@ export default function Blog() {
                               Our Journey
                             </p>
                             <p className="card-text-small">
-                              <img
+                              {/* <img
                                 className="w-full rounded-lg my-3"
                                 src="https://assets-v2.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/https://i.ytimg.com/vi/7v13bzpJyYM/maxresdefault.jpg"
                                 alt=""
-                              />
+                              /> */}
                               對於中小企业而言，网站的曝光度不僅僅是吸引流量的問題，還直接影響到品牌的生存和成長。
                               透過提高網站曝光度，中小企业可以更更多的客戶信任、提升销售额、降低營銷成本，並在市場競爭中佔據有利位置。
                             </p>
