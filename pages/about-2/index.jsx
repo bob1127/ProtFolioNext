@@ -3,6 +3,7 @@
 import React from "react";
 import Script from "next/script";
 import Head from "next/head";
+import Link from "next/link.js";
 import GsapText from "../../components/RevealText/index";
 import SpringModel from "../../components/SpringModal/page.jsx";
 import Img01 from "../../public/images/Untitled-Camera.png";
@@ -51,7 +52,7 @@ export default function Blog() {
                         role="list"
                         className="large-features-list w-dyn-items"
                       >
-                        <a href="www.ultraehp.com">
+                        <Link href="/PortFolio01">
                           <div
                             role="listitem"
                             className="large-feature-item w-dyn-item"
@@ -170,7 +171,7 @@ export default function Blog() {
                               </div>
                             </div>
                           </div>
-                        </a>
+                        </Link>
                         <a
                           href="www.zensor.com.tw"
                           // onClick={url("www.zensor.com.tw")}

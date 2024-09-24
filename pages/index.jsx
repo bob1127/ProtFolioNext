@@ -138,10 +138,13 @@ CREACTIVEs</h1>
                 </Marquee>
               </div>
             </div>
+
             <a
               href="/Contact"
               className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[450px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
-              style={{ backgroundImage: "url(/images/man-1839500_1920.webp)" }}
+              style={{
+                backgroundImage: "url(/images/man-1839500_1920.webp)",
+              }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
                 <Marquee>
@@ -651,16 +654,39 @@ CREACTIVEs</h1>
                 總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
                 來跟我討論吧
               </p>
-              <span className="mt-4">價格可以再跟我討論</span>
+              <div className="h-full mt-5 flex my-auto justify-center items-center">
+                <a
+                  href="/Contact"
+                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                  className="button-wrapper  w-inline-block"
+                >
+                  <div className="button-layout">
+                    <p href="/about" className="button-text" style={{}}>
+                      Contact
+                    </p>
+                    <div className="button-bg" style={{}} />
+                  </div>
+                  <div className="button-icon-block">
+                    <img
+                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                      loading="lazy"
+                      alt=""
+                      className="button-icon"
+                      style={{}}
+                    />
+                  </div>
+                </a>
+              </div>
 
               <div className="flex flex-col mt-[30px] justify-center items-center">
-                <p className="bg-blue-700 text-white text-center mx-auto border border-black mb-3 text-[32px] font-bold inline-block">
+                <p className="bg-blue-700 text-white text-center mx-auto border border-black mt-8 mb-3 text-[32px] font-bold inline-block">
                   最新優惠
                 </p>
                 <p className=" tetx-[16px] xl:text-[20px] text-center">
                   現在選擇網頁設計方案及包含公司形象影片拍攝和商品形象攝影
                 </p>
               </div>
+
               <Digital />
               <div className="flex md:flex-row flex-wrap justify-center items-start mt-10  flex-row">
                 <div className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4">
@@ -695,6 +721,7 @@ CREACTIVEs</h1>
                     <p className="mt-4">商品攝影｜形象影片</p>
                     <p className="mt-4">客製化版面設計｜特殊動畫效果</p>
                     <p className="mt-4">購物車網站系統</p>
+                    http://localhost:3000/images/portfolio01.png
                     <p className="mt-4">
                       SEO優化｜串接GTM、GA4、GoogleSearchConsole
                     </p>
@@ -724,30 +751,6 @@ CREACTIVEs</h1>
                     <p className="mt-4">高質感網頁</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="h-full mt-5 flex my-auto justify-center items-center">
-                <a
-                  href="/Contact"
-                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                  className="button-wrapper  w-inline-block"
-                >
-                  <div className="button-layout">
-                    <p href="/about" className="button-text" style={{}}>
-                      Contact
-                    </p>
-                    <div className="button-bg" style={{}} />
-                  </div>
-                  <div className="button-icon-block">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="button-icon"
-                      style={{}}
-                    />
-                  </div>
-                </a>
               </div>
             </div>
             {/* <div className="px-4">
