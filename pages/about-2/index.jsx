@@ -52,7 +52,7 @@ export default function Blog() {
                         role="list"
                         className="large-features-list w-dyn-items"
                       >
-                        <Link href="/PortFolio01">
+                        <a href="/PortFolio01">
                           <div
                             role="listitem"
                             className="large-feature-item w-dyn-item"
@@ -171,7 +171,7 @@ export default function Blog() {
                               </div>
                             </div>
                           </div>
-                        </Link>
+                        </a>
                         <a
                           href="www.zensor.com.tw"
                           // onClick={url("www.zensor.com.tw")}

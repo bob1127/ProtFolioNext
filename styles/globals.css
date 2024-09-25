@@ -10388,3 +10388,15 @@ blockquote{
   width: 100%; /* 100% 寬度 */
   height:300px; /* 100% 高度 */
 }
+
+
+.aos-init {
+  filter: blur(10px); /* 初始模糊效果 */
+  opacity: 0; /* 初始透明度 */
+  transition: filter 1s ease, opacity 1s ease; /* 過渡動畫 */
+}
+
+.aos-animate {
+  filter: blur(0); /* 移除模糊效果 */
+  opacity: 1; /* 恢復透明度 */
+}

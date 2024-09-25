@@ -1,30 +1,34 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+// App.jsx
+import React, { useEffect, useState } from "react";
 import EmblaCarousel from "./EmblaCarousel";
-import Header from "./Header";
-import Footer from "./Footer";
+// import Header from "./Header";
+// import Footer from "./Footer";
+// import "../css/base.css";
+// import "../css/sandbox.css";
+// import "../css/embla.css";
 
 const OPTIONS = {};
-const SLIDE_COUNT = 10;
+const SLIDE_COUNT = 5;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-const App = () => (
-  <>
-    <Header />
-    <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-    <Footer />
-  </>
-);
+const App = () => {
+  const [isMounted, setIsMounted] = useState(false);
 
-const rootElement = document.getElementById("root");
+  useEffect(() => {
+    // Set to true only after the component mounts (i.e., on the client side)
+    setIsMounted(true);
+  }, []);
 
-if (rootElement) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+  // Render nothing on the server side, render content only after mount
+  if (!isMounted) return null;
+
+  return (
+    <>
+      <Header />
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <Footer />
+    </>
   );
-} else {
-  console.error("Root element not found");
-}
+};
+
+export default App;

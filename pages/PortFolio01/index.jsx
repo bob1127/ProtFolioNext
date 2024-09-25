@@ -1,31 +1,46 @@
 "use client";
 
-import React from "react";
-import Script from "next/script";
+import React, { useState, useEffect } from "react";
+// import Script from "next/script";
 import Head from "next/head";
 import Marquee from "react-fast-marquee";
-import SpringModel from "../../components/SpringModal/page.jsx";
-import Img01 from "../../public/images/Untitled-Camera.png";
+import Image from "next/image";
+import Carousel from "../../components/EmblaCarousel06/index";
 // import Inner from "../../components/Inner/index.jsx";
 // import Styles from "../../styles/portfolio.module.css";
-import { useState, useEffect } from "react";
+
 export default function Blog() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    // 延遲 300ms 來啟動動畫
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 300);
-
-    // 清除計時器
-    return () => clearTimeout(timer);
+    // Set the component as mounted to allow client-only rendering
+    setIsMounted(true);
   }, []);
+
+  // Only render the component once it's mounted
+  if (!isMounted) return null;
+
   return (
     <div>
+      <Head>
+        <link
+          rel="preload"
+          href="/images/portfolio01.webp"
+          as="image"
+          type="image/webp"
+          importance="high" // 提升資源的載入優先級
+        />
+        <link
+          rel="preload"
+          href="/images/portfolio02.webp"
+          as="image"
+          type="image/webp"
+          importance="high" // 提升資源的載入優先級
+        />
+      </Head>
       <div className="hero-section border border-black mb-[30px]">
         <div className="title py-[100px] flex flex-col justify-center items-center mt-[120px] item-title">
-          <h1 className="text-[70px] text-center mb-[30px]">
+          <h1 className=" text-[40px] xl:text-[50px] 2xl:text-[70px] leading-[80px] text-center mb-[30px]">
             禪普科技官網建置 - ZensorRD
           </h1>
 
@@ -41,25 +56,29 @@ export default function Blog() {
                 SCSS
               </div>
               <div className="mark mx-3 px-[30px] py-1 text-white text-center rounded-[30px] text-[14px] bg-blue-700 border-2 border-black">
-                Seo optimizarion
+                SEO optimization
               </div>
             </Marquee>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col ">
+        <div data-aos="fade-up" className="flex md:flex-row flex-col ">
           <div className="img overflow-hidden  w-full  md:w-1/2 h-[600px] ">
-            <img
-              src="/images/portfolio02.png"
-              className="hover:scale-105 duration-500"
-              alt=""
-            />
+            <Image
+              src="/images/portfolio01.webp"
+              width={800}
+              height={600}
+              priority
+              loading="eager"
+            ></Image>
           </div>
           <div className="img  md:w-1/2 w-full h-[600px] overflow-hidden">
-            <img
-              src="/images/portfolio01.png"
-              className="hover:scale-105 duration-500"
-              alt=""
-            />
+            <Image
+              src="/images/portfolio02.webp"
+              width={800}
+              height={600}
+              priority
+              loading="eager"
+            ></Image>
           </div>
         </div>
         <section className="section-photograph px-[100px]">
@@ -67,43 +86,53 @@ export default function Blog() {
             <img src="" alt="" />
           </div>
         </section>
-        <section className="px-[100px] py-[100px] portfolio-content flex">
-          <div className="flex">
-            <div className="txt w-1/2">
-              <h2 className="text-[90px] leading-[100px] font-black text-[#545454]">
-                Banner Design
-              </h2>
-              <p className="text-[20px]">
-                <br></br>
-                專注於設計符合公司形象知Banner、Img
+
+        <section className="w-full flex-col flex md:flex-row px-[50px] md:px-[100px] xl:px-[100px] my-[50px] section-content">
+          <div className=" w-full md:w-1/2 p-10">
+            <div className="txt ">
+              <h2>title</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis commodi totam aliquam ratione eos, quos iure, earum
+                suscipit ullam nostrum corrupti. Illum obcaecati dolore officia
+                dicta voluptatem voluptate expedita vero.
               </p>
             </div>
-            <div className="img w-1/2 overflow-hidden border border-black">
-              <Marquee>
-                <div>
-                  <img
-                    src="/images/ECWP100-carousel-index.webp"
-                    className="w-[600px] h-auto"
-                    alt=""
-                  />
-                  <img
-                    src="/images/06.webp"
-                    className="w-[600px] h-auto"
-                    alt=""
-                  />
-                </div>
-              </Marquee>
+          </div>
+          <div className=" w-full md:w-1/2 ">
+            <Image
+              src="/images/截圖-2024-09-24-上午9.25.18.webp"
+              width={800}
+              height={600}
+              priority
+              loading="eager"
+            ></Image>
+          </div>
+        </section>
+
+        <section className="w-full flex-col flex md:flex-row px-[50px] md:px-[100px] xl:px-[200px] section-content">
+          <div className=" w-full md:w-1/2 ">
+            <Image
+              src="/images/black-company-logo.webp"
+              width={800}
+              height={600}
+              priority
+              loading="eager"
+            ></Image>
+          </div>
+          <div className=" w-full md:w-1/2 p-10">
+            <div className="txt ">
+              <h2>Responsive Web Design, RWD</h2>
+              <p className="text-[22px] mt-2">
+                rwd 版型設計-關於建置 符合google 搜尋引擎 優化的 使用者體驗
+              </p>
+              <p className="text-[22px] mt-2"> 提升使用者體驗（UX）</p>
+              <p className="text-[22px] mt-2"> 移動裝置</p>
             </div>
           </div>
         </section>
-        {/* <img
-          className="w-full mx-auto my-[100px]"
-          src="https://www.threedee.design/images/Cartoon_Character/All.webp"
-          alt=""
-        /> */}
+        {/* <Carousel /> */}
       </div>
     </div>
   );
 }
-
-// reportWebVitals();

@@ -92,13 +92,13 @@ export default function Blog() {
             placeholder="empty"
           ></Image>
         </div>
-        <div className="article-content p-0 xl:px-[200px]">
+        <div className="article-content mt-[100px] p-0 xl:px-[200px]">
           <div data-aos="fade-up" className="patagrph p-2 xl:p-10">
             <div className="title  " data-aos="fade-up">
               <h1></h1>
               <p className="xl:text-[18px] tracking-wide leading-relaxed">
                 <span className="text-[50px] mr-4"> 在</span>
-                現代數位行銷的世界中，內容行銷已經成為各大品牌和企業成功的重要策略之一。但究竟什麼是內容行銷？它如何影響網站在搜索引擎上的表現？這篇文章將為你解答這些問題，並探討內容行銷對於提升網站曝光度的重要性。
+                現代數位行銷的世界中，內容行銷已經成為各大品牌和企業成功的重要策略之一。但究竟什麼是內容行銷？它如何影響網站在搜索引擎上的表現？
               </p>
             </div>
           </div>
@@ -123,9 +123,8 @@ export default function Blog() {
             <br></br>
 
             <p className="xl:text-[18px] tracking-wide leading-relaxed">
-              <p className="font-bold">增加網站流量和停留時間</p>
-              <ul className="p-0 md:pl-[32px]">
-                <li className=" text-[16px] mt-3 pl-0 ml-0">
+              <ul className=" md:pl-[32px]  p-10 rounded-xl bg-[#f4f4f4]">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
                   <b className="text-[20px] font-extrabold">
                     1.增加網站流量和停留時間
                   </b>{" "}
@@ -133,25 +132,76 @@ export default function Blog() {
                   高質量的內容可以吸引更多訪客到你的網站，並延長他們的停留時間。搜索引擎，如
                   Google，非常重視用戶在網站上的行為，較長的停留時間和較低的跳出率會被視為網站提供了優質的使用者體驗，進而有助於提升網站排名。
                 </li>
-                <li className=" text-[16px] mt-3 pl-0 ml-0">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
                   <b className="text-[20px] font-extrabold">2.提高關鍵字排名</b>{" "}
                   <br></br>
                   透過內容行銷，你可以針對特定關鍵字進行優化，讓這些關鍵字自然地出現在文章或其他內容中，幫助網站在搜索結果中獲得更好的排名。這樣的策略可以有效提高網站的曝光度，讓潛在客戶更容易找到你。
                 </li>
-                <li className=" text-[16px] mt-3 pl-0 ml-0">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
                   <b className="text-[20px] font-extrabold">3.建立權威和信任</b>{" "}
                   <br></br>
                   定期發布高質量、有價值的內容可以幫助網站建立專業形象，提升品牌的權威性。搜索引擎偏好可信賴的網站，當你的內容經常被引用或分享，這些正面的信號都會促進網站的排名。
                 </li>
-                <li className=" text-[16px] mt-3 pl-0 ml-0">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
                   <b className="text-[20px] font-extrabold">4.增加反向連結</b>{" "}
                   <br></br>
                   定期發布高質量、有價值的內容可以幫助網站建立專業形象，提升品牌的權威性。搜索引擎偏好可信賴的網站，當你的內容經常被引用或分享，這些正面的信號都會促進網站的排名。
                 </li>
-                <li className=" text-[16px] mt-3 pl-0 ml-0">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
                   <b className="text-[20px] font-extrabold">5.提升用戶體驗</b>{" "}
                   <br></br>
                   內容行銷注重的是為用戶提供有用的資訊和解決方案，這能大幅度提升網站的使用者體驗。良好的用戶體驗是搜索引擎評估網站質量的重要指標之一，對於網站的排名提升有直接的幫助。
+                </li>
+              </ul>
+              <br></br>
+            </p>
+            <div className="px-[20px] xl:px-0">
+              <b className="text-[20px]">總結:</b>
+              <br></br>
+              <p>
+                內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
+              </p>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" className="patagrph p-2 xl:p-10">
+            <h2>新手如何做好內容行銷？ 有哪些方式</h2>
+
+            <br></br>
+
+            <p className="xl:text-[18px] tracking-wide leading-relaxed">
+              <ul className=" md:pl-[32px]  p-10 rounded-xl bg-[#f4f4f4]">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    1. 選擇目標受眾：了解你的讀者
+                  </b>{" "}
+                  <br></br>
+                  內容行銷的第一步是了解你的目標受眾。誰是你的主要客群？他們遇到什麼問題？你能如何幫助他們？透過調查、訪談或社交媒體互動，蒐集受眾的興趣和需求數據。這些資訊將幫助你創作出有針對性的內容，吸引讀者並讓他們留下深刻印象。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    {" "}
+                    2.撰寫高質量且實用的內容
+                  </b>{" "}
+                  <br></br>
+                  內容的質量是搜索引擎和讀者都重視的部分。新手可以從解決常見問題、提供實用技巧或深入解說熱門話題開始撰寫。文章應該簡單易懂，避免過於專業的術語。舉例說明、提供實際案例或數據支援，可以讓內容更具說服力和吸引力。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    3.善用多媒體元素：圖片、影片、資訊圖
+                  </b>{" "}
+                  <br></br>
+                  多媒體元素能大幅提升內容的吸引力，特別是對於新手來說，這是一個簡單但有效的提升手段。插入相關圖片、製作短影片或設計資訊圖，可以使你的內容更具視覺吸引力，同時也增加了內容在社群媒體上的可分享性，間接提升
+                  SEO 效果。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    4.利用社群媒體推廣內容
+                  </b>{" "}
+                  <br></br>
+                  社群媒體是推廣內容的絕佳平台。將你創作的內容分享到
+                  Facebook、Instagram、LinkedIn 或 Twitter
+                  等社群平台，能夠有效增加內容的曝光度。新手可以先選擇幾個主要的社群平台，針對不同的受眾調整推廣方式，吸引更多潛在客戶的注意。
                 </li>
               </ul>
               <br></br>

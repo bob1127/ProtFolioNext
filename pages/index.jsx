@@ -615,10 +615,12 @@ CREACTIVEs</h1>
                 <p className="text-[20px] mt-3">◉設計與功能受限於主題和插件</p>
                 <p className="text-[20px] mt-3">◉性能優化挑戰大</p>
                 <Image
-                  src="/images/wordpressWeb.jpg"
-                  width={800}
-                  className="mt-5"
+                  src="/images/portfolio01.webp"
+                  loading="lazy"
+                  alt="Wordpresswebsite"
+                  width={500}
                   height={500}
+                  placeholder="empty"
                 ></Image>
               </div>
 
@@ -632,6 +634,14 @@ CREACTIVEs</h1>
                 <p className="text-[20px] mt-3">◉更快的網站速度</p>
                 <p className="text-[20px] mt-3">◉無限的設計自由與靈活性</p>
                 <p className="text-[20px] mt-3">◉高效的內容管理</p>
+                <Image
+                  src="/images/portfolio01.webp"
+                  loading="lazy"
+                  alt="HeadlessWebsite"
+                  width={500}
+                  height={500}
+                  placeholder="empty"
+                ></Image>
               </div>
             </div>
           </div>

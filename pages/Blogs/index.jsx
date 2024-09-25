@@ -3,21 +3,12 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import Head from "next/head";
-
-// import Inner from "../components/Inner/index.jsx";
-import Script from "next/script";
-// import "../styles/globals.css";
-import { AnimatePresence } from "framer-motion";
-import { NextUIProvider } from "@nextui-org/react";
-// import Navbar from "../components/sideTabs/index.jsx";
-// import Footer from "../components/Footer/index.jsx";
-import Marquee from "react-fast-marquee";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import AOS from "aos";
 import HorizontalScroll from "../../components/HorizontalScroll/page.jsx";
 import PortfolioSample from "../../components/PortfolioSample/page.jsx";
 import { useEffect } from "react";
+// import Carousel from "../../components/EmblaCarousel06/index.jsx";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
@@ -481,7 +472,7 @@ export default function Blog() {
             <p>更多內容</p>
             <div className="flex">
               <a
-                href="/Blog-02"
+                href="/Blog-04"
                 className="blog-item inline-block p-10 border-1 border-black"
               >
                 <div className="txt">
@@ -506,6 +497,8 @@ export default function Blog() {
         <div id="article-content" className="article-content-section">
           <div className="card border border-black p-5"></div>
         </div> */}
+
+        <div>{/* <Carousel /> */}</div>
 
         <div className="article-related-posts-section">
           <div className="bg-green-500 px-4 py-3  inline-block mx-auto">

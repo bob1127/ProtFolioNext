@@ -22,6 +22,45 @@ const PhysicsAnimationApp = dynamic(
 );
 
 export default function MyApp({ Component, pageProps, router }) {
+
+
+useEffect(() => {
+    // 延遲載入 jQuery
+    const loadJQuery = () => {
+      const script = document.createElement('script');
+      script.src =
+        'https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9';
+      script.type = 'text/javascript';
+      script.integrity =
+        'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=';
+      script.crossOrigin = 'anonymous';
+      script.async = true; // 確保腳本非同步加載
+      document.body.appendChild(script);
+    };
+
+    // 延遲載入 Webflow 的腳本
+    const loadWebflow = () => {
+      const script = document.createElement('script');
+      script.src =
+        'https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js';
+      script.type = 'text/javascript';
+      script.async = true; // 確保腳本非同步加載
+      document.body.appendChild(script);
+    };
+
+    // 使用 setTimeout 確保腳本在頁面載入後的一段時間才載入
+    const timer = setTimeout(() => {
+      loadJQuery();
+      loadWebflow();
+    }, 1000); // 1秒後載入腳本，你可以調整這個時間
+
+    // 清理 function，避免重複載入
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+
     const noNavbarRoutes = ['/toys' , '/Lego','/toys02']; // 指定不需要顯示 Navbar 的路由
        const nophyRoutes = ['/toys' ,'toys02' , '/Lego']; // 指定不需要顯示 Navbar 的路由
    
@@ -31,6 +70,7 @@ export default function MyApp({ Component, pageProps, router }) {
     AOS.init({
       duration: 1000, // 动画持续时间（毫秒）
       easing: 'ease-in-out', // 动画缓动函数
+      once: true, // 动画只会在元素进入视口时触发一次
     });
   }, []);
     return (
@@ -64,7 +104,7 @@ export default function MyApp({ Component, pageProps, router }) {
         cardType: 'summary_large_image',
       }}
     />
- <Script
+ {/* <Script
         src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
         type="text/javascript"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -76,7 +116,7 @@ export default function MyApp({ Component, pageProps, router }) {
         src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
         type="text/javascript"
         strategy="lazyOnload"
-      />
+      /> */}
 
      
 
