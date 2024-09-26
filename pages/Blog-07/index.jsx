@@ -1,47 +1,37 @@
 "use client";
-
-import dynamic from "next/dynamic";
 import { useState } from "react";
 import Head from "next/head";
-
-// import Inner from "../components/Inner/index.jsx";
-import Script from "next/script";
-// import "../styles/globals.css";
-import { AnimatePresence } from "framer-motion";
-import { NextUIProvider } from "@nextui-org/react";
-// import Navbar from "../components/sideTabs/index.jsx";
-// import Footer from "../components/Footer/index.jsx";
-import Marquee from "react-fast-marquee";
-import AOS from "aos";
 import { NextSeo } from "next-seo";
-// import Nav from "../components/Navbar/page.jsx";
+import Marquee from "react-fast-marquee";
 import { useEffect } from "react";
+import { Snippet } from "@nextui-org/react";
+
+import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    // 延遲 300ms 來啟動動畫
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 300);
+  // useEffect(() => {
+  //   // 延遲 300ms 來啟動動畫
+  //   const timer = setTimeout(() => {
+  //     setIsVisible(true);
+  //   }, 300);
 
-    // 清除計時器
-    return () => clearTimeout(timer);
-  }, []);
+  //   // 清除計時器
+  //   return () => clearTimeout(timer);
+  // }, []);
   return (
-    <>
+    <div className="bg-[#f9f9f8]">
       <NextSeo
-        title="提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略"
-        description="了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。"
+        title=""
+        description=""
         openGraph={{
-          url: "https://www.example.com",
-          title: "提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略",
-          description:
-            "了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。",
+          url: "",
+          title: "",
+          description: "",
           images: [
             {
-              url: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg",
+              url: "",
               width: 1200,
               height: 630,
               alt: "社交媒體行銷策略",
@@ -56,14 +46,14 @@ export default function Blog() {
         }}
       />
       <Head>
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
         />
         <link
           rel="stylesheet"
           href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
-        />
+        /> */}
       </Head>
 
       {/* <Script
@@ -87,169 +77,470 @@ export default function Blog() {
         href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65c495db397a444e7854eaa2_favicon.png"
         rel="apple-touch-icon"
       /> */}
-      <nav
-        className="nav"
-        style={{
-          transform:
-            "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-          transformStyle: "preserve-3d",
-          opacity: 1,
-        }}
-      >
-        <div
-          id="w-node-_5f982de6-354e-887e-0847-31d84c7e05c2-4c7e05c1"
-          className="nav-left-wrap"
-          style={{ display: "none" }}
-        >
-          <a
-            href="/"
-            className="nav-link _3 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">Home</div>
-          </a>
-          <a
-            href="/articles"
-            className="nav-link _2 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">Articles</div>
-          </a>
-          <a
-            href="/authors"
-            className="nav-link _1 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">Authors</div>
-          </a>
-        </div>
-        <div
-          id="w-node-_5f982de6-354e-887e-0847-31d84c7e05cc-4c7e05c1"
-          className="nav-trigger"
-        >
-          <div className="nav-icon-wrap">
-            <div className="nav-burger-icon">
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a68994fa9a5f9b2322527b_icon-burger-menu.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
-            <div
-              className="nav-close-icon"
-              style={{
-                transform:
-                  "translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-            >
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a689948ece87037ef5391b_icon-burger-close.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
+      <div>
+        <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] hover:bg-[#333] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
+          <div className="  border w-full mt-3 h-auto border-black">
+            <Image src="" width={50} height={50} placeholder="empty"></Image>
           </div>
-          <div className="nav-trigger-labels-wrap">
-            <div className="nav-trigger-label-relative">
-              <div className="nav-label">Menu</div>
-            </div>
-            <div
-              className="nav-trigger-label-absolute"
-              style={{
-                transform:
-                  "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-            >
-              <div className="nav-label">close</div>
-            </div>
+          <div className="  border w-full mt-3 h-auto border-black">
+            <Image src="" width={50} height={50} placeholder="empty"></Image>
+          </div>
+          <div className="  border w-full mt-3 h-auto border-black">
+            <Image src="" width={50} height={50} placeholder="empty"></Image>
           </div>
         </div>
-        <div
-          id="w-node-_5f982de6-354e-887e-0847-31d84c7e05d9-4c7e05c1"
-          className="nav-right-wrap"
-          style={{ display: "none" }}
-        >
-          <a
-            href="/about"
-            className="nav-link _1 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">About</div>
-          </a>
-          <a
-            href="/categories"
-            className="nav-link _2 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">categories</div>
-          </a>
-          <a
-            href="/contact"
-            className="nav-link _3 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">contact</div>
-          </a>
+
+        <div className="article-title hidden md:black relative">
+          <div className="txt bg-black-rgba z-[999] absolute bottom-0 h-1/2 left-0 flex justify-center items-center w-[100vw]  border-t border-white/50 backdrop-blur-md"></div>
+          <Image
+            src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
+            width={1920}
+            height={768}
+            placeholder="empty"
+            className="rounded-md"
+          ></Image>
         </div>
-      </nav>
-      <div className="page-wrap">
-        <div
-          className="fixed-button-wrap"
-          style={{
-            opacity: 1,
-            transform:
-              "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-          }}
-        >
-          <a href="Blog-03" className="fixed-button w-inline-block">
-            <div className="fixed-button-icon-wrap">
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
+        <div className="article-content mt-[100px] p-[20px] md:px-[50px] xl:px-[200px]">
+          <div className="patagrph p-2  ">
+            <div className="title  py-[50px] flex flex-col ">
+              <h1 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  ">
+                我能夠使用 Illustrator 的新功能 Mockup（測試版）在 5 秒內建立 3D
+                模型。
+              </h1>
+              <div className="title-content-date">
+                <div></div>
+                <div className="text-[14px]">
+                  <b className="mr-3">Spline 3d</b>
+                  <b>2024/04/05</b>
+                </div>
+              </div>
+              <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
+                <div className="flex flex-row">
+                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                    網頁設計
+                  </div>
+                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                    3d 軟體應用
+                  </div>
+                </div>
+                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                  設計
+                </div>
+              </div>
             </div>
-            <div className="fixed-button-label-wrap flex">
-              <div className="nav-label flex">back</div>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="https://liginc.co.jp/wp-content/uploads/2024/08/ec_240822_m-min_fix.jpg"
+              className="w-full rounded-md"
+            ></img>
+          </div>
+
+          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+              對那些人來說是個好消息！
+              2024年7月，Illustrator新功能「Mockup（Beta）」發布，讓您只需5秒鐘即可建立模型！
             </div>
-          </a>
+            <a
+              target="_blank"
+              className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
+              href="https://tailwindcss.com/"
+            >
+              前往 Tailwind css 官方網站
+            </a>
+
+            <br></br>
+            <div className="">
+              <div className="imgText mt-[50px]">
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  透過這種方式，您可以輕鬆地放置它們以匹配三維物體的曲線和邊緣。
+                  我們為那些想要大幅提高模型製作工作效率的人準備瞭如何使用它的指南，請查看。
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]"></div>
+                <Image
+                  src="/images/blog/tailwindcssUI.png"
+                  width={900}
+                  height={500}
+                  loading="lazy"
+                  className="rounded-md mt-3"
+                  placeholder="empty"
+                ></Image>
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <h2 className="text-[32px] font-bold"> 二.快速安裝</h2>
+
+                <h3 className="text-[20px] ">1.使用 CDN 安裝</h3>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  在這段 HTML 中，我們在 head 標籤內引入了 Tailwind CSS 的 CDN：
+                </div>
+
+                <div className="bg-[#d6d6d6] mb-4">
+                  <Snippet>
+                    這將會創建一個 tailwind.config.js 文件，讓你可以客製化
+                    Tailwind 的設定。
+                  </Snippet>
+                </div>
+                <b className="text-[14px] font-bold mt-3">
+                  這個 CDN 來自 jsDelivr，它提供了一個可以即時加載的 Tailwind
+                  CSS 完整版本。你只需要複製這行代碼並貼到你的 HTML 頁面中即可。
+                </b>
+
+                <h3 className="text-[20px] ">1.使用 npm 安裝</h3>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  使用 Tailwind CSS
+                  非常簡單，首先你需要將它添加到你的專案中。假設你已經有一個專案，可以使用
+                  npm 進行安裝：
+                </div>
+
+                <div className="bg-[#d6d6d6] mb-4">
+                  <Snippet>
+                    npm install -D tailwindcss npx tailwindcss init
+                  </Snippet>
+                  <Snippet>npx tailwindcss init</Snippet>
+                </div>
+
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  這將會創建一個 tailwind.config.js 文件，讓你可以客製化
+                  Tailwind 的設定。 接著，將 Tailwind 引入到你的 CSS 文件中：
+                </div>
+                <div className="bg-[#d6d6d6] mb-4">
+                  <Snippet>
+                    npm install -D tailwindcss npx tailwindcss init
+                  </Snippet>
+                  <Snippet>npx tailwindcss init</Snippet>
+                </div>
+              </div>
+              <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                這樣就完成了基本的安裝步驟，你可以開始使用 Tailwind
+                的各種工具類別來設計你的網頁了！
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  步驟三：進入新手頻道 在 Midjourney Discord
+                  伺服器中，找到新手頻道（通常是 #newbies
+                  頻道）。你可以在這裡輸入指令來生成圖像。
+                </div>
+                <Image
+                  src="/images/blog/mid02.png"
+                  width={900}
+                  className="rounded-md"
+                  placeholder="empty"
+                  height={600}
+                ></Image>
+              </div>
+              <div className="imgText mt-[60px]">
+                <div className="text-[20px] font-normal text-[#242424]  leading-[32px] xl:leading-[36px]">
+                  Midjourney
+                  提供了多種指令與參數，讓使用者可以更靈活地生成和自訂圖像。以下將詳細介紹幾個常見且強大的指令功能，幫助你在創作過程中充分利用這些工具。
+                </div>
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  2.1 /imagine 指令 這是 Midjourney
+                  最核心的指令，所有圖像生成過程都從這裡開始。通過提供「提示詞」（prompt），你可以告訴
+                  AI 生成什麼樣的圖像。這裡是一些高效使用 /imagine 指令的技巧：
+                </div>
+                <Image
+                  src="/images/blog/點擊自己創建的伺服器.png"
+                  width={900}
+                  placeholder="empty"
+                  className="rounded-md"
+                  height={600}
+                ></Image>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  簡短提示詞：如 "sunset over the
+                  mountains"（山上日落），適合基本生成。
+                </div>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  簡短提示詞：如 "sunset over the
+                  mountains"（山上日落），適合基本生成。
+                </div>
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  2.2 調整圖像的參數 Midjourney
+                  提供多種參數來更精確地控制圖像的生成結果，以下是常用的參數：
+                  --ar 寬高比例 ：設置圖像的長寬比例（Aspect Ratio）
+                </div>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  範例： /imagine prompt: a futuristic cityscape --ar 16:9
+                  這個指令將生成一個 16:9 寬螢幕比例的圖像。
+                </div>
+                <Image
+                  src="/images/blog/ar16.png"
+                  width={800}
+                  placeholder="empty"
+                  loading="lazy"
+                  className="mt-[40px] rounded-md"
+                  height={600}
+                ></Image>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  常見比例：
+                  <div className="rounded-md p-8 bg-[#f1f1f1]">
+                    <p className="mt-4">--ar 16:9：寬螢幕</p>
+                    <p className="mt-4">--ar 1:1：正方形</p>
+                    <p className="mt-4">--ar 9:16：直立手機螢幕比例</p>
+                  </div>
+                  <Image
+                    src="/images/blog/生成圖片01.png"
+                    width={800}
+                    placeholder="empty"
+                    loading="lazy"
+                    className="mt-[40px] rounded-md"
+                    height={600}
+                  ></Image>
+                </div>
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  2.2 調整圖像的參數 Midjourney
+                  提供多種參數來更精確地控制圖像的生成結果，以下是常用的參數：
+                  --ar 寬高比例 ：設置圖像的長寬比例（Aspect Ratio）
+                </div>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  範例： /imagine prompt: a futuristic cityscape --ar 16:9
+                  這個指令將生成一個 16:9 寬螢幕比例的圖像。
+                </div>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  常見比例：
+                  <div className="rounded-md p-8 bg-[#f1f1f1]">
+                    <p className="mt-4">--ar 16:9：寬螢幕</p>
+                    <p className="mt-4">--ar 1:1：正方形</p>
+                    <p className="mt-4">--ar 9:16：直立手機螢幕比例</p>
+                  </div>
+                  <Image
+                    src="/images/blog/生成圖片01.png"
+                    width={800}
+                    placeholder="empty"
+                    loading="lazy"
+                    className="mt-[40px] rounded-md"
+                    height={600}
+                  ></Image>
+                  <div className="border bg-[#f1f3f6] rounded-md p-3 md:p-5 mt-6 xl:p-10">
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      2.--v 版本號 ：指定生成版本
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      Midjourney 的生成技術經過多次更新，使用 --v
+                      參數可以選擇特定的版本號。
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      範例：
+                      <span className="bg-[#333] px-2 text-white ">
+                        /imagine prompt: a futuristic robot --v 5
+                      </span>
+                      使用最新的第五代模型來生成更細緻的圖像。
+                    </div>
+                  </div>
+                  <div className="border bg-[#f1f3f6] rounded-md p-3 md:p-5 mt-6 xl:p-10">
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      3. --q 質量數值：控制圖像質量（Quality）
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      此參數允許你設置圖像的質量。--q 1 是標準質量，--q 2
+                      為更高質量，但會消耗更多生成時間。
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      <span className="text-black font-bold"> 範例： </span>{" "}
+                      範例： /imagine prompt: a mystical forest --q 2
+                      這將生成高質量的圖像，但耗時稍長。
+                    </div>
+                  </div>
+                  <div
+                    data-aos="fade"
+                    className="border bg-[#f1f3f6] rounded-md p-3 md:p-5 mt-6 xl:p-10"
+                  >
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      4. --style 風格類型：自訂圖像風格（Style）
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      可以用這個參數讓 AI 生成特定風格的圖像。
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] bg-[#333] text-[#ffffff]  leading-[32px] xl:leading-[36px]">
+                      <span className="text-black font-bold"> 範例： </span>{" "}
+                      /imagine prompt: a city at night --style cyberpunk
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      這會產生具有賽博朋克風格的城市夜景圖像。
+                    </div>
+                    <div>
+                      <p>常見風格有：</p>
+                      <p className="text-[16px] mt-3">
+                        --style cyberpunk：賽博朋克風
+                      </p>
+                      <p className="text-[16px] mt-3">
+                        --style fantasy：奇幻風
+                      </p>
+                      <p className="text-[16px] mt-3"> --style retro：復古風</p>
+                    </div>
+                  </div>
+                  <div className="border bg-[#f1f3f6] rounded-md p-3 md:p-5 mt-6 xl:p-10">
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      4. --style 風格類型：自訂圖像風格（Style）
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      可以用這個參數讓 AI 生成特定風格的圖像。
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] bg-[#333] text-[#ffffff]  leading-[32px] xl:leading-[36px]">
+                      <span className="text-black font-bold"> 範例： </span>{" "}
+                      /imagine prompt: a city at night --style cyberpunk
+                    </div>
+                    <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                      這會產生具有賽博朋克風格的城市夜景圖像。
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  2.3 進階指令功能
+                </div>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  1./blend：混合兩張或多張圖像
+                </div>
+                <p>
+                  這個指令可以用來混合多張圖像的特徵，生成新的視覺效果。你可以上傳兩張圖像，並使用
+                  /blend 來讓 AI 將它們結合。
+                </p>
+                <p>
+                  {" "}
+                  <span className="text-bold">範例：</span> /blend image1.png
+                  image2.png
+                </p>
+                <Image
+                  src="/images/blog/ar16.png"
+                  width={800}
+                  placeholder="empty"
+                  loading="lazy"
+                  className="mt-[40px] rounded-md"
+                  height={600}
+                ></Image>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  常見比例：
+                  <div className="rounded-md p-8 bg-[#f1f1f1]">
+                    <p className="mt-4">--ar 16:9：寬螢幕</p>
+                    <p className="mt-4">--ar 1:1：正方形</p>
+                    <p className="mt-4">--ar 9:16：直立手機螢幕比例</p>
+                  </div>
+                  <Image
+                    src="/images/blog/生成圖片01.png"
+                    width={800}
+                    placeholder="empty"
+                    loading="lazy"
+                    className="mt-[40px] rounded-md"
+                    height={600}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="patagrph p-2 xl:p-10">
+            <h2>內容行銷如何幫助網站提升搜索引擎排名？</h2>
+
+            <br></br>
+
+            <p className="xl: text-[16px] xl:text-[18px] tracking-wide leading-relaxed">
+              <ul className=" md:pl-[32px]  p-10 rounded-xl bg-[#f4f4f4]">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    1.增加網站流量和停留時間
+                  </b>{" "}
+                  <br></br>
+                  高質量的內容可以吸引更多訪客到你的網站，並延長他們的停留時間。搜索引擎，如
+                  Google，非常重視用戶在網站上的行為，較長的停留時間和較低的跳出率會被視為網站提供了優質的使用者體驗，進而有助於提升網站排名。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">2.提高關鍵字排名</b>{" "}
+                  <br></br>
+                  透過內容行銷，你可以針對特定關鍵字進行優化，讓這些關鍵字自然地出現在文章或其他內容中，幫助網站在搜索結果中獲得更好的排名。這樣的策略可以有效提高網站的曝光度，讓潛在客戶更容易找到你。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">3.建立權威和信任</b>{" "}
+                  <br></br>
+                  定期發布高質量、有價值的內容可以幫助網站建立專業形象，提升品牌的權威性。搜索引擎偏好可信賴的網站，當你的內容經常被引用或分享，這些正面的信號都會促進網站的排名。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">4.增加反向連結</b>{" "}
+                  <br></br>
+                  定期發布高質量、有價值的內容可以幫助網站建立專業形象，提升品牌的權威性。搜索引擎偏好可信賴的網站，當你的內容經常被引用或分享，這些正面的信號都會促進網站的排名。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">5.提升用戶體驗</b>{" "}
+                  <br></br>
+                  內容行銷注重的是為用戶提供有用的資訊和解決方案，這能大幅度提升網站的使用者體驗。良好的用戶體驗是搜索引擎評估網站質量的重要指標之一，對於網站的排名提升有直接的幫助。
+                </li>
+              </ul>
+              <br></br>
+            </p>
+            <div className="px-[20px] xl:px-0">
+              <b className="text-[20px]">總結:</b>
+              <br></br>
+              <p>
+                內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
+              </p>
+            </div>
+          </div>
+
+          <div className="patagrph p-2 xl:p-10">
+            <h2>新手如何做好內容行銷？ 有哪些方式</h2>
+
+            <br></br>
+
+            <p className="xl: text-[16px] xl:text-[18px] tracking-wide leading-relaxed">
+              <ul className=" md:pl-[32px]  p-10 rounded-xl bg-[#f4f4f4]">
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    1. 選擇目標受眾：了解你的讀者
+                  </b>{" "}
+                  <br></br>
+                  內容行銷的第一步是了解你的目標受眾。誰是你的主要客群？他們遇到什麼問題？你能如何幫助他們？透過調查、訪談或社交媒體互動，蒐集受眾的興趣和需求數據。這些資訊將幫助你創作出有針對性的內容，吸引讀者並讓他們留下深刻印象。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    {" "}
+                    2.撰寫高質量且實用的內容
+                  </b>{" "}
+                  <br></br>
+                  內容的質量是搜索引擎和讀者都重視的部分。新手可以從解決常見問題、提供實用技巧或深入解說熱門話題開始撰寫。文章應該簡單易懂，避免過於專業的術語。舉例說明、提供實際案例或數據支援，可以讓內容更具說服力和吸引力。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    3.善用多媒體元素：圖片、影片、資訊圖
+                  </b>{" "}
+                  <br></br>
+                  多媒體元素能大幅提升內容的吸引力，特別是對於新手來說，這是一個簡單但有效的提升手段。插入相關圖片、製作短影片或設計資訊圖，可以使你的內容更具視覺吸引力，同時也增加了內容在社群媒體上的可分享性，間接提升
+                  SEO 效果。
+                </li>
+                <li className=" text-[16px] mt-3 py-6 pl-0 ml-0 border-b border-[#858585] hover:scale-[1.01] duration-300">
+                  <b className="text-[20px] font-extrabold">
+                    4.利用社群媒體推廣內容
+                  </b>{" "}
+                  <br></br>
+                  社群媒體是推廣內容的絕佳平台。將你創作的內容分享到
+                  Facebook、Instagram、LinkedIn 或 Twitter
+                  等社群平台，能夠有效增加內容的曝光度。新手可以先選擇幾個主要的社群平台，針對不同的受眾調整推廣方式，吸引更多潛在客戶的注意。
+                </li>
+              </ul>
+              <br></br>
+            </p>
+            <div className="px-[20px] xl:px-0">
+              <b className="text-[20px]">總結:</b>
+              <br></br>
+              <p>
+                內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      {/* <div className="page-wrap">
         <div
           data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"
           className="article-hero-section"
@@ -266,571 +557,64 @@ export default function Blog() {
             <img
               alt=""
               loading="eager"
-              src="https://www.ultraehp.com/images/test-portfolio/Adrian_-Filmaker-to-Motion-Designer.png.webp"
+              src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
               sizes="100vw"
               className="img-cover"
             />
             <div className="gradient-overlay-absolute" />
           </div>
           <div></div>
-          <div className="article-hero-wrap">
-            <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="tag-text-style category-white"
-            >
-              Politics
-            </div>
-            <h1
-              style={{
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                opacity: 1,
-              }}
-              className="title-medium text-align-center text-word-caps"
-            >
-              時代的趨勢-短影音行銷
-            </h1>
-
-            <div
-              className="article-infos-wrap align-center"
-              style={{
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                opacity: 1,
-              }}
-            >
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaec-ac15a7a8"
-                className="article-info-item"
-              >
-                <div className="opacity-50">Written by</div>
-                <div>&nbsp;</div>
-                <div>Harper</div>
-              </div>
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf3-ac15a7a8"
-                className="chip white opacity-50 hide-mobile-landscape"
-              />
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf4-ac15a7a8"
-                className="article-info-item"
-              >
-                <div className="opacity-50">Published on</div>
-                <div>&nbsp;</div>
-                <div>Nov 8, 2023</div>
-              </div>
-            </div>
-            <a
-              href="#article-content"
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="button-large-icon margin-top w-inline-block w--current"
-            >
-              <div className="button-large-icon-bg" />
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a44261408a71bdefc1_icon-arrow-down-black.svg"
-                loading="lazy"
-                alt=""
-                className="icon-16 div-relative"
-              />
-            </a>
-          </div>
         </div>
 
-        <div
-          style={{
-            opacity: 1,
-            transform:
-              "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-          }}
-          className="article-scroll-indicator"
-        >
-          <div className="article-scroll-indicator-wrap">
-            <div>0</div>
-            <div className="article-scroll-indicator-line-wrap">
-              <div
-                className="scroll-indicator-line"
-                style={{
-                  willChange: "transform",
-                  transform:
-                    "translate3d(0px, 0px, 0px) scale3d(1, 0.08344, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                  transformStyle: "preserve-3d",
-                }}
-              />
-            </div>
-            <div>100</div>
+        <Marquee className="bg-black z-[1]">
+          <div className="flex justify-center  py-[20px] items-center">
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
+            <p className="text-white text-[30px]">WEBSITE DESIGN</p>
+            <img
+              className="w-[160px] h-[160px]"
+              src="/images/marquee-icon.png"
+              alt=""
+            />
+            <p>WEBSITE DESIGN</p>
           </div>
-        </div>
-        <div
-          style={{
-            transform:
-              "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-            opacity: 1,
-          }}
-          className="article-social-share"
-        >
-          <div className="social-share-component">
-            <div className="social-share-label-text flex flex-col div-relative">
-              SHARE
-            </div>
-            <div className="w-layout-grid social-share-icons-grid">
-              <a
-                id="w-node-c6614d82-a15a-d1bf-ee93-a890b9e1641d-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4376d11af30a10e56_icon-fb-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-              <a
-                id="w-node-_44107f62-0add-4f90-2f9b-4d15de5ca9b2-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a484ecff6b46ae1a04_icon-linkedin-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-              <a
-                id="w-node-_67e772ed-543c-6c72-9ec7-9c972c5ae736-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a584ecff6b46ae1ac2_icon-x-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-              <a
-                id="w-node-a354c365-c29d-92b5-18f8-a87b747f3518-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4eed91fe3a17704f6_icon-link-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div id="article-content" className="article-content-section">
-          <div
-            data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"
-            className="article-content-container"
-          >
-            <div className="txt bg-gray-100 text-[14px] leading-normal p-10">
-              在當今數位時代，一個專業且引人注目的網站對於企業的成功至關重要。然而，許多中小企業往往擔心高昂的網頁設計費用。事實上，您不必花費巨額資金，也能擁有一個符合需求、引人注目的網站。
-              我們提供的“網頁設計
-              五萬內”方案，專為預算有限的企業量身定制。無論您是初創公司還是希望重新設計現有網站的中小企業，我們的方案都能幫助您實現網頁設計的目標，且不會超出預算。
-            </div>
-            {/* <div className="article-abstract">
-              <div className="text-[16px] leading-normal">
-                SEO（搜尋引擎優化）對企業的利潤有直接且顯著的影響。以下是一些具體方式，說明SEO如何影響企業的利潤：
-              </div>
-            </div> */}
-
-            <div className="paragraph" data-aos="fade-up">
-              <h2 className="text-[40px] leading-normal mb-[20px] mt-[30px] ">
-                短影音 可以為企業帶來的效益
-              </h2>
-              <p>
-                在當今數位時代，擁有一個吸引人的網站對於任何企業或個人品牌都是至關重要的。然而，對於預算有限的中小企業或個人來說，如何在五萬元內完成一個視覺上吸引人的網站是一個常見的挑戰。本文將提供一些實用的建議，幫助您在預算內打造一個引人注目的網站。
-              </p>
-              <div className="paragraph">
-                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
-                  提高品牌曝光度
-                </div>
-                <p className="font-normal leading-[26px]">
-                  短影音因其簡短、容易分享的特性，能迅速在社群平台上擴散，讓品牌信息在短時間內觸及大量潛在客戶。
-                </p>
-              </div>
-              <div className="paragraph">
-                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
-                  2. 增強用戶互動
-                </div>
-                <p className="font-normal leading-[26px]">
-                  生動有趣的短影音能吸引觀眾的注意並激發互動，如按讚、分享、留言等，這些互動不僅提升了品牌的社群活躍度，還有助於建立忠誠的客戶群。
-                </p>
-              </div>
-              <div className="paragraph">
-                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
-                  3.傳遞關鍵信息
-                </div>
-                <p className="font-normal leading-[26px]">
-                  透過創意短影音，企業能夠在短短幾秒鐘內傳達關鍵信息，如新產品發布、促銷活動或品牌故事，讓觀眾快速理解並記住品牌價值。
-                </p>
-              </div>
-              <div className="paragraph">
-                <div className="text-[24px] mb-[15px] font-bold mt-5 ">
-                  1. 提升轉換率
-                </div>
-                <p className="font-normal leading-[26px]">
-                  短影音能有效吸引消費者的注意，並引導他們進一步探索產品或服務，從而提升網站流量和銷售轉換率。
-                </p>
-              </div>
-
-              <div className=" flex flex-col lg:flex-row ">
-                <div
-                  data-aos="zoom-in"
-                  data-aos-duration="400"
-                  className="w-full lg:w-1/2  bg-blue-500 flex justify-center items-center m-3 p-10 border border-black"
-                >
-                  <div className="txt ">
-                    <h3 className="text-white font-extrabold text-[40px]">
-                      3到5秒
-                    </h3>
-                    <p className="text-[14px] text-gray-800 mt-4">
-                      由於觀眾的注意力有限，影片的前幾秒對於吸引觀眾並傳達關鍵信息至關重要。透過快速、明確地表達主題，能夠有效地吸引觀眾繼續觀看，並增強影片的影響力和分享率。
-                    </p>
-                  </div>
-                </div>
-                <div
-                  data-aos="zoom-in"
-                  data-aos-delay="300"
-                  data-aos-duration="400"
-                  className="w-full lg:w-1/2 m-3 bg-blue-500 p-10 border border-black"
-                >
-                  <div className="txt ">
-                    <h3 className="text-white font-extrabold text-[40px]">
-                      3到5秒
-                    </h3>
-                    <p className="text-[14px] text-gray-800 mt-4">
-                      由於觀眾的注意力有限，影片的前幾秒對於吸引觀眾並傳達關鍵信息至關重要。透過快速、明確地表達主題，能夠有效地吸引觀眾繼續觀看，並增強影片的影響力和分享率。
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="paragraph-content" data-aos="fade-up">
-              <div className="paragraph">
-                <h2 className="text-[40px] leading-normal  mb-[20px] mt-[30px] ">
-                  二、關鍵字研究與內容優化
-                </h2>
-                <div className="text-[24px] mb-[20px] font-bold mt-5 ">
-                  1. 選擇合適的關鍵字
-                </div>
-                <p className="font-normal leading-[26px]">
-                  關鍵字是SEO的核心。選擇合適的關鍵字能夠幫助搜尋引擎理解您的網站內容。進行關鍵字研究時，應考慮用戶的搜尋意圖，選擇那些搜尋量大但競爭相對較低的關鍵字。使用工具如Google
-                  Keyword
-                  Planner或Ahrefs來尋找相關的關鍵字，並將其自然地融入到網站內容中。
-                </p>{" "}
-                <br />
-              </div>
-              <div className="paragraph">
-                <h2 className="text-[40px] mb-3"></h2>
-                <div className="text-[24px] mb-[20px] font-bold mt-5 ">
-                  2. 高質量內容的重要性
-                </div>
-                <p className="font-normal leading-[26px]">
-                  內容是SEO中最重要的部分之一。創建高質量且與您的受眾相關的內容可以吸引更多訪客，並提高網站的停留時間，這對搜尋引擎來說是一個正面信號。此外，您的內容應該具備清晰的結構，標題、副標題和段落應該清楚明瞭，並使用關鍵字來增強搜尋引擎的理解。
-                </p>
-              </div>
-            </div>
-
-            <div className="article-content-social-share duration-300 hover:bg-blue-100 border-2 border-black rounded-[40px]">
-              <div className="social-share-label-text div-relative">SHARE</div>
-              <div className="w-layout-grid social-share-icons-grid horizontal">
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b0-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4376d11af30a10e56_icon-fb-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b2-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a484ecff6b46ae1a04_icon-linkedin-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b4-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a584ecff6b46ae1ac2_icon-x-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b6-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4eed91fe3a17704f6_icon-link-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="article-divider" />
-          </div>
-          <div className="article-related-posts-section">
-            <div className="bg-green-500 px-4 py-3  inline-block mx-auto">
-              你可能也有興趣
-            </div>
-            <div className="articles-grid-cms margin-small w-dyn-list">
-              <div role="list" className="articles-grid related w-dyn-items">
-                <div
-                  role="listitem"
-                  className="w-dyn-item hover:border-black p-5 hover:border"
-                >
-                  <a
-                    href="/blog-posts/echoes-of-the-mind-tracing-the-footprints-of-memory"
-                    className="article-item w-inline-block"
-                  >
-                    <div className="article-item-img-wrap">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        src=""
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet=""
-                        className="img-cover-absolute"
-                      />
-                      <div
-                        className="img-left-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-right-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-top-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-btm-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                    <div className="article-content-wrap">
-                      <div className="article-item-head-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                          className="tag-text-style category"
-                        >
-                          Design/seo
-                        </div>
-                        <h5
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                          className="element-trigger"
-                        >
-                          seo文章
-                        </h5>
-                      </div>
-                      <div className="article-infos-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Written by</div>
-                          <div>&nbsp;</div>
-                          <div>Owen</div>
-                        </div>
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                          className="chip opacity-50 hide-mobile-landscape"
-                        />
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Published on</div>
-                          <div>&nbsp;</div>
-                          <div>Jan 14, 2024</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="line-trigger">
-                      <div
-                        className="line-moves"
-                        style={{
-                          transform:
-                            "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div
-                  role="listitem"
-                  className="w-dyn-item hover:border-black p-5 hover:border"
-                >
-                  <a
-                    href="/blog-posts/celestial-serendipity-aligning-with-the-cosmic-dance-of-chance"
-                    className="article-item w-inline-block"
-                  >
-                    <div className="article-item-img-wrap">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        src="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18-p-500.jpg 500w, https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg 720w"
-                        className="img-cover-absolute"
-                        style={{}}
-                      />
-                      <div
-                        className="img-left-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-right-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-top-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-btm-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                    <div className="article-content-wrap">
-                      <div className="article-item-head-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                          className="tag-text-style category"
-                        >
-                          Politics
-                        </div>
-                        <h5
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                          className="element-trigger"
-                          style={{}}
-                        >
-                          Celestial Serendipity: Aligning with the Cosmic Dance
-                          of Chance
-                        </h5>
-                      </div>
-                      <div className="article-infos-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Written by</div>
-                          <div>&nbsp;</div>
-                          <div>Isabella</div>
-                        </div>
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                          className="chip opacity-50 hide-mobile-landscape"
-                        />
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Published on</div>
-                          <div>&nbsp;</div>
-                          <div>Jan 10, 2024</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="line-trigger">
-                      <div
-                        className="line-moves"
-                        style={{
-                          transform:
-                            "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+        </Marquee>
+        <div id="article-content" className="article-content-section"></div>
+      </div> */}
+    </div>
   );
 }
 

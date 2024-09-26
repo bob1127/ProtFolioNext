@@ -4,6 +4,8 @@ import Head from "next/head";
 import { NextSeo } from "next-seo";
 import Marquee from "react-fast-marquee";
 import { useEffect } from "react";
+import { Snippet } from "@nextui-org/react";
+
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
@@ -102,12 +104,10 @@ export default function Blog() {
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
               <h1 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  ">
-                Illustrator
+                「快速上手 Tailwind CSS：打造高效且靈活的網站樣式
               </h1>
               <div className="title-content-date">
-                <div>
-                  <Image src="" width={50} height={50}></Image>
-                </div>
+                <div></div>
                 <div className="text-[14px]">
                   <b className="mr-3">Spline 3d</b>
                   <b>2024/04/05</b>
@@ -130,48 +130,49 @@ export default function Blog() {
           </div>
           <div className="flex justify-center">
             <Image
-              placeholder="empty rounded-md"
-              loading="lazy"
+              src="/images/blog/tailwindcss01.png"
               width={900}
               height={500}
-              src="/images/blog/splien3d.png"
+              placeholder="empty"
+              className="shadow-md"
             ></Image>
           </div>
 
           <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
-            <h2>什麼是 Spline 3D？</h2>
+            <h2>如何使用 Tailwind CSS 快速打造網站？</h2>
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-              Spline 3D 是一個基於雲端的 3D
-              設計工具，適合各種技能水平的使用者，特別是設計師和開發者。它使得創建和共享
-              3D 內容變得簡單，並且提供直觀的介面和強大的功能。
+              Tailwind CSS 是一個功能強大且直觀的 CSS 框架，它與傳統的 CSS
+              框架不同，專注於實用工具類別，這讓開發者可以快速設計具有高度客製化的網站。在這篇文章中，我們將帶你快速上手
+              Tailwind CSS，並學習如何利用它輕鬆打造漂亮的網頁設計。
             </div>
             <a
               target="_blank"
               className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
-              href="https://spline.design/"
+              href="https://tailwindcss.com/"
             >
-              前往 Spline 官方網站
+              前往 Tailwind css 官方網站
             </a>
 
             <br></br>
             <div className="">
-              <div className="imgText mt-[20px]">
+              <div className="imgText mt-[50px]">
                 <div className=" text-[32px]  leading-[32px]   text-[#000000]">
                   <span className="text-[32px] font-bold text-black mt-[30px]">
                     一.
                   </span>
-                  註冊與登錄
+                  什麼是 Tailwind CSS？
                 </div>
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-                  <span className="text-[20px] text-black">1.</span>
-                  點擊「註冊」按鈕，填寫必要的資訊並創建帳戶。
+                  Tailwind CSS 是一個「實用為中心」的 CSS
+                  框架，意思是它沒有預設的 UI
+                  組件（例如按鈕、卡片樣式），而是提供大量的工具類別（utility
+                  classes），讓你能自由組合這些類別來完成設計。
+                  這樣做的好處是，你可以靈活地創建符合你需求的設計，而不受限制於框架預設的樣式。這與像
+                  Bootstrap 這類有明確 UI 組件的框架非常不同。
                 </div>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-                  <span className="text-[20px] text-black">2.</span>
-                  登錄後，你將進入 Spline 3D 的主介面。
-                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]"></div>
                 <Image
-                  src="/images/blog/splineLogin.png"
+                  src="/images/blog/tailwindcssUI.png"
                   width={900}
                   height={500}
                   loading="lazy"
@@ -181,101 +182,53 @@ export default function Blog() {
               </div>
 
               <div className="imgText mt-[60px]">
-                <h2 className="text-[32px] font-bold"> 二.簡易的操作介面</h2>
+                <h2 className="text-[32px] font-bold"> 二.快速安裝</h2>
 
-                <h3 className="text-[20px] ">1. 3D 模型創建與編輯 Spline</h3>
+                <h3 className="text-[20px] ">1.使用 CDN 安裝</h3>
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  提供了各種基礎形狀（如立方體、球體、圓柱等），你可以通過拉伸、旋轉和縮放來輕鬆調整這些形狀。此外，Spline
-                  支持導入外部 3D 模型（如 .obj、.gltf
-                  格式），讓你能夠更靈活地處理複雜的模型。
+                  在這段 HTML 中，我們在 head 標籤內引入了 Tailwind CSS 的 CDN：
                 </div>
 
-                <Image
-                  src="/images/blog/簡單拉伸.gif"
-                  placeholder="empty"
-                  className="mt-[30px] rounded-md"
-                  width={800}
-                  height={500}
-                ></Image>
+                <div className="bg-[#d6d6d6] mb-4">
+                  <Snippet>
+                    這將會創建一個 tailwind.config.js 文件，讓你可以客製化
+                    Tailwind 的設定。
+                  </Snippet>
+                </div>
                 <b className="text-[14px] font-bold mt-3">
-                  支援多種格式模型匯入
+                  這個 CDN 來自 jsDelivr，它提供了一個可以即時加載的 Tailwind
+                  CSS 完整版本。你只需要複製這行代碼並貼到你的 HTML 頁面中即可。
                 </b>
 
-                <Image
-                  src="/images/blog/import.png"
-                  placeholder="empty"
-                  className="mt-[30px] rounded-md"
-                  width={800}
-                  height={500}
-                ></Image>
-                <Image
-                  src="/images/blog/spline-opration.png"
-                  placeholder="empty "
-                  className="mt-2 rounded-md"
-                  width={800}
-                  height={500}
-                ></Image>
-                <b className="text-[14px] font-bold mt-3">
-                  支援多種格式模型匯入
-                </b>
-
-                <h3 className="text-[20px] ">2.材質與光影效果</h3>
+                <h3 className="text-[20px] ">1.使用 npm 安裝</h3>
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  - 材質設置：Spline
-                  提供多種材質選項，讓你能夠為模型添加表面細節，例如金屬質感、玻璃透明度、塑料質地等
-                </div>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  光源控制：你可以在場景中添加光源，並自定義其方向、強度和顏色，讓模型呈現出逼真的陰影與高光效果。
+                  使用 Tailwind CSS
+                  非常簡單，首先你需要將它添加到你的專案中。假設你已經有一個專案，可以使用
+                  npm 進行安裝：
                 </div>
 
-                <h3 className="text-[20px] ">3.動畫製作</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  Spline 支持為 3D
-                  模型設置動畫。你可以設置對象的移動、旋轉、縮放等參數，並透過時間軸進行細節調整，讓你的模型不僅僅是靜態展示，還可以做出連續動作。
+                <div className="bg-[#d6d6d6] mb-4">
+                  <Snippet>
+                    npm install -D tailwindcss npx tailwindcss init
+                  </Snippet>
+                  <Snippet>npx tailwindcss init</Snippet>
                 </div>
 
-                <h3 className="text-[20px] ">4 . 互動設計 </h3>
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  使用 Spline 的互動功能，你可以為 3D
-                  模型設置觸發效果。例如當使用者滑鼠懸停在某個對象上時，觸發對象的動畫或樣式變化，增加用戶參與感。
+                  這將會創建一個 tailwind.config.js 文件，讓你可以客製化
+                  Tailwind 的設定。 接著，將 Tailwind 引入到你的 CSS 文件中：
+                </div>
+                <div className="bg-[#d6d6d6] mb-4">
+                  <Snippet>
+                    npm install -D tailwindcss npx tailwindcss init
+                  </Snippet>
+                  <Snippet>npx tailwindcss init</Snippet>
                 </div>
               </div>
-
-              {/* <div className="imgText mt-[60px]">
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  <span className="text-[22px] font-bold">
-                    3D 模型創建與編輯
-                  </span>{" "}
-                  Spline
-                  提供了各種基礎形狀（如立方體、球體、圓柱等），你可以通過拉伸、旋轉和縮放來輕鬆調整這些形狀。此外，Spline
-                  支持導入外部 3D 模型（如 .obj、.gltf
-                  格式），讓你能夠更靈活地處理複雜的模型。
-                </div>
-
-                <div className="mt-[30px]">
-                  <Image
-                    src="/images/blog/3dmodel.png"
-                    width={900}
-                    placeholder="empty"
-                    height={600}
-                    className="rounded-md"
-                  ></Image>
-                  <p className="text-[16px] mt-4 font-bold">
-                    跟其他建模軟體一樣可使用簡單形狀
-                  </p>
-                </div>
-
-                <div className="mt-[30px]">
-                  <Image
-                    src="/images/blog/spline-opration.png"
-                    width={900}
-                    placeholder="empty"
-                    height={600}
-                    className="rounded-md"
-                  ></Image>
-                  <p className="text-[16px] mt-4 font-bold">導入外部模型</p>
-                </div>
-              </div> */}
+              <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                這樣就完成了基本的安裝步驟，你可以開始使用 Tailwind
+                的各種工具類別來設計你的網頁了！
+              </div>
 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">

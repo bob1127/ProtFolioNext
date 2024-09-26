@@ -70,7 +70,7 @@ useEffect(() => {
     AOS.init({
       duration: 1000, // 动画持续时间（毫秒）
       easing: 'ease-in-out', // 动画缓动函数
-      once: true, // 动画只会在元素进入视口时触发一次
+      once: true, 
     });
   }, []);
     return (

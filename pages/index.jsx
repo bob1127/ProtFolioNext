@@ -314,7 +314,7 @@ CREACTIVEs</h1>
             </div>
             <div className="w-full lg:w-1/2">
               <Image
-                src="/images/RWDmobile.webp"
+                src="/images/截圖-2024-09-24-上午9.26.06.png"
                 loading="lazy"
                 placeholder="empty"
                 width={800}
@@ -377,7 +377,7 @@ CREACTIVEs</h1>
             </div>
           </div>
           <div className="right   h-full flex flex-col  w-full lg:w-1/2">
-            <div className="top py-[50px] lg:p-[40px] flex  bg-[#15a4fd] justify-center items-center h-1/2  lg:border-t-0 px-[20px] md:px-0 border-t-2 flex-col w-full border-b-2 border-black">
+            <div className="top  flex  justify-center items-center h-1/2  lg:border-t-0 md:px-0  flex-col w-full border-black">
               <h2 className="text-[22px] text-light"></h2>
               {/* <Link
                 href='/Video'
@@ -386,12 +386,17 @@ CREACTIVEs</h1>
                 {' '}
                 Go to about us
               </Link> */}
-              <h2 className="text-white">網頁主體視覺</h2>
+              {/* <h2 className="text-white">網頁主體視覺</h2>
               <p className="  text-white   text-cenrer lg:text-left text-center w-full text-[16px] xl:text-[18px] leading-[26px] xl:w-2/3 ">
                 創造一個引人入勝的網頁主體視覺，通過精心設計的 Banner、震撼的
                 Hero Image
                 和高質量的產品攝影來強化品牌形象並吸引訪客。這種多層次的視覺策略將幫助您在用戶進入網站的第一時間就感受到品牌的獨特魅力。
-              </p>
+              </p> */}
+              <Image
+                src="/images/black-company-logo.png"
+                width={900}
+                height={500}
+              ></Image>
             </div>
 
             <div className="bottom  bg-white flex px-[20px] md:px-0 py-[50px]  items-center   h-1/2 justify-start flex-col w-full ">

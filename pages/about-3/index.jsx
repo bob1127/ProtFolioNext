@@ -36,7 +36,9 @@ import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
 import Image from "next/image.js";
 import dynamic from "next/dynamic";
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+const Lottie = dynamic(() => import("react-lottie"), {
+  ssr: false,
+});
 
 export default function Blog() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -193,7 +195,7 @@ export default function Blog() {
         <div id="webpage" className="page-wrapper">
           <main className="main">
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
-              <div className="container duration-500  bg-[#15a4fd]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[60vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
+              <div className="container duration-500  bg-[#15a4fd]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[40vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
                   <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
                     💡致力於開發使用者體驗良好的網站
@@ -201,23 +203,11 @@ export default function Blog() {
                 </div>
                 <div className="title "></div>
                 <main className="h-full w-full relative ">
-                  <div className="z-[99999]   w-full h-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 main-title absolute">
+                  <div className="z-[99999]   w-full h-full left-1/2 top-[70%] -translate-x-1/2 -translate-y-1/2 main-title absolute">
                     <h1 className="block text-white sm:hidden tex-[32px] md:text-[45px] lg:text-[60px] xl:text-[80px] font-black text-center  leading-[40px] xl:leading-[80px]">
                       WEBSITE DESIGN - JEEK
                     </h1>
                     <RevealLinks />
-
-                    <div className="w-full md:w-[490px] text-[14px] xl:text-[16px]  font-normal p-0 xl:p-0 xl:bg-transparent text-center leading-normal text-[#ffffff] mx-auto">
-                      HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
-                      本來是 在一家化學生技公司創業基地擔任"網頁工程師 一職"
-                      因為負責都是新創公司
-                      所以公司網頁的設計和商品拍攝影片剪輯SEO的優化
-                      都是由我完成，但這也讓我學習不同的技能。而我秉持的觀念也是不斷精進
-                      雖然我的網頁作品不多 但我忍為我的技術已可以
-                      為客戶帶來收益。我是一個追求理想和目標的人
-                      希望有理想、想法 、和目標想要讓公司網頁更好的客戶
-                      與我聯繫。
-                    </div>
                   </div>
                   <div className="box01  hidden lg:block z-1 top-[100px] absolute left-[-260px] border border-black">
                     <img
@@ -231,6 +221,7 @@ export default function Blog() {
                       alt=""
                     />
                   </div>
+
                   <div className="box02 hidden lg:block absolute top-[220px] right-[-200px]">
                     <img
                       className="w-[260px] mt-[-170px] ml-[190px]"
@@ -244,6 +235,17 @@ export default function Blog() {
                     />
                   </div>
                 </main>
+              </div>
+              <div className="w-full xl:w-[70%] mt-[40px] mx-auto  xl:text-[18px] text-[16px] leading-[32px] font-normal p-0 xl:p-0 xl:bg-transparent text-center  text-[#171717] ">
+                <Lottie options={defaultOptions} height={220} width={220} />
+                HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
+                本來是 在一家化學生技公司創業基地擔任"網頁工程師 一職"
+                因為負責都是新創公司
+                所以公司網頁的設計和商品拍攝影片剪輯SEO的優化
+                都是由我完成，但這也讓我學習不同的技能。而我秉持的觀念也是不斷精進
+                雖然我的網頁作品不多 但我忍為我的技術已可以
+                為客戶帶來收益。我是一個追求理想和目標的人 希望有理想、想法
+                、和目標想要讓公司網頁更好的客戶 與我聯繫。
               </div>
             </section>
 
@@ -585,13 +587,21 @@ export default function Blog() {
                 />
                 {/* "為什麼要選擇自由接案者？" */}
               </h2>
+              <p className="text-[16px] mt-4 w-2/3 mx-auto leading-[32px]">
+                {" "}
+                freelancer 比起 設計公司 更有時間 處理 您的專擅 也不必透過中間
+                代理人 PM 溝通 需求 導致誤差
+              </p>
               <p className="text-center text-[16px] xl:text-[22px] md:text-[26px] ">
                 選擇JEEK 幫助您實現創意發想
               </p>
               <section className="section-carousel  flex-col mt-0 md:mt-10  px-0 xl:px-[70px] md:flex-row flex mb-[50px]">
                 <div className="left-txt flex-col flex justify-start items-center  w-full mt-5 md:w-[30%]">
                   <div>
-                    <h2 className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold">
+                    <h2
+                      data-aos="fade-flur"
+                      className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold"
+                    >
                       靈活性
                     </h2>
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
@@ -617,7 +627,10 @@ export default function Blog() {
                 </div>
                 <div className="right-txt flex flex-col justify-start items-center w-full mt-5 md:mt-0 md:w-[30%]">
                   <div>
-                    <h2 className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold">
+                    <h2
+                      data-aos="fade-flur"
+                      className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold"
+                    >
                       一對一
                     </h2>
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">

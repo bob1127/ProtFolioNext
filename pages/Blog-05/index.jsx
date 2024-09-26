@@ -89,7 +89,10 @@ export default function Blog() {
         </div>
 
         <div className="article-title hidden md:black relative">
-          <div className="txt bg-black-rgba z-[999] absolute bottom-0 h-1/2 left-0 flex justify-center items-center w-[100vw]  border-t border-white/50 backdrop-blur-md"></div>
+          <div
+            className="txt bg-black-rgba z-[999] absolute bottom-0 h-1/2 left-0 flex justify-center items-center w-[100vw]  border-t border-white/50 backdrop-blur-md"
+            data-aos="fade-blur"
+          ></div>
           <Image
             src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
             width={1920}
@@ -101,11 +104,14 @@ export default function Blog() {
         <div className="article-content mt-[100px] p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
-              <h1 className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  ">
-                新手入門 Spline 3D 教學
+              <h1
+                data-aos="fade-blur"
+                className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  "
+              >
+                Spline 3D 入門指南
               </h1>
               <div className="title-content-date">
-                <div>
+                <div data-aos="fade-blur">
                   <Image src="" width={50} height={50}></Image>
                 </div>
                 <div className="text-[14px]">
@@ -128,7 +134,7 @@ export default function Blog() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div data-aos="fade-blur" className="flex justify-center">
             <Image
               placeholder="empty rounded-md"
               loading="lazy"
@@ -162,7 +168,10 @@ export default function Blog() {
                   </span>
                   註冊與登錄
                 </div>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div
+                  data-aos="fade-blur"
+                  className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]"
+                >
                   <span className="text-[20px] text-black">1.</span>
                   點擊「註冊」按鈕，填寫必要的資訊並創建帳戶。
                 </div>
@@ -175,6 +184,7 @@ export default function Blog() {
                   width={900}
                   height={500}
                   loading="lazy"
+                  data-aos="fade-blur"
                   className="rounded-md mt-3"
                   placeholder="empty"
                 ></Image>
