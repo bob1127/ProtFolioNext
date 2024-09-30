@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Image from "next/image";
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -153,25 +153,44 @@ export default function NewsletterForm() {
             </label>
           </div>
         </div>
-        <div className="mb-4">
-          <p className="block text-sm font-medium text-gray-700">Plans:</p>
-          <div className="flex items-center mb-2">
+        <p className="block text-[22px] font-medium text-gray-700">Plans:</p>
+        <div className="mb-4 flex flex-row">
+          <div className="flex flex-col py-[20px] justify-start items-start mb-2">
             <input
               type="checkbox"
               id="plan1"
               name="plan1"
               checked={plans.plan1}
               onChange={handleCheckboxChange}
-              className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
+              className="h-4 ml-2 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
             />
             <label
               htmlFor="plan1"
               className="ml-2 text-sm font-medium text-gray-700"
             >
               Plan 1
+              <div className="border p-7 w-[300px] border-black rounded-md">
+                <div className="title mb-4 text-[20px] font-bold">
+                  Basic 基本方案
+                </div>
+                <div className="img">
+                  <Image
+                    src="/images/heroimg.webp"
+                    width={600}
+                    height={300}
+                  ></Image>
+                </div>
+                <div className="plan-content">
+                  <p className="mt-3">包含一年網域空間費用</p>
+
+                  <p className="mt-3">客製化版面設計</p>
+                  <p className="mt-3">Seo優化 串接gtm</p>
+                  <p className="mt-3">形象影片拍攝</p>
+                </div>
+              </div>
             </label>
           </div>
-          <div className="flex items-center mb-2">
+          <div className="flex flex-col py-[20px] justify-start items-start mb-2">
             <input
               type="checkbox"
               id="plan2"
@@ -180,14 +199,34 @@ export default function NewsletterForm() {
               onChange={handleCheckboxChange}
               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
             />
+
             <label
               htmlFor="plan2"
-              className="ml-2 text-sm font-medium text-gray-700"
+              className="ml-2 text-[22px] font-medium text-gray-700"
             >
               Plan 2
+              <div className="border p-7 w-[300px] border-black rounded-md">
+                <div className="title mb-4 text-[20px] font-bold">
+                  Plus 進階方案
+                </div>
+                <div className="img">
+                  <Image
+                    src="/images/heroimg.webp"
+                    width={600}
+                    height={300}
+                  ></Image>
+                </div>
+                <div className="plan-content">
+                  <p className="mt-3">包含一年網域空間費用</p>
+
+                  <p className="mt-3">客製化版面設計</p>
+                  <p className="mt-3">Seo優化 串接gtm</p>
+                  <p className="mt-3">形象影片拍攝</p>
+                </div>
+              </div>
             </label>
           </div>
-          <div className="flex items-center mb-2">
+          <div className="flex flex-wrap w-full py-[20px] justify-start items-start mb-2">
             <input
               type="checkbox"
               id="plan3"
@@ -196,12 +235,40 @@ export default function NewsletterForm() {
               onChange={handleCheckboxChange}
               className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
             />
+
+            <label
+              htmlFor="plan3"
+              className="ml-2 text-[22px] font-medium text-gray-700"
+            >
+              Plan 3
+              <div className="border p-7 w-[300px] border-black rounded-md">
+                <div className="title mb-4 text-[20px] font-bold">
+                  Customized 客製化方案
+                </div>
+                <div className="img">
+                  <Image
+                    src="/images/heroimg.webp"
+                    width={600}
+                    height={300}
+                  ></Image>
+                </div>
+                <div className="plan-content">
+                  <p className="mt-3">包含一年網域空間費用</p>
+
+                  <p className="mt-3">客製化版面設計</p>
+                  <p className="mt-3">Seo優化 串接gtm</p>
+                  <p className="mt-3">形象影片拍攝</p>
+                </div>
+              </div>
+            </label>
+
+            {/*             
             <label
               htmlFor="plan3"
               className="ml-2 text-sm font-medium text-gray-700"
             >
               Plan 3
-            </label>
+            </label> */}
           </div>
         </div>
         <div className="py-5">

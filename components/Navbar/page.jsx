@@ -7,7 +7,7 @@
 import Image from "next/image";
 export default function Index() {
   return (
-    <div className="z-[99999999999] relative">
+    <div className="z-[99999999999] fixed top-0 left-0 w-full">
       <div className="fullscreen-menu bg-[#1a1a1a]" style={{ display: "none" }}>
         <div className="menu-layout">
           <div className="menu-socials" style={{ opacity: 0 }}>

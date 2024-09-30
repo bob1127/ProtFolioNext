@@ -200,7 +200,7 @@ CREACTIVEs</h1>
             </div>
           </div>
           <div className="right   h-full flex flex-col  w-full lg:w-1/2">
-            <div className="top  flex  justify-center items-center h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
+            <div className="top h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
               <Image
                 src="/images/heroimg.webp"
                 width={800}
@@ -377,7 +377,7 @@ CREACTIVEs</h1>
             </div>
           </div>
           <div className="right   h-full flex flex-col  w-full lg:w-1/2">
-            <div className="top  flex  justify-center items-center h-1/2  lg:border-t-0 md:px-0  flex-col w-full border-black">
+            <div className="top  flex  justify-center items-center h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
               <h2 className="text-[22px] text-light"></h2>
               {/* <Link
                 href='/Video'

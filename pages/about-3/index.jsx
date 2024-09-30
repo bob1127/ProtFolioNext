@@ -155,7 +155,7 @@ export default function Blog() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="" data-aos="fade-up">
+    <div className="bg-[#faf9f8]" data-aos="fade-up">
       <NextSeo
         title="關於極客-網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 高CP網站｜你的創意，我來實踐"
         description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
@@ -236,8 +236,8 @@ export default function Blog() {
                   </div>
                 </main>
               </div>
-              <div className="w-full xl:w-[70%] mt-[40px] mx-auto  xl:text-[18px] text-[16px] leading-[32px] font-normal p-0 xl:p-0 xl:bg-transparent text-center  text-[#171717] ">
-                <Lottie options={defaultOptions} height={220} width={220} />
+              <Lottie options={defaultOptions} height={220} width={220} />
+              <div className="w-full xl:w-[80%] mt-[40px] mx-auto  xl:text-[18px] text-[16px] leading-[32px] font-normal border bg-blue-400 border-black rounded-xl p-[50px] xl:bg-transparent text-center  text-[#171717] ">
                 HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
                 本來是 在一家化學生技公司創業基地擔任"網頁工程師 一職"
                 因為負責都是新創公司
@@ -587,12 +587,13 @@ export default function Blog() {
                 />
                 {/* "為什麼要選擇自由接案者？" */}
               </h2>
-              <p className="text-[16px] mt-4 w-2/3 mx-auto leading-[32px]">
+              <p className="text-[16px] mt-4 md:w-[80%] w-full xl:w-[60%] mx-auto px-[30px] leading-[32px] text-center ">
                 {" "}
-                freelancer 比起 設計公司 更有時間 處理 您的專擅 也不必透過中間
-                代理人 PM 溝通 需求 導致誤差
+                freelancer 比起設計公司，更有時間處理您的專案。
+                也不必透過中間代理人"PM"溝通需求，導致誤差。
+                一來一回就浪費了時間成本，把您的需求直接跟我討論可以更直觀的完妹符合您的需求
               </p>
-              <p className="text-center text-[16px] xl:text-[22px] md:text-[26px] ">
+              <p className="text-center text-[16px] xl:text-[22px] md:text-[26px] text-[15px] ">
                 選擇JEEK 幫助您實現創意發想
               </p>
               <section className="section-carousel  flex-col mt-0 md:mt-10  px-0 xl:px-[70px] md:flex-row flex mb-[50px]">
@@ -607,7 +608,7 @@ export default function Blog() {
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
                       Flexibility
                     </h2>
-                    <p className="text-[16px]  xl:w-full w-2/3  mx-auto text-center mt-3">
+                    <p className="text-[16px]  w-[90%]  xl:w-full       mx-auto text-center mt-3">
                       根據客戶的時間表和需求快速調整工作安排，適應變化。
                     </p>
                   </div>
@@ -636,7 +637,7 @@ export default function Blog() {
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
                       One By One
                     </h2>
-                    <p className="text-[16px] mx-auto w-2/3 md:w-full text-center mt-3">
+                    <p className="text-[16px]  w-[90%] mx-auto      md:w-full text-center mt-3">
                       直接與客戶溝通，提供專注且個性化的服務。
                     </p>
                   </div>
@@ -680,261 +681,6 @@ export default function Blog() {
                         />
                       </h2>
                     </div>
-                    <div
-                      data-aos="fade-up"
-                      className="jobs"
-                      style={{ display: "flex", padding: 0 }}
-                    >
-                      <div
-                        id="w-node-_9d02a341-146a-d088-349b-f68535a2ecdc-35a2ecda"
-                        className="job-card mx-0"
-                        srtyle="width:400px; display:flex; flex-direction:column"
-                      >
-                        <p className="job-card-role">套版網站(NT.35000)</p>
-
-                        <span>
-                          <div style={{ margin: 0, padding: 0 }}>
-                            <p className="plan-item  text-[20px] font-bold">
-                              首頁+分頁五頁
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                現成模板選擇：
-                              </span>
-                              <p className="text-[16px]">
-                                從我們的模板庫中選擇符合需求的現成設計。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                基本功能配置：
-                              </span>
-                              <p className="text-[16px]">
-                                包括聯絡表單、基本 SEO 設置、社交媒體集成等。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                基本網頁圖片：
-                              </span>
-                              <p className="text-[16px]">
-                                基本產品圖 ｜ 形象圖 ｜ Hero Image
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                預設設計風格：
-                              </span>
-                              <p className="text-[16px]">
-                                根據選擇的模板風格進行色彩和圖片的調整。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                含首年度主機空間＋網域
-                              </span>
-                              <p className="text-[16px]">如有需求可在加購</p>
-                            </p>
-                          </div>
-                        </span>
-                        {/* <div class="job-card-categories">
-                <div class="job-card-category">
-                  <div class="job-card-icon">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f61d3e81308165ce58_responsive_layout_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt
-                      class="icon is-job-icon" />
-                  </div>
-                  <p class="job-card-text-small">方案一</p>
-                </div>
-                <div class="job-card-category">
-                  <div class="job-card-icon">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6844afe9fcdf5a1af_thumb_up_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt
-                      class="icon is-job-icon" />
-                  </div>
-                  <p class="job-card-text-small">$200,000 per year</p>
-                </div>
-              </div> */}
-                        <div
-                          className="job-card-link-flex"
-                          style={{
-                            background: "rgb(115, 208, 102)",
-                            color: "white",
-                          }}
-                        >
-                          <p className="simple-link">
-                            <div className="flex flex-wrap  gap-3">
-                              {backdrops.map((b) => (
-                                <Button
-                                  key={b}
-                                  variant="flat"
-                                  color="warning"
-                                  onPress={() => handleOpen(b)}
-                                  className="capitalize"
-                                >
-                                  {b}
-                                </Button>
-                              ))}
-                            </div>
-                          </p>
-                        </div>
-                        {/* <div style="height: 400px;">
-                Title
-              </div> */}
-                      </div>
-                      <div
-                        id="w-node-_01078e3d-0c2e-e80d-0be2-5a38ca83ccf4-35a2ecda"
-                        className="job-card mx-0 md:mx-4  bg-blue-200"
-                      >
-                        <p className="job-card-role">客製化網站(NT.80000)</p>
-                        <span>
-                          <div style={{ margin: 0, padding: 0 }}>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                電子商務功能：
-                              </span>
-                              <p className="text-[16px]">
-                                購物車、結帳系統和金流串接。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                響應式設計：
-                              </span>
-                              <p className="text-[16px]">
-                                確保網站在各種設備上良好顯示，並支持移動設備購物。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                SEO 和行銷工具：
-                              </span>
-                              <p className="text-[16px]">SEO 優化和行銷工具</p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                含首年度主機空間+網域:
-                              </span>
-                              <p className="text-[16px]"></p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                可以需求客製化
-                              </span>
-                              <p className="text-[16px]">
-                                可依顧客需求客製化版面
-                              </p>
-                            </p>
-                          </div>
-                        </span>
-
-                        <div className="job-card-link-flex">
-                          <p className="simple-link">
-                            <div className="flex flex-wrap  gap-3">
-                              {backdrops.map((b) => (
-                                <Button
-                                  key={b}
-                                  variant="flat"
-                                  color="warning"
-                                  onPress={() => handleOpen(b)}
-                                  className="capitalize"
-                                >
-                                  {b}
-                                </Button>
-                              ))}
-                            </div>
-                          </p>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_90fc4fc9-5875-a940-a16d-30733a08bafa-35a2ecda"
-                        className="job-card mx-0"
-                      >
-                        <p className="job-card-role">購物網站(NT.60000)</p>
-                        <span>
-                          <div style={{ margin: 0, padding: 0 }}>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                電子商務功能：
-                              </span>
-                              <p className="text-[16px]">
-                                包括產品目錄、購物車、結帳系統和支付閘道集成。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                響應式設計：
-                              </span>
-                              <p className="text-[16px]">
-                                確保網站在各種設備上良好顯示，並支持移動設備購物。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                SEO 和行銷工具：
-                              </span>
-                              <p className="text-[16px]">
-                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              <span className="text-[20px] font-bold">
-                                含首年年度維護與主機空間:
-                              </span>
-                              <p className="text-[16px]">
-                                內建 SEO 優化和行銷工具，如優惠券、促銷活動等。
-                              </p>
-                            </p>
-                            <p className="plan-item text-[22px]">
-                              可依需求客製化功能
-                            </p>
-                          </div>
-                        </span>
-                        {/* <div class="job-card-categories">
-                <div class="job-card-category">
-                  <div class="job-card-icon">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f61d3e81308165ce58_responsive_layout_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt
-                      class="icon is-job-icon" />
-                  </div>
-                  <p class="job-card-text-small">Remote or office</p>
-                </div>
-                <div class="job-card-category">
-                  <div class="job-card-icon">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6844afe9fcdf5a1af_thumb_up_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt
-                      class="icon is-job-icon" />
-                  </div>
-                  <p class="job-card-text-small">$180,000 per year</p>
-                </div>
-              </div> */}
-                        <div className="job-card-link-flex">
-                          <p className="simple-link">
-                            <div className="flex flex-wrap  gap-3">
-                              {backdrops.map((b) => (
-                                <Button
-                                  key={b}
-                                  variant="flat"
-                                  color="warning"
-                                  onPress={() => handleOpen(b)}
-                                  className="capitalize"
-                                >
-                                  {b}
-                                </Button>
-                              ))}
-                            </div>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -942,6 +688,121 @@ export default function Blog() {
                 <b className="mx-auto text-[16px]">
                   *方案價格皆為大約估算，實際可討論詳談
                 </b>
+              </div>
+            </section>
+
+            <section className="section-plan">
+              <div className="flex md:flex-row flex-wrap justify-center items-start mt-10  flex-row">
+                <div
+                  className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
+                  data-aos="fade-blur"
+                >
+                  <p>Basic</p>
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
+                    NT30,000
+                  </div>
+                  <h3 className="text-[40px]">基本網站</h3>
+                  <p className="text-[20px]">
+                    價格： <span className="font-extrabold">20000up</span>
+                  </p>
+
+                  <div className="plan-content mt-5">
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">基本網頁版型設計</p>
+                    <p className="mt-4">基本seo優化</p>
+                    <p className="mt-4">sitemap|</p>
+                    <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
+                      {backdrops.map((b) => (
+                        <Button
+                          key={b}
+                          variant="flat"
+                          color="warning"
+                          onPress={() => handleOpen(b)}
+                          className="capitalize w-full"
+                        >
+                          {b}
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
+                  data-aos="fade-blur"
+                >
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
+                    NT45,000
+                  </div>
+                  <p>Plus</p>
+                  <h3 className="text-[40px]">進階方案</h3>
+                  {/* <p className="text-[20px]">
+                    價格： <span className="font-extrabold">20000up</span>
+                  </p> */}
+
+                  <div className="plan-content mt-5">
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">商品攝影｜形象影片</p>
+                    <p className="mt-4">客製化版面設計｜特殊動畫效果</p>
+                    <p className="mt-4">購物車網站系統</p>
+                    http://localhost:3000/images/portfolio01.png
+                    <p className="mt-4">
+                      SEO優化｜串接GTM、GA4、GoogleSearchConsole
+                    </p>
+                    <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
+                      {backdrops.map((b) => (
+                        <Button
+                          key={b}
+                          variant="flat"
+                          color="warning"
+                          onPress={() => handleOpen(b)}
+                          className="capitalize w-full"
+                        >
+                          {b}
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex relative w-[400px]  justify-center flex-col items-center mx-4"
+                  data-aos="fade-bur"
+                >
+                  <p>Customized</p>
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] shadow-xl font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
+                    跟我談談
+                  </div>
+                  <h3 className="text-[40px]">客製化網站</h3>
+                  {/* <p className="text-[20px]">
+                    價格： <span className="font-extrabold">20000up</span>
+                  </p> */}
+
+                  <div className="plan-content mt-5">
+                    <p className="mt-4">
+                      {" "}
+                      {/* <Image src="" width={50} height={50}></Image>{" "} */}
+                      包含第一年網域空間費用
+                    </p>
+                    <p className="mt-4">包含第一年網域空間費用</p>
+                    <p className="mt-4">商品攝影｜形象影片</p>
+                    <p className="mt-4">特書版面效果</p>
+                    <p className="mt-4">3d產品建模｜互動式網頁</p>
+                    <p className="mt-4">3d 影片動畫</p>
+                    <p className="mt-4">高質感網頁</p>
+                    <div className="flex bg-blue-700 mt-5 text-white flex-wrap  gap-3">
+                      {backdrops.map((b) => (
+                        <Button
+                          key={b}
+                          variant="flat"
+                          color="warning"
+                          onPress={() => handleOpen(b)}
+                          className="capitalize w-full"
+                        >
+                          {b}
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
 

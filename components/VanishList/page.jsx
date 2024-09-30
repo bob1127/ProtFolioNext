@@ -62,7 +62,9 @@ const Form = ({ setTodos }) => {
   const [unit, setUnit] = useState("mins");
 
   const taskOptions = [
-    "頁面客製化/單純版面設計克制(一頁) - 價格:NT.4000",
+    "方案一(基本方案) Basic - 價格:NT.4000",
+    "方案二(進階方案) Plus- 價格:NT.4000",
+    "方案三(客製化方案) Customized- 價格:NT.4000",
     "套版網站 - 價格:NT.7000",
     "套版網站 - 價格:NT.7000",
     "活動/促銷 LandingPage(基本板型和功能，含基本seo)- 價格:NT.15000",
@@ -125,6 +127,7 @@ const Form = ({ setTodos }) => {
               <option value="" disabled>
                 選擇所需方案
               </option>
+              <p>算出大約 金額</p>
               {taskOptions.map((option) => (
                 <option key={option} value={option}>
                   {option}
