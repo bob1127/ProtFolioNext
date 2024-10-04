@@ -120,8 +120,8 @@ const App = () => {
           circles = [];
 
           wordsToDisplay.forEach((text, index) => {
-            const circleWidth = text.length * 20 + 40;
-            const circleHeight = 40;
+            const circleWidth = text.length * 20 + 10;
+            const circleHeight = 20;
             const x = p.random(circleWidth / 2, p.width - circleWidth / 2);
             const y = p.random(circleHeight / 2, p.height - circleHeight / 2);
             const color = colors[index % colors.length];
@@ -136,7 +136,7 @@ const App = () => {
                 render: {
                   fillStyle: color,
                   strokeStyle: "black",
-                  lineWidth: 2.5,
+                  lineWidth: 1.5,
                 },
               }
             );
@@ -147,7 +147,7 @@ const App = () => {
         };
 
         p.setup = () => {
-          p.createCanvas(window.innerWidth, window.innerHeight * 0.4).parent(
+          p.createCanvas(window.innerWidth, window.innerHeight * 0.2).parent(
             canvasRef.current
           );
 
@@ -240,10 +240,10 @@ const App = () => {
             p.fill(body.render.fillStyle);
             p.stroke(body.render.strokeStyle);
             p.strokeWeight(body.render.lineWidth);
-            p.rect(0, 0, text.length * 18 + 20, 40, 40);
+            p.rect(0, 0, text.length * 14 + 10, 40, 40);
             p.noStroke();
             p.fill("#0f0f0f");
-            p.textSize(16);
+            p.textSize(14);
             p.textAlign(p.CENTER, p.CENTER);
             p.text(text.toUpperCase(), 0, 0);
             p.pop();
@@ -280,7 +280,11 @@ const App = () => {
   }, []);
 
   return (
-    <div ref={canvasRef} style={{ overflow: "auto", height: "40vh" }}></div>
+    <div
+      ref={canvasRef}
+      className="bg-black"
+      style={{ overflow: "auto", height: "40vh" }}
+    ></div>
   );
 };
 

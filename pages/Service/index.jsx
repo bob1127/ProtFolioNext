@@ -1400,13 +1400,13 @@ export default function Blog() {
                       <div className="flex w-full  flex-col items-start">
                         <b className="mb-3 text-[16px]">3d model for website</b>
                         <div className="flex">
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          <span className="bg-[#15a4fd] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             3D 形象影片
                           </span>
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          <span className="bg-[#15a4fd] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             交互式網站
                           </span>
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          <span className="bg-[#15a4fd] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             產品展示
                           </span>
                         </div>

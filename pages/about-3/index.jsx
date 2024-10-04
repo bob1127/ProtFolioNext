@@ -247,7 +247,8 @@ export default function Blog() {
                 雖然我的網頁作品不多 但我忍為我的技術已可以
                 為客戶帶來收益。我是一個追求理想和目標的人 希望有理想、想法
                 、和目標想要讓公司網頁更好的客戶 與我聯繫。
-                希望任何有理想的人能跟你們合作，為您服務
+                希望任何有理想的人能跟你們合作，為您服務 希望我的專業能讓您的
+                業務更上一層 如果有任何想法請跟我 聯絡
               </div>
             </section>
 
@@ -593,9 +594,27 @@ export default function Blog() {
                 {" "}
                 freelancer 比起設計公司，更有時間處理您的專案。
                 也不必透過中間代理人"PM"溝通需求，導致誤差。
-                一來一回就浪費了時間成本，把您的需求直接跟我討論可以更直觀的完妹符合您的需求
+                一來一回就浪費了時間成本，把您的需求直接跟我討論可以更直觀的完美符合您的需求
+                選擇自由工作者（FreeLancer）有很多好處，特別是如果你正在尋找{" "}
+                <span className="text-[18px] font-bold">
+                  {" "}
+                  靈活且個性化的服務
+                </span>
+                。首先，自由工作者可以根據你的需求{" "}
+                <span className="text-[18px] font-bold">
+                  量身定制解決方案
+                </span>{" "}
+                ，無論是設計網站、撰寫文章或是拍攝影片，他們都能快速響應並提供專屬服務。其次，他們的工作時間更具彈性，不像公司有固定流程，能快速完成任務。此外，選擇自由工作者通常費用較低，因為他們不需要像公司一樣{" "}
+                <span className="text-[18px] font-bold">
+                  負擔額外的管理成本
+                </span>
+                。這些優點讓越來越多人選擇與自由工作者合作，
+                <span className="text-[18px] font-bold">
+                  享受更靈活、效率高且價格合理的專業服務
+                </span>
+                。
               </p>
-              <p className="text-center text-[16px] xl:text-[22px] md:text-[26px] text-[15px] ">
+              <p className="text-center mt-[30px] text-[16px] xl:text-[22px] md:text-[26px] text-[15px] ">
                 選擇JEEK 幫助您實現創意發想
               </p>
               <section className="section-carousel  flex-col mt-0 md:mt-10  px-0 xl:px-[70px] md:flex-row flex mb-[50px]">
