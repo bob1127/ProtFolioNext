@@ -76,10 +76,10 @@ export default function Blog() {
         rel="apple-touch-icon"
       /> */}
       <div>
-        <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] hover:bg-[#333] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
-          <div className="  border w-full mt-3 h-auto border-black">
-            <Image src="" width={50} height={50} placeholder="empty"></Image>
-          </div>
+        <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
+          <a href="/Blogs" className="  font-bold  w-full mt-3 h-auto ">
+            Blog
+          </a>
           <div className="  border w-full mt-3 h-auto border-black">
             <Image src="" width={50} height={50} placeholder="empty"></Image>
           </div>

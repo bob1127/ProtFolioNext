@@ -5,7 +5,7 @@ import Image from "next/image.js";
 import { NextSeo } from "next-seo";
 import Marquee from "react-fast-marquee";
 import GsapText from "../../components/RevealText/index";
-// import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
+import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
 import TextMask from "../../components/TextMask/page.jsx";
 // import Inner from "../../components/Inner/index.jsx";
 import { useState, useEffect } from "react";
@@ -734,17 +734,17 @@ export default function Blog() {
                   </div>
                 </div>
                 <div className="flex">
-                  {/* <div className=" hidden md:block w-full md:w-1/2">
+                  <div className=" hidden md:block w-full md:w-1/2">
                     <Carousel05 />
-                  </div> */}
+                  </div>
                   <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
-                    {/* <iframe
+                    <iframe
                       className="absolute top-0 left-0 z-[999]"
                       src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
                       frameborder="0"
                       width="100%"
                       height="500px"
-                    ></iframe> */}
+                    ></iframe>
                   </div>
                 </div>
               </section>
@@ -796,7 +796,7 @@ export default function Blog() {
                       className="txt  xl:w-4/5 md:w-2/3 w-full"
                       data-aos="fade-up"
                     >
-                      <h4 className="text-[26px] md:text-[50px] font-bold">
+                      <h4 className="text-[26px] md:text-[50px]  leading-normal font-bold">
                         3d 交互式網站優點
                       </h4>
                       <p className="text-[22px] font-bold">

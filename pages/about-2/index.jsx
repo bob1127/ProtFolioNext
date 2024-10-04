@@ -52,7 +52,7 @@ export default function Blog() {
                         role="list"
                         className="large-features-list w-dyn-items"
                       >
-                        <a href="/PortFolio01">
+                        <a href="/PortFolio02">
                           <div
                             role="listitem"
                             className="large-feature-item w-dyn-item"

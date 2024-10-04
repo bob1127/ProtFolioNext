@@ -417,23 +417,22 @@ export default function Index() {
               </a>
               <link rel="prefetch" href="/" /> */}
               <a href="/Service" className="nav-link-block ">
-                <div className="nav-text">服務項目</div>
+                <div className="nav-text">Service</div>
               </a>
 
-              <a
-                href="https://next-wp0004.vercel.app"
-                target="_blank"
-                className="nav-link-block "
-              >
-                <div className="nav-text">專案範例</div>
+              <a href="/about-2" className="nav-link-block ">
+                <div className="nav-text">PortFolio</div>
+              </a>
+              <a href="/Blogs" className="nav-link-block ">
+                <div className="nav-text">Blog</div>
               </a>
               {/* <link rel="prefetch" href="/features" /> */}
               <a href="/about" className="nav-link-block ">
-                <div className="nav-text">關於我們</div>
+                <div className="nav-text">About</div>
               </a>
               {/* <link rel="prefetch" href="/about" /> */}
               <a href="/Contact" className="nav-link-block w-inline-block">
-                <div className="nav-text">聯絡我們</div>
+                <div className="nav-text">Contact</div>
               </a>
               {/* <a
                 href="/store"

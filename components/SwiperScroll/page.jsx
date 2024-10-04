@@ -52,19 +52,19 @@ export default function App() {
             height={400}
             loader={imageLoader}
           />
-          <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">了解客戶需求：</span>
+          <div className="bottom  rounded-md mt-5 p-5">
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">了解客戶需求：</span>
               <br></br>
               通過溝通了解業務目標、受眾和網站功能。
             </div>
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">提供建議:</span>
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">提供建議:</span>
               <br></br>
               提出設計和技術建議，並討論預算和時間表。
             </div>
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">確定合作:</span>
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">確定合作:</span>
               <br></br>
               確認需求和預算，為下一步做準備。
             </div>
@@ -85,19 +85,19 @@ export default function App() {
             height={400}
             loader={imageLoader}
           /> */}
-          <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">制定報價</span>
+          <div className="bottom  rounded-md mt-5 p-5">
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">制定報價</span>
               <br></br>
               根據需求製作報價單，涵蓋所有項目內容。
             </div>
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">簽訂合約:</span>
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">簽訂合約:</span>
               <br></br>
               確定合約條款，包括工作範圍和付款方式。
             </div>
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">收取訂金:</span>
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">收取訂金:</span>
               <br></br>
               收取訂金以啟動項目，確保雙方承諾 。
             </div>
@@ -113,25 +113,25 @@ export default function App() {
           https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
             alt=""
           />
-          <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">開始製作：</span>
+          <div className="bottom bg-white rounded-md mt-5 p-5">
+            <div className="text-[16px] mt-3">
+              <span className="font-bold mt-3 text-[22px]">開始製作：</span>
               <br></br>
               根據需求進行網站設計和開發工作。
             </div>
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">中期審核：</span>
+            <div className="text-[16px] mt-3">
+              <span className="font-bold mt-3 text-[22px]">中期審核：</span>
               <br></br>
               定期與客戶審核進展，確保符合預期
             </div>
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]"> 進行調整：</span>
+            <div className="text-[16px] mt-3">
+              <span className="font-bold mt-3 text-[22px]"> 進行調整：</span>
               <br></br>
               根據反饋進行必要的調整，準備最終交付。
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center items-center text-lg bg-white">
+        <SwiperSlide className="flex justify-center items-center text-lg ">
           <div className="txt">
             <h4 className="text-[30px] mb-4 font-bold">Step4. 結案</h4>
           </div>
@@ -147,14 +147,16 @@ export default function App() {
             height={400}
             loader={imageLoader}
           /> */}
-          <div className="bottom bg-white border border-black rounded-md mt-5 p-5">
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">網站驗收與測試：</span>
+          <div className="bottom  rounded-md mt-5 p-5">
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">
+                網站驗收與測試：
+              </span>
               <br></br>
               與客戶進行最終驗收，確認網站功能、設計、內容是否符合需求。
             </div>
-            <div className="text-[16px]">
-              <span className="font-bold text-[22px]">
+            <div className="text-[16px] mt-3">
+              <span className="font-bold text-[22px] mt-3">
                 後續支援與維護計劃：
               </span>
               <br></br>

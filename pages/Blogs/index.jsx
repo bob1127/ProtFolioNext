@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image.js";
 import { NextSeo } from "next-seo";
 import HorizontalScroll from "../../components/HorizontalScroll/page.jsx";
 import PortfolioSample from "../../components/PortfolioSample/page.jsx";
@@ -126,53 +127,7 @@ export default function Blog() {
             <div className="nav-label">Authors</div>
           </a>
         </div>
-        <div
-          id="w-node-_5f982de6-354e-887e-0847-31d84c7e05cc-4c7e05c1"
-          className="nav-trigger"
-        >
-          <div className="nav-icon-wrap">
-            <div className="nav-burger-icon">
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a68994fa9a5f9b2322527b_icon-burger-menu.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
-            <div
-              className="nav-close-icon"
-              style={{
-                transform:
-                  "translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-            >
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a689948ece87037ef5391b_icon-burger-close.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
-          </div>
-          <div className="nav-trigger-labels-wrap">
-            <div className="nav-trigger-label-relative">
-              <Link href="/Blogs" className="nav-label">
-                Go Back
-              </Link>
-            </div>
-            <div
-              className="nav-trigger-label-absolute"
-              style={{
-                transform:
-                  "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-            >
-              <div className="nav-label">close</div>
-            </div>
-          </div>
-        </div>
+
         <div
           id="w-node-_5f982de6-354e-887e-0847-31d84c7e05d9-4c7e05c1"
           className="nav-right-wrap"
@@ -218,29 +173,6 @@ export default function Blog() {
       </nav>
       <div className="page-wrap">
         <div
-          className="fixed-button-wrap"
-          style={{
-            opacity: 1,
-            transform:
-              "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-          }}
-        >
-          <a href="/about-3" className="fixed-button w-inline-block">
-            <div className="fixed-button-icon-wrap">
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
-            <div className="fixed-button-label-wrap flex">
-              <div className="nav-label flex">back</div>
-            </div>
-          </a>
-        </div>
-        <div
           data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"
           className="article-hero-section"
         >
@@ -253,13 +185,16 @@ export default function Blog() {
             }}
             className="article-hero-bg"
           >
-            <img
+            <Image
               alt=""
               loading="eager"
-              src="https://www.accorder.co.jp/cms/wp-content/uploads/MG_0131_re-1-1920x919.jpg"
-              sizes="100vw"
+              src="/images/plan01.webp"
+              width={1200}
+              height={780}
+              sizes="100%"
               className="img-cover"
-            />
+            ></Image>
+
             <div className="gradient-overlay-absolute" />
           </div>
           <div></div>
@@ -284,7 +219,7 @@ export default function Blog() {
               }}
               className="title-medium text-align-center text-word-caps"
             >
-              如何優化你的網站?
+              Blog
             </h1>
 
             <div
@@ -439,53 +374,210 @@ export default function Blog() {
             data-ao-delay="300"
             data-aos="fade-up"
           >
-            "你的產品很好，想讓更多人看見嗎 ??"
+            "Others Articles"
           </h3>
           <div
             className="w-1/2 text-[22px] mt-5 text-center  "
             data-aos-delay="300"
             data-aos="fade-up"
-          >
-            {/* 你的產品很好，想讓更多人看見嗎 */}
-          </div>
+          ></div>
         </section>
 
         <section className="py-[50px] hidden md:block  section-scroll-bg ">
           <HorizontalScroll />
         </section>
-        <div className="w-full border border-green-400 py-[50px] ">
-          <div className="txt my-5 px-[30px] w-[3/4] h-auto xl:w-2/3 2xl:w-1/3 mx-auto border-1 border-rose-500">
-            <h2
-              data-aos-delay="300"
-              data-aos="fade-up"
-              className="text-[24px] lg:text-[32px] xl:text-[50px] mb-5 text-center mx-auto font-bold"
-            >
-              "更多網頁設計相關知識"
-            </h2>
-            <p
-              data-aos-delay="300"
-              className="text-[25px] mb-5 xl:text-[32px] 2xl:text-[40px] mx-auto text-center"
-              data-aos="fade-up"
-            >
-              想看更多案例嗎？
-            </p>
-            <p>更多內容</p>
-            <div className="flex">
-              <a
-                href="/Blog-04"
-                className="blog-item inline-block p-10 border-1 border-black"
-              >
-                <div className="txt">
-                  <h3 className="text-[20px] font-bold">
-                    如何增加搜尋引擎曝光度和排名?
-                  </h3>
+        <div className="w-full border-t-black border  py-[50px] ">
+          <div className="txt my-5 px-[30px] w-[3/4] h-auto  mx-auto border-1 border-rose-500">
+            <div className="flex  flex-col justify-center items-center  xl:flex-row ">
+              <div className="left-section w-full md:w-[80%] xl:w-[70%]">
+                <div className="Hot-article flex">
+                  <a
+                    href="/Blog-05"
+                    className="w-1/2 m-2 group rounded-xl overflow-hidden relative"
+                  >
+                    <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
+                    <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
+                      <h3 className="text-white text-[18px]">
+                        カスタマイズ性が高い「電子カルテ/問診票ツール」
+                      </h3>
+                      <p className="text-white text-[14px]">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Minima velit quos illum, commodi quasi sint
+                      </p>
+                      <div className="type-tag  rounded-2xl w-[100px] text-center inline-block text-white px-3 py-1 bg-[#1498da] mt-3">
+                        Design
+                      </div>
+                    </div>
+                    <img
+                      src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
+                      alt=""
+                      className="w-full group-hover:scale-105 duration-300"
+                    />
+                  </a>
+                  <div className="w-1/2 m-2 rounded-xl overflow-hidden relative">
+                    <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
+                    <img
+                      src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
+                      alt=""
+                      className="w-full"
+                    />
+                  </div>
                 </div>
-                <img
-                  src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/65d3c889459c1244c9b18495_74-9AkKzjzsxBJMdKpoUixuZrpnxoBKHjIx7Ux33H74.png"
-                  className="w-[1200px] h-[400px]"
-                  alt=""
-                />
-              </a>
+                <div className="others-article pt-8 ">
+                  <a
+                    href="/Blog-05"
+                    className="article-item border-t-2 border-b-2 flex py-8"
+                  >
+                    <div className="img w-[35%] p-5">
+                      <img
+                        src="https://i.ytimg.com/vi/cqw7WjuX8To/maxresdefault.jpg"
+                        alt=""
+                        className="w-full rounded-md"
+                      />
+                    </div>
+                    <div className="text w-[65%] p-5">
+                      <h3 className="text-[20px] font-semibold">
+                        Spline 3D - 入門教學
+                      </h3>
+                      <h4 className="text-[16px]">
+                        {" "}
+                        打造引人注目的 3D 網頁設計{" "}
+                      </h4>
+                      <p className="text-[14px] mt-3 w-[80%]">
+                        Spline 3D 是一個基於雲端的 3D
+                        設計工具，適合各種技能水平的使用者，特別是設計師和開發者。它使得創建和共享
+                        3D 內容變得簡單，並且提供直觀的介面和強大的功能。
+                      </p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="/Blog-04"
+                    className="article-item border-t-2 border-b-2 flex py-8"
+                  >
+                    <div className="img w-[35%] p-5">
+                      <img
+                        src="https://i.ytimg.com/vi/BMGirukzOPU/maxresdefault.jpg"
+                        alt=""
+                        className="w-full rounded-md"
+                      />
+                    </div>
+                    <div className="text w-[65%] p-5">
+                      <h3 className="text-[20px] font-semibold">
+                        Photoshop 2024 全新 AI 功能
+                      </h3>
+                      <h4 className="text-[16px]"> 設計創作的顛覆性革新</h4>
+                      <p className="text-[14px] mt-3 w-[80%]">
+                        隨著人工智能技術的日益成熟，Photoshop 2024
+                        迎來了歷史性的一次更新，全面整合了 AI
+                        能力，讓設計師可以更快速地完成創作、處理影像，同時保留最大的自由度和創造力。
+                      </p>
+                    </div>
+                  </a>
+                  <div className="article-item  border-b-2 flex py-8">
+                    <div className="img w-[35%] p-5">
+                      <img
+                        src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
+                        alt=""
+                        className="w-full"
+                      />
+                    </div>
+                    <div className="text w-[65%] p-5">
+                      <h3 className="text-[18px]">
+                        肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
+                      </h3>
+                      <p className="text-[14px] mt-3 w-[80%]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum aliquid repudiandae nobis quis deleniti
+                      </p>
+                    </div>
+                  </div>
+                  <div className="article-item  border-b-2 flex py-8">
+                    <div className="img w-[35%] p-5">
+                      <img
+                        src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
+                        alt=""
+                        className="w-full"
+                      />
+                    </div>
+                    <div className="text w-[65%] p-5">
+                      <h3 className="text-[18px]">
+                        肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
+                      </h3>
+                      <p className="text-[14px] mt-3 w-[80%]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum aliquid repudiandae nobis quis deleniti
+                      </p>
+                    </div>
+                  </div>
+                  <div className="article-item  border-b-2 flex py-8">
+                    <div className="img w-[35%] p-5">
+                      <img
+                        src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
+                        alt=""
+                        className="w-full"
+                      />
+                    </div>
+                    <div className="text w-[65%] p-5">
+                      <h3 className="text-[18px]">
+                        肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
+                      </h3>
+                      <p className="text-[14px] mt-3 w-[80%]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum aliquid repudiandae nobis quis deleniti
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="right-section w-full  md:w-[60%] xl:w-[30%] px-6">
+                <div className="wrap bg-[#f4f0f0] p-5 rounded-2xl ">
+                  <div className="top border-b-2 py-4">
+                    <div className="tag-items flex flex-wrap">
+                      <div className="bg-[#2b9bf7] text-white px-3 m-2 py-1  border border-black">
+                        Design
+                      </div>
+                      <div className="bg-[#2b9bf7] text-white px-3 m-2 py-1  border border-black">
+                        SEO
+                      </div>
+                      <div className="bg-[#2b9bf7] text-white px-3 m-2 py-1  border border-black">
+                        Photography
+                      </div>
+                      <div className="bg-[#2b9bf7] text-white px-3 m-2 py-1  border border-black">
+                        SoftWare
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bottom flex flex-col">
+                    <div className="w-full m-2 group rounded-md overflow-hidden relative">
+                      <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
+                      <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
+                        <h3 className="text-white text-[14px]">
+                          カスタマイズ性が高い「電子カルテ/問診票ツール」
+                        </h3>
+                      </div>
+                      <img
+                        src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
+                        alt=""
+                        className="w-full group-hover:scale-105 duration-300"
+                      />
+                    </div>
+                    <div className="w-full m-2 group rounded-md overflow-hidden relative">
+                      <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
+                      <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
+                        <h3 className="text-white text-[14px]">
+                          カスタマイズ性が高い「電子カルテ/問診票ツール」
+                        </h3>
+                      </div>
+                      <img
+                        src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
+                        alt=""
+                        className="w-full group-hover:scale-105 duration-300"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -499,217 +591,6 @@ export default function Blog() {
         </div> */}
 
         <div>{/* <Carousel /> */}</div>
-
-        <div className="article-related-posts-section">
-          <div className="bg-green-500 px-4 py-3  inline-block mx-auto">
-            你可能也有興趣
-          </div>
-          <div className="articles-grid-cms margin-small w-dyn-list">
-            <div role="list" className="articles-grid related w-dyn-items">
-              <div
-                role="listitem"
-                className="w-dyn-item hover:border-black p-5 hover:border"
-              >
-                <a href="/Blog-01" className="article-item w-inline-block">
-                  <div className="article-item-img-wrap">
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src=""
-                      sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                      srcSet=""
-                      className="img-cover-absolute"
-                    />
-                    <div
-                      className="img-left-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                    <div
-                      className="img-right-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                    <div
-                      className="img-top-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                    <div
-                      className="img-btm-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                  </div>
-                  <div className="article-content-wrap">
-                    <div className="article-item-head-wrap">
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                        className="tag-text-style category"
-                      >
-                        Design/seo
-                      </div>
-                      <h5
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                        className="element-trigger"
-                      >
-                        seo文章
-                      </h5>
-                    </div>
-                    <div className="article-infos-wrap">
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                        className="article-info-item"
-                      >
-                        <div className="opacity-50">Written by</div>
-                        <div>&nbsp;</div>
-                        <div>Owen</div>
-                      </div>
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                        className="chip opacity-50 hide-mobile-landscape"
-                      />
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                        className="article-info-item"
-                      >
-                        <div className="opacity-50">Published on</div>
-                        <div>&nbsp;</div>
-                        <div>Jan 14, 2024</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="line-trigger">
-                    <div
-                      className="line-moves"
-                      style={{
-                        transform:
-                          "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                  </div>
-                </a>
-              </div>
-              <div
-                role="listitem"
-                className="w-dyn-item hover:border-black p-5 hover:border"
-              >
-                <a href="/Blog-02" className="article-item w-inline-block">
-                  <div className="article-item-img-wrap">
-                    <img
-                      alt=""
-                      loading="lazy"
-                      src="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg"
-                      sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                      srcSet="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18-p-500.jpg 500w, https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg 720w"
-                      className="img-cover-absolute"
-                      style={{}}
-                    />
-                    <div
-                      className="img-left-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                    <div
-                      className="img-right-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                    <div
-                      className="img-top-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                    <div
-                      className="img-btm-panel"
-                      style={{
-                        transform:
-                          "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                  </div>
-                  <div className="article-content-wrap">
-                    <div className="article-item-head-wrap">
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                        className="tag-text-style category"
-                      >
-                        Politics
-                      </div>
-                      <h5
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                        className="element-trigger"
-                        style={{}}
-                      >
-                        Celestial Serendipity: Aligning with the Cosmic Dance of
-                        Chance
-                      </h5>
-                    </div>
-                    <div className="article-infos-wrap">
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                        className="article-info-item"
-                      >
-                        <div className="opacity-50">Written by</div>
-                        <div>&nbsp;</div>
-                        <div>Isabella</div>
-                      </div>
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                        className="chip opacity-50 hide-mobile-landscape"
-                      />
-                      <div
-                        id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                        className="article-info-item"
-                      >
-                        <div className="opacity-50">Published on</div>
-                        <div>&nbsp;</div>
-                        <div>Jan 10, 2024</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="line-trigger">
-                    <div
-                      className="line-moves"
-                      style={{
-                        transform:
-                          "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                      }}
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <section className="section-dropdown py-[100px]">
-          <PortfolioSample />
-        </section>
       </div>
     </>
   );

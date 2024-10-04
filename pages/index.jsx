@@ -94,18 +94,6 @@ export default function Home() {
         <div className="Hero-secrion   border-1 border-black ">
           <div className="wrap flex flex-col  lg:flex-row">
             <div className="hero-left overflow-hidden mt-[38px] border border-blac relative w-full lg:w-[65%]">
-              {/* <div className="top px-[50px] py-[90px]">
-            <h1 className='text-[80px]'>DREAM WEB
-CREACTIVEs</h1>
-            <div className="link-wrap mt-3">
-              <a   className='text-[20px]' href=""> 網頁設計 |</a>
-              <a   className='text-[20px]' href=""> 形象影片 |</a>
-               <a  className='text-[20px]'  href=""> 網頁設計 |</a>
-              <a   className='text-[20px]' href=""> 形象影片</a>
-            </div>
-
-            
-          </div> */}
               <TextHover />
               <Trackeye />
               <div className="bottom"></div>

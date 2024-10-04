@@ -212,12 +212,12 @@ export default function Blog() {
                   <div className="box01  hidden lg:block z-1 top-[100px] absolute left-[-260px] border border-black">
                     <img
                       className="w-[500px]"
-                      src="https://cdn.prod.website-files.com/669e85bc7c10a1b210e2fcd6/66abf8b62e53dbfa5fc2e5a0_hero-video-optimized.avif"
+                      src="https://media.licdn.com/dms/image/D5612AQEAXBUF9txcjQ/article-cover_image-shrink_720_1280/0/1709307865856?e=2147483647&v=beta&t=IWJyj-6VYXqlKL3eKwETQ0G9yCXU9nV-28efGNqSlCs"
                       alt=""
                     />
                     <img
                       className="w-[260px] ml-[290px] mt-[40px]"
-                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
+                      src="https://s3-alpha.figma.com/hub/file/1188292808/e5d4b24f-8e61-4ef0-8989-a2cd8b6509c6-cover.png"
                       alt=""
                     />
                   </div>
@@ -225,27 +225,29 @@ export default function Blog() {
                   <div className="box02 hidden lg:block absolute top-[220px] right-[-200px]">
                     <img
                       className="w-[260px] mt-[-170px] ml-[190px]"
-                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
+                      src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/9ab726b26517ca0e2eb4572832bf7920d59d4a53"
                       alt=""
                     />
                     <img
                       className="w-[400px]"
-                      src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/64575947bc71a0cf995a7b34_JEubAaiocBrAyYwOH51Q-ctbfZTy_wnJ_BaDpn7swZc.jpeg"
+                      src="https://www.sgidigi.com/wp-content/uploads/2023/11/Spline-輕鬆製作網頁3D模型.png"
                       alt=""
                     />
                   </div>
                 </main>
               </div>
               <Lottie options={defaultOptions} height={220} width={220} />
-              <div className="w-full xl:w-[80%] mt-[40px] mx-auto  xl:text-[18px] text-[16px] leading-[32px] font-normal border bg-blue-400 border-black rounded-xl p-[50px] xl:bg-transparent text-center  text-[#171717] ">
+              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto  xl:text-[18px] text-[16px] leading-[32px] font-normal border bg-white border-black rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
                 HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
                 本來是 在一家化學生技公司創業基地擔任"網頁工程師 一職"
                 因為負責都是新創公司
+                主要負責網頁的維護和seo優化，擅長前端效能優化 結構化資料、
                 所以公司網頁的設計和商品拍攝影片剪輯SEO的優化
                 都是由我完成，但這也讓我學習不同的技能。而我秉持的觀念也是不斷精進
                 雖然我的網頁作品不多 但我忍為我的技術已可以
                 為客戶帶來收益。我是一個追求理想和目標的人 希望有理想、想法
                 、和目標想要讓公司網頁更好的客戶 與我聯繫。
+                希望任何有理想的人能跟你們合作，為您服務
               </div>
             </section>
 
@@ -660,7 +662,7 @@ export default function Blog() {
                 <div className="padding small-paddings">
                   <div className=" ">
                     <div
-                      className="vertical-flex with-small-gap plans-wrap "
+                      className="vertical-flex flex flex-col justify-center items-center with-small-gap plans-wrap "
                       style={{ display: "flex", justifyContent: "center" }}
                     >
                       <h2
@@ -808,7 +810,7 @@ export default function Blog() {
 
             <section className="bg-gray-100  py-[70px] px-[20px] flex flex-col ">
               <div className="flex justify-center w-full">
-                <div className="title  mb-6 ">
+                <div className="title flex flex-col  items-center mb-6 ">
                   <h2 className="text-[40px]  text-black font-extrabold">
                     <GsapText
                       text=' " 網頁設計流程" '
@@ -817,7 +819,7 @@ export default function Blog() {
                       fontSize="60px"
                     />
                   </h2>
-                  <p className="text-[14px]">
+                  <p className="text-[16px] mx-auto">
                     您可以跟我們溝通需求，並確認流程
                   </p>
                   <div className="flex  justify-center items-center">

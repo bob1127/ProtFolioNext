@@ -55,6 +55,11 @@ const Hero = () => {
       style={{ height: `calc(${SECTION_HEIGHT}px + 300vh)` }}
       className="relative w-full flex flex-col justify-center items-center"
     >
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-[80px] text-white">禪譜科技股份有限公司</h1>
+        <p className="text-[30px] mt-[50px] text-white">公司官網建置</p>
+      </div>
+
       <CenterImage />
 
       <ParallaxImages />
@@ -252,7 +257,7 @@ const Schedule = () => {
             <img
               src="/images/The Smallest Wireless Potentiostat-Open Box.webp"
               alt="An example of a space launch"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover rounded-[10px]"
               style={{ filter: "brightness(0.8)" }}
             />
           </div>
@@ -260,7 +265,7 @@ const Schedule = () => {
             <img
               src="/images/The Smallest Wireless Potentiostat-Open Box.webp"
               alt="An example of a space launch"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover rounded-[10px]"
               style={{ filter: "brightness(0.8)" }}
             />
           </div>
@@ -268,7 +273,7 @@ const Schedule = () => {
             <img
               src="/images/The Smallest Wireless Potentiostat-Open Box.webp"
               alt="An example of a space launch"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-cover rounded-[10px]"
               style={{ filter: "brightness(0.8)" }}
             />
           </div>

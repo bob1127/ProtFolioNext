@@ -1,48 +1,35 @@
 "use client";
-
-import dynamic from "next/dynamic";
 import { useState } from "react";
 import Head from "next/head";
-
-// import Inner from "../components/Inner/index.jsx";
-import Script from "next/script";
-// import "../styles/globals.css";
-import { AnimatePresence } from "framer-motion";
 import { NextSeo } from "next-seo";
-
-import { NextUIProvider } from "@nextui-org/react";
-// import Navbar from "../components/sideTabs/index.jsx";
-// import Footer from "../components/Footer/index.jsx";
 import Marquee from "react-fast-marquee";
-import AOS from "aos";
-// import Nav from "../components/Navbar/page.jsx";
 import { useEffect } from "react";
+import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    // 延遲 300ms 來啟動動畫
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 300);
+  // useEffect(() => {
+  //   // 延遲 300ms 來啟動動畫
+  //   const timer = setTimeout(() => {
+  //     setIsVisible(true);
+  //   }, 300);
 
-    // 清除計時器
-    return () => clearTimeout(timer);
-  }, []);
+  //   // 清除計時器
+  //   return () => clearTimeout(timer);
+  // }, []);
   return (
-    <>
+    <div className="bg-[#f9f9f8]">
       <NextSeo
-        title="提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略"
-        description="了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。"
+        title=""
+        description=""
         openGraph={{
-          url: "https://www.example.com",
-          title: "提升品牌知名度 | 使用 Instagram 和 Facebook 行銷策略",
-          description:
-            "了解如何通過 Instagram 和 Facebook 行銷來提升品牌知名度、吸引目標客戶並推動銷售增長。我們提供有效的策略和最佳實踐，幫助你在社交媒體上取得成功。",
+          url: "",
+          title: "",
+          description: "",
           images: [
             {
-              url: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg",
+              url: "",
               width: 1200,
               height: 630,
               alt: "社交媒體行銷策略",
@@ -57,14 +44,14 @@ export default function Blog() {
         }}
       />
       <Head>
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
         />
         <link
           rel="stylesheet"
           href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
-        />
+        /> */}
       </Head>
 
       {/* <Script
@@ -88,711 +75,312 @@ export default function Blog() {
         href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65c495db397a444e7854eaa2_favicon.png"
         rel="apple-touch-icon"
       /> */}
-      <nav
-        className="nav"
-        style={{
-          transform:
-            "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-          transformStyle: "preserve-3d",
-          opacity: 1,
-        }}
-      >
-        <div
-          id="w-node-_5f982de6-354e-887e-0847-31d84c7e05c2-4c7e05c1"
-          className="nav-left-wrap"
-          style={{ display: "none" }}
-        >
-          <a
-            href="/"
-            className="nav-link _3 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">Home</div>
+      <div>
+        <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
+          <a href="/Blogs" className="  font-bold  w-full mt-3 h-auto ">
+            Blog
           </a>
-          <a
-            href="/articles"
-            className="nav-link _2 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">Articles</div>
-          </a>
-          <a
-            href="/authors"
-            className="nav-link _1 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">Authors</div>
-          </a>
-        </div>
-        <div
-          id="w-node-_5f982de6-354e-887e-0847-31d84c7e05cc-4c7e05c1"
-          className="nav-trigger hidden md:flex"
-        >
-          <div className="nav-icon-wrap">
-            <div className="nav-burger-icon">
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a68994fa9a5f9b2322527b_icon-burger-menu.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
-            <div
-              className="nav-close-icon"
-              style={{
-                transform:
-                  "translate3d(0px, -100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-            >
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a689948ece87037ef5391b_icon-burger-close.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
+          <div className="  border w-full mt-3 h-auto border-black">
+            <Image src="" width={50} height={50} placeholder="empty"></Image>
           </div>
-          <div className="nav-trigger-labels-wrap">
-            <div className="nav-trigger-label-relative">
-              <div className="nav-label">Menu</div>
-            </div>
-            <div
-              className="nav-trigger-label-absolute"
-              style={{
-                transform:
-                  "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-            >
-              <div className="nav-label">close</div>
-            </div>
-          </div>
-        </div>
-        <div
-          id="w-node-_5f982de6-354e-887e-0847-31d84c7e05d9-4c7e05c1"
-          className="nav-right-wrap"
-          style={{ display: "none" }}
-        >
-          <a
-            href="/about"
-            className="nav-link _1 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">About</div>
-          </a>
-          <a
-            href="/categories"
-            className="nav-link _2 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">categories</div>
-          </a>
-          <a
-            href="/contact"
-            className="nav-link _3 w-inline-block"
-            style={{
-              transform:
-                "translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              opacity: 0,
-            }}
-          >
-            <div className="nav-label">contact</div>
-          </a>
-        </div>
-      </nav>
-      <div className="page-wrap">
-        <div
-          className="fixed-button-wrap"
-          style={{
-            opacity: 1,
-            transform:
-              "translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-          }}
-        >
-          <a
-            href="javascript:void(0);"
-            onclick="window.history.back();"
-            className="fixed-button w-inline-block "
-          >
-            <div className="fixed-button-icon-wrap">
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65b7c53655aec0a1f96fe9ee_icon-arrow-bold-left-black.svg"
-                loading="eager"
-                alt=""
-                className="img-cover"
-              />
-            </div>
-            <div className="fixed-button-label-wrap flex">
-              <div className="nav-label flex">back</div>
-            </div>
-          </a>
-        </div>
-        <div
-          data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"
-          className="article-hero-section"
-        >
-          <div
-            style={{
-              opacity: 1,
-              transform:
-                "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-            }}
-            className="article-hero-bg"
-          >
-            <img
-              alt=""
-              loading="eager"
-              src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/66bee7d4d028f253131e9178_9235e71e-3fc7-4967-8cfe-d4bcfc224f11.jpeg"
-              sizes="100vw"
-              className="img-cover"
-            />
-            <div className="gradient-overlay-absolute" />
-          </div>
-          <div></div>
-          <div className="article-hero-wrap">
-            <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="tag-text-style category-white"
-            >
-              Politics
-            </div>
-            <h1
-              style={{
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                opacity: 1,
-              }}
-              className="title-medium text-align-center text-word-caps"
-            >
-              SEO能帶來哪些好處？
-            </h1>
-            <div
-              className="article-infos-wrap align-center"
-              style={{
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                opacity: 1,
-              }}
-            >
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaec-ac15a7a8"
-                className="article-info-item"
-              >
-                <div className="opacity-50">Written by</div>
-                <div>&nbsp;</div>
-                <div>Harper</div>
-              </div>
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf3-ac15a7a8"
-                className="chip white opacity-50 hide-mobile-landscape"
-              />
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf4-ac15a7a8"
-                className="article-info-item"
-              >
-                <div className="opacity-50">Published on</div>
-                <div>&nbsp;</div>
-                <div>Nov 8, 2023</div>
-              </div>
-            </div>
-            <a
-              href="#article-content"
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="button-large-icon margin-top w-inline-block w--current"
-            >
-              <div className="button-large-icon-bg" />
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a44261408a71bdefc1_icon-arrow-down-black.svg"
-                loading="lazy"
-                alt=""
-                className="icon-16 div-relative"
-              />
-            </a>
+          <div className="  border w-full mt-3 h-auto border-black">
+            <Image src="" width={50} height={50} placeholder="empty"></Image>
           </div>
         </div>
 
-        <div
-          style={{
-            opacity: 1,
-            transform:
-              "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-          }}
-          className="article-scroll-indicator"
-        >
-          <div className="article-scroll-indicator-wrap">
-            <div>0</div>
-            <div className="article-scroll-indicator-line-wrap">
-              <div
-                className="scroll-indicator-line"
-                style={{
-                  willChange: "transform",
-                  transform:
-                    "translate3d(0px, 0px, 0px) scale3d(1, 0.08344, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                  transformStyle: "preserve-3d",
-                }}
-              />
-            </div>
-            <div>100</div>
-          </div>
-        </div>
-        <div
-          style={{
-            transform:
-              "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-            opacity: 1,
-          }}
-          className="article-social-share"
-        >
-          <div className="social-share-component">
-            <div className="social-share-label-text flex flex-col div-relative">
-              SHARE
-            </div>
-            <div className="w-layout-grid social-share-icons-grid">
-              <a
-                id="w-node-c6614d82-a15a-d1bf-ee93-a890b9e1641d-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4376d11af30a10e56_icon-fb-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-              <a
-                id="w-node-_44107f62-0add-4f90-2f9b-4d15de5ca9b2-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a484ecff6b46ae1a04_icon-linkedin-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-              <a
-                id="w-node-_67e772ed-543c-6c72-9ec7-9c972c5ae736-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a584ecff6b46ae1ac2_icon-x-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-              <a
-                id="w-node-a354c365-c29d-92b5-18f8-a87b747f3518-ac15a7a8"
-                href="#"
-                target="_blank"
-                className="social-share-icon w-inline-block"
-              >
-                <img
-                  src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4eed91fe3a17704f6_icon-link-black.svg"
-                  loading="lazy"
-                  alt=""
-                  className="img-cover"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div id="article-content" className="article-content-section">
+        <div className="article-title hidden md:black relative">
           <div
-            data-w-id="99c9b6af-0d86-5adc-b61e-80276cc58b7f"
-            className="article-content-container"
-          >
-            <div className="article-abstract">
-              <div className="bg-none text-[16px] w-full leading-normal">
-                <h3>SEO的好處：提升網站曝光度和業務增長的關鍵</h3>
-                <p>
-                  在當今競爭激烈的數位世界中，搜尋引擎優化 (SEO)
-                  已成為企業成功不可或缺的一環。無論是大型企業還是小型商家，透過有效的SEO策略，網站可以在搜尋引擎中獲得更高的排名，從而吸引更多的訪客，增強品牌認知度，並最終促進業務增長。本文將詳細探討SEO能為您的業務帶來的多方面好處。
-                </p>
-              </div>
-            </div>
-            <div className="blog-rich-text w-richtext">
-              <div>
-                <div data-aos="fade-up">
-                  <h2 className="text-[40px] font-black"> 增加網站流量</h2>
-                  <p>
-                    SEO的首要目標之一是提升網站的自然流量。當您的網站在搜尋引擎結果頁面
-                    (SERP)
-                    中排名靠前時，將吸引更多點擊，進而增加訪問量。根據研究，超過90%的用戶會點擊第一頁的搜尋結果，其中排名前五的結果更是佔據了超過70%的點擊率。透過有效的SEO策略，如優化關鍵字、改進網頁結構和提升頁面速度，您的網站可以更容易地被目標受眾發現。
-                  </p>
-                  <h3 className="">提升品牌信任度和權威性</h3>
-                  <p>
-                    在搜尋引擎中排名靠前的網站通常被視為更具信任度和權威性。用戶傾向於認為排名較高的網站提供了更有價值和可信的內容。透過SEO策略，您可以提升網站的內容質量、獲取更多的外部鏈接
-                    (backlinks)
-                    以及提升用戶體驗，這些都將幫助您在目標受眾中建立信任和權威。
-                  </p>
-                  <h3 className="">更高的投資回報率 (ROI)</h3>
-                  <p>
-                    SEO是一種長期投資，與付費廣告相比，其效果更加持久。一旦您的網站排名上升，將持續吸引自然流量，這意味著您可以在不增加廣告支出的情況下，不斷獲取潛在客戶。儘管SEO的初始投入可能較大，但隨著時間的推移，SEO能夠帶來穩定且持續的回報，成為一種高效且經濟的行銷策略。
-                  </p>
-                  <h3 className="">精準的目標受眾定位</h3>
-                  <p>
-                    SEO不僅能帶來更多的訪問量，還能幫助您吸引更精準的目標受眾。透過關鍵字研究和優化，您可以針對那些對您的產品或服務有潛在需求的用戶進行定位。這意味著您吸引到的訪客更有可能轉化為實際的客戶，從而提高網站的轉化率
-                    (conversion rate)。
-                  </p>
-                  <h3 className="">增加本地業務的曝光</h3>
-                  <p>
-                    對於小型商家來說，本地SEO是一個強大的工具，能夠顯著提升在本地搜尋中的曝光度。透過優化Google商家資料
-                    (Google My
-                    Business)、使用本地關鍵字以及獲取本地評論，您的業務可以在目標地區的搜尋結果中脫穎而出，吸引更多的本地客戶。
-                  </p>
-                  <h3 className="">增強用戶體驗</h3>
-                  <p>
-                    SEO不僅關注搜尋引擎的優化，同時也重視用戶體驗。高效的SEO策略包括提升網站的載入速度、改善移動裝置的瀏覽體驗、確保網站結構清晰易懂以及提供高質量的內容。這些都將為訪客帶來更好的使用體驗，進而增加用戶的停留時間和參與度，減少跳出率
-                    (bounce rate)。
-                  </p>
+            className="txt bg-black-rgba z-[999] absolute bottom-0 h-1/2 left-0 flex justify-center items-center w-[100vw]  border-t border-white/50 backdrop-blur-md"
+            data-aos="fade-blur"
+          ></div>
+          <Image
+            src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
+            width={1920}
+            height={768}
+            placeholder="empty"
+            className="rounded-md"
+          ></Image>
+        </div>
+        <div className="article-content mt-[100px] p-[20px] md:px-[50px] xl:px-[200px]">
+          <div className="patagrph p-2  ">
+            <div className="title  py-[50px] flex flex-col ">
+              <h1
+                data-aos="fade-blur"
+                className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  "
+              >
+                如何做好網頁SEO？
+              </h1>
+              <div className="title-content-date">
+                <div data-aos="fade-blur">
+                  <Image src="" width={50} height={50}></Image>
                 </div>
-                <figure
-                  style={{ maxWidth: "1800pxpx" }}
-                  className="w-richtext-align-fullwidth w-richtext-figure-type-image"
-                >
-                  <div data-aos="">
-                    <img
-                      src="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15b3a7ee9e217bfffaf09_blog_img-big-01.jpg"
-                      loading="lazy"
-                      alt=""
-                    />
+                <div className="text-[14px]">
+                  <b className="mr-3">Spline 3d</b>
+                  <b>2024/04/05</b>
+                </div>
+              </div>
+              <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
+                <div className="flex flex-row">
+                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                    網頁設計
                   </div>
-                </figure>
-                <h3 className="">長期競爭優勢</h3>
-                <p>
-                  SEO是一個不斷優化和調整的過程，但一旦建立了穩固的SEO基礎，您的網站將在競爭中佔據有利位置。隨著搜尋引擎演算法的更新，SEO策略也需要隨之調整，但一個經過優化的網站將能夠更快地適應變化，保持競爭力。
-                </p>
+                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                    3d 軟體應用
+                  </div>
+                </div>
+                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                  設計
+                </div>
               </div>
             </div>
-            <section className=" w-full">
-              <p className="text-[16px] mb-5 leading-normal">
-                SEO是一項強大且多方面的行銷策略，能夠顯著提升網站的曝光度、信任度和轉化率，為您的業務帶來持續的成長。無論您是剛起步的小型企業還是已經擁有穩定客群的大型公司，SEO都應該成為您的行銷計畫中的重要一環。透過不斷優化網站並適應市場和搜尋引擎的變化，您將能夠在競爭中脫穎而出，實現長期的成功。
-              </p>
-            </section>
-            <div className="article-content-social-share duration-300 hover:bg-blue-100 border-2 border-black rounded-[40px]">
-              <div className="social-share-label-text div-relative">SHARE</div>
-              <div className="w-layout-grid social-share-icons-grid horizontal">
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b0-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4376d11af30a10e56_icon-fb-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b2-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a484ecff6b46ae1a04_icon-linkedin-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b4-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a584ecff6b46ae1ac2_icon-x-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-                <a
-                  id="w-node-_830c0865-f014-9435-f1ba-5de1d35857b6-ac15a7a8"
-                  href="#"
-                  target="_blank"
-                  className="social-share-icon w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a4eed91fe3a17704f6_icon-link-black.svg"
-                    loading="lazy"
-                    alt=""
-                    className="img-cover"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className="article-divider" />
           </div>
-          <div className="article-related-posts-section">
-            <div className="bg-green-500 px-4 py-3  inline-block mx-auto">
-              你可能也有興趣
+          <div data-aos="fade-blur" className="flex justify-center">
+            <Image
+              placeholder="empty rounded-md"
+              loading="lazy"
+              width={900}
+              height={500}
+              src="/images/blog/splien3d.png"
+            ></Image>
+          </div>
+
+          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+            <h2>什麼是SEO？</h2>
+            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+              SEO，全名是「搜尋引擎優化」（Search Engine
+              Optimization），指的是透過一系列策略與技術，提升網站在搜尋引擎結果中的排名，讓更多人可以在搜尋時看到你的网站。想像一下，你開了一家店鋪，但如果位置隱藏在巷弄裡，沒人能找到，那生意肯定不好。SEO
+              就是幫助你的網站「搬到」更顯眼的位置，讓更多人能看到。當你排名越高，點擊率也會隨之提升，自然就能吸引更多流量，最終帶來更多商機！
             </div>
-            <div className="articles-grid-cms margin-small w-dyn-list">
-              <div role="list" className="articles-grid related w-dyn-items">
-                <div
-                  role="listitem"
-                  className="w-dyn-item hover:border-black p-5 hover:border"
-                >
-                  <a
-                    href="/blog-posts/echoes-of-the-mind-tracing-the-footprints-of-memory"
-                    className="article-item w-inline-block"
-                  >
-                    <div className="article-item-img-wrap">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        src=""
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet=""
-                        className="img-cover-absolute"
-                      />
-                      <div
-                        className="img-left-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-right-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-top-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-btm-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                    <div className="article-content-wrap">
-                      <div className="article-item-head-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                          className="tag-text-style category"
-                        >
-                          Design/seo
-                        </div>
-                        <h5
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                          className="element-trigger"
-                        >
-                          seo文章
-                        </h5>
-                      </div>
-                      <div className="article-infos-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Written by</div>
-                          <div>&nbsp;</div>
-                          <div>Owen</div>
-                        </div>
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                          className="chip opacity-50 hide-mobile-landscape"
-                        />
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Published on</div>
-                          <div>&nbsp;</div>
-                          <div>Jan 14, 2024</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="line-trigger">
-                      <div
-                        className="line-moves"
-                        style={{
-                          transform:
-                            "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                    </div>
-                  </a>
+
+            <br></br>
+            <div className="">
+              <div className="imgText mt-[20px]">
+                <div className=" text-[32px]  leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    一.
+                  </span>
+                  SEO vs SEM
                 </div>
                 <div
-                  role="listitem"
-                  className="w-dyn-item hover:border-black p-5 hover:border"
+                  data-aos="fade-blur"
+                  className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]"
                 >
-                  <a
-                    href="/blog-posts/celestial-serendipity-aligning-with-the-cosmic-dance-of-chance"
-                    className="article-item w-inline-block"
-                  >
-                    <div className="article-item-img-wrap">
-                      <img
-                        alt=""
-                        loading="lazy"
-                        src="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg"
-                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 34vw, 31vw"
-                        srcSet="https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18-p-500.jpg 500w, https://assets-global.website-files.com/65a118d82cee7eeed8c90bf6/65a15e885d669de488d828cc_blog_img-small-18.jpg 720w"
-                        className="img-cover-absolute"
-                        style={{}}
-                      />
-                      <div
-                        className="img-left-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-right-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(0, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-top-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
-                      <div
-                        className="img-btm-panel"
-                        style={{
-                          transform:
-                            "translate3d(0px, 0px, 0px) scale3d(1, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
+                  差異與優缺點比較 SEO 和 SEM
+                  兩者經常被混淆，但它們有著不同的作用。SEO
+                  是透過自然方式提升網站排名，而 SEM（Search Engine
+                  Marketing，搜尋引擎行銷）則是透過付費廣告來提高曝光率。
+                </div>
+                <div className="feature">
+                  <div className="left rounded-2xl border border-black bg-[#f4f1f1]">
+                    <div className="top flex justify-center p-5">
+                      <h2>SEO</h2>
                     </div>
-                    <div className="article-content-wrap">
-                      <div className="article-item-head-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d7-ac15a7a8"
-                          className="tag-text-style category"
-                        >
-                          Politics
-                        </div>
-                        <h5
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085d8-ac15a7a8"
-                          className="element-trigger"
-                          style={{}}
-                        >
-                          Celestial Serendipity: Aligning with the Cosmic Dance
-                          of Chance
-                        </h5>
+                    <div className="bottom flex ">
+                      <div className="py-5 px-8">
+                        <span className="text-[24px] font-bold">優點：</span>
+                        <ul className="m-0 p-0">
+                          <li className="mt-3">
+                            <span className="font-bold">長期效果：</span>
+                            <br></br>
+                            只要優化得當，SEO
+                            可以持續為你帶來免費流量，效果穩定。
+                          </li>
+                          <li className="mt-3">
+                            <span className="font-bold">信任度高:</span>
+                            <br></br>
+                            自然搜索結果往往比廣告更容易取得使用者信任。
+                          </li>
+                          <li className="mt-3">
+                            <span className="font-bold">成本低：</span>
+                            <br></br>
+                            雖然需要時間投入，但不需要為每次點擊支付費用。
+                          </li>
+                        </ul>
                       </div>
-                      <div className="article-infos-wrap">
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085da-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Written by</div>
-                          <div>&nbsp;</div>
-                          <div>Isabella</div>
-                        </div>
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e0-ac15a7a8"
-                          className="chip opacity-50 hide-mobile-landscape"
-                        />
-                        <div
-                          id="w-node-_3c13191a-e0ee-a67c-1621-1e96d30085e1-ac15a7a8"
-                          className="article-info-item"
-                        >
-                          <div className="opacity-50">Published on</div>
-                          <div>&nbsp;</div>
-                          <div>Jan 10, 2024</div>
-                        </div>
+                      <div className="py-5 px-8">
+                        <span className="text-[24px] font-bold">缺點：</span>
+                        <ul className="m-0 p-0">
+                          <li>
+                            <span className="font-bold">見效較慢：</span>
+                            <br></br>
+                            SEO 需要時間積累，短期內可能看不到明顯效果。
+                          </li>
+                          <li>
+                            <span className="font-bold">競爭激烈:</span>
+                            <br></br>
+                            一些熱門關鍵字競爭者眾多，提升排名較難。
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div className="line-trigger">
-                      <div
-                        className="line-moves"
-                        style={{
-                          transform:
-                            "translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                          transformStyle: "preserve-3d",
-                        }}
-                      />
+                  </div>
+                  <div className="left my-[20px] rounded-2xl border border-black bg-[#f4f1f1]">
+                    <div className="top flex justify-center p-5">
+                      <h2>SEM</h2>
                     </div>
-                  </a>
+                    <div className="bottom flex ">
+                      <div className="py-5 px-8">
+                        <span className="text-[24px] font-bold">優點：</span>
+                        <ul className="m-0 p-0">
+                          <li className="mt-3">
+                            <span className="font-bold">見效快:</span>
+                            <br></br>
+                            只要設置好廣告，排名可以立即提升，快速增加流量。
+                          </li>
+                          <li className="mt-3">
+                            <span className="font-bold">可控性高:</span>
+                            <br></br>
+                            可以精確控制廣告預算、受眾和曝光時間。
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="py-5 px-8">
+                        <span className="text-[24px] font-bold">缺點：</span>
+                        <ul className="m-0 p-0">
+                          <li className="mt-3">
+                            <span className="font-bold">成本高：</span>
+                            <br></br>
+                            每次點擊都要支付費用，長期來看成本較高。
+                          </li>
+                          <li className="mt-3">
+                            <span className="font-bold">依賴廣告預算:</span>
+                            <br></br>
+                            一旦停止投放廣告，流量也隨之停止。
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  總體來說，SEO 是一種適合長期發展的策略，而 SEM
+                  則適合希望短期內快速獲得流量的情況。很多企業會將兩者結合使用，以達到最好的效果。
+                </div>
+                {/* <Image
+                  src="/images/blog/splineLogin.png"
+                  width={900}
+                  height={500}
+                  loading="lazy"
+                  data-aos="fade-blur"
+                  className="rounded-md mt-3"
+                  placeholder="empty"
+                ></Image> */}
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <h2 className="text-[32px] font-bold"> 二.如何進行SEO操作？</h2>
+                <p className="text-[16px]">想要做好SEO，有幾個關鍵步驟：</p>
+
+                <h3 className="text-[20px] ">1. 關鍵字研究</h3>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  找出你想讓網站排名的關鍵字，也就是使用者可能會搜尋的詞彙。工具如
+                  Google Keyword Planner
+                  能幫助你找到相關詞彙。關鍵字最好與你的產品或服務相關，並且具有一定搜尋量。
+                </div>
+
+                <h3 className="text-[20px] ">2. 優化內容</h3>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  網站內容要豐富、有價值，並且自然地融入關鍵字。不要只堆砌關鍵字，Google
+                  更重視對用戶有幫助的內容。
+                </div>
+
+                <h3 className="text-[20px] ">3. 技術優化</h3>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  確保網站運行速度快、手機友好（響應式設計），並且網站結構清晰。使用如meta
+                  description、alt tags、URL友善等來提高網站的技術分數。
+                </div>
+
+                <h3 className="text-[20px] ">4 . 外部連結（Backlinks）</h3>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  外部網站鏈接到你的網站可以增強你的信任度。多爭取高品質的外部連結會有助於提升你的排名。
+                </div>
+                <h3 className="text-[20px] ">5. 持續更新</h3>
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  搜尋引擎喜歡經常更新的網站，所以要定期更新內容或發佈新的文章，保持活躍。
+                </div>
+              </div>
+
+              {/* <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  <span className="text-[22px] font-bold">
+                    3D 模型創建與編輯
+                  </span>{" "}
+                  Spline
+                  提供了各種基礎形狀（如立方體、球體、圓柱等），你可以通過拉伸、旋轉和縮放來輕鬆調整這些形狀。此外，Spline
+                  支持導入外部 3D 模型（如 .obj、.gltf
+                  格式），讓你能夠更靈活地處理複雜的模型。
+                </div>
+
+                <div className="mt-[30px]">
+                  <Image
+                    src="/images/blog/3dmodel.png"
+                    width={900}
+                    placeholder="empty"
+                    height={600}
+                    className="rounded-md"
+                  ></Image>
+                  <p className="text-[16px] mt-4 font-bold">
+                    跟其他建模軟體一樣可使用簡單形狀
+                  </p>
+                </div>
+
+                <div className="mt-[30px]">
+                  <Image
+                    src="/images/blog/spline-opration.png"
+                    width={900}
+                    placeholder="empty"
+                    height={600}
+                    className="rounded-md"
+                  ></Image>
+                  <p className="text-[16px] mt-4 font-bold">導入外部模型</p>
+                </div>
+              </div> */}
+
+              <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  <span className="bg-[#12bef7] text-black">
+                    SEO 帶來的實質效益
+                  </span>{" "}
+                  當 SEO 做得好時，會帶來許多具體的效益。首先是
+                  <span className="bg-[#12bef7] text-black">
+                    穩定的自然流量
+                  </span>{" "}
+                  ，SEO
+                  不像付費廣告需要不斷投入金錢維持，它帶來的是源源不斷的免費訪客。此外，{" "}
+                  <span className="bg-[#12bef7] text-black">
+                    品牌信任度提升
+                  </span>
+                  也是一大優勢，當使用者多次在搜尋結果中看到你，自然會對你的{" "}
+                  品牌產生信任感 。最後，長期來看，SEO 可以{" "}
+                  <span className="bg-[#12bef7] text-black"> 降低行銷成本</span>
+                  ，因為你不必為每一次點擊付費，且一旦排名穩固，你就可以享受持續的曝光和流量，這對於任何希望長期穩定發展的企業來說都是巨大的資產。
+                </div>
+                {/* <Image
+                  src="/images/blog/mid02.png"
+                  width={900}
+                  className="rounded-md"
+                  placeholder="empty"
+                  height={600}
+                ></Image> */}
+              </div>
+              <div className="imgText mt-[60px]">
+                <div className="text-[20px] font-normal text-[#242424]  leading-[32px] xl:leading-[36px]">
+                  總結
+                </div>
+              </div>
+
+              <div className="imgText mt-[60px]">
+                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                  SEO
+                  不用想得太複雜，本質上就是幫助搜尋引擎更好地理解並推薦你的網站給合適的人。只要你有耐心進行關鍵字研究，創造優質內容，並且做好技術和外部連結的優化，排名自然會提升。SEO
+                  是一個長期的策略，但效果也是持久的，讓你的網站獲得穩定的流量。所以，記住關鍵點：內容為王、技術優化、持續更新！這樣你的網站就能在搜尋引擎中脫穎而出，並實現實質的業務成長。
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

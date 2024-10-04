@@ -153,8 +153,8 @@ export default function NewsletterForm() {
             </label>
           </div>
         </div>
-        <p className="block text-[22px] font-medium text-gray-700">Plans:</p>
-        <div className="mb-4 flex flex-row">
+        <p className="block  text-[22px] font-medium text-gray-700">Plans:</p>
+        <div className="mb-4  md:overflow-auto overflow-scroll flex flex-row">
           <div className="flex flex-col py-[20px] justify-start items-start mb-2">
             <input
               type="checkbox"
@@ -165,8 +165,8 @@ export default function NewsletterForm() {
               className="h-4 ml-2 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
             />
             <label
-              htmlFor="plan1"
-              className="ml-2 text-sm font-medium text-gray-700"
+              htmlFor="plan2"
+              className="ml-2 text-[22px] font-medium text-gray-700"
             >
               Plan 1
               <div className="border p-7 w-[300px] border-black rounded-md">
@@ -190,7 +190,7 @@ export default function NewsletterForm() {
               </div>
             </label>
           </div>
-          <div className="flex flex-col py-[20px] justify-start items-start mb-2">
+          <div className="flex   flex-col py-[20px] justify-start items-start mb-2">
             <input
               type="checkbox"
               id="plan2"
@@ -292,7 +292,7 @@ export default function NewsletterForm() {
           送出
         </button>
       </form>
-      {status && <p className="mt-4 text-red-500">{status}</p>}
+      {status && <p className="mt-4 text-blue-600">{status}</p>}
     </div>
   );
 }

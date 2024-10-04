@@ -153,9 +153,9 @@ export default function Blog() {
             <div className="">
               <div className="imgText">
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-                  <span className="text-[20px] text-black">步驟一：</span> 進入
-                  Midjourney 網站 首先打開 Midjourney 官方網站，並點擊頁面上的
-                  "Join the Beta" 按鈕。
+                  <span className="text-[20px] text-black">步驟一：</span>
+                  <br></br> 進入 Midjourney 網站 首先打開 Midjourney
+                  官方網站，並點擊頁面上的 "Join the Beta" 按鈕。
                 </div>
                 {/* <Image
                   src="/images/blog/mid02.png"
@@ -169,10 +169,15 @@ export default function Blog() {
 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  步驟二：註冊 Discord 帳號 Midjourney 使用 Discord
+                  <span className="text-[20px] text-black">步驟二：</span>
+                  <br></br> 註冊 Discord 帳號 Midjourney 使用 Discord
                   平台來運行，因此需要先註冊或登錄你的 Discord 帳號。進入
                   Discord 後，你會被邀請加入 Midjourney 的官方伺服器。
                 </div>
+                <a href="https://discord.com/invite/midjourney">
+                  加入midjurney伺服器至Discord
+                </a>
+
                 <a
                   target="_blank"
                   className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500 mb-4"
@@ -191,7 +196,8 @@ export default function Blog() {
 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  步驟三：進入新手頻道 在 Midjourney Discord
+                  <span className="text-[20px] text-black">步驟三：</span>
+                  <br></br> 進入新手頻道 在 Midjourney Discord
                   伺服器中，找到新手頻道（通常是 #newbies
                   頻道）。你可以在這裡輸入指令來生成圖像。
                 </div>
@@ -212,7 +218,8 @@ export default function Blog() {
 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  2.1 /imagine 指令 這是 Midjourney
+                  <span className="text-[20px] font-bold">1.</span>
+                  <b className="ml-4">/imagine</b> 指令 這是 Midjourney
                   最核心的指令，所有圖像生成過程都從這裡開始。通過提供「提示詞」（prompt），你可以告訴
                   AI 生成什麼樣的圖像。這裡是一些高效使用 /imagine 指令的技巧：
                 </div>
@@ -223,10 +230,6 @@ export default function Blog() {
                   className="rounded-md"
                   height={600}
                 ></Image>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  簡短提示詞：如 "sunset over the
-                  mountains"（山上日落），適合基本生成。
-                </div>
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   簡短提示詞：如 "sunset over the
                   mountains"（山上日落），適合基本生成。
