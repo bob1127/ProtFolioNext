@@ -1,6 +1,4 @@
 import dynamic from 'next/dynamic';
-
-// import Inner from "../components/Inner/index.jsx";
 import Script from 'next/script';
 import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
@@ -9,10 +7,13 @@ import Navbar from '../components/sideTabs/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
+
+import Image from 'next/image';
 import Nav from '../components/Navbar/page.jsx'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
+
 // Dynamically import the PhysicsAnimationApp component with ssr set to false
 const PhysicsAnimationApp = dynamic(
   () => import("../components/PhysicsAnimation/app.jsx"),
@@ -26,74 +27,105 @@ export default function MyApp({ Component, pageProps, router }) {
       easing: 'ease-in-out', // 动画缓动函数
     });
   }, []);
-    return (
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://embed.tawk.to/66f7d854e5982d6c7bb5fba5/1i8s2a2np';
+    script.async = true;
+    script.charset = 'UTF-8';
+    script.setAttribute('crossorigin', '*');
+
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      document.getElementsByTagName('head')[0].removeChild(script);
+    };
+  }, []);
+  const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+
+  if (isMaintenanceMode) {
+    // 如果维护模式开启，返回维护提示页面
+    return (
+  
+      <div style={{ textAlign: 'center', padding: '50px' }}>
+       <div className='flex flex-col xl:flex-row md:px-[100px] px-[20px] xl:px-[200px] pt-[50px]'>
+         <div className=' w-full md:w-[60%] mx-auto xl:w-1/2'>
+          <Image src='/images/Maintenance.png' width={700} height={700} loading='lazy'></Image>
+        </div>
+        <div className='w-full md:w-[60%] mx-auto xl:w-1/2 flex flex-col justify-center items-start pl-0 xl:pl-[50px]'>
+         <h1 className='text-[90px] font-black'>Oops !!</h1>
+           <p className='mt-[50px]  text-[30px]'>網站維護中</p>
+        <p className='text-left'>我們正在進行網站升級，請稍後再試。感謝您的耐心等待！</p>
+        </div>
+       </div>
+      </div>
+    );
+  }
+    return (
       <div className='bg-white'>
         <NextSeo
-      title="極客網頁設計-提升搜尋排名，讓您的業務被發現"
-      description="我們專注於設計優化的網站，確保您的業務在搜尋引擎中獲得更高曝光率。透過專業的SEO策略，讓您的網站在競爭中脫穎而出，吸引更多目標客戶"
-      openGraph={{
-        url: 'https://www.zensor.com.tw',
-        title: 'Page Title',
-        description: 'Page Description',
-        images: [
-          {
-            url: 'https://www.zensor.com.tw/images',
-            width: 800,
-            height: 600,
-            alt: 'Image Alt',
-          },
-        ],
-        site_name: 'Example Site',
-      }}
-      twitter={{
-        handle: '@handle',
-        site: '@site',
-        cardType: 'summary_large_image',
-      }}
-    />
+          title="極客網頁設計-提升搜尋排名，讓您的業務被發現"
+          description="我們專注於設計優化的網站，確保您的業務在搜尋引擎中獲得更高曝光率。透過專業的SEO策略，讓您的網站在競爭中脫穎而出，吸引更多目標客戶"
+          openGraph={{
+            url: 'https://www.zensor.com.tw',
+            title: 'Page Title',
+            description: 'Page Description',
+            images: [
+              {
+                url: 'https://www.zensor.com.tw/images',
+                width: 800,
+                height: 600,
+                alt: 'Image Alt',
+              },
+            ],
+            site_name: 'Example Site',
+          }}
+          twitter={{
+            handle: '@handle',
+            site: '@site',
+            cardType: 'summary_large_image',
+          }}
+        />
 
-    <Script
-        src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
-        type="text/javascript"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"
-      />
+        <Script
+          src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
+          type="text/javascript"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"
+        />
 
-      <Script
-        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
-        type="text/javascript"
-      />
-       <Nav/>
+        <Script
+          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
+          type="text/javascript"
+        />
 
+        <Nav />
 
         <div className='main overflow-hidden'>
-            <div className='max-w-[1920px] mx-auto'>
-                <NextUIProvider>
-                    <AnimatePresence mode='wait'>
-                        {/* <Navbar/> */}
-                        <Component key={router.route} {...pageProps} />
+          <div className='max-w-[1920px] mx-auto'>
+            <NextUIProvider>
+              <AnimatePresence mode='wait'>
+                <Component key={router.route} {...pageProps} />
 
-                        <div className='border-t-2 border-black'>
-                             <PhysicsAnimationApp />
-                        </div>
-                       
-                        <div className=''>
-                             {/* <PhysicsAnimationApp/> */}
-             
-            </div>
-             <Marquee>
-                <a href='/about' >
-                  <div className='border-3 bg-[#1f7beb] border-white'>
-                  <p className='text-black font-normal w-full p-2'>
-                  JEEK像您的好夥伴一樣，會與您一同探索、設計，打造出真正適合您的網站和品牌形象。不管您是 <span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"餐飲業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"美業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"中小企業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"服飾業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"傳統產業"</span>，我們都在這裡，為您提供簡單、實用且有效的解決方案。
-                  </p>
+                <div className='border-t-2 border-black'>
+                  <PhysicsAnimationApp />
                 </div>
-                </a>
-            
-              </Marquee>
-               
-            <div className="footer  border-t-3 border-white">
+
+                <div className=''>
+                  {/* <PhysicsAnimationApp/> */}
+                </div>
+
+                <Marquee>
+                  <a href='/about'>
+                    <div className='border-3 bg-[#1f7beb] border-white'>
+                      <p className='text-black font-normal w-full p-2'>
+                        JEEK像您的好夥伴一樣，會與您一同探索、設計，打造出真正適合您的網站和品牌形象。不管您是 <span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"餐飲業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"美業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"中小企業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"服飾業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"傳統產業"</span>，我們都在這裡，為您提供簡單、實用且有效的解決方案。
+                      </p>
+                    </div>
+                  </a>
+                </Marquee>
+ <div className="footer  border-t-3 border-white">
                 <div className="footer-layout">
                   <div className="footer-wrapper">
                     <div className="main-container">
@@ -302,12 +334,11 @@ export default function MyApp({ Component, pageProps, router }) {
                   <div className="footer-bg-gradient" />
                 </div>
               </div>
-                        {/* <Footer /> */}
-                    </AnimatePresence>
-                </NextUIProvider>
-            
-            </div>
+                {/* <Footer /> */}
+              </AnimatePresence>
+            </NextUIProvider>
+          </div>
         </div>
-        </div>
+      </div>
     );
 }

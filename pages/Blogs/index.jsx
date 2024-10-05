@@ -275,31 +275,6 @@ export default function Blog() {
 
         <div
           style={{
-            opacity: 1,
-            transform:
-              "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            transformStyle: "preserve-3d",
-          }}
-          className="article-scroll-indicator"
-        >
-          <div className="article-scroll-indicator-wrap">
-            <div>0</div>
-            <div className="article-scroll-indicator-line-wrap">
-              <div
-                className="scroll-indicator-line"
-                style={{
-                  willChange: "transform",
-                  transform:
-                    "translate3d(0px, 0px, 0px) scale3d(1, 0.08344, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                  transformStyle: "preserve-3d",
-                }}
-              />
-            </div>
-            <div>100</div>
-          </div>
-        </div>
-        <div
-          style={{
             transform:
               "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
             transformStyle: "preserve-3d",
@@ -368,24 +343,6 @@ export default function Blog() {
           </div>
         </div>
 
-        <section className="py-[80px] flex justify-center flex-col items-center">
-          <h3
-            className=" text-[26px] sm:text-[40px] 2xl:text-[50px]  font-bold"
-            data-ao-delay="300"
-            data-aos="fade-up"
-          >
-            "Others Articles"
-          </h3>
-          <div
-            className="w-1/2 text-[22px] mt-5 text-center  "
-            data-aos-delay="300"
-            data-aos="fade-up"
-          ></div>
-        </section>
-
-        <section className="py-[50px] hidden md:block  section-scroll-bg ">
-          <HorizontalScroll />
-        </section>
         <div className="w-full border-t-black border  py-[50px] ">
           <div className="txt my-5 px-[30px] w-[3/4] h-auto  mx-auto border-1 border-rose-500">
             <div className="flex  flex-col justify-center items-center  xl:flex-row ">
@@ -562,7 +519,10 @@ export default function Blog() {
                         className="w-full group-hover:scale-105 duration-300"
                       />
                     </div>
-                    <div className="w-full m-2 group rounded-md overflow-hidden relative">
+                    <a
+                      href="/Blog-05"
+                      className="w-full m-2 group rounded-md overflow-hidden relative"
+                    >
                       <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
                       <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
                         <h3 className="text-white text-[14px]">
@@ -574,13 +534,33 @@ export default function Blog() {
                         alt=""
                         className="w-full group-hover:scale-105 duration-300"
                       />
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <section className="py-[80px] flex justify-center flex-col items-center">
+          <h3
+            className=" text-[26px] sm:text-[40px] 2xl:text-[50px]  font-bold"
+            data-ao-delay="300"
+            data-aos="fade-up"
+          >
+            "Others Articles"
+          </h3>
+          <div
+            className="w-1/2 text-[22px] mt-5 text-center  "
+            data-aos-delay="300"
+            data-aos="fade-up"
+          ></div>
+        </section>
+        <section className="py-[50px] hidden md:block  section-scroll-bg ">
+          <HorizontalScroll />
+        </section>
+        {/* <section className="py-[50px] hidden md:block  section-scroll-bg ">
+          <HorizontalScroll />
+        </section> */}
         {/* <div className="card-wrap border border-rose-500">
           <div className="card w-[400px] h-[700px] border border-black "></div>
         </div> */}

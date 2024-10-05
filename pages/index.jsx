@@ -381,7 +381,7 @@ export default function Home() {
                 和高質量的產品攝影來強化品牌形象並吸引訪客。這種多層次的視覺策略將幫助您在用戶進入網站的第一時間就感受到品牌的獨特魅力。
               </p> */}
               <Image
-                src="/images/black-company-logo.png"
+                src="/images/3dmodel02.png"
                 width={900}
                 height={500}
               ></Image>

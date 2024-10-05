@@ -280,12 +280,12 @@ export default function Index() {
                     <div role="list" className="menu-features-list w-dyn-items">
                       <div
                         role="listitem"
-                        className="menu-feature-item w-dyn-item"
+                        className="menu-feature-item w-dyn-item "
                       >
-                        <div className="menu-feature-image">
+                        <a href="#" className="menu-feature-image w-full">
                           <Image
-                            src="/images/S__35962890-2.webp"
-                            alt="Navbar-ServiceImg" // 替代文字
+                            src="/images/Navbar-service.webp"
+                            alt="Navbar-service" // 替代文字
                             width={700} // 圖片寬度
                             height={700} // 圖片高度
                             priority // 高優先級載入
@@ -293,7 +293,38 @@ export default function Index() {
                             placeholder="empty" // 模糊佔位符
                             quality={80} // 圖片質量
                           />
-                        </div>
+                        </a>
+                        <a
+                          aria-label="Feature link"
+                          href="/about-2"
+                          className="menu-feature-content-link w-inline-block"
+                          tabIndex={0}
+                        >
+                          <div className="menu-feature-title">服務項目</div>
+                          {/* <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="icon is-large"
+                          /> */}
+                        </a>
+                      </div>
+                      <div
+                        role="listitem"
+                        className="menu-feature-item w-dyn-item"
+                      >
+                        <a href="#" className="menu-feature-image w-full">
+                          <Image
+                            src="/images/Navbar-Portfolio.webp"
+                            alt="Navbar-Portfolio" // 替代文字
+                            width={700} // 圖片寬度
+                            height={700} // 圖片高度
+                            priority // 高優先級載入
+                            layout="responsive" // 響應式設計
+                            placeholder="empty" // 模糊佔位符
+                            quality={80} // 圖片質量
+                          />
+                        </a>
                         <a
                           aria-label="Feature link"
                           href="/about-2"
@@ -313,10 +344,10 @@ export default function Index() {
                         role="listitem"
                         className="menu-feature-item w-dyn-item"
                       >
-                        <div className="menu-feature-image">
+                        <a href="#" className="menu-feature-image w-full">
                           <Image
-                            src="/images/S__359362890-2.webp"
-                            alt="Navbar-ServiceImg" // 替代文字
+                            src="/images/Navbar-about.webp"
+                            alt="Navbar-about" // 替代文字
                             width={700} // 圖片寬度
                             height={700} // 圖片高度
                             priority // 高優先級載入
@@ -324,39 +355,10 @@ export default function Index() {
                             placeholder="empty" // 模糊佔位符
                             quality={80} // 圖片質量
                           />
-                        </div>
+                        </a>
                         <a
                           aria-label="Feature link"
                           href="/about-2"
-                          className="menu-feature-content-link w-inline-block"
-                          tabIndex={0}
-                        >
-                          <div className="menu-feature-title">網站案例</div>
-                          {/* <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="icon is-large"
-                          /> */}
-                        </a>
-                      </div>
-                      <div
-                        role="listitem"
-                        className="menu-feature-item w-dyn-item"
-                      >
-                        <div className="menu-feature-image">
-                          {/* <img
-                            src="https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
-                            loading="lazy"
-                            alt="Compatibility"
-                            sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
-                            srcSet="https://www.handz.design/assets/images/image03.jpg?v=02f8e9b2"
-                            className="cover-image"
-                          /> */}
-                        </div>
-                        <a
-                          aria-label="Feature link"
-                          href="/about-3"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
@@ -373,23 +375,25 @@ export default function Index() {
                         role="listitem"
                         className="menu-feature-item w-dyn-item"
                       >
-                        <div className="menu-feature-image">
-                          <img
-                            src="https://static.wixstatic.com/media/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg/v1/fill/w_596,h_374,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg"
-                            loading="lazy"
-                            alt="Quality"
-                            sizes="(max-width: 767px) 92vw, (max-width: 991px) 45vw, (max-width: 1439px) 22vw, (max-width: 1919px) 23vw, 25vw"
-                            srcSet="https://static.wixstatic.com/media/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg/v1/fill/w_596,h_374,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/a261d7_46e3c75913564d87a4379c0d8d20f335f000.jpg"
-                            className="cover-image"
+                        <a href="#" className="menu-feature-image w-full">
+                          <Image
+                            src="/images/Navbar-contact.webp"
+                            alt="Navbar-contact" // 替代文字
+                            width={700} // 圖片寬度
+                            height={700} // 圖片高度
+                            priority // 高優先級載入
+                            layout="responsive" // 響應式設計
+                            placeholder="empty" // 模糊佔位符
+                            quality={80} // 圖片質量
                           />
-                        </div>
+                        </a>
                         <a
                           aria-label="Feature link"
-                          href="/Contact"
+                          href="/about-2"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
-                          <div className="menu-feature-title">聯絡方式</div>
+                          <div className="menu-feature-title">連路我們</div>
                           {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
@@ -401,7 +405,7 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="dropdown-2nd-links">
-                    <a href="/features" className="simple-link" tabIndex={0}>
+                    <a href="/Contact" className="simple-link" tabIndex={0}>
                       我的Email
                     </a>
                     <a href="/contact" className="simple-link" tabIndex={0}>
