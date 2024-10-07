@@ -284,8 +284,8 @@ export default function Index() {
                       >
                         <a href="#" className="menu-feature-image w-full">
                           <Image
-                            src="/images/Navbar-service.webp"
-                            alt="Navbar-service" // 替代文字
+                            src="/images/Navbar-service_極客網頁設計_服務內容.webp"
+                            alt="Navbar-service_極客網頁設計_服務內容" // 替代文字
                             width={700} // 圖片寬度
                             height={700} // 圖片高度
                             priority // 高優先級載入
@@ -315,8 +315,8 @@ export default function Index() {
                       >
                         <a href="#" className="menu-feature-image w-full">
                           <Image
-                            src="/images/Navbar-Portfolio.webp"
-                            alt="Navbar-Portfolio" // 替代文字
+                            src="/images/Navbar-Portfolio_極客網頁設計_網頁專案範例.webp"
+                            alt="Navbar-Portfolio_極客網頁設計_網頁專案範例" // 替代文字
                             width={700} // 圖片寬度
                             height={700} // 圖片高度
                             priority // 高優先級載入
@@ -346,8 +346,8 @@ export default function Index() {
                       >
                         <a href="#" className="menu-feature-image w-full">
                           <Image
-                            src="/images/Navbar-about.webp"
-                            alt="Navbar-about" // 替代文字
+                            src="/images/Navbar-about_極客網頁設計_關於我們.webp"
+                            alt="Navbar-about_極客網頁設計_關於我們" // 替代文字
                             width={700} // 圖片寬度
                             height={700} // 圖片高度
                             priority // 高優先級載入
@@ -377,8 +377,8 @@ export default function Index() {
                       >
                         <a href="#" className="menu-feature-image w-full">
                           <Image
-                            src="/images/Navbar-contact.webp"
-                            alt="Navbar-contact" // 替代文字
+                            src="/images/Navbar-contact_極客網頁設計_連路我們.webp"
+                            alt="Navbar-contact_極客網頁設計_連路我們.webp" // 替代文字
                             width={700} // 圖片寬度
                             height={700} // 圖片高度
                             priority // 高優先級載入

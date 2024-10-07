@@ -771,7 +771,7 @@ export default function Blog() {
                     alt=""
                   /> */}
                   <Image
-                    src="/images/blender_vfx-1280x720.webp"
+                    src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
                     loading="lazy"
                     width={800}
                     height={600}
@@ -820,7 +820,7 @@ export default function Blog() {
                   </div>
                   <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
                     <Image
-                      src="/images/maxresdefault.webp"
+                      src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
                       loading="lazy"
                       width={800}
                       height={600}

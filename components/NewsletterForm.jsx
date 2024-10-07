@@ -63,10 +63,10 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className=" md:w-[430px]  w-full mx-auto bg-white rounded-lg">
+    <div className=" xl:w-[800px] md:w-[700px]  w-full mx-auto bg-white rounded-lg">
       <h2 className="text-2xl font-semibold mb-4 ">提出需求，聯繫JEEK</h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-4">
+        <div className="mb-4 w-full md:w-[80%] xl:w-[60%]">
           <label
             htmlFor="email"
             className="block  text-sm font-medium text-gray-700"
@@ -83,7 +83,7 @@ export default function NewsletterForm() {
             className="mt-1 py-2 border border-black px-2 block w-full  rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-4 w-full md:w-[80%] xl:w-[60%]">
           <label
             htmlFor="phone"
             className="block text-sm font-medium text-gray-700"
@@ -99,7 +99,7 @@ export default function NewsletterForm() {
             className="mt-1 block w-full py-2 border border-black px-2  rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-4 w-full md:w-[80%] xl:w-[60%]">
           <label
             htmlFor="name"
             className="block text-sm font-medium text-gray-700"
@@ -154,7 +154,7 @@ export default function NewsletterForm() {
           </div>
         </div>
         <p className="block  text-[22px] font-medium text-gray-700">Plans:</p>
-        <div className="mb-4  md:overflow-auto overflow-scroll flex flex-row">
+        <div className="mb-4  flex flex-wrap">
           <div className="flex flex-col py-[20px] justify-start items-start mb-2">
             <input
               type="checkbox"
@@ -272,7 +272,7 @@ export default function NewsletterForm() {
           </div>
         </div>
         <div className="py-5">
-          <b className="leading-normal">
+          <b className="leading-normal w-3/4 text-center">
             使用 Mailchimp
             作為行銷平台。點擊下方送出，即表示您承認您的資訊將被傳輸至 Mailchimp
             進行處理。
@@ -287,7 +287,7 @@ export default function NewsletterForm() {
         </div>
         <button
           type="submit"
-          className="px-4  w-full py-4 inline-block rounded-[6px] bg-blue-700 text-white font-semibold shadow-sm hover:bg-blue-600"
+          className="px-4  w-[200px] text-center py-4 inline-block rounded-[6px] bg-blue-700 text-white font-semibold shadow-sm hover:bg-blue-600"
         >
           送出
         </button>

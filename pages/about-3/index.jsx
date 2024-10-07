@@ -239,16 +239,14 @@ export default function Blog() {
               <Lottie options={defaultOptions} height={220} width={220} />
               <div className="w-full xl:w-[80%]   mt-[40px] mx-auto  xl:text-[18px] text-[16px] leading-[32px] font-normal border bg-white border-black rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
                 HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
-                本來是 在一家化學生技公司創業基地擔任"網頁工程師 一職"
-                因為負責都是新創公司
+                上一份工作任職於一家化學生技公司創業基地擔任"網頁工程師 一職"
                 主要負責網頁的維護和seo優化，擅長前端效能優化 結構化資料、
                 所以公司網頁的設計和商品拍攝影片剪輯SEO的優化
                 都是由我完成，但這也讓我學習不同的技能。而我秉持的觀念也是不斷精進
-                雖然我的網頁作品不多 但我忍為我的技術已可以
-                為客戶帶來收益。我是一個追求理想和目標的人 希望有理想、想法
+                我是一個追求理想和目標的人 希望有理想、想法
                 、和目標想要讓公司網頁更好的客戶 與我聯繫。
-                希望任何有理想的人能跟你們合作，為您服務 希望我的專業能讓您的
-                業務更上一層 如果有任何想法請跟我 聯絡
+                能跟你們合作，為您服務 讓我的專業能讓您的 業務更上一層
+                如果有任何想法請跟我 聯絡
               </div>
             </section>
 

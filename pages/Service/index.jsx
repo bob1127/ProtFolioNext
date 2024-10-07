@@ -10,7 +10,7 @@ import {
 } from "@nextui-org/react";
 // import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
 import { NextSeo } from "next-seo";
-
+import SwiperHero from "../../components/SwiperHero/index.jsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
@@ -192,6 +192,7 @@ export default function Blog() {
       />
       <div>
         <div id="webpage" className="page-wrapper">
+          <SwiperHero />
           <main className="main">
             <section className="discount hidden px-[10px] md:px-[70px] pt-[30px] md:pt-[50px] flex justify-center items-center py-0 lg:py-6 ">
               <div className=" w-full flex flex-col lg:flex-row justify-around">
@@ -521,12 +522,12 @@ export default function Blog() {
                         </div>
                         <div className="button-icon-block">
                           <Image
-                            src="三電線02.png"
+                            src=""
                             placeholder="empty"
                             loading="lazy"
+                            alt=""
                             width={800}
                             height={800}
-                            loader={imageLoader04}
                           />
                         </div>
                       </a>
@@ -540,8 +541,8 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.ultraehp.com/images/test-portfolio/三電線02.png"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.png"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1550px"
                           className="cover-image"
                           style={{
                             transform:
@@ -561,7 +562,7 @@ export default function Blog() {
                           className="w-[80%] mx-auto"
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.ultraehp.com/images/test-portfolio/三電線捲起.png"
+                          src="https://www.handz.design/assets/images/image08.jpg?v=bac0b150"
                           srcSet="
                                         
                                       "
@@ -630,13 +631,13 @@ export default function Blog() {
                           <div className="button-bg" style={{}} />
                         </div>
                         <div className="button-icon-block">
-                          <img
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="button-icon"
                             style={{}}
-                          />
+                          /> */}
                         </div>
                       </a>
                     </div>
@@ -819,192 +820,6 @@ export default function Blog() {
               <threeDCarousel />
             </div> */}
 
-            <section className="section">
-              <div className="container">
-                <div className="padding">
-                  <div className="w-layout-grid about-content">
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                      className="about-grid-content"
-                    >
-                      <h2 className="heading is-medium-title">
-                        "商業/產品攝影"
-                      </h2>
-                      <p className=" text-[16px] leading-normal text-left ">
-                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
-                        <br></br> <br></br>
-                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過網站設計和SEO優化，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
-                      </p>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                      className="about-grid-image"
-                    >
-                      <div className="reveal-image-trigger">
-                        <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="about-grid-image">
-                      {/* <video
-                        autoPlay
-                        loop
-                        src="/medias/mobile-phone.mov"
-                      ></video> */}
-                      <div className="reveal-image-trigger">
-                        <video
-                          width="600" // 可以根据需要调整宽度
-                          height="400" // 可以根据需要调整高度
-                          controls // 可选，显示播放控件
-                          autoPlay // 自动播放
-                          muted // 自动播放时需要静音
-                          loop // 循环播放
-                        >
-                          <source
-                            src="/medias/mobile-phone.mov"
-                            type="video/mp4"
-                          />
-                        </video>
-                        {/* <video
-                          autoPlay
-                          loop
-                          src="/medias/mobile-phone.mov"
-                        ></video> */}
-                        {/* <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.ultraehp.com/images/test-portfolio/v1017-05.jpg"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          srcSet="
-                                        https://www.ultraehp.com/images/test-portfolio/v1017-05.jpg
-                                      "
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        /> */}
-
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                      {/* <h2 className="heading is-medium-title">
-                        "移動設備體驗優化 "
-                      </h2> */}
-                      <GsapText
-                        text=' "移動設備體驗優化" '
-                        lineHeight="60px"
-                        id="text2"
-                        fontSize="50px"
-                      />
-                      <div className="flex items-start flex-col ">
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px] leading-normal">
-                            1. 移動優先索引（Mobile-First Indexing）
-                          </b>
-                          <p className="text-left leading-normal mt-3">
-                            - Google 目前使用{" "}
-                            <span className="bg-blue-100">
-                              「移動優先索引」
-                            </span>
-                            ，這意味著 Google
-                            搜索引擎主要基於網站的移動版本來進行索引和排名。因此，確保你的網站在移動設備上的表現是至關重要的。如果你的網站在桌面和移動設備上有不同的內容，Google
-                            會優先考慮移動設備上的內容。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]"> 頁面加載速度</b>
-                          <p className="text-left leading-normal mt-3">
-                            - Google
-                            對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
-                            的 <span className="bg-blue-100">「頁面體驗」</span>
-                            更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-blue-100">
-                              Google PageSpeed Insights
-                            </span>{" "}
-                            來測試和改進頁面速度。
-                          </p>
-                          <img
-                            className="w-full h-auto"
-                            src="https://www.cloudways.com/blog/wp-content/uploads/Page-Speed-Insights-Field-Data.jpg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                      <a
-                        href="/Contact"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
             {/* <section className="bg-blue-700 my-[50px] py-[80px]">
               <div className="txt flex flex-col justify-center items-center">
                 <h1 className="text-white text-center text-[60px]">
@@ -1171,7 +986,66 @@ export default function Blog() {
                 </div>
               </div>
             </section>
+            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px]  py-[20px] md:py-[80px]  lg:px-[50px]  xl:px-[70px] 2xl:px-[100px]">
+              <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
+                <div className="txt">
+                  <div className="logo pl-[20px]">
+                    <b className="font-bold text-[30px]">JEEK</b>
+                  </div>
+                  <div className="bottom " data-aos="fade-up">
+                    <p className="text-[12px] font-bold">Design by Website</p>
+                    {/* 
 
+                    <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
+                      使用 3D 模型製作網頁橫幅和產品圖的好處
+                    </h3> */}
+
+                    <GsapText
+                      text="Seo成效分析"
+                      lineHeight="60px"
+                      id="text7"
+                      fontSize="50px"
+                    />
+
+                    <div class="flex md:flex-wrap flex-col mt-5">
+                      <span class="bg-[#15a4fd] text-center w-[210px] border mt-3 md:mt-0 border-black text-white rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        google analytics 4
+                      </span>
+                      <span class="bg-[#15a4fd] text-center w-[210px] text-white  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        Google Search Console
+                      </span>
+                      <span class="bg-[#15a4fd] text-center w-[150px] text-white border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        Hotjar
+                      </span>
+                    </div>
+
+                    <p className="text-[16px] w-2/3  xl:w-full mt-[40px]">
+                      使用 GA4、Google Search Console 和
+                      Hotjar，您可以全方位分析和優化網站的 SEO 成效。GA4
+                      提供用戶行為和目標追蹤，Google Search Console
+                      追蹤關鍵字排名與索引狀況，Hotjar
+                      則透過熱圖和錄影視覺化使用者互動。這些工具能幫助您提升網站曝光率和使用者體驗，達到最佳
+                      SEO 效果。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full  flex-col pt-10 flex  justify-center items-center  xl:w-[60%]">
+                <DragCaroudelSlider />
+
+                <div className="txt">
+                  <div className="main-container medium-paddings ">
+                    <a
+                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                      href="/Blog-05"
+                      className="simple-link"
+                    >
+                      More Info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
             <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
               <a
                 href=""
@@ -1339,7 +1213,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
+                          src="https://assets.justinmind.com/wp-content/uploads/2018/05/wireframe-tool-wireframe-ui-kit-overview-1c.png"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           className="cover-image"
                           style={{
@@ -1468,56 +1342,11 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px] lg:px-[30px]  xl:px-[50px] 2xl:px-[80px]">
-              <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
-                <div className="txt">
-                  <div className="logo pl-[20px]">
-                    <b className="font-bold text-[30px]">JEEK</b>
-                  </div>
-                  <div className="bottom " data-aos="fade-up">
-                    <p className="text-[12px] font-bold">Design by Website</p>
-                    {/* 
 
-                    <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
-                      使用 3D 模型製作網頁橫幅和產品圖的好處
-                    </h3> */}
-
-                    <GsapText
-                      text=" 3D產品應用"
-                      lineHeight="60px"
-                      id="text7"
-                      fontSize="50px"
-                    />
-
-                    <div class="flex md:flex-row flex-col mt-5">
-                      <span class="bg-[#15a4fd] border mt-3 md:mt-0 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        3D 產品Banner | 形象圖
-                      </span>
-                      <span class="bg-[#15a4fd] border mt-3 md:mt-0 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        DM 製作
-                      </span>
-                      <span class="bg-[#15a4fd] border mt-3 md:mt-0 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        產品展示
-                      </span>
-                    </div>
-
-                    <p className="text-[16px] w-2/3  xl:w-full mt-[40px]">
-                      將 3D
-                      模型應用於網頁橫幅和產品圖中，可以顯著提升品牌的視覺吸引力和客戶互動
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full pt-10 xl:w-[60%]">
-                <DragCaroudelSlider />
-              </div>
-            </section>
             {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}
             {/* <div>
               <BannerSwiper />
             </div> */}
-
-            <b className="text-[20px]">以上價格皆為大約 實際價格可以再討論</b>
           </main>
         </div>
       </div>

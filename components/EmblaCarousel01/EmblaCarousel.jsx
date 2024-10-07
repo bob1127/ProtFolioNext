@@ -104,7 +104,7 @@ const EmblaCarousel = (props) => {
     >
       <div className="embla__viewport overflow-hidden" ref={emblaRef}>
         <div
-          className="embla__container flex touch-pan-y touch-pinch-zoom h-[400px] "
+          className="embla__container flex touch-pan-y touch-pinch-zoom h-[460px] "
           style={{ marginLeft: "calc(var(--slide-spacing) * -1)" }}
         >
           {slides.map((slide, index) => (
@@ -137,6 +137,8 @@ const EmblaCarousel = (props) => {
                       className="rounded-xl"
                       width={500}
                       height={500}
+                      loading="lazy"
+                      placeholder="empty"
                       alt={`Slide ${index + 1}`}
                     />
                   )}

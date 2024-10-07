@@ -347,10 +347,10 @@ export default function Blog() {
           <div className="txt my-5 px-[30px] w-[3/4] h-auto  mx-auto border-1 border-rose-500">
             <div className="flex  flex-col justify-center items-center  xl:flex-row ">
               <div className="left-section w-full md:w-[80%] xl:w-[70%]">
-                <div className="Hot-article flex">
+                <div className="Hot-article flex md:flex-row flex-col">
                   <a
                     href="/Blog-05"
-                    className="w-1/2 m-2 group rounded-xl overflow-hidden relative"
+                    className=" w-full  md:w-1/2 m-2 group rounded-xl overflow-hidden relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
                     <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
@@ -371,7 +371,7 @@ export default function Blog() {
                       className="w-full group-hover:scale-105 duration-300"
                     />
                   </a>
-                  <div className="w-1/2 m-2 rounded-xl overflow-hidden relative">
+                  <div className="w-full md:w-1/2 m-2 rounded-xl overflow-hidden relative">
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
                     <img
                       src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
@@ -383,16 +383,16 @@ export default function Blog() {
                 <div className="others-article pt-8 ">
                   <a
                     href="/Blog-05"
-                    className="article-item border-t-2 border-b-2 flex py-8"
+                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
                   >
-                    <div className="img w-[35%] p-5">
+                    <div className="img w-full md:w-[35%] p-5">
                       <img
                         src="https://i.ytimg.com/vi/cqw7WjuX8To/maxresdefault.jpg"
                         alt=""
                         className="w-full rounded-md"
                       />
                     </div>
-                    <div className="text w-[65%] p-5">
+                    <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[20px] font-semibold">
                         Spline 3D - 入門教學
                       </h3>
@@ -410,16 +410,16 @@ export default function Blog() {
 
                   <a
                     href="/Blog-04"
-                    className="article-item border-t-2 border-b-2 flex py-8"
+                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
                   >
-                    <div className="img w-[35%] p-5">
+                    <div className="img w-full md:w-[35%] p-5">
                       <img
                         src="https://i.ytimg.com/vi/BMGirukzOPU/maxresdefault.jpg"
                         alt=""
                         className="w-full rounded-md"
                       />
                     </div>
-                    <div className="text w-[65%] p-5">
+                    <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[20px] font-semibold">
                         Photoshop 2024 全新 AI 功能
                       </h3>
@@ -431,15 +431,15 @@ export default function Blog() {
                       </p>
                     </div>
                   </a>
-                  <div className="article-item  border-b-2 flex py-8">
-                    <div className="img w-[35%] p-5">
+                  <div className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8">
+                    <div className="img w-full md:w-[35%] p-5">
                       <img
                         src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
                         alt=""
                         className="w-full"
                       />
                     </div>
-                    <div className="text w-[65%] p-5">
+                    <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[18px]">
                         肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
                       </h3>
@@ -449,15 +449,15 @@ export default function Blog() {
                       </p>
                     </div>
                   </div>
-                  <div className="article-item  border-b-2 flex py-8">
-                    <div className="img w-[35%] p-5">
+                  <div className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8">
+                    <div className="img w-full md:w-[35%] p-5">
                       <img
                         src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
                         alt=""
                         className="w-full"
                       />
                     </div>
-                    <div className="text w-[65%] p-5">
+                    <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[18px]">
                         肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
                       </h3>
@@ -467,15 +467,18 @@ export default function Blog() {
                       </p>
                     </div>
                   </div>
-                  <div className="article-item  border-b-2 flex py-8">
-                    <div className="img w-[35%] p-5">
+                  <div
+                    c
+                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                  >
+                    <div className="img w-full md:w-[35%] p-5">
                       <img
                         src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
                         alt=""
                         className="w-full"
                       />
                     </div>
-                    <div className="text w-[65%] p-5">
+                    <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[18px]">
                         肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
                       </h3>

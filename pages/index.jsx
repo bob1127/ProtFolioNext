@@ -302,7 +302,7 @@ export default function Home() {
             </div>
             <div className="w-full lg:w-1/2">
               <Image
-                src="/images/截圖-2024-09-24-上午9.26.06.png"
+                src="/images/移動設備對於seo重要性.webp"
                 loading="lazy"
                 placeholder="empty"
                 width={800}
@@ -381,7 +381,7 @@ export default function Home() {
                 和高質量的產品攝影來強化品牌形象並吸引訪客。這種多層次的視覺策略將幫助您在用戶進入網站的第一時間就感受到品牌的獨特魅力。
               </p> */}
               <Image
-                src="/images/3dmodel02.png"
+                src="/images/3d產品模型01-極客網頁設計|Blender3D-2.webp"
                 width={900}
                 height={500}
               ></Image>
@@ -515,8 +515,10 @@ export default function Home() {
               <Image
                 className="hover:scale-105 duration-500"
                 width={800}
-                src="/images/plan04.webp"
+                src="/images/產品攝影01_極客網頁設計_產品商業拍攝.webp"
+                placeholder="empty"
                 loading="lazy"
+                alt="極客網頁設計_產品商業拍攝"
                 height={500}
               />
             </div>
@@ -527,10 +529,12 @@ export default function Home() {
               <Image
                 className="hover:scale-105 duration-500"
                 width={800}
-                src="/images/plan02.webp"
+                src="/images/網頁設計02_極客網頁設計_網頁設計建置.webp"
+                placeholder="empty"
                 loading="lazy"
+                alt="極客網頁設計_網頁設計建置"
                 height={500}
-              />{" "}
+              />
             </div>
             <div className="border-2 overflow-hidden border-black relative w-full ">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
@@ -541,8 +545,10 @@ export default function Home() {
               <Image
                 className="hover:scale-105 duration-500"
                 width={800}
-                src="/images/plan01.webp"
+                src="/images/3D產品03_極客網頁設計_產品建模.webp"
+                placeholder="empty"
                 loading="lazy"
+                alt="極客網頁設計_產品建模"
                 height={500}
               />
             </div>
@@ -628,9 +634,9 @@ export default function Home() {
                 <p className="text-[20px] mt-3">◉無限的設計自由與靈活性</p>
                 <p className="text-[20px] mt-3">◉高效的內容管理</p>
                 <Image
-                  src="/images/portfolio01.webp"
+                  src="/images/wordpress＿無頭網站效能更佳_極客網頁設計_網站製作.webp"
                   loading="lazy"
-                  alt="HeadlessWebsite"
+                  alt="wordpress＿無頭網站效能更佳_極客網頁設計_網站製作"
                   width={500}
                   height={500}
                   placeholder="empty"

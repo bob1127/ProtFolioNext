@@ -15,18 +15,16 @@ const CURSOR_SIZE = 80;
 
 const articles = [
   {
-    title:
-      "Building a fully customisable carousel slider with swipe gestures and navigation using Framer Motion",
-    url: "https://www.zensor.com.tw/images/Products-Detail-Img/ACIP100/電化學分析儀-模擬器-交流阻抗版-開箱.webp",
+    title: "GoogleSearchConsole分析-極客網頁設計_seo成效分析工具",
+    url: "/images/GoogleSearchConsole分析-極客網頁設計_seo成效分析工具.png",
   },
   {
-    title:
-      "Building a customisable Input component with NextJS, ReactHookForm, TailwindCSS and TypeScript",
-    url: "https://www.zensor.com.tw/images//Products-Detail-Img/ECAS100/電化學分析儀-模擬器-防滑材質.webp",
+    title: "Ga4分析-極客網頁設計_seo成效分析工具",
+    url: "/images/Ga4分析-極客網頁設計_seo成效分析工具.png",
   },
   {
-    title: "Handling Forms in NextJS with busboy, ReactHookForm and TypeScript",
-    url: "https://www.zensor.com.tw/images/Products-Detail-Img/GTE100/突破性的玻碳膜材質.webp",
+    title: "Hotjar熱點分析-極客網頁設計_seo成效分析工具",
+    url: "/images/Hotjar熱點分析-極客網頁設計_seo成效分析工具.png",
   },
 ];
 
@@ -160,30 +158,6 @@ export default function SuggestedCarousel() {
 
   return (
     <>
-      <div className="text-center mt-[60px] px-[30px]">
-        <div className="flex justify-center gap-4">
-          <Link
-            className="text-sm underline underline-offset-2 hover:text-lime-300"
-            href="/about"
-            rel="noopener noreferrer"
-          >
-            更多案例-網頁設計
-          </Link>
-          <Link
-            className="text-sm underline underline-offset-2 hover:text-lime-300"
-            href="/about-3"
-            rel="noopener noreferrer"
-          >
-            跟我聯繫-了解更多
-          </Link>
-        </div>
-        <h1 className="my-[10px] text-[40px] lg:text-6xl font-extrabold uppercase">
-          網頁行銷案例
-        </h1>
-        <p className="text-sm mb-5 text-gray-400">
-          一頁式網站｜SEO 行銷｜形象企業網站
-        </p>
-      </div>
       <div className="group container ">
         <motion.div
           className={cn(
@@ -258,7 +232,7 @@ export default function SuggestedCarousel() {
                     duration: 0.4,
                   }}
                   style={{
-                    flexBasis: active ? "40%" : "30%",
+                    flexBasis: active ? "60%" : "40%", // Adjusted flex basis for larger images
                   }}
                 >
                   <Link
@@ -271,8 +245,8 @@ export default function SuggestedCarousel() {
                   >
                     <Image
                       loading="lazy"
-                      width={500}
-                      height={800}
+                      width={800} // Increased width
+                      height={1200} // Increased height
                       placeholder="empty"
                       src={article.url}
                       alt={article.title}

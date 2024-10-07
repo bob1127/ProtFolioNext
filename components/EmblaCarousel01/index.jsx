@@ -8,29 +8,34 @@ const OPTIONS = { dragFree: true, loop: true };
 // Define an array of slide objects with iframe content
 const SLIDES = [
   {
-    image: "/images/3dmodel01.webp", // Image for the first slide
-    title: "First Slide",
-    description: "Description for the first slide.",
+    image: "/images/3d產品模型11-極客網頁設計|Blender3D.webp", // Image for the first slide
+    title: "商品建模設計",
+    description: "範例展示",
   },
   {
-    image: "/images/3dmodel02.webp",
-    title: "Fourth Slide",
-    description: "Description for the fourth slide.",
+    image: "/images/3d產品模型04-極客網頁設計|Blender3D.webp",
+    title: "商品建模設計",
+    description: "範例展示",
   },
   {
-    image: "/images/3dmodel03.webp",
-    title: "Fourth Slide",
-    description: "Description for the fourth slide.",
+    image: "/images/3d產品模型09-極客網頁設計|Blender3D.webp",
+    title: "商品建模設計",
+    description: "範例展示",
   },
   {
-    image: "/images/3dmodel02.webp",
-    title: "Fourth Slide",
-    description: "Description for the fourth slide.",
+    image: "/images/3d產品模型07-極客網頁設計|Blender3D.webp",
+    title: "商品建模設計",
+    description: "範例展示",
   },
   {
-    image: "/images/3dmodel03.webp",
-    title: "Fifth Slide",
-    description: "Description for the fifth slide.",
+    image: "/images/3d產品模型06-極客網頁設計|Blender3D.webp",
+    title: "商品建模設計",
+    description: "範例展示",
+  },
+  {
+    image: "/images/3d產品模型03-極客網頁設計|Blender3D.webp",
+    title: "商品建模設計",
+    description: "範例展示",
   },
 ];
 

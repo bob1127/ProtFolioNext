@@ -12,6 +12,7 @@
 //   () => import("../components/PhysicsAnimation/app.jsx"),
 //   { ssr: false }
 // );
+import Image from "next/image.js";
 import NewsletterForm from "../../components/NewsletterForm.jsx";
 import { NextSeo } from "next-seo";
 import mailchimp from "../../components/mailchimp/page.jsx";
@@ -50,7 +51,19 @@ export default function Home() {
           ],
         }}
       />
-      <NewsletterForm />
+      <div className="flex flex-col">
+        <Image
+          loading="lazy"
+          placeholder="empty"
+          width={1200}
+          height={700}
+          src="/images/contact關於我們heroImg-極客網頁設計.jpg"
+        ></Image>
+
+        <div className="py-[80px]">
+          <NewsletterForm />
+        </div>
+      </div>
     </div>
   );
 }

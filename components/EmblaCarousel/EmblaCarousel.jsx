@@ -33,7 +33,8 @@ const EmblaCarousel = () => {
       id: 2,
       src: "/images/ultraehp.webp",
       title: "Ultra EHP",
-      description: "This is a description for Ultra EHP.",
+      description:
+        "此專案為公司官網建立，使用了next.js SSG 靜態網頁 來加快網頁的讀取速度 ， 另外使用next.js 可以優化圖片和 影片",
     },
   ]; // Define your slides here
 
