@@ -55,8 +55,8 @@ const Modal = ({ isOpen, onClose, imageSrc }) => {
               />
             </div>
           </div>
-          <div className="flex flex-col mt-[20px] w-full xl:w-1/2 justify-start">
-            <div className="content mx-[20px] p-[40px] rounded-xl border border-black bg-white w-full">
+          <div className="flex flex-col ] mt-[20px] w-full xl:w-1/2 justify-start">
+            <div className="content p-[100px] mx-[20px]  rounded-xl border border-black bg-white w-full">
               <div className="project-type px-2 bg-blue-400 rounded-[30px] w-[30%] py-1 flex justify-center mb-4 items-center">
                 官網建置
               </div>

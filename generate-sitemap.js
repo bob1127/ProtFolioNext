@@ -9,7 +9,7 @@ const path = require('path');
   const staticPaths = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
     { url: '/Contact', changefreq: 'monthly', priority: 0.8 },
-    { url: '/about', changefreq: 'monthly', priority: 0.8 },
+    { url: '/about', changefreq: 'monthly', pridority: 0.8 },
         { url: '/about-2', changefreq: 'monthly', priority: 0.8 },
             { url: '/about-3', changefreq: 'monthly', priority: 0.8 },
                 { url: '/Service', changefreq: 'monthly', priority: 0.8 },

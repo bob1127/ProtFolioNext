@@ -192,7 +192,9 @@ export default function Blog() {
       />
       <div>
         <div id="webpage" className="page-wrapper">
-          <SwiperHero />
+          <div className="pt-[30px]">
+            <SwiperHero />
+          </div>
           <main className="main">
             <section className="discount hidden px-[10px] md:px-[70px] pt-[30px] md:pt-[50px] flex justify-center items-center py-0 lg:py-6 ">
               <div className=" w-full flex flex-col lg:flex-row justify-around">
@@ -266,53 +268,7 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            <div className="about-hero m-0 p-0">
-              <div className="container">
-                <div className="about-hero-content">
-                  <div className="about-hero-title-block">
-                    <h1
-                      data-w-id="8b401037-45f7-eb88-2888-8b081e39589e"
-                      style={{
-                        transform:
-                          "translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                        opacity: 0,
-                      }}
-                      className="heading is-about-hero-title"
-                    >
-                      About
-                    </h1>
-                    <a
-                      data-w-id="70be419f-58bd-64a7-48cc-18d3ea7f1d52"
-                      style={{
-                        transform:
-                          "translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                        opacity: 0,
-                      }}
-                      href="#explore"
-                      className="simple-link is-explore"
-                    >
-                      了解更多
-                    </a>
-                  </div>
 
-                  <div className="about-hero-line" />
-                  <div className="about-hero-content-grid">
-                    <div
-                      data-w-id="8b401037-45f7-eb88-2888-8b081e3958a9"
-                      style={{
-                        transform:
-                          "translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                        transformStyle: "preserve-3d",
-                        opacity: 0,
-                      }}
-                      className="about-hero-content-text"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
             {/* 
             <section id="explore" className="section with-borders">
               <section className="section is-3d-content-section">
@@ -434,7 +390,7 @@ export default function Blog() {
             </div> */}
 
             <Marquee>
-              <div className=" bg-blue-700 flex w-[100vw] w-full py-[40px]">
+              <div className=" bg-black flex w-[100vw] w-full py-[40px]">
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   WEBSITE
                   <img
@@ -562,7 +518,7 @@ export default function Blog() {
                           className="w-[80%] mx-auto"
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.handz.design/assets/images/image08.jpg?v=bac0b150"
+                          src="/images/網頁設計_UI設計_banner設計-極客網頁設計_seo優化.webp"
                           srcSet="
                                         
                                       "
@@ -692,7 +648,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image12.jpg?v=7b7356d5"
+                          src="/images/商業攝影_產品_banner-極客網頁設計.png"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           className="cover-image"
                           style={{
@@ -1048,7 +1004,7 @@ export default function Blog() {
             </section>
             <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
               <a
-                href=""
+                href="/Blog-09"
                 className="xl:w-1/2 w-full mr-4 hover:shadow-custom
                 border-1
                 
@@ -1213,7 +1169,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="https://assets.justinmind.com/wp-content/uploads/2018/05/wireframe-tool-wireframe-ui-kit-overview-1c.png"
+                          src="/images/網頁結構優化01_UI設計_banner設計-極客網頁設計_seo優化.webp"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           className="cover-image"
                           style={{

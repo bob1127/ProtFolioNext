@@ -820,7 +820,7 @@ export default function Blog() {
                   </div>
                   <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
                     <Image
-                      src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
+                      src="/images/3d設計_UI設計_banner設計-極客網頁設計_seo優化.png"
                       loading="lazy"
                       width={800}
                       height={600}

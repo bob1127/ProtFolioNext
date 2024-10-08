@@ -250,14 +250,14 @@ const EmblaCarousel = () => {
         <Modal
           isOpen={isOpen}
           onClose={onClose}
-          className="border border-black relative bg-black  focus:border-black"
+          className="border  border-black relative bg-black  focus:border-black"
         >
           <div className="fixed top-0 left-0 backdrop-blur-md bg-black bg-opacity-60 w-[100vw] h-[100vh]"></div>
 
-          <ModalContent className="modal-enter w-[100%] z-[9999] p-5 fixed mt-10 top-[100px] h-[100vh] rounded-[30px] bg-[#ffffff]">
+          <ModalContent className="modal-enter w-[100%] z-[9999]  fixed mt-3 top-[100px] h-[100vh] rounded-[30px] 2xl:p-[120px] md:px-[70px] md:pb-[70px] md:pt-[30px] bg-[#ffffff]">
             <ModalHeader></ModalHeader>
 
-            <ModalBody className="">
+            <ModalBody className=" ">
               <h3 className="pl-5">{currentTitle}</h3>
               <div className=" flex-col flex md:flex-row">
                 <div className="w-full md:w-[55%] p-3 md:p-5">

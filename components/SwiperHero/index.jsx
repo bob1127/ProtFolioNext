@@ -3,14 +3,10 @@ import { motion, useMotionValue } from "framer-motion";
 
 const video = [""];
 const imgs = [
-  "https://www.asahibeer.co.jp/ginon/img/kv_pc01.jpg",
-  "https://nomca.jp/cdn/shop/files/KV_1.png?v=1718706980&width=1500",
-  "https://www.cupnoodle.jp/assets2023/img/common/cm_bnr28.jpg",
-  "https://www.danone.co.jp/oikos/assets/relaunch/img/231019_OIKOS_web_pc.webp",
-
-  "https://www.ucc.co.jp/coffeecreation/black/dist/images/mv_ttl.svg",
-
-  "https://happynutsday.com/wp/wp-content/themes/happynutsday/assets/images/top/mv02.jpg",
+  "/images/網頁結構優化01_UI設計_banner設計-極客網頁設計_seo優化.png",
+  "/images/攝影-商業攝影.png",
+  "/images/網頁設計_商品攝影_網頁Seo優化-極客網頁設計.png",
+  "/images/網頁設計_UI設計_banner設計-極客網頁設計_seo優化.png",
 ];
 
 const ONE_SECOND = 1000;
