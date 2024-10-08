@@ -131,7 +131,8 @@ export default function Home() {
               href="/Contact"
               className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[450px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
               style={{
-                backgroundImage: "url(/images/man-1839500_1920.webp)",
+                backgroundImage:
+                  "url(/images/網頁結構優化01_UI設計_banner設計-極客網頁設計_seo優化.png)",
               }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
@@ -145,7 +146,10 @@ export default function Home() {
             <a
               href="/Contact"
               className="hero-right duration-500 border-blac  ease-in-out lg:hover:w-[35%] group overflow-hidden delay-150  border-1 border-black border pt-[50px] flex flex-col justify-center bg-cover bg-no-repeat h-[450px] xl:h-auto bg-center items-center  w-full lg:w-[15%]"
-              style={{ backgroundImage: "url(/images/photographer.webp)" }}
+              style={{
+                backgroundImage:
+                  "url(/images/商業攝影_產品_banner-極客網頁設計.png)",
+              }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
                 <Marquee>
@@ -655,6 +659,7 @@ export default function Home() {
               >
                 "設計網站不難 做出好的網站才不容易"
               </h2>
+              <a href="/about-3"> 更多方案</a>
 
               <p
                 className=" text-center text-[18px] leading-[26px] "

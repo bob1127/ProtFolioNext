@@ -261,7 +261,7 @@ const EmblaCarousel = () => {
               <h3 className="pl-5">{currentTitle}</h3>
               <div className=" flex-col flex md:flex-row">
                 <div className="w-full md:w-[55%] p-3 md:p-5">
-                  <a href="https://wwww.zensorrd.com">
+                  <a href="https://www.zensorrd.com">
                     <Image
                       src={currentImageSrc}
                       alt={currentTitle} // Use title as alt text

@@ -1120,15 +1120,14 @@ export default function Blog() {
                         排名的重要因素。Google Speed Insight
                         是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，精確指出需要改進的地方，讓您能輕鬆優化網站。
                       </p>
-                      <div className="main-container medium-paddings mx-auto flex justify-center border ">
-                        <a
-                          id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                          href="/Blogs"
-                          className="simple-link"
-                        >
-                          全部文章
-                        </a>
-                      </div>
+
+                      <a
+                        id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                        href="/Blog-09"
+                        className="simple-link mb-[50px]"
+                      >
+                        相關文章
+                      </a>
                     </div>
                     <div className=" md:flex-row flex-col   flex w-full mx-auto md:w-2/3 xl:w-3/4 p-10 justify-center bottom-section">
                       <div className="left p-0 md:p-4 w-full md:w-1/2">
@@ -1162,7 +1161,7 @@ export default function Blog() {
                           alt=""
                         /> */}
                         <Image
-                          srgc="/images/peromace.webp"
+                          src="/images/網頁結構優化_UI設計_banner設計-極客網頁設計_seo優化.webp"
                           loading="lazy"
                           width={800}
                           placeholder="empty"
