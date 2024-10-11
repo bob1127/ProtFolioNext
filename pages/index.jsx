@@ -83,7 +83,7 @@ export default function Home() {
               "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
             images: [
               {
-                url: "https://www.ultraehp.com/images/index/carousel-img/1920x768/蜂鳥探針主視覺圖-無字1920X768.webp?w=3840?p=undefined",
+                url: "https://www.jeek-webdesign.com.tw",
                 width: 800,
                 height: 600,
                 alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -132,7 +132,7 @@ export default function Home() {
               className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[450px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(/images/網頁結構優化01_UI設計_banner設計-極客網頁設計_seo優化.png)",
+                  "url(/images/網頁設計製作_網頁seo-極客網頁設計.png)",
               }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">

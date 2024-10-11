@@ -117,7 +117,8 @@ export default function Blog() {
                 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
                 data-aos="fade-blur"
               >
-                Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升
+                Photoshop 2024 全新 AI 漸進式填充功能：<br></br>
+                設計效率的革命性提升
               </h1>
               <div className="title-content-date">
                 <div></div>

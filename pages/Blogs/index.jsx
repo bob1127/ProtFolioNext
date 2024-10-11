@@ -188,7 +188,7 @@ export default function Blog() {
             <Image
               alt=""
               loading="eager"
-              src="/images/plan01.webp"
+              src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.png"
               width={1200}
               height={780}
               sizes="100%"
@@ -208,7 +208,7 @@ export default function Blog() {
               }}
               className="tag-text-style category-white"
             >
-              Politics
+              Articles
             </div>
             <h1
               style={{
@@ -235,9 +235,9 @@ export default function Blog() {
                 id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaec-ac15a7a8"
                 className="article-info-item"
               >
-                <div className="opacity-50">Written by</div>
+                <div className="opacity-50">Website</div>
                 <div>&nbsp;</div>
-                <div>Harper</div>
+                <div>Design</div>
               </div>
               <div
                 id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf3-ac15a7a8"
@@ -247,9 +247,9 @@ export default function Blog() {
                 id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf4-ac15a7a8"
                 className="article-info-item"
               >
-                <div className="opacity-50">Published on</div>
+                <div className="opacity-50">Published by</div>
                 <div>&nbsp;</div>
-                <div>Nov 8, 2023</div>
+                <div>Jeek</div>
               </div>
             </div>
             <a
@@ -431,60 +431,71 @@ export default function Blog() {
                       </p>
                     </div>
                   </a>
-                  <div className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8">
-                    <div className="img w-full md:w-[35%] p-5">
-                      <img
-                        src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
-                        alt=""
-                        className="w-full"
-                      />
+                  <div className="article-item group border-t-2 border-b-2 flex flex-col md:flex-row py-8">
+                    <div className="img w-full overflow-hidden md:w-[35%] p-5">
+                      <div className="w-[450px] h-[200px]">
+                        <Image
+                          src="/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png"
+                          placeholder="empty"
+                          className="group-hover:scale-105  overflow-hidden duration-700"
+                          loading="lazy"
+                          width={330}
+                          height={200}
+                          alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
+                        ></Image>
+                      </div>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
-                      <h3 className="text-[18px]">
-                        肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
-                      </h3>
+                      <h3 className="text-[18px]">網頁設計很花錢嗎？</h3>
                       <p className="text-[14px] mt-3 w-[80%]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum aliquid repudiandae nobis quis deleniti
+                        網頁設計真的很花錢嗎？透過精心規劃和明智選擇，不僅能控制成本，還能有效提升品牌形象與業務效益。
                       </p>
                     </div>
                   </div>
-                  <div className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8">
-                    <div className="img w-full md:w-[35%] p-5">
-                      <img
-                        src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
-                        alt=""
-                        className="w-full"
-                      />
+                  <div className="article-item border-t-2 border-b-2 flex flex-col group md:flex-row py-8">
+                    <div className="img w-full overflow-hidden md:w-[35%] p-5">
+                      <div className="w-[450px] h-[200px]">
+                        <Image
+                          src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+                          placeholder="empty"
+                          className="group-hover:scale-105  overflow-hidden duration-700"
+                          loading="lazy"
+                          width={330}
+                          height={200}
+                          alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
+                        ></Image>
+                      </div>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[18px]">
-                        肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
+                        如何增加搜尋引擎曝光度和排名?
                       </h3>
                       <p className="text-[14px] mt-3 w-[80%]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum aliquid repudiandae nobis quis deleniti
+                        優化網站內容與結構，快速提升搜尋引擎排名，增加線上曝光
                       </p>
                     </div>
                   </div>
                   <div
                     c
-                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row group py-8"
                   >
-                    <div className="img w-full md:w-[35%] p-5">
-                      <img
-                        src="https://liginc.co.jp/wp-content/uploads/2024/09/DSC_6144-768x512.jpg"
-                        alt=""
-                        className="w-full"
-                      />
+                    <div className="img w-full overflow-hidden md:w-[38%] p-5">
+                      <div className="w-[410px] h-[220px]">
+                        <Image
+                          src="/images/blog/SEO能帶來哪些好-極客網頁設計.png"
+                          placeholder="empty"
+                          className="group-hover:scale-105  overflow-hidden duration-700"
+                          loading="lazy"
+                          width={330}
+                          height={200}
+                          alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
+                        ></Image>
+                      </div>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
-                      <h3 className="text-[18px]">
-                        肩書きにとらわれない働き方で成長できる。多様なメンバーが“ジャムる”制作会社「ソニックジャム」の裏側とは{" "}
-                      </h3>
+                      <h3 className="text-[18px]">SEO能帶來哪些好處？ </h3>
                       <p className="text-[14px] mt-3 w-[80%]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum aliquid repudiandae nobis quis deleniti
+                        SEO能顯著提高網站的搜尋引擎排名，增加有機流量，提升品牌知名度，並促進業務增長。透過優化策略，您能獲得更高的曝光率和轉換率。
                       </p>
                     </div>
                   </div>

@@ -58,10 +58,10 @@ const HorizontalScroll = () => {
   }, []);
 
   return (
-    <div className="wrapper overflow-x-hidden relative">
+    <div className="wrapper overflow-x-hidden relative ">
       <div className="container flex w-[100vw] md:w-[600vw] xl:w-[1000vw]">
         <svg
-          className="absolute top-48 left-10 w-1/2"
+          className="absolute bottom-[40px] left-[30%] w-1/2"
           viewBox="0 0 900 10"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,10 @@ const HorizontalScroll = () => {
             <rect className="mask" y="-49" height="99" fill="black" />
           </g>
         </svg>
-        <a href="Blog-02" className="w-[400px] duration-150 hover:scale-95">
+        <a
+          href="Blog-02"
+          className="w-[400px] mt-[80px] duration-150 hover:scale-95"
+        >
           <section className="w-[40vw] xl:w-[24vw] bg-white mx-1 xl:mx-5 border border-black p-2">
             <Image
               src="64575947bc71a0cf995a7b34_JEubAaiocBrAyYwOH51Q-ctbfZTy_wnJ_BaDpn7swZc.jpeg"
@@ -107,7 +110,10 @@ const HorizontalScroll = () => {
             </div>
           </section>
         </a>
-        <a href="Blog-02" className="w-[400px] duration-150 hover:scale-95">
+        <a
+          href="Blog-02"
+          className=" mt-[80px]  w-[400px] duration-150 hover:scale-95"
+        >
           <section className="w-[40vw] xl:w-[22vw] bg-white border xl:mx-5 mx-1 border-black p-2">
             <Image
               src="65d3c8696872c4511250050d_WjZwveiN5tkISPOXgh1QGs4btSQ2PftimmpMDBIsMx8.png"
@@ -128,7 +134,10 @@ const HorizontalScroll = () => {
         <div className="txt flex flex-col ">
           <b className="text-[70px] font-extrabold">WEBSITE</b>
         </div>
-        <a href="Blog-02" className="w-[400px] duration-150 hover:scale-95">
+        <a
+          href="Blog-02"
+          className=" mt-[80px]  w-[400px] duration-150 hover:scale-95"
+        >
           <section className="w-[40vw] xl:w-[27vw] bg-white border xl:mx-5 mx-1 border-black p-2">
             <Image
               src="645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
