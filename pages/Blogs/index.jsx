@@ -371,14 +371,21 @@ export default function Blog() {
                       className="w-full group-hover:scale-105 duration-300"
                     />
                   </a>
-                  <div className="w-full md:w-1/2 m-2 rounded-xl overflow-hidden relative">
-                    <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
-                    <img
-                      src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
-                      alt=""
-                      className="w-full"
-                    />
-                  </div>
+                  <a
+                    href="/Blog-01"
+                    className="w-full group md:w-1/2 m-2 rounded-xl overflow-hidden  relative"
+                  >
+                    <div className="cover absolute top-0 left-0 z-[999] w-full h-full "></div>
+                    <Image
+                      width={600}
+                      height={400}
+                      placeholder="empty"
+                      loading="lazy"
+                      alt="網站SEO規劃-極客網頁設計"
+                      src="/images/新網站SEO規劃-極客網頁設計.png"
+                      className="w-full group-hover:scale-105 duration-300"
+                    ></Image>
+                  </a>
                 </div>
                 <div className="others-article pt-8 ">
                   <a

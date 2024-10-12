@@ -108,7 +108,7 @@ export default function Blog() {
                 data-aos="fade-blur"
                 className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  "
               >
-                如何做好網頁SEO？
+                建立設計一個新網站-我該如何做seo規劃？
               </h1>
               <div className="title-content-date">
                 <div data-aos="fade-blur">
@@ -138,9 +138,10 @@ export default function Blog() {
             <Image
               placeholder="empty rounded-md"
               loading="lazy"
-              width={900}
+              width={800}
               height={500}
-              src="/images/blog/splien3d.png"
+              alt="新網站SEO規劃-極客網頁設計"
+              src="/images/blog/新網站SEO規劃-極客網頁設計.png"
             ></Image>
           </div>
 
@@ -155,106 +156,72 @@ export default function Blog() {
             <br></br>
             <div className="">
               <div className="imgText mt-[20px]">
-                <div className=" text-[32px]  leading-[32px]   text-[#000000]">
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
                   <span className="text-[32px] font-bold text-black mt-[30px]">
-                    一.
+                    1.
                   </span>
-                  SEO vs SEM
-                </div>
-                <div
-                  data-aos="fade-blur"
-                  className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]"
-                >
-                  差異與優缺點比較 SEO 和 SEM
-                  兩者經常被混淆，但它們有著不同的作用。SEO
-                  是透過自然方式提升網站排名，而 SEM（Search Engine
-                  Marketing，搜尋引擎行銷）則是透過付費廣告來提高曝光率。
-                </div>
-                <div className="feature">
-                  <div className="left rounded-2xl border border-black bg-[#f4f1f1]">
-                    <div className="top flex justify-center p-5">
-                      <h2>SEO</h2>
-                    </div>
-                    <div className="bottom flex ">
-                      <div className="py-5 px-8">
-                        <span className="text-[24px] font-bold">優點：</span>
-                        <ul className="m-0 p-0">
-                          <li className="mt-3">
-                            <span className="font-bold">長期效果：</span>
-                            <br></br>
-                            只要優化得當，SEO
-                            可以持續為你帶來免費流量，效果穩定。
-                          </li>
-                          <li className="mt-3">
-                            <span className="font-bold">信任度高:</span>
-                            <br></br>
-                            自然搜索結果往往比廣告更容易取得使用者信任。
-                          </li>
-                          <li className="mt-3">
-                            <span className="font-bold">成本低：</span>
-                            <br></br>
-                            雖然需要時間投入，但不需要為每次點擊支付費用。
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="py-5 px-8">
-                        <span className="text-[24px] font-bold">缺點：</span>
-                        <ul className="m-0 p-0">
-                          <li>
-                            <span className="font-bold">見效較慢：</span>
-                            <br></br>
-                            SEO 需要時間積累，短期內可能看不到明顯效果。
-                          </li>
-                          <li>
-                            <span className="font-bold">競爭激烈:</span>
-                            <br></br>
-                            一些熱門關鍵字競爭者眾多，提升排名較難。
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="left my-[20px] rounded-2xl border border-black bg-[#f4f1f1]">
-                    <div className="top flex justify-center p-5">
-                      <h2>SEM</h2>
-                    </div>
-                    <div className="bottom flex ">
-                      <div className="py-5 px-8">
-                        <span className="text-[24px] font-bold">優點：</span>
-                        <ul className="m-0 p-0">
-                          <li className="mt-3">
-                            <span className="font-bold">見效快:</span>
-                            <br></br>
-                            只要設置好廣告，排名可以立即提升，快速增加流量。
-                          </li>
-                          <li className="mt-3">
-                            <span className="font-bold">可控性高:</span>
-                            <br></br>
-                            可以精確控制廣告預算、受眾和曝光時間。
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="py-5 px-8">
-                        <span className="text-[24px] font-bold">缺點：</span>
-                        <ul className="m-0 p-0">
-                          <li className="mt-3">
-                            <span className="font-bold">成本高：</span>
-                            <br></br>
-                            每次點擊都要支付費用，長期來看成本較高。
-                          </li>
-                          <li className="mt-3">
-                            <span className="font-bold">依賴廣告預算:</span>
-                            <br></br>
-                            一旦停止投放廣告，流量也隨之停止。
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  選擇可靠的主機商
                 </div>
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-                  總體來說，SEO 是一種適合長期發展的策略，而 SEM
-                  則適合希望短期內快速獲得流量的情況。很多企業會將兩者結合使用，以達到最好的效果。
+                  •
+                  選擇一個穩定且快速的主機商對於網站的SEO至關重要。穩定的主機能確保網站持續在線，避免因為主機不穩定導致的排名下降。快速的伺服器速度也會提升使用者體驗，並進而提高搜尋引擎排名。可以考慮知名的主機供應商，如Bluehost或SiteGround等，確保能提供優質的客戶服務和良好的性能。
+                </div>
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    2.
+                  </span>
+                  確認網站網域名稱使用HTTPS（SSL加密）
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  選擇一個穩定且快速的主機商對於網站的SEO至關重要。穩定的主機能確保網站持續在線，避免因為主機不穩定導致的排名下降。快速的伺服器速度也會提升使用者體驗，並進而提高搜尋引擎排名。可以考慮知名的主機供應商，如Bluehost或SiteGround等，確保能提供優質的客戶服務和良好的性能。
+                </div>
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    3.
+                  </span>
+                  現代化的網頁設計
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  網站設計不僅僅是美觀，更要符合SEO和使用者體驗。現代化的設計要簡單直觀，讓訪客能快速找到所需資訊。重視排版、色彩和圖片搭配，並確保設計符合行動端，這樣不僅能讓網站看起來更專業，也會讓用戶停留時間更長，有助於排名。
+                </div>
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    4.
+                  </span>
+                  安裝SEO分析工具：GA4和Google Search Console
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  • 設置GA4（Google Analytics 4）和Google Search
+                  Console，這些工具可以幫助你追蹤訪客來源、瀏覽行為和排名變化。GA4能提供豐富的數據洞察，而Google
+                  Search
+                  Console能協助你檢測並解決網站的SEO問題，這些資料可以幫助你針對SEO進行優化。
+                </div>
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    5.
+                  </span>
+                  優化網站速度和使用者體驗
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  速度是影響SEO的關鍵因素之一。當網站載入速度慢，訪客容易流失並降低排名。透過壓縮圖片、使用快取，以及選擇快速的主機來提升網站速度。此外，提升使用者體驗也會增加停留時間和互動次數，有助於SEO。建議定期測試網站速度（例如使用Google
+                  PageSpeed Insights）並持續優化。
+                </div>
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    6.
+                  </span>
+                  移動端的支持與使用者體驗
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  越來越多的用戶使用行動設備瀏覽網站，因此確保網站在行動端有良好的顯示效果至關重要。使用響應式設計可以讓網站自動適應不同裝置的螢幕大小，這樣不僅提升了行動端的使用體驗，也會在搜尋引擎排名中獲得優勢。Google非常重視行動端體驗，因此這點絕對不容忽視。
+                </div>
+
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  這些步驟能夠幫助你建立一個更具競爭力的網站，並在搜尋引擎上獲得更好的排名。SEO是個長期的過程，只要持續努力，就能逐步看到成果！
                 </div>
                 {/* <Image
                   src="/images/blog/splineLogin.png"
@@ -268,35 +235,76 @@ export default function Blog() {
               </div>
 
               <div className="imgText mt-[60px]">
-                <h2 className="text-[32px] font-bold"> 二.如何進行SEO操作？</h2>
-                <p className="text-[16px]">想要做好SEO，有幾個關鍵步驟：</p>
+                <h2 className="text-[32px] font-bold">
+                  {" "}
+                  開始進行你網站的內容規劃吧！！
+                </h2>
+                <h2 className="text-[32px] font-bold"> 網頁相關關鍵字規劃</h2>
 
-                <h3 className="text-[20px] ">1. 關鍵字研究</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  找出你想讓網站排名的關鍵字，也就是使用者可能會搜尋的詞彙。工具如
-                  Google Keyword Planner
-                  能幫助你找到相關詞彙。關鍵字最好與你的產品或服務相關，並且具有一定搜尋量。
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    1.
+                  </span>
+                  瞭解你的目標受眾
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  首先，定義你的目標受眾。他們是誰？他們可能會使用哪些關鍵詞來搜尋你的產品或服務？站在他們的角度思考，可以幫助你找到符合需求的相關關鍵詞。
                 </div>
 
-                <h3 className="text-[20px] ">2. 優化內容</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  網站內容要豐富、有價值，並且自然地融入關鍵字。不要只堆砌關鍵字，Google
-                  更重視對用戶有幫助的內容。
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    2.
+                  </span>
+                  使用關鍵詞工具進行研究
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  • 借助工具像Google Keyword
+                  Planner、Ahrefs、或Ubersuggest，找到與你的業務相關且搜尋量高的關鍵詞。這些工具能夠告訴你哪些詞語熱門，但競爭較低，是理想的選擇。
                 </div>
 
-                <h3 className="text-[20px] ">3. 技術優化</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  確保網站運行速度快、手機友好（響應式設計），並且網站結構清晰。使用如meta
-                  description、alt tags、URL友善等來提高網站的技術分數。
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    3.
+                  </span>
+                  關鍵詞分類
                 </div>
-
-                <h3 className="text-[20px] ">4 . 外部連結（Backlinks）</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  外部網站鏈接到你的網站可以增強你的信任度。多爭取高品質的外部連結會有助於提升你的排名。
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  將關鍵詞分成主要關鍵詞和次要關鍵詞。主要關鍵詞應該與你網站的核心內容最相關；次要關鍵詞則用於細分內容或目標不同用戶需求。
                 </div>
-                <h3 className="text-[20px] ">5. 持續更新</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  搜尋引擎喜歡經常更新的網站，所以要定期更新內容或發佈新的文章，保持活躍。
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    4.
+                  </span>
+                  考慮長尾關鍵詞
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  長尾關鍵詞（例如「如何選擇可靠的主機商」）具有更低的競爭，並更能精確匹配特定搜尋意圖。這些詞雖然搜尋量較低，但往往能帶來更高的轉換率。
+                </div>
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    5.
+                  </span>
+                  分析競爭對手的關鍵詞
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  檢查競爭對手的網站，看看他們使用了哪些關鍵詞，哪些頁面排名較高。可以通過工具或直接在搜尋引擎上搜尋，了解他們如何利用關鍵詞獲得曝光。
+                </div>
+                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                    6.
+                  </span>
+                  為內容優化關鍵詞
+                </div>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  •
+                  一旦確定了適合的關鍵詞，就將它們自然地融入到標題、描述、內文和圖片Alt標籤中。確保這些關鍵詞出現的頻率和位置能夠協助SEO，但避免過度使用，以免被搜尋引擎懲罰。
+                </div>
+                <div className=" text-[18px] mt-[30px] leading-[32px]   text-[#000000]">
+                  這些步驟將幫助你更好地進行關鍵詞規劃，讓網站更具曝光度並吸引到更精準的訪客。
                 </div>
               </div>
 
