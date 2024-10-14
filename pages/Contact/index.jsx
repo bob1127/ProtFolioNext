@@ -33,10 +33,7 @@ export default function Home() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,";
 
   return (
-    <div
-      className=" py-[100px] flex justify-center px-[40px] items-center"
-      data-aos="fade-up"
-    >
+    <div className=" py-[100px] flex justify-center  items-center">
       <NextSeo
         title="關於我們-極客網頁設計｜JEEK WEBDESIGN"
         description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
@@ -54,19 +51,39 @@ export default function Home() {
           ],
         }}
       />
-      <div className="flex flex-col">
-        <Image
+      <div className="flex flex-col ">
+        {/* <Image
           loading="lazy"
           placeholder="empty"
           className="border border-black"
           width={1200}
           height={700}
           src="/images/contact關於我們heroImg-極客網頁設計.jpg"
-        ></Image>
-        <div className="py-[80px]">
-          <NewsletterForm />
+        ></Image> */}
+        <div className="form rounded-2xl py-[150px] mt-[-100px] md:flex-row flex-col flex h-[150vh] bg-[#6ea4e7]">
+          <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex justify-center">
+            <div className="txt flex flex-col items-center justify-center">
+              <h3 className="text-[40px] font-bold">
+                OKUIBUKI GROUP RECRUITMENT SITE
+              </h3>
+              <p className="text-[30px] font-bold  mt-3">エントリーフォーム</p>
+              <span className="text-[14px] mt-[60px]">
+                弊社に興味をお持ちいただき、ありがとうございます。
+                エントリーフォームにご記入いただき、お送りいただいた内容を確認後、採用担当よりご連絡させていただきます。
+                ＊ は必須入力項目です。
+              </span>
+            </div>
+          </div>
+          <div className="right w-full md:w-[60%] h-[100vh] p-10">
+            <div className="from flex justify-center items-center  h-[80vh] bg-white p-[40px] border-black-rgba  border">
+              <NewsletterForm />
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-2">
+        {/* <div className="py-[80px]">
+          <NewsletterForm />
+        </div> */}
+        {/* <div className="flex flex-col gap-2">
           <Accordion isCompact>
             <AccordionItem
               key="1"
@@ -97,7 +114,7 @@ export default function Home() {
               ></Image>
             </AccordionItem>
           </Accordion>
-        </div>
+        </div> */}
       </div>
     </div>
   );

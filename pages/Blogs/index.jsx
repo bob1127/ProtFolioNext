@@ -185,15 +185,18 @@ export default function Blog() {
             }}
             className="article-hero-bg"
           >
-            <Image
-              alt=""
-              loading="eager"
-              src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.png"
-              width={1200}
-              height={780}
-              sizes="100%"
-              className="img-cover"
-            ></Image>
+            <figure>
+              {" "}
+              <Image
+                alt=""
+                loading="eager"
+                src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.png"
+                width={1200}
+                height={780}
+                sizes="100%"
+                className="img-cover"
+              ></Image>
+            </figure>
 
             <div className="gradient-overlay-absolute" />
           </div>
@@ -376,15 +379,18 @@ export default function Blog() {
                     className="w-full group md:w-1/2 m-2 rounded-xl overflow-hidden  relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full "></div>
-                    <Image
-                      width={600}
-                      height={400}
-                      placeholder="empty"
-                      loading="lazy"
-                      alt="網站SEO規劃-極客網頁設計"
-                      src="/images/新網站SEO規劃-極客網頁設計.png"
-                      className="w-full group-hover:scale-105 duration-300"
-                    ></Image>
+                    <figure>
+                      {" "}
+                      <Image
+                        width={600}
+                        height={400}
+                        placeholder="empty"
+                        loading="lazy"
+                        alt="網站SEO規劃-極客網頁設計"
+                        src="/images/新網站SEO規劃-極客網頁設計.png"
+                        className="w-full group-hover:scale-105 duration-300"
+                      ></Image>
+                    </figure>
                   </a>
                 </div>
                 <div className="others-article pt-8 ">
@@ -441,15 +447,17 @@ export default function Blog() {
                   <div className="article-item group border-t-2 border-b-2 flex flex-col md:flex-row py-8">
                     <div className="img w-full overflow-hidden md:w-[35%] p-5">
                       <div className="w-[450px] h-[200px]">
-                        <Image
-                          src="/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png"
-                          placeholder="empty"
-                          className="group-hover:scale-105  overflow-hidden duration-700"
-                          loading="lazy"
-                          width={330}
-                          height={200}
-                          alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
-                        ></Image>
+                        <figure>
+                          <Image
+                            src="/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png"
+                            placeholder="empty"
+                            className="group-hover:scale-105  overflow-hidden duration-700"
+                            loading="lazy"
+                            width={330}
+                            height={200}
+                            alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
+                          ></Image>
+                        </figure>
                       </div>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
@@ -462,15 +470,18 @@ export default function Blog() {
                   <div className="article-item border-t-2 border-b-2 flex flex-col group md:flex-row py-8">
                     <div className="img w-full overflow-hidden md:w-[35%] p-5">
                       <div className="w-[450px] h-[200px]">
-                        <Image
-                          src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
-                          placeholder="empty"
-                          className="group-hover:scale-105  overflow-hidden duration-700"
-                          loading="lazy"
-                          width={330}
-                          height={200}
-                          alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
-                        ></Image>
+                        <figure>
+                          {" "}
+                          <Image
+                            src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+                            placeholder="empty"
+                            className="group-hover:scale-105  overflow-hidden duration-700"
+                            loading="lazy"
+                            width={330}
+                            height={200}
+                            alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
+                          ></Image>
+                        </figure>
                       </div>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
@@ -488,15 +499,18 @@ export default function Blog() {
                   >
                     <div className="img w-full overflow-hidden md:w-[38%] p-5">
                       <div className="w-[410px] h-[220px]">
-                        <Image
-                          src="/images/blog/SEO能帶來哪些好-極客網頁設計.png"
-                          placeholder="empty"
-                          className="group-hover:scale-105  overflow-hidden duration-700"
-                          loading="lazy"
-                          width={330}
-                          height={200}
-                          alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
-                        ></Image>
+                        <figure>
+                          {" "}
+                          <Image
+                            src="/images/blog/SEO能帶來哪些好-極客網頁設計.png"
+                            placeholder="empty"
+                            className="group-hover:scale-105  overflow-hidden duration-700"
+                            loading="lazy"
+                            width={330}
+                            height={200}
+                            alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
+                          ></Image>
+                        </figure>
                       </div>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">

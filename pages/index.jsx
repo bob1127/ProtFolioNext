@@ -193,13 +193,15 @@ export default function Home() {
           </div>
           <div className="right   h-full flex flex-col  w-full lg:w-1/2">
             <div className="top h-1/2  lg:border-t-0 border-t-2 flex-col w-full border-b-2 border-black">
-              <Image
-                src="/images/heroimg.webp"
-                width={800}
-                height={500}
-                placeholder="empty"
-                priority
-              ></Image>
+              <figure>
+                <Image
+                  src="/images/heroimg.webp"
+                  width={800}
+                  height={500}
+                  placeholder="empty"
+                  priority
+                ></Image>
+              </figure>
             </div>
             <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h2 className=" text-center">"創意無限，讓您的品牌脫穎而出。"</h2>
@@ -249,13 +251,15 @@ export default function Home() {
                 </p>
               </div>
               <div className="img my-5">
-                <Image
-                  src="realistic-set-monitor-laptop-tablet-260nw-2430661189.jpg"
-                  loader={imageLoader01}
-                  loading="lazy"
-                  width={500}
-                  height={300}
-                />
+                <figure>
+                  <Image
+                    src="realistic-set-monitor-laptop-tablet-260nw-2430661189.jpg"
+                    loader={imageLoader01}
+                    loading="lazy"
+                    width={500}
+                    height={300}
+                  />
+                </figure>
               </div>
               <div className=" overflow-x-scroll py-5 w-full  ">
                 <div className="w-[1000px] 2xl:w-full grid grid-cols-4 2xl:grid-cols-2  gap-2">
@@ -305,13 +309,16 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-1/2">
-              <Image
-                src="/images/移動設備對於seo重要性.webp"
-                loading="lazy"
-                placeholder="empty"
-                width={800}
-                height={500}
-              />
+              <figure>
+                {" "}
+                <Image
+                  src="/images/移動設備對於seo重要性.webp"
+                  loading="lazy"
+                  placeholder="empty"
+                  width={800}
+                  height={500}
+                />
+              </figure>
             </div>
           </div>
         </section>
@@ -384,11 +391,14 @@ export default function Home() {
                 Hero Image
                 和高質量的產品攝影來強化品牌形象並吸引訪客。這種多層次的視覺策略將幫助您在用戶進入網站的第一時間就感受到品牌的獨特魅力。
               </p> */}
-              <Image
-                src="/images/3d產品模型01-極客網頁設計|Blender3D-2.webp"
-                width={900}
-                height={500}
-              ></Image>
+              <figure>
+                {" "}
+                <Image
+                  src="/images/3d產品模型01-極客網頁設計|Blender3D-2.webp"
+                  width={900}
+                  height={500}
+                ></Image>
+              </figure>
             </div>
 
             <div className="bottom  bg-white flex px-[20px] md:px-0 py-[50px]  items-center   h-1/2 justify-start flex-col w-full ">
@@ -417,14 +427,17 @@ export default function Home() {
                     3d-model
                   </a>
                 </div>
-                <Image
-                  src="/668e6aca4fb399ee1389df93_stada-img-3-p-1600.png"
-                  className="  duration-500 hover:scale-105 z-1 top-0 left-0"
-                  loaging="lazy"
-                  width={800}
-                  height={400}
-                  loader={imageLoader}
-                />
+                <figure>
+                  {" "}
+                  <Image
+                    src="/668e6aca4fb399ee1389df93_stada-img-3-p-1600.png"
+                    className="  duration-500 hover:scale-105 z-1 top-0 left-0"
+                    loaging="lazy"
+                    width={800}
+                    height={400}
+                    loader={imageLoader}
+                  />
+                </figure>
               </div>
               <div className="img"></div>
             </div>
@@ -516,29 +529,35 @@ export default function Home() {
                   產品攝影
                 </a>
               </div>
-              <Image
-                className="hover:scale-105 duration-500"
-                width={800}
-                src="/images/產品攝影01_極客網頁設計_產品商業拍攝.webp"
-                placeholder="empty"
-                loading="lazy"
-                alt="極客網頁設計_產品商業拍攝"
-                height={500}
-              />
+              <figure>
+                {" "}
+                <Image
+                  className="hover:scale-105 duration-500"
+                  width={800}
+                  src="/images/產品攝影01_極客網頁設計_產品商業拍攝.webp"
+                  placeholder="empty"
+                  loading="lazy"
+                  alt="極客網頁設計_產品商業拍攝"
+                  height={500}
+                />
+              </figure>
             </div>
             <div className="border-2 overflow-hidden border-black w-full relative">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
                 <p className="text-white  text-[22px] text-center">網頁設計</p>
               </div>
-              <Image
-                className="hover:scale-105 duration-500"
-                width={800}
-                src="/images/網頁設計02_極客網頁設計_網頁設計建置.webp"
-                placeholder="empty"
-                loading="lazy"
-                alt="極客網頁設計_網頁設計建置"
-                height={500}
-              />
+              <figure>
+                {" "}
+                <Image
+                  className="hover:scale-105 duration-500"
+                  width={800}
+                  src="/images/網頁設計02_極客網頁設計_網頁設計建置.webp"
+                  placeholder="empty"
+                  loading="lazy"
+                  alt="極客網頁設計_網頁設計建置"
+                  height={500}
+                />
+              </figure>
             </div>
             <div className="border-2 overflow-hidden border-black relative w-full ">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
@@ -546,15 +565,18 @@ export default function Home() {
                   3D建模應用
                 </p>
               </div>
-              <Image
-                className="hover:scale-105 duration-500"
-                width={800}
-                src="/images/3D產品03_極客網頁設計_產品建模.webp"
-                placeholder="empty"
-                loading="lazy"
-                alt="極客網頁設計_產品建模"
-                height={500}
-              />
+              <figure>
+                {" "}
+                <Image
+                  className="hover:scale-105 duration-500"
+                  width={800}
+                  src="/images/3D產品03_極客網頁設計_產品建模.webp"
+                  placeholder="empty"
+                  loading="lazy"
+                  alt="極客網頁設計_產品建模"
+                  height={500}
+                />
+              </figure>
             </div>
 
             <div className="border-2 flex flex-col justify-center items-center py-[50px] px-[20px] xl:p-5  xl:hidden">
@@ -617,14 +639,18 @@ export default function Home() {
                 </p>
                 <p className="text-[20px] mt-3">◉設計與功能受限於主題和插件</p>
                 <p className="text-[20px] mt-3">◉性能優化挑戰大</p>
-                <Image
-                  src="/images/portfolio01.webp"
-                  loading="lazy"
-                  alt="Wordpresswebsite"
-                  width={500}
-                  height={500}
-                  placeholder="empty"
-                ></Image>
+
+                <figure>
+                  {" "}
+                  <Image
+                    src="/images/portfolio01.webp"
+                    loading="lazy"
+                    alt="Wordpresswebsite"
+                    width={500}
+                    height={500}
+                    placeholder="empty"
+                  ></Image>
+                </figure>
               </div>
 
               <div
@@ -637,14 +663,17 @@ export default function Home() {
                 <p className="text-[20px] mt-3">◉更快的網站速度</p>
                 <p className="text-[20px] mt-3">◉無限的設計自由與靈活性</p>
                 <p className="text-[20px] mt-3">◉高效的內容管理</p>
-                <Image
-                  src="/images/wordpress＿無頭網站效能更佳_極客網頁設計_網站製作.webp"
-                  loading="lazy"
-                  alt="wordpress＿無頭網站效能更佳_極客網頁設計_網站製作"
-                  width={500}
-                  height={500}
-                  placeholder="empty"
-                ></Image>
+                <figure>
+                  {" "}
+                  <Image
+                    src="/images/wordpress＿無頭網站效能更佳_極客網頁設計_網站製作.webp"
+                    loading="lazy"
+                    alt="wordpress＿無頭網站效能更佳_極客網頁設計_網站製作"
+                    width={500}
+                    height={500}
+                    placeholder="empty"
+                  ></Image>
+                </figure>
               </div>
             </div>
           </div>

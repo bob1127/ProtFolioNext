@@ -43,6 +43,7 @@ export const PrevButton = (props) => {
     <button
       className="embla__button embla__button--prev"
       type="button"
+      aria-label="button"
       {...restProps}
     >
       <svg className="embla__button__svg" viewBox="0 0 532 532">
@@ -63,6 +64,7 @@ export const NextButton = (props) => {
     <button
       className="embla__button bg-transparent inline-flex items-center justify-center cursor-pointer border-0 p-0 m-0 w-[3.6rem] h-[3.6rem] rounded-full z-[1] text-body shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] embla__button--next"
       type="button"
+      aria-label="button"
       style={{
         WebkitTapHighlightColor:
           "rgba(var(--text-high-contrast-rgb-value), 0.5)",
