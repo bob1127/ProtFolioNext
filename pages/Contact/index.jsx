@@ -60,14 +60,14 @@ export default function Home() {
           height={700}
           src="/images/contact關於我們heroImg-極客網頁設計.jpg"
         ></Image> */}
-        <div className="form rounded-2xl py-[150px] mt-[-100px] md:flex-row flex-col flex h-[150vh] bg-[#6ea4e7]">
+        <div className="form rounded-[40px] py-[150px] mt-[-100px] md:flex-row flex-col flex h-[150vh] bg-[#6ea4e7]">
           <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex justify-center">
             <div className="txt flex flex-col items-center justify-center">
               <h3 className="text-[40px] font-bold">
                 OKUIBUKI GROUP RECRUITMENT SITE
               </h3>
               <p className="text-[30px] font-bold  mt-3">エントリーフォーム</p>
-              <span className="text-[14px] mt-[60px]">
+              <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">
                 弊社に興味をお持ちいただき、ありがとうございます。
                 エントリーフォームにご記入いただき、お送りいただいた内容を確認後、採用担当よりご連絡させていただきます。
                 ＊ は必須入力項目です。

@@ -87,7 +87,7 @@ const TodoItem = ({
           <FiClock />
           <span>{time}</span>
         </div> */}
-        <div className="flex items-center gap-1.5 whitespace-nowrap rounded bg-zinc-800 px-1.5 py-1 text-xs text-zinc-400">
+        <div className="flex items-center gap-1.5 whitespace-nowrap rounded bg-zinc-800 px-1.5 py-1 text-xs text-white">
           NT.{price}
         </div>
         <button

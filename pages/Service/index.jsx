@@ -983,6 +983,13 @@ export default function Blog() {
                       則透過熱圖和錄影視覺化使用者互動。這些工具能幫助您提升網站曝光率和使用者體驗，達到最佳
                       SEO 效果。
                     </p>
+                    <a
+                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                      href="/Blog-09"
+                      className="simple-link"
+                    >
+                      Seo成效分析
+                    </a>
                   </div>
                 </div>
               </div>
@@ -993,10 +1000,10 @@ export default function Blog() {
                   <div className="main-container medium-paddings ">
                     <a
                       id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      href="/Blog-05"
+                      href="/Blog-01"
                       className="simple-link"
                     >
-                      More Info
+                      新網站如何做Seo
                     </a>
                   </div>
                 </div>
@@ -1004,7 +1011,7 @@ export default function Blog() {
             </section>
             <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
               <a
-                href="/Blog-09"
+                href="/Blog-01"
                 className="xl:w-1/2 w-full mr-4 hover:shadow-custom
                 border-1
                 

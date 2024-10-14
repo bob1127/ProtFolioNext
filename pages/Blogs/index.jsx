@@ -185,19 +185,16 @@ export default function Blog() {
             }}
             className="article-hero-bg"
           >
-            <figure>
-              {" "}
-              <Image
-                alt=""
-                loading="eager"
-                src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.png"
-                width={1200}
-                height={780}
-                sizes="100%"
-                className="img-cover"
-              ></Image>
-            </figure>
-
+            {" "}
+            <Image
+              alt=""
+              loading="eager"
+              src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.png"
+              width={1200}
+              height={780}
+              sizes="100%"
+              className="img-cover"
+            ></Image>
             <div className="gradient-overlay-absolute" />
           </div>
           <div></div>
