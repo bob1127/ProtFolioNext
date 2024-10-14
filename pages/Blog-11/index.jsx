@@ -28,7 +28,8 @@ export default function Blog() {
         description="了解如何透過關鍵 SEO 成效指標來提升網站排名，並獲得更多流量。本文深入解析網站數據分析，為您帶來更精準的 SEO 策略建議！"
         openGraph={{
           url: "www.jeek-webdesign.com",
-          title: "分析網頁 SEO 成效指標-Blog文章｜極客網頁設計",
+          title:
+            "   如何創建 Google Tag Manager (GTM) 並串接 Google Analytics 4 ",
           description:
             "了解如何透過關鍵 SEO 成效指標來提升網站排名，並獲得更多流量。本文深入解析網站數據分析，為您帶來更精準的 SEO 策略建議！",
           images: [
@@ -36,7 +37,7 @@ export default function Blog() {
               url: "www.jeek-webdesign.com.tw/",
               width: 1200,
               height: 630,
-              alt: "社交媒體行銷策略",
+              alt: "",
             },
           ],
           site_name: "極客網頁設計",
@@ -187,6 +188,7 @@ export default function Blog() {
                   </li>
                 </ul>
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/建立帳戶-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -197,6 +199,7 @@ export default function Blog() {
                 ></Image>
                 <b className="text-[16px] mt-2">建立一個容器帳戶</b>
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/新增帳戶名稱-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -207,6 +210,7 @@ export default function Blog() {
                 ></Image>
                 <b className="text-[16px] mt-2">帳戶名稱設定</b>
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/容器名稱-裝置類型.png"
                   width={800}
                   loading="lazy"
@@ -249,6 +253,7 @@ export default function Blog() {
                   </li>
                 </ul>
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/點擊標籤並新增-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -261,6 +266,7 @@ export default function Blog() {
                   點擊左側的 "標籤" 選項，再點擊 "新增"
                 </b>
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/選擇代碼類型-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -274,6 +280,7 @@ export default function Blog() {
                 </b>
 
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/選擇ga4-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -284,6 +291,7 @@ export default function Blog() {
                 ></Image>
 
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/選擇ga4-極客網頁設計02.png"
                   width={800}
                   loading="lazy"
@@ -314,6 +322,7 @@ export default function Blog() {
                   </li>
                 </ul>
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/點擊左下角管理員-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -325,6 +334,7 @@ export default function Blog() {
                 <b className="text-[16px] mt-2">點擊左下角管理員</b>
 
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/找到你的評估id-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -337,6 +347,7 @@ export default function Blog() {
                   找到你的評估id 並複製，這個 ID 將用於 GTM 中標籤設定。
                 </b>
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/找不到google代碼.png"
                   width={800}
                   loading="lazy"
@@ -350,6 +361,7 @@ export default function Blog() {
                 </b>
 
                 <Image
+                  data-aos="fade-blur"
                   src="/images/blog/Blog11/順利新增ga4代碼.png"
                   width={800}
                   loading="lazy"
@@ -384,6 +396,56 @@ export default function Blog() {
                   Analytics 的報告中看到即時數據。
                 </li>
               </ul>
+
+              <Image
+                data-aos="fade-blur"
+                src="/images/blog/Blog11/發布代碼-極客網頁設計.png"
+                width={800}
+                loading="lazy"
+                placeholder="empty"
+                className="mt-[40px]"
+                alt="發布代碼-極客網頁設計"
+                height={600}
+              ></Image>
+              <b className="text-[16px] mt-2">
+                點擊發布代碼，可以新增版本名稱和內容
+              </b>
+              <Image
+                data-aos="fade-blur"
+                src="/images/blog/Blog11/發布此版本代碼-極客網頁設計.png"
+                width={800}
+                loading="lazy"
+                placeholder="empty"
+                className="mt-[40px]"
+                alt="發布此版本代碼-極客網頁設計"
+                height={600}
+              ></Image>
+              <b className="text-[16px] mt-2">發布此版本代碼</b>
+
+              <Image
+                data-aos="fade-blur"
+                src="/images/blog/Blog11/成功新增發布的代碼-極客網頁設計.png"
+                width={800}
+                loading="lazy"
+                placeholder="empty"
+                className="mt-[40px]"
+                alt="成功新增發布的代碼-極客網頁設計.png"
+                height={600}
+              ></Image>
+
+              <Image
+                data-aos="fade-blur"
+                src="/images/blog/Blog11/成功新增發布的代碼02-極客網頁設計.png"
+                width={800}
+                loading="lazy"
+                placeholder="empty"
+                className="mt-[40px] mb-[20px]"
+                alt="成功新增發布的代碼-極客網頁設計.png"
+                height={600}
+              ></Image>
+              <b className="text-[26px] mt-[20px]">
+                這樣就順利新增ga4代碼啦！！
+              </b>
             </div>
           </div>
         </div>

@@ -8,16 +8,16 @@ const path = require('path');
   // 模擬靜態路徑，您可以自定義此路徑清單
   const staticPaths = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
-    { url: '/Contact', changefreq: 'monthly', priority: 0.8 },
-    { url: '/about', changefreq: 'monthly', pridority: 0.8 },
-        { url: '/about-2', changefreq: 'monthly', priority: 0.8 },
-            { url: '/about-3', changefreq: 'monthly', priority: 0.8 },
-                { url: '/Service', changefreq: 'monthly', priority: 0.8 },
+    { url: '/Contact', changefreq: 'daily', priority: 0.8 },
+    { url: '/about', changefreq: 'daily', pridority: 0.8 },
+        { url: '/about-2', changefreq: 'daily', priority: 0.8 },
+            { url: '/about-3', changefreq: 'daily', priority: 0.8 },
+                { url: '/Service', changefreq: 'daily', priority: 0.8 },
     // 您可以加入更多靜態頁面，或從 API 獲取動態路徑
   ];
 
   // 創建 Sitemap Stream
-  const sitemap = new SitemapStream({ hostname: 'https://yourwebsite.com' });
+  const sitemap = new SitemapStream({ hostname: 'https://jeek-webdesign.com.tw' });
 
   // 添加路徑至 sitemap
   staticPaths.forEach((path) => {
