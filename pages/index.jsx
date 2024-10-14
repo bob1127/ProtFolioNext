@@ -70,7 +70,7 @@ export default function Home() {
           property="og:image"
           content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
         />
-        <meta property="og:url" content="https://prot-folio-next.vercel.app/" />
+        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
       </Head>
       <div>

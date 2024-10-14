@@ -89,19 +89,21 @@ const HorizontalScroll = () => {
           </g>
         </svg>
         <a
-          href="Blog-02"
+          href="Blog-01"
           className="w-[400px] mt-[80px] duration-150 hover:scale-95"
         >
           <section className="w-[40vw] xl:w-[24vw] bg-white mx-1 xl:mx-5 border border-black p-2">
             <Image
-              src="64575947bc71a0cf995a7b34_JEubAaiocBrAyYwOH51Q-ctbfZTy_wnJ_BaDpn7swZc.jpeg"
-              loader={imageLoader}
+              src="/images/新網站SEO規劃-極客網頁設計.png"
+              loading="lazy"
+              placeholder="empty"
+              alt="新網站SEO規劃-極客網頁設計"
               width={600}
               height={600}
             />
             <div className="txt group p-[10px] xl:p-[20px]">
               <b className="text-[14px] xl:text-[20px] scale-100 group-hover:scale-105 font-bold">
-                網頁設計會很花錢嗎？
+                你的新網站需要SEO規劃
               </b>
               <p>lorem</p>
               <p className="text-[10px] xl:text-[14px] leading-normal">
@@ -111,19 +113,21 @@ const HorizontalScroll = () => {
           </section>
         </a>
         <a
-          href="Blog-02"
+          href="Blog-03"
           className=" mt-[80px]  w-[400px] duration-150 hover:scale-95"
         >
           <section className="w-[40vw] xl:w-[22vw] bg-white border xl:mx-5 mx-1 border-black p-2">
             <Image
-              src="65d3c8696872c4511250050d_WjZwveiN5tkISPOXgh1QGs4btSQ2PftimmpMDBIsMx8.png"
-              loader={imageLoader}
+              src="/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+              placeholder="empty"
+              alt="如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化"
+              loading="lazy"
               width={600}
               height={600}
             />
             <div className="txt group px-0 xl:p-[20px]">
               <b className="text-[14px] xl:text-[20px] scale-100 group-hover:scale-105 font-bold">
-                網頁設計會很花錢嗎？
+                如何增加搜尋引擎曝光度和排名?
               </b>
               <p className="text-[10px] xl:text-[14px] leading-normal">
                 在當今數位化的時代，擁有一個能夠吸引流量並轉化為潛在客戶的網站已成為每個企業成功的關鍵。搜尋引擎優化（SEO）不僅是提升網站曝光度的工具，更是確保您的業務在競爭中脫穎而出的必要策略。本文將深入探討如何透過優化網站設計來增加搜尋引擎的曝光度和排名。
@@ -140,9 +144,11 @@ const HorizontalScroll = () => {
         >
           <section className="w-[40vw] xl:w-[27vw] bg-white border xl:mx-5 mx-1 border-black p-2">
             <Image
-              src="645df56a9a0c36bc628ab13c_C1Cl6kLIfVJd3t855pD5qi0A_Gr1AIFYd6s9AdA9XAs.jpeg"
-              loader={imageLoader}
+              src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.png"
+              loading="lazy"
+              alt="網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置"
               width={600}
+              placeholder="empty"
               height={600}
             />
             <div className="txt group p-0 xl:p-[20px]">
