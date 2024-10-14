@@ -14,6 +14,8 @@ import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
 
+
+
 // Dynamically import the PhysicsAnimationApp component with ssr set to false
 const PhysicsAnimationApp = dynamic(
   () => import("../components/PhysicsAnimation/app.jsx"),
@@ -26,6 +28,14 @@ export default function MyApp({ Component, pageProps, router }) {
       duration: 1000, // 动画持续时间（毫秒）
       easing: 'ease-in-out', // 动画缓动函数
     });
+      if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'GTM-T2V5QVTS');
+    }
   }, []);
 
   useEffect(() => {
@@ -49,6 +59,24 @@ export default function MyApp({ Component, pageProps, router }) {
     return (
   
       <div style={{ textAlign: 'center', padding: '50px' }}>
+
+
+          <Script
+        id="gtm"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T2V5QVTS');
+          `,
+        }}
+      />
+
+
+
        <div className='flex flex-col xl:flex-row md:px-[100px] px-[20px] xl:px-[200px] pt-[50px]'>
          <div className=' w-full md:w-[60%] mx-auto xl:w-1/2'>
           <Image src='/images/Maintenance.png' width={700} height={700} loading='lazy'></Image>
