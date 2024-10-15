@@ -1,12 +1,13 @@
 "use client";
 
 import React from "react";
-import Script from "next/script";
-import Head from "next/head";
-import Link from "next/link.js";
+// import Script from "next/script";
+// import Head from "next/head";
+// import Link from "next/link.js";
 import GsapText from "../../components/RevealText/index";
-import SpringModel from "../../components/SpringModal/page.jsx";
-import Img01 from "../../public/images/Untitled-Camera.png";
+// import SpringModel from "../../components/SpringModal/page.jsx";
+import { NextSeo } from "next-seo";
+// import Img01 from "../../public/images/Untitled-Camera.png";
 // import Inner from "../../components/Inner/index.jsx";
 // import Styles from "../../styles/portfolio.module.css";
 import { useState, useEffect } from "react";
@@ -24,6 +25,23 @@ export default function Blog() {
   }, []);
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`} data-aos="fade-up">
+      <NextSeo
+        title="作品案例-極客網頁設計"
+        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        openGraph={{
+          title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          description:
+            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+          images: [
+            {
+              url: "https://www.example.com/og-home.jpg",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+            },
+          ],
+        }}
+      />
       <>
         <div className="about-root">
           <div id="webpage" className="page-wrapper">

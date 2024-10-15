@@ -174,9 +174,9 @@ const EmblaCarousel = () => {
   }, [isOpen]);
 
   return (
-    <div className="embla w-full">
+    <div className="embla w-full p-[60px]">
       <div
-        className="embla__viewport w-[100%] overflow-hidden cursor-none"
+        className="embla__viewport  p-[60px] w-[100%] overflow-hidden cursor-none"
         ref={emblaRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

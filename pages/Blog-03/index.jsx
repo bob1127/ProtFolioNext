@@ -20,27 +20,30 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title=""
-        description=""
+        title="如何增加搜尋引擎曝光度和排名?-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        description="透過關鍵字研究、內容優化、行動友善設計和外部連結建置等 SEO 策略，快速提升搜尋引擎排名並增加網站曝光度，讓您的企業在競爭中脫穎而出。
+"
         openGraph={{
-          url: "",
-          title: "",
-          description: "",
+          title:
+            "如何增加搜尋引擎曝光度和排名?-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這",
+          description:
+            "透過關鍵字研究、內容優化、行動友善設計和外部連結建置等 SEO 策略，快速提升搜尋引擎排名並增加網站曝光度，讓您的企業在競爭中脫穎而出。",
           images: [
             {
-              url: "",
-              width: 1200,
-              height: 630,
-              alt: "社交媒體行銷策略",
+              url: "https://www.jeek-webdesign.com.tw/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
-          site_name: "你的網站名稱",
         }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "網站優化, SEO策略, 搜尋引擎排名, 網站曝光, 關鍵字研究, 行動友善設計, 內容優化, 外部連結, Google Search Console, 網站速度, PageSpeed Insights",
+          },
+        ]}
       />
       <Head>
         {/* <link
@@ -76,25 +79,31 @@ export default function Blog() {
       /> */}
       <div>
         <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
-          <div className="  border w-full mt-3 h-auto border-black">
+          <a
+            onClick={() => window.history.back()}
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
+            ←
+          </a>
+          <a className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer">
             <Image
-              src="/images/icon/line-2.png"
+              src="/images/icon/line.png"
               width={50}
               height={50}
               placeholder="empty"
             ></Image>
-          </div>
-          <div className="  border w-full mt-3 h-auto border-black">
+          </a>
+          <a
+            href=""
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
             <Image
-              src="/images/icon/facebook-2.png"
+              src="/images/icon/facebook.png"
               width={50}
               height={50}
               placeholder="empty"
             ></Image>
-          </div>
-          <div className="  border w-full mt-3 h-auto border-black">
-            <Image src="" width={50} height={50} placeholder="empty"></Image>
-          </div>
+          </a>
         </div>
 
         <div className="article-title hidden md:black relative">

@@ -27,15 +27,15 @@ export default function Blog() {
   return (
     <>
       <NextSeo
-        title="極客網頁設計｜JEEK WEBDESIGN - 文章"
+        title="文章列表-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
         description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
         openGraph={{
-          title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          title: "文章列表-極客網頁設計",
           description:
             "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/結構化資料圖片-index.png",
+              url: "https://www.jeek-webdesign.com.tw/images/新網站SEO規劃-極客網頁設計.png",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -396,11 +396,14 @@ export default function Blog() {
                     className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
-                      <img
-                        src="https://i.ytimg.com/vi/cqw7WjuX8To/maxresdefault.jpg"
-                        alt=""
-                        className="w-full rounded-md"
-                      />
+                      <Image
+                        src="/images/blog/spline3d.png"
+                        alt="spline3d-極客網頁設計"
+                        placeholder="empty"
+                        loading="lazy"
+                        width={800}
+                        height={600}
+                      ></Image>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[20px] font-semibold">

@@ -20,81 +20,59 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title=""
-        description=""
+        title="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        description="透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。"
         openGraph={{
-          url: "",
-          title: "",
-          description: "",
+          title:
+            "網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這",
+          description:
+            "透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。",
           images: [
             {
-              url: "",
-              width: 1200,
-              height: 630,
-              alt: "社交媒體行銷策略",
+              url: "https://www.jeek-webdesign.com.tw/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.png",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
-          site_name: "你的網站名稱",
         }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "網站設計, SEO優化, 成本控制, 網頁設計公司, 行動友善, 3D建模, 品牌形象提升, 自然流量, 搜尋引擎排名, 網站速度優化, 外部連結, Google PageSpeed Insights, 關鍵字規劃, 網站可見性, 數位行銷, 網站建置",
+          },
+        ]}
       />
-      <Head>
-        {/* <link
-          rel="stylesheet"
-          href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
-        /> */}
-      </Head>
+      <Head></Head>
 
-      {/* <Script
-        src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
-        type="text/javascript"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"
-      />
-
-      <Script
-        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
-        type="text/javascript"
-      /> */}
-      {/* 
-      <link
-        href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65c495d649cf47f81db6e449_webclip.png"
-        rel="shortcut icon"
-        type="image/x-icon"
-      /> */}
-      {/* <link
-        href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65c495db397a444e7854eaa2_favicon.png"
-        rel="apple-touch-icon"
-      /> */}
       <div>
         <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
-          <a href="/" className="  border w-full mt-3 h-auto border-black">
+          <a
+            onClick={() => window.history.back()}
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
+            ←
+          </a>
+          <a className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer">
             <Image
-              src="/images/icon/line-2.png"
+              src="/images/icon/line.png"
               width={50}
               height={50}
               placeholder="empty"
             ></Image>
           </a>
-          <div className="  border w-full mt-3 h-auto border-black">
+          <a
+            href=""
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
             <Image
-              src="/images/icon/facebook-2.png"
+              src="/images/icon/facebook.png"
               width={50}
               height={50}
               placeholder="empty"
             ></Image>
-          </div>
-          <div className="  border w-full mt-3 h-auto border-black">
-            <Image src="" width={50} height={50} placeholder="empty"></Image>
-          </div>
+          </a>
         </div>
 
         <div className="article-title hidden md:black relative">
@@ -216,17 +194,17 @@ export default function Blog() {
                     </p>
                     <li>
                       如果您希望網站能在搜尋引擎上有良好的排名，專業的 SEO
-                      優化是必須的。我們的團隊能夠針對關鍵字、頁面結構和網站速度進行全面的優化，提高您的網站曝光率。
+                      優化是必須的。Jeek能夠針對關鍵字、頁面結構和網站速度進行全面的優化，提高您的網站曝光率。
                     </li>
                     <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
                       專業商業圖片拍攝與後製：
                     </p>
                     <li>
-                      我們的團隊可協助您拍攝高品質的產品或形象照，並進行專業的後製處理，以確保圖片完美呈現於網站上，提升視覺效果。這不僅讓您的產品看起來更吸引人，也能增強品牌的專業形象。
+                      Jeek可協助您拍攝高品質的產品或形象照，並進行專業的後製處理，以確保圖片完美呈現於網站上，提升視覺效果。這不僅讓您的產品看起來更吸引人，也能增強品牌的專業形象。
                     </li>
-                    <div className="flex">
+                    <div className="flex mb-[38px]">
                       <Image
-                        src="/images/3d產品模型08-極客網頁設計|Blender3D.png"
+                        src="/images/The Smallest Wireless Potentiostat- wireless charging.webp"
                         width={200}
                         alt="  商業3D建模-img01"
                         loading="lazy"
@@ -234,7 +212,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                       <Image
-                        src="/images/3d產品模型09-極客網頁設計|Blender3D.png"
+                        src="/images/The Smallest Wireless Potentiostat-Smart Hub .webp"
                         width={200}
                         alt="  商業3D建模-img01"
                         loading="lazy"
@@ -242,7 +220,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                       <Image
-                        src="/images/3d產品模型06-極客網頁設計|Blender3D.png"
+                        src="/images/The Smallest Wireless Potentiostat-Box.webp"
                         width={200}
                         alt="  商業3D建模-img01"
                         loading="lazy"
@@ -256,7 +234,7 @@ export default function Blog() {
                     <li>
                       想要展示產品的3D視覺效果嗎？我們提供商業3D建模服務，讓您的顧客能更直觀地查看產品細節。無論是用於互動展示還是產品展示頁面，3D模型都能為您的網站增添現代感，提升顧客體驗。
                     </li>
-                    <div className="flex">
+                    <div className="flex mb-[38px]">
                       <Image
                         src="/images/3d產品模型08-極客網頁設計|Blender3D.png"
                         width={200}

@@ -92,7 +92,7 @@ export default function MyApp({ Component, pageProps, router }) {
   }
     return (
       <div className='bg-white'>
-        <NextSeo
+        {/* <NextSeo
           title="極客網頁設計-提升搜尋排名，讓您的業務被發現"
           description="我們專注於設計優化的網站，確保您的業務在搜尋引擎中獲得更高曝光率。透過專業的SEO策略，讓您的網站在競爭中脫穎而出，吸引更多目標客戶"
           openGraph={{
@@ -114,7 +114,7 @@ export default function MyApp({ Component, pageProps, router }) {
             site: '@site',
             cardType: 'summary_large_image',
           }}
-        />
+        /> */}
 
         <Script
           src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"

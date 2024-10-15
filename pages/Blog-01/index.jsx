@@ -21,28 +21,30 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title=""
-        description=""
+        title="建立設計一個新網站-我該如何做seo規劃？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        description="了解 SEO 如何提升網站在搜尋引擎中的排名，增加自然流量和品牌信任。從選擇主機、使用 HTTPS 到現代化設計和網站速度優化，全面提升使用者體驗，幫助您的網站在數位世界中脫穎而出。深入探討關鍵字規劃與 SEO 實踐，讓您的網站成為穩定的流量來源，助您實現業務增長！"
         openGraph={{
-          url: "",
-          title: "",
-          description: "",
+          title: "文章列表-極客網頁設計",
+          description:
+            "了解 SEO 如何提升網站在搜尋引擎中的排名，增加自然流量和品牌信任。從選擇主機、使用 HTTPS 到現代化設計和網站速度優化，全面提升使用者體驗，幫助您的網站在數位世界中脫穎而出。深入探討關鍵字規劃與 SEO 實踐，讓您的網站成為穩定的流量來源，助您實現業務增長！",
           images: [
             {
-              url: "",
-              width: 1200,
-              height: 630,
-              alt: "社交媒體行銷策略",
+              url: "https://www.jeek-webdesign.com.tw/images/新網站SEO規劃-極客網頁設計.png",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
-          site_name: "你的網站名稱",
         }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "SEO, 搜尋引擎優化, 網站排名, 網站優化, 關鍵字規劃, 自然流量, 網站設計, 網站速度, 行動端優化, SEO工具, 網域HTTPS, 使用者體驗, 關鍵字分析, 內容優化, 排名提升, 品牌信任, 網站流量, 長尾關鍵字, 行銷成本",
+          },
+        ]}
       />
+
       <Head>
         {/* <link
           rel="stylesheet"
@@ -77,15 +79,31 @@ export default function Blog() {
       /> */}
       <div>
         <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
-          <a href="/Blogs" className="  font-bold  w-full mt-3 h-auto ">
-            Blog
+          <a
+            onClick={() => window.history.back()}
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
+            ←
           </a>
-          <div className="  border w-full mt-3 h-auto border-black">
-            <Image src="" width={50} height={50} placeholder="empty"></Image>
-          </div>
-          <div className="  border w-full mt-3 h-auto border-black">
-            <Image src="" width={50} height={50} placeholder="empty"></Image>
-          </div>
+          <a className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer">
+            <Image
+              src="/images/icon/line.png"
+              width={50}
+              height={50}
+              placeholder="empty"
+            ></Image>
+          </a>
+          <a
+            href=""
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
+            <Image
+              src="/images/icon/facebook.png"
+              width={50}
+              height={50}
+              placeholder="empty"
+            ></Image>
+          </a>
         </div>
 
         <div className="article-title hidden md:black relative">
@@ -307,42 +325,6 @@ export default function Blog() {
                   這些步驟將幫助你更好地進行關鍵詞規劃，讓網站更具曝光度並吸引到更精準的訪客。
                 </div>
               </div>
-
-              {/* <div className="imgText mt-[60px]">
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  <span className="text-[22px] font-bold">
-                    3D 模型創建與編輯
-                  </span>{" "}
-                  Spline
-                  提供了各種基礎形狀（如立方體、球體、圓柱等），你可以通過拉伸、旋轉和縮放來輕鬆調整這些形狀。此外，Spline
-                  支持導入外部 3D 模型（如 .obj、.gltf
-                  格式），讓你能夠更靈活地處理複雜的模型。
-                </div>
-
-                <div className="mt-[30px]">
-                  <Image
-                    src="/images/blog/3dmodel.png"
-                    width={900}
-                    placeholder="empty"
-                    height={600}
-                    className="rounded-md"
-                  ></Image>
-                  <p className="text-[16px] mt-4 font-bold">
-                    跟其他建模軟體一樣可使用簡單形狀
-                  </p>
-                </div>
-
-                <div className="mt-[30px]">
-                  <Image
-                    src="/images/blog/spline-opration.png"
-                    width={900}
-                    placeholder="empty"
-                    height={600}
-                    className="rounded-md"
-                  ></Image>
-                  <p className="text-[16px] mt-4 font-bold">導入外部模型</p>
-                </div>
-              </div> */}
 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">

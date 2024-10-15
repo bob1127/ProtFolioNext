@@ -156,22 +156,44 @@ export default function Blog() {
   }, []);
   return (
     <div className="bg-[#faf9f8]" data-aos="fade-up">
+      {/* <Head>
+        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:description"
+          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        />
+        <meta
+          property="og:image"
+          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+        />
+        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta property="og:type" content="website" />
+      </Head> */}
       <NextSeo
-        title="關於極客-網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 高CP網站｜你的創意，我來實踐"
-        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        title="關於極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        description="專業的網頁設計與SEO優化服務，靈活的自由接案者提供客製化解決方案，讓您的網站脫穎而出。聯繫我們，讓我們幫助您提升品牌形象，實現業務目標！
+"
         openGraph={{
-          title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          title:
+            "關於極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
           description:
-            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+            "專業的網頁設計與SEO優化服務，靈活的自由接案者提供客製化解決方案，讓您的網站脫穎而出。聯繫我們，讓我們幫助您提升品牌形象，實現業務目標！",
           images: [
             {
-              url: "https://www.example.com/og-home.jpg",
+              url: "https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
         }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "網頁設計, 自由接案, SEO優化, 客製化網站, 商品攝影, 影片剪輯, 前端效能優化, 企業網站, 靈活服務, 網站維護, 數據分析, 網站設計流程, 網頁工程師, 網站功能開發",
+          },
+        ]}
       />
       <Modal
         backdrop={backdrop}
@@ -757,8 +779,16 @@ export default function Blog() {
                 </div>
               </div>
               <div className="flex justify-center pb-6">
-                <b className="mx-auto text-[16px]">
-                  *方案價格皆為大約估算，實際可討論詳談
+                <b className="mx-auto text-[18px]">
+                  * 以下方案都包含 1. 第一年 網域和主機費用(除非有特殊要求){" "}
+                  <br></br> 2. GA google tag manager 串接 <br></br>{" "}
+                  3.基本網頁就夠
+                  <br></br>
+                  <p className="text-[16px]">
+                    有權決定最終方案價格，所以 匯款
+                    資訊及合約表特可以看關於我裡面 資訊
+                  </p>
+                  <p>關於我們聯絡表單可以跟我們說</p>
                 </b>
               </div>
             </section>
@@ -770,19 +800,47 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <p>Basic</p>
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
-                    NT30,000
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
+                    NT 35,000 <div>｜</div> NT55,000
                   </div>
                   <h3 className="text-[40px]">基本網站</h3>
-                  <p className="text-[20px]">
-                    價格： <span className="font-extrabold">20000up</span>
-                  </p>
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">包含第一年網域空間費用</p>
                     <p className="mt-4">基本網頁版型設計</p>
+                    <p className="mt-4">形象照片攝影拍攝</p>
+                    <p className="mt-4">企業形象照片</p>
                     <p className="mt-4">基本seo優化</p>
-                    <p className="mt-4">sitemap|</p>
+
+                    <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
+                      {backdrops.map((b) => (
+                        <Button
+                          key={b}
+                          variant="flat"
+                          color="warning"
+                          onPress={() => handleOpen(b)}
+                          className="capitalize w-full"
+                        >
+                          {b}
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
+                  data-aos="fade-blur"
+                >
+                  <p className="font-bold">Landing Page</p>
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
+                    NT 50,000 <br></br>up
+                  </div>
+                  <h3 className="text-[40px]">一頁式網站</h3>
+
+                  <div className="plan-content mt-5">
+                    <p className="mt-4">CMS內容管理系統</p>
+                    <p className="mt-4">動態特效</p>
+                    <p className="mt-4">基本seo優化</p>
+                    <p className="mt-4">客製化設計</p>
                     <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
                         <Button
@@ -802,24 +860,22 @@ export default function Blog() {
                   className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
-                    NT45,000
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
+                    NT50,000 <div>｜</div> NT10,0000
                   </div>
-                  <p>Plus</p>
-                  <h3 className="text-[40px]">進階方案</h3>
+                  <p>E-Coomerce</p>
+                  <h3 className="text-[40px]">購物網站</h3>
                   {/* <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p> */}
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">包含第一年網域空間費用</p>
-                    <p className="mt-4">商品攝影｜形象影片</p>
-                    <p className="mt-4">客製化版面設計｜特殊動畫效果</p>
-                    <p className="mt-4">購物車網站系統</p>
-                    http://localhost:3000/images/portfolio01.png
-                    <p className="mt-4">
-                      SEO優化｜串接GTM、GA4、GoogleSearchConsole
-                    </p>
+                    <p className="mt-4">客製化網站規劃與設計</p>
+                    <p className="mt-4">包含基本商品去背上架</p>
+                    <p className="mt-4">商品後製精修圖</p>
+                    <p className="mt-4"> 商品 形象 Banner</p>
+                    <p className="mt-4">公司形象(產品)影片拍攝</p>
+
                     <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
                         <Button
@@ -840,7 +896,7 @@ export default function Blog() {
                   data-aos="fade-bur"
                 >
                   <p>Customized</p>
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px]  h-[80px] w-[80px] shadow-xl font-bold text-white flex justify-center items-center bg-blue-500 border border-black">
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
                     跟我談談
                   </div>
                   <h3 className="text-[40px]">客製化網站</h3>
@@ -879,6 +935,9 @@ export default function Blog() {
 
             <section className="bg-gray-100  py-[70px] px-[20px] flex flex-col ">
               <div className="flex justify-center w-full">
+                <div className="">
+                  <p className=""></p>
+                </div>
                 <div className="title flex flex-col  items-center mb-6 ">
                   <h2 className="text-[40px]  text-black font-extrabold">
                     <GsapText
@@ -888,8 +947,11 @@ export default function Blog() {
                       fontSize="60px"
                     />
                   </h2>
-                  <p className="text-[16px] mx-auto">
+                  <p className="text-[22px] mx-auto">
                     您可以跟我們溝通需求，並確認流程
+                  </p>
+                  <p className="mt-3 text-[22px] mx-auto">
+                    有特殊需求 可用下列表格 試算價格
                   </p>
                   <div className="flex  justify-center items-center">
                     <a

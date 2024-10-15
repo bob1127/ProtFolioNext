@@ -23,29 +23,30 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title="分析網頁 SEO 成效指標-Blog文章｜極客網頁設計
+        title="如何增加搜尋引擎曝光度和排名?-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        description="精準提升網站成效！深入解析 SEO 指標，從 GA4 用戶數、有機流量到跳出率，並結合 Google Search Console 的 CTR 和平均排名，助您有效優化流量、提升品牌曝光及網站排名。
 "
-        description="了解如何透過關鍵 SEO 成效指標來提升網站排名，並獲得更多流量。本文深入解析網站數據分析，為您帶來更精準的 SEO 策略建議！"
         openGraph={{
-          url: "www.jeek-webdesign.com",
-          title: "分析網頁 SEO 成效指標-Blog文章｜極客網頁設計",
+          title:
+            "如何增加搜尋引擎曝光度和排名?-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這",
           description:
-            "了解如何透過關鍵 SEO 成效指標來提升網站排名，並獲得更多流量。本文深入解析網站數據分析，為您帶來更精準的 SEO 策略建議！",
+            "精準提升網站成效！深入解析 SEO 指標，從 GA4 用戶數、有機流量到跳出率，並結合 Google Search Console 的 CTR 和平均排名，助您有效優化流量、提升品牌曝光及網站排名。",
           images: [
             {
-              url: "www.jeek-webdesign.com.tw/",
-              width: 1200,
-              height: 630,
-              alt: "社交媒體行銷策略",
+              url: "https://www.jeek-webdesign.com.tw/images/1695104289033.png",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
-          site_name: "極客網頁設計",
         }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "SEO成效指標, GA4, 有機流量, 跳出率, 互動率, Google Search Console, 自然搜尋流量, 點擊率（CTR）, 平均排名, 網站流量優化, 曝光率, SEO優化技巧",
+          },
+        ]}
       />
       <Head>
         {/* <link

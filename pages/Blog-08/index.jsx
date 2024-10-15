@@ -23,27 +23,29 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title=""
-        description=""
+        title="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        description="透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。"
         openGraph={{
-          url: "",
-          title: "",
-          description: "",
+          title:
+            "網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這",
+          description:
+            "透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。",
           images: [
             {
-              url: "",
-              width: 1200,
-              height: 630,
-              alt: "社交媒體行銷策略",
+              url: "https://www.jeek-webdesign.com.tw/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.png",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
-          site_name: "你的網站名稱",
         }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "網站設計, SEO優化, 成本控制, 網頁設計公司, 行動友善, 3D建模, 品牌形象提升, 自然流量, 搜尋引擎排名, 網站速度優化, 外部連結, Google PageSpeed Insights, 關鍵字規劃, 網站可見性, 數位行銷, 網站建置",
+          },
+        ]}
       />
       <Head>
         {/* <link
@@ -316,7 +318,7 @@ export default function Blog() {
                 </div>
               </div>
 
-              <div className="imgText mt-[60px]">
+              {/* <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   2.1 /imagine 指令 這是 Midjourney
                   最核心的指令，所有圖像生成過程都從這裡開始。通過提供「提示詞」（prompt），你可以告訴
@@ -337,7 +339,7 @@ export default function Blog() {
                   簡短提示詞：如 "sunset over the
                   mountains"（山上日落），適合基本生成。
                 </div>
-              </div>
+              </div> 
 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
@@ -516,11 +518,11 @@ export default function Blog() {
                     height={600}
                   ></Image>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
 
-          <div className="patagrph p-2 xl:p-10">
+          {/* <div className="patagrph p-2 xl:p-10">
             <h2>內容行銷如何幫助網站提升搜索引擎排名？</h2>
 
             <br></br>
@@ -616,7 +618,7 @@ export default function Blog() {
                 內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="page-wrap">

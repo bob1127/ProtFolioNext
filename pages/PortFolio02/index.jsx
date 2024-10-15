@@ -5,7 +5,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import Link from "next/link";
+import { NextSeo } from "next-seo";
 import { SiSpacex } from "react-icons/si";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
 import { useRef } from "react";
@@ -106,6 +106,23 @@ const CenterImage = () => {
 const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 ">
+      <NextSeo
+        title="作品案例-極客網頁設計"
+        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        openGraph={{
+          title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          description:
+            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+          images: [
+            {
+              url: "https://www.jeek-webdesign.com.tw/images/結構化資料圖片-index.png",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+            },
+          ],
+        }}
+      />
       <ParallaxImg
         src="/images/The Smallest Wireless Potentiostat-Open Box.webp"
         alt="And example of a space launch"

@@ -77,15 +77,31 @@ export default function Blog() {
       /> */}
       <div>
         <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">
-          <a href="/Blogs" className="  font-bold  w-full mt-3 h-auto ">
-            Blog
+          <a
+            onClick={() => window.history.back()}
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
+            ←
           </a>
-          <div className="  border w-full mt-3 h-auto border-black">
-            <Image src="" width={50} height={50} placeholder="empty"></Image>
-          </div>
-          <div className="  border w-full mt-3 h-auto border-black">
-            <Image src="" width={50} height={50} placeholder="empty"></Image>
-          </div>
+          <a className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer">
+            <Image
+              src="/images/icon/line.png"
+              width={50}
+              height={50}
+              placeholder="empty"
+            ></Image>
+          </a>
+          <a
+            href=""
+            className="text-[30px] hover:scale-125 duration-300 font-bold w-full mt-3 h-auto cursor-pointer"
+          >
+            <Image
+              src="/images/icon/facebook.png"
+              width={50}
+              height={50}
+              placeholder="empty"
+            ></Image>
+          </a>
         </div>
 
         <div className="article-title hidden md:black relative">
@@ -140,7 +156,7 @@ export default function Blog() {
               loading="lazy"
               width={900}
               height={500}
-              src="/images/blog/splien3d.png"
+              src="/images/blog/spline3d.png"
             ></Image>
           </div>
 
