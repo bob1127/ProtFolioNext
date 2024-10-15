@@ -1,7 +1,39 @@
 import { useState } from "react";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function NewsletterForm() {
+  useEffect(() => {
+    // 动态加载 Mailchimp 验证脚本
+    const script1 = document.createElement("script");
+    script1.src =
+      "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js";
+    script1.type = "text/javascript";
+    script1.async = true;
+    document.body.appendChild(script1);
+
+    const script2 = document.createElement("script");
+    script2.type = "text/javascript";
+    script2.innerHTML = `
+      (function($) {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL'; ftypes[0] = 'email';
+        fnames[2] = 'FNAME'; ftypes[2] = 'text';
+        fnames[1] = 'PHONE'; ftypes[1] = 'number';
+        fnames[4] = 'GENDER'; ftypes[4] = 'radio';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+    `;
+    document.body.appendChild(script2);
+
+    // 清理函数，以便在组件卸载时移除脚本
+    return () => {
+      document.body.removeChild(script1);
+      document.body.removeChild(script2);
+    };
+  }, []);
+
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
@@ -65,34 +97,176 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className="xl:w-[800px] md:w-[700px] w-full mx-auto bg-white rounded-lg">
-      <h2 className="text-2xl font-semibold mb-4">提出需求，聯繫JEEK</h2>
-      <form onSubmit={handleSubmit}>
-        {/* 表單字段 */}
-        <div className="mb-4 w-full md:w-[80%] xl:w-[60%]">
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Email:
-          </label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="mt-1 py-2 border border-black px-2 block w-full rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-          />
-        </div>
-        {/* 其他字段省略 */}
-        <button
-          type="submit"
-          className="px-4 w-[200px] text-center py-4 inline-block rounded-[6px] bg-blue-700 text-white font-semibold shadow-sm hover:bg-blue-600"
+    <div className="xl:w-[800px] p-[80px] md:w-[700px] w-full mx-auto bg-white rounded-lg">
+      <div id="mc_embed_signup ">
+        <form
+          action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          className="validate"
+          target="_blank"
         >
-          送出
-        </button>
-      </form>
+          <div id="mc_embed_signup_scroll ">
+            <h2>Subscribe</h2>
+            <div className="indicates-required">
+              <span className="asterisk">*</span> indicates required
+            </div>
+            <div className="mc-field-group">
+              <label htmlFor="mce-EMAIL">
+                Email Address <span className="asterisk">*</span>
+              </label>
+              <input
+                type="email"
+                name="EMAIL"
+                placeholder="請輸入你的Email"
+                className="required  p-3 border-2 w-full py-2 rounded-md border-black email"
+                id="mce-EMAIL"
+                required
+              />
+            </div>
+            <div className="mc-field-group mt-[15px]">
+              <label htmlFor="mce-FNAME">您的姓名</label>
+              <input
+                type="text"
+                name="FNAME"
+                placeholder="請輸入你的名字"
+                className=" p-3 border-2 border-black w-full py-2 rounded-md text"
+                id="mce-FNAME"
+              />
+            </div>
+            <div className="mc-field-group mt-[15px]">
+              <label htmlFor="mce-PHONE">聯絡電話</label>
+              <input
+                type="number"
+                name="PHONE"
+                className="number p-3 border-2 border-black w-full py-2 rounded-md"
+                id="mce-PHONE"
+              />
+            </div>
+            <div className="mc-field-group input-group">
+              <strong>選擇您需要的方案</strong>
+              <ul>
+                <li className="border border-black h-[200px] rounded-md p-5">
+                  <input
+                    type="checkbox"
+                    name="group[43793][1]"
+                    id="mce-group[43793]-43793-0"
+                  />
+                  <label htmlFor="mce-group[43793]-43793-0">方案一</label>
+                </li>
+                <li className="border border-black rounded-md p-5">
+                  <input
+                    type="checkbox"
+                    name="group[43793][2]"
+                    id="mce-group[43793]-43793-1"
+                  />
+                  <label htmlFor="mce-group[43793]-43793-1">方案二</label>
+                </li>
+                <li className="border border-black rounded-md p-5">
+                  <input
+                    type="checkbox"
+                    name="group[43793][4]"
+                    id="mce-group[43793]-43793-2"
+                  />
+                  <label htmlFor="mce-group[43793]-43793-2">方案三</label>
+                </li>
+              </ul>
+            </div>
+            <div className="mc-field-group input-group">
+              <strong>您接受的聯繫方式</strong>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43794][8]"
+                    id="mce-group[43794]-43794-0"
+                  />
+                  <label htmlFor="mce-group[43794]-43794-0">Line</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43794][16]"
+                    id="mce-group[43794]-43794-1"
+                  />
+                  <label htmlFor="mce-group[43794]-43794-1">Facebook</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    name="group[43794][32]"
+                    id="mce-group[43794]-43794-2"
+                  />
+                  <label htmlFor="mce-group[43794]-43794-2">Email</label>
+                </li>
+              </ul>
+            </div>
+            <div id="mce-responses" className="clear foot">
+              <div
+                className="response"
+                id="mce-error-response"
+                style={{ display: "none" }}
+              ></div>
+              <div
+                className="response"
+                id="mce-success-response"
+                style={{ display: "none" }}
+              ></div>
+            </div>
+            <div
+              aria-hidden="true"
+              style={{ position: "absolute", left: "-5000px" }}
+            >
+              <input
+                type="text"
+                name="b_e4fe6f68e70ec50f3def8801d_9042884b3e"
+                tabIndex="-1"
+              />
+            </div>
+            <div className="optionalParent">
+              <div className="clear foot">
+                <input
+                  type="submit"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  className="button border border-black text-center w-[140px] text-white rounded-md  py-2 bg-blue-700"
+                  value="Subscribe"
+                />
+                <p style={{ margin: "0px auto" }}>
+                  <a
+                    href="http://eepurl.com/iX1Z9M"
+                    title="Mailchimp - email marketing made easy and fun"
+                  >
+                    <span
+                      style={{
+                        display: "inline-block",
+                        backgroundColor: "transparent",
+                        borderRadius: "4px",
+                      }}
+                    >
+                      <img
+                        className="refferal_badge"
+                        src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                        alt="Intuit Mailchimp"
+                        style={{
+                          width: "220px",
+                          height: "40px",
+                          display: "flex",
+                          padding: "2px 0px",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      />
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
       {status && <p className="mt-4 text-blue-600">{status}</p>}
     </div>
   );
