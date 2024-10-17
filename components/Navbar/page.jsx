@@ -424,7 +424,10 @@ export default function Index() {
                 <div className="nav-text">Service</div>
               </a>
 
-              <a href="/about-2" className="nav-link-block ">
+              <a href="/technology" className="nav-link-block ">
+                <div className="nav-text">Technology</div>
+              </a>
+              <a href="/portfolio" className="nav-link-block ">
                 <div className="nav-text">PortFolio</div>
               </a>
               <a href="/Blogs" className="nav-link-block ">

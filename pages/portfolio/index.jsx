@@ -70,7 +70,7 @@ export default function Blog() {
                         role="list"
                         className="large-features-list w-dyn-items"
                       >
-                        <a href="/PortFolio02">
+                        <a href="/portfolioInner-zensor">
                           <div
                             role="listitem"
                             className="large-feature-item w-dyn-item"
@@ -97,7 +97,7 @@ export default function Blog() {
                             <a
                               aria-label="Feature link"
                               data-w-id="3693517e-89e9-2f96-cace-c1d04dc6f48a"
-                              href="/feature/design"
+                              href="/portfolioInner-zensor"
                               className="feature-title-link w-inline-block"
                             >
                               <h2 className="heading text-[20px] md:text-[30px] is-feature-large-title">
@@ -191,7 +191,7 @@ export default function Blog() {
                           </div>
                         </a>
                         <a
-                          href="www.zensor.com.tw"
+                          href="/portfolioInner-zensor"
                           // onClick={url("www.zensor.com.tw")}
                         >
                           <div
