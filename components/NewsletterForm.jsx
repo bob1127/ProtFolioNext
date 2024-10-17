@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useEffect } from "react";
-
+import { Accordion, AccordionItem } from "@nextui-org/react";
 export default function NewsletterForm() {
   useEffect(() => {
     // 动态加载 Mailchimp 验证脚本
@@ -95,9 +95,11 @@ export default function NewsletterForm() {
       setStatus("An error occurred");
     }
   };
+  const defaultContent =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="xl:w-[800px] p-[80px] md:w-[700px] w-full mx-auto bg-white rounded-lg">
+    <div className="xl:w-[800px] overflow-hidden  p-[80px] md:w-[700px] w-full mx-auto bg-white rounded-lg">
       <div id="mc_embed_signup ">
         <form
           action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"
@@ -108,13 +110,12 @@ export default function NewsletterForm() {
           target="_blank"
         >
           <div id="mc_embed_signup_scroll ">
-            <h2>Subscribe</h2>
             <div className="indicates-required">
               <span className="asterisk">*</span> indicates required
             </div>
             <div className="mc-field-group">
               <label htmlFor="mce-EMAIL">
-                Email Address <span className="asterisk">*</span>
+                信箱 <span className="asterisk">*</span>
               </label>
               <input
                 type="email"
@@ -126,7 +127,10 @@ export default function NewsletterForm() {
               />
             </div>
             <div className="mc-field-group mt-[15px]">
-              <label htmlFor="mce-FNAME">您的姓名</label>
+              <label htmlFor="mce-FNAME">
+                {" "}
+                姓名 <span className="asterisk">*</span>
+              </label>
               <input
                 type="text"
                 name="FNAME"
@@ -146,14 +150,40 @@ export default function NewsletterForm() {
             </div>
             <div className="mc-field-group input-group">
               <strong>選擇您需要的方案</strong>
-              <ul>
-                <li className="border border-black h-[200px] rounded-md p-5">
+              <ul className="">
+                <li className="border  bg-blue-700 border-black rounded-md p-5">
                   <input
                     type="checkbox"
                     name="group[43793][1]"
                     id="mce-group[43793]-43793-0"
                   />
-                  <label htmlFor="mce-group[43793]-43793-0">方案一</label>
+                  <label htmlFor="mce-group[43793]-43793-0">
+                    Basic website
+                  </label>
+
+                  <div className="project-wrap "></div>
+                  <Accordion>
+                    <AccordionItem
+                      key="1"
+                      aria-label="基本套版網站"
+                      title="基本套版網站"
+                    >
+                      <ul>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 基本網頁版型設計
+                        </li>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 形象照片攝影拍攝
+                        </li>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 企業形象照片
+                        </li>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 基本seo優化
+                        </li>
+                      </ul>
+                    </AccordionItem>
+                  </Accordion>
                 </li>
                 <li className="border border-black rounded-md p-5">
                   <input
@@ -161,20 +191,63 @@ export default function NewsletterForm() {
                     name="group[43793][2]"
                     id="mce-group[43793]-43793-1"
                   />
-                  <label htmlFor="mce-group[43793]-43793-1">方案二</label>
+                  <label htmlFor="mce-group[43793]-43793-1">
+                    E-Commerce website
+                  </label>
+
+                  <div className="project-wrap "></div>
+                  <Accordion>
+                    <AccordionItem
+                      key="1"
+                      aria-label="購物網站"
+                      title="購物網站"
+                    >
+                      <ul>
+                        <li className="text-[20px] mt-3">- 基本網頁版型設計</li>
+                        <li className="text-[20px] mt-3">- 形象照片攝影拍攝</li>
+                        <li className="text-[20px] mt-3">- 企業形象照片</li>
+                        <li className="text-[20px] mt-3">- 基本seo優化</li>
+                      </ul>
+                    </AccordionItem>
+                  </Accordion>
                 </li>
-                <li className="border border-black rounded-md p-5">
+                <li className="border  bg-blue-700 border-black rounded-md p-5">
                   <input
                     type="checkbox"
                     name="group[43793][4]"
                     id="mce-group[43793]-43793-2"
                   />
-                  <label htmlFor="mce-group[43793]-43793-2">方案三</label>
+                  <label htmlFor="mce-group[43793]-43793-2">
+                    Customized website
+                  </label>
+                  <Accordion>
+                    <AccordionItem
+                      key="1"
+                      aria-label="客製化網站"
+                      title="客製化網站"
+                      className="text-white"
+                    >
+                      <ul>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 基本網頁版型設計
+                        </li>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 形象照片攝影拍攝
+                        </li>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 企業形象照片
+                        </li>
+                        <li className="text-[20px] text-gray-100 mt-3">
+                          - 基本seo優化
+                        </li>
+                      </ul>
+                    </AccordionItem>
+                  </Accordion>
                 </li>
               </ul>
             </div>
             <div className="mc-field-group input-group">
-              <strong>您接受的聯繫方式</strong>
+              <strong className="">您接受的聯繫方式</strong>
               <ul>
                 <li>
                   <input

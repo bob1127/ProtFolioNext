@@ -36,6 +36,20 @@ const EmblaCarousel = () => {
       description:
         "此專案為公司官網建立，使用了next.js SSG 靜態網頁 來加快網頁的讀取速度 ， 另外使用next.js 可以優化圖片和 影片",
     },
+    {
+      id: 1,
+      src: "/images/portfolio-zensor.webp",
+      title: "禪譜科技官網建置",
+      description:
+        "此專案為新創公司的官方網站建立，其中網頁結構使用了Jquery 和 Bootstrap ， 商品圖片使用到了Blender 3D 和 Photoshop 製作 商品圖片 Banner， 另外也拍攝了產品使用情境圖",
+    },
+    {
+      id: 2,
+      src: "/images/ultraehp.webp",
+      title: "Ultra EHP",
+      description:
+        "此專案為公司官網建立，使用了next.js SSG 靜態網頁 來加快網頁的讀取速度 ， 另外使用next.js 可以優化圖片和 影片",
+    },
   ]; // Define your slides here
 
   const [emblaRef, emblaApi] = useEmblaCarousel();

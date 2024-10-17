@@ -590,7 +590,10 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="mt-0 md:mt-[100px] mx-[20px] md:px-0" id="free">
+            <section
+              className="mt-0 pt-[90px] bg-gray-100 md:mt-[100px] mx-[20px] md:px-0"
+              id="free"
+            >
               <h2
                 data-aos="fade-up"
                 data-aos-delay="400"
@@ -610,7 +613,7 @@ export default function Blog() {
                 />
                 {/* "為什麼要選擇自由接案者？" */}
               </h2>
-              <p className="text-[16px] mt-4 md:w-[80%] w-full xl:w-[60%] mx-auto px-[30px] leading-[32px] text-center ">
+              <p className="text-[16px]  mt-4 md:w-[80%] w-full xl:w-[60%] mx-auto px-[30px] leading-[32px] text-center ">
                 {" "}
                 freelancer 比起設計公司，更有時間處理您的專案。
                 也不必透過中間代理人"PM"溝通需求，導致誤差。
@@ -634,10 +637,10 @@ export default function Blog() {
                 </span>
                 。
               </p>
-              <p className="text-center mt-[30px] text-[16px] xl:text-[22px] md:text-[26px] text-[15px] ">
+              <p className="text-center mb-[60px] mt-[30px]  xl:text-[22px] md:text-[26px] text-[15px] ">
                 選擇JEEK 幫助您實現創意發想
               </p>
-              <section className="section-carousel  flex-col mt-0 md:mt-10  px-0 xl:px-[70px] md:flex-row flex mb-[50px]">
+              <section className="section-carousel  bg-gray-100  flex-col   px-0 xl:px-[70px] md:flex-row flex ">
                 <div className="left-txt flex-col flex justify-start items-center  w-full mt-5 md:w-[30%]">
                   <div>
                     <h2
@@ -661,11 +664,15 @@ export default function Blog() {
                   </a>
                 </div>
                 <div className="img mt-4 xl:mt-0 xl:my-0  mb-0 xl:mb-[30px] w-full md:w-[40%] overflow-hidden">
-                  <img
-                    className="w-full "
-                    src="https://www.avatarz.design/assets/images/image15.jpg?v=7b7356d5"
-                    alt=""
-                  />
+                  <Image
+                    src="/images/自由工作接案者-極客網頁設計.png"
+                    alt="自由接案工作者-freeLancer-極客網頁設計"
+                    placeholder="empty"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="200"
+                    width={600}
+                    height={600}
+                  ></Image>
                 </div>
                 <div className="right-txt flex flex-col justify-start items-center w-full mt-5 md:mt-0 md:w-[30%]">
                   <div>
@@ -692,64 +699,8 @@ export default function Blog() {
               </section>
             </section>
             {/* <Carousel04 /> */}
-            <section className="mt-0 md:mt-[100px] mx-[20px] md:px-0" id="free">
-              <h2
-                data-aos="fade-up"
-                data-aos-delay="400"
-                className="  md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
-                style={{
-                  marginBottom: 30,
-                  display: "flex",
-                  justifyContent: "center",
-                  textAlign: "center",
-                }}
-              >
-                <GsapText
-                  text=' " 客製化版型 " '
-                  lineHeight="70px"
-                  id="text2"
-                  fontSize="60px"
-                />
-                {/* "為什麼要選擇自由接案者？" */}
-              </h2>
-              <div className="flex flex-col justify-center items-center">
-                <p
-                  data-aos="blur"
-                  className="mx-auto text-[#2c7ad3] text-[32px] font-bold"
-                >
-                  您的網站不想再看起來醜醜的嗎？
-                </p>
-                <br></br>
 
-                <p
-                  data-aos="blur"
-                  className="mx-auto mt-3 text-[#2c7ad3]  text-[32px] font-bold"
-                >
-                  網站不想跟別人一樣？
-                </p>
-              </div>
-              <div className="flex">
-                <div className="left p-10 w-1/2">
-                  {" "}
-                  <Image
-                    src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.webp"
-                    height={700}
-                    alt=""
-                    width={1000}
-                  ></Image>
-                </div>
-                <div className="right w-1/2">
-                  <div className="txt">
-                    {/* <h3 className="text-[100px] font-bold">
-                      快來跟我討論你德想法
-                    </h3>
-                    <h3>讓你的網站與眾不同！</h3> */}
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section className="section">
+            <section className="section relative">
               <div className="container">
                 <div className="padding small-paddings">
                   <div className=" ">
@@ -778,7 +729,7 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center pb-6">
+              <div className="flex p-[30px] justify-center pb-6">
                 <b className="mx-auto text-[18px]">
                   * 以下方案都包含 1. 第一年 網域和主機費用(除非有特殊要求){" "}
                   <br></br> 2. GA google tag manager 串接 <br></br>{" "}
@@ -861,7 +812,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
-                    NT50,000 <div>｜</div> NT10,0000
+                    找我聊聊
                   </div>
                   <p>E-Coomerce</p>
                   <h3 className="text-[40px]">購物網站</h3>

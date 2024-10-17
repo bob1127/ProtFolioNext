@@ -345,7 +345,7 @@ export default function Blog() {
 
         <div className="w-full border-t-black border  py-[50px] ">
           <div className="txt my-5 px-[30px] w-[3/4] h-auto  mx-auto border-1 border-rose-500">
-            <div className="flex  flex-col justify-center items-center  xl:flex-row ">
+            <div className="flex  flex-col   xl:flex-row ">
               <div className="left-section w-full md:w-[80%] xl:w-[70%]">
                 <div className="Hot-article flex md:flex-row flex-col">
                   <a

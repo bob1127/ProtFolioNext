@@ -60,7 +60,7 @@ export default function Home() {
       <Head>
         <meta
           property="og:title"
-          content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 高CP網站｜你的創意，我來實踐"
+          content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、客製化網站、套版網站、商業攝影、seo優化 - 你的網站不想在跟別人一樣嗎？｜你的創意，我來實踐"
         />
         <meta
           property="og:description"
@@ -100,19 +100,21 @@ export default function Home() {
               <div className="absolute bg-black w-full bottom-0">
                 <Marquee>
                   <div>
-                    <p className="text-white w-[140px] p-2">SEO ⏰</p>
+                    <p className="text-white w-[140px] p-2">SEO優化</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">Website</p>
+                    <p className="text-white w-[140px] p-2">網頁設計</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">marketing🎡</p>
+                    <p className="text-white w-[140px] p-2">網頁行銷</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">SinglePage🎡</p>
+                    <p className="text-white w-[140px] p-2">商業攝影</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">GA4⏰</p>
+                    <p className="text-white w-[140px] p-2">
+                      Google search consol
+                    </p>
                   </div>
                   <div>
                     <p className="text-white w-[140px] p-2">Search Egine💡</p>

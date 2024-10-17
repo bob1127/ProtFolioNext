@@ -225,15 +225,18 @@ export default function Blog() {
                   互動率可以顯示初使用者對於網頁的參與熱度：例如：頁面轉換點擊，頁面滾動，填寫表單等等的使用者行為
                 </div>
                 <ul className="p-0 m-0 ">
-                  <li className="text-[16px] mt-3 font-bold">
-                    <b>- 平均參與時間</b>：用戶在網站上停留的平均時間。
+                  <li className="text-[16px] mt-3 ">
+                    <b>- 平均參與時間：</b>
+                    <br></br>用戶在網站上停留的平均時間。
                   </li>
-                  <li className="text-[16px] mt-3 font-bold">
-                    <b>參與的用戶數：</b>
+                  <li className="text-[16px] mt-3 ">
+                    <b>- 參與的用戶數：</b>
+                    <br></br>
                     在特定時間內進行互動的用戶數。
                   </li>
-                  <li className="text-[16px] mt-3 font-bold">
-                    <b> 互動率：</b>
+                  <li className="text-[16px] mt-3 ">
+                    <b>- 互動率：</b>
+                    <br></br>
                     用戶互動與總訪問量的比率。
                   </li>
                 </ul>

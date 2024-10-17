@@ -31,8 +31,8 @@ export default function SubscribeForm() {
         />
         <button type="submit">Subscribe</button>
       </form>
-      {status === "success" && <p>Thank you for subscribing!</p>}
-      {status === "error" && <p>Something went wrong, please try again.</p>}
+      {status === "success" && <p>你以成功送出表單，請等候我們的回覆訊息</p>}
+      {status === "error" && <p>好像有點錯誤喔！，請再試一次。</p>}
     </div>
   );
 }
