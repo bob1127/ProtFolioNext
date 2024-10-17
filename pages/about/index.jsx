@@ -332,9 +332,9 @@ export default function Blog() {
                   </div>
                   <div className="content flex py-10 justify-center flex-col items-center">
                     <div className="flex items-center flex-col justify-center">
-                      <h4 className="text-[40px] font-light text-black">
+                      <p className="text-[40px] font-light text-black">
                         免費基本SEO 優化
-                      </h4>
+                      </p>
                       <p className="w-4/5 text-center text-[20px] mt-3">
                         SEO
                         優化能提升網站可見性，增加搜尋引擎排名，吸引更多自然流量。
@@ -473,6 +473,7 @@ export default function Blog() {
                       height={80}
                       src="137-1375168_instagram-logo-free-social-media-icons-flaticon-instagram-logo-png.png"
                       loading="lazy"
+                      alt="img"
                       placeholder="empty"
                     />
                   </div>
@@ -514,6 +515,7 @@ export default function Blog() {
                       height={80}
                       src="137-1375168_instagram-logo-free-social-media-icons-flaticon-instagram-logo-png.png"
                       loading="lazy"
+                      alt="img"
                       placeholder="empty"
                     />
                   </div>
@@ -558,6 +560,7 @@ export default function Blog() {
                       height={80}
                       src="137-1375168_instagram-logo-free-social-media-icons-flaticon-instagram-logo-png.png"
                       loading="lazy"
+                      alt="img"
                       placeholder="empty"
                     />
                   </div>
@@ -768,6 +771,7 @@ export default function Blog() {
                           key={b}
                           variant="flat"
                           color="warning"
+                          aria-label="modal-btn"
                           onPress={() => handleOpen(b)}
                           className="capitalize w-full"
                         >
@@ -796,6 +800,7 @@ export default function Blog() {
                       {backdrops.map((b) => (
                         <Button
                           key={b}
+                          aria-label="modal-btn"
                           variant="flat"
                           color="warning"
                           onPress={() => handleOpen(b)}
@@ -833,6 +838,7 @@ export default function Blog() {
                           key={b}
                           variant="flat"
                           color="warning"
+                          aria-label="modal-btn"
                           onPress={() => handleOpen(b)}
                           className="capitalize w-full"
                         >
@@ -871,6 +877,7 @@ export default function Blog() {
                         <Button
                           key={b}
                           variant="flat"
+                          aria-label="modal-btn"
                           color="warning"
                           onPress={() => handleOpen(b)}
                           className="capitalize w-full"
