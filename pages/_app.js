@@ -7,7 +7,6 @@ import Navbar from '../components/sideTabs/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
-import { Html } from 'next/document';
 
 import Image from 'next/image';
 import Nav from '../components/Navbar/page.jsx'
@@ -58,8 +57,8 @@ export default function MyApp({ Component, pageProps, router }) {
   if (isMaintenanceMode) {
     // 如果维护模式开启，返回维护提示页面
     return (
-
-      <div style={{ textAlign: 'center', padding: '50px' }} >
+       
+      <div style={{ textAlign: 'center', padding: '50px' }}>
 
 
           <Script
@@ -80,7 +79,7 @@ export default function MyApp({ Component, pageProps, router }) {
 
        <div className='flex flex-col xl:flex-row md:px-[100px] px-[20px] xl:px-[200px] pt-[50px]'>
          <div className=' w-full md:w-[60%] mx-auto xl:w-1/2'>
-          <Image src='/images/Maintenance.png' width={700} alt='img' placeholder='empty' height={700} loading='lazy'></Image>
+          <Image src='/images/Maintenance.png' width={700} height={700} loading='lazy'></Image>
         </div>
         <div className='w-full md:w-[60%] mx-auto xl:w-1/2 flex flex-col justify-center items-start pl-0 xl:pl-[50px]'>
          <h1 className='text-[90px] font-black'>Oops !!</h1>
@@ -89,10 +88,12 @@ export default function MyApp({ Component, pageProps, router }) {
         </div>
        </div>
       </div>
+   
     );
   }
     return (
-      <div className='bg-white' >
+       
+      <div className='bg-white'>
         
 
         <Script
@@ -177,7 +178,7 @@ export default function MyApp({ Component, pageProps, router }) {
                             className="text-white footer-large-link"
                             
                           >
-                            合作須知：
+                            更多服務：
                             <p className="text-[15px] text-white">
                               如果你有更多想法，歡迎找我討論
                             </p>
@@ -358,8 +359,7 @@ export default function MyApp({ Component, pageProps, router }) {
             </NextUIProvider>
           </div>
         </div>
-       
       </div>
-      
+
     );
 }

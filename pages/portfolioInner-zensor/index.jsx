@@ -67,7 +67,7 @@ export default function Blog() {
               src="/images/portfolio01.webp"
               width={800}
               height={600}
-              priority
+              alt="img"
               loading="eager"
             ></Image>
           </div>
@@ -75,6 +75,7 @@ export default function Blog() {
             <Image
               src="/images/portfolio02.webp"
               width={800}
+              alt="img"
               height={600}
               priority
               loading="eager"
@@ -102,6 +103,7 @@ export default function Blog() {
           <div className=" w-full md:w-1/2 ">
             <Image
               src="/images/截圖-2024-09-24-上午9.25.18.webp"
+              alt="img"
               width={800}
               height={600}
               priority
@@ -117,6 +119,7 @@ export default function Blog() {
               width={800}
               height={600}
               priority
+              alt="img"
               loading="eager"
             ></Image>
           </div>
