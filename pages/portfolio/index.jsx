@@ -79,7 +79,7 @@ export default function Blog() {
                               <div className="reveal-image-trigger">
                                 <img
                                   loading="lazy"
-                                  alt=""
+                                  alt="img"
                                   src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/ECWP100-carousel-index.webp"
                                   className="cover-image"
                                   style={{
@@ -124,7 +124,7 @@ export default function Blog() {
                                   <div className="reveal-image-trigger">
                                     <img
                                       loading="lazy"
-                                      alt=""
+                                      alt="img"
                                       src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-03.webp"
                                       className="cover-image"
                                       style={{
@@ -146,7 +146,7 @@ export default function Blog() {
                                   <div className="reveal-image-trigger">
                                     <img
                                       loading="lazy"
-                                      alt=""
+                                      alt="img"
                                       src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/carousel-18.webp"
                                       className="cover-image"
                                       style={{
@@ -168,7 +168,7 @@ export default function Blog() {
                                   <div className="reveal-image-trigger">
                                     <img
                                       loading="lazy"
-                                      alt=""
+                                      alt="img"
                                       src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/%E6%A5%AD%E7%95%8C%E6%9C%80%E5%B0%8F%E7%9A%84_%E7%84%A1%E7%B7%9A_%E9%9B%BB%E5%8C%96%E5%AD%B8%E5%88%86%E6%9E%90%E5%84%80-%E5%AF%A6%E6%93%AC%E5%8A%9F%E8%83%BD.webp"
                                       className="cover-image"
                                       style={{
@@ -202,7 +202,7 @@ export default function Blog() {
                               <div className="reveal-image-trigger">
                                 <img
                                   loading="lazy"
-                                  alt=""
+                                  alt="img"
                                   src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
                                   className="cover-image"
                                   style={{
@@ -247,7 +247,7 @@ export default function Blog() {
                                   <div className="reveal-image-trigger">
                                     <img
                                       loading="lazy"
-                                      alt=""
+                                      alt="img"
                                       src="https://www.zensor.com.tw/images//Index-Img/Carousel-Img/1920x768/06.webp"
                                       className="cover-image"
                                       style={{
@@ -269,7 +269,7 @@ export default function Blog() {
                                   <div className="reveal-image-trigger">
                                     <img
                                       loading="lazy"
-                                      alt=""
+                                      alt="img"
                                       src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-93.webp"
                                       className="cover-image"
                                       style={{
@@ -291,7 +291,7 @@ export default function Blog() {
                                   <div className="reveal-image-trigger">
                                     <img
                                       loading="lazy"
-                                      alt=""
+                                      alt="img"
                                       src="https://www.zensor.com.tw/images//Products-Detail-Img/ECWP/ECWP100-88.webp"
                                       className="cover-image"
                                       style={{

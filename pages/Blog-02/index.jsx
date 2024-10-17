@@ -214,6 +214,14 @@ export default function Blog() {
                         height={200}
                       ></Image>
                       <Image
+                        src="/images/The Smallest Wireless Potentiostat- wireless charging.webp"
+                        width={200}
+                        alt="  商業3D建模-img01"
+                        loading="lazy"
+                        placeholder="empty"
+                        height={200}
+                      ></Image>
+                      <Image
                         src="/images/The Smallest Wireless Potentiostat-Smart Hub .webp"
                         width={200}
                         alt="  商業3D建模-img01"

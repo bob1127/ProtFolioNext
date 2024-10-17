@@ -87,7 +87,7 @@ export default function Index() {
             <div className="menu-main-links">
               <a
                 data-w-id="6dce1659-1f78-7d00-7eed-5d600171ac2e"
-                href="/about-3"
+                href="/about"
                 aria-current="page"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block w--current"
               >
@@ -110,7 +110,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="9119eb55-b515-23ab-3ca6-d7a893b67ca0"
-                href="/about-2"
+                href="/portfolio"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
@@ -166,6 +166,28 @@ export default function Index() {
                   }}
                 >
                   相關文章
+                </div>
+                <img
+                  src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
+                  loading="lazy"
+                  alt=""
+                  className="icon is-menu-link-icon"
+                />
+              </a>
+              <a
+                data-w-id="03e10da9-d56b-f42b-a87a-0d5fd44d5e75"
+                href="/technology"
+                className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
+              >
+                <div
+                  className="menu-link-text"
+                  style={{
+                    transform:
+                      "translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                    transformStyle: "preserve-3d",
+                  }}
+                >
+                  使用技術
                 </div>
                 <img
                   src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668bd563537f10fdc41ac01e_arrow_forward_24dp_FILL0_wght600_GRAD0_opsz24.svg"
