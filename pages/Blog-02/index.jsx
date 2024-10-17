@@ -59,6 +59,7 @@ export default function Blog() {
               src="/images/icon/line.png"
               width={50}
               height={50}
+              alt="img"
               placeholder="empty"
             ></Image>
           </a>
@@ -70,6 +71,7 @@ export default function Blog() {
               src="/images/icon/facebook.png"
               width={50}
               height={50}
+              alt="img"
               placeholder="empty"
             ></Image>
           </a>

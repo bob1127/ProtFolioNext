@@ -80,7 +80,7 @@ export default function MyApp({ Component, pageProps, router }) {
 
        <div className='flex flex-col xl:flex-row md:px-[100px] px-[20px] xl:px-[200px] pt-[50px]'>
          <div className=' w-full md:w-[60%] mx-auto xl:w-1/2'>
-          <Image src='/images/Maintenance.png' width={700} height={700} loading='lazy'></Image>
+          <Image src='/images/Maintenance.png' width={700} alt='img' placeholder='empty' height={700} loading='lazy'></Image>
         </div>
         <div className='w-full md:w-[60%] mx-auto xl:w-1/2 flex flex-col justify-center items-start pl-0 xl:pl-[50px]'>
          <h1 className='text-[90px] font-black'>Oops !!</h1>

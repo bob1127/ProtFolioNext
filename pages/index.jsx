@@ -199,6 +199,7 @@ export default function Home() {
                 <Image
                   src="/images/heroimg.webp"
                   width={800}
+                  alt="hero-img"
                   height={500}
                   placeholder="empty"
                   priority
@@ -258,6 +259,7 @@ export default function Home() {
                     src="realistic-set-monitor-laptop-tablet-260nw-2430661189.jpg"
                     loader={imageLoader01}
                     loading="lazy"
+                    alt="realistic-set-monitor"
                     width={500}
                     height={300}
                   />
@@ -316,6 +318,7 @@ export default function Home() {
                 <Image
                   src="/images/移動設備對於seo重要性.webp"
                   loading="lazy"
+                  alt="移動設備對於seo重要性"
                   placeholder="empty"
                   width={800}
                   height={500}
@@ -398,6 +401,7 @@ export default function Home() {
                 <Image
                   src="/images/3d產品模型01-極客網頁設計|Blender3D-2.webp"
                   width={900}
+                  alt="3d產品模型01-極客網頁設計"
                   height={500}
                 ></Image>
               </figure>
@@ -434,6 +438,7 @@ export default function Home() {
                   <Image
                     src="/668e6aca4fb399ee1389df93_stada-img-3-p-1600.png"
                     className="  duration-500 hover:scale-105 z-1 top-0 left-0"
+                    alt="img"
                     loaging="lazy"
                     width={800}
                     height={400}

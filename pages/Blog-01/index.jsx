@@ -89,6 +89,7 @@ export default function Blog() {
             <Image
               src="/images/icon/line.png"
               width={50}
+              alt="img"
               height={50}
               placeholder="empty"
             ></Image>
@@ -100,6 +101,7 @@ export default function Blog() {
             <Image
               src="/images/icon/facebook.png"
               width={50}
+              alt="img"
               height={50}
               placeholder="empty"
             ></Image>
@@ -115,6 +117,7 @@ export default function Blog() {
             src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
             width={1920}
             height={768}
+            alt="img"
             placeholder="empty"
             className="rounded-md"
           ></Image>
@@ -130,7 +133,7 @@ export default function Blog() {
               </h1>
               <div className="title-content-date">
                 <div data-aos="fade-blur">
-                  <Image src="" width={50} height={50}></Image>
+                  <Image src="" alt="img" width={50} height={50}></Image>
                 </div>
                 <div className="text-[14px]">
                   <b className="mr-3">Spline 3d</b>

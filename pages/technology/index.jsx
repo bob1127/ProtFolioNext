@@ -396,6 +396,7 @@ export default function Blog() {
                       loading="eager"
                       placeholder="empty"
                       height={450}
+                      alt="img"
                       priority={true}
                     ></Image>
                   </div>
@@ -474,6 +475,7 @@ export default function Blog() {
                     <Image
                       src="/images/peromace.webp"
                       width={700}
+                      alt="img"
                       loading="lazy"
                       placeholder="empty"
                       height={450}
@@ -511,6 +513,7 @@ export default function Blog() {
                         <div className="reveal-image-trigger">
                           <Image
                             src="/images/665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946 (1).webp"
+                            alt="img"
                             width={800}
                             height={800}
                             loading="lazy"
@@ -773,6 +776,7 @@ export default function Blog() {
                   <Image
                     src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
                     loading="lazy"
+                    alt="3d互動式網站-極客網頁設計_3dModel_Blender"
                     width={800}
                     height={600}
                     placeholder="empty"
@@ -822,6 +826,7 @@ export default function Blog() {
                     <Image
                       src="/images/3d設計_UI設計_banner設計-極客網頁設計_seo優化.png"
                       loading="lazy"
+                      alt="3d設計_UI設計_banner設計"
                       width={800}
                       height={600}
                       placeholder="empty"
@@ -995,6 +1000,7 @@ export default function Blog() {
                         >
                           <div className="card-icon with-margin">
                             <Image
+                              alt="img"
                               className="mb-4"
                               src="/images/maxresdefault.webp"
                               width={800}
@@ -1006,6 +1012,7 @@ export default function Blog() {
                           <p className="card-paragraph">
                             <Image
                               className="mb-4"
+                              alt="img"
                               src="/images/google-logo-exploding-1681647430.webp"
                               width={800}
                               height={800}
@@ -1046,6 +1053,7 @@ export default function Blog() {
                                 src="/images/maxresdefault.webp"
                                 width={800}
                                 height={800}
+                                alt="img"
                                 placeholder="empty"
                                 loading="lazy"
                               />
@@ -1064,6 +1072,7 @@ export default function Blog() {
                         >
                           <div className="card-icon">
                             <Image
+                              alt="img"
                               className="mb-4"
                               src="/images/maxresdefault.webp"
                               width={800}
@@ -1163,6 +1172,7 @@ export default function Blog() {
                         <Image
                           src="/images/網頁結構優化_UI設計_banner設計-極客網頁設計_seo優化.webp"
                           loading="lazy"
+                          alt="img"
                           width={800}
                           placeholder="empty"
                           height={500}

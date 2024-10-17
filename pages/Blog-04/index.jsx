@@ -87,6 +87,7 @@ export default function Blog() {
             <Image
               src="/images/icon/line.png"
               width={50}
+              alt="img"
               height={50}
               placeholder="empty"
             ></Image>
@@ -98,6 +99,7 @@ export default function Blog() {
             <Image
               src="/images/icon/facebook.png"
               width={50}
+              alt="img"
               height={50}
               placeholder="empty"
             ></Image>
@@ -109,6 +111,7 @@ export default function Blog() {
             src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
             width={1920}
             height={768}
+            alt="img"
             placeholder="empty"
             className="rounded-md"
           ></Image>
@@ -204,6 +207,7 @@ export default function Blog() {
                   src="/images/blog/mid02.png"
                   width={900}
                   placeholder="empty"
+                  alt="img"
                   height={600}
                   className="rounded-md"
                 ></Image>
@@ -221,6 +225,7 @@ export default function Blog() {
                   width={900}
                   className="rounded-md"
                   placeholder="empty"
+                  alt="img"
                   height={600}
                 ></Image>
               </div>
@@ -242,6 +247,7 @@ export default function Blog() {
                   src="/images/blog/點擊自己創建的伺服器.png"
                   width={900}
                   placeholder="empty"
+                  alt="img"
                   className="rounded-md"
                   height={600}
                 ></Image>
@@ -266,6 +272,7 @@ export default function Blog() {
                   width={800}
                   placeholder="empty"
                   loading="lazy"
+                  alt="img"
                   className="mt-[40px] rounded-md"
                   height={600}
                 ></Image>
@@ -279,6 +286,7 @@ export default function Blog() {
                   <Image
                     src="/images/blog/生成圖片01.png"
                     width={800}
+                    alt="img"
                     placeholder="empty"
                     loading="lazy"
                     className="mt-[40px] rounded-md"
@@ -307,6 +315,7 @@ export default function Blog() {
                   <Image
                     src="/images/blog/生成圖片01.png"
                     width={800}
+                    alt="img"
                     placeholder="empty"
                     loading="lazy"
                     className="mt-[40px] rounded-md"
@@ -407,6 +416,7 @@ export default function Blog() {
                 <Image
                   src="/images/blog/ar16.png"
                   width={800}
+                  alt="img"
                   placeholder="empty"
                   loading="lazy"
                   className="mt-[40px] rounded-md"
@@ -422,6 +432,7 @@ export default function Blog() {
                   <Image
                     src="/images/blog/生成圖片01.png"
                     width={800}
+                    alt="img"
                     placeholder="empty"
                     loading="lazy"
                     className="mt-[40px] rounded-md"
