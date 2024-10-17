@@ -344,7 +344,7 @@ export default function Blog() {
         </div>
 
         <div className="w-full border-t-black border  py-[50px] ">
-          <div className="txt my-5 px-[30px] w-[3/4] h-auto  mx-auto border-1 border-rose-500">
+          <div className="txt my-5  md:px-[30px] px-[15px] w-full  md:w-[3/4] h-auto  mx-auto border-1 border-rose-500">
             <div className="flex  flex-col   xl:flex-row ">
               <div className="left-section w-full md:w-[80%] xl:w-[70%]">
                 <div className="Hot-article flex md:flex-row flex-col">
@@ -522,7 +522,7 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <div className="right-section w-full  md:w-[60%] xl:w-[30%] px-6">
+              <div className="px-0 right-section w-full  md:w-[60%] xl:w-[30%] md:px-6">
                 <div className="wrap bg-[#f4f0f0] p-5 rounded-2xl ">
                   <div className="top border-b-2 py-4">
                     <div className="tag-items flex flex-wrap">
