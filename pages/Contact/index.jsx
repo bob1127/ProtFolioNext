@@ -69,7 +69,29 @@ export default function Home() {
               </p>
               <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">
                 如果您聯繫我並無即時收到回覆，請耐心等候。Jeek會盡快回覆您！！！
+                如您有興趣聯絡 錢可先 餐前
               </span>
+              <a
+                href="/terms"
+                data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                className=" mt-4 button-wrapper w-inline-block"
+              >
+                <div className="button-layout">
+                  <p href="/about" className="button-text" style={{}}>
+                    合作須知
+                  </p>
+                  <div className="button-bg" style={{}} />
+                </div>
+                <div className="button-icon-block">
+                  {/* <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          /> */}
+                </div>
+              </a>
             </div>
           </div>
           <div className="right w-full md:w-[60%] h-[100vh] p-10">

@@ -77,14 +77,14 @@ export default function Home() {
         </div>
         <div className="terms-wrap border-black bg-white border w-[80vw] mx-auto p-10 rounded-xl">
           <h2>2.確認雙方需求 (Scope of Work)</h2>
-          <div className="grid bg-gray-100 p-10 grid-cols-2 gap-2">
+          <div className="grid bg-gray-100 p-10 grid-cols-1 xl:grid-cols-4  md:grid-cols-2 gap-2">
             <div className="content">
               <b className="text-[20px]">Step01</b>
               <p className="text-[20px]">確認雙方需求</p>
               <Image
-                src="/images/terms/確認合約需求-極客網頁設計.png"
+                src="/images/terms/確認合約需求01-極客網頁設計.png"
                 loading="lazy"
-                width={500}
+                width={300}
                 height={500}
                 placeholder="empty"
                 alt="step1確認雙方需求"
@@ -105,14 +105,41 @@ export default function Home() {
             <div className="content">
               <b className="text-[20px]">Step03</b>
               <p className="text-[20px]">開始製作</p>
+              <Image
+                src="/images/terms/開始製作-極客網頁設計.png"
+                loading="lazy"
+                width={300}
+                height={500}
+                placeholder="empty"
+                alt="step02. 支付訂金-極客網頁設計"
+              ></Image>
             </div>
             <div className="content">
               <b className="text-[20px]">Step04</b>
               <p className="text-[20px]">結案</p>
+              <Image
+                src="/images/terms/支付訂金-極客網頁設計.png"
+                loading="lazy"
+                width={300}
+                height={500}
+                placeholder="empty"
+                alt="step02. 支付訂金-極客網頁設計"
+              ></Image>
             </div>
           </div>
 
           <h2>2.服務範圍 (Scope of Work)</h2>
+          <div>
+            <ul>
+              <li className="text-[20px] font-bold">
+                網頁製作：
+                <p>形象網頁</p>
+              </li>
+              <li className="text-[20px] font-bold">seo優化</li>
+              <li className="text-[20px] font-bold">網頁結構優化</li>
+              <li className="text-[20px] font-bold">網頁製作：</li>
+            </ul>
+          </div>
           <h2>3.項目時間表 (Timeline)</h2>
           <h2>4.付款條款 (Payment Terms)</h2>
         </div>

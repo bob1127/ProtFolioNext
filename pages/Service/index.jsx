@@ -975,7 +975,7 @@ export default function Blog() {
                       </span>
                     </div>
 
-                    <p className="text-[16px] w-2/3  xl:w-full mt-[40px]">
+                    <p className="text-[16px]  w-full md:w-2/3  xl:w-full mt-[40px]">
                       使用 GA4、Google Search Console 和
                       Hotjar，您可以全方位分析和優化網站的 SEO 成效。GA4
                       提供用戶行為和目標追蹤，Google Search Console
