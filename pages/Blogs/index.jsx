@@ -9,6 +9,8 @@ import { NextSeo } from "next-seo";
 import HorizontalScroll from "../../components/HorizontalScroll/page.jsx";
 import PortfolioSample from "../../components/PortfolioSample/page.jsx";
 import { useEffect } from "react";
+import Clock from "../../components/Clock";
+
 // import Carousel from "../../components/EmblaCarousel06/index.jsx";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
@@ -210,6 +212,7 @@ export default function Blog() {
             >
               Articles
             </div>
+            <Clock />
             <h1
               style={{
                 transform:

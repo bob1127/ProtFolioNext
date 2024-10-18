@@ -17,45 +17,48 @@ const App = () => {
         // let mouseDown = false;
 
         const wordsToDisplay = [
-          "WebsiteDesign",
-          "SEO Optimization",
-          "ShortVideo",
-          "Marketing",
-          "Photography",
-          "Behance",
-          "Email",
-          "Discord",
-          "YouTube",
-          "WebsiteDesign",
-          "SEO Optimization",
-          "ShortVideo",
-          "Marketing",
-          "Photography",
-          "Behance",
-          "Email",
-          "Discord",
-          "YouTube",
-          "WebsiteDesign",
-          "SEO Optimization",
-          "ShortVideo",
-          "Marketing",
-          "Photography",
-          "Behance",
-          "Email",
-          "Discord",
-          "YouTube",
+          "WEB DESIGN",
+          "SEO",
+          "PHOTOGRAPHY",
+          "MARKETING",
+          "VIDEO",
+          "3D",
+          "WORDPRESS",
+          "E-COMMERCE",
+          "YOUTUBE",
+          "INSTAGRAM",
+          "FACEBOOK",
+          "WEBSITE",
+          "WEB DESIGN",
+          "SEO",
+          "PHOTOGRAPHY",
+          "MARKETING",
+          "VIDEO",
+          "MOBILE",
+          "MOBILE",
+          "WEBSITE",
+          "YOUTUBE",
+          "INSTAGRAM",
+          "FACEBOOK",
+          "WEB DESIGN",
+          "SEO",
+          "PHOTOGRAPHY",
+          "MARKETING",
+          "VIDEO",
+          "3D",
+          "WEBSITE",
+          "E-COMMERCE",
+          "YOUTUBE",
+          "INSTAGRAM",
+          "FACEBOOK",
         ];
 
         const colors = [
-          "#F2CA61",
-          "#F26161",
-          "#DB7AFD",
-          "#FFD700",
-          "#FF4500",
-          "#61F29B",
-          "#10b981",
-          "#FFFFFF",
-          "#61D8F2",
+          "#000000",
+          "#000000",
+          "#000000",
+          "#000000",
+          "#000000",
           "#F2CA61",
           "#F26161",
           "#DB7AFD",
@@ -226,7 +229,7 @@ const App = () => {
         };
 
         p.draw = () => {
-          p.background("#ffffff");
+          p.background("#000000"); // Set background to black
           Matter.Engine.update(engine);
 
           circles.forEach(({ body, text }) => {
@@ -237,12 +240,12 @@ const App = () => {
             p.translate(pos.x, pos.y);
             p.rotate(angle);
             p.rectMode(p.CENTER);
-            p.fill(body.render.fillStyle);
-            p.stroke(body.render.strokeStyle);
-            p.strokeWeight(body.render.lineWidth);
+            p.fill("#FFFFFF"); // Set fill color to white for objects
+            p.stroke("#000000"); // Optional: Set stroke color if you want a border
+            p.strokeWeight(1.5); // Adjust stroke weight as needed
             p.rect(0, 0, text.length * 14 + 10, 40, 40);
             p.noStroke();
-            p.fill("#0f0f0f");
+            p.fill("#0f0f0f"); // Set text color if desired
             p.textSize(14);
             p.textAlign(p.CENTER, p.CENTER);
             p.text(text.toUpperCase(), 0, 0);

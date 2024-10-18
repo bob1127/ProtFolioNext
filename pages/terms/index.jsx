@@ -76,14 +76,31 @@ export default function Home() {
           </span>
         </div>
         <div className="terms-wrap border-black bg-white border w-[80vw] mx-auto p-10 rounded-xl">
-          <div className="grid grid-cols-2 gap-2">
+          <h2>2.確認雙方需求 (Scope of Work)</h2>
+          <div className="grid bg-gray-100 p-10 grid-cols-2 gap-2">
             <div className="content">
               <b className="text-[20px]">Step01</b>
               <p className="text-[20px]">確認雙方需求</p>
+              <Image
+                src="/images/terms/確認合約需求-極客網頁設計.png"
+                loading="lazy"
+                width={500}
+                height={500}
+                placeholder="empty"
+                alt="step1確認雙方需求"
+              ></Image>
             </div>
             <div className="content">
               <b className="text-[20px]">Step02</b>
               <p className="text-[20px]">支付訂金</p>
+              <Image
+                src="/images/terms/支付訂金-極客網頁設計.png"
+                loading="lazy"
+                width={300}
+                height={500}
+                placeholder="empty"
+                alt="step02. 支付訂金-極客網頁設計"
+              ></Image>
             </div>
             <div className="content">
               <b className="text-[20px]">Step03</b>

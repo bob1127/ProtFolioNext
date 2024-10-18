@@ -117,29 +117,25 @@ export default function Blog() {
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <h1
-                className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
+                className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px] py-[50px] "
                 data-aos="fade-blur"
               >
                 分析網頁 SEO 成效指標
               </h1>
               <div className="title-content-date">
                 <div></div>
-                <div className="text-[14px]">
-                  <b className="mr-3">Ga4 , google search console</b>
-                  <b>2024/04/05</b>
-                </div>
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
                   <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
-                    網頁設計
+                    SEO行銷
                   </div>
                   <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
-                    設計軟體｜平面設計
+                    網頁行銷｜SEO
                   </div>
                 </div>
                 <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
-                  設計
+                  數據分析
                 </div>
               </div>
             </div>
@@ -159,18 +155,20 @@ export default function Blog() {
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>深入解析 SEO 成效指標，助您精準優化網站</h2>
             </div>
-            <a
-              target="_blank"
-              className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
-              href="https://www.adobe.com/tw/products/photoshop.html?gclid=Cj0KCQjwjNS3BhChARIsAOxBM6ps1V3EiL3_ddXAAAgyFgwA1R0bdLAeS4hPBXd6JF2JZdO2n-fhar8aApCwEALw_wcB&sdid=ZXL8DWJ3&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwjNS3BhChARIsAOxBM6ps1V3EiL3_ddXAAAgyFgwA1R0bdLAeS4hPBXd6JF2JZdO2n-fhar8aApCwEALw_wcB:G:s&s_kwcid=AL!3085!3!706065469640!b!!g!!photoshop%20ai!21476365577!164868406037&gad_source=1"
-            >
-              前往 Adobe 官方網站
-            </a>
+            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+              Google Analytics 4 (GA4) 和 Google Search Console
+              都可以用來分析網頁的 SEO
+              成效指標，但它們的功能和側重點有所不同，各自提供的數據也相輔相成。
+            </div>
 
             <br></br>
             <div className="">
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> ㄧ. GA4</h2>
+                <h2 className="text-[32px] font-bold"> GA4</h2>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  GA4 更加側重於網站的 <b>使用者行為分析</b> 。以下是 GA4
+                  提供的與 SEO 相關的數據：
+                </div>
                 <fieldset></fieldset>
 
                 <h3>1.使用者數量</h3>
@@ -281,8 +279,16 @@ export default function Blog() {
                   className="mt-4"
                 ></Image>
               </div>
-              <div>
-                <h2 className="text-[32px] font-bold"> ㄧ. GA4</h2>
+              <div className="mt-[70px]">
+                <h2 className="text-[32px] font-bold">
+                  {" "}
+                  Google Search Console
+                </h2>
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  Google Search Console 專注於 <b>搜尋引擎的流量與可見性</b>
+                  。它提供了有關網站在 Google 搜尋結果中的表現和技術 SEO
+                  的重要信息：
+                </div>
 
                 <h3 className="mt-[30px]">1. 點擊數（Clicks）：</h3>
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">

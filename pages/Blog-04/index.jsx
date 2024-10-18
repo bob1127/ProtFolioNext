@@ -443,7 +443,7 @@ export default function Blog() {
             </div>
           </div>
 
-          <div className="patagrph p-2 xl:p-10">
+          {/* <div className="patagrph p-2 xl:p-10">
             <h2>內容行銷如何幫助網站提升搜索引擎排名？</h2>
 
             <br></br>
@@ -488,9 +488,9 @@ export default function Blog() {
                 內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="patagrph p-2 xl:p-10">
+          {/* <div className="patagrph p-2 xl:p-10">
             <h2>新手如何做好內容行銷？ 有哪些方式</h2>
 
             <br></br>
@@ -539,7 +539,7 @@ export default function Blog() {
                 內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="page-wrap">

@@ -167,6 +167,12 @@ export default function Blog() {
               設計工具，適合各種技能水平的使用者，特別是設計師和開發者。它使得創建和共享
               3D 內容變得簡單，並且提供直觀的介面和強大的功能。
             </div>
+            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+              3D
+              設計已成為現代設計的重要趨勢，從網頁動畫到產品設計，三維圖形的應用越來越廣泛。如果你對
+              3D 設計感興趣，但不確定從哪裡開始，那麼 Spline
+              是一個非常適合新手的工具。
+            </div>
             <a
               target="_blank"
               className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
@@ -265,6 +271,91 @@ export default function Blog() {
                   使用 Spline 的互動功能，你可以為 3D
                   模型設置觸發效果。例如當使用者滑鼠懸停在某個對象上時，觸發對象的動畫或樣式變化，增加用戶參與感。
                 </div>
+                <div>
+                  <Image
+                    alt="互動動畫01-極客網頁設計"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
+                    src="/images/blog/Blog05/互動動畫_定義初始狀態-極客網頁設計.png"
+                  ></Image>
+                  <b>為物件添加一個 Basic State（基本狀態）。定義初始狀態</b>
+                </div>
+                <div className="mt-[35px]">
+                  <Image
+                    alt="互動動畫01-極客網頁設計"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
+                    src="/images/blog/Blog05/互動動畫_更改物件狀態-極客網頁設計.png"
+                  ></Image>
+                  <b>
+                    新增初始狀態後，可以開始調整你的物件的狀態，現在更改的狀態是之後事件觸發時物件會產生的變化狀態。這裡我們把物件往右下移動並且縮放。
+                  </b>
+                </div>
+                <div className="mt-[35px]">
+                  <Image
+                    alt="互動動畫01-極客網頁設計"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
+                    src="/images/blog/Blog05/互動動畫01-極客網頁設計.png"
+                  ></Image>
+                  <b>選擇添加事件(Events)</b>
+                </div>
+                <div className="mt-[35px]">
+                  <Image
+                    alt="互動動畫01-極客網頁設計"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
+                    src="/images/blog/Blog05/互動動畫02-極客網頁設計.png"
+                  ></Image>
+                  <b className="text-[16px]">
+                    事件(Events)可以選擇當滑鼠移入、點擊、或者當頁面載入時，觸發動畫效果
+                  </b>
+                </div>
+                <div className="mt-[35px]">
+                  <Image
+                    alt="互動動畫_添加transition-極客網頁設計"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
+                    src="/images/blog/Blog05/互動動畫_添加transition-極客網頁設計.png.gif"
+                  ></Image>
+                  <b className="text-[16px]">
+                    開始定義你的transition:我這裡選擇當頁面載入時(start)及觸發動畫，transition設定ease-in-out，不重複播放
+                  </b>
+                </div>
+                <div className="mt-[35px]">
+                  <Image
+                    alt="互動動畫_添加transition-極客網頁設計"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
+                    src="/images/blog/Blog05/互動動畫_更改物件狀態-極客網頁設計.png"
+                  ></Image>
+                  <b className="text-[16px]">
+                    接下來來看看會有什麼改變吧！ 點擊播放鈕
+                  </b>
+                </div>
+                <div className="mt-[35px]">
+                  <Image
+                    alt="互動動畫_效果展示-極客網頁設計"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
+                    src="/images/blog/Blog05/互動動畫_效果展示-極客網頁設計.gif"
+                  ></Image>
+                  <b className="text-[16px]"></b>
+                </div>
               </div>
 
               {/* <div className="imgText mt-[60px]">
@@ -303,7 +394,7 @@ export default function Blog() {
                 </div>
               </div> */}
 
-              <div className="imgText mt-[60px]">
+              {/* <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   步驟三：進入新手頻道 在 Midjourney Discord
                   伺服器中，找到新手頻道（通常是 #newbies
@@ -316,15 +407,15 @@ export default function Blog() {
                   placeholder="empty"
                   height={600}
                 ></Image>
-              </div>
-              <div className="imgText mt-[60px]">
+              </div> */}
+              {/* <div className="imgText mt-[60px]">
                 <div className="text-[20px] font-normal text-[#242424]  leading-[32px] xl:leading-[36px]">
                   Midjourney
                   提供了多種指令與參數，讓使用者可以更靈活地生成和自訂圖像。以下將詳細介紹幾個常見且強大的指令功能，幫助你在創作過程中充分利用這些工具。
                 </div>
-              </div>
+              </div> */}
 
-              <div className="imgText mt-[60px]">
+              {/* <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   2.1 /imagine 指令 這是 Midjourney
                   最核心的指令，所有圖像生成過程都從這裡開始。通過提供「提示詞」（prompt），你可以告訴
@@ -345,9 +436,9 @@ export default function Blog() {
                   簡短提示詞：如 "sunset over the
                   mountains"（山上日落），適合基本生成。
                 </div>
-              </div>
+              </div> */}
 
-              <div className="imgText mt-[60px]">
+              {/* <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   2.2 調整圖像的參數 Midjourney
                   提供多種參數來更精確地控制圖像的生成結果，以下是常用的參數：
@@ -381,9 +472,9 @@ export default function Blog() {
                     height={600}
                   ></Image>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="imgText mt-[60px]">
+              {/* <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   2.2 調整圖像的參數 Midjourney
                   提供多種參數來更精確地控制圖像的生成結果，以下是常用的參數：
@@ -482,8 +573,8 @@ export default function Blog() {
                     </div>
                   </div>
                 </div>
-              </div>
-
+              </div> */}
+              {/* 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   2.3 進階指令功能
@@ -524,11 +615,11 @@ export default function Blog() {
                     height={600}
                   ></Image>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
-          <div className="patagrph p-2 xl:p-10">
+          {/* <div className="patagrph p-2 xl:p-10">
             <h2>內容行銷如何幫助網站提升搜索引擎排名？</h2>
 
             <br></br>
@@ -573,9 +664,9 @@ export default function Blog() {
                 內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="patagrph p-2 xl:p-10">
+          {/* <div className="patagrph p-2 xl:p-10">
             <h2>新手如何做好內容行銷？ 有哪些方式</h2>
 
             <br></br>
@@ -624,7 +715,7 @@ export default function Blog() {
                 內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="page-wrap">
