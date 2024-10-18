@@ -21,7 +21,7 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title=""
+        title="網頁設計"
         description=""
         openGraph={{
           url: "",
@@ -127,9 +127,7 @@ export default function Blog() {
                 Spline 3D 入門指南
               </h1>
               <div className="title-content-date">
-                <div data-aos="fade-blur">
-                  <Image src="" width={50} height={50}></Image>
-                </div>
+                <div data-aos="fade-blur"></div>
                 <div className="text-[14px]">
                   <b className="mr-3">Spline 3d</b>
                   <b>2024/04/05</b>

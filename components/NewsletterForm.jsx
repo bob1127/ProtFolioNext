@@ -150,8 +150,8 @@ export default function NewsletterForm() {
             </div>
             <div className="mc-field-group input-group">
               <strong>選擇您需要的方案</strong>
-              <ul className="">
-                <li className="border  bg-blue-700 border-black rounded-md p-5">
+              <ul className=" flex flex-row">
+                <li className="border   bg-blue-700 border border-black border-black rounded-md p-5">
                   <input
                     type="checkbox"
                     name="group[43793][1]"

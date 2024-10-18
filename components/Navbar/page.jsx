@@ -318,7 +318,7 @@ export default function Index() {
                         </a>
                         <a
                           aria-label="Feature link"
-                          href="/about-2"
+                          href="/Service"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
@@ -349,7 +349,7 @@ export default function Index() {
                         </a>
                         <a
                           aria-label="Feature link"
-                          href="/about-2"
+                          href="/portfolio"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
@@ -380,7 +380,7 @@ export default function Index() {
                         </a>
                         <a
                           aria-label="Feature link"
-                          href="/about-2"
+                          href="/about"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
@@ -411,7 +411,7 @@ export default function Index() {
                         </a>
                         <a
                           aria-label="Feature link"
-                          href="/about-2"
+                          href="/contact"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
