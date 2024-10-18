@@ -34,6 +34,18 @@ const imageLoader02 = ({ src, width, quality }) => {
 };
 
 export default function Home() {
+  const webpage = {
+    name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    description:
+      "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+    url: "https://www.jeek-webdesign.com.tw",
+    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo.webp",
+    contact: {
+      phone: "+0939767977",
+      email: "jeekdesign@gmail.com",
+    },
+  };
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -72,6 +84,32 @@ export default function Home() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
       <div>
         <NextSeo
@@ -209,6 +247,8 @@ export default function Home() {
             <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h2 className=" text-center">"創意無限，讓您的品牌脫穎而出。"</h2>
               <p className=" text-[16px] xl:text-[18px] leading-[26px] text-center">
+                <h1>{webpage.name}</h1>
+                <p>{webpage.description}</p>
                 專注打造符合您品牌形象的網站，量身定制 ，細緻呈現品牌價值
               </p>
 
