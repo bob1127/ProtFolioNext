@@ -42,7 +42,7 @@ export default function Home() {
     logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo.webp",
     contact: {
       phone: "+0939767977",
-      email: "jeekdesign@gmail.com",
+      email: "i.com",
     },
   };
 
@@ -247,8 +247,6 @@ export default function Home() {
             <div className="bottom  flex py-[50px] px-[15px] md:px-0 lg:p-[40px] items-center   h-1/2 justify-start flex-col w-full ">
               <h2 className=" text-center">"創意無限，讓您的品牌脫穎而出。"</h2>
               <p className=" text-[16px] xl:text-[18px] leading-[26px] text-center">
-                <h1>{webpage.name}</h1>
-                <p>{webpage.description}</p>
                 專注打造符合您品牌形象的網站，量身定制 ，細緻呈現品牌價值
               </p>
 

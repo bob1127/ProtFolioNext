@@ -11,6 +11,17 @@ import TextMask from "../../components/TextMask/page.jsx";
 import { useState, useEffect } from "react";
 
 export default function Blog() {
+  const webpage = {
+    name: "網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    description:
+      " JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。。",
+    url: "https://www.jeek-webdesign.com.tw/terms",
+    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo.webp",
+    contact: {
+      phone: "+0939767977",
+      email: "jeekdesign@gmail.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
