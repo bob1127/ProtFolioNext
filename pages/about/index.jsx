@@ -820,7 +820,7 @@ export default function Blog() {
                     找我聊聊
                   </div>
                   <p>E-Coomerce</p>
-                  <h3 className="text-[40px]">購物網站</h3>
+                  <h3 className="text-[16px]">購物網站</h3>
                   {/* <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p> */}
@@ -856,7 +856,7 @@ export default function Blog() {
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
                     跟我談談
                   </div>
-                  <h3 className="text-[40px]">客製化網站</h3>
+                  <h3 className="text-[16px]">客製化網站</h3>
                   {/* <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p> */}

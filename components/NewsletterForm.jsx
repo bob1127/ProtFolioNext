@@ -99,21 +99,21 @@ export default function NewsletterForm() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="xl:w-[800px] overflow-hidden  p-[80px] md:w-[700px] w-full mx-auto bg-white rounded-lg">
+    <div className="2xl:w-[800px] overflow-scroll h-full   w-full mx-auto bg-white rounded-lg">
       <div id="mc_embed_signup ">
         <form
           action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
-          className="validate"
+          className="validate "
           target="_blank"
         >
           <div id="mc_embed_signup_scroll ">
             <div className="indicates-required">
-              <span className="asterisk">*</span> indicates required
+              <h2>填寫資料</h2>
             </div>
-            <div className="mc-field-group">
+            <div className="mc-field-group w-full   xl:w-3/4 2xl:w-2/3">
               <label htmlFor="mce-EMAIL">
                 信箱 <span className="asterisk">*</span>
               </label>
@@ -126,7 +126,7 @@ export default function NewsletterForm() {
                 required
               />
             </div>
-            <div className="mc-field-group mt-[15px]">
+            <div className="mc-field-group mt-[15px]   xl:w-3/4 2xl:w-2/3">
               <label htmlFor="mce-FNAME">
                 {" "}
                 姓名 <span className="asterisk">*</span>
@@ -139,7 +139,7 @@ export default function NewsletterForm() {
                 id="mce-FNAME"
               />
             </div>
-            <div className="mc-field-group mt-[15px]">
+            <div className="mc-field-group mt-[15px]   xl:w-3/4 2xl:w-2/3">
               <label htmlFor="mce-PHONE">聯絡電話</label>
               <input
                 type="number"
@@ -148,10 +148,10 @@ export default function NewsletterForm() {
                 id="mce-PHONE"
               />
             </div>
-            <div className="mc-field-group input-group">
+            <div className="mc-field-group input-group py-[40px]">
               <strong>選擇您需要的方案</strong>
-              <ul className=" flex flex-row">
-                <li className="border   bg-blue-700 border border-black border-black rounded-md p-5">
+              <ul className="  grid grid-cols-2 p-0 m-0">
+                <li className="border   bg-blue-700  border-black rounded-md p-5">
                   <input
                     type="checkbox"
                     name="group[43793][1]"
@@ -167,6 +167,7 @@ export default function NewsletterForm() {
                       key="1"
                       aria-label="基本套版網站"
                       title="基本套版網站"
+                      className="text-white"
                     >
                       <ul>
                         <li className="text-[20px] text-gray-100 mt-3">
@@ -199,6 +200,7 @@ export default function NewsletterForm() {
                   <Accordion>
                     <AccordionItem
                       key="1"
+                      className="text-[16px]"
                       aria-label="購物網站"
                       title="購物網站"
                     >
@@ -211,21 +213,52 @@ export default function NewsletterForm() {
                     </AccordionItem>
                   </Accordion>
                 </li>
+                <li className="border    border border-black border-black rounded-md p-5">
+                  <input
+                    type="checkbox"
+                    name="group[43793][1]"
+                    id="mce-group[43793]-43793-0"
+                  />
+                  <label htmlFor="mce-group[43793]-43793-0">
+                    Basic website
+                  </label>
+
+                  <div className="project-wrap "></div>
+                  <Accordion>
+                    <AccordionItem
+                      key="1"
+                      aria-label="基本套版網站"
+                      title="基本套版網站"
+                      className="text-[15px]"
+                    >
+                      <ul>
+                        <li className="text-[20px]  mt-3">
+                          - 基本網頁版型設計
+                        </li>
+                        <li className="text-[20px]  mt-3">
+                          - 形象照片攝影拍攝
+                        </li>
+                        <li className="text-[20px]  mt-3">- 企業形象照片</li>
+                        <li className="text-[20px]  mt-3">- 基本seo優化</li>
+                      </ul>
+                    </AccordionItem>
+                  </Accordion>
+                </li>
                 <li className="border  bg-blue-700 border-black rounded-md p-5">
                   <input
                     type="checkbox"
                     name="group[43793][4]"
                     id="mce-group[43793]-43793-2"
                   />
-                  <label htmlFor="mce-group[43793]-43793-2">
-                    Customized website
+                  <label htmlFor="mce-group[43793]-43793-2 text-gray-100">
+                    Landing page
                   </label>
                   <Accordion>
                     <AccordionItem
                       key="1"
-                      aria-label="客製化網站"
-                      title="客製化網站"
-                      className="text-white"
+                      aria-label="一頁式網站"
+                      title="一頁式網站"
+                      className="text-white text-[16px]"
                     >
                       <ul>
                         <li className="text-[20px] text-gray-100 mt-3">
@@ -246,10 +279,10 @@ export default function NewsletterForm() {
                 </li>
               </ul>
             </div>
-            <div className="mc-field-group input-group">
+            <div className="mc-field-group input-group py-[40px]">
               <strong className="">您接受的聯繫方式</strong>
-              <ul>
-                <li>
+              <ul className="p-0 m-0 flex ">
+                <li className="mr-5 mt-3">
                   <input
                     type="checkbox"
                     name="group[43794][8]"
@@ -257,7 +290,7 @@ export default function NewsletterForm() {
                   />
                   <label htmlFor="mce-group[43794]-43794-0">Line</label>
                 </li>
-                <li>
+                <li className="mr-5 mt-3">
                   <input
                     type="checkbox"
                     name="group[43794][16]"
@@ -265,7 +298,7 @@ export default function NewsletterForm() {
                   />
                   <label htmlFor="mce-group[43794]-43794-1">Facebook</label>
                 </li>
-                <li>
+                <li className="mr-5 mt-3">
                   <input
                     type="checkbox"
                     name="group[43794][32]"

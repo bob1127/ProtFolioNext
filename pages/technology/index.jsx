@@ -574,10 +574,7 @@ export default function Blog() {
                             role="listitem"
                             className="service-cms-page-link-item w-dyn-item"
                           >
-                            <a
-                              href="/service/product"
-                              className="link-with-arrows"
-                            >
+                            <a className="link-with-arrows">
                               高效的性能與快速的頁面加載
                               <p>
                                 Next.js結合了React的靈活性和靜態站點生成（SSG）的速度，使您的網站在任何設備上都能快速加載。這不僅提高了用戶體驗，還能改善SEO，
@@ -591,10 +588,7 @@ export default function Blog() {
                             role="listitem"
                             className="service-cms-page-link-item w-dyn-item"
                           >
-                            <a
-                              href="/service/usability"
-                              className="link-with-arrows"
-                            >
+                            <a className="link-with-arrows">
                               無縫的內容管理
                               <p>
                                 透過WordPress作為後端管理系統，您可以輕鬆地管理網站內容。無需撰寫代碼，您便能透過熟悉的WordPress介面來更新文章、頁面和多媒體內容，同時仍能享受無頭CMS所帶來的靈活性和自由度。
@@ -605,10 +599,7 @@ export default function Blog() {
                             role="listitem"
                             className="service-cms-page-link-item w-dyn-item"
                           >
-                            <a
-                              href="/service/development"
-                              className="link-with-arrows"
-                            >
+                            <a className="link-with-arrows">
                               極致的設計與開發自由
                               <p>
                                 無頭架構讓前端與後端分離，意味著您可以自由選擇和設計最符合品牌風格的前端界面，而不受限於WordPress預設的佈局或樣式。Next.js的靈活性讓開發人員能夠更快速地實現自訂設計，並整合各種前端技術。

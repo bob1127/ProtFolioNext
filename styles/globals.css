@@ -1329,7 +1329,8 @@ textarea.w-input,textarea.w-select{
     background:#ddd;
     min-width:100%;
     display:none;
-    position:absolute
+    position:absolute;
+    margin-top: -2px;
 }
 .w-dropdown-list.w--open{
     display:block

@@ -8,13 +8,13 @@ const path = require('path');
   // 模擬靜態路徑，您可以自定義此路徑清單
   const staticPaths = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
-    { url: '/Contact', changefreq: 'daily', priority: 0.8 },
+    { url: '/contact', changefreq: 'daily', priority: 0.8 },
     { url: '/about', changefreq: 'daily', pridority: 0.8 },
-    { url: '/about-2', changefreq: 'daily', priority: 0.8 },
-    { url: '/about-3', changefreq: 'daily', priority: 0.8 },
-    { url: '/Service', changefreq: 'daily', priority: 0.8 },
-    { url: '/Blogs', changefreq: 'daily', priority: 0.8 },
+    { url: '/service', changefreq: 'daily', priority: 0.8 },
     { url: '/Blog-01', changefreq: 'daily', priority: 0.8 },
+    { url: '/Blog-02', changefreq: 'daily', priority: 0.8 },
+    { url: '/Blog-03', changefreq: 'daily', priority: 0.8 },
+    { url: '/Blog-04', changefreq: 'daily', priority: 0.8 },
   { url: '/Blog-02', changefreq: 'daily', priority: 0.8 },
    { url: '/Blog-03', changefreq: 'daily', priority: 0.8 },
     { url: '/Blog-04', changefreq: 'daily', priority: 0.8 },

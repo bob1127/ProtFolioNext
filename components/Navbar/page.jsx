@@ -246,9 +246,18 @@ export default function Index() {
         </div>
       </div>
       <nav className="navbar">
-        <div className="nav-inner">
-          <a href="/" className="brand-link w-nav-brand">
-            <div className="brand-name">Jeek</div>
+        <div className="nav-inner p-0 m-0 ">
+          <a href="/" className="brand-link w-nav-brand p-0 m-0 bg-white ">
+            <div className="brand-name ">
+              <Image
+                src="/images/JeekLogo.webp"
+                placeholder="empty"
+                alt="Company-logo"
+                loading="lazy"
+                width={40}
+                height={40}
+              ></Image>
+            </div>
           </a>
           <div className="nav-menu-wrapper">
             <div
