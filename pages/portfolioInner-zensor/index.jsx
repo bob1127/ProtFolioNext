@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import { NextSeo } from "next-seo";
 import Carousel from "../../components/EmblaCarousel06/index";
 // import Inner from "../../components/Inner/index.jsx";
 // import Styles from "../../styles/portfolio.module.css";

@@ -60,7 +60,7 @@ export default function Home() {
           height={700}
           src="/images/contact關於我們heroImg-極客網頁設計.jpg"
         ></Image> */}
-        <div className="form rounded-[40px] bg-gray-100 mt-[-100px] overflow-hidden flex-col  md:flex-row  flex h-[100vh] border-2 border-black">
+        <div className="form rounded-[40px] bg-gray-100  overflow-hidden flex-col  md:flex-row  flex h-[100vh] border-2 border-black">
           <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
             <div className="txt flex flex-col items-center justify-center">
               <h3 className="text-[40px] font-bold">Contact Us</h3>
