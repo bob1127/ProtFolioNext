@@ -60,9 +60,7 @@ export default function MyApp({ Component, pageProps, router }) {
        
       <div style={{ textAlign: 'center', padding: '50px' }}>
 
-         <Head>
-             <link rel="icon" href="/favicon.ico" />
-         </Head>
+        
           <Script
         id="gtm"
         strategy="afterInteractive"

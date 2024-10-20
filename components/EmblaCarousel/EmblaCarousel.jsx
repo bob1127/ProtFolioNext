@@ -188,9 +188,15 @@ const EmblaCarousel = () => {
   }, [isOpen]);
 
   return (
-    <div className="embla w-full p-[60px]">
+    <div className="embla w-full p-0 md:p-[60px]">
       <div
-        className="embla__viewport  p-[60px] w-[100%] overflow-hidden cursor-none"
+        className="bg-black absolute z-[1]
+         top-[60%] sm:hidden left-[5%] flex justify-center p-3 items-center text-white w-[60px] h-[60px] rounded-full"
+      >
+        <div>← </div> <div>Scroll </div>
+      </div>
+      <div
+        className="embla__viewport   p-[60px] w-[100%] overflow-hidden cursor-none"
         ref={emblaRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -200,7 +206,7 @@ const EmblaCarousel = () => {
         <div className="embla__container flex">
           {slides.map((slide) => (
             <div
-              className="embla__slide w-[600px] flex-none pl-4"
+              className="embla__slide w-[370px] md:w-[600px] flex-none pl-4"
               key={slide.id}
             >
               <div className="embla__parallax border border-black h-full overflow-hidden">

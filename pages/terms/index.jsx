@@ -19,7 +19,7 @@ export default function Home() {
     description:
       "    需求確認後，雙方應共同制定書面合約，該合約將包括具體的服務內容、預計交付時間、付款方式及其他相關條款，並經雙方簽字確認後生效。",
     url: "https://www.jeek-webdesign.com.tw/terms",
-    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo.webp",
+    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo_web_title.png",
     contact: {
       phone: "+0939767977",
       email: "jeekdesign@gmail.com",
@@ -37,6 +37,18 @@ export default function Home() {
   return (
     <div className="py-[100px] flex justify-center items-center">
       <Head>
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:description"
+          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        />
+        <meta
+          property="og:image"
+          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+        />
+        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta property="og:type" content="website" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

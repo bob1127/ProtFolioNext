@@ -19,6 +19,20 @@ export default function Blog() {
   // }, []);
   return (
     <div className="bg-[#f9f9f8]">
+      <Head>
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:description"
+          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        />
+        <meta
+          property="og:image"
+          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+        />
+        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta property="og:type" content="website" />
+      </Head>
       <NextSeo
         title="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
         description="透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。"
@@ -44,7 +58,6 @@ export default function Blog() {
           },
         ]}
       />
-      <Head></Head>
 
       <div>
         <div className="div social-side-bar w-[90%] mx-auto h-[30px] md:h-auto  md:w-[50px] duration-300 flex flex-row md:flex-col bg-white  border-2 border-black py-1  justify-center items-center md:px-[10px] md:py-[20px] fixed bottom-[15px]   md:bottom-[50%] z-[9999999]  right-[15px] md:right-[20px] rounded-full">

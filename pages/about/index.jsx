@@ -156,7 +156,8 @@ export default function Blog() {
   }, []);
   return (
     <div className="bg-[#faf9f8]" data-aos="fade-up">
-      {/* <Head>
+      <Head>
+        <link rel="icon" href="/favicon/favicon.ico" />
         <meta property="og:title" content="關於我們-極客網頁設計" />
         <meta
           property="og:description"
@@ -168,7 +169,7 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
-      </Head> */}
+      </Head>
       <NextSeo
         title="關於極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         description="專業的網頁設計與SEO優化服務，靈活的自由接案者提供客製化解決方案，讓您的網站脫穎而出。聯繫我們，讓我們幫助您提升品牌形象，實現業務目標！

@@ -46,6 +46,7 @@ export default function Blog() {
         }}
       />
       <Head>
+        <link rel="icon" href="/favicon/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"

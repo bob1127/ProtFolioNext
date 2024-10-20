@@ -250,7 +250,7 @@ export default function Index() {
           <a href="/" className="brand-link w-nav-brand p-0 m-0 bg-white ">
             <div className="brand-name ">
               <Image
-                src="/images/company-logo/JeekLogo.webp"
+                src="/images/company-logo/JeekLogo_web_title.png"
                 placeholder="empty"
                 alt="Company-logo"
                 loading="lazy"

@@ -44,14 +44,18 @@ export default function Blog() {
         }}
       />
       <Head>
-        {/* <link
-          rel="stylesheet"
-          href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:description"
+          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
         />
-        <link
-          rel="stylesheet"
-          href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/css/wisdom-blog-template.webflow.7452c8b2a.css"
-        /> */}
+        <meta
+          property="og:image"
+          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+        />
+        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta property="og:type" content="website" />
       </Head>
 
       {/* <Script

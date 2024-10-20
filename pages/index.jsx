@@ -39,7 +39,7 @@ export default function Home() {
     description:
       "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
     url: "https://www.jeek-webdesign.com.tw",
-    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo.webp",
+    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo_web_title.png",
     contact: {
       phone: "+0939767977",
       email: "i.com",
@@ -70,6 +70,8 @@ export default function Home() {
   return (
     <div className="">
       <Head>
+        <link rel="icon" href="/favicon/favicon.ico" />
+
         <meta
           property="og:title"
           content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、客製化網站、套版網站、商業攝影、seo優化 - 你的網站不想在跟別人一樣嗎？｜你的創意，我來實踐"
@@ -138,30 +140,25 @@ export default function Home() {
               <div className="absolute bg-black w-full bottom-0">
                 <Marquee>
                   <div>
-                    <p className="text-white w-[140px] p-2">SEO優化</p>
+                    <p className="text-white w-[140px] p-2">網頁設計 🖊️</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">網頁設計</p>
+                    <p className="text-white w-[140px] p-2">網頁行銷 💾</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">網頁行銷</p>
+                    <p className="text-white w-[140px] p-2">社群行銷 💡</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">商業攝影</p>
+                    <p className="text-white w-[140px] p-2">Banner設計 📔</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">
-                      Google search consol
-                    </p>
+                    <p className="text-white w-[140px] p-2">網頁結構優化 🖥️</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">Search Egine💡</p>
+                    <p className="text-white w-[140px] p-2">商業攝影 📸</p>
                   </div>
                   <div>
-                    <p className="text-white w-[140px] p-2">Photography📸</p>
-                  </div>
-                  <div>
-                    <p className="text-white w-[140px] p-2">Seo🎡</p>
+                    <p className="text-white w-[140px] p-2">Seo 優化 🎡</p>
                   </div>
                 </Marquee>
               </div>
@@ -734,10 +731,9 @@ export default function Home() {
               >
                 "設計網站不難 做出好的網站才不容易"
               </h2>
-              <a href="/about-3"> 更多方案</a>
 
               <p
-                className=" text-center text-[18px] leading-[26px] "
+                className=" text-center text-[22px] leading-[26px] "
                 data-aos="fade-up"
               >
                 總是覺得自己的網站沒有特色嗎？？想做出好的網頁嗎？？
@@ -772,7 +768,7 @@ export default function Home() {
                   最新優惠
                 </p>
                 <p className=" tetx-[16px] xl:text-[20px] text-center">
-                  現在選擇網頁設計方案及包含公司形象影片拍攝和商品形象攝影
+                  現在任何方案都贈商品或公司形象照片拍攝
                 </p>
               </div>
 
