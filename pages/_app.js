@@ -7,7 +7,7 @@ import Navbar from '../components/sideTabs/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
-
+import Head from 'next/head';
 import Image from 'next/image';
 import Nav from '../components/Navbar/page.jsx'
 import { useEffect } from 'react';
@@ -60,7 +60,9 @@ export default function MyApp({ Component, pageProps, router }) {
        
       <div style={{ textAlign: 'center', padding: '50px' }}>
 
-
+         <Head>
+             <link rel="icon" href="/favicon.ico" />
+         </Head>
           <Script
         id="gtm"
         strategy="afterInteractive"

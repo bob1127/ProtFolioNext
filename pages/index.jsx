@@ -276,6 +276,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="section-embla my-[60px border-b-2 border-black md:my-0">
+          <EmblaCarousel />
+        </section>
         <VelocityText />
         <section className="RWD  border-t-2 border-b-2 border-l-2 border-black">
           <div className="w-full flex-col items-center justify-center lg:flex-row flex">
@@ -488,9 +491,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="section-embla my-[60px] md:my-0">
-          <EmblaCarousel />
-        </section>
+
         <section className="section-movie hidden">
           <div className="movies">
             <Marquee>
