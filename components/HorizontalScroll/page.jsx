@@ -94,7 +94,11 @@ const HorizontalScroll = () => {
         >
           <section className="w-[40vw] xl:w-[24vw] bg-white mx-1 xl:mx-5 border border-black p-2">
             <Image
+<<<<<<< HEAD
               src="/images/新網站SEO規劃-極客網頁設計.webp"
+=======
+              src="/images/新網站SEO規劃-極客網頁設計.png"
+>>>>>>> 1659be6 (iufhgi)
               loading="lazy"
               placeholder="empty"
               alt="新網站SEO規劃-極客網頁設計"
@@ -118,7 +122,11 @@ const HorizontalScroll = () => {
         >
           <section className="w-[40vw] xl:w-[22vw] bg-white border xl:mx-5 mx-1 border-black p-2">
             <Image
+<<<<<<< HEAD
               src="/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.webp"
+=======
+              src="/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+>>>>>>> 1659be6 (iufhgi)
               placeholder="empty"
               alt="如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化"
               loading="lazy"
@@ -144,7 +152,11 @@ const HorizontalScroll = () => {
         >
           <section className="w-[40vw] xl:w-[27vw] bg-white border xl:mx-5 mx-1 border-black p-2">
             <Image
+<<<<<<< HEAD
               src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp"
+=======
+              src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.png"
+>>>>>>> 1659be6 (iufhgi)
               loading="lazy"
               alt="網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置"
               width={600}
