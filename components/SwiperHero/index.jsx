@@ -3,10 +3,10 @@ import { motion, useMotionValue } from "framer-motion";
 
 const video = [""];
 const imgs = [
-  "/images/網頁結構優化01_UI設計_banner設計-極客網頁設計_seo優化.png",
+  "/images/網頁結構優化01_UI設計_banner設計-極客網頁設計_seo優化.webp",
   "/images/攝影-商業攝影.png",
   "/images/網頁設計_商品攝影_網頁Seo優化-極客網頁設計.png",
-  "/images/網頁設計_UI設計_banner設計-極客網頁設計_seo優化.png",
+  "/images/網頁設計_UI設計_banner設計-極客網頁設計_seo優化.webp",
 ];
 
 const ONE_SECOND = 1000;

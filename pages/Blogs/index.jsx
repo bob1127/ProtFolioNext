@@ -37,7 +37,7 @@ export default function Blog() {
             "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/新網站SEO規劃-極客網頁設計.png",
+              url: "https://www.jeek-webdesign.com.tw/images/新網站SEO規劃-極客網頁設計.webp",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -192,7 +192,7 @@ export default function Blog() {
             <Image
               alt=""
               loading="eager"
-              src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.png"
+              src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.webp"
               width={1200}
               height={780}
               sizes="100%"
@@ -388,7 +388,7 @@ export default function Blog() {
                         placeholder="empty"
                         loading="lazy"
                         alt="網站SEO規劃-極客網頁設計"
-                        src="/images/新網站SEO規劃-極客網頁設計.png"
+                        src="/images/新網站SEO規劃-極客網頁設計.webp"
                         className="w-full group-hover:scale-105 duration-300"
                       ></Image>
                     </figure>
@@ -477,7 +477,7 @@ export default function Blog() {
                         <figure>
                           {" "}
                           <Image
-                            src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+                            src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.webp"
                             placeholder="empty"
                             className="group-hover:scale-105  overflow-hidden duration-700"
                             loading="lazy"

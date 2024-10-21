@@ -29,7 +29,7 @@ export default function Blog() {
             "了解 SEO 如何提升網站在搜尋引擎中的排名，增加自然流量和品牌信任。從選擇主機、使用 HTTPS 到現代化設計和網站速度優化，全面提升使用者體驗，幫助您的網站在數位世界中脫穎而出。深入探討關鍵字規劃與 SEO 實踐，讓您的網站成為穩定的流量來源，助您實現業務增長！",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/新網站SEO規劃-極客網頁設計.png",
+              url: "https://www.jeek-webdesign.com.tw/images/新網站SEO規劃-極客網頁設計.webp",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -165,7 +165,7 @@ export default function Blog() {
               width={800}
               height={500}
               alt="新網站SEO規劃-極客網頁設計"
-              src="/images/blog/新網站SEO規劃-極客網頁設計.png"
+              src="/images/blog/新網站SEO規劃-極客網頁設計.webp"
             ></Image>
           </div>
 

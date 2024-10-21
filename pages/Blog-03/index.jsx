@@ -30,7 +30,7 @@ export default function Blog() {
             "透過關鍵字研究、內容優化、行動友善設計和外部連結建置等 SEO 策略，快速提升搜尋引擎排名並增加網站曝光度，讓您的企業在競爭中脫穎而出。",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png",
+              url: "https://www.jeek-webdesign.com.tw/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.webp",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -115,7 +115,7 @@ export default function Blog() {
         <div className="article-title hidden md:black relative">
           <div className="txt bg-black-rgba z-[999] absolute bottom-0 h-1/2 left-0 flex justify-center items-center w-[100vw]  border-t border-white/50 backdrop-blur-md"></div>
           <Image
-            src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+            src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.webp"
             width={1920}
             height={768}
             placeholder="empty"

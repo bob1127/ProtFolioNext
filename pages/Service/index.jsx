@@ -511,7 +511,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.png"
+                          src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.webp"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1550px"
                           className="cover-image"
                           style={{

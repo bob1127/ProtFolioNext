@@ -669,7 +669,7 @@ export default function Blog() {
                 </div>
                 <div className="img mt-4 xl:mt-0 xl:my-0  mb-0 xl:mb-[30px] w-full md:w-[40%] overflow-hidden">
                   <Image
-                    src="/images/自由工作接案者-極客網頁設計.png"
+                    src="/images/自由工作接案者-極客網頁設計.webp"
                     alt="自由接案工作者-freeLancer-極客網頁設計"
                     placeholder="empty"
                     data-aos="zoom-in-up"
