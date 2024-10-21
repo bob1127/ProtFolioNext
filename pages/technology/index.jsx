@@ -465,11 +465,11 @@ export default function Blog() {
                     /> */}
                     {/* <img
                       className="w-[500px]"
-                      src="./images/peromace.png"
+                      src="./images/peromace.webp"
                       alt=""
                     /> */}
                     {/* <Image
-                      src="https://www.ultraehp.com/images/peromace.png"
+                      src="https://www.ultraehp.com/images/peromace.webp"
                       className="scale-105  static md:absolute right-0  md:right-[-100px]"
                       height={500}
                       width={600}
@@ -1159,7 +1159,7 @@ export default function Blog() {
                       <div className="right w-full md:w-1/2">
                         {/* <img
                           className="w-full"
-                          src="http://localhost:3000/_next/image?url=https%3A%2F%2Fwww.ultraehp.com%2Fimages%2Fperomace.png&w=1200&q=75"
+                          src="http://localhost:3000/_next/image?url=https%3A%2F%2Fwww.ultraehp.com%2Fimages%2Fperomace.webp&w=1200&q=75"
                           alt=""
                         /> */}
                         <Image

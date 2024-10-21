@@ -806,7 +806,7 @@ export default function Home() {
                     <p className="mt-4">商品攝影｜形象影片</p>
                     <p className="mt-4">客製化版面設計｜特殊動畫效果</p>
                     <p className="mt-4">購物車網站系統</p>
-                    http://localhost:3000/images/portfolio01.png
+                    http://localhost:3000/images/portfolio01.webp
                     <p className="mt-4">
                       SEO優化｜串接GTM、GA4、GoogleSearchConsole
                     </p>
