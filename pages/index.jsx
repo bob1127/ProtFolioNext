@@ -169,7 +169,7 @@ export default function Home() {
               className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[450px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(/images/網頁設計製作_網頁seo-極客網頁設計.png)",
+                  "url(/images/網頁設計製作_網頁seo-極客網頁設計.webp)",
               }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
@@ -185,7 +185,7 @@ export default function Home() {
               className="hero-right duration-500 border-blac  ease-in-out lg:hover:w-[35%] group overflow-hidden delay-150  border-1 border-black border pt-[50px] flex flex-col justify-center bg-cover bg-no-repeat h-[450px] xl:h-auto bg-center items-center  w-full lg:w-[15%]"
               style={{
                 backgroundImage:
-                  "url(/images/商業攝影_產品_banner-極客網頁設計.png)",
+                  "url(/images/商業攝影_產品_banner-極客網頁設計.webp)",
               }}
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">

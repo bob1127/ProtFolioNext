@@ -662,7 +662,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="/images/商業攝影_產品_banner-極客網頁設計.png"
+                          src="/images/商業攝影_產品_banner-極客網頁設計.webp"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           className="cover-image"
                           style={{

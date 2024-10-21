@@ -41,7 +41,7 @@ export const DotButton = (props) => {
   const { children, ...restProps } = props;
 
   return (
-    <button type="button" {...restProps}>
+    <button aria-label="children" type="button" {...restProps}>
       {children}
     </button>
   );
