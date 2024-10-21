@@ -267,7 +267,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                       <Image
-                        src="/images/3d產品模型09-極客網頁設計|Blender3D.png"
+                        src="/images/3d產品模型09-極客網頁設計|Blender3D.webp"
                         width={200}
                         alt="  商業3D建模-img01"
                         loading="lazy"
@@ -275,7 +275,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                       <Image
-                        src="/images/3d產品模型06-極客網頁設計|Blender3D.png"
+                        src="/images/3d產品模型06-極客網頁設計|Blender3D.webp"
                         width={200}
                         alt="  商業3D建模-img01"
                         loading="lazy"
