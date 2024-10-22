@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 export default function Index() {
   return (
     <section className="hidden sm:block px-8 py-5 text-white">
-      <FlipLink href="#">WEBSITE-DESIGN</FlipLink>
+      <FlipLink href="#"> 做好一個網站</FlipLink>
 
-      <FlipLink href="#">JEEEK</FlipLink>
+      <FlipLink href="#">要多少錢呢?</FlipLink>
       {/* <FlipLink href="#">PHOTOGRSPHY</FlipLink>
       <FlipLink href="#">MARKETING</FlipLink> */}
     </section>

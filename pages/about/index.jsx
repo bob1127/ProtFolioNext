@@ -260,8 +260,16 @@ export default function Blog() {
                 </main>
               </div>
               <Lottie options={defaultOptions} height={220} width={220} />
-              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto  xl:text-[18px] text-[16px] leading-[32px] font-normal border bg-white border-black rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
-                HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
+              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto  text-[76px] leading-[32px] font-normal border bg-white border-black rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
+                <div>網頁建置費用</div>
+                <ul>
+                  <li className="text-[22px]">商品拍攝</li>
+                  <li className="text-[22px]">形象影片</li>
+                  <li className="text-[22px]">形象Banner</li>
+                  <li className="text-[22px]">Hero Image</li>
+                </ul>
+
+                {/* HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
                 上一份工作任職於一家化學生技公司創業基地擔任"網頁工程師 一職"
                 主要負責網頁的維護和seo優化，擅長前端效能優化 結構化資料、
                 所以公司網頁的設計和商品拍攝影片剪輯SEO的優化
@@ -269,7 +277,49 @@ export default function Blog() {
                 我是一個追求理想和目標的人 希望有理想、想法
                 、和目標想要讓公司網頁更好的客戶 與我聯繫。
                 能跟你們合作，為您服務 讓我的專業能讓您的 業務更上一層
-                如果有任何想法請跟我 聯絡
+                如果有任何想法請跟我 聯絡 */}
+              </div>
+              <div className="text-[80px] text-center">+</div>
+              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto   leading-[32px] font-normal  rounded-xl  md:p-[30px] p-[20px] flex xl:p-[50px] text-center  text-[#171717] ">
+                <div className="w-1/3" data-aos="zoom-in">
+                  <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
+                    <div className="txt font-bold text-[30px]">網址註冊費</div>
+                    <Image
+                      src=""
+                      placeholder="empty"
+                      loading="lazy"
+                      width={150}
+                      height={150}
+                      alt="網址註冊費"
+                    ></Image>
+                  </div>
+                </div>
+                <div className="w-1/3" data-aos="zoom-in" data-aos-delay="300">
+                  <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
+                    <div className="txt font-bold text-[30px]">主機費用</div>
+                    <Image
+                      src=""
+                      placeholder="empty"
+                      loading="lazy"
+                      width={150}
+                      height={150}
+                      alt="網址註冊費"
+                    ></Image>
+                  </div>
+                </div>
+                <div className="w-1/3" data-aos="zoom-in" data-aos-delay="600">
+                  <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
+                    <div className="txt font-bold text-[30px]">SEO費用</div>
+                    <Image
+                      src=""
+                      placeholder="empty"
+                      loading="lazy"
+                      width={150}
+                      height={150}
+                      alt="網址註冊費"
+                    ></Image>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -610,7 +660,7 @@ export default function Blog() {
                 }}
               >
                 <GsapText
-                  text=' "為什麼要選擇FreeLancer" '
+                  text=' "客製化網頁設計" '
                   lineHeight="70px"
                   id="text2"
                   fontSize="60px"
@@ -619,7 +669,7 @@ export default function Blog() {
               </h2>
               <p className="text-[16px]  mt-4 md:w-[80%] w-full xl:w-[60%] mx-auto px-[30px] leading-[32px] text-center ">
                 {" "}
-                freelancer 比起設計公司，更有時間處理您的專案。
+                {/* freelancer 比起設計公司，更有時間處理您的專案。
                 也不必透過中間代理人"PM"溝通需求，導致誤差。
                 一來一回就浪費了時間成本，把您的需求直接跟我討論可以更直觀的完美符合您的需求
                 選擇自由工作者（FreeLancer）有很多好處，特別是如果你正在尋找{" "}
@@ -639,7 +689,7 @@ export default function Blog() {
                 <span className="text-[18px] font-bold">
                   享受更靈活、效率高且價格合理的專業服務
                 </span>
-                。
+                。 */}
               </p>
               <p className="text-center mb-[60px] mt-[30px]  xl:text-[22px] md:text-[26px] text-[15px] ">
                 選擇JEEK 幫助您實現創意發想
@@ -651,10 +701,10 @@ export default function Blog() {
                       data-aos="fade-flur"
                       className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold"
                     >
-                      靈活性
+                      RWD
                     </h2>
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
-                      Flexibility
+                      SEO 技術
                     </h2>
                     <p className="text-[16px]  w-[90%]  xl:w-full       mx-auto text-center mt-3">
                       根據客戶的時間表和需求快速調整工作安排，適應變化。
@@ -682,22 +732,22 @@ export default function Blog() {
                   <div>
                     <h2
                       data-aos="fade-flur"
-                      className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold"
+                      className="text-[#1c2fd5] text-center leading-[90px] xl:text-[90px] md:text-[60px] text-[40px] font-extrabold"
                     >
-                      一對一
+                      精選方案
                     </h2>
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
-                      One By One
+                      價格透明
                     </h2>
-                    <p className="text-[16px]  w-[90%] mx-auto      md:w-full text-center mt-3">
-                      直接與客戶溝通，提供專注且個性化的服務。
+                    <p className="text-[32px]   w-[90%] mx-auto      md:w-full text-center mt-8">
+                      主機+網站 只要
                     </p>
                   </div>
                   <a
                     href="/Contact"
-                    className="bg-[#ffffff] mt-3 duration-200 text-[18px] rounded-md text-black border border-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 w-[140px]"
+                    className="bg-[#ffffff] mt-3 duration-200 text-[50px] rounded-md px-4 text-black border border-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
                   >
-                    Contact
+                    50,000
                   </a>
                 </div>
               </section>
@@ -734,7 +784,7 @@ export default function Blog() {
                 </div>
               </div>
               <div className="flex p-[30px] justify-center pb-6">
-                <b className="mx-auto text-[18px]">
+                {/* <b className="mx-auto text-[18px]">
                   * 以下方案都包含 1. 第一年 網域和主機費用(除非有特殊要求){" "}
                   <br></br> 2. GA google tag manager 串接 <br></br>{" "}
                   3.基本網頁就夠
@@ -744,7 +794,7 @@ export default function Blog() {
                     資訊及合約表特可以看關於我裡面 資訊
                   </p>
                   <p>關於我們聯絡表單可以跟我們說</p>
-                </b>
+                </b> */}
               </div>
             </section>
 
@@ -756,14 +806,16 @@ export default function Blog() {
                 >
                   <p>Basic</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
-                    NT 35,000 <div>｜</div> NT55,000
+                    NT 45,000
                   </div>
-                  <h3 className="text-[40px]">基本網站</h3>
+                  <h3 className="text-[40px]">精選方案</h3>
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">基本網頁版型設計</p>
-                    <p className="mt-4">形象照片攝影拍攝</p>
-                    <p className="mt-4">企業形象照片</p>
+                    <p className="mt-4">多種精美網站版型</p>
+                    <p className="mt-4">簡易後台編輯操作</p>
+                    <p className="mt-4">
+                      商業授權圖庫 x 10 <br></br>(另有商業攝影服務可提供)
+                    </p>
                     <p className="mt-4">基本seo優化</p>
 
                     <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
@@ -793,9 +845,11 @@ export default function Blog() {
                   <h3 className="text-[40px]">一頁式網站</h3>
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">CMS內容管理系統</p>
-                    <p className="mt-4">動態特效</p>
-                    <p className="mt-4">基本seo優化</p>
+                    <p className="mt-4">活動一頁式網頁設計</p>
+                    <p className="mt-4">高轉化率</p>
+                    <p className="mt-4">
+                      商業授權圖庫 x 10 (另有商業攝影服務可提供)
+                    </p>
                     <p className="mt-4">客製化設計</p>
                     <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (

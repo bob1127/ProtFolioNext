@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/ScrollCircleArticle/index.jsx", "pages/index.jsx", "pages/_document.js", "pages/_app.js", "pages/about.jsx", "components/DragCarouselSlider/page.jsx", "components/DragCarouselSlider/modal-video.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/ScrollCircleArticle/index.jsx", "pages/index.jsx", "pages/_document.js", "pages/_app.js", "pages/about.jsx", "components/DragCarouselSlider/page.jsx", "components/DragCarouselSlider/modal-video.jsx", "components/EmblaCarousel02/EmblaCarousel.jsx"],
   "exclude": ["node_modules"]
 }

@@ -452,25 +452,25 @@ export default function Index() {
               </a>
               <link rel="prefetch" href="/" /> */}
               <a href="/Service" className="nav-link-block ">
-                <div className="nav-text">Service</div>
+                <div className="nav-text">服務項目</div>
               </a>
 
               <a href="/technology" className="nav-link-block ">
-                <div className="nav-text">Technology</div>
+                <div className="nav-text">網頁技術</div>
               </a>
               <a href="/portfolio" className="nav-link-block ">
-                <div className="nav-text">PortFolio</div>
+                <div className="nav-text">網頁設計案例</div>
               </a>
               <a href="/Blogs" className="nav-link-block ">
-                <div className="nav-text">Blog</div>
+                <div className="nav-text">文章列表</div>
               </a>
               {/* <link rel="prefetch" href="/features" /> */}
               <a href="/about" className="nav-link-block ">
-                <div className="nav-text">About</div>
+                <div className="nav-text">關於我們</div>
               </a>
               {/* <link rel="prefetch" href="/about" /> */}
               <a href="/Contact" className="nav-link-block w-inline-block">
-                <div className="nav-text">Contact</div>
+                <div className="nav-text">方案價格</div>
               </a>
               {/* <a
                 href="/store"
