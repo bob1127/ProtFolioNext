@@ -93,7 +93,7 @@ const EmblaCarousel = (props) => {
 
   return (
     <div
-      className="embla w-[100%] py-[30px] border border-black m-auto"
+      className="embla w-[100%] bg-white    border p-4 border-black m-auto"
       style={{
         "--slide-height": "19rem",
         "--slide-spacing": "1rem",
@@ -107,7 +107,7 @@ const EmblaCarousel = (props) => {
         >
           {slides.map((slide, index) => (
             <div
-              className="embla__slide transform flex-none min-w-0"
+              className="embla__slide  transform flex-none min-w-0"
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
@@ -134,22 +134,22 @@ const EmblaCarousel = (props) => {
                     height: "var(--slide-height)",
                     userSelect: "none",
                   }}
-                  className="embla__slide__number border border-black rounded-none bg-[#eef0f3] h-[600px] py-[30px] flex flex-col items-center justify-center font-semibold"
+                  className="embla__slide__number border border-black rounded-none overflow-hidden bg-[#eef0f3] h-full md:h-[600px] py-[0px] flex flex-col  items-center justify-center font-semibold"
                 >
-                  <div className="flex flex-col h-[600px] justify-center items-center">
+                  <div className="flex   bg-white flex-col h-auto md:flex-row md:h-[600px] justify-center items-center">
                     <Image
                       src={slide.image} // Use the image from the slide object
                       alt={slide.title} // Use title as alt text
                       width={400}
-                      height={300}
+                      height={400}
                       placeholder="empty"
                       loading="lazy"
                     />
-                    <div className="txt mt-[20px] flex-col flex justify-center p-[20px] rounded-md border items-center w-[80%] mx-auto bg-white">
-                      <b className="text-[26px] text-center">
+                    <div className="txt mt-[20px] flex-col flex justify-center p-[20px] rounded-[3px] md:rounded-md border items-center w-[80%] mx-auto bg-white ">
+                      <b className="  text-[14px] md:text-[26px] text-center">
                         {slide.title} {/* Display the title */}
                       </b>
-                      <p className="text-[18px] font-normal text-center">
+                      <p className="hidden md:block  text-[13px] md:text-[18px]  font-normal text-center">
                         {slide.description} {/* Display the description */}
                       </p>
                     </div>

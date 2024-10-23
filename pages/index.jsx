@@ -175,8 +175,8 @@ export default function Home() {
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
                 <Marquee>
-                  <div className="text-white text-[18px]">
-                    網頁設計，SEO優化，產品銷售，Banner/DM 設計
+                  <div className="text-white text-[80px]">
+                    網頁設計。SEO 優化
                   </div>
                 </Marquee>
               </div>
@@ -191,8 +191,8 @@ export default function Home() {
             >
               <div className="hidden group-hover:block duration-500 group-hover:opacity-100 delay-150 opacity-0 ease-in-out  ">
                 <Marquee>
-                  <div className="text-white text-[18px]">
-                    商品攝影，產品建模，網站形象影片
+                  <div className="text-white text-[80px]">
+                    商品攝影，商品建模，網站形象影片
                   </div>
                 </Marquee>
                 {/* <a href=" px-4 py-1 bg-[#333] txet-white border  border-black ">
@@ -497,19 +497,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="section_blue">
-          <div className="bg-[url('https://lycomm.co.jp/ja/newgrads/images/top-mv.png')] h-[60vh] bg-no-repeat w-full bg-center bg-cover"></div>
-        </section>
-        <section className="bg-[#4270ed]">
-          {/* <div className="left">
-            <Image src="" placeholder="empty" height={500} width={500}>
-             
-            </Image>
-          </div> */}
-          <div className="right">
-            <h3 className="text-white text-[50px]">title</h3>
-          </div>
-        </section>
+
         <section className="section-embla my-[60px border-b-2 border-black md:my-0">
           <EmblaCarousel />
         </section>
@@ -1000,14 +988,7 @@ export default function Home() {
         </section>
         <div className="p-10 bg-white mb-[100px]">
           <div className="flex flex-col ">
-            {/* <Image
-          loading="lazy"
-          placeholder="empty"
-          className="border border-black"
-          width={1200}
-          height={700}
-          src="/images/contact關於我們heroImg-極客網頁設計.jpg"
-        ></Image> */}
+            <h2 className="text-[120px] mb-[20px]">CONTACT US。 </h2>
             <div className="form rounded-[40px] bg-gray-100  overflow-hidden flex-col  md:flex-row  flex h-[100vh] border-2 border-black">
               <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
                 <div className="txt flex flex-col items-center justify-center">
