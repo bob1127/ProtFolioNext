@@ -5,8 +5,8 @@ import EmblaCarousel02 from "../components/EmblaCarousel04/index.jsx";
 import SwiperScroll from "../components/SwiperScroll02/page";
 import Text3d from "../components/PerspectiveText/index.jsx";
 import { useRef, useEffect } from "react";
-import Digital from "../components/ShiftingCountdown.jsx";
-import dynamic from "next/dynamic";
+// import Digital from "../components/ShiftingCountdown.jsx";
+// import dynamic from "next/dynamic";
 import GsapText from "../components/RevealText/index";
 import VelocityText from "../components/VelocityText/page.jsx";
 import Image from "next/image.js";
@@ -14,6 +14,9 @@ import TextHover from "../components/TextHover/index.jsx";
 import Trackeye from "../components/Trackeye/page.jsx";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
+import NewsletterForm from "../components/NewsletterForm";
+import React from "react";
+// import { Roboto } from "@next/font/google";
 
 const imageLoader = ({ src, width, quality }) => {
   return `https://www.ultraehp.com/images/test-portfolio/${src}?w=${width}&q=${
@@ -199,7 +202,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex  flex-col justify-center items-center">
           <h2
             className="header text-[#1e1e1e] xl:text-[100px]
     font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[100px] text-[32px]"
@@ -212,13 +215,13 @@ export default function Home() {
             />
           </h2>
           <h3>你是否打算自學網頁設計？</h3>
-          <div className="relative border items-center flex-col  flex justify-center w-full">
-            <div className="absolute left-0 border border-black w-[100vw] z-[1]">
+          <div className="relative border items-center flex-col  flex justify-center bg-white w-full">
+            <div className="absolute bg-black text-white font-black left-0 border border-black w-[100vw] z-[1]">
               <Marquee>
                 <div className="text-[100px]">WEBDESIGN</div>
               </Marquee>
             </div>
-            <div className="absolute left-0 border border-black top-0 w-[100vw] z-[1]">
+            <div className="absolute   left-0 border border-black top-0 w-[100vw] z-[1]">
               <Marquee>
                 <div className="text-[100px]">SEO? </div>
               </Marquee>
@@ -492,6 +495,19 @@ export default function Home() {
                 <div className="img w-1/2 h-full border-1 border-black"></div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="section_blue">
+          <div className="bg-[url('https://lycomm.co.jp/ja/newgrads/images/top-mv.png')] h-[60vh] bg-no-repeat w-full bg-center bg-cover"></div>
+        </section>
+        <section className="bg-[#4270ed]">
+          {/* <div className="left">
+            <Image src="" placeholder="empty" height={500} width={500}>
+             
+            </Image>
+          </div> */}
+          <div className="right">
+            <h3 className="text-white text-[50px]">title</h3>
           </div>
         </section>
         <section className="section-embla my-[60px border-b-2 border-black md:my-0">
@@ -972,6 +988,105 @@ export default function Home() {
 
         {/* <SlickCarousel /> */}
         {/* <SmoothParallaxScroll /> */}
+        <section className="section_contact bg-[#f5f4f3]">
+          <Image
+            src="/images/fantastic_hare_36410_man_cartoon_3d_style_8abe7fee-0cf9-4c36-9032-bccc8ac151e6-2.png"
+            loading="lazy"
+            alt=""
+            placeholder="empty"
+            width={600}
+            height={500}
+          ></Image>
+        </section>
+        <div className="p-10 bg-white mb-[100px]">
+          <div className="flex flex-col ">
+            {/* <Image
+          loading="lazy"
+          placeholder="empty"
+          className="border border-black"
+          width={1200}
+          height={700}
+          src="/images/contact關於我們heroImg-極客網頁設計.jpg"
+        ></Image> */}
+            <div className="form rounded-[40px] bg-gray-100  overflow-hidden flex-col  md:flex-row  flex h-[100vh] border-2 border-black">
+              <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
+                <div className="txt flex flex-col items-center justify-center">
+                  <h3 className="text-[40px] font-bold">Contact Us</h3>
+                  <p className="text-[30px] font-bold  mt-3">
+                    聯繫Jeek-極客網頁設計
+                  </p>
+                  <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">
+                    如果您聯繫我並無即時收到回覆，請耐心等候。Jeek會盡快回覆您！！！
+                  </span>
+                  <div className="flex  justify-center items-center">
+                    <a
+                      href="/terms"
+                      data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                      className="button-wrapper  w-inline-block mb-5 mt-4"
+                    >
+                      <div className="button-layout">
+                        <p className="button-text" style={{}}>
+                          合作須知
+                        </p>
+                        <div className="button-bg" style={{}} />
+                      </div>
+                      <div className="button-icon-block">
+                        <img
+                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                          loading="lazy"
+                          alt=""
+                          className="button-icon"
+                          style={{}}
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="right w-full md:w-[60%] border  h-full overflow-scroll py-10">
+                <div className="from flex justify-center items-center  overflow-y-scroll h-[170vh] bg-white p-[40px] border-black-rgba  ">
+                  <NewsletterForm />
+                </div>
+              </div>
+            </div>
+            {/* <div className="py-[80px]">
+          <NewsletterForm />
+        </div> */}
+            {/* <div className="flex flex-col gap-2">
+          <Accordion isCompact>
+            <AccordionItem
+              key="1"
+              aria-label="合約內容範本"
+              className="flex flex-col items-center justify-center"
+              title="合約內容範本"
+            >
+              <Image
+                src="/images/合約內容範本01-極客網頁設計.png"
+                width={500}
+                loading="lazy"
+                placeholder="empty"
+                height={600}
+              ></Image>
+            </AccordionItem>
+            <AccordionItem
+              key="2"
+              aria-label="報價單範本"
+              className="flex flex-col items-center justify-center"
+              title="報價單範本"
+            >
+              <Image
+                src="/images/報價單範本-極客網頁設計.png"
+                width={500}
+                loading="lazy"
+                placeholder="empty"
+                height={600}
+              ></Image>
+            </AccordionItem>
+          </Accordion>
+        </div> */}
+          </div>
+        </div>
+
         <section className="section_matter">
           <div className="top"></div>
           <div className="bottom">{/* <PhysicsAnimation /> */}</div>

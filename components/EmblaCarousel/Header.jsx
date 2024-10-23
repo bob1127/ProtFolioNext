@@ -3,9 +3,9 @@ import LottieAnimation from "../../components/Lottie/LottieAnimation01.js";
 import GsapText from "../../components/RevealText/index";
 const Header = () => (
   <header className="pt-[30px] xl:pt-[80px] pb-[15px] xl:pb-[30px] relative flex-col flex justify-center">
-    <div className="absolute w-[200px] md:w-[330px] h-auto right-[-10%] md:right-[15%] top-[5%]">
+    {/* <div className="absolute w-[200px] md:w-[330px] h-auto right-[-10%] md:right-[15%] top-[5%]">
       <LottieAnimation />
-    </div>
+    </div> */}
     <div className="static z-[9]">
       <h1
         className="header text-[#1e1e1e] xl:text-[100px]
@@ -19,9 +19,9 @@ const Header = () => (
         />{" "}
       </h1>
     </div>
-    <div className="absolute left-[-10%] md:left-[10%]   w-[200px] md:w-[330px] h-auto  top-[23%]">
+    {/* <div className="absolute left-[-10%] md:left-[10%]   w-[200px] md:w-[330px] h-auto  top-[23%]">
       <LottieAnimation />
-    </div>
+    </div> */}
     <div className="h-full flex my-auto justify-center items-center">
       <a
         href="/Contact"

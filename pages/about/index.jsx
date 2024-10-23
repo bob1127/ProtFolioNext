@@ -18,7 +18,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import MailchimpForm from "../../components/NewsletterForm.jsx";
-
+import NewsletterForm from "../../components/NewsletterForm.jsx";
 // import GsapText from "../components/RevealText/index";
 
 import Marquee from "react-fast-marquee";
@@ -214,7 +214,7 @@ export default function Blog() {
           )}
         </ModalContent>
       </Modal>
-      <div>
+      <div className="pb-[100px]">
         <div id="webpage" className="page-wrapper">
           <main className="main">
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
@@ -1009,6 +1009,51 @@ export default function Blog() {
             <a href="/Contact" className="text-[20px]">
               實際價格可以再討論 請聯繫我
             </a>
+            <div className="flex flex-col ">
+              <div className="p-10">
+                <div className="form rounded-[40px] bg-gray-100  overflow-hidden p-10 flex-col mb-[100px]  md:flex-row  flex h-[100vh] border-2 border-black">
+                  <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
+                    <div className="txt flex flex-col items-center justify-center">
+                      <h3 className="text-[40px] font-bold">Contact Us</h3>
+                      <p className="text-[30px] font-bold  mt-3">
+                        聯繫Jeek-極客網頁設計
+                      </p>
+                      <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">
+                        如果您聯繫我並無即時收到回覆，請耐心等候。Jeek會盡快回覆您！！！
+                      </span>
+                      <div className="flex  justify-center items-center">
+                        <a
+                          href="/terms"
+                          data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                          className="button-wrapper  w-inline-block mb-5 mt-4"
+                        >
+                          <div className="button-layout">
+                            <p className="button-text" style={{}}>
+                              合作須知
+                            </p>
+                            <div className="button-bg" style={{}} />
+                          </div>
+                          <div className="button-icon-block">
+                            <img
+                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                              loading="lazy"
+                              alt=""
+                              className="button-icon"
+                              style={{}}
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="right w-full md:w-[60%] border  h-full overflow-scroll py-10">
+                    <div className="from flex justify-center items-center  overflow-y-scroll h-[170vh] bg-white p-[40px] border-black-rgba  ">
+                      <NewsletterForm />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </main>
         </div>
       </div>

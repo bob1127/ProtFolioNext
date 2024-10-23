@@ -93,7 +93,7 @@ export default function MyApp({ Component, pageProps, router }) {
   }
     return (
        
-      <div className='bg-white'>
+      <div className='bg-[#f5f4f3]'>
         
 
         <Script
