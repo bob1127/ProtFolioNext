@@ -165,7 +165,6 @@ export default function App() {
                     />
                   </figure>
                 </div>
-                ㄉ
               </div>
               <div className="w-full lg:w-1/2">
                 <figure>

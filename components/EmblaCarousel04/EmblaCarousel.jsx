@@ -5,6 +5,8 @@ import {
   PrevButton,
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
+import Image from "next/image";
+import Link from "next/link";
 import { DotButton, useDotButton } from "./EmblaCarosuelDotButton";
 import Styles from "../../styles/embla.module.css";
 
@@ -21,7 +23,6 @@ const EmblaCarousel = (props) => {
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
-
   const {
     prevBtnDisabled,
     nextBtnDisabled,
@@ -55,10 +56,8 @@ const EmblaCarousel = (props) => {
         if (engine.options.loop) {
           engine.slideLooper.loopPoints.forEach((loopItem) => {
             const target = loopItem.target();
-
             if (slideIndex === loopItem.index && target !== 0) {
               const sign = Math.sign(target);
-
               if (sign === -1) {
                 diffToTarget = scrollSnap - (1 + scrollProgress);
               }
@@ -101,12 +100,12 @@ const EmblaCarousel = (props) => {
         "--slide-size": "55%",
       }}
     >
-      <div className="embla__viewport overflow-hidden" ref={emblaRef}>
+      <div className="embla__viewport" ref={emblaRef}>
         <div
-          className="embla__container flex touch-pan-y touch-pinch-zoom "
+          className="embla__container flex touch-pan-y touch-pinch-zoom"
           style={{ marginLeft: "calc(var(--slide-spacing) * -1)" }}
         >
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div
               className="embla__slide transform flex-none min-w-0"
               key={index}
@@ -116,34 +115,47 @@ const EmblaCarousel = (props) => {
                 paddingLeft: "var(--slide-spacing)",
               }}
             >
-              <div
+              <a
+                href={slide.link} // Link for each slide
+                rel="noopener noreferrer" // Security best practice
                 style={{
-                  boxShadow: "inset 0 0 0 0.2rem var(--detail-medium-contrast)",
-                  borderRadius: "1.8rem",
-                  fontSize: "4rem",
-                  height: "var(--slide-height)",
-                  userSelect: "none",
+                  display: "block",
+                  height: "100%", // Ensure anchor fills the slide
+                  textDecoration: "none", // Remove underline
+                  color: "inherit", // Inherit text color
                 }}
-                className="embla__slide__number border py-[30px] border-black py-[30px] flex flex-col  items-center justify-center font-semibold"
               >
-                {index + 1}
-                <div className="flex flex-col justify-center items-center ">
-                  <img
-                    src="/images/untitled拷貝.png"
-                    className="w-[300px]"
-                    alt=""
-                  />
-                  <div className="txt mt-[20px] flex-col flex justify-center items-center w-[80%] mx-auto">
-                    <b className="text-[18px] text-center">
-                      為什麼要選擇自由接案者？
-                    </b>
-                    <p className="text-[14px] font-normal text-center">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Officia aspernatur sunt reprehenderit fugit{" "}
-                    </p>
+                <div
+                  style={{
+                    boxShadow:
+                      "inset 0 0 0 0.2rem var(--detail-medium-contrast)",
+                    borderRadius: "1.8rem",
+                    fontSize: "4rem",
+                    height: "var(--slide-height)",
+                    userSelect: "none",
+                  }}
+                  className="embla__slide__number border border-black rounded-none bg-[#eef0f3] h-[600px] py-[30px] flex flex-col items-center justify-center font-semibold"
+                >
+                  <div className="flex flex-col h-[600px] justify-center items-center">
+                    <Image
+                      src={slide.image} // Use the image from the slide object
+                      alt={slide.title} // Use title as alt text
+                      width={400}
+                      height={300}
+                      placeholder="empty"
+                      loading="lazy"
+                    />
+                    <div className="txt mt-[20px] flex-col flex justify-center p-[20px] rounded-md border items-center w-[80%] mx-auto bg-white">
+                      <b className="text-[26px] text-center">
+                        {slide.title} {/* Display the title */}
+                      </b>
+                      <p className="text-[18px] font-normal text-center">
+                        {slide.description} {/* Display the description */}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           ))}
         </div>

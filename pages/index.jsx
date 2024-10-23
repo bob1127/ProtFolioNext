@@ -14,9 +14,6 @@ import TextHover from "../components/TextHover/index.jsx";
 import Trackeye from "../components/Trackeye/page.jsx";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-const Lottie = dynamic(() => import("react-lottie"), {
-  ssr: false,
-});
 
 const imageLoader = ({ src, width, quality }) => {
   return `https://www.ultraehp.com/images/test-portfolio/${src}?w=${width}&q=${
@@ -215,19 +212,58 @@ export default function Home() {
             />
           </h2>
           <h3>你是否打算自學網頁設計？</h3>
+          <div className="relative border items-center flex-col  flex justify-center w-full">
+            <div className="absolute left-0 border border-black w-[100vw] z-[1]">
+              <Marquee>
+                <div className="text-[100px]">WEBDESIGN</div>
+              </Marquee>
+            </div>
+            <div className="absolute left-0 border border-black top-0 w-[100vw] z-[1]">
+              <Marquee>
+                <div className="text-[100px]">SEO? </div>
+              </Marquee>
+            </div>
+            <div className="absolute bottom-0 border border-black w-[100vw] z-[1]">
+              <Marquee>
+                <div className="text-[100px]">WEBDESIGN</div>
+              </Marquee>
+            </div>
+            <div className="relative  z-[99999]">
+              {" "}
+              <Image
+                src="/images/fantastic_hare_410_student_cartoon_3d_style_0c7a0a33-6451-4e01-8d27-b81fcf41013b-2.png"
+                alt=""
+                loading="lazy"
+                placeholder="empty"
+                width={500}
+                height={600}
+              ></Image>
+            </div>
+          </div>
 
-          <p className="text-[16px]">
+          <p className="text-[20px]">
             自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者
           </p>
-          <h3>但你有想過自學網站建置也有局限性嗎？</h3>
+          <h3 className="text-[40px] text-center leading-[50px] mt-[100px]">
+            但你有想過自學網站建置<br></br>也有局限性嗎!!!
+          </h3>
+          <div>
+            <ul className="border bg-blue-700 border-black p-10 w-full rounded-md">
+              <li className="text-[30px] text-white font-extrabold list-item">
+                網站性能與優化的挑戰
+              </li>
+              <li className="text-[30px] text-white font-extrabold list-item">
+                品牌一致性與設計品質的欠缺
+              </li>
+              <li className="text-[30px] text-white font-extrabold list-item">
+                擴展與專業需求的困難
+              </li>
+            </ul>
+          </div>
+          <h3 className="text-[40px] mt-[40px]">不如讓專業的我們幫助您</h3>
+
           <div className="flex flex-row">
-            <div className="left w-1/2">
-              <ul>
-                <li>網站性能與優化的挑戰</li>
-                <li>品牌一致性與設計品質的欠缺</li>
-                <li>擴展與專業需求的困難</li>
-              </ul>
-            </div>
+            <div className="left w-1/2"></div>
             <div className="right w-1/2"></div>
           </div>
         </div>
