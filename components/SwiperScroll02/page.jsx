@@ -153,7 +153,7 @@ export default function App() {
                     品牌規劃是一個系統性的過程，旨在創建、建立和管理一個品牌的形象、定位和價值。涉及品牌的核心價值、目標受眾和與消費者的長期關係。
                   </p>
                 </div>
-                <div className="img my-5">
+                {/* <div className="img my-5">
                   <figure>
                     <Image
                       src="realistic-set-monitor-laptop-tablet-260nw-2430661189.jpg"
@@ -164,18 +164,18 @@ export default function App() {
                       height={300}
                     />
                   </figure>
-                </div>
+                </div> */}
               </div>
-              <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/2 overflow-hidden">
                 <figure>
                   {" "}
                   <Image
-                    src="/images/移動設備對於seo重要性.webp"
+                    src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.webp"
                     loading="lazy"
-                    alt="移動設備對於seo重要性"
+                    alt="製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計"
                     placeholder="empty"
                     width={800}
-                    height={500}
+                    height={800}
                   />
                 </figure>
               </div>
@@ -187,12 +187,10 @@ export default function App() {
             <div className="w-full flex-col items-center justify-center lg:flex-row flex">
               <div className="w-full lg:w-1/2 border-r-2 border-black p-[25px] sm:p-[60px] lg:p-[70px] overflow-y-scroll">
                 <div className="txt">
-                  <h2 className="">"網頁設計-Website Design"</h2>
-                  <h3>
-                    打造快速響應的網頁結構，提升移動設備體驗，讓您的網站在搜尋引擎中脫穎而出。
-                  </h3>
+                  <h2 className="">"SEO行銷-Optimization"</h2>
+                  <h3>網站速度優化、網站結構優化、行動裝置優化、用戶體驗</h3>
                   <p>
-                    隨著Google對移動端優化要求提升，優化您的網站以迎合移動設備，確保在搜尋結果中保持領先地位
+                    SEO，目的是提高網站在搜尋引擎結果中的自然排名，進而吸引更多潛在客戶。
                   </p>
                 </div>
                 <div className="img my-5">
@@ -256,16 +254,16 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:w-1/2">
+              <div className="w-full overflow-hidden lg:w-1/2">
                 <figure>
                   {" "}
                   <Image
-                    src="/images/移動設備對於seo重要性.webp"
+                    src="/images/SEO行銷優化-極客網頁設計01.webp"
                     loading="lazy"
-                    alt="移動設備對於seo重要性"
+                    alt="SEO行銷優化-極客網頁設計01"
                     placeholder="empty"
                     width={800}
-                    height={500}
+                    height={800}
                   />
                 </figure>
               </div>

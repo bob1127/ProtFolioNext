@@ -2,20 +2,24 @@ import Marquee from "react-fast-marquee";
 import styles from "../styles/Home.module.css";
 import EmblaCarousel from "../components/EmblaCarousel/index.jsx";
 import EmblaCarousel02 from "../components/EmblaCarousel04/index.jsx";
+import PerspectiveSection from "../components/PerspectiveSection/page";
 import SwiperScroll from "../components/SwiperScroll02/page";
 import Text3d from "../components/PerspectiveText/index.jsx";
 import { useRef, useEffect } from "react";
+import Header from "../components/header/index";
 // import Digital from "../components/ShiftingCountdown.jsx";
 // import dynamic from "next/dynamic";
+import ThreeDHover from "../components/3DHover/page";
 import GsapText from "../components/RevealText/index";
 import VelocityText from "../components/VelocityText/page.jsx";
 import Image from "next/image.js";
 import TextHover from "../components/TextHover/index.jsx";
 import Trackeye from "../components/Trackeye/page.jsx";
 import { NextSeo } from "next-seo";
+import TextPsrrallac from "../components/TextParallaxContent";
 import Head from "next/head";
 import NewsletterForm from "../components/NewsletterForm";
-import React from "react";
+
 // import { Roboto } from "@next/font/google";
 
 const imageLoader = ({ src, width, quality }) => {
@@ -35,6 +39,13 @@ const imageLoader02 = ({ src, width, quality }) => {
 };
 
 export default function Home() {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
   const webpage = {
     name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
@@ -132,6 +143,11 @@ export default function Home() {
             ],
           }}
         />
+        <TextPsrrallac />
+        <section className="section_HeroImg">
+          <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-white"></div>
+        </section>
+        <ThreeDHover />
         <div className="Hero-secrion   border-1 border-black ">
           <div className="wrap flex flex-col  lg:flex-row">
             <div className="hero-left overflow-hidden mt-[38px] border border-blac relative w-full lg:w-[65%]">
@@ -202,6 +218,7 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <PerspectiveSection />
         <div className="flex  flex-col justify-center items-center">
           <h2
             className="header text-[#1e1e1e] xl:text-[100px]
@@ -287,6 +304,7 @@ export default function Home() {
           </p>
         </div>
         <SwiperScroll />
+        <EmblaCarousel02 />
         {/* <section className="">
           <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3">
             <div className="border-2 overflow-hidden border-black w-full relative">

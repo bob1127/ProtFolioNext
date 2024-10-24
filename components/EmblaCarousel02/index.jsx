@@ -9,9 +9,10 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 const App = () => (
   <>
-    {/* <Header /> */}
-    <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-    {/* <Footer /> */}
+    <main>
+      <h1 className="text-3xl font-bold text-center">WordPress Portfolio</h1>
+      <EmblaCarousel options={{ loop: true }} />
+    </main>
   </>
 );
 

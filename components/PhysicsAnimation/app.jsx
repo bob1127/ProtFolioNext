@@ -229,7 +229,7 @@ const App = () => {
         };
 
         p.draw = () => {
-          p.background("#000000"); // Set background to black
+          p.background("#0032c6"); // Set background to black
           Matter.Engine.update(engine);
 
           circles.forEach(({ body, text }) => {

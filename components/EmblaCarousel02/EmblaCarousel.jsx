@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DotButton, useDotButton } from "./EmblaCarosuelDotButton";
 import {
   PrevButton,
@@ -6,10 +6,12 @@ import {
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
 import useEmblaCarousel from "embla-carousel-react";
+import axios from "axios";
 
 const EmblaCarousel = (props) => {
-  const { slides, options } = props;
+  const { options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [slides, setSlides] = useState([]);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);
@@ -21,15 +23,41 @@ const EmblaCarousel = (props) => {
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
 
+  // Fetch posts from WordPress REST API
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get(
+          "https://zensorrd.com/wp-json/wp/v2/portfolio" // WordPress API endpoint for portfolio
+        );
+        setSlides(response.data); // Set API data as slides
+      } catch (error) {
+        console.error("Error fetching portfolio items:", error);
+      }
+    };
+
+    fetchPosts();
+  }, []);
+
   return (
     <section className="embla" dir="rtl">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
-            </div>
-          ))}
+          {slides.length > 0 ? (
+            slides.map((slide, index) => (
+              <div className="embla__slide" key={index}>
+                <div className="embla__slide__content">
+                  <img
+                    src={slide.featured_image_src}
+                    alt={slide.title.rendered}
+                  />
+                  <h3>{slide.title.rendered}</h3>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </div>
 
