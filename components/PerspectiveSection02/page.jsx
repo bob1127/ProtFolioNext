@@ -38,21 +38,24 @@ export default function Home() {
 }
 
 const Section1 = ({ scrollYProgress }) => {
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1.2, 0.8]);
   const rotate = useTransform(scrollYProgress, [0, 1], [-45, 0]);
-  const x = useTransform(scrollYProgress, [0, 1], [700, -100]);
-  const y = useTransform(scrollYProgress, [0, 1], [1400, 200]);
+  const x = useTransform(scrollYProgress, [0, 1], [100, -100]);
+  const y = useTransform(scrollYProgress, [0, 1], [1400, -500]);
 
   return (
     <motion.div
       style={{ scale, rotate, x, y }}
-      className="sticky top-0 h-screen bg-[#ffffff] border text-[3.5vw] flex flex-col items-center justify-center text-white pb-[10vh]"
+      className="sticky top-0 h-screen  text-[3.5vw] flex flex-col items-center justify-center pb-[10vh]"
     >
-      <p>Scroll Perspective</p>
-      <div className="flex gap-4">
-        <p>Section</p>
-        <p>Transition</p>
-      </div>
+      <Image
+        placeholder="empty"
+        alt=""
+        className="object-contain w-full lg:w-[60%]"
+        width={1400}
+        height={1400}
+        src="/images/Hero-img-07.png"
+      ></Image>
     </motion.div>
   );
 };
@@ -90,7 +93,10 @@ const Section2 = ({ scrollYProgress }) => {
             ease: [0.1, 0.7, 1.0, 0.1], // Custom cubic-bezier timing function for the floating effect
           }}
         >
-          <div className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#fcfcfc]">
+          <a
+            href="/about"
+            className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#fcfcfc]"
+          >
             <Image
               src="/images/SEO優化行銷-極客網頁設計.png"
               alt="SEO優化行銷-極客網頁設計"
@@ -109,8 +115,9 @@ const Section2 = ({ scrollYProgress }) => {
                 電商平台手續費越抽越多？選擇我們的網頁設計服務，擺脫高額手續費的束縛！
               </p>
             </div>
-          </div>
-          <div
+          </a>
+          <a
+            href="/about"
             data-aos-delay="150"
             className="border mt-[10px] md:mt-[500px] h-full md:h-auto  duration-100 hover:border-white border-black  rounded-xl w-full group md:w-1/3 m-1 p-6 bg-[#262626]"
           >
@@ -133,8 +140,9 @@ const Section2 = ({ scrollYProgress }) => {
                 排名和企業盈利
               </p>
             </div>
-          </div>
-          <div
+          </a>
+          <a
+            href="/about"
             data-aos-delay="300"
             className="border mt-[10px] md:mt-[500px] h-full md:h-auto border-black  duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
           >
@@ -148,13 +156,15 @@ const Section2 = ({ scrollYProgress }) => {
               loading="lazy"
             ></Image>
             <div className="txt p-5">
-              <h2 className="text-white text-[35px] font-black">網頁設計</h2>
+              <h2 className="text-white text-[35px] font-black">
+                你想完整收集客戶資料，再行銷嗎？
+              </h2>
 
               <p className="text-white">
-                網頁版型設計｜客製化網頁｜一頁式網頁｜購物網站
+                擁有獨立網站，完整掌握客戶數據，實現精準行銷、提升轉化率，建立長期品牌關係，持續創造價值。
               </p>
             </div>
-          </div>
+          </a>
         </motion.div>
 
         {/* <section className="section-embla my-[60px border-b-2 border-black md:my-0">

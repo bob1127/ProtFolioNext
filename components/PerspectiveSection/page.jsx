@@ -94,7 +94,10 @@ const Section2 = ({ scrollYProgress }) => {
             ease: [0.1, 0.7, 1.0, 0.1], // Custom cubic-bezier timing function for the floating effect
           }}
         >
-          <div className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#5082b8]">
+          <a
+            href="/Service"
+            className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#5082b8]"
+          >
             <Image
               src="/images/SEO優化行銷-極客網頁設計.png"
               alt="SEO優化行銷-極客網頁設計"
@@ -114,8 +117,10 @@ const Section2 = ({ scrollYProgress }) => {
                 不管您的企業商家需要建置新的網頁或者對於目前網頁不滿意，需要改版重構，我們提供最優惠的方案價格
               </div>
             </div>
-          </div>
-          <div
+          </a>
+
+          <a
+            href="/Service"
             data-aos-delay="150"
             className="border mt-[10px] md:mt-[500px] h-full md:h-auto  duration-100 hover:border-white border-black  rounded-xl w-full group md:w-1/3 m-1 p-6 bg-[#262626]"
           >
@@ -139,8 +144,9 @@ const Section2 = ({ scrollYProgress }) => {
                 方案
               </div>
             </div>
-          </div>
-          <div
+          </a>
+          <a
+            href="/about"
             data-aos-delay="300"
             className="border group mt-[10px] md:mt-[500px] h-full md:h-auto border-black  duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
           >
@@ -163,7 +169,7 @@ const Section2 = ({ scrollYProgress }) => {
                 提供電商平台圖片設計美化，或是產品攝影的需求。也提供3d建模商品，可以供網頁使用。
               </div>
             </div>
-          </div>
+          </a>
         </motion.div>
       </div>
     </motion.div>
