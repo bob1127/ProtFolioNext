@@ -73,7 +73,7 @@ const Section2 = ({ scrollYProgress }) => {
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className="border py-[100px] border-black  bg-[#ffffff]  rounded-[45px] md:rounded-[60px]  xl:h-[100vh] h-[250vh] xl:rounded-[80px] 2xl:rounded-[120px]">
+      <div className="border py-[100px] bg-[#ffffff] border-black rounded-[45px] md:rounded-[60px]  h-[250vh] xl:rounded-[80px] 2xl:rounded-[120px]">
         <div className="txt flex items-center flex-col justify-center py-4">
           <h2 className="text-black text-[35px] md:text-[50px] xl:text-[70px] font-bold">
             讓您的品牌擁有獨立網站！
@@ -84,7 +84,7 @@ const Section2 = ({ scrollYProgress }) => {
 
         <motion.div
           style={{ y: yOffset }}
-          className="project-plan flex-col md:flex-row mx-auto mt-[160px] flex px-[30px] md:px-[10px] w-full lg:w-[80%]"
+          className="project-plan flex-col md:flex-row mx-auto mt-[160px] flex px-[30px] md:px-[10px] w-full"
           transition={{
             duration: 2.8,
             ease: [0.1, 0.7, 1.0, 0.1], // Custom cubic-bezier timing function for the floating effect

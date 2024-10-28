@@ -150,7 +150,7 @@ export default function Home() {
         <section className="section_HeroImg ">
           <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-white"></div>
         </section>
-        <div className="flex bg-[#000000] py-[80px] flex-col justify-center items-center">
+        <div className="flex bg-[#000000] pb-[80px] flex-col justify-center items-center">
           <h2
             className="header text-[#f6f6f6] xl:text-[100px]
     font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[100px] text-[32px]"
@@ -206,10 +206,10 @@ export default function Home() {
               <h3 className="text-[40px] text-white leading-[50px] mt-[100px]">
                 但你有想過自學網站建置<br></br>也有局限性嗎!!!
               </h3>
-              <p className="text-white font-normal">
+              {/* <p className="text-white font-normal">
                 Transform Your Online Presence with Our Top-tier Web Agency
                 Template for Exceptional Outcomes.
-              </p>
+              </p> */}
               <ul className="p-0  m-0 w-full rounded-md">
                 <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
                   <div className=" ">
@@ -255,10 +255,10 @@ export default function Home() {
                 >
                   See Our Work
                 </button>
-                <div className="button"></div>
+                <div className="button"> See Our Work</div>
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full lg:w-1/2 border border-white">
               <Image
                 width={1400}
                 height={500}
@@ -344,6 +344,7 @@ export default function Home() {
             </a> */}
           </div>
         </div>
+
         <SuffleHero />
         <PerspectiveSection02 />
 

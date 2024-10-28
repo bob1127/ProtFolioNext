@@ -301,7 +301,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
         paddingRight: IMG_PADDING,
       }}
     >
-      <div className="relative h-[150vh]">
+      <div className="relative h-[100vh] xl:h-[80vh] lg:h-[150vh]">
         <StickyImage imgUrl={imgUrl} />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>
@@ -371,7 +371,7 @@ const OverlayCopy = ({ subheading, heading }) => {
 };
 
 const ExampleContent = () => (
-  <div className="mx-auto    px-4 pb-24 pt-12 flex flex-col ">
+  <div className="mx-auto  mt-[100px]   px-4 pb-24 pt-12 flex flex-col ">
     <div className="flex  font-black justify-center py-5">
       <GsapText
         text=' "精選網頁設計案例" '
@@ -421,7 +421,7 @@ const ExampleContent = () => (
         ></Image>
       </a>
     </section>
-    <div className="flex font-black justify-center py-5">
+    <div className="flex mt-[50px] font-black justify-center py-5">
       <GsapText
         text=' "品牌獲利的新動能" '
         lineHeight="60px"

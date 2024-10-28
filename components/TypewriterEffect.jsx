@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const TypewriterEffect = () => {
-  const phrases = ["夢想", "專屬", "網站"];
+  const phrases = ["客製化網站", "一頁式網站", "購物網站"];
   const [text, setText] = useState("");
   const [cursorVisible, setCursorVisible] = useState(true);
   const sleepTime = 100; // 打字速度
@@ -50,7 +50,7 @@ const TypewriterEffect = () => {
         className="text-[32px] sm:text-[40px] lg:text-[60px]"
         style={{ textAlign: "center" }}
       >
-        額費用 💰
+        網頁設計不用很花錢 💰
         <br /> <br />
         就可以建立您的{" "}
         <span id="typewriter" style={{ color: "#0072ef", fontWeight: "bold" }}>

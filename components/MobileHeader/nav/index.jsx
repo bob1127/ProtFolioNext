@@ -10,19 +10,19 @@ import Footer from "./Footer";
 const navItems = [
   {
     title: "服務項目",
-    href: "/",
+    href: "/technology",
   },
   {
     title: "精選案例",
-    href: "/work",
+    href: "/blog",
   },
   {
     title: "聯絡我們",
-    href: "/about",
+    href: "/contact",
   },
   {
     title: "關於我們",
-    href: "/contact",
+    href: "/about",
   },
 ];
 
