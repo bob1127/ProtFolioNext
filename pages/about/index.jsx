@@ -17,6 +17,7 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+
 import MailchimpForm from "../../components/NewsletterForm.jsx";
 import NewsletterForm from "../../components/NewsletterForm.jsx";
 // import GsapText from "../components/RevealText/index";
@@ -29,7 +30,7 @@ import Head from "next/head";
 import { NextSeo } from "next-seo";
 
 import GsapText from "../../components/RevealText/index";
-import SwiperScroll from "../../components/SwiperScroll/page.jsx";
+import SwiperScroll from "../../components/SwiperScroll03/page.jsx";
 import { useState, useEffect } from "react";
 import Link from "next/link.js";
 import VanishList from "../../components/VanishList/page.jsx";
@@ -200,7 +201,7 @@ export default function Blog() {
         backdrop={backdrop}
         isOpen={isOpen}
         onClose={onClose}
-        className="bg-white z-[99999] p-0 md:p-[30px] m-5 sm:p-0 absolute w-[95%]  sm:w-[500px] border-2 border-black rounded-xl"
+        className="bg-white  p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-scroll top-[100px] absolute w-[95%]  sm:w-[500px] z-[99999999999999999999] lg:w-[65%] border-2 border-black rounded-xl"
       >
         <ModalContent>
           {(onClose) => (
@@ -217,6 +218,9 @@ export default function Blog() {
       <div className="pb-[100px]">
         <div id="webpage" className="page-wrapper">
           <main className="main">
+            <section className="slider-hero">
+              <SwiperScroll />
+            </section>
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
               <div className="container duration-500  bg-[#15a4fd]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[40vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
@@ -1014,7 +1018,6 @@ export default function Blog() {
                 <div className="form rounded-[40px] bg-gray-100  overflow-hidden p-10 flex-col mb-[100px]  md:flex-row  flex h-[100vh] border-2 border-black">
                   <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
                     <div className="txt flex flex-col items-center justify-center">
-                      <h3 className="text-[40px] font-bold">Contact Us</h3>
                       <p className="text-[30px] font-bold  mt-3">
                         聯繫Jeek-極客網頁設計
                       </p>

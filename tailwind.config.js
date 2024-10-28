@@ -9,6 +9,9 @@ module.exports = {
       darkMode: 'class', // 启用 class-based dark mode
 
     extend: {
+      ButtonBackgroundImage: {
+        'custom-gradient': 'linear-gradient(90.76deg, #28282b 0%, rgba(40, 40, 43, 0) 100%)',
+      },
       colors: {
         'black-rgba': 'rgba(0, 0, 0, 0.25)',
         blue: {
@@ -16,9 +19,8 @@ module.exports = {
         },
       },
        
-       fontFamily: {
-        mono: ['Basier Square Mono', 'monospace'],
-        sans: ['Segment A Key Trial', 'sans-serif'],
+      fontFamily: {
+        'anton': ['"Anton Placeholder"', 'sans-serif'], // 添加自定义字体
       },
        boxShadow: {
         'custom': '8px 8px 0px rgba(45, 85, 255 ,.9)',

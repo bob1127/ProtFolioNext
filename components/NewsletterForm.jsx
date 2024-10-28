@@ -99,7 +99,7 @@ export default function NewsletterForm() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="2xl:w-[800px] overflow-scroll h-full   w-full mx-auto bg-white rounded-lg">
+    <div className="2xl:w-[800px] overflow-scroll md:h-full   w-full mx-auto  bg-white rounded-lg">
       <div id="mc_embed_signup ">
         <form
           action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"
@@ -126,7 +126,7 @@ export default function NewsletterForm() {
                 required
               />
             </div>
-            <div className="mc-field-group mt-[15px]   xl:w-3/4 2xl:w-2/3">
+            <div className="mc-field-group w-full mt-[15px]   xl:w-3/4 2xl:w-2/3">
               <label htmlFor="mce-FNAME">
                 {" "}
                 姓名 <span className="asterisk">*</span>
@@ -150,132 +150,63 @@ export default function NewsletterForm() {
             </div>
             <div className="mc-field-group input-group py-[40px]">
               <strong>選擇您需要的方案</strong>
-              <ul className="  grid grid-cols-2 p-0 m-0">
-                <li className="border   bg-blue-700  border-black rounded-md p-5">
+              <ul className=" gap-2  grid grid-cols-1 md:grid-cols-2 p-0 m-0">
+                <li className="bg-black p-8 rounded-md ">
                   <input
                     type="checkbox"
                     name="group[43793][1]"
                     id="mce-group[43793]-43793-0"
-                  />
-                  <label htmlFor="mce-group[43793]-43793-0">
-                    Basic website
-                  </label>
-
-                  <div className="project-wrap "></div>
-                  <Accordion>
-                    <AccordionItem
-                      key="1"
-                      aria-label="基本套版網站"
-                      title="基本套版網站"
-                      className="text-white"
-                    >
-                      <ul>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 基本網頁版型設計
-                        </li>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 形象照片攝影拍攝
-                        </li>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 企業形象照片
-                        </li>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 基本seo優化
-                        </li>
-                      </ul>
-                    </AccordionItem>
-                  </Accordion>
+                    data-gtm-form-interact-field-id="0"
+                  ></input>
+                  <div>
+                    <h4 className="text-white text-[22px]">基本網站</h4>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                  </div>
                 </li>
-                <li className="border border-black rounded-md p-5">
+                <li className="bg-black p-8 rounded-md ">
                   <input
                     type="checkbox"
                     name="group[43793][2]"
                     id="mce-group[43793]-43793-1"
-                  />
-                  <label htmlFor="mce-group[43793]-43793-1">
-                    E-Commerce website
-                  </label>
-
-                  <div className="project-wrap "></div>
-                  <Accordion>
-                    <AccordionItem
-                      key="1"
-                      className="text-[16px]"
-                      aria-label="購物網站"
-                      title="購物網站"
-                    >
-                      <ul>
-                        <li className="text-[20px] mt-3">- 基本網頁版型設計</li>
-                        <li className="text-[20px] mt-3">- 形象照片攝影拍攝</li>
-                        <li className="text-[20px] mt-3">- 企業形象照片</li>
-                        <li className="text-[20px] mt-3">- 基本seo優化</li>
-                      </ul>
-                    </AccordionItem>
-                  </Accordion>
+                  ></input>
+                  <div>
+                    <h4 className="text-white text-[22px]">基本網站</h4>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                  </div>
                 </li>
-                <li className="border    border border-black border-black rounded-md p-5">
+                <li className="bg-black p-8 rounded-md ">
                   <input
                     type="checkbox"
                     name="group[43793][1]"
                     id="mce-group[43793]-43793-0"
-                  />
-                  <label htmlFor="mce-group[43793]-43793-0">
-                    Basic website
-                  </label>
-
-                  <div className="project-wrap "></div>
-                  <Accordion>
-                    <AccordionItem
-                      key="1"
-                      aria-label="基本套版網站"
-                      title="基本套版網站"
-                      className="text-[15px]"
-                    >
-                      <ul>
-                        <li className="text-[20px]  mt-3">
-                          - 基本網頁版型設計
-                        </li>
-                        <li className="text-[20px]  mt-3">
-                          - 形象照片攝影拍攝
-                        </li>
-                        <li className="text-[20px]  mt-3">- 企業形象照片</li>
-                        <li className="text-[20px]  mt-3">- 基本seo優化</li>
-                      </ul>
-                    </AccordionItem>
-                  </Accordion>
+                  ></input>
+                  <div>
+                    <h4 className="text-white text-[22px]">基本網站</h4>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                  </div>
                 </li>
-                <li className="border  bg-blue-700 border-black rounded-md p-5">
+                <li className="bg-black p-8 rounded-md ">
                   <input
                     type="checkbox"
                     name="group[43793][4]"
                     id="mce-group[43793]-43793-2"
-                  />
-                  <label htmlFor="mce-group[43793]-43793-2 text-gray-100">
-                    Landing page
-                  </label>
-                  <Accordion>
-                    <AccordionItem
-                      key="1"
-                      aria-label="一頁式網站"
-                      title="一頁式網站"
-                      className="text-white text-[16px]"
-                    >
-                      <ul>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 基本網頁版型設計
-                        </li>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 形象照片攝影拍攝
-                        </li>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 企業形象照片
-                        </li>
-                        <li className="text-[20px] text-gray-100 mt-3">
-                          - 基本seo優化
-                        </li>
-                      </ul>
-                    </AccordionItem>
-                  </Accordion>
+                  ></input>
+                  <div>
+                    <h4 className="text-white text-[22px]">基本網站</h4>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -336,7 +267,7 @@ export default function NewsletterForm() {
                   type="submit"
                   name="subscribe"
                   id="mc-embedded-subscribe"
-                  className="button border border-black text-center w-[140px] text-white rounded-md  py-2 bg-blue-700"
+                  className="button border border-black text-center  w-full md:w-[140px] text-white rounded-md py-4 md:py-2 bg-gray-900"
                   value="Subscribe"
                 />
                 <p style={{ margin: "0px auto" }}>

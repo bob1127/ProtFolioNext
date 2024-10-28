@@ -52,7 +52,7 @@ const RWDSection = () => {
                   隨著Google對移動端優化要求提升，優化您的網站以迎合移動設備，確保在搜尋結果中保持領先地位
                 </p>
               </div>
-              <div className="img my-5">
+              {/* <div className="img my-5">
                 <figure>
                   <Image
                     src="/images/攝影-商業攝影.png"
@@ -62,7 +62,7 @@ const RWDSection = () => {
                     height={300}
                   />
                 </figure>
-              </div>
+              </div> */}
             </div>
 
             {/* Slide 2 */}

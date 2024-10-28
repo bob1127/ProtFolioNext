@@ -7,11 +7,28 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
-
+@font-face {
+  font-family: 'Anton Placeholder';
+  src: url('/fonts/Antonio-VariableFont_wght.ttf') format('ttf'), /* 或使用你下载的字体格式 */
+       url('/fonts/Antonio-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 /* Start purging... */
 @tailwind utilities;
 *{
     line-height: normal;
+}
+.ButtonBackgroundColor{
+    background: linear-gradient(90.75929515413371deg, #28282b 0%, rgba(40, 40, 43, 0) 100%);
+}
+.gradient-span{
+    background-image:url("https://assets.website-files.com/6058fae74428dbc4ec583ba1/605a6fb8fb29bdacd690724a_Gradient%20Blur%20001.jpg");
+    background-position:50% 50%;
+    background-size:120%;
+    background-repeat:no-repeat;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 .spline-watermark{
     display: none !important;
@@ -41,8 +58,10 @@
 
 /* Stop purging. */
 ::selection {
-	background: rgb(45, 220, 255);
+	background: rgb(234, 255, 45);
+    color: black;
 }
+
 .section-hidden{
     display: none !important;
 }
@@ -11493,3 +11512,9 @@ blockquote{
     transform: rotate(360deg);
   }
 } */
+.Hero-ball{
+    background: radial-gradient(50% 50% at 50% 50%, #ffdf77 30.083423408442115%, rgb(232, 189, 47) 100%);;
+    border-radius: 50%;
+    box-shadow:inset 0 35px 40px #ffeba9;
+  
+}

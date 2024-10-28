@@ -9,11 +9,11 @@ import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
 import Head from 'next/head';
 import Image from 'next/image';
-import Nav from '../components/Navbar/page.jsx'
+import Nav from '../components/sideTabs/index'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
-
+// import MobileHeader from '../components/MobileHeader/page'
 
 
 // Dynamically import the PhysicsAnimationApp component with ssr set to false
@@ -38,20 +38,20 @@ export default function MyApp({ Component, pageProps, router }) {
     }
   }, []);
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://embed.tawk.to/66f7d854e5982d6c7bb5fba5/1i8s2a2np';
-    script.async = true;
-    script.charset = 'UTF-8';
-    script.setAttribute('crossorigin', '*');
+  // useEffect(() => {
+  //   const script = document.createElement('script');
+  //   script.src = 'https://embed.tawk.to/66f7d854e5982d6c7bb5fba5/1i8s2a2np';
+  //   script.async = true;
+  //   script.charset = 'UTF-8';
+  //   script.setAttribute('crossorigin', '*');
 
-    document.getElementsByTagName('head')[0].appendChild(script);
+  //   document.getElementsByTagName('head')[0].appendChild(script);
 
-    return () => {
-      // Cleanup script when component unmounts
-      document.getElementsByTagName('head')[0].removeChild(script);
-    };
-  }, []);
+  //   return () => {
+  //     // Cleanup script when component unmounts
+  //     document.getElementsByTagName('head')[0].removeChild(script);
+  //   };
+  // }, []);
   const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
 
   if (isMaintenanceMode) {
@@ -93,7 +93,7 @@ export default function MyApp({ Component, pageProps, router }) {
   }
     return (
        
-      <div className='bg-[#f5f4f3]'>
+      <div className='bg-[#ffffff] max-w-[3860px] overflow-hidden mx-auto '>
         
 
         <Script
@@ -120,10 +120,13 @@ export default function MyApp({ Component, pageProps, router }) {
           `,
         }}
       />
-        <Nav />
+         <div className='fixed w-full top-0 z-[9999999999999999]'>
+           <Nav />
+           {/* <MobileHeader/> */}
+         </div>
 
         <div className='main overflow-hidden'>
-          <div className='max-w-[1920px] mx-auto'>
+          <div className=''>
             <NextUIProvider>
               <AnimatePresence mode='wait'>
                 <Component key={router.route} {...pageProps} />

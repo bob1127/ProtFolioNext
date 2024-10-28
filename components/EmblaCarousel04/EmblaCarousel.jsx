@@ -93,7 +93,7 @@ const EmblaCarousel = (props) => {
 
   return (
     <div
-      className="embla w-[100%] bg-white    border p-4 border-black m-auto"
+      className="embla w-[100%]    border p-4 m-auto"
       style={{
         "--slide-height": "19rem",
         "--slide-spacing": "1rem",
@@ -120,6 +120,7 @@ const EmblaCarousel = (props) => {
                 rel="noopener noreferrer" // Security best practice
                 style={{
                   display: "block",
+
                   height: "100%", // Ensure anchor fills the slide
                   textDecoration: "none", // Remove underline
                   color: "inherit", // Inherit text color
@@ -131,21 +132,22 @@ const EmblaCarousel = (props) => {
                       "inset 0 0 0 0.2rem var(--detail-medium-contrast)",
                     borderRadius: "1.8rem",
                     fontSize: "4rem",
-                    height: "var(--slide-height)",
+
                     userSelect: "none",
                   }}
-                  className="embla__slide__number border border-black rounded-none overflow-hidden bg-[#eef0f3] h-full md:h-[600px] py-[0px] flex flex-col  items-center justify-center font-semibold"
+                  className="embla__slide__number border border-black rounded-none overflow-hidden  h-[300px]  flex flex-col  items-center justify-center font-semibold"
                 >
-                  <div className="flex   bg-white flex-col h-auto md:flex-row md:h-[600px] justify-center items-center">
+                  <div className="flex overflow-hidden  bg-white flex-col h-[330px] md:flex-row md:h-[300px] p-1 md:p-3 justify-center items-center">
                     <Image
                       src={slide.image} // Use the image from the slide object
                       alt={slide.title} // Use title as alt text
+                      className="rounded-[16px]"
                       width={400}
                       height={400}
                       placeholder="empty"
                       loading="lazy"
                     />
-                    <div className="txt mt-[20px] flex-col flex justify-center p-[20px] rounded-[3px] md:rounded-md border items-center w-[80%] mx-auto bg-white ">
+                    <div className="txt mt-[20px] flex-col flex justify-center p-2 md:p-[20px] rounded-[3px] md:rounded-md  items-center w-full  md:w-[80%] mx-auto bg-white ">
                       <b className="  text-[14px] md:text-[26px] text-center">
                         {slide.title} {/* Display the title */}
                       </b>

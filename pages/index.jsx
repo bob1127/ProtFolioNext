@@ -3,9 +3,11 @@ import styles from "../styles/Home.module.css";
 import EmblaCarousel from "../components/EmblaCarousel/index.jsx";
 import EmblaCarousel02 from "../components/EmblaCarousel04/index.jsx";
 import PerspectiveSection from "../components/PerspectiveSection/page";
+import PerspectiveSection02 from "../components/PerspectiveSection02/page";
 import SwiperScroll from "../components/SwiperScroll02/page";
 import Text3d from "../components/PerspectiveText/index.jsx";
 import { useRef, useEffect } from "react";
+import SuffleHero from "../components/SuffleHero.jsx";
 import Header from "../components/header/index";
 // import Digital from "../components/ShiftingCountdown.jsx";
 // import dynamic from "next/dynamic";
@@ -47,7 +49,7 @@ export default function Home() {
   }, []);
 
   const webpage = {
-    name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
     description:
       "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
     url: "https://www.jeek-webdesign.com.tw",
@@ -143,14 +145,141 @@ export default function Home() {
             ],
           }}
         />
+
         <TextPsrrallac />
-        <section className="section_HeroImg">
+        <section className="section_HeroImg ">
           <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-white"></div>
         </section>
+        <div className="flex bg-[#000000] py-[80px] flex-col justify-center items-center">
+          <h2
+            className="header text-[#f6f6f6] xl:text-[100px]
+    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[100px] text-[32px]"
+          >
+            <GsapText
+              text="讓我們的專業幫助您"
+              lineHeight="80px"
+              id="text2"
+              fontSize="70px"
+            />
+          </h2>
+          <h3 className="text-[#f6f6f6]">你是否打算自學網頁設計？</h3>
+          <div className="relative border items-center flex-col  flex justify-center bg-white w-full">
+            <div className="absolute bg-[#020202] text-white font-black left-0 border border-black w-[100vw] z-[1]">
+              <Marquee>
+                <div className="text-[100px]">網頁設計？</div>
+              </Marquee>
+            </div>
+            <div className="absolute   left-0 border border-black top-0 w-[100vw] z-[1]">
+              <Marquee>
+                <div></div>
+                <div className="text-[100px]">SEO優化? </div>
+                <div></div>
+              </Marquee>
+            </div>
+            <div className="absolute bottom-0 border border-black w-[100vw] z-[1]">
+              <Marquee>
+                <div className="text-[100px]">網頁性能？</div>
+              </Marquee>
+            </div>
+            <div className="relative  flex justify-center items-center  z-[9] w-full">
+              {" "}
+              <Image
+                src="/images/你想要自學網頁設計嗎.png"
+                alt=""
+                className="object-contain w-full mx-auto  lg:w-[40%] "
+                loading="lazy"
+                placeholder="empty"
+                width={2000}
+                height={600}
+              ></Image>
+            </div>
+          </div>
+
+          <div className="bg-white  w-full md:max-w-[600px] border border-black p-8">
+            <p className="text-[20px] text-center mt-4">
+              (自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者)
+            </p>
+          </div>
+
+          <div className="w-full flex-col md:flex-row xl:px-[100px] md:px-[50px] 2xl:px-[200px] ">
+            <div className="txt flex flex-col w-full lg:w-1/2">
+              <h3 className="text-[40px] text-white leading-[50px] mt-[100px]">
+                但你有想過自學網站建置<br></br>也有局限性嗎!!!
+              </h3>
+              <p className="text-white font-normal">
+                Transform Your Online Presence with Our Top-tier Web Agency
+                Template for Exceptional Outcomes.
+              </p>
+              <ul className="p-0  m-0 w-full rounded-md">
+                <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                  <div className=" ">
+                    <Image
+                      src=""
+                      placeholder="empty"
+                      width={22}
+                      height={22}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div classNaem="text-white">品牌一致性與設計品質的欠缺</div>
+                </div>
+                <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                  <div className=" ">
+                    <Image
+                      src=""
+                      placeholder="empty"
+                      width={22}
+                      height={22}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div classNaem="text-white">Seo和網站結構專業優化</div>
+                </div>
+                <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                  <div className=" ">
+                    <Image
+                      src=""
+                      placeholder="empty"
+                      width={22}
+                      height={22}
+                      alt=""
+                    ></Image>
+                  </div>
+                  <div classNaem="text-white"> 擴展與專業需求的困難</div>
+                </div>
+              </ul>
+              <div className="">
+                <button
+                  href="#"
+                  className="button w-[160px] rounded-md bg-white py-2 px-2 text-center text-black"
+                >
+                  See Our Work
+                </button>
+                <div className="button"></div>
+              </div>
+            </div>
+            <div className="w-full">
+              <Image
+                width={1400}
+                height={500}
+                placeholder="empty"
+                loading="lazy"
+                className="rounded-lg w-full object-contain"
+                src="/images/Hero-slider04.png"
+                alt="交給專頁的我們-極客網頁設計"
+              ></Image>
+            </div>
+          </div>
+
+          <div className="flex flex-row">
+            <div className="left w-1/2"></div>
+            <div className="right w-1/2"></div>
+          </div>
+        </div>
         <ThreeDHover />
         <div className="Hero-secrion   border-1 border-black ">
           <div className="wrap flex flex-col  lg:flex-row">
-            <div className="hero-left overflow-hidden mt-[38px] border border-blac relative w-full lg:w-[65%]">
+            {/* <div className="hero-left overflow-hidden mt-[38px] border border-blac relative w-full lg:w-[65%]">
               <TextHover />
               <Trackeye />
               <div className="bottom"></div>
@@ -179,9 +308,9 @@ export default function Home() {
                   </div>
                 </Marquee>
               </div>
-            </div>
+            </div> */}
 
-            <a
+            {/* <a
               href="/Contact"
               className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[450px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
               style={{
@@ -211,86 +340,17 @@ export default function Home() {
                     商品攝影，商品建模，網站形象影片
                   </div>
                 </Marquee>
-                {/* <a href=" px-4 py-1 bg-[#333] txet-white border  border-black ">
-                  聯繫我
-                </a> */}
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
-        <PerspectiveSection />
+        <SuffleHero />
+        <PerspectiveSection02 />
+
         <div className="flex  flex-col justify-center items-center">
-          <h2
-            className="header text-[#1e1e1e] xl:text-[100px]
-    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[100px] text-[32px]"
-          >
-            <GsapText
-              text="讓我們的專業幫助您"
-              lineHeight="80px"
-              id="text2"
-              fontSize="70px"
-            />
-          </h2>
-          <h3>你是否打算自學網頁設計？</h3>
-          <div className="relative border items-center flex-col  flex justify-center bg-white w-full">
-            <div className="absolute bg-black text-white font-black left-0 border border-black w-[100vw] z-[1]">
-              <Marquee>
-                <div className="text-[100px]">WEBDESIGN</div>
-              </Marquee>
-            </div>
-            <div className="absolute   left-0 border border-black top-0 w-[100vw] z-[1]">
-              <Marquee>
-                <div className="text-[100px]">SEO? </div>
-              </Marquee>
-            </div>
-            <div className="absolute bottom-0 border border-black w-[100vw] z-[1]">
-              <Marquee>
-                <div className="text-[100px]">WEBDESIGN</div>
-              </Marquee>
-            </div>
-            <div className="relative  z-[99999]">
-              {" "}
-              <Image
-                src="/images/fantastic_hare_410_student_cartoon_3d_style_0c7a0a33-6451-4e01-8d27-b81fcf41013b-2.png"
-                alt=""
-                loading="lazy"
-                placeholder="empty"
-                width={500}
-                height={600}
-              ></Image>
-            </div>
-          </div>
-
-          <p className="text-[20px]">
-            自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者
-          </p>
-          <h3 className="text-[40px] text-center leading-[50px] mt-[100px]">
-            但你有想過自學網站建置<br></br>也有局限性嗎!!!
-          </h3>
-          <div>
-            <ul className="border bg-blue-700 border-black p-10 w-full rounded-md">
-              <li className="text-[30px] text-white font-extrabold list-item">
-                網站性能與優化的挑戰
-              </li>
-              <li className="text-[30px] text-white font-extrabold list-item">
-                品牌一致性與設計品質的欠缺
-              </li>
-              <li className="text-[30px] text-white font-extrabold list-item">
-                擴展與專業需求的困難
-              </li>
-            </ul>
-          </div>
-          <h3 className="text-[40px] mt-[40px]">不如讓專業的我們幫助您</h3>
-
-          <div className="flex flex-row">
-            <div className="left w-1/2"></div>
-            <div className="right w-1/2"></div>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center">
           <h1
             className="header text-[#1e1e1e] xl:text-[100px]
-    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[100px] text-[32px]"
+    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[250px] mb-[100px]  text-[32px]"
           >
             <GsapText
               text=" 讓您的品牌脫穎而出"
@@ -304,7 +364,9 @@ export default function Home() {
           </p>
         </div>
         <SwiperScroll />
-        <EmblaCarousel02 />
+        <div className="mt-[100px]">
+          <EmblaCarousel02 />
+        </div>
         {/* <section className="">
           <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3">
             <div className="border-2 overflow-hidden border-black w-full relative">
@@ -463,7 +525,7 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <section className="section_second border border-black flex flex-col lg:flex-row">
+        {/* <section className="section_second border border-black flex flex-col lg:flex-row">
           <div className="left pl-[50px] py-[22px] w-full lg:w-1/2 border-r-2 border-black">
             <div>
               <div
@@ -514,7 +576,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="section-embla my-[60px border-b-2 border-black md:my-0">
           <EmblaCarousel />
@@ -785,7 +847,7 @@ export default function Home() {
             </Marquee>
           </div>
         </section>
-        <EmblaCarousel02 />
+        {/* <EmblaCarousel02 /> */}
         {/* <section className="bg-gray-100  py-[70px] px-[20px]">
           <div className="flex flex-col  px-[20px] md:px-[50px] xl:px-[100px]">
             <div className="flex justify-center items-center flex-col">
@@ -994,23 +1056,15 @@ export default function Home() {
 
         {/* <SlickCarousel /> */}
         {/* <SmoothParallaxScroll /> */}
-        <section className="section_contact bg-[#f5f4f3]">
-          <Image
-            src="/images/fantastic_hare_36410_man_cartoon_3d_style_8abe7fee-0cf9-4c36-9032-bccc8ac151e6-2.png"
-            loading="lazy"
-            alt=""
-            placeholder="empty"
-            width={600}
-            height={500}
-          ></Image>
-        </section>
-        <div className="p-10 bg-white mb-[100px]">
+
+        <div className="p-4 md:p-10  mb-[100px]">
           <div className="flex flex-col ">
-            <h2 className="text-[120px] mb-[20px]">CONTACT US。 </h2>
-            <div className="form rounded-[40px] bg-gray-100  overflow-hidden flex-col  md:flex-row  flex h-[100vh] border-2 border-black">
-              <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
-                <div className="txt flex flex-col items-center justify-center">
-                  <h3 className="text-[40px] font-bold">Contact Us</h3>
+            <h2 className="leading-normal text-[50px] sm:text-[70px] xl:text-[120px] mb-0 md:mb-[-35px]">
+              CONTACT US。{" "}
+            </h2>
+            <div className="form rounded-[40px] bg-gray-100  overflow-hidden flex-col  md:flex-row  flex h-full border-2 border-black">
+              <div className="left w-full md:w-[40%] p-[10px] md:p-[40px] h-full items-center flex-col flex justify-center">
+                <div className="txt pt-[100px] flex flex-col items-center justify-center">
                   <p className="text-[30px] font-bold  mt-3">
                     聯繫Jeek-極客網頁設計
                   </p>
@@ -1043,7 +1097,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="right w-full md:w-[60%] border  h-full overflow-scroll py-10">
-                <div className="from flex justify-center items-center  overflow-y-scroll h-[170vh] bg-white p-[40px] border-black-rgba  ">
+                <div className="from flex justify-center items-center  overflow-y-scroll h-full bg-white p-[10px] md:p-[40px] border-black-rgba  ">
                   <NewsletterForm />
                 </div>
               </div>

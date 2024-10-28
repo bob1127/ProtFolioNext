@@ -3,17 +3,9 @@ import styles from "./page.module.scss";
 import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
-import {
-  floating1,
-  floating2,
-  floating3,
-  floating4,
-  floating5,
-  floating6,
-  floating7,
-  floating8,
-} from "./data.js";
+import { floating1 } from "./data.js";
 
+import { floating2 } from "./data.js";
 export default function Home() {
   const plane1 = useRef(null);
   const plane2 = useRef(null);
@@ -69,22 +61,27 @@ export default function Home() {
       className={styles.main}
     >
       <div ref={plane1} className={styles.plane}>
-        <Image src={floating1} alt="image" width={300} />
-        <Image src={floating2} alt="image" width={300} />
-        <Image src={floating7} alt="image" width={225} />
+        <Image
+          src={floating1}
+          className="w-full hidden lg:block object-contain"
+          alt="image"
+          height={1080}
+          width={2200}
+        />
+        <Image
+          src={floating2}
+          className="w-full block lg:hidden object-contain"
+          alt="image"
+          height={1080}
+          width={2200}
+        />
       </div>
-      <div ref={plane2} className={styles.plane}>
-        <Image src={floating4} alt="image" width={250} />
-        <Image src={floating6} alt="image" width={200} />
-        <Image src={floating8} alt="image" width={225} />
-      </div>
-      <div ref={plane3} className={styles.plane}>
-        <Image src={floating3} alt="image" width={150} />
-        <Image src={floating5} alt="image" width={200} />
-      </div>
+
       <div className={styles.title}>
-        <h1>極客網頁設計</h1>
-        <p>幫助您打造創意網站 </p>
+        <h1 className="text-[34px] md:text-[40px] lg:text-[50px] txet-white">
+          全方位思維的網站設計專家
+        </h1>
+        <p className="text-[30px] text-white"> 極客網頁設計</p>
       </div>
     </main>
   );

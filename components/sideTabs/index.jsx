@@ -1,9 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
+import Link from "next/link";
+import Marquee from "react-fast-marquee";
+import MobileHeader from "../MobileHeader/page";
 export const SlideTabsExample = () => {
   return (
-    <div className="bg-neutral-100 py-20">
+    <div>
       <SlideTabs />
     </div>
   );
@@ -15,25 +18,133 @@ const SlideTabs = () => {
     width: 0,
     opacity: 0,
   });
+  const [marginTop, setMarginTop] = useState("-40px");
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY < lastScrollY) {
+        // 向上滾動
+        setMarginTop("-60px");
+      } else {
+        // 向下滾動
+        setMarginTop("0px");
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <ul
-      onMouseLeave={() => {
-        setPosition((pv) => ({
-          ...pv,
-          opacity: 0,
-        }));
-      }}
-      className="relative mx-auto border-1 flex w-fit  border-2 border-black bg-white p-1"
+    <motion.div
+      className="w-full px-[20px] md:w-[65%] mt-[-70px] relative border border-black md:border-[#a2a2a2] z-[9999999999999] mx-auto flex justify-center  items-center bg-[#181818] md:bg-white  rounded-b-[20px] sm:rounded-b-[20px]"
+      initial={{ marginTop: "-40px" }}
+      animate={{ marginTop }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
-      <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>Pricing</Tab>
-      <Tab setPosition={setPosition}>Features</Tab>
-      <Tab setPosition={setPosition}>Docs</Tab>
-      <Tab setPosition={setPosition}>Blog</Tab>
+      <div className=" w-1/2 sm:w-[15%] flex justify-start items-center">
+        <Link className="p-1" href="/">
+          <Image
+            src="/images/company-logo/JeekLogo-white.png"
+            placeholder="empty"
+            loading="eager"
+            className="block md:hidden"
+            width={40}
+            height={40}
+            alt="company-logo"
+          ></Image>
+          <Image
+            className="hidden md:block"
+            src="/images/company-logo/JeekLogo_web_title.png"
+            placeholder="empty"
+            loading="eager"
+            width={40}
+            height={40}
+            alt="company-logo"
+          ></Image>
+        </Link>
+      </div>
+      <div className="w-[70%]  flex justify-center items-center md:hidden">
+        <div className="w-full border py-1 border-[#ffaf37] rounded-[30px]">
+          <Marquee>
+            <p className="text-white "> 。Welcome to → Jeek Website Design</p>
+          </Marquee>
+        </div>
+      </div>
+      <ul
+        onMouseLeave={() => {
+          setPosition((pv) => ({
+            ...pv,
+            opacity: 0,
+          }));
+        }}
+        className="mx-auto hidden sm:flex pt-2  w-[70%] rounded-[40px]  justify-center items-center  backdrop-blur-md p-1"
+      >
+        <a href="/">
+          <Tab setPosition={setPosition}>首頁</Tab>
+        </a>
+        <a href="/technology">
+          {" "}
+          <Tab setPosition={setPosition}>精選案例</Tab>
+        </a>
+        <a href="/Blogs">
+          {" "}
+          <Tab setPosition={setPosition}>Blog</Tab>
+        </a>
 
-      <Cursor position={position} />
-    </ul>
+        <a href="/about">
+          <Tab setPosition={setPosition}>專案報價</Tab>
+        </a>
+
+        <Cursor position={position} />
+      </ul>
+
+      <div className="w-1/2 flex justify-end sm:w-[15%] pr-4 relative ">
+        <div className="block md:hidden">
+          {" "}
+          <MobileHeader />
+        </div>
+        <div className="border hidden md:flex justify-center items-center tex-center text-white bg-black rounded-[30px] py-2 px-5">
+          Contact
+        </div>
+      </div>
+      <div className="fixed z-[99999] bg-white/60 bg-blue-50 right-[20px] px-2 border top-[30%] flex flex-col justify-center items-center border-[#b0b0b0] rounded-xl">
+        <a href="#">
+          <div className="flex flex-col justify-center items-center my-2">
+            <Image
+              src="/images/icon/line.png"
+              className=""
+              placeholder="empty"
+              loading="lazy"
+              alt="line-logo"
+              width={40}
+              height={40}
+            ></Image>
+            <span className="text-[14px]">LINE</span>
+          </div>
+        </a>
+        <a href="#">
+          <div className="flex flex-col justify-center items-center my-2">
+            <Image
+              src="/images/icon/facebook.png"
+              className=""
+              placeholder="empty"
+              loading="lazy"
+              alt="line-logo"
+              width={40}
+              height={40}
+            ></Image>
+            <span className="text-[14px]">FB</span>
+          </div>
+        </a>
+      </div>
+    </motion.div>
   );
 };
 
@@ -54,7 +165,7 @@ const Tab = ({ children, setPosition }) => {
           opacity: 1,
         });
       }}
-      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-white mix-blend-difference md:px-5 md:py-3 md:text-base"
+      className="relative hover:text-white z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-black mix-blend-difference md:px-5 md:py-3 md:text-base"
     >
       {children}
     </li>
@@ -67,11 +178,11 @@ const Cursor = ({ position }) => {
       animate={{
         ...position,
       }}
-      className="absolute z-0 h-7  bg-black md:h-12"
+      className="absolute z-0 h-7 hover:text-white rounded-[40px] bg-[#000000] md:h-12"
     />
   );
 };
 
-// Ensure all components are correctly exported
+// 確保所有組件都正確導出
 export default SlideTabsExample;
 export { SlideTabs, Tab, Cursor };

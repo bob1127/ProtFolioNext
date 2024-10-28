@@ -808,18 +808,7 @@ export default function Blog() {
                 {/* <h2 className="heading is-medium-title text-center">
                   "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
                 </h2> */}
-                <GsapText
-                  text=' "增加網路曝光度" '
-                  lineHeight="60px"
-                  id="text3"
-                  fontSize="50px"
-                />
-                {/* <GsapText
-                  text=' "我該如何選擇行銷方式" '
-                  lineHeight="60px"
-                  id="text10"
-                  fontSize="50px"
-                /> */}
+
                 <h2 className="text-center">我該如何選擇行銷方式</h2>
                 <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
                   在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
