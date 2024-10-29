@@ -435,13 +435,14 @@ const ExampleContent = () => (
                   fontSize="50px"
                 /> */}
     </div>
-    <div className="flex md:flex-row flex-col w-[85%] mx-auto">
-      <div className="text-content w-full md:w-[45%]">
-        <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-          把網站形象升級為盈利資產
-        </h2>
-        <div className=" text-[18px] leading-[22px]">
-          <p className="mt-4">
+    <div className="flex md:flex-row justify-center items-center  flex-col w-[85%] mx-auto">
+      <div className="text-content flex justify-center w-full md:w-[50%]">
+        <div className="lg:w-[85%] 2xl:w-[70%] flex flex-col items-center  w-full ">
+          <h2 className="col-span-1 text-center text-3xl font-bold md:col-span-4">
+            把網站形象升級為盈利資產
+          </h2>
+
+          <p className="mt-4 w-ull xl:w-2/3">
             讓您的網站不僅僅是名片，更成為全天候的業務推動力。透過我們的設計專業與
             SEO
             優化，將網站打造成吸引流量、提升轉換的利器，將每次訪問轉化為真實收益。我們幫助您提升品牌形象，增強用戶信任，讓您的網站成為真正的盈利資產。
@@ -452,9 +453,9 @@ const ExampleContent = () => (
           </button>
         </div>
       </div>
-      <div className="img w-full md:w-[65%]">
+      <div className="img w-full md:w-[50%]">
         <Image
-          src="/images/您的網頁問題我來解決-極客網頁設計.png"
+          src="/images/您的網頁問題我來解決-極客網頁設計01.png"
           alt="您的網頁問題我來解決-極客網頁設計"
           placeholder="empty"
           loading="lazy"

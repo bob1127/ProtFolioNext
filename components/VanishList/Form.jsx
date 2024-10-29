@@ -47,7 +47,7 @@ const Form = ({ setTodos }) => {
               e.preventDefault();
               handleSubmit();
             }}
-            className="mb-6 w-full rounded border border-zinc-700 bg-blue-100 p-3"
+            className="mb-6 w-full rounded border border-zinc-700 bg-[#fc3] p-3"
           >
             <select
               value={selectedTask}

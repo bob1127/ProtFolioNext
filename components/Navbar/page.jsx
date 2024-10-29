@@ -34,7 +34,10 @@ export default function Index() {
                   </a>
                 </div>
                 <div role="listitem" className="menu-social-item w-dyn-item">
-                  <a href="#" className="menu-social-link w-inline-block">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61566748097967"
+                    className="menu-social-link w-inline-block"
+                  >
                     <img
                       src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c380c49a871545a7ce42_facebook-logo-black.svg"
                       loading="lazy"
@@ -61,7 +64,10 @@ export default function Index() {
                 <a href="/store" className="menu-sesondary-link">
                   Line
                 </a>
-                <a href="/contact" className="menu-sesondary-link">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61566748097967"
+                  className="menu-sesondary-link"
+                >
                   Facebook
                 </a>
               </div>

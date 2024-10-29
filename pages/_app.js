@@ -93,7 +93,7 @@ export default function MyApp({ Component, pageProps, router }) {
   }
     return (
        
-      <div className='bg-[#ffffff] max-w-[3860px] overflow-hidden mx-auto '>
+      <div className='bg-[#f5f5f5] max-w-[3860px] overflow-hidden mx-auto '>
         
 
         <Script

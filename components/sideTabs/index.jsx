@@ -49,7 +49,7 @@ const SlideTabs = () => {
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
     >
       <div className=" w-1/2 sm:w-[15%] flex justify-start items-center">
-        <Link className="p-1" href="/">
+        <a className="p-1" href="/">
           <Image
             src="/images/company-logo/JeekLogo-white.png"
             placeholder="empty"
@@ -68,7 +68,7 @@ const SlideTabs = () => {
             height={40}
             alt="company-logo"
           ></Image>
-        </Link>
+        </a>
       </div>
       <div className="w-[70%]  flex justify-center items-center md:hidden">
         <div className="w-full border py-1 border-[#ffaf37] rounded-[30px]">
@@ -110,9 +110,12 @@ const SlideTabs = () => {
           {" "}
           <MobileHeader />
         </div>
-        <div className="border hidden md:flex justify-center items-center tex-center text-white bg-black rounded-[30px] py-2 px-5">
+        <a
+          href="/about"
+          className="border hidden md:flex justify-center items-center tex-center text-white bg-black rounded-[30px] py-2 px-5"
+        >
           Contact
-        </div>
+        </a>
       </div>
       <div className="fixed z-[99999] bg-white/60 bg-blue-50 right-[20px] px-2 border top-[30%] flex flex-col justify-center items-center border-[#b0b0b0] rounded-xl">
         <a href="#">
@@ -129,7 +132,7 @@ const SlideTabs = () => {
             <span className="text-[14px]">LINE</span>
           </div>
         </a>
-        <a href="#">
+        <a href="https://www.facebook.com/profile.php?id=61566748097967">
           <div className="flex flex-col justify-center items-center my-2">
             <Image
               src="/images/icon/facebook.png"

@@ -166,7 +166,7 @@ const Form = ({ setTodos }) => {
               </div>
               <button
                 type="submit"
-                className="rounded  px-1.5 py-1 text-xs text-black w-full border-white border bg-blue-100 py-3 transition-colors hover:bg-blue-500"
+                className="rounded  px-1.5 py-1 text-xs text-black w-full border-white border bg-[#ffbe3b] py-3 transition-colors hover:bg-[#f0b949]"
               >
                 添加
               </button>

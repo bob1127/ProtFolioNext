@@ -288,6 +288,9 @@ export default function Blog() {
                 <div className="w-1/3" data-aos="zoom-in">
                   <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
                     <div className="txt font-bold text-[30px]">網址註冊費</div>
+                    <p className="text-[20px] mt-5">購買網域</p>
+                    <p className="text-[20px]">網域重新制像</p>
+                    <p className="text-[20px]">購買網域</p>
                     <Image
                       src=""
                       placeholder="empty"
@@ -301,6 +304,9 @@ export default function Blog() {
                 <div className="w-1/3" data-aos="zoom-in" data-aos-delay="300">
                   <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
                     <div className="txt font-bold text-[30px]">主機費用</div>
+                    <p className="text-[20px] mt-5">本地主機</p>
+                    <p className="text-[20px]">雲端主機</p>
+                    <p className="text-[20px]">購買網域</p>
                     <Image
                       src=""
                       placeholder="empty"
@@ -314,6 +320,9 @@ export default function Blog() {
                 <div className="w-1/3" data-aos="zoom-in" data-aos-delay="600">
                   <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
                     <div className="txt font-bold text-[30px]">SEO費用</div>
+                    <p className="text-[20px] mt-5">每年 seo優化</p>
+                    <p className="text-[20px]">關鍵字 調正</p>
+                    <p className="text-[20px]">網站流量分析追蹤</p>
                     <Image
                       src=""
                       placeholder="empty"
@@ -1015,8 +1024,8 @@ export default function Blog() {
             </a>
             <div className="flex flex-col ">
               <div className="p-10">
-                <div className="form rounded-[40px] bg-gray-100  overflow-hidden p-10 flex-col mb-[100px]  md:flex-row  flex h-[100vh] border-2 border-black">
-                  <div className="left w-full md:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
+                <div className="form rounded-[40px] bg-gray-100  p-10 flex-col mb-[100px]  lg:flex-row  flex h-auto border-2 border-black">
+                  <div className="left w-full lg:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
                     <div className="txt flex flex-col items-center justify-center">
                       <p className="text-[30px] font-bold  mt-3">
                         聯繫Jeek-極客網頁設計
@@ -1049,8 +1058,8 @@ export default function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="right w-full md:w-[60%] border  h-full overflow-scroll py-10">
-                    <div className="from flex justify-center items-center  overflow-y-scroll h-[170vh] bg-white p-[40px] border-black-rgba  ">
+                  <div className="right w-full lg:w-[60%] border  h-full py-10">
+                    <div className="from flex justify-center items-center  h-auto bg-white p-[40px] border-black-rgba  ">
                       <NewsletterForm />
                     </div>
                   </div>

@@ -14,7 +14,7 @@ const navItems = [
   },
   {
     title: "精選案例",
-    href: "/blog",
+    href: "/technology",
   },
   {
     title: "聯絡我們",

@@ -78,10 +78,10 @@ export default function Home() {
       </div>
 
       <div className={styles.title}>
-        <h1 className="text-[34px] md:text-[40px] lg:text-[50px]text-white">
+        <h1 className="text-[2.5rem] 2xl:text-[4.5rem] leading-normal text-white">
           全方位思維的網站設計專家
         </h1>
-        <p className="text-[30px] text-white"> 極客網頁設計</p>
+        <p className="text-[16px] xl:text-[2.5rem] text-white"> 極客網頁設計</p>
       </div>
     </main>
   );

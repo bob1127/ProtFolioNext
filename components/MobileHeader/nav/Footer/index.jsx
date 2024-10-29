@@ -6,7 +6,10 @@ export default function index() {
       <a className="text-white" href="">
         Instagram
       </a>
-      <a className="text-white" href="">
+      <a
+        className="text-white"
+        href="https://www.facebook.com/profile.php?id=61566748097967"
+      >
         Facebook
       </a>
 

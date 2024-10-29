@@ -116,20 +116,117 @@ export default function Blog() {
           </div>
 
           <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
-            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+            <div>
+              <h2 className="heading mt-[50px] is-medium-title">
+                "不要再認為自己的品牌做網頁行銷很花錢了！"
+              </h2>
+              <p className=" text-[16px] leading-normal text-left ">
+                大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
+                <br></br> <br></br>
+                行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
+                <span className="bg-blue-100">網站設計和SEO優化</span>
+                ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
+              </p>
+              <div className=" w-full sm:w-[200px] justify-center">
+                <a
+                  href="/"
+                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                  className="button-wrapper w-inline-block"
+                >
+                  <div className="button-layout">
+                    <p href="/about" className="button-text" style={{}}>
+                      案例sample
+                    </p>
+                    <div className="button-bg" style={{}} />
+                  </div>
+                  <div className="button-icon-block">
+                    <Image
+                      src=""
+                      placeholder="empty"
+                      loading="lazy"
+                      alt=""
+                      width={800}
+                      height={800}
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <br></br>
+            <div className=" text-[16px] xl:text-[18px]  leading-normal xl:leading-[36px] text-[#171717]">
               <h2>
                 透過精心規劃和明智選擇，不僅能控制成本，還能有效提升品牌形象與業務效益。
               </h2>
               很多人認為網頁設計一定要投入大筆資金，但其實並非如此。透過一些小技巧和合理的資源分配，網站設計的成本可以有效降低。事實上，有些步驟是可以自己來完成的，然而，為了達到專業效果，某些部分還是建議找專業的網頁設計公司來幫忙。我們就來看看哪些工作可以自己做，哪些部分可以交給我們吧！
             </div>
-
-            <br></br>
+            <div>
+              {/* <div className="text-dot-block">
+                        <div className="dot" />
+                        <p className="paragraph">網頁設計</p>
+                      </div> */}
+              <h2 className="heading is-medium-title">
+                "個人接案，彈性更高，效率更高"
+              </h2>
+              <div className="flex items-start flex-col ">
+                <div className="mb-6 flex flex-col items-start">
+                  <b className="text-[22px]">成本效益高</b>
+                  <p className="text-left leading-normal mt-3">
+                    -
+                    由於沒有大型團隊和高額管理費用，個人接案者能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
+                  </p>
+                </div>
+                <div className="mb-6 flex flex-col items-start">
+                  <b className="text-[22px]">專注度高</b>
+                  <p className="text-left leading-normal mt-3">
+                    -
+                    個人接案者通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
+                  </p>
+                </div>
+                <div className="mb-6 flex flex-col items-start">
+                  <b className="text-[22px]">靈活性強</b>
+                  <p className="text-left leading-normal mt-3">
+                    -
+                    作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
+                  </p>
+                </div>
+                <div className="mb-6 flex flex-col items-start">
+                  <b className="text-[22px]">溝通便捷</b>
+                  <p className="text-left leading-normal mt-3">
+                    -
+                    您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
+                  </p>
+                </div>
+              </div>
+              <div className=" w-full sm:w-[200px] justify-center">
+                <a
+                  href="/Contact"
+                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                  className="button-wrapper w-inline-block"
+                >
+                  <div className="button-layout">
+                    <p href="/about" className="button-text" style={{}}>
+                      立即聯絡
+                    </p>
+                    <div className="button-bg" style={{}} />
+                  </div>
+                  <div className="button-icon-block">
+                    {/* <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          /> */}
+                  </div>
+                </a>
+              </div>
+            </div>
             <div className="">
               <div className="imgText mt-[50px]">
                 <h2 className="text-[32px] font-bold"> 可以自己來的部分：</h2>
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-                  <ul>
+                  <ul className="p-0 m-0">
                     <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
                       內容撰寫：
                     </p>
@@ -167,7 +264,7 @@ export default function Blog() {
                 </h2>
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-                  <ul>
+                  <ul className="p-0 m-0">
                     <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
                       專業設計與客製化：
                     </p>

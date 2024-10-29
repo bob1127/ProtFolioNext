@@ -135,9 +135,9 @@ const EmblaCarousel = (props) => {
 
                     userSelect: "none",
                   }}
-                  className="embla__slide__number border border-black rounded-none overflow-hidden  h-[300px]  flex flex-col  items-center justify-center font-semibold"
+                  className="embla__slide__number border border-gray-800  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto lg:h-[350px] 2xl:h-[500px] bg-white  flex flex-col  items-center justify-center font-semibold"
                 >
-                  <div className="flex overflow-hidden  bg-white flex-col h-[330px] md:flex-row md:h-[300px] p-1 md:p-3 justify-center items-center">
+                  <div className="flex  rounded-xl overflow-visible lg:overflow-hidden  bg-white flex-col h-auto lg:flex-row lg:h-[300px] p-1 md:p-3 justify-center items-center">
                     <Image
                       src={slide.image} // Use the image from the slide object
                       alt={slide.title} // Use title as alt text
@@ -147,7 +147,7 @@ const EmblaCarousel = (props) => {
                       placeholder="empty"
                       loading="lazy"
                     />
-                    <div className="txt mt-[20px] flex-col flex justify-center p-2 md:p-[20px] rounded-[3px] md:rounded-md  items-center w-full  md:w-[80%] mx-auto bg-white ">
+                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl p-2 md:p-[20px]   items-center w-full  md:w-[80%] mx-auto bg-white ">
                       <b className="  text-[14px] md:text-[26px] text-center">
                         {slide.title} {/* Display the title */}
                       </b>
@@ -163,22 +163,30 @@ const EmblaCarousel = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls grid grid-cols-[auto_1fr] justify-between gap-[1.2rem] mt-[1.8rem]">
-        <div className="embla__buttons grid grid-cols-2 gap-[0.6rem] items-center">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
-
-        <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
-              )}
+      <div className="flex w-full justify-center">
+        <div className="embla__controls grid grid-cols-[auto_1fr] justify-between gap-[1.2rem] mt-[1.8rem]">
+          <div className="embla__buttons grid grid-cols-2 gap-[0.6rem] items-center">
+            <PrevButton
+              onClick={onPrevButtonClick}
+              disabled={prevBtnDisabled}
             />
-          ))}
+            <NextButton
+              onClick={onNextButtonClick}
+              disabled={nextBtnDisabled}
+            />
+          </div>
+
+          <div className="embla__dots">
+            {scrollSnaps.map((_, index) => (
+              <DotButton
+                key={index}
+                onClick={() => onDotButtonClick(index)}
+                className={"embla__dot".concat(
+                  index === selectedIndex ? " embla__dot--selected" : ""
+                )}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

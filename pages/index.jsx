@@ -258,13 +258,13 @@ export default function Home() {
                 <div className="button"> See Our Work</div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 border border-white">
+            <div className="w-full border rounded-xl overflow-hidden">
               <Image
-                width={1400}
-                height={500}
+                width={2600}
+                height={1000}
                 placeholder="empty"
                 loading="lazy"
-                className="rounded-lg w-full object-contain"
+                className="scale-100  hover:scale-105 duration-500 rounded-[40px] w-full object-contain"
                 src="/images/Hero-slider04.png"
                 alt="交給專頁的我們-極客網頁設計"
               ></Image>
