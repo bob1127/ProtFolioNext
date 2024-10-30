@@ -87,7 +87,7 @@ const Section2 = ({ scrollYProgress }) => {
 
         <motion.div
           style={{ y: yOffset }}
-          className="project-plan flex-col md:flex-row mx-auto mt-[160px] flex px-[30px] md:px-[10px] w-full"
+          className="project-plan flex-col md:flex-row mx-auto mt-[160px] md:flex px-[30px] hidden md:px-[10px] w-full"
           transition={{
             duration: 2.8,
             ease: [0.1, 0.7, 1.0, 0.1], // Custom cubic-bezier timing function for the floating effect

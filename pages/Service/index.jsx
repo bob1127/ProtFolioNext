@@ -476,7 +476,7 @@ export default function Blog() {
                         大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
                         <br></br> <br></br>
                         行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
-                        <span className="bg-blue-100">網站設計和SEO優化</span>
+                        <span className="bg-[#fad335]">網站設計和SEO優化</span>
                         ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
                       </p>
                       <a
@@ -733,7 +733,7 @@ export default function Blog() {
                           </b>
                           <p className="text-left leading-normal mt-3">
                             - Google 目前使用{" "}
-                            <span className="bg-blue-100">
+                            <span className="bg-[#fad335]">
                               「移動優先索引」
                             </span>
                             ，這意味著 Google
@@ -746,9 +746,10 @@ export default function Blog() {
                           <p className="text-left leading-normal mt-3">
                             - Google
                             對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
-                            的 <span className="bg-blue-100">「頁面體驗」</span>
+                            的{" "}
+                            <span className="bg-[#fad335]">「頁面體驗」</span>
                             更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
-                            <span className="bg-blue-100">
+                            <span className="bg-[#fad335]">
                               Google PageSpeed Insights
                             </span>{" "}
                             來測試和改進頁面速度。
@@ -967,13 +968,13 @@ export default function Blog() {
                     />
 
                     <div class="flex md:flex-wrap flex-col mt-5">
-                      <span class="bg-[#15a4fd] text-center w-[210px] border mt-3 md:mt-0 border-black text-white rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      <span class="bg-[#fad335] text-center w-[210px] border mt-3 md:mt-0 border-black text-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
                         google analytics 4
                       </span>
-                      <span class="bg-[#15a4fd] text-center w-[210px] text-white  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      <span class="bg-[#fad335] text-center w-[210px] text-black  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
                         Google Search Console
                       </span>
-                      <span class="bg-[#15a4fd] text-center w-[150px] text-white border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      <span class="bg-[#fad335] text-center w-[150px] text-black border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
                         Hotjar
                       </span>
                     </div>
@@ -1015,7 +1016,7 @@ export default function Blog() {
             <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
               <a
                 href="/Blog-01"
-                className="xl:w-1/2 w-full mr-4 hover:shadow-custom
+                className="xl:w-1/2 w-full mr-4 hover:shadow-xl 
                 border-1
                 
               duration-300
@@ -1026,10 +1027,10 @@ export default function Blog() {
                   網頁SEO很重要嗎？
                 </h4>
                 <div className="flex">
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     搜尋引擎優化
                   </span>
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     網頁結構優化
                   </span>
                 </div>
@@ -1049,10 +1050,10 @@ export default function Blog() {
               </a>
               <a
                 href="/Blog-02"
-                className="xl:w-1/2 w-full mt-5 md:mt-0 ml-0 xl:ml-4 hover:shadow-custom 
+                className="xl:w-1/2 w-full mt-5 md:mt-0 ml-0 xl:ml-4 hover:shadow-[#fee890] 
               duration-300
               
-              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
+              hover:translate-x-4 hover:translate-y-4 border  p-10 rounded-2xl"
               >
                 <h4
                   data-aos="fade-up"
@@ -1062,10 +1063,10 @@ export default function Blog() {
                   網頁設計其實沒有很花錢
                 </h4>
                 <div className="flex my-4">
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     目標明確
                   </span>
-                  <span className="bg-[#15a4fd] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                     選擇效益最大化
                   </span>
                 </div>
@@ -1240,13 +1241,13 @@ export default function Blog() {
                       <div className="flex w-full  flex-col items-start">
                         <b className="mb-3 text-[16px]">3d model for website</b>
                         <div className="flex">
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             3D 形象影片
                           </span>
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             交互式網站
                           </span>
-                          <span className="bg-[#15a4fd] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             產品展示
                           </span>
                         </div>

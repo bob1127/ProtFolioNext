@@ -14,7 +14,7 @@ const navItems = [
   },
   {
     title: "精選案例",
-    href: "/technology",
+    href: "/pages",
   },
   {
     title: "聯絡我們",
@@ -22,7 +22,7 @@ const navItems = [
   },
   {
     title: "關於我們",
-    href: "/about",
+    href: "/Service",
   },
 ];
 

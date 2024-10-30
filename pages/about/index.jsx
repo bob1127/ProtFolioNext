@@ -712,7 +712,7 @@ export default function Blog() {
                   <div>
                     <h2
                       data-aos="fade-flur"
-                      className="text-[#1c2fd5] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold"
+                      className="text-[#fdb932] text-center leading-[90px] xl:text-[100px] md:text-[60px] text-[40px] font-extrabold"
                     >
                       RWD
                     </h2>
@@ -725,7 +725,7 @@ export default function Blog() {
                   </div>
                   <a
                     href="/Contact"
-                    className="bg-[#1c2fd5] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-blue-800 hover:scale-95 shadow-xl text-center py-3 mb-5 w-[140px]"
+                    className="bg-[#fdb932] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-white-100 hover:scale-95 shadow-xl text-center py-3 mb-5 w-[140px]"
                   >
                     Contact
                   </a>
@@ -745,7 +745,7 @@ export default function Blog() {
                   <div>
                     <h2
                       data-aos="fade-flur"
-                      className="text-[#1c2fd5] text-center leading-[90px] xl:text-[90px] md:text-[60px] text-[40px] font-extrabold"
+                      className="text-[#fdb932] text-center leading-[90px] xl:text-[90px] md:text-[60px] text-[40px] font-extrabold"
                     >
                       精選方案
                     </h2>
@@ -818,7 +818,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <p>Basic</p>
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] bg-[#ffc532] w-[120px] font-bold text-whitebg-[#ffc532] border border-black">
                     NT 45,000
                   </div>
                   <h3 className="text-[40px]">精選方案</h3>
@@ -831,7 +831,7 @@ export default function Blog() {
                     </p>
                     <p className="mt-4">基本seo優化</p>
 
-                    <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
+                    <div className="flex mt-5 bg-[#000000] text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
                         <Button
                           key={b}
@@ -852,7 +852,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <p className="font-bold">Landing Page</p>
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
                     NT 50,000 <br></br>up
                   </div>
                   <h3 className="text-[40px]">一頁式網站</h3>
@@ -864,7 +864,7 @@ export default function Blog() {
                       商業授權圖庫 x 10 (另有商業攝影服務可提供)
                     </p>
                     <p className="mt-4">客製化設計</p>
-                    <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
+                    <div className="flex mt-5 bg-[#000000] text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
                         <Button
                           key={b}
@@ -881,14 +881,14 @@ export default function Blog() {
                   </div>
                 </div>
                 <div
-                  className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
+                  className="border py-[60px] px-[40px] bg-white  w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
                     找我聊聊
                   </div>
                   <p>E-Coomerce</p>
-                  <h3 className="text-[16px]">購物網站</h3>
+                  <h3 className="text-[40px]">購物網站</h3>
                   {/* <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p> */}
@@ -900,7 +900,7 @@ export default function Blog() {
                     <p className="mt-4"> 商品 形象 Banner</p>
                     <p className="mt-4">公司形象(產品)影片拍攝</p>
 
-                    <div className="flex mt-5 bg-blue-700 text-white flex-wrap  gap-3">
+                    <div className="flex mt-5 bg-[#000000] text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
                         <Button
                           key={b}
@@ -921,7 +921,7 @@ export default function Blog() {
                   data-aos="fade-bur"
                 >
                   <p>Customized</p>
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-blue-500 border border-black">
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-[#ffc532] border border-black">
                     跟我談談
                   </div>
                   <h3 className="text-[16px]">客製化網站</h3>
@@ -940,7 +940,7 @@ export default function Blog() {
                     <p className="mt-4">客製化版型設計</p>
 
                     <p className="mt-4"></p>
-                    <div className="flex bg-blue-700 mt-5 text-white flex-wrap  gap-3">
+                    <div className="flex bg-[#000000]  mt-5 text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
                         <Button
                           key={b}

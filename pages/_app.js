@@ -7,6 +7,7 @@ import Navbar from '../components/sideTabs/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
+import Policy  from '../components/Policy.jsx'
 import Head from 'next/head';
 import Image from 'next/image';
 import Nav from '../components/sideTabs/index'
@@ -93,7 +94,8 @@ export default function MyApp({ Component, pageProps, router }) {
   }
     return (
        
-      <div className='bg-[#f5f5f5] max-w-[3860px] overflow-hidden mx-auto '>
+      <div className='bg-[#ffffff] max-w-[3860px] overflow-hidden mx-auto '>
+        {/* <Policy/> */}
         
 
         <Script
@@ -141,7 +143,7 @@ export default function MyApp({ Component, pageProps, router }) {
 
                 <Marquee>
                   <a href='/about'>
-                    <div className='border-3 bg-[#f3f3f5] border-white'>
+                    <div className='border-3 border-white'>
                       <p className='text-black font-normal w-full p-2'>
                         JEEK像您的好夥伴一樣，會與您一同探索、設計，打造出真正適合您的網站和品牌形象。不管您是 <span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"餐飲業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"美業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"中小企業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"服飾業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"傳統產業"</span>，我們都在這裡，為您提供簡單、實用且有效的解決方案。
                       </p>

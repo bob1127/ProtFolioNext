@@ -9,16 +9,20 @@ export default function Home({ posts }) {
   return (
     <div>
       <h1>WordPress Posts</h1>
-      <ul>
+      <ul className="flex flex-wrap">
         {posts.map((post) => (
-          <li key={post.id}>
-            <h2>
-              <Link href={`/posts/${post.slug}`}>{post.title.rendered}</Link>
+          <Link href={`/portfolio/${post.slug}`}>
+            <li key={post.id} className=" m-4 p-5 rounded-xl border-black">
+              <h2>
+                {post.title.rendered}
 
-              {/* 使用 slug 作为链接 */}
-            </h2>
-            <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-          </li>
+                {/* 使用 slug 作为链接 */}
+              </h2>
+              <div
+                dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
+              />
+            </li>
+          </Link>
         ))}
       </ul>
     </div>

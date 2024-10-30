@@ -195,15 +195,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white  w-full md:max-w-[600px] border border-black p-8">
+          <div className="bg-white  w-full md:max-w-[600px] border border-black p-0 lg:p-8">
             <p className="text-[20px] text-center mt-4">
               (自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者)
             </p>
           </div>
 
           <div className="w-full flex-col md:flex-row xl:px-[100px] md:px-[50px] 2xl:px-[200px] ">
-            <div className="txt flex flex-col w-full lg:w-1/2">
-              <h3 className="text-[40px] text-white leading-[50px] mt-[100px]">
+            <div className="txt px-[20px] flex flex-col w-full lg:w-1/2">
+              <h3 className=" text-[24px] lg:text-[40px] text-white leading-[50px] mt-[100px]">
                 但你有想過自學網站建置<br></br>也有局限性嗎!!!
               </h3>
               {/* <p className="text-white font-normal">
@@ -258,13 +258,13 @@ export default function Home() {
                 <div className="button"> See Our Work</div>
               </div>
             </div>
-            <div className="w-full border rounded-xl overflow-hidden">
+            <div className="w-full border rounded-sm lg:rounded-xl overflow-hidden">
               <Image
                 width={2600}
                 height={1000}
                 placeholder="empty"
                 loading="lazy"
-                className="scale-100  hover:scale-105 duration-500 rounded-[40px] w-full object-contain"
+                className="scale-100  hover:scale-105 duration-500 rounded-sm lg:rounded-xl  w-full object-contain"
                 src="/images/Hero-slider04.png"
                 alt="交給專頁的我們-極客網頁設計"
               ></Image>

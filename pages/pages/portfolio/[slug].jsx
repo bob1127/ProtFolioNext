@@ -14,7 +14,9 @@ export default function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-  const res = await axios.get("https://zensorrd.com/portfolio/wp-json/wp/v2/posts");
+  const res = await axios.get(
+    "https://zensorrd.com/portfolio/wp-json/wp/v2/posts"
+  );
   const posts = res.data;
 
   // 创建路径
@@ -32,7 +34,9 @@ export async function getStaticProps({ params }) {
   const { slug } = params;
 
   try {
-    const res = await axios.get(`https://zensorrd.com/portfolio/wp-json/wp/v2/posts?slug=${slug}`);
+    const res = await axios.get(
+      `https://zensorrd.com/portfolio/wp-json/wp/v2/posts?slug=${slug}`
+    );
     const post = res.data[0]; // 获取返回的第一篇帖子
 
     return {

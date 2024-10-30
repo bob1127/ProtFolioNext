@@ -113,7 +113,7 @@ export default function Blog() {
                       className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
                     >
                       個人工作室 - 花費小預算，
-                      <span className="bg-blue-700 inline-block px-4 border border-black text-white py-3  w-[150px] mt-4 md:mt-0 text-center">
+                      <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-3  w-[150px] mt-4 md:mt-0 text-center">
                         增加大收益
                       </span>
                     </a>
@@ -427,6 +427,179 @@ export default function Blog() {
                   </div>
                 </div>
               </section>
+              <section className="my-[100px]">
+                <h2 className="mt-10 text-center text-xl sm:text-2xl md:text-3xl my-5 lg:text-4xl">
+                  "無頭網站 跟 傳統網站 比較"
+                </h2>
+                <div
+                  data-aos="fade-up"
+                  data-delay="400"
+                  className="w-full px-4 sm:w-[90%] md:w-[80%] mx-auto"
+                >
+                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                      <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr className="bg-[#f3be3a]">
+                          <th
+                            scope="col"
+                            className="px-2 text-black py-3 sm:px-6"
+                          >
+                            Product name
+                          </th>
+                          <th
+                            scope="col"
+                            className="px-2  text-black py-3 sm:px-6"
+                          >
+                            Next.js 無頭網站
+                          </th>
+                          <th
+                            scope="col"
+                            className="px-2 text-black py-3 sm:px-6"
+                          >
+                            傳統 WordPress 網站
+                          </th>
+                          <th scope="col" className="px-2 py-3 sm:px-6"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                          <th
+                            scope="row"
+                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                          >
+                            性能
+                          </th>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：具有伺服器端渲染（SSR）、靜態生成（SSG），加快頁面加載速度，適合流量較大的網站。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：需要部署 CDN 和優化靜態資源，可能較為繁瑣。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：輕量網站時性能較佳；使用快取插件可加快加載。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：動態頁面較多，依賴後端數據庫，負載高時加載速度較慢。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 text-right sm:px-6"></td>
+                        </tr>
+                        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                          <th
+                            scope="row"
+                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                          >
+                            開發靈活性
+                          </th>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：可用 React
+                              构建自定义组件，灵活搭配现代前端工具，适合高度定制化设计。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：需具备前端开发经验，对非技术人员较不友好。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：定制化受限，插件冲突和样式限制可能影响设计效果。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 text-right sm:px-6"></td>
+                        </tr>
+                        <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                          <th
+                            scope="row"
+                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                          >
+                            內容管理
+                          </th>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：後端 CMS（如
+                              WordPress）僅負責內容，管理內容簡單且高效，適合多渠道發布。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：需額外設置無頭
+                              CMS，對於編輯內容可能無法直接預覽最終效果。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：有大量插件和主题支持，即使不具备编程能力也能轻松构建网站。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：定制化受限，插件冲突和样式限制可能影响设计效果。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 text-right sm:px-6"></td>
+                        </tr>
+                        <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                          <th
+                            scope="row"
+                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                          >
+                            SEO
+                          </th>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：通過 SSR、SSG 支持良好的 SEO
+                              優化，能控制各頁面元數據，靈活且響應快。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：SEO 優化需自定義設定（如 Open
+                              Graph、JSON-LD），增加開發工作量。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：基本支持 SEO，且許多 SEO 插件（如
+                              Yoast）可加強 SEO 配置。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：無法像無頭 CMS 一樣針對每頁靈活優化，SEO
+                              插件的效果可能有限。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 text-right sm:px-6"></td>
+                        </tr>
+                        <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                          <th
+                            scope="row"
+                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                          >
+                            安全性
+                          </th>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：因前後端分離，減少傳統 WordPress
+                              的漏洞風險，安全性更高。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：需要設置安全驗證和數據保護以避免 API
+                              被濫用。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              優點：內建基本安全功能，且許多插件增強網站安全性。
+                            </p>
+                            <p className="text-[12px] sm:text-[14px]">
+                              缺點：WordPress
+                              插件和主題易成為攻擊目標，安全漏洞風險較高。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 text-right sm:px-6"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+
               <section className="px-[20px] md:px-[50px] xl:px-[100px]">
                 <div className="top mt-4 mb-4 text-[40px] text-center"></div>
 

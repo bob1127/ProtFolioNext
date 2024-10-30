@@ -386,7 +386,7 @@ const ExampleContent = () => (
                   fontSize="50px"
                 /> */}
     </div>
-    <p className="mx-auto text-[16px]">(陸續新增中....)</p>
+    <p className="mx-auto text-[16px]">(陸續新增中..)</p>
     <section className="section_portfolio mx-auto max-w-[2000px] w-full flex flex-wrap justify-center items-center">
       <a href="https://www.zensorrd.com">
         <Image
@@ -435,7 +435,7 @@ const ExampleContent = () => (
                   fontSize="50px"
                 /> */}
     </div>
-    <div className="flex md:flex-row justify-center items-center  flex-col w-[85%] mx-auto">
+    <div className="flex md:flex-row justify-center items-center  flex-col w-full sm:w-[85%] mx-auto">
       <div className="text-content flex justify-center w-full md:w-[50%]">
         <div className="lg:w-[85%] 2xl:w-[70%] flex flex-col items-center  w-full ">
           <h2 className="col-span-1 text-center text-3xl font-bold md:col-span-4">

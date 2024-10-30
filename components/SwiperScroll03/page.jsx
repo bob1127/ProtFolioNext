@@ -25,7 +25,7 @@ export default function App() {
   return (
     <div className="relative h-[70vh] md:h-full overflow-hidden">
       <div className="h-full w-full absolute top-0 left-0 z-[99999999] flex flex-col justify-between items-center">
-        <div className="txt-top flex flex-row lg:py-[5%] 2xl:py-[10%] pl-[5%] w-full ">
+        <div className="txt-top flex flex-row py-[20%] md:py-[10%] pl-[5%] w-full ">
           <div className="w-1/2 text-[18px] text-white pl-[5%] flex justify-start">
             JEEK-Design
           </div>
@@ -55,7 +55,7 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="txt-bottom py-[5%] 2xl:py-[10%] pl-[10%] w-full ">
+        <div className="txt-bottom py-[10%] 2xl:py-[10%] pl-[10%] w-full ">
           <h1 className="text-white text-[32px] sm:text-[45px] lg:text-[80px]">
             Designing Brand
           </h1>
