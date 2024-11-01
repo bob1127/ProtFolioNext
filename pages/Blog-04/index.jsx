@@ -91,7 +91,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content mt-[100px] p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
               <h1 className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  ">
@@ -138,10 +138,7 @@ export default function Blog() {
             >
               前往 Ｍidjurney官網註冊
             </a>
-            <p className="xx]  leading-[32px] xl:leading-[36px] text-[#4c4c4c] tracking-wide ">
-              l:text-[18p 內容行銷（Content
-              Marketing）是一種透過創建和分發有價值、相關且一致的內容來吸引和留住特定受眾的策略。它的目標不僅僅是推銷產品或服務，而是提供受眾真正感興趣的資訊，解決他們的問題或滿足他們的需求。這些內容可以是文章、影片、社群貼文、電子書、圖表等多種形式。
-            </p>
+
             <br></br>
             <div className="">
               <div className="imgText">

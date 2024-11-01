@@ -415,12 +415,8 @@ export default function Blog() {
                       >
                         <h2>Next.js + Wordpress</h2>
                         <p className="mt-[10px] leading-[30px]">
-                          {" "}
-                          Next.js 和 WordPress 結合能顯著提升性能。利用 Next.js
-                          的靜態生成和增量靜態生成（ISR），網站可以快速加載並自動更新內容。服務端渲染（SSR）確保實時數據的即時展示。通過
-                          CDN 和緩存優化，頁面加載速度更快。Next.js
-                          的圖像優化和代碼拆分功能進一步提升性能。WordPress
-                          提供強大的內容管理，結合以上技術，能構建高效、快速的網站。
+                          將 Next.js 的靜態生成、ISR 和 SSR 性能優化與 WordPress
+                          的內容管理相結合，可構建快速且高效的網站。
                         </p>
                       </p>
                     </div>
@@ -612,11 +608,8 @@ export default function Blog() {
                     />
                     <h2> Page Speed Insight</h2>
                     <p className="mt-[10px] leading-[30px]" data-aos="fade-up">
-                      Next.js 和 WordPress 结合能显著提升性能。利用 Next.js
-                      的静态生成和增量静态生成（ISR），网站可以快速加载并自动更新内容。服务端渲染（SSR）确保实时数据的即时展示。通过
-                      CDN 和缓存优化，页面加载速度更快。Next.js
-                      的图像优化和代码拆分功能进一步提升性能。WordPress
-                      提供强大的内容管理，结合以上技术，能构建高效、快速的网站。
+                      可顯著增加網頁速度，並通過 PageSpeed Insights
+                      測速達成高效加載。
                     </p>
                     <div className="mt-5">
                       <a
@@ -740,24 +733,13 @@ export default function Blog() {
                           >
                             <a className="link-with-arrows">
                               高效的性能與快速的頁面加載
-                              <p>
-                                Next.js結合了React的靈活性和靜態站點生成（SSG）的速度，使您的網站在任何設備上都能快速加載。這不僅提高了用戶體驗，還能改善SEO，
-                                <span className="bg-blue-100">
-                                  讓您的網站在搜尋引擎中排名更高。
-                                </span>
-                              </p>
                             </a>
                           </div>
                           <div
                             role="listitem"
                             className="service-cms-page-link-item w-dyn-item"
                           >
-                            <a className="link-with-arrows">
-                              無縫的內容管理
-                              <p>
-                                透過WordPress作為後端管理系統，您可以輕鬆地管理網站內容。無需撰寫代碼，您便能透過熟悉的WordPress介面來更新文章、頁面和多媒體內容，同時仍能享受無頭CMS所帶來的靈活性和自由度。
-                              </p>
-                            </a>
+                            <a className="link-with-arrows">無縫的內容管理</a>
                           </div>
                           <div
                             role="listitem"
@@ -765,9 +747,6 @@ export default function Blog() {
                           >
                             <a className="link-with-arrows">
                               極致的設計與開發自由
-                              <p>
-                                無頭架構讓前端與後端分離，意味著您可以自由選擇和設計最符合品牌風格的前端界面，而不受限於WordPress預設的佈局或樣式。Next.js的靈活性讓開發人員能夠更快速地實現自訂設計，並整合各種前端技術。
-                              </p>
                             </a>
                           </div>
                         </div>
@@ -876,130 +855,6 @@ export default function Blog() {
                 </div>
               </section> */}
 
-              <section className="md:px-[50px] px-[20px] xl:px-[100px]">
-                <div>
-                  <div className="pl-8">
-                    <h1 className="">產品建模、3D形象影片</h1>
-                    <GsapText
-                      text="  3D-Interactive"
-                      lineHeight="70px"
-                      id="text3"
-                      fontSize="60px"
-                    />{" "}
-                    <p className="w-[95%] md:w-2/3">
-                      {" "}
-                      3D
-                      網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
-                    </p>
-                    <p className="bg-blue-700 inline-block text-white mt-4 px-3 py-1 border-black border">
-                      Spline
-                    </p>
-                    <p className="bg-blue-700 inline-block text-white ml-4 px-3 py-1 border-black border">
-                      Blender
-                    </p>
-                    {/* <p className="bg-blue-700 inline-block text-white  border-black border">
-                      Spline
-                    </p> */}
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className=" hidden md:block w-full md:w-1/2">
-                    <Carousel05 />
-                  </div>
-                  <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
-                    <iframe
-                      className="absolute top-0 left-0 z-[999]"
-                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
-                      frameborder="0"
-                      width="100%"
-                      height="500px"
-                    ></iframe>
-                  </div>
-                </div>
-              </section>
-              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
-                <h2
-                  data-aos="fade-up"
-                  className="text-[26px] xl:text-[50px] font-extrabold"
-                >
-                  "3D運用-交互式網頁"
-                </h2>
-                <p
-                  data-aos="fade-up"
-                  className="bg-blue-600 px-6 py-2 text-white border-black border mt-2"
-                  data-aos-delay="300"
-                >
-                  3d 建模產品運用在網頁上
-                </p>
-                <div className="flex mt-[25px] justify-center">
-                  {/* <img
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                    className=" w-full xl:w-[80%] rounded-none md:rounded-xl mx-auto"
-                    src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
-                    alt=""
-                  /> */}
-                  <Image
-                    src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
-                    loading="lazy"
-                    alt="3d互動式網站-極客網頁設計_3dModel_Blender"
-                    width={800}
-                    height={600}
-                    placeholder="empty"
-                  ></Image>
-                  {/* <div>
-                    <div className="left"></div>
-                    <div className="right">
-                      <img
-                        className="w-[80%] mx-auto"
-                        src="https://www.vectary.com/website_assets/636cc984003871e3cda597bb/6644c6a1cff6e0d6b867232f_Vectary%20Business%20plan.png"
-                        alt=""
-                      />
-                    </div>
-                  </div> */}
-                </div>
-              </section>
-              <section className="coding-section">
-                <div className="container items-center justify-center  flex-col xl:flex-row py-[50px]  px-0 xl:px-[100px] flex">
-                  <div className="left   w-full xl:w-1/2  p-0 xl:p-[50px]">
-                    <div
-                      className="txt  xl:w-4/5 md:w-2/3 w-full"
-                      data-aos="fade-up"
-                    >
-                      <h4 className="text-[26px] md:text-[50px]  leading-normal font-bold">
-                        3d 交互式網站優點
-                      </h4>
-                      <p className="text-[22px] font-bold">
-                        Interection Website Design{" "}
-                      </p>
-                      <b className="text-[20px] mt-3"> 提升用戶體驗：</b>
-                      <p>
-                        3D
-                        環境讓用戶感受到沉浸式體驗，增加與產品的互動，吸引他們更長時間停留在網站上。
-                      </p>
-                      <b className="text-[20px] mt-3"> 增加轉換率：</b>
-                      <p>
-                        用戶能夠更直觀地查看產品細節，這有助於消除購物時的疑慮，從而提高購買意願。
-                      </p>
-                      <b className="text-[20px] mt-3"> 增強品牌形象：</b>
-                      <p>
-                        獨特的 3D
-                        設計可以讓品牌更具吸引力，給人留下深刻印象，從而提升品牌忠誠度。
-                      </p>
-                    </div>
-                  </div>
-                  <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
-                    <Image
-                      src="/images/3d設計_UI設計_banner設計-極客網頁設計_seo優化.png"
-                      loading="lazy"
-                      alt="3d設計_UI設計_banner設計"
-                      width={800}
-                      height={600}
-                      placeholder="empty"
-                    ></Image>
-                  </div>
-                </div>
-              </section>
               {/* <section className="section mt-[80px] with-borders">
                 <div className="title text-center">
                   <h2 className="text-[30px] xl:text-[40px] text-black">
@@ -1348,7 +1203,130 @@ export default function Blog() {
                   </div>
                 </section>
               </section>
-
+              <section className="md:px-[50px] px-[20px] xl:px-[100px]">
+                <div>
+                  <div className="pl-8">
+                    <h1 className="">產品建模、3D形象影片</h1>
+                    <GsapText
+                      text="  3D-Interactive"
+                      lineHeight="70px"
+                      id="text3"
+                      fontSize="60px"
+                    />{" "}
+                    <p className="w-[95%] md:w-2/3">
+                      {" "}
+                      3D
+                      網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
+                    </p>
+                    <p className="bg-blue-700 inline-block text-white mt-4 px-3 py-1 border-black border">
+                      Spline
+                    </p>
+                    <p className="bg-blue-700 inline-block text-white ml-4 px-3 py-1 border-black border">
+                      Blender
+                    </p>
+                    {/* <p className="bg-blue-700 inline-block text-white  border-black border">
+                      Spline
+                    </p> */}
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className=" hidden md:block w-full md:w-1/2">
+                    <Carousel05 />
+                  </div>
+                  <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
+                    <iframe
+                      className="absolute top-0 left-0 z-[999]"
+                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                      frameborder="0"
+                      width="100%"
+                      height="500px"
+                    ></iframe>
+                  </div>
+                </div>
+              </section>
+              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
+                <h2
+                  data-aos="fade-up"
+                  className="text-[26px] xl:text-[50px] font-extrabold"
+                >
+                  "3D運用-交互式網頁"
+                </h2>
+                <p
+                  data-aos="fade-up"
+                  className="bg-blue-600 px-6 py-2 text-white border-black border mt-2"
+                  data-aos-delay="300"
+                >
+                  3d 建模產品運用在網頁上
+                </p>
+                <div className="flex mt-[25px] justify-center">
+                  {/* <img
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className=" w-full xl:w-[80%] rounded-none md:rounded-xl mx-auto"
+                    src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
+                    alt=""
+                  /> */}
+                  <Image
+                    src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
+                    loading="lazy"
+                    alt="3d互動式網站-極客網頁設計_3dModel_Blender"
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                  ></Image>
+                  {/* <div>
+                    <div className="left"></div>
+                    <div className="right">
+                      <img
+                        className="w-[80%] mx-auto"
+                        src="https://www.vectary.com/website_assets/636cc984003871e3cda597bb/6644c6a1cff6e0d6b867232f_Vectary%20Business%20plan.png"
+                        alt=""
+                      />
+                    </div>
+                  </div> */}
+                </div>
+              </section>
+              <section className="coding-section">
+                <div className="container items-center justify-center  flex-col xl:flex-row py-[50px]  px-0 xl:px-[100px] flex">
+                  <div className="left   w-full xl:w-1/2  p-0 xl:p-[50px]">
+                    <div
+                      className="txt  xl:w-4/5 md:w-2/3 w-full"
+                      data-aos="fade-up"
+                    >
+                      <h4 className="text-[26px] md:text-[50px]  leading-normal font-bold">
+                        3d 交互式網站優點
+                      </h4>
+                      <p className="text-[22px] font-bold">
+                        Interection Website Design{" "}
+                      </p>
+                      <b className="text-[20px] mt-3"> 提升用戶體驗：</b>
+                      <p>
+                        3D
+                        環境讓用戶感受到沉浸式體驗，增加與產品的互動，吸引他們更長時間停留在網站上。
+                      </p>
+                      <b className="text-[20px] mt-3"> 增加轉換率：</b>
+                      <p>
+                        用戶能夠更直觀地查看產品細節，這有助於消除購物時的疑慮，從而提高購買意願。
+                      </p>
+                      <b className="text-[20px] mt-3"> 增強品牌形象：</b>
+                      <p>
+                        獨特的 3D
+                        設計可以讓品牌更具吸引力，給人留下深刻印象，從而提升品牌忠誠度。
+                      </p>
+                    </div>
+                  </div>
+                  <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
+                    <Image
+                      src="/images/3d設計_UI設計_banner設計-極客網頁設計_seo優化.png"
+                      loading="lazy"
+                      alt="3d設計_UI設計_banner設計"
+                      width={800}
+                      height={600}
+                      placeholder="empty"
+                    ></Image>
+                  </div>
+                </div>
+              </section>
               <section className="section">
                 <div className="w-full md:w-2/3  flex justify-center items-center flex-col mx-auto pt-[60px] px-[20px] pb-[30px]">
                   <GsapText

@@ -150,6 +150,16 @@ const EmblaCarousel = () => {
     setCurrentDescription(description);
     onOpen(); // Open the NextUI modal
   };
+  useEffect(() => {
+    if (isOpen) {
+      // Slide-up animation for the modal when it opens
+      gsap.fromTo(
+        ".modal-enter", // Ensure the modal content has this class for the animation to target
+        { y: "100%", opacity: 0 }, // Starting position (off-screen)
+        { y: "0%", opacity: 1, duration: 0.5, ease: "power3.out" } // Slide up into view
+      );
+    }
+  }, [isOpen]);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -209,7 +219,7 @@ const EmblaCarousel = () => {
               className="embla__slide w-[370px] md:w-[600px] flex-none pl-4"
               key={slide.id}
             >
-              <div className="embla__parallax border border-black h-full overflow-hidden">
+              <div className="embla__parallax h-full overflow-hidden">
                 <div
                   className="embla__parallax__layer flex justify-center relative h-full w-[100%]"
                   onClick={() =>
@@ -252,8 +262,10 @@ const EmblaCarousel = () => {
         </div>
       </div>
 
-      <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-      <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+      <div className="arrow-buttons flex justify-center">
+        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+      </div>
 
       <div className="flex justify-center">
         {scrollSnaps.map((_, index) => (
@@ -267,32 +279,33 @@ const EmblaCarousel = () => {
 
       {/* Modal Component */}
       <div className="bg-black">
-        <Modal
-          isOpen={isOpen}
-          onClose={onClose}
-          className="border  border-black relative bg-black  focus:border-black"
-        >
-          <div className="fixed top-0 left-0 backdrop-blur-md bg-black bg-opacity-60 w-[100vw] h-[100vh]"></div>
+        <Modal isOpen={isOpen} onClose={onClose} className="">
+          <div className="fixed top-0 left-0 backdrop-blur-md bg-black bg-opacity-60 w-[100vw] h-[100vh] "></div>
 
-          <ModalContent className="modal-enter w-[100%] z-[9999]  fixed mt-3 top-[100px] h-[100vh] rounded-[30px] 2xl:p-[120px] md:px-[70px] md:pb-[70px] md:pt-[30px] bg-[#ffffff]">
+          <ModalContent
+            className="modal-enter bg-white fixed border-t-1 p-10 bottom-[-50px] rounded-t-[30px]  h-[97vh] z-[9999999999999]"
+            style={{
+              width: "100vw",
+              maxWidth: "100vw",
+            }}
+          >
             <ModalHeader></ModalHeader>
-
-            <ModalBody className=" ">
+            <ModalBody>
               <h3 className="pl-5">{currentTitle}</h3>
-              <div className=" flex-col flex md:flex-row">
+              <div className="flex-col flex md:flex-row">
                 <div className="w-full md:w-[55%] p-3 md:p-5">
-                  <a href="https://www.zensorrd.com">
+                  <a target="_blank" href="https://www.zensor.com.tw">
                     <Image
                       src={currentImageSrc}
-                      alt={currentTitle} // Use title as alt text
+                      alt={currentTitle}
                       width={700}
                       height={400}
-                      className="object-cover" // Add any additional styling if necessary
+                      className="object-cover"
                     />
                   </a>
                 </div>
                 <div className="w-full md:w-[45%] p-4 md:p-10">
-                  <p className="mt-4">{currentDescription}</p>{" "}
+                  <p className="mt-4">{currentDescription}</p>
                 </div>
               </div>
             </ModalBody>

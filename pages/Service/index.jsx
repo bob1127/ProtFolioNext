@@ -508,18 +508,14 @@ export default function Blog() {
                       className="about-grid-image"
                     >
                       <div className="reveal-image-trigger">
-                        <img
+                        <Image
+                          src="/images/不要再以為網頁行銷很花錢了.png"
+                          alt="不要再以為網頁行銷很花錢了"
+                          placeholder="empty"
                           loading="lazy"
-                          alt="Portrait of the team"
-                          src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.webp"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1550px"
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
+                          width={1300}
+                          height={1300}
+                        ></Image>
                         <div
                           className="bg-for-animation"
                           style={{ display: "block" }}
@@ -601,13 +597,177 @@ export default function Blog() {
                           <div className="button-bg" style={{}} />
                         </div>
                         <div className="button-icon-block">
-                          {/* <img
+                          {/* <Image
+                            src=""
+                            width={500}
+                            height={600}
+                            placeholder=""
+                            loading="lazy"
+                            alt=""
+                          ></Image> */}
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="services" className="section">
+              <a
+                data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfd9"
+                className="fullwidth-link text-black w-inline-block"
+                style={{}}
+                href="/contact"
+              >
+                <h2
+                  data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfda"
+                  className="heading is-fullwidth-title"
+                  style={{
+                    transform:
+                      "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                    transformStyle: "preserve-3d",
+                    opacity: 1,
+                  }}
+                >
+                  提供服務
+                </h2>
+                <br />
+                <br />
+                <div className="rounded-[30px] bg-[#333] text-[20px] text-white inline-block p-3">
+                  (網頁設計｜產品攝影建模｜SEO優化)
+                </div>
+                <div
+                  data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfdc"
+                  className="circle-button"
+                  style={{
+                    transform:
+                      "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                    transformStyle: "preserve-3d",
+                    opacity: 1,
+                  }}
+                >
+                  <div className="circle-button-bg" style={{}} />
+                  <img
+                    src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                    loading="lazy"
+                    alt=""
+                    className="circle-button-icon"
+                    style={{}}
+                  />
+                </div>
+                <div className="fullwidth-link-bg" style={{}} />
+              </a>
+            </section>
+            <section className="section">
+              <div className="container">
+                <div className="padding">
+                  <div className="w-layout-grid about-content">
+                    <div className="about-grid-image">
+                      <div className="reveal-image-trigger">
+                        <SwiperScroll01 />
+                        {/* <img
+                          loading="lazy"
+                          alt="Portrait of the team"
+                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
+                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
+                          srcSet="
+                                        
+                                      "
+                          className="cover-image"
+                          style={{
+                            transform:
+                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                            transformStyle: "preserve-3d",
+                          }}
+                        /> */}
+                        <div
+                          className="bg-for-animation"
+                          style={{ display: "block" }}
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
+                      className="about-grid-content"
+                    >
+                      {/* <div className="text-dot-block">
+                        <div className="dot" />
+                        <p className="paragraph">網頁設計</p>
+                      </div> */}
+
+                      {/* </h2> */}
+
+                      <GsapText
+                        text=' "3D 建模" '
+                        lineHeight="60px"
+                        id="text6"
+                        fontSize="50px"
+                      />
+                      <div className="flex w-full  flex-col items-start">
+                        <b className="mb-3 text-[16px]">3d model for website</b>
+                        <div className="flex">
+                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                            3D 形象影片
+                          </span>
+                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                            交互式網站
+                          </span>
+                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                            產品展示
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex items-start flex-col ">
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">視覺衝擊力強</b>
+                          <p className="text-left leading-normal mt-3">
+                            - 3D
+                            建模能夠創建出極具深度和細節的視覺效果，這種真實感和立體感可以吸引訪客的注意，提升網站的視覺吸引力，進而增加用戶的停留時間和互動率。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]"> 多元應用場景</b>
+                          <p className="text-left leading-normal mt-3">
+                            - 3D
+                            模型可以在不同平台和媒體上使用，包括網站、社交媒體、動畫視頻等，這種多功能性使得投資於
+                            3D 建模的回報更具價值。
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">靈活性強</b>
+                          <p className="text-left leading-normal mt-3">
+                            -
+                            作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
+                          </p>
+                        </div>
+                        <div className="mb-6 flex flex-col items-start">
+                          <b className="text-[22px]">提升互動體驗</b>
+                          <p className="text-left leading-normal mt-3">
+                            - 3D
+                            圖片或動畫可以與用戶進行互動，如滑動或旋轉產品視圖，這種互動性不僅增加了用戶的參與感，還能讓用戶更深入了解產品。
+                          </p>
+                        </div>
+                      </div>
+                      <a
+                        href="/Contact"
+                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                        className="button-wrapper w-inline-block"
+                      >
+                        <div className="button-layout">
+                          <p href="/about" className="button-text" style={{}}>
+                            立即聯絡
+                          </p>
+                          <div className="button-bg" style={{}} />
+                        </div>
+                        <div className="button-icon-block">
+                          <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="button-icon"
                             style={{}}
-                          /> */}
+                          />
                         </div>
                       </a>
                     </div>
@@ -643,13 +803,13 @@ export default function Blog() {
                           <div className="button-bg" style={{}} />
                         </div>
                         <div className="button-icon-block">
-                          <img
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="button-icon"
                             style={{}}
-                          />
+                          /> */}
                         </div>
                       </a>
                     </div>
@@ -720,12 +880,7 @@ export default function Blog() {
                       >
                         "移動設備體驗優化 "
                       </h2> */}
-                      <GsapText
-                        text=' "移動設備體驗優化" '
-                        lineHeight="60px"
-                        id="text1"
-                        fontSize="50px"
-                      />
+                      <GsapText text=' "移動設備體驗優化" ' id="text1" />
                       <div className="flex items-start flex-col ">
                         <div className="mb-6 flex flex-col items-start">
                           <b className="text-[22px] leading-normal">
@@ -736,23 +891,20 @@ export default function Blog() {
                             <span className="bg-[#fad335]">
                               「移動優先索引」
                             </span>
-                            ，這意味著 Google
-                            搜索引擎主要基於網站的移動版本來進行索引和排名。因此，確保你的網站在移動設備上的表現是至關重要的。如果你的網站在桌面和移動設備上有不同的內容，Google
-                            會優先考慮移動設備上的內容。
+                            Google
+                            搜索引擎主要依據網站的移動版本進行索引和排名，因此確保網站在移動設備上的優化至關重要，尤其是當桌面與移動內容不一致時。
                           </p>
                         </div>
                         <div className="mb-6 flex flex-col items-start">
                           <b className="text-[22px]"> 頁面加載速度</b>
                           <p className="text-left leading-normal mt-3">
-                            - Google
-                            對頁面加載速度非常重視。移動設備的用戶對於緩慢加載的頁面容忍度較低。Google
-                            的{" "}
+                            Google 將頁面加載速度納入排名因素，尤其在{" "}
                             <span className="bg-[#fad335]">「頁面體驗」</span>
-                            更新涵蓋了加載速度等因素，並將其納入排名考量。確保網站的加載速度快，特別是在移動設備上，可以使用工具如
+                            更新後更重視移動端。建議使用{" "}
                             <span className="bg-[#fad335]">
                               Google PageSpeed Insights
                             </span>{" "}
-                            來測試和改進頁面速度。
+                            測試並優化加載速度，以提升用戶體驗。
                           </p>
                           <img
                             className="w-full h-auto"
@@ -946,154 +1098,6 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px]  py-[20px] md:py-[80px]  lg:px-[50px]  xl:px-[70px] 2xl:px-[100px]">
-              <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
-                <div className="txt">
-                  <div className="logo pl-[20px]">
-                    <b className="font-bold text-[30px]">JEEK</b>
-                  </div>
-                  <div className="bottom " data-aos="fade-up">
-                    <p className="text-[12px] font-bold">Design by Website</p>
-                    {/* 
-
-                    <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
-                      使用 3D 模型製作網頁橫幅和產品圖的好處
-                    </h3> */}
-
-                    <GsapText
-                      text="Seo成效分析"
-                      lineHeight="60px"
-                      id="text7"
-                      fontSize="50px"
-                    />
-
-                    <div class="flex md:flex-wrap flex-col mt-5">
-                      <span class="bg-[#fad335] text-center w-[210px] border mt-3 md:mt-0 border-black text-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        google analytics 4
-                      </span>
-                      <span class="bg-[#fad335] text-center w-[210px] text-black  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        Google Search Console
-                      </span>
-                      <span class="bg-[#fad335] text-center w-[150px] text-black border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        Hotjar
-                      </span>
-                    </div>
-
-                    <p className="text-[16px]  w-full md:w-2/3  xl:w-full mt-[40px]">
-                      使用 GA4、Google Search Console 和
-                      Hotjar，您可以全方位分析和優化網站的 SEO 成效。GA4
-                      提供用戶行為和目標追蹤，Google Search Console
-                      追蹤關鍵字排名與索引狀況，Hotjar
-                      則透過熱圖和錄影視覺化使用者互動。這些工具能幫助您提升網站曝光率和使用者體驗，達到最佳
-                      SEO 效果。
-                    </p>
-                    <a
-                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      href="/Blog-09"
-                      className="simple-link"
-                    >
-                      Seo成效分析
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full  flex-col pt-10 flex  justify-center items-center  xl:w-[60%]">
-                <DragCaroudelSlider />
-
-                <div className="txt">
-                  <div className="main-container medium-paddings ">
-                    <a
-                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      href="/Blog-01"
-                      className="simple-link"
-                    >
-                      新網站如何做Seo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] flex-col flex">
-              <a
-                href="/Blog-01"
-                className="xl:w-1/2 w-full mr-4 hover:shadow-xl 
-                border-1
-                
-              duration-300
-              hover:border-3
-              hover:translate-x-4 hover:translate-y-4 border border-black p-10 rounded-2xl"
-              >
-                <h4 className="text-[40px] font-light text-black leading-normal">
-                  網頁SEO很重要嗎？
-                </h4>
-                <div className="flex">
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    搜尋引擎優化
-                  </span>
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    網頁結構優化
-                  </span>
-                </div>
-                <p className=" text-[16px] mt-3">
-                  在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
-                </p>
-                <div className="flex w-full  flex-col items-start">
-                  <Image
-                    loader={imageLoader02}
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    placeholder="empty"
-                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                  />
-                </div>
-              </a>
-              <a
-                href="/Blog-02"
-                className="xl:w-1/2 w-full mt-5 md:mt-0 ml-0 xl:ml-4 hover:shadow-[#fee890] 
-              duration-300
-              
-              hover:translate-x-4 hover:translate-y-4 border  p-10 rounded-2xl"
-              >
-                <h4
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  className="text-[40px] leading-normal font-light text-black"
-                >
-                  網頁設計其實沒有很花錢
-                </h4>
-                <div className="flex my-4">
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    目標明確
-                  </span>
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    選擇效益最大化
-                  </span>
-                </div>
-                <p className="  font-bold text-[20px] mt-3">確認需求：</p>
-                <div className="flex w-full  flex-col items-start">
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    在開始架設網頁之前，必須先確認好自己的網站需求。有些網頁公司會為您添加許多額外的功能或插件，結果卻發現這些功能用不上，還拖慢了網頁速度，增加了後續維護的困難。
-                  </b>
-                  <p className=" font-bold text-[20px] mt-3">
-                    尋找合適的合作夥伴:
-                  </p>
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    外包與兼職：如果需要專業協助，可以考慮聘請自由職業者或兼職設計師，他們通常比全職團隊更具成本效益。
-                  </b>
-                  {/* 
-                  <Image
-                    loader={imageLoader02}
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    placeholder="empty"
-                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                  /> */}
-                </div>
-              </a>
-            </section>
-
             <section className="section">
               <div className="container">
                 <div className="padding">
@@ -1161,13 +1165,13 @@ export default function Blog() {
                           <div className="button-bg" style={{}} />
                         </div>
                         <div className="button-icon-block">
-                          <img
+                          {/* <img
                             src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
                             loading="lazy"
                             alt=""
                             className="button-icon"
                             style={{}}
-                          />
+                          /> */}
                         </div>
                       </a>
                     </div>
@@ -1195,119 +1199,166 @@ export default function Blog() {
                         />
                       </div>
                     </div>
-
-                    <div className="about-grid-image">
-                      <div className="reveal-image-trigger">
-                        <SwiperScroll01 />
-                        {/* <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          srcSet="
-                                        
-                                      "
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        /> */}
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-
-                      {/* </h2> */}
-
-                      <GsapText
-                        text=' "3D 建模" '
-                        lineHeight="60px"
-                        id="text6"
-                        fontSize="50px"
-                      />
-                      <div className="flex w-full  flex-col items-start">
-                        <b className="mb-3 text-[16px]">3d model for website</b>
-                        <div className="flex">
-                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
-                            3D 形象影片
-                          </span>
-                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
-                            交互式網站
-                          </span>
-                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
-                            產品展示
-                          </span>
-                        </div>
-                      </div>
-                      <div className="flex items-start flex-col ">
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">視覺衝擊力強</b>
-                          <p className="text-left leading-normal mt-3">
-                            - 3D
-                            建模能夠創建出極具深度和細節的視覺效果，這種真實感和立體感可以吸引訪客的注意，提升網站的視覺吸引力，進而增加用戶的停留時間和互動率。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]"> 多元應用場景</b>
-                          <p className="text-left leading-normal mt-3">
-                            - 3D
-                            模型可以在不同平台和媒體上使用，包括網站、社交媒體、動畫視頻等，這種多功能性使得投資於
-                            3D 建模的回報更具價值。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">靈活性強</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">提升互動體驗</b>
-                          <p className="text-left leading-normal mt-3">
-                            - 3D
-                            圖片或動畫可以與用戶進行互動，如滑動或旋轉產品視圖，這種互動性不僅增加了用戶的參與感，還能讓用戶更深入了解產品。
-                          </p>
-                        </div>
-                      </div>
-                      <a
-                        href="/Contact"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
+            </section>
+            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px]  py-[20px] md:py-[80px]  lg:px-[50px]  xl:px-[70px] 2xl:px-[100px]">
+              <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
+                <div className="txt">
+                  <div className="logo pl-[20px]">
+                    <b className="font-bold text-[30px]">JEEK</b>
+                  </div>
+                  <div className="bottom " data-aos="fade-up">
+                    <p className="text-[12px] font-bold">Design by Website</p>
+                    {/* 
+
+                    <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
+                      使用 3D 模型製作網頁橫幅和產品圖的好處
+                    </h3> */}
+
+                    <GsapText
+                      text="Seo成效分析"
+                      lineHeight="60px"
+                      id="text7"
+                      fontSize="50px"
+                    />
+
+                    <div class="flex md:flex-wrap flex-col mt-5">
+                      <span class="bg-[#fad335] text-center w-[210px] border mt-3 md:mt-0 border-black text-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        google analytics 4
+                      </span>
+                      <span class="bg-[#fad335] text-center w-[210px] text-black  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        Google Search Console
+                      </span>
+                      <span class="bg-[#fad335] text-center w-[150px] text-black border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        Hotjar
+                      </span>
+                    </div>
+
+                    <p className="text-[16px]  w-full md:w-2/3  xl:w-full mt-[40px]">
+                      使用 GA4、Google Search Console 和
+                      Hotjar，您可以全方位分析和優化網站的 SEO 成效。GA4
+                      提供用戶行為和目標追蹤，Google Search Console
+                      追蹤關鍵字排名與索引狀況，Hotjar
+                      則透過熱圖和錄影視覺化使用者互動。這些工具能幫助您提升網站曝光率和使用者體驗，達到最佳
+                      SEO 效果。
+                    </p>
+                    <a
+                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                      href="/Blog-09"
+                      className="simple-link"
+                    >
+                      Seo成效分析
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full  flex-col pt-10 flex  justify-center items-center  xl:w-[60%]">
+                <DragCaroudelSlider />
+
+                <div className="txt">
+                  <div className="main-container medium-paddings ">
+                    <a
+                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                      href="/Blog-01"
+                      className="simple-link"
+                    >
+                      新網站如何做Seo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] pb-[100px] flex-col flex">
+              <a
+                href="/Blog-01"
+                className="xl:w-1/2 w-full mr-4 
+              
+                
+              duration-300
+              hover:border-3
+              hover:translate-x-4 hover:translate-y-4  p-10"
+              >
+                <div className="flex w-full  flex-col items-start">
+                  <Image
+                    alt="網頁SEO很重要嗎"
+                    width={700}
+                    height={700}
+                    loading="lazy"
+                    className="rounded-[18px]"
+                    placeholder="empty"
+                    src="/images/網頁SEO很重要嗎.png"
+                  />
+                </div>
+                <div className="flex mt-6">
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    搜尋引擎優化
+                  </span>
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    網頁結構優化
+                  </span>
+                </div>
+                <h4 className="text-[40px] font-light text-black leading-normal">
+                  網頁SEO很重要嗎？
+                </h4>
+
+                <p className=" text-[16px] mt-3">
+                  在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
+                </p>
+              </a>
+              <a
+                href="/Blog-02"
+                className="xl:w-1/2 w-full border-[#7a7a7a]  mt-5 md:mt-0 ml-0 xl:ml-4 
+              duration-300
+              
+              hover:translate-x-4 hover:translate-y-4   p-10 "
+              >
+                <div className="flex w-full  flex-col items-start">
+                  <Image
+                    alt="網頁SEO很重要嗎"
+                    width={700}
+                    height={700}
+                    loading="lazy"
+                    className="rounded-[18px]"
+                    placeholder="empty"
+                    src="/images/網頁SEO很重要嗎.png"
+                  />
+                </div>
+                <div className="flex mt-6">
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    目標明確
+                  </span>
+                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    選擇效益最大化
+                  </span>
+                </div>
+                <h4 className="text-[40px] leading-normal font-light text-black">
+                  網頁設計其實沒有很花錢
+                </h4>
+
+                <p className="  font-bold text-[20px] mt-3">確認需求：</p>
+                <div className="flex w-full  flex-col items-start">
+                  <b className="mb-3 text-[14px] font-normal leading-normal">
+                    在開始架設網頁之前，必須先確認好自己的網站需求。有些網頁公司會為您添加許多額外的功能或插件，結果卻發現這些功能用不上，還拖慢了網頁速度，增加了後續維護的困難。
+                  </b>
+                  <p className=" font-bold text-[20px] mt-3">
+                    尋找合適的合作夥伴:
+                  </p>
+                  <b className="mb-3 text-[14px] font-normal leading-normal">
+                    外包與兼職：如果需要專業協助，可以考慮聘請自由職業者或兼職設計師，他們通常比全職團隊更具成本效益。
+                  </b>
+                  {/* 
+                  <Image
+                    loader={imageLoader02}
+                    width={700}
+                    height={700}
+                    loading="lazy"
+                    placeholder="empty"
+                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
+                  /> */}
+                </div>
+              </a>
             </section>
 
             {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}

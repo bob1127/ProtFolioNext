@@ -6,7 +6,7 @@ import GsapText from "../components/RevealText/index";
 import { gsap } from "gsap";
 import { useCallback } from "react";
 import TypewriterEffect from "../components/TypewriterEffect";
-
+import EmblaCarousel from "../components/EmblaCarousel/index";
 import PerspectiveSection from "../components/PerspectiveSection/page";
 export default function App() {
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function App() {
   const handleScroll = useCallback(() => {
     const targetScroll = window.innerHeight * 1; // 滾動距離為 80vh
     const startScroll = window.scrollY;
-    const duration = 1000; // 設置滾動持續時間為 1000 毫秒 (1 秒)
+    const duration = 500; // 設置滾動持續時間為 1000 毫秒 (1 秒)
     let startTime = null;
 
     const smoothScroll = (currentTime) => {
@@ -81,15 +81,15 @@ export default function App() {
           <div className="feature relative z-[9999999999999] mb-[40px] py-2 px-3 lg:w-[65%] w-[85%] md:w-[90%] mx-auto grid border-r-2 border-l-2 border-black rounded-[40px] grid-cols-2 md:grid-cols-3 gap-4">
             <div className="flex flex-col justify-center items-center text-center h-full">
               <p>Website Design</p>
-              <b>精選網頁設計版型</b>
+              <b>網頁設計</b>
             </div>
             <div className="flex flex-col justify-center items-center text-center h-full">
               <p>SEO Optimization</p>
               <b>專業SEO優化</b>
             </div>
             <div className="flex flex-col justify-center items-center text-center h-full">
-              <p>Website Design</p>
-              <b>精選網頁設計版型</b>
+              <p>Photography</p>
+              <b>產品攝影｜圖片後製</b>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function App() {
             />
           </motion.div>
         </div>
-        <div className="absolute bottom-[11%] lg:bottom-[10%]  left-[20%] lg:left-[30%] z-[99999999]">
+        <div className="absolute bottom-[30%] sm:bottom-[11%] lg:bottom-[10%]  left-[20%] lg:left-[30%] z-[99999999]">
           <motion.div
             initial={{ opacity: 0, scale: 0 }} // 初始狀態
             animate={{ opacity: 1, scale: 1 }} // 最終狀態
@@ -199,7 +199,7 @@ export default function App() {
             ></Image>
           </motion.div>
         </div>
-        <div className="absolute  bottom-[-30%] md:bottom-[-22%] lg:bottom-[-10%] right-[-23%] md:right-[-15%] lg:right-[-5%] z-[99999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
+        <div className="absolute  bottom-0 sm:bottom-[-30%] md:bottom-[-22%] lg:bottom-[-10%] right-[-23%] md:right-[-15%] lg:right-[-5%] z-[99999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
           <Image
             src="/images/Hero-img-11.png"
             alt="hero-blur-img_desktop"
@@ -214,7 +214,7 @@ export default function App() {
             data-aos-duration="1200"
           />
         </div>
-        <div className="absolute bottom-[-20%] lg:bottom-0 left-[-22%] md:left-[-27%] lg:left-[-10%] 2xl:left-[-10%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
+        <div className="absolute bottom-[0px] sm:bottom-[-20%] lg:bottom-0 left-[-22%] md:left-[-27%] lg:left-[-10%] 2xl:left-[-10%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
           <Image
             src="/images/Hero-img-09.png"
             alt="hero-blur-img_desktop"
@@ -240,18 +240,16 @@ export default function App() {
           ></Image>
         </div>
         <div
-          className="arrow flex left-[50%] bottom-[80px] absolute z-[99999999] flex-col justify-center items-center transform -translate-x-1/2"
+          className="arrow flex justify-start pt-[35px] items-center left-[50%] sm:bottom-[80px] absolute z-[999999999] bg-white rounded-full   sm:bg-transparent flex-col sm:justify-center w-[50%] bottom-[-18%] h-[30%] sm:items-center transform -translate-x-1/2"
           onClick={handleScroll}
         >
-          <div>
-            Unlock the secrets to <br /> marketing success
-          </div>
+          <div>Scroll Down</div>
           <div>↓</div>
         </div>
       </div>
 
       <div>
-        <section className="bg-[#ffd446] z-[9999999] overflow-hidden h-[400vh] sm:h-[450vh] md:h-[230vh] relative">
+        <section className="bg-[#ffd446] z-[9999999] overflow-hidden h-[350vh] sm:h-[450vh] md:h-[230vh] relative">
           <div className="relative">
             {" "}
             {/* 确保父元素为相对定位 */}
@@ -371,98 +369,43 @@ const OverlayCopy = ({ subheading, heading }) => {
 };
 
 const ExampleContent = () => (
-  <div className="mx-auto  mt-[100px]   px-4 pb-24 pt-12 flex flex-col ">
-    <div className="flex  font-black justify-center py-5">
-      <GsapText
-        text=' "精選網頁設計案例" '
-        lineHeight="60px"
-        id="text3"
-        fontSize="70px"
-      />
-      {/* <GsapText
-                  text=' "我該如何選擇行銷方式" '
-                  lineHeight="60px"
-                  id="text10"
-                  fontSize="50px"
-                /> */}
-    </div>
-    <p className="mx-auto text-[16px]">(陸續新增中..)</p>
-    <section className="section_portfolio mx-auto max-w-[2000px] w-full flex flex-wrap justify-center items-center">
-      <a href="https://www.zensorrd.com">
-        <Image
-          src="/images/portfolio/portfolio-02.png"
-          className=""
-          placeholder="empty"
-          alt="website_portfolio01"
-          width={350}
-          height={250}
-        ></Image>
-      </a>
-      <a href="">
-        {" "}
-        <Image
-          src="/images/portfolio/portfolio-02.png"
-          className=""
-          placeholder="empty"
-          alt="website_portfolio01"
-          width={350}
-          height={250}
-        ></Image>
-      </a>
-      <a href="">
-        {" "}
-        <Image
-          src="/images/portfolio/portfolio-02.png"
-          className=""
-          placeholder="empty"
-          alt="website_portfolio01"
-          width={350}
-          height={250}
-        ></Image>
-      </a>
+  <div className="mx-auto  mt-[-50px] md:mt-[100px]   px-4 pb-24 pt-12 flex flex-col ">
+    <section className="section-embla my-[60px  md:my-0">
+      <EmblaCarousel />
     </section>
-    <div className="flex mt-[50px] font-black justify-center py-5">
-      <GsapText
-        text=' "品牌獲利的新動能" '
-        lineHeight="60px"
-        id="text3"
-        fontSize="70px"
-      />
-      {/* <GsapText
-                  text=' "我該如何選擇行銷方式" '
-                  lineHeight="60px"
-                  id="text10"
-                  fontSize="50px"
-                /> */}
-    </div>
-    <div className="flex md:flex-row justify-center items-center  flex-col w-full sm:w-[85%] mx-auto">
-      <div className="text-content flex justify-center w-full md:w-[50%]">
-        <div className="lg:w-[85%] 2xl:w-[70%] flex flex-col items-center  w-full ">
-          <h2 className="col-span-1 text-center text-3xl font-bold md:col-span-4">
-            把網站形象升級為盈利資產
-          </h2>
-
-          <p className="mt-4 w-ull xl:w-2/3">
-            讓您的網站不僅僅是名片，更成為全天候的業務推動力。透過我們的設計專業與
-            SEO
-            優化，將網站打造成吸引流量、提升轉換的利器，將每次訪問轉化為真實收益。我們幫助您提升品牌形象，增強用戶信任，讓您的網站成為真正的盈利資產。
-          </p>
-
-          <button className="w-full mt-5 rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-            Learn more <FiArrowUpRight className="inline" />
-          </button>
-        </div>
-      </div>
-      <div className="img w-full md:w-[50%]">
+    <section className="section_portfolio mx-auto max-w-[2000px] w-full flex flex-wrap justify-center items-center">
+      {/* <a href="https://www.zensorrd.com">
         <Image
-          src="/images/您的網頁問題我來解決-極客網頁設計01.png"
-          alt="您的網頁問題我來解決-極客網頁設計"
+          src="/images/portfolio/portfolio-02.png"
+          className=""
           placeholder="empty"
-          loading="lazy"
-          width={800}
-          height={800}
+          alt="website_portfolio01"
+          width={350}
+          height={250}
         ></Image>
-      </div>
-    </div>
+      </a>
+      <a href="">
+        {" "}
+        <Image
+          src="/images/portfolio/portfolio-02.png"
+          className=""
+          placeholder="empty"
+          alt="website_portfolio01"
+          width={350}
+          height={250}
+        ></Image>
+      </a>
+      <a href="">
+        {" "}
+        <Image
+          src="/images/portfolio/portfolio-02.png"
+          className=""
+          placeholder="empty"
+          alt="website_portfolio01"
+          width={350}
+          height={250}
+        ></Image>
+      </a> */}
+    </section>
   </div>
 );

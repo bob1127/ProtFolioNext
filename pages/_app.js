@@ -122,7 +122,7 @@ export default function MyApp({ Component, pageProps, router }) {
           `,
         }}
       />
-         <div className='fixed w-full top-0 z-[9999999999999999]'>
+         <div className='fixed w-full  top-0 z-[9999999999999999]'>
            <Nav />
            {/* <MobileHeader/> */}
          </div>

@@ -7,29 +7,29 @@ const Header = () => (
       <LottieAnimation />
     </div> */}
     <div className="static z-[9]">
-      <h1
+      <h2
         className="header text-[#1e1e1e] xl:text-[100px]
     font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] text-[32px]"
       >
         <GsapText
-          text="  Website Portfolio"
+          text='"精選網頁案例"'
           lineHeight="80px"
           id="text2"
           fontSize="70px"
         />{" "}
-      </h1>
+      </h2>
     </div>
     {/* <div className="absolute left-[-10%] md:left-[10%]   w-[200px] md:w-[330px] h-auto  top-[23%]">
       <LottieAnimation />
     </div> */}
     <div className="h-full flex my-auto justify-center items-center">
       <a
-        href="/Contact"
+        href="/pages"
         data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
         className="button-wrapper  w-inline-block"
       >
         <div className="button-layout">
-          <p href="/about" className="button-text" style={{}}>
+          <p href="/pages" className="button-text" style={{}}>
             更多網頁設計案例
           </p>
           <div className="button-bg" style={{}} />
@@ -45,6 +45,7 @@ const Header = () => (
         </div>
       </a>
     </div>
+    <p className="mx-auto text-[16px]">(陸續新增中..)</p>
   </header>
 );
 

@@ -76,7 +76,7 @@ const Section2 = ({ scrollYProgress }) => {
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className="border py-[100px]  z-[99999999999999] bg-black h-auto md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#333] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+      <div className="border py-[100px]  z-[-1] bg-black h-[350vh] md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#333] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
         <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
           <h2 className="text-white text-[30px] md:text-[50px] xl:text-[70px] font-bold">
             提升網站品牌形象

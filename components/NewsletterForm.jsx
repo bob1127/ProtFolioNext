@@ -99,7 +99,7 @@ export default function NewsletterForm() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="2xl:w-[800px]  md:h-full   w-full mx-auto  bg-white rounded-lg">
+    <div className="    2xl:w-[800px]  md:h-full   w-full mx-auto  bg-white rounded-lg">
       <div id="mc_embed_signup ">
         <form
           action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"

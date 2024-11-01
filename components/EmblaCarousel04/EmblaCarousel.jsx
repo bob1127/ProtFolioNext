@@ -93,7 +93,7 @@ const EmblaCarousel = (props) => {
 
   return (
     <div
-      className="embla w-[100%]    border p-4 m-auto"
+      className="embla w-[100%]  p-4 m-auto"
       style={{
         "--slide-height": "19rem",
         "--slide-spacing": "1rem",
@@ -107,11 +107,11 @@ const EmblaCarousel = (props) => {
         >
           {slides.map((slide, index) => (
             <div
-              className="embla__slide  transform flex-none min-w-0"
+              className="embla__slide transform flex-none min-w-0"
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
-                flex: "0 0 var(--slide-size)",
+                flex: "0 0 70%", // Increase this value to widen the slide
                 paddingLeft: "var(--slide-spacing)",
               }}
             >
@@ -120,7 +120,6 @@ const EmblaCarousel = (props) => {
                 rel="noopener noreferrer" // Security best practice
                 style={{
                   display: "block",
-
                   height: "100%", // Ensure anchor fills the slide
                   textDecoration: "none", // Remove underline
                   color: "inherit", // Inherit text color
@@ -135,19 +134,19 @@ const EmblaCarousel = (props) => {
 
                     userSelect: "none",
                   }}
-                  className="embla__slide__number border border-gray-800  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto lg:h-[350px] 2xl:h-[500px] bg-white  flex flex-col  items-center justify-center font-semibold"
+                  className="embla__slide__number bg-white  shadow-2xl border border-black  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto lg:h-[350px] 2xl:h-[500px]   flex flex-col  items-center justify-center font-semibold"
                 >
-                  <div className="flex  rounded-xl overflow-visible lg:overflow-hidden  bg-white flex-col h-auto lg:flex-row lg:h-[300px] p-1 md:p-3 justify-center items-center">
+                  <div className="flex  rounded-xl   bg-white flex-col h-auto lg:flex-row lg:h-[300px] p-1 md:p-3 justify-center items-center">
                     <Image
                       src={slide.image} // Use the image from the slide object
                       alt={slide.title} // Use title as alt text
-                      className="rounded-[16px]"
-                      width={400}
-                      height={400}
+                      className="xl:rounded-[30px] rounded-[16px]"
+                      width={800}
+                      height={800}
                       placeholder="empty"
                       loading="lazy"
                     />
-                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl p-2 md:p-[20px]   items-center w-full  md:w-[80%] mx-auto bg-white ">
+                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl p-2 md:p-[45px]   items-center w-full  md:w-[80%] mx-auto bg-white ">
                       <b className="  text-[14px] md:text-[26px] text-center">
                         {slide.title} {/* Display the title */}
                       </b>

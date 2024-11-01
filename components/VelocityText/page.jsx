@@ -28,13 +28,13 @@ export default function Home() {
   const x = useSpring(xRaw, { mass: 3, stiffness: 400, damping: 50 });
 
   return (
-    <section ref={targetRef} className="h-full bg-neutral-50 text-neutral-950">
-      <div className="sticky top-0 flex py-[50px] h-[300px] items-center overflow-hidden">
+    <section ref={targetRef} className="h-full text-neutral-950">
+      <div className="sticky top-0 flex py-0 sm:py-[50px] h-[300px] items-center overflow-hidden">
         <motion.p
           style={{ skewX, x }}
           className="origin-bottom-left whitespace-nowrap text-5xl font-black  leading-[0.85] md:text-7xl md:leading-[0.85]"
         >
-          "Slick Click, Designs That Stick"
+          "Slick Click, Designs That Stick - 流暢互動，令人銘記的設計"
         </motion.p>
       </div>
     </section>

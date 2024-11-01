@@ -53,7 +53,7 @@ export default function App() {
           <section className="RWD  ">
             <div className="w-full flex-col items-center justify-center lg:flex-row flex">
               <div className="w-full bg-white lg:w-1/2  p-[25px] sm:p-[60px] flex justify-center items-center flex-col lg:p-[70px] ">
-                <div className="txt h-[60vh]">
+                <div className="txt h-auto md:h-[60vh]">
                   <h2 className="">"網頁設計-Website Design"</h2>
                   <h3>客製化網頁設計</h3>
                   <h3>響應式設計與行動裝置優先</h3>
@@ -84,7 +84,7 @@ export default function App() {
           <section className="RWD   ">
             <div className="w-full flex-col items-center justify-center bg-white lg:flex-row flex">
               <div className="w-full  lg:w-1/2 border-r-2 border-black p-[25px] sm:p-[60px] lg:p-[70px] overflow-y-scroll">
-                <div className="txt h-[60vh]">
+                <div className="txt h-auto md:h-[60vh]">
                   <h2 className="">"品牌與企業形象規劃"</h2>
                   <h3>CIS企業視覺識別</h3>
                   <h3>名片設計</h3>
@@ -126,7 +126,7 @@ export default function App() {
           <section className="RWD ">
             <div className="w-full bg-white flex-col items-center justify-center lg:flex-row flex">
               <div className="w-full lg:w-1/2 border-r-2 border-black p-[25px] sm:p-[60px] lg:p-[70px] overflow-y-scroll">
-                <div className="txt h-[60vh]">
+                <div className="txt h-auto md:h-[60vh]">
                   <h2 className="">"SEO行銷-Optimization"</h2>
                   <h3>網站速度優化、網站結構優化、行動裝置優化、用戶體驗</h3>
                   <p>

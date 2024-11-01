@@ -201,9 +201,25 @@ export default function Blog() {
         backdrop={backdrop}
         isOpen={isOpen}
         onClose={onClose}
-        className="bg-white  p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-scroll top-[100px] absolute w-[95%]  sm:w-[500px] z-[99999999999999999999] lg:w-[65%] border-2 border-black rounded-xl"
+        className="bg-white   p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-scroll  absolute w-[100%]  sm:w-[500px] z-[9999999999999999999999999] lg:w-[65%] border-2 border-black rounded-xl"
       >
-        <ModalContent>
+        <ModalContent
+          className="bg-white fixed top-[10%] border-t-1  p-10  rounded-t-[30px] h-auto z-[99999999999999999999999999]"
+          style={{
+            width: "auto",
+            maxWidth: "98vw",
+            // 以下是各裝置寬度的 @media 設定
+            "@media (max-width: 768px)": {
+              width: "70vw",
+            },
+            "@media (max-width: 1024px)": {
+              width: "60vw",
+            },
+            "@media (max-width: 1920px)": {
+              width: "80vw",
+            },
+          }}
+        >
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1"></ModalHeader>
@@ -222,7 +238,7 @@ export default function Blog() {
               <SwiperScroll />
             </section>
             <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
-              <div className="container duration-500  bg-[#15a4fd]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[40vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
+              <div className="container duration-500  bg-[#f3c13a]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[40vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
                   <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
                     💡致力於開發使用者體驗良好的網站
@@ -264,14 +280,13 @@ export default function Blog() {
                 </main>
               </div>
               <Lottie options={defaultOptions} height={220} width={220} />
-              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto  text-[76px] leading-[32px] font-normal border bg-white border-black rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
+              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto py-8 text-[76px] leading-[32px] font-normal border bg-white rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
                 <div>網頁建置費用</div>
-                <ul>
-                  <li className="text-[22px]">商品拍攝</li>
-                  <li className="text-[22px]">形象影片</li>
-                  <li className="text-[22px]">形象Banner</li>
-                  <li className="text-[22px]">Hero Image</li>
-                </ul>
+                <div className="flex justify-center">
+                  <div className="text-[22px]">
+                    商品拍攝 | 形象影片 | 主視覺圖片 | 客製化設計
+                  </div>
+                </div>
 
                 {/* HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
                 上一份工作任職於一家化學生技公司創業基地擔任"網頁工程師 一職"
@@ -284,53 +299,66 @@ export default function Blog() {
                 如果有任何想法請跟我 聯絡 */}
               </div>
               <div className="text-[80px] text-center">+</div>
-              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto   leading-[32px] font-normal  rounded-xl  md:p-[30px] p-[20px] flex xl:p-[50px] text-center  text-[#171717] ">
-                <div className="w-1/3" data-aos="zoom-in">
-                  <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
+              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto   leading-[32px] font-normal  rounded-xl  md:p-[30px] p-[20px] flex  md:items-start flex-col md:flex-row justify-center items-center xl:p-[50px] text-center  text-[#171717] ">
+                <div className="w-full md:w-1/3 " data-aos="zoom-in">
+                  <div className="p-5 m-3">
                     <div className="txt font-bold text-[30px]">網址註冊費</div>
                     <p className="text-[20px] mt-5">購買網域</p>
-                    <p className="text-[20px]">網域重新制像</p>
-                    <p className="text-[20px]">購買網域</p>
-                    <Image
-                      src=""
-                      placeholder="empty"
-                      loading="lazy"
-                      width={150}
-                      height={150}
-                      alt="網址註冊費"
-                    ></Image>
+
+                    <div className="p-4 sm:p-10 xl:p-5">
+                      <Image
+                        src="/images/網址註冊費用.png"
+                        placeholder="empty"
+                        loading="lazy"
+                        width={400}
+                        height={400}
+                        alt="網址註冊費"
+                      ></Image>
+                    </div>
                   </div>
                 </div>
-                <div className="w-1/3" data-aos="zoom-in" data-aos-delay="300">
-                  <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
+                <div
+                  className="w-full md:w-1/3 "
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                >
+                  <div className=" p-5 m-3">
                     <div className="txt font-bold text-[30px]">主機費用</div>
                     <p className="text-[20px] mt-5">本地主機</p>
                     <p className="text-[20px]">雲端主機</p>
-                    <p className="text-[20px]">購買網域</p>
-                    <Image
-                      src=""
-                      placeholder="empty"
-                      loading="lazy"
-                      width={150}
-                      height={150}
-                      alt="網址註冊費"
-                    ></Image>
+
+                    <div className="p-4 sm:p-10 xl:p-5">
+                      <Image
+                        src="/images/主機費用.png"
+                        placeholder="empty"
+                        loading="lazy"
+                        width={400}
+                        height={400}
+                        alt="主機費用"
+                      ></Image>
+                    </div>
                   </div>
                 </div>
-                <div className="w-1/3" data-aos="zoom-in" data-aos-delay="600">
-                  <div className="shadow-md bg-[#f3f3f6]  rounded-md p-5 m-3">
+                <div
+                  className="w-full md:w-1/3 "
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
+                  <div className=" p-5 m-3">
                     <div className="txt font-bold text-[30px]">SEO費用</div>
                     <p className="text-[20px] mt-5">每年 seo優化</p>
                     <p className="text-[20px]">關鍵字 調正</p>
                     <p className="text-[20px]">網站流量分析追蹤</p>
-                    <Image
-                      src=""
-                      placeholder="empty"
-                      loading="lazy"
-                      width={150}
-                      height={150}
-                      alt="網址註冊費"
-                    ></Image>
+                    <div className="p-4 sm:p-10 xl:p-5">
+                      <Image
+                        src="/images/SEO費用.png"
+                        placeholder="empty"
+                        loading="lazy"
+                        width={400}
+                        height={400}
+                        alt="後續seo相關費用"
+                      ></Image>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -658,7 +686,7 @@ export default function Blog() {
             </section>
 
             <section
-              className="mt-0 pt-[90px] bg-gray-100 md:mt-[100px] mx-[20px] md:px-0"
+              className="mt-0 pt-[90px]  md:mt-[100px] mx-[20px] md:px-0"
               id="free"
             >
               <h2
@@ -707,7 +735,7 @@ export default function Blog() {
               <p className="text-center mb-[60px] mt-[30px]  xl:text-[22px] md:text-[26px] text-[15px] ">
                 選擇JEEK 幫助您實現創意發想
               </p>
-              <section className="section-carousel  bg-gray-100  flex-col   px-0 xl:px-[70px] md:flex-row flex ">
+              <section className="section-carousel   flex-col   px-0 xl:px-[70px] md:flex-row flex ">
                 <div className="left-txt flex-col flex justify-start items-center  w-full mt-5 md:w-[30%]">
                   <div>
                     <h2
@@ -753,14 +781,14 @@ export default function Blog() {
                       價格透明
                     </h2>
                     <p className="text-[32px]   w-[90%] mx-auto      md:w-full text-center mt-8">
-                      主機+網站 只要
+                      第一年主機+網域+網站 只要
                     </p>
                   </div>
                   <a
                     href="/Contact"
-                    className="bg-[#ffffff] mt-3 duration-200 text-[50px] rounded-md px-4 text-black border border-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
+                    className="bg-[#ffffff] mt-3 duration-200 text-[50px] rounded-md px-4 text-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
                   >
-                    50,000
+                    40,000
                   </a>
                 </div>
               </section>
@@ -819,12 +847,12 @@ export default function Blog() {
                 >
                   <p>Basic</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] bg-[#ffc532] w-[120px] font-bold text-whitebg-[#ffc532] border border-black">
-                    NT 45,000
+                    NT 40,000
                   </div>
                   <h3 className="text-[40px]">精選方案</h3>
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">多種精美網站版型</p>
+                    <p className="mt-4">精美網站版型設計</p>
                     <p className="mt-4">簡易後台編輯操作</p>
                     <p className="mt-4">
                       商業授權圖庫 x 10 <br></br>(另有商業攝影服務可提供)
@@ -847,13 +875,14 @@ export default function Blog() {
                     </div>
                   </div>
                 </div>
+
                 <div
                   className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <p className="font-bold">Landing Page</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 50,000 <br></br>up
+                    NT 35,000
                   </div>
                   <h3 className="text-[40px]">一頁式網站</h3>
 
@@ -885,7 +914,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    找我聊聊
+                    NT 550,000
                   </div>
                   <p>E-Coomerce</p>
                   <h3 className="text-[40px]">購物網站</h3>
@@ -921,10 +950,11 @@ export default function Blog() {
                   data-aos="fade-bur"
                 >
                   <p>Customized</p>
-                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-white bg-[#ffc532] border border-black">
+                  <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] bg-[#ffc532] w-[120px] font-bold text-whitebg-[#ffc532] border border-black">
                     跟我談談
                   </div>
-                  <h3 className="text-[16px]">客製化網站</h3>
+                  <h3 className="text-[40px]">客製化方案</h3>
+
                   {/* <p className="text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p> */}
@@ -959,7 +989,7 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="bg-gray-100  py-[70px] px-[20px] flex flex-col ">
+            <section className="  py-[70px] px-[20px] flex flex-col ">
               <div className="flex justify-center w-full">
                 <div className="">
                   <p className=""></p>
@@ -1024,7 +1054,7 @@ export default function Blog() {
             </a>
             <div className="flex flex-col ">
               <div className="p-10">
-                <div className="form rounded-[40px] bg-gray-100  p-10 flex-col mb-[100px]  lg:flex-row  flex h-auto border-2 border-black">
+                <div className="form rounded-[40px] p-10 flex-col mb-[100px]  lg:flex-row  flex bg-white h-auto border-2 border-black">
                   <div className="left w-full lg:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
                     <div className="txt flex flex-col items-center justify-center">
                       <p className="text-[30px] font-bold  mt-3">

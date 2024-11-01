@@ -119,9 +119,9 @@ const ExampleContent = () => (
                   fontSize="50px"
                 /> */}
     </div>
-    <div className="flex md:flex-row flex-col justify-center items-center border border-black w-[85%] mx-auto">
+    <div className="flex md:flex-row flex-col justify-center items-center border border-black  w-[85%] mx-auto">
       <div className="text-content w-full md:w-[45%]">
-        <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+        <h2 className="col-span-1  leading-normal text-[2.5rem] font-bold md:col-span-4">
           把網站形象升級為盈利資產
         </h2>
         <div className=" text-[18px] leading-[22px]">

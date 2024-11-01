@@ -2,7 +2,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
-import EmblaCarousel02 from "../../components/EmblaCarousel04/index.jsx";
+import EmblaCarousel08 from "../../components/EmblaCarousel08/index.jsx";
 import SwiperScroll from "../../components/SwiperScroll02/page";
 import PortFolioCarousel from "../EmblaCarousel/index";
 import Marquee from "react-fast-marquee";
@@ -76,7 +76,7 @@ const Section2 = ({ scrollYProgress }) => {
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className="border px-[20px] py-[40px] lg:py-[100px] bg-[#ffffff] border-black rounded-[45px] md:rounded-[60px]  h-full lg:h-[250vh] xl:rounded-[80px] 2xl:rounded-[120px]">
+      <div className=" px-[20px] py-[40px] lg:py-[100px] bg-[#ffffff]  rounded-[45px] border border-black md:rounded-[60px]  h-auto md:h-[250vh] xl:rounded-[80px] 2xl:rounded-[120px]">
         <div className="txt flex items-center flex-col justify-center py-4">
           <h2 className="text-black text-[35px] md:text-[50px] xl:text-[70px] text-center font-bold">
             讓您的品牌擁有獨立網站！
@@ -84,6 +84,9 @@ const Section2 = ({ scrollYProgress }) => {
           <h3 className="text-black">您是否為其困擾？？</h3>
         </div>
         <div className="w-full justify-between  px-[30px] flex"></div>
+        <div className="block md:hidden">
+          <EmblaCarousel08 />
+        </div>
 
         <motion.div
           style={{ y: yOffset }}

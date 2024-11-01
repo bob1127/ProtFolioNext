@@ -94,7 +94,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content mt-[100px] p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <h1
@@ -147,7 +147,7 @@ export default function Blog() {
             </div>
             <a
               target="_blank"
-              className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
+              className="text-[#ffdb3c] font-bold text-[16px] duration-300 hover:text-[#f7b654]"
               href="https://www.adobe.com/tw/products/photoshop.html?gclid=Cj0KCQjwjNS3BhChARIsAOxBM6ps1V3EiL3_ddXAAAgyFgwA1R0bdLAeS4hPBXd6JF2JZdO2n-fhar8aApCwEALw_wcB&sdid=ZXL8DWJ3&mv=search&mv2=paidsearch&ef_id=Cj0KCQjwjNS3BhChARIsAOxBM6ps1V3EiL3_ddXAAAgyFgwA1R0bdLAeS4hPBXd6JF2JZdO2n-fhar8aApCwEALw_wcB:G:s&s_kwcid=AL!3085!3!706065469640!b!!g!!photoshop%20ai!21476365577!164868406037&gad_source=1"
             >
               前往 Adobe 官方網站

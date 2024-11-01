@@ -94,7 +94,7 @@ export default function Blog() {
             data-aos="fade-blur"
           ></Image>
         </div>
-        <div className="article-content mt-[100px] p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <h1

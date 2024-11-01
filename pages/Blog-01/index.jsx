@@ -95,7 +95,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content mt-[100px] 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
               <h1
@@ -104,26 +104,18 @@ export default function Blog() {
               >
                 建立設計一個新網站-我該如何做seo規劃？
               </h1>
-              <div className="title-content-date">
-                <div data-aos="fade-blur">
-                  <Image src="" alt="img" width={50} height={50}></Image>
-                </div>
-                <div className="text-[14px]">
-                  <b className="mr-3">Spline 3d</b>
-                  <b>2024/04/05</b>
-                </div>
-              </div>
+
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
                   <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
-                    網頁設計
+                    網頁行銷
                   </div>
                   <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
-                    3d 軟體應用
+                    SEO行銷
                   </div>
                 </div>
                 <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
-                  設計
+                  SEO
                 </div>
               </div>
             </div>
@@ -135,7 +127,7 @@ export default function Blog() {
               width={800}
               height={500}
               alt="新網站SEO規劃-極客網頁設計"
-              src="/images/blog/新網站SEO規劃-極客網頁設計.webp"
+              src="/images/blog/新網站SEO規劃-極客網頁設計.png"
             ></Image>
           </div>
 
@@ -150,8 +142,8 @@ export default function Blog() {
             <br></br>
             <div className="">
               <div className="imgText mt-[20px]">
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     1.
                   </span>
                   選擇可靠的主機商
@@ -160,8 +152,8 @@ export default function Blog() {
                   •
                   選擇一個穩定且快速的主機商對於網站的SEO至關重要。穩定的主機能確保網站持續在線，避免因為主機不穩定導致的排名下降。快速的伺服器速度也會提升使用者體驗，並進而提高搜尋引擎排名。可以考慮知名的主機供應商，如Bluehost或SiteGround等，確保能提供優質的客戶服務和良好的性能。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     2.
                   </span>
                   確認網站網域名稱使用HTTPS（SSL加密）
@@ -170,8 +162,8 @@ export default function Blog() {
                   •
                   選擇一個穩定且快速的主機商對於網站的SEO至關重要。穩定的主機能確保網站持續在線，避免因為主機不穩定導致的排名下降。快速的伺服器速度也會提升使用者體驗，並進而提高搜尋引擎排名。可以考慮知名的主機供應商，如Bluehost或SiteGround等，確保能提供優質的客戶服務和良好的性能。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     3.
                   </span>
                   現代化的網頁設計
@@ -180,8 +172,8 @@ export default function Blog() {
                   •
                   網站設計不僅僅是美觀，更要符合SEO和使用者體驗。現代化的設計要簡單直觀，讓訪客能快速找到所需資訊。重視排版、色彩和圖片搭配，並確保設計符合行動端，這樣不僅能讓網站看起來更專業，也會讓用戶停留時間更長，有助於排名。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     4.
                   </span>
                   安裝SEO分析工具：GA4和Google Search Console
@@ -192,8 +184,8 @@ export default function Blog() {
                   Search
                   Console能協助你檢測並解決網站的SEO問題，這些資料可以幫助你針對SEO進行優化。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     5.
                   </span>
                   優化網站速度和使用者體驗
@@ -203,8 +195,8 @@ export default function Blog() {
                   速度是影響SEO的關鍵因素之一。當網站載入速度慢，訪客容易流失並降低排名。透過壓縮圖片、使用快取，以及選擇快速的主機來提升網站速度。此外，提升使用者體驗也會增加停留時間和互動次數，有助於SEO。建議定期測試網站速度（例如使用Google
                   PageSpeed Insights）並持續優化。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     6.
                   </span>
                   移動端的支持與使用者體驗
@@ -235,8 +227,8 @@ export default function Blog() {
                 </h2>
                 <h2 className="text-[32px] font-bold"> 網頁相關關鍵字規劃</h2>
 
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     1.
                   </span>
                   瞭解你的目標受眾
@@ -246,8 +238,8 @@ export default function Blog() {
                   首先，定義你的目標受眾。他們是誰？他們可能會使用哪些關鍵詞來搜尋你的產品或服務？站在他們的角度思考，可以幫助你找到符合需求的相關關鍵詞。
                 </div>
 
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     2.
                   </span>
                   使用關鍵詞工具進行研究
@@ -257,8 +249,8 @@ export default function Blog() {
                   Planner、Ahrefs、或Ubersuggest，找到與你的業務相關且搜尋量高的關鍵詞。這些工具能夠告訴你哪些詞語熱門，但競爭較低，是理想的選擇。
                 </div>
 
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     3.
                   </span>
                   關鍵詞分類
@@ -267,8 +259,8 @@ export default function Blog() {
                   •
                   將關鍵詞分成主要關鍵詞和次要關鍵詞。主要關鍵詞應該與你網站的核心內容最相關；次要關鍵詞則用於細分內容或目標不同用戶需求。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     4.
                   </span>
                   考慮長尾關鍵詞
@@ -277,8 +269,8 @@ export default function Blog() {
                   •
                   長尾關鍵詞（例如「如何選擇可靠的主機商」）具有更低的競爭，並更能精確匹配特定搜尋意圖。這些詞雖然搜尋量較低，但往往能帶來更高的轉換率。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     5.
                   </span>
                   分析競爭對手的關鍵詞
@@ -287,8 +279,8 @@ export default function Blog() {
                   •
                   檢查競爭對手的網站，看看他們使用了哪些關鍵詞，哪些頁面排名較高。可以通過工具或直接在搜尋引擎上搜尋，了解他們如何利用關鍵詞獲得曝光。
                 </div>
-                <div className=" text-[32px] mt-[30px] leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
+                <div className=" text-[20px] mt-[30px] leading-[32px]   text-[#000000]">
+                  <span className="text-[20px] font-bold text-black mt-[30px]">
                     6.
                   </span>
                   為內容優化關鍵詞
@@ -302,44 +294,16 @@ export default function Blog() {
                 </div>
               </div>
 
-              <div className="imgText mt-[60px]">
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  <span className="bg-[#12bef7] text-black">
-                    SEO 帶來的實質效益
-                  </span>{" "}
-                  當 SEO 做得好時，會帶來許多具體的效益。首先是
-                  <span className="bg-[#12bef7] text-black">
-                    穩定的自然流量
-                  </span>{" "}
-                  ，SEO
-                  不像付費廣告需要不斷投入金錢維持，它帶來的是源源不斷的免費訪客。此外，{" "}
-                  <span className="bg-[#12bef7] text-black">
-                    品牌信任度提升
-                  </span>
-                  也是一大優勢，當使用者多次在搜尋結果中看到你，自然會對你的{" "}
-                  品牌產生信任感 。最後，長期來看，SEO 可以{" "}
-                  <span className="bg-[#12bef7] text-black"> 降低行銷成本</span>
-                  ，因為你不必為每一次點擊付費，且一旦排名穩固，你就可以享受持續的曝光和流量，這對於任何希望長期穩定發展的企業來說都是巨大的資產。
-                </div>
-                {/* <Image
-                  src="/images/blog/mid02.png"
-                  width={900}
-                  className="rounded-md"
-                  placeholder="empty"
-                  height={600}
-                ></Image> */}
-              </div>
-              <div className="imgText mt-[60px]">
+              <div className="imgText  border border-black mt-[60px] p-8 bg-white">
                 <div className="text-[20px] font-normal text-[#242424]  leading-[32px] xl:leading-[36px]">
                   總結
                 </div>
-              </div>
-
-              <div className="imgText mt-[60px]">
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  SEO
-                  不用想得太複雜，本質上就是幫助搜尋引擎更好地理解並推薦你的網站給合適的人。只要你有耐心進行關鍵字研究，創造優質內容，並且做好技術和外部連結的優化，排名自然會提升。SEO
-                  是一個長期的策略，但效果也是持久的，讓你的網站獲得穩定的流量。所以，記住關鍵點：內容為王、技術優化、持續更新！這樣你的網站就能在搜尋引擎中脫穎而出，並實現實質的業務成長。
+                <div className="imgText mt-[60px]">
+                  <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                    SEO
+                    不用想得太複雜，本質上就是幫助搜尋引擎更好地理解並推薦你的網站給合適的人。只要你有耐心進行關鍵字研究，創造優質內容，並且做好技術和外部連結的優化，排名自然會提升。SEO
+                    是一個長期的策略，但效果也是持久的，讓你的網站獲得穩定的流量。所以，記住關鍵點：內容為王、技術優化、持續更新！這樣你的網站就能在搜尋引擎中脫穎而出，並實現實質的業務成長。
+                  </div>
                 </div>
               </div>
             </div>

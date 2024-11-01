@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import MobileHeader from "../MobileHeader/page";
+
 export const SlideTabsExample = () => {
   return (
     <div>
@@ -11,7 +12,6 @@ export const SlideTabsExample = () => {
     </div>
   );
 };
-
 const SlideTabs = () => {
   const [position, setPosition] = useState({
     left: 0,
@@ -19,36 +19,45 @@ const SlideTabs = () => {
     opacity: 0,
   });
   const [marginTop, setMarginTop] = useState("-40px");
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+    const updateIsDesktop = () => setIsDesktop(window.innerWidth >= 768);
+    updateIsDesktop(); // Set initial state
+    window.addEventListener("resize", updateIsDesktop);
+
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
-      if (window.scrollY < lastScrollY) {
-        // 向上滾動
-        setMarginTop("-60px");
-      } else {
-        // 向下滾動
-        setMarginTop("0px");
+      if (isDesktop) {
+        // Only apply scroll effect on desktop
+        if (window.scrollY < lastScrollY) {
+          setMarginTop("-60px"); // Scroll up
+        } else {
+          setMarginTop("0px"); // Scroll down
+        }
+        lastScrollY = window.scrollY;
       }
-      lastScrollY = window.scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateIsDesktop);
     };
-  }, []);
+  }, [isDesktop]);
 
   return (
     <motion.div
-      className="w-full px-[20px] md:w-[65%] mt-[-70px] relative border border-black md:border-[#a2a2a2] z-[9999999999999] mx-auto flex justify-center  items-center bg-[#181818] md:bg-white  rounded-b-[20px] sm:rounded-b-[20px]"
-      initial={{ marginTop: "-40px" }}
-      animate={{ marginTop }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      className="w-full px-[20px] fixed top-0 border border-black md:w-[65%] md:relative md:border-[#a2a2a2] z-[999999] mx-auto flex justify-center items-center bg-[#181818] md:bg-white rounded-b-[20px] sm:rounded-b-[20px]"
+      initial={isDesktop ? { marginTop: "-40px" } : {}}
+      animate={isDesktop ? { marginTop } : {}}
+      transition={
+        isDesktop ? { type: "spring", stiffness: 300, damping: 20 } : {}
+      }
     >
-      <div className=" w-1/2 sm:w-[15%] flex justify-start items-center">
+      <div className="w-1/2 sm:w-[15%] flex justify-start items-center">
         <a className="p-1" href="/">
           <Image
             src="/images/company-logo/JeekLogo-white.png"
@@ -70,10 +79,10 @@ const SlideTabs = () => {
           ></Image>
         </a>
       </div>
-      <div className="w-[70%]  flex justify-center items-center md:hidden">
+      <div className="w-[70%] flex justify-center items-center md:hidden">
         <div className="w-full border py-1 border-[#ffaf37] rounded-[30px]">
           <Marquee>
-            <p className="text-white "> 。Welcome to → Jeek Website Design</p>
+            <p className="text-white"> 。Welcome to → Jeek Website Design</p>
           </Marquee>
         </div>
       </div>
@@ -84,35 +93,29 @@ const SlideTabs = () => {
             opacity: 0,
           }));
         }}
-        className="mx-auto hidden sm:flex pt-2  w-[70%] rounded-[40px]  justify-center items-center  backdrop-blur-md p-1"
+        className="mx-auto hidden sm:flex pt-2 w-[70%] rounded-[40px] justify-center items-center backdrop-blur-md p-1"
       >
         <a href="/">
           <Tab setPosition={setPosition}>首頁</Tab>
         </a>
-        <a href="/technology">
-          {" "}
+        <a href="/pages">
           <Tab setPosition={setPosition}>精選案例</Tab>
         </a>
         <a href="/Blogs">
-          {" "}
           <Tab setPosition={setPosition}>Blog</Tab>
         </a>
-
         <a href="/about">
           <Tab setPosition={setPosition}>專案報價</Tab>
         </a>
-
         <Cursor position={position} />
       </ul>
-
-      <div className="w-1/2 flex justify-end sm:w-[15%] pr-4 relative ">
+      <div className="w-1/2 flex justify-end sm:w-[15%] pr-4 relative">
         <div className="block md:hidden">
-          {" "}
           <MobileHeader />
         </div>
         <a
-          href="/about"
-          className="border hidden md:flex justify-center items-center tex-center text-white bg-black rounded-[30px] py-2 px-5"
+          href=""
+          className="border hidden md:flex justify-center items-center text-center text-white bg-black rounded-[30px] py-2 px-5"
         >
           Contact
         </a>
@@ -122,7 +125,6 @@ const SlideTabs = () => {
           <div className="flex flex-col justify-center items-center my-2">
             <Image
               src="/images/icon/line.png"
-              className=""
               placeholder="empty"
               loading="lazy"
               alt="line-logo"
@@ -136,10 +138,9 @@ const SlideTabs = () => {
           <div className="flex flex-col justify-center items-center my-2">
             <Image
               src="/images/icon/facebook.png"
-              className=""
               placeholder="empty"
               loading="lazy"
-              alt="line-logo"
+              alt="fb-logo"
               width={40}
               height={40}
             ></Image>
@@ -186,6 +187,6 @@ const Cursor = ({ position }) => {
   );
 };
 
-// 確保所有組件都正確導出
+// Export components
 export default SlideTabsExample;
 export { SlideTabs, Tab, Cursor };

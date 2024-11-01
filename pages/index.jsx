@@ -4,6 +4,8 @@ import EmblaCarousel from "../components/EmblaCarousel/index.jsx";
 import EmblaCarousel02 from "../components/EmblaCarousel04/index.jsx";
 import PerspectiveSection from "../components/PerspectiveSection/page";
 import PerspectiveSection02 from "../components/PerspectiveSection02/page";
+import { FiArrowUpRight } from "react-icons/fi";
+
 import SwiperScroll from "../components/SwiperScroll02/page";
 import Text3d from "../components/PerspectiveText/index.jsx";
 import { useRef, useEffect } from "react";
@@ -11,7 +13,7 @@ import SuffleHero from "../components/SuffleHero.jsx";
 import Header from "../components/header/index";
 // import Digital from "../components/ShiftingCountdown.jsx";
 // import dynamic from "next/dynamic";
-import ThreeDHover from "../components/3DHover/page";
+// import ThreeDHover from "../components/3DHover/page";
 import GsapText from "../components/RevealText/index";
 import VelocityText from "../components/VelocityText/page.jsx";
 import Image from "next/image.js";
@@ -164,7 +166,7 @@ export default function Home() {
           </h2>
           <h3 className="text-[#f6f6f6]">你是否打算自學網頁設計？</h3>
           <div className="relative border items-center flex-col  flex justify-center bg-white w-full">
-            <div className="absolute bg-[#020202] text-white font-black left-0 border border-black w-[100vw] z-[1]">
+            <div className="absolute bg-[#020202] text-white font-black left-0 b w-[100vw] z-[1]">
               <Marquee>
                 <div className="text-[100px]">網頁設計？</div>
               </Marquee>
@@ -195,70 +197,76 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white  w-full md:max-w-[600px] border border-black p-0 lg:p-8">
-            <p className="text-[20px] text-center mt-4">
+          <div className="bg-white  w-full md:max-w-[600px]  p-0 lg:p-8">
+            <p className="text-[20px] text-center p-8 mt-4">
               (自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者)
             </p>
           </div>
 
           <div className="w-full flex-col md:flex-row xl:px-[100px] md:px-[50px] 2xl:px-[200px] ">
-            <div className="txt px-[20px] flex flex-col w-full lg:w-1/2">
-              <h3 className=" text-[24px] lg:text-[40px] text-white leading-[50px] mt-[100px]">
-                但你有想過自學網站建置<br></br>也有局限性嗎!!!
-              </h3>
-              {/* <p className="text-white font-normal">
+            <div className="flex md:flex-row flex-col mt-[50px] justify-center">
+              <div className="txt px-[20px] flex flex-col w-full md:w-1/2">
+                <h3 className=" text-[2.5rem] text-white leading-normal ">
+                  但你有想過自學網站建置<br></br>也有局限性嗎!!!
+                </h3>
+                {/* <p className="text-white font-normal">
                 Transform Your Online Presence with Our Top-tier Web Agency
                 Template for Exceptional Outcomes.
               </p> */}
-              <ul className="p-0  m-0 w-full rounded-md">
-                <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
-                  <div className=" ">
-                    <Image
-                      src=""
-                      placeholder="empty"
-                      width={22}
-                      height={22}
-                      alt=""
-                    ></Image>
+                <ul className="p-0  m-0 w-full rounded-md">
+                  <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                    <div className=" ">
+                      <Image
+                        src=""
+                        placeholder="empty"
+                        width={22}
+                        height={22}
+                        alt=""
+                      ></Image>
+                    </div>
+                    <div classNaem="text-white">品牌一致性與設計品質的欠缺</div>
                   </div>
-                  <div classNaem="text-white">品牌一致性與設計品質的欠缺</div>
-                </div>
-                <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
-                  <div className=" ">
-                    <Image
-                      src=""
-                      placeholder="empty"
-                      width={22}
-                      height={22}
-                      alt=""
-                    ></Image>
+                  <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                    <div className=" ">
+                      <Image
+                        src=""
+                        placeholder="empty"
+                        width={22}
+                        height={22}
+                        alt=""
+                      ></Image>
+                    </div>
+                    <div classNaem="text-white">Seo和網站結構專業優化</div>
                   </div>
-                  <div classNaem="text-white">Seo和網站結構專業優化</div>
-                </div>
-                <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
-                  <div className=" ">
-                    <Image
-                      src=""
-                      placeholder="empty"
-                      width={22}
-                      height={22}
-                      alt=""
-                    ></Image>
+                  <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                    <div className=" ">
+                      <Image
+                        src=""
+                        placeholder="empty"
+                        width={22}
+                        height={22}
+                        alt=""
+                      ></Image>
+                    </div>
+                    <div classNaem="text-white"> 擴展與專業需求的困難</div>
                   </div>
-                  <div classNaem="text-white"> 擴展與專業需求的困難</div>
+                </ul>
+              </div>
+              <div className="txt px-[20px]  flex flex-col w-full md:w-1/2">
+                <h3 className="text-white leading-normal  text-left md:text-right text-[2.5rem]">
+                  不如讓專業的我們<br></br>來幫助您建置網站
+                </h3>
+                <div className="flex justify-start md:justify-end ">
+                  <button
+                    href="#"
+                    className="button w-[160px] rounded-md bg-white py-2 px-2 text-center text-black"
+                  >
+                    See Our Work
+                  </button>
                 </div>
-              </ul>
-              <div className="">
-                <button
-                  href="#"
-                  className="button w-[160px] rounded-md bg-white py-2 px-2 text-center text-black"
-                >
-                  See Our Work
-                </button>
-                <div className="button"> See Our Work</div>
               </div>
             </div>
-            <div className="w-full border rounded-sm lg:rounded-xl overflow-hidden">
+            <div className="w-full  rounded-sm lg:rounded-xl overflow-hidden">
               <Image
                 width={2600}
                 height={1000}
@@ -270,13 +278,8 @@ export default function Home() {
               ></Image>
             </div>
           </div>
-
-          <div className="flex flex-row">
-            <div className="left w-1/2"></div>
-            <div className="right w-1/2"></div>
-          </div>
         </div>
-        <ThreeDHover />
+        {/* <ThreeDHover /> */}
         <div className="Hero-secrion   border-1 border-black ">
           <div className="wrap flex flex-col  lg:flex-row">
             {/* <div className="hero-left overflow-hidden mt-[38px] border border-blac relative w-full lg:w-[65%]">
@@ -348,23 +351,25 @@ export default function Home() {
         <SuffleHero />
         <PerspectiveSection02 />
 
-        <div className="flex  flex-col justify-center items-center">
-          <h1
-            className="header text-[#1e1e1e] xl:text-[100px]
-    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[250px] mb-[100px]  text-[32px]"
-          >
-            <GsapText
-              text=" 讓您的品牌脫穎而出"
-              lineHeight="80px"
-              id="text2"
-              fontSize="70px"
-            />
-          </h1>
-          <p className="text-[16px]">
-            專注打造符合您品牌形象的網站，量身定制 ，細緻呈現品牌價值
-          </p>
-        </div>
-        <SwiperScroll />
+        <section className="section_brand  mt-[-300px] md:mt-0">
+          <div className="flex  flex-col justify-center items-center">
+            <h1
+              className="header text-[#1e1e1e] xl:text-[100px]
+    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[250px] text-[32px]"
+            >
+              <GsapText
+                text=" 讓您的品牌脫穎而出"
+                lineHeight="80px"
+                id="text2"
+                fontSize="70px"
+              />
+            </h1>
+            <p className="text-[16px] w-[80%] text-center mx-auto">
+              專注打造符合您品牌形象的網站，量身定制 ，細緻呈現品牌價值
+            </p>
+          </div>
+          <SwiperScroll />
+        </section>
         <div className="mt-[100px]">
           <EmblaCarousel02 />
         </div>
@@ -579,9 +584,9 @@ export default function Home() {
           </div>
         </section> */}
 
-        <section className="section-embla my-[60px border-b-2 border-black md:my-0">
+        {/* <section className="section-embla my-[60px border-b-2 border-black md:my-0">
           <EmblaCarousel />
-        </section>
+        </section> */}
         <VelocityText />
         {/* <section className="RWD  border-t-2 border-b-2 border-l-2 border-black">
           <div className="w-full flex-col items-center justify-center lg:flex-row flex">
@@ -1069,6 +1074,7 @@ export default function Home() {
                   <p className="text-[30px] font-bold  mt-3">
                     聯繫Jeek-極客網頁設計
                   </p>
+                  <p>免費網站健檢，請在表格留下 </p>
                   <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">
                     如果您聯繫我並無即時收到回覆，請耐心等候。Jeek會盡快回覆您！！！
                   </span>

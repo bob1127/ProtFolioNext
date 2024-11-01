@@ -3,7 +3,7 @@ import styles from "../../styles/TextMask.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const phrases = [" TECHNOLOGY", "JEEK WEB DESIGN"];
+const phrases = [" 讓你的網站更好", "極客為您服務"];
 
 export default function Home() {
   return (

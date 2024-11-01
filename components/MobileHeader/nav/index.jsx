@@ -7,25 +7,6 @@ import Link from "./Link";
 import Curve from "./Curve";
 import Footer from "./Footer";
 
-const navItems = [
-  {
-    title: "服務項目",
-    href: "/technology",
-  },
-  {
-    title: "精選案例",
-    href: "/pages",
-  },
-  {
-    title: "聯絡我們",
-    href: "/contact",
-  },
-  {
-    title: "關於我們",
-    href: "/Service",
-  },
-];
-
 export default function index() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
@@ -48,16 +29,21 @@ export default function index() {
           <div className={styles.header}>
             <p>Navigation</p>
           </div>
-          {navItems.map((data, index) => {
-            return (
-              <Link
-                key={index}
-                data={{ ...data, index }}
-                isActive={selectedIndicator == data.href}
-                setSelectedIndicator={setSelectedIndicator}
-              ></Link>
-            );
-          })}
+
+          <ul>
+            <a href="/pages">
+              <li className="border-spacing-3">精選專案</li>
+            </a>
+            <a href="/about">
+              <li className="border-spacing-3">關於我們</li>
+            </a>
+            <a href="/about">
+              <li className="border-spacing-3">關於我們</li>
+            </a>
+            <a href="/about">
+              <li className="border-spacing-3">關於我們</li>
+            </a>
+          </ul>
         </div>
         <Footer />
       </div>
