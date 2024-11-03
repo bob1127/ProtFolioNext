@@ -33,16 +33,16 @@ const Inner = ({ children }) => {
             >
               Home-LOGO
             </a>
-            <a href="/about">關於我們</a>
-            <a href="/about-2">SEO 行銷</a>
-            <a href="/about-3">網頁行銷</a>
-            <a href="/about" onClick={(e) => navigate(e, "/about")}>
+            <a href="/quotation">關於我們</a>
+            <a href="/quotation-2">SEO 行銷</a>
+            <a href="/quotation-3">網頁行銷</a>
+            <a href="/quotation" onClick={(e) => navigate(e, "/quotation")}>
               網站作品
             </a>
             <a href="/">合作案例</a>
             <a href="/">Home</a>
-            <a href="/about">企業形象影片</a>
-            <a href="/about">聯絡我們</a>
+            <a href="/quotation">企業形象影片</a>
+            <a href="/quotation">聯絡我們</a>
           </div>
           {children}
         </motion.div>

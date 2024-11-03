@@ -10,14 +10,14 @@ const App = () => {
       title: "電商平台的高抽成",
       description:
         "電商平台手續費越抽越多？選擇我們的網頁設計服務，擺脫高額手續費的束縛！",
-      link: "/Service",
+      link: "/service",
     },
     {
       image: "/images/browser.png",
       title: " 對現有網站不滿意",
       description:
         " 您的網站設計過時，技術已落後趨勢，缺乏維護，這可能正拖累您的排名和企業盈利",
-      link: "/Blog-04",
+      link: "/blog-04",
     },
     {
       image: "/images/shopping-online.png",

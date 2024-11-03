@@ -250,21 +250,102 @@ export default function App() {
 
       <div>
         <section className="bg-[#ffd446] z-[9999999] overflow-hidden h-[350vh] sm:h-[450vh] md:h-[230vh] relative">
-          <div className="relative">
-            {" "}
-            {/* 确保父元素为相对定位 */}
-            <div
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              className="Hero-ball md:w-[800px] md:h-[800px] w-[400px] h-[400px] absolute left-[21%] top-[260px] transform translate-x-1/2"
-            ></div>
-          </div>
           <div className="text z-[9999999999999] absolute w-[85%] md:w-[70%] xl:w-[57%] md:z-[-1] left-0  py-[50px] right-0  mx-auto">
             <TypewriterEffect />
           </div>
           <div className=" absolute w-[100vw] top-[-70px] z-[9999999999]">
             {" "}
             <PerspectiveSection />
+          </div>
+          <div className="relative w-[100vw] ">
+            {/* 确保父元素为相对定位 */}
+
+            <div className="w-full h-screen flex justify-center">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                className="Hero-ball sm:w-[900px] sm:h-[900px] lg:w-[1200px] mt-[265px] static z-[-1] lg:h-[1200px] 2xl:w-[2000px] 2xl:h-[2000px] w-[500px] h-[500px] "
+              >
+                <div className="flex justify-between flex-wrap">
+                  <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-full sm:w-[450px] rotate-[-10deg] justify-center items-center flex-col ">
+                    <div className="slogan-title w-full flex justify-between">
+                      <div>
+                        {" "}
+                        <Image
+                          src="/images/icon/edit.png"
+                          alt="close-icon"
+                          width={35}
+                          className="mr-3"
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                        <b> Magic Write</b>
+                      </div>
+                      <div className="close mt-[-15px]">
+                        <Image
+                          src="/images/icon/pin.png"
+                          alt="close-icon"
+                          width={35}
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                      </div>
+                    </div>
+                    <div className="slogan-content border-b-2 border-gray-400 flex py-[30px] flex-wrap">
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        您還在比價嗎？
+                      </h3>
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        選擇極客!!
+                      </h3>
+                    </div>
+                    <div className="slogan-footer flex justify-end py-[20px]">
+                      Design By Jeek
+                    </div>
+                  </div>{" "}
+                  <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-full sm:w-[450px] rotate-3 justify-center items-center flex-col ">
+                    <div className="slogan-title w-full flex justify-between">
+                      <div>
+                        {" "}
+                        <Image
+                          src="/images/icon/edit.png"
+                          alt="close-icon"
+                          width={35}
+                          className="mr-3"
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                        <b> Magic Write</b>
+                      </div>
+                      <div className="close mt-[-15px]">
+                        <Image
+                          src="/images/icon/pin.png"
+                          alt="close-icon"
+                          width={35}
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                      </div>
+                    </div>
+                    <div className="slogan-content border-b-2 border-gray-400 flex py-[30px] flex-wrap">
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        用工作室的價格
+                      </h3>
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        建立專業級的網站
+                      </h3>
+                    </div>
+                    <div className="slogan-footer flex justify-end py-[20px]">
+                      Design By Jeek
+                    </div>
+                  </div>{" "}
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

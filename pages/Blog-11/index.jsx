@@ -77,12 +77,9 @@ export default function Blog() {
         <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
-              <h1
-                className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
-                data-aos="fade-blur"
-              >
-                如何創建 Google Tag Manager (GTM) 並串接 Google Analytics 4
-                (GA4)
+              <h1 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  ">
+                如何創建 Google Tag Manager (GTM) <br></br>並串接 Google
+                Analytics 4 (GA4)
               </h1>
               <div className="title-content-date">
                 <div></div>
@@ -94,14 +91,14 @@ export default function Blog() {
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
                   <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
-                    網頁設計
+                    網頁行銷
                   </div>
                   <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
-                    設計軟體｜平面設計
+                    數據追蹤
                   </div>
                 </div>
                 <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
-                  設計
+                  GTM / GA4
                 </div>
               </div>
             </div>
@@ -179,7 +176,6 @@ export default function Blog() {
                   </li>
                 </ul>
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/建立帳戶-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -190,7 +186,6 @@ export default function Blog() {
                 ></Image>
                 <b className="text-[16px] mt-2">建立一個容器帳戶</b>
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/新增帳戶名稱-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -201,7 +196,6 @@ export default function Blog() {
                 ></Image>
                 <b className="text-[16px] mt-2">帳戶名稱設定</b>
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/容器名稱-裝置類型.png"
                   width={800}
                   loading="lazy"
@@ -244,7 +238,6 @@ export default function Blog() {
                   </li>
                 </ul>
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/點擊標籤並新增-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -257,7 +250,6 @@ export default function Blog() {
                   點擊左側的 "標籤" 選項，再點擊 "新增"
                 </b>
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/選擇代碼類型-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -266,12 +258,8 @@ export default function Blog() {
                   alt="選擇代碼類型-極客網頁設計"
                   height={600}
                 ></Image>
-                <b className="text-[16px] mt-2">
-                  點擊左側的 "標籤" 選項，再點擊 "新增"
-                </b>
 
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/選擇ga4-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -282,7 +270,6 @@ export default function Blog() {
                 ></Image>
 
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/選擇ga4-極客網頁設計02.png"
                   width={800}
                   loading="lazy"
@@ -313,7 +300,6 @@ export default function Blog() {
                   </li>
                 </ul>
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/點擊左下角管理員-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -325,7 +311,6 @@ export default function Blog() {
                 <b className="text-[16px] mt-2">點擊左下角管理員</b>
 
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/找到你的評估id-極客網頁設計.png"
                   width={800}
                   loading="lazy"
@@ -338,7 +323,6 @@ export default function Blog() {
                   找到你的評估id 並複製，這個 ID 將用於 GTM 中標籤設定。
                 </b>
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/找不到google代碼.png"
                   width={800}
                   loading="lazy"
@@ -352,7 +336,6 @@ export default function Blog() {
                 </b>
 
                 <Image
-                  data-aos="fade-blur"
                   src="/images/blog/Blog11/順利新增ga4代碼.png"
                   width={800}
                   loading="lazy"
@@ -389,7 +372,6 @@ export default function Blog() {
               </ul>
 
               <Image
-                data-aos="fade-blur"
                 src="/images/blog/Blog11/發布代碼-極客網頁設計.png"
                 width={800}
                 loading="lazy"
@@ -402,7 +384,6 @@ export default function Blog() {
                 點擊發布代碼，可以新增版本名稱和內容
               </b>
               <Image
-                data-aos="fade-blur"
                 src="/images/blog/Blog11/發布此版本代碼-極客網頁設計.png"
                 width={800}
                 loading="lazy"
@@ -414,7 +395,6 @@ export default function Blog() {
               <b className="text-[16px] mt-2">發布此版本代碼</b>
 
               <Image
-                data-aos="fade-blur"
                 src="/images/blog/Blog11/成功新增發布的代碼-極客網頁設計.png"
                 width={800}
                 loading="lazy"
@@ -425,7 +405,6 @@ export default function Blog() {
               ></Image>
 
               <Image
-                data-aos="fade-blur"
                 src="/images/blog/Blog11/成功新增發布的代碼02-極客網頁設計.png"
                 width={800}
                 loading="lazy"

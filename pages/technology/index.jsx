@@ -53,7 +53,7 @@ export default function Blog() {
         }}
       />
       <div className="relative">
-        <div className="md:flex hidden flex-col fixed z-[99999999999] hover:right-0 duration-500 right-[-100px] top-1/2 ">
+        {/* <div className="md:flex hidden flex-col fixed z-[99999999999] hover:right-0 duration-500 right-[-100px] top-1/2 ">
           <div className="sidebar bg-blue-700 text-white border border-black  p-1 hover:scale-105 duration-500 ">
             <b>Welcom to JEEK !!</b>
           </div>
@@ -65,7 +65,7 @@ export default function Blog() {
           <div className="sidebar bg-blue-700 border border-black  p-1 hover:scale-105 text-white  duration-500 ">
             <b>Contact with Line</b>
           </div>
-        </div>
+        </div> */}
         <Head>
           <link rel="icon" href="/favicon/favicon.ico" />
           <meta property="og:title" content="關於我們-極客網頁設計" />
@@ -425,7 +425,7 @@ export default function Blog() {
               </section>
               <section className="my-[100px]">
                 <h2 className="mt-10 text-center text-xl sm:text-2xl md:text-3xl my-5 lg:text-4xl">
-                  "無頭網站 跟 傳統網站 比較"
+                  "無頭網站 跟 Wordpress網站 比較"
                 </h2>
                 <div
                   data-aos="fade-up"
@@ -439,18 +439,16 @@ export default function Blog() {
                           <th
                             scope="col"
                             className="px-2 text-black py-3 sm:px-6"
-                          >
-                            Product name
-                          </th>
+                          ></th>
                           <th
                             scope="col"
-                            className="px-2  text-black py-3 sm:px-6"
+                            className="px-2  text-[18px] text-black py-3 sm:px-6"
                           >
                             Next.js 無頭網站
                           </th>
                           <th
                             scope="col"
-                            className="px-2 text-black py-3 sm:px-6"
+                            className="px-2 text-black text-[18px] py-3 sm:px-6"
                           >
                             傳統 WordPress 網站
                           </th>
@@ -461,133 +459,54 @@ export default function Blog() {
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                           <th
                             scope="row"
-                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                            className="px-2 py-4 font-medium text-gray-900 text-[18px] whitespace-nowrap dark:text-white sm:px-6"
                           >
                             性能
                           </th>
                           <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：具有伺服器端渲染（SSR）、靜態生成（SSG），加快頁面加載速度，適合流量較大的網站。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：需要部署 CDN 和優化靜態資源，可能較為繁瑣。
-                            </p>
+                            <p className="text-[18px] ">快</p>
                           </td>
-                          <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：輕量網站時性能較佳；使用快取插件可加快加載。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：動態頁面較多，依賴後端數據庫，負載高時加載速度較慢。
-                            </p>
-                          </td>
+                          <td className="px-2 py-4 text-[18px] sm:px-6">慢</td>
                           <td className="px-2 py-4 text-right sm:px-6"></td>
                         </tr>
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                           <th
                             scope="row"
-                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                            className="px-2 text-[18px]  py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                           >
                             開發靈活性
                           </th>
+                          <td className="px-2 py-4 text-[18px] sm:px-6">高</td>
                           <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：可用 React
-                              构建自定义组件，灵活搭配现代前端工具，适合高度定制化设计。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：需具备前端开发经验，对非技术人员较不友好。
-                            </p>
-                          </td>
-                          <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：定制化受限，插件冲突和样式限制可能影响设计效果。
-                            </p>
+                            <p className="text-[18px]">低</p>
                           </td>
                           <td className="px-2 py-4 text-right sm:px-6"></td>
                         </tr>
+
                         <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                           <th
                             scope="row"
-                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
-                          >
-                            內容管理
-                          </th>
-                          <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：後端 CMS（如
-                              WordPress）僅負責內容，管理內容簡單且高效，適合多渠道發布。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：需額外設置無頭
-                              CMS，對於編輯內容可能無法直接預覽最終效果。
-                            </p>
-                          </td>
-                          <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：有大量插件和主题支持，即使不具备编程能力也能轻松构建网站。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：定制化受限，插件冲突和样式限制可能影响设计效果。
-                            </p>
-                          </td>
-                          <td className="px-2 py-4 text-right sm:px-6"></td>
-                        </tr>
-                        <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                          <th
-                            scope="row"
-                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                            className="px-2 text-[18px]  py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                           >
                             SEO
                           </th>
                           <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：通過 SSR、SSG 支持良好的 SEO
-                              優化，能控制各頁面元數據，靈活且響應快。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：SEO 優化需自定義設定（如 Open
-                              Graph、JSON-LD），增加開發工作量。
-                            </p>
+                            <p className="text-[18px]">SEO範圍全面</p>
                           </td>
-                          <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：基本支持 SEO，且許多 SEO 插件（如
-                              Yoast）可加強 SEO 配置。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：無法像無頭 CMS 一樣針對每頁靈活優化，SEO
-                              插件的效果可能有限。
-                            </p>
+                          <td className="px-2 py-4 text-[18px] sm:px-6">
+                            SEO範圍有限
                           </td>
                           <td className="px-2 py-4 text-right sm:px-6"></td>
                         </tr>
                         <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                           <th
                             scope="row"
-                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                            className="px-2 text-[18px]  py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                           >
                             安全性
                           </th>
-                          <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：因前後端分離，減少傳統 WordPress
-                              的漏洞風險，安全性更高。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：需要設置安全驗證和數據保護以避免 API
-                              被濫用。
-                            </p>
-                          </td>
-                          <td className="px-2 py-4 sm:px-6">
-                            <p className="text-[12px] sm:text-[14px]">
-                              優點：內建基本安全功能，且許多插件增強網站安全性。
-                            </p>
-                            <p className="text-[12px] sm:text-[14px]">
-                              缺點：WordPress
-                              插件和主題易成為攻擊目標，安全漏洞風險較高。
-                            </p>
-                          </td>
+                          <td className="px-2 py-4 text-[18px] sm:px-6">高</td>
+                          <td className="px-2 py-4 text-[18px] sm:px-6">低</td>
                           <td className="px-2 py-4 text-right sm:px-6"></td>
                         </tr>
                       </tbody>
@@ -607,11 +526,11 @@ export default function Blog() {
                       id="text2"
                     />
                     <h2> Page Speed Insight</h2>
-                    <p className="mt-[10px] leading-[30px]" data-aos="fade-up">
-                      可顯著增加網頁速度，並通過 PageSpeed Insights
+                    <p className="mt-[10px] text-[18px] leading-[30px]">
+                      可顯著增加網頁速度<br></br>並通過 PageSpeed Insights
                       測速達成高效加載。
                     </p>
-                    <div className="mt-5">
+                    {/* <div className="mt-5">
                       <a
                         href="https://next-wp0004.vercel.app/posts"
                         className="bg-blue-600  mt-[35px] px-6 py-2 text-white border-black border"
@@ -619,7 +538,7 @@ export default function Blog() {
                       >
                         看範例
                       </a>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className=" w-full xl:w-1/2 h-auto xl:h-[600px] relative overflow-hidden p-8">
@@ -656,20 +575,7 @@ export default function Blog() {
                   <div className="main-container">
                     <div id="w-node-_0d97e7f2-7677-0103-d394-d8b1b529b132-c41abecd">
                       <div className="eyebrow-block">
-                        <div className="icon-block">
-                          {/* <Image
-                            src="665ee622d8843e9bd55dc8035ea21c717f410326-3388x2946.png"
-                            width={800}
-                            height={500}
-                            loader={imageLoader}
-                          /> */}
-                          {/* <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6388edb8aa4cb4391_asterisk_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="icon is-eyebrow-icon"
-                          /> */}
-                        </div>
+                        <div className="icon-block"></div>
                         <p className="eyebrow-text">What we do</p>
                       </div>
                     </div>
@@ -1005,7 +911,7 @@ export default function Blog() {
                         ></h2>
                         <a
                           id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
-                          href="/about"
+                          href="/quotation"
                           className="simple-link"
                         >
                           「創新設計，讓您的網站脫穎而出」
@@ -1019,22 +925,11 @@ export default function Blog() {
                           className="card"
                           style={{}}
                         >
-                          <div className="card-icon with-margin">
-                            <Image
-                              alt="img"
-                              className="mb-4"
-                              src="/images/maxresdefault.webp"
-                              width={800}
-                              height={800}
-                              placeholder="empty"
-                              loading="lazy"
-                            />
-                          </div>
-                          <p className="card-paragraph">
+                          <a href="/blog-01" className="card-paragraph">
                             <Image
                               className="mb-4"
-                              alt="img"
-                              src="/images/google-logo-exploding-1681647430.webp"
+                              alt="新網站SEO規劃-極客網頁設計"
+                              src="/images/新網站SEO規劃-極客網頁設計.png"
                               width={800}
                               height={800}
                               placeholder="empty"
@@ -1046,10 +941,10 @@ export default function Blog() {
                               alt=""
                             /> */}
                             <br></br>
-                            <p className="text-[16px] font-normal">
-                              根據Google的數據，超過90%的消費者會使用搜索引擎來查找產品和服務。如果你的企業能夠在搜索結果中獲得較高的曝光率，潛在客戶就更容易記住你的品牌，從而提高品牌知名度。
+                            <p className="text-[20px] font-normal">
+                              高曝光率的搜索排名有助於提高品牌知名度，使潛在客戶更容易記住你的品牌。
                             </p>
-                          </p>
+                          </a>
                         </div>
                         <div
                           data-aos="fade-right"
@@ -1068,20 +963,18 @@ export default function Blog() {
                           </div> */}
                           <div className="card-content">
                             <p className="card-paragraph">降低營銷成本</p>
-                            <p className="card-text-small">
+                            <a href="/blog-02" className="card-text-small">
                               <Image
                                 className="mb-4"
-                                src="/images/maxresdefault.webp"
+                                src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.png"
                                 width={800}
                                 height={800}
-                                alt="img"
+                                alt="網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置"
                                 placeholder="empty"
                                 loading="lazy"
                               />
-                              比較傳統的廣告渠道，如電視或報紙，SEO和社交媒體營銷的成本較低，且效果持久。
-                              Forrester
-                              Research指出，內容營銷成本约为傳統廣告的62%，但能產生3倍的潜在客戶。
-                            </p>
+                              相比傳統廣告，SEO和社交媒體營銷成本更低且效果持久，能以更少的投入產生更多潛在客戶。
+                            </a>
                           </div>
                         </div>
                         <div
@@ -1091,29 +984,21 @@ export default function Blog() {
                           className="card group hover:bg-[#ede653] duration-150"
                           style={{}}
                         >
-                          <div className="card-icon">
-                            <Image
-                              alt="img"
-                              className="mb-4"
-                              src="/images/maxresdefault.webp"
-                              width={800}
-                              height={800}
-                              placeholder="empty"
-                              loading="lazy"
-                            />
-                          </div>
                           <div className="card-content">
                             <p className="card-paragraph group-hover:text-white duration-500">
-                              Our Journey
+                              增加搜尋引擎曝光度和排名
                             </p>
                             <p className="card-text-small">
-                              {/* <img
-                                className="w-full rounded-lg my-3"
-                                src="https://assets-v2.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/https://i.ytimg.com/vi/7v13bzpJyYM/maxresdefault.jpg"
-                                alt=""
-                              /> */}
-                              對於中小企业而言，网站的曝光度不僅僅是吸引流量的問題，還直接影響到品牌的生存和成長。
-                              透過提高網站曝光度，中小企业可以更更多的客戶信任、提升销售额、降低營銷成本，並在市場競爭中佔據有利位置。
+                              <img
+                                alt="如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化"
+                                className="mb-4"
+                                src="/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+                                width={800}
+                                height={800}
+                                placeholder="empty"
+                                loading="lazy"
+                              />
+                              提高網站曝光度能幫助中小企業增強客戶信任、提升銷售、降低成本，並在競爭中獲得優勢。
                             </p>
                           </div>
                         </div>
@@ -1139,7 +1024,7 @@ export default function Blog() {
                       <h3 className="leading-[40px] text-center">
                         {" "}
                         使用{" "}
-                        <span className="bg-blue-700 text-white border border-black mx-2 font-bold   ">
+                        <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-3   mt-4 md:mt-0 text-center">
                           {" "}
                           Page Speed Insight{" "}
                         </span>{" "}
@@ -1153,7 +1038,7 @@ export default function Blog() {
 
                       <a
                         id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                        href="/Blog-09"
+                        href="/blog-09"
                         className="simple-link mb-[50px]"
                       >
                         相關文章
@@ -1213,17 +1098,17 @@ export default function Blog() {
                       id="text3"
                       fontSize="60px"
                     />{" "}
-                    <p className="w-[95%] md:w-2/3">
+                    <p className="w-[95%] xl:w-1/2 md:w-2/3">
                       {" "}
                       3D
                       網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
                     </p>
-                    <p className="bg-blue-700 inline-block text-white mt-4 px-3 py-1 border-black border">
+                    <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
                       Spline
-                    </p>
-                    <p className="bg-blue-700 inline-block text-white ml-4 px-3 py-1 border-black border">
+                    </span>
+                    <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mt-2 text-center">
                       Blender
-                    </p>
+                    </span>
                     {/* <p className="bg-blue-700 inline-block text-white  border-black border">
                       Spline
                     </p> */}
@@ -1247,13 +1132,13 @@ export default function Blog() {
               <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
                 <h2
                   data-aos="fade-up"
-                  className="text-[26px] xl:text-[50px] font-extrabold"
+                  className="text-[26px] hidden md:block xl:text-[50px] font-extrabold"
                 >
                   "3D運用-交互式網頁"
                 </h2>
                 <p
                   data-aos="fade-up"
-                  className="bg-blue-600 px-6 py-2 text-white border-black border mt-2"
+                  className="bg-blue-600 px-6  hidden md:block py-2 text-white border-black border mt-2"
                   data-aos-delay="300"
                 >
                   3d 建模產品運用在網頁上
@@ -1335,8 +1220,8 @@ export default function Blog() {
                     id="text12"
                   />
 
-                  <p className="text-center w-full md:w-4/5">
-                    網站就像企業的「門面」。想像一下，當潛在客戶搜尋您的品牌時，第一眼看到的就是您的網站。如果網站設計老舊、資訊不清楚或載入速度慢，客戶可能會立刻關掉，甚至選擇競爭對手。良好的企業形象網站不僅是宣傳平台，更是建立信任的第一步。它讓客戶感受到專業、可靠，並增加品牌的可信度。
+                  <p className="text-center text-[16px] w-full md:w-4/5">
+                    網站是企業的門面，良好的設計和使用體驗能增強專業形象，提升客戶信任並增加品牌可信度。
                   </p>
                 </div>
                 <div
@@ -1349,7 +1234,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/Blogs"
+                        href="/blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1402,7 +1287,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/Blogs"
+                        href="/blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1455,7 +1340,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/Blogs"
+                        href="/blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1508,7 +1393,7 @@ export default function Blog() {
                 <div className="main-container medium-paddings">
                   <a
                     id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                    href="/Blogs"
+                    href="/blogs"
                     className="simple-link"
                   >
                     全部文章

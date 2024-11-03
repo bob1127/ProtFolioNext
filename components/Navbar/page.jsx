@@ -93,7 +93,7 @@ export default function Index() {
             <div className="menu-main-links">
               <a
                 data-w-id="6dce1659-1f78-7d00-7eed-5d600171ac2e"
-                href="/about"
+                href="/quotation"
                 aria-current="page"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block w--current"
               >
@@ -138,7 +138,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="bdd489b8-8031-113b-2ffa-b5e1c5758ce0"
-                href="/Service"
+                href="/service"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
@@ -160,7 +160,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="03e10da9-d56b-f42b-a87a-0d5fd44d5e75"
-                href="/Blogs"
+                href="/blogs"
                 className="menu-link hover:text-[#f3f3f3] duration-400  w-inline-block"
               >
                 <div
@@ -333,7 +333,7 @@ export default function Index() {
                         </a>
                         <a
                           aria-label="Feature link"
-                          href="/Service"
+                          href="/service"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
@@ -395,7 +395,7 @@ export default function Index() {
                         </a>
                         <a
                           aria-label="Feature link"
-                          href="/about"
+                          href="/quotation"
                           className="menu-feature-content-link w-inline-block"
                           tabIndex={0}
                         >
@@ -457,7 +457,7 @@ export default function Index() {
                 <div className="nav-text">Home</div>
               </a>
               <link rel="prefetch" href="/" /> */}
-              <a href="/Service" className="nav-link-block ">
+              <a href="/service" className="nav-link-block ">
                 <div className="nav-text">服務項目</div>
               </a>
 
@@ -467,14 +467,14 @@ export default function Index() {
               <a href="/portfolio" className="nav-link-block ">
                 <div className="nav-text">網頁設計案例</div>
               </a>
-              <a href="/Blogs" className="nav-link-block ">
+              <a href="/blogs" className="nav-link-block ">
                 <div className="nav-text">文章列表</div>
               </a>
               {/* <link rel="prefetch" href="/features" /> */}
-              <a href="/about" className="nav-link-block ">
+              <a href="/quotation" className="nav-link-block ">
                 <div className="nav-text">關於我們</div>
               </a>
-              {/* <link rel="prefetch" href="/about" /> */}
+              {/* <link rel="prefetch" href="/quotation" /> */}
               <a href="/Contact" className="nav-link-block w-inline-block">
                 <div className="nav-text">方案價格</div>
               </a>

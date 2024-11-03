@@ -37,7 +37,8 @@ const Blog = ({ posts, categories, tags }) => {
 
   return (
     <div className=" flex border border-black justify-center w-full flex-col">
-      <section className="section_Hero">
+      <section className="section_Hero overflow-hidden relative">
+        <div className="cover absolute top-0 left-0  w-full h-full bg-black z-[999] opacity-50"></div>
         <Image
           src="/images/精選案例-極客網頁設計.png"
           alt=""
@@ -45,6 +46,12 @@ const Blog = ({ posts, categories, tags }) => {
           width={2000}
           height={1080}
         ></Image>
+        <div className="txt absolute left-[10%] top-[20%] ">
+          <h1 className="text-white">精選專案</h1>
+          <div className="btn-wrap">
+            <button className="bg-white">Clik Me</button>
+          </div>
+        </div>
       </section>
 
       <section className="section_projects_content flex md:flex-row flex-col mt-10">

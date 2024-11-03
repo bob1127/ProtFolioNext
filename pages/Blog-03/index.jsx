@@ -164,7 +164,7 @@ export default function Blog() {
                 <a
                   id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
                   target="_blank"
-                  href="https://search.google.com/search-console/about"
+                  href="https://search.google.com/search-console/quotation"
                   className="simple-link"
                 >
                   前往Google search console
@@ -262,7 +262,7 @@ export default function Blog() {
                 <a
                   id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
                   target="_blank"
-                  href="https://search.google.com/search-console/about"
+                  href="https://search.google.com/search-console/quotation"
                   className="simple-link"
                 >
                   測試你的網頁速度-Google PageSpeed Insights工具
@@ -379,7 +379,7 @@ export default function Blog() {
                 <a
                   id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
                   target="_blank"
-                  href="/Blog-09"
+                  href="/blog-09"
                   className="simple-link "
                 >
                   如何分析seo成效？

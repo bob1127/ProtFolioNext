@@ -31,17 +31,23 @@ export default function index() {
           </div>
 
           <ul>
+            <a href="/">
+              <li className="border-spacing-3">首頁</li>
+            </a>
             <a href="/pages">
-              <li className="border-spacing-3">精選專案</li>
+              <li className="border-spacing-3">精選案例</li>
             </a>
-            <a href="/about">
-              <li className="border-spacing-3">關於我們</li>
+            <a href="/blogs">
+              <li className="border-spacing-3">Blog</li>
             </a>
-            <a href="/about">
-              <li className="border-spacing-3">關於我們</li>
+            <a href="/quotation">
+              <li className="border-spacing-3">專案報價</li>
             </a>
-            <a href="/about">
-              <li className="border-spacing-3">關於我們</li>
+            <a href="/service">
+              <li className="border-spacing-3">服務內容</li>
+            </a>
+            <a href="/technology">
+              <li className="border-spacing-3">使用技術</li>
             </a>
           </ul>
         </div>

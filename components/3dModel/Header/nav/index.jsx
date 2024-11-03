@@ -18,7 +18,7 @@ const navItems = [
   },
   {
     title: "About",
-    href: "/about",
+    href: "/quotation",
   },
   {
     title: "Contact",

@@ -473,11 +473,10 @@ export default function Blog() {
                         "不要再認為自己的品牌做網頁行銷很花錢了！"
                       </h2>
                       <p className=" text-[16px] leading-normal text-left ">
-                        大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
-                        <br></br> <br></br>
-                        行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
-                        <span className="bg-[#fad335]">網站設計和SEO優化</span>
-                        ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
+                        許多人以為網站設計和行銷需要大筆預算才能有效，但 Jeek
+                        的方案讓品牌在有限預算內也能脫穎而出。我們專為初創企業與中小型商家量身打造行銷策略，使行銷成為可負擔的投資。透過專業網站設計與
+                        SEO
+                        優化，快速提升品牌曝光度，吸引精準客群，助您實現銷售成長。
                       </p>
                       <a
                         href="/"
@@ -485,7 +484,11 @@ export default function Blog() {
                         className="button-wrapper w-inline-block"
                       >
                         <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
+                          <p
+                            href="/quotation"
+                            className="button-text"
+                            style={{}}
+                          >
                             案例sample
                           </p>
                           <div className="button-bg" style={{}} />
@@ -524,20 +527,13 @@ export default function Blog() {
                     </div>
                     <div className="about-grid-image">
                       <div className="reveal-image-trigger">
-                        <img
-                          className="w-[80%] mx-auto"
+                        <Image
+                          src="/images/fantastic_hare_36410__in_office_ba72e105-06e2-4e9a-a51b-5baa01d260d4.png"
                           loading="lazy"
-                          alt="Portrait of the team"
-                          src="/images/網頁設計_UI設計_banner設計-極客網頁設計_seo優化.webp"
-                          srcSet="
-                                        
-                                      "
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
+                          height={1000}
+                          width={1000}
+                          placeholder="empty"
+                        ></Image>
                         <div
                           className="bg-for-animation"
                           style={{ display: "block" }}
@@ -553,28 +549,28 @@ export default function Blog() {
                         <p className="paragraph">網頁設計</p>
                       </div> */}
                       <h2 className="heading is-medium-title">
-                        "個人接案，彈性更高，效率更高"
+                        "工作室，彈性更高，效率更高"
                       </h2>
                       <div className="flex items-start flex-col ">
                         <div className="mb-6 flex flex-col items-start">
                           <b className="text-[22px]">成本效益高</b>
                           <p className="text-left leading-normal mt-3">
                             -
-                            由於沒有大型團隊和高額管理費用，個人接案者能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
+                            由於沒有大型團隊和高額管理費用，網頁工作室能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
                           </p>
                         </div>
                         <div className="mb-6 flex flex-col items-start">
                           <b className="text-[22px]">專注度高</b>
                           <p className="text-left leading-normal mt-3">
                             -
-                            個人接案者通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
+                            網頁工作室通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
                           </p>
                         </div>
                         <div className="mb-6 flex flex-col items-start">
                           <b className="text-[22px]">靈活性強</b>
                           <p className="text-left leading-normal mt-3">
                             -
-                            作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
+                            作為網頁工作室，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
                           </p>
                         </div>
                         <div className="mb-6 flex flex-col items-start">
@@ -591,7 +587,11 @@ export default function Blog() {
                         className="button-wrapper w-inline-block"
                       >
                         <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
+                          <p
+                            href="/quotation"
+                            className="button-text"
+                            style={{}}
+                          >
                             立即聯絡
                           </p>
                           <div className="button-bg" style={{}} />
@@ -755,7 +755,11 @@ export default function Blog() {
                         className="button-wrapper w-inline-block"
                       >
                         <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
+                          <p
+                            href="/quotation"
+                            className="button-text"
+                            style={{}}
+                          >
                             立即聯絡
                           </p>
                           <div className="button-bg" style={{}} />
@@ -797,7 +801,11 @@ export default function Blog() {
                         className="button-wrapper w-inline-block"
                       >
                         <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
+                          <p
+                            href="/quotation"
+                            className="button-text"
+                            style={{}}
+                          >
                             案例sample
                           </p>
                           <div className="button-bg" style={{}} />
@@ -919,7 +927,11 @@ export default function Blog() {
                         className="button-wrapper w-inline-block"
                       >
                         <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
+                          <p
+                            href="/quotation"
+                            className="button-text"
+                            style={{}}
+                          >
                             立即聯絡
                           </p>
                           <div className="button-bg" style={{}} />
@@ -936,6 +948,112 @@ export default function Blog() {
                       </a>
                     </div>
                   </div>
+                  <section className="section">
+                    <div className="container">
+                      <div className="padding">
+                        <div className="w-layout-grid about-content">
+                          <div
+                            id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
+                            className="about-grid-content"
+                          >
+                            {/* <h2 className="heading is-medium-title">
+                        "網頁結構優化"
+                      </h2> */}
+                            <GsapText
+                              text=' "網頁結構優化" '
+                              lineHeight="60px"
+                              id="text5"
+                              fontSize="50px"
+                            />
+                            <div className="flex flex-col ">
+                              <h5 className="text-[20px] text-left mt-4 font-black">
+                                有效的標題標籤 (Heading Tags) 使用
+                              </h5>
+                              <div className="flex items-start flex-col">
+                                <b className="mt-2 text-[18px] font-extrabold">
+                                  分層次使用 H1 到 H6 標籤：
+                                </b>
+                                <p className="text-[14px] text-left">
+                                  H1 標籤應用於頁面的主標題，每個頁面應僅有一個
+                                  H1。次要標題依次使用 H2、H3
+                                  等標籤，形成清晰的結構。
+                                </p>
+                              </div>
+                              <h5 className="text-[20px] text-left mt-4 font-black">
+                                有效的標題標籤 (Heading Tags) 使用
+                              </h5>
+                              結構化數據
+                              <div className="flex items-start flex-col">
+                                <b className="mt-2 text-[18px] font-extrabold">
+                                  添加結構化數據標記 (Schema.org)：
+                                </b>
+                                <p className="text-[14px] text-left">
+                                  幫助搜索引擎更好地理解網站內容，提升網站在搜索引擎結果頁面
+                                  (SERP) 中的展示效果，如豐富摘要 (Rich
+                                  Snippets)。
+                                </p>
+                              </div>
+                              <h5 className="text-[20px] text-left mt-4 font-black">
+                                快速加載和性能優化
+                              </h5>
+                              <div className="flex items-start flex-col">
+                                <b className="mt-2 text-[18px] font-extrabold">
+                                  優化圖片和資源:
+                                </b>
+                                <p className="text-[14px] text-left">
+                                  使用正確的格式和大小的圖片，並利用壓縮工具減少文件體積。
+                                </p>
+                              </div>
+                            </div>
+                            <a
+                              href="/"
+                              data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                              className="button-wrapper w-inline-block"
+                            >
+                              <div className="button-layout">
+                                <p
+                                  href="/quotation"
+                                  className="button-text"
+                                  style={{}}
+                                >
+                                  案例sample
+                                </p>
+                                <div className="button-bg" style={{}} />
+                              </div>
+                              <div className="button-icon-block">
+                                {/* <img
+                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                            loading="lazy"
+                            alt=""
+                            className="button-icon"
+                            style={{}}
+                          /> */}
+                              </div>
+                            </a>
+                          </div>
+
+                          <div
+                            id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
+                            className="about-grid-image"
+                          >
+                            <div className="reveal-image-trigger">
+                              <Image
+                                src="/images/fantastic_hare_36410_Web_page_structure_optimization_._890fced3-3b5d-40d8-b509-e2ae72356184.png"
+                                placeholder="empty"
+                                loading="lazy"
+                                width={1000}
+                                height={1000}
+                              ></Image>
+                              <div
+                                className="bg-for-animation"
+                                style={{ display: "block" }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </section>
@@ -1098,111 +1216,7 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            <section className="section">
-              <div className="container">
-                <div className="padding">
-                  <div className="w-layout-grid about-content">
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <h2 className="heading is-medium-title">
-                        "網頁結構優化"
-                      </h2> */}
-                      <GsapText
-                        text=' "網頁結構優化" '
-                        lineHeight="60px"
-                        id="text5"
-                        fontSize="50px"
-                      />
-                      <div className="flex flex-col ">
-                        <h5 className="text-[20px] text-left mt-4 font-black">
-                          有效的標題標籤 (Heading Tags) 使用
-                        </h5>
-                        <div className="flex items-start flex-col">
-                          <b className="mt-2 text-[18px] font-extrabold">
-                            分層次使用 H1 到 H6 標籤：
-                          </b>
-                          <p className="text-[14px] text-left">
-                            H1 標籤應用於頁面的主標題，每個頁面應僅有一個
-                            H1。次要標題依次使用 H2、H3 等標籤，形成清晰的結構。
-                          </p>
-                        </div>
-                        <h5 className="text-[20px] text-left mt-4 font-black">
-                          有效的標題標籤 (Heading Tags) 使用
-                        </h5>
-                        結構化數據
-                        <div className="flex items-start flex-col">
-                          <b className="mt-2 text-[18px] font-extrabold">
-                            添加結構化數據標記 (Schema.org)：
-                          </b>
-                          <p className="text-[14px] text-left">
-                            幫助搜索引擎更好地理解網站內容，提升網站在搜索引擎結果頁面
-                            (SERP) 中的展示效果，如豐富摘要 (Rich Snippets)。
-                          </p>
-                        </div>
-                        <h5 className="text-[20px] text-left mt-4 font-black">
-                          快速加載和性能優化
-                        </h5>
-                        <div className="flex items-start flex-col">
-                          <b className="mt-2 text-[18px] font-extrabold">
-                            優化圖片和資源:
-                          </b>
-                          <p className="text-[14px] text-left">
-                            使用正確的格式和大小的圖片，並利用壓縮工具減少文件體積。
-                          </p>
-                        </div>
-                      </div>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p href="/about" className="button-text" style={{}}>
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          {/* <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          /> */}
-                        </div>
-                      </a>
-                    </div>
 
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                      className="about-grid-image"
-                    >
-                      <div className="reveal-image-trigger">
-                        <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="/images/網頁結構優化01_UI設計_banner設計-極客網頁設計_seo優化.webp"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        />
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
             <section className="w-full flex flex-col xl:flex-row justify-center px-[30px]  py-[20px] md:py-[80px]  lg:px-[50px]  xl:px-[70px] 2xl:px-[100px]">
               <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
                 <div className="txt">
@@ -1246,7 +1260,7 @@ export default function Blog() {
                     </p>
                     <a
                       id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      href="/Blog-09"
+                      href="/blog-09"
                       className="simple-link"
                     >
                       Seo成效分析
@@ -1261,7 +1275,7 @@ export default function Blog() {
                   <div className="main-container medium-paddings ">
                     <a
                       id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      href="/Blog-01"
+                      href="/blog-01"
                       className="simple-link"
                     >
                       新網站如何做Seo
@@ -1272,7 +1286,7 @@ export default function Blog() {
             </section>
             <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] pb-[100px] flex-col flex">
               <a
-                href="/Blog-01"
+                href="/blog-01"
                 className="xl:w-1/2 w-full mr-4 
               
                 
@@ -1282,13 +1296,13 @@ export default function Blog() {
               >
                 <div className="flex w-full  flex-col items-start">
                   <Image
-                    alt="網頁SEO很重要嗎"
+                    alt="新網站SEO規劃-極客網頁設計"
                     width={700}
                     height={700}
                     loading="lazy"
                     className="rounded-[18px]"
                     placeholder="empty"
-                    src="/images/網頁SEO很重要嗎.png"
+                    src="/images/新網站SEO規劃-極客網頁設計.webp"
                   />
                 </div>
                 <div className="flex mt-6">
@@ -1308,7 +1322,7 @@ export default function Blog() {
                 </p>
               </a>
               <a
-                href="/Blog-02"
+                href="/blog-02"
                 className="xl:w-1/2 w-full border-[#7a7a7a]  mt-5 md:mt-0 ml-0 xl:ml-4 
               duration-300
               
@@ -1316,13 +1330,13 @@ export default function Blog() {
               >
                 <div className="flex w-full  flex-col items-start">
                   <Image
-                    alt="網頁SEO很重要嗎"
+                    alt="網頁設計很花錢嗎-極客網頁設計"
                     width={700}
                     height={700}
                     loading="lazy"
                     className="rounded-[18px]"
                     placeholder="empty"
-                    src="/images/網頁SEO很重要嗎.png"
+                    src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp"
                   />
                 </div>
                 <div className="flex mt-6">

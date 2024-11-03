@@ -101,11 +101,17 @@ const SlideTabs = () => {
         <a href="/pages">
           <Tab setPosition={setPosition}>精選案例</Tab>
         </a>
-        <a href="/Blogs">
+        <a href="/blogs">
           <Tab setPosition={setPosition}>Blog</Tab>
         </a>
-        <a href="/about">
+        <a href="/quotation">
           <Tab setPosition={setPosition}>專案報價</Tab>
+        </a>
+        <a href="/service">
+          <Tab setPosition={setPosition}>服務內容</Tab>
+        </a>
+        <a href="/technology">
+          <Tab setPosition={setPosition}>使用技術</Tab>
         </a>
         <Cursor position={position} />
       </ul>

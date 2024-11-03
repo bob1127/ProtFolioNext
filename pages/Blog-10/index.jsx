@@ -576,7 +576,7 @@ export default function Blog() {
       </div> */}
       <section className="my-[100px]">
         <h2 className="mt-10 text-center text-xl sm:text-2xl md:text-3xl my-5 lg:text-4xl">
-          "無頭網站 跟 傳統網站 比較"
+          "無頭網站 跟 Wordpress網站 比較"
         </h2>
         <div
           data-aos="fade-up"

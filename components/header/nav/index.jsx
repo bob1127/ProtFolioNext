@@ -20,7 +20,7 @@ const links = [
   },
   {
     title: "About Us",
-    href: "/about",
+    href: "/quotation",
     src: "home.png",
   },
   {

@@ -311,7 +311,7 @@ export default function Blog() {
           </div>
           <div className="nav-trigger-labels-wrap">
             <div className="nav-trigger-label-relative">
-              <Link href="/Blogs" className="nav-label">
+              <Link href="/blogs" className="nav-label">
                 Go Back
               </Link>
             </div>
@@ -333,7 +333,7 @@ export default function Blog() {
           style={{ display: "none" }}
         >
           <a
-            href="/about"
+            href="/quotation"
             className="nav-link _1 w-inline-block"
             style={{
               transform:

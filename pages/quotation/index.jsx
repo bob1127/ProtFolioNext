@@ -989,7 +989,7 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="  py-[70px] px-[20px] flex flex-col ">
+            {/* <section className="  py-[70px] px-[20px] flex flex-col ">
               <div className="flex justify-center w-full">
                 <div className="">
                   <p className=""></p>
@@ -1047,11 +1047,11 @@ export default function Blog() {
                   <VanishList />
                 </div>
               </div>
-            </section>
+            </section> */}
 
-            <a href="/Contact" className="text-[20px]">
+            {/* <a href="/Contact" className="text-[20px]">
               實際價格可以再討論 請聯繫我
-            </a>
+            </a> */}
             <div className="flex flex-col ">
               <div className="p-10">
                 <div className="form rounded-[40px] p-10 flex-col mb-[100px]  lg:flex-row  flex bg-white h-auto border-2 border-black">

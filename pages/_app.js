@@ -28,6 +28,7 @@ export default function MyApp({ Component, pageProps, router }) {
     AOS.init({
       duration: 1000, // 动画持续时间（毫秒）
       easing: 'ease-in-out', // 动画缓动函数
+      once: true, // 動畫只顯示一次
     });
       if (typeof window !== 'undefined') {
       window.dataLayer = window.dataLayer || [];
@@ -142,7 +143,7 @@ export default function MyApp({ Component, pageProps, router }) {
                 </div>
 
                 <Marquee>
-                  <a href='/about'>
+                  <a href='/quotation'>
                     <div className='border-3 border-white'>
                       <p className='text-black font-normal w-full p-2'>
                         JEEK像您的好夥伴一樣，會與您一同探索、設計，打造出真正適合您的網站和品牌形象。不管您是 <span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"餐飲業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"美業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"中小企業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"服飾業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"傳統產業"</span>，我們都在這裡，為您提供簡單、實用且有效的解決方案。
@@ -179,29 +180,29 @@ export default function MyApp({ Component, pageProps, router }) {
                         >
                           <a
                             data-w-id="224d6c80-9f0d-e6d1-431a-b5fa62444ed2"
-                            href="/"
+                            href="/service"
                             className="text-white footer-large-link"
                             
                           >
                             更多服務：
                             <p className="text-[15px] text-white">
-                              如果你有更多想法，歡迎找我討論
+                               我們將在這裡提供您網頁協助
                             </p>
                           </a>
                           <a
                             data-w-id="224d6c80-9f0d-e6d1-431a-b5fa62444ed2"
-                            href="/"
+                            href="/terms"
                             className="footer-large-link"
                             
                           >
-                             個人工作室
+                             合作須知
                             <p className="text-[15px] text-white">
-                               個人接案，溝通時間彈性
+                               我們的合作指南，讓每一步更清晰
                             </p>
                           </a>
                           <a
                             data-w-id="224d6c80-9f0d-e6d1-431a-b5fa62444ed2"
-                            href="/"
+                            href="/quotation"
                             className="footer-large-link"
                             
                           >
@@ -224,13 +225,13 @@ export default function MyApp({ Component, pageProps, router }) {
                           <a href="/" className="simple-link-blue">
                             購物網站
                           </a>
-                          <a href="/about" className="simple-link-blue">
+                          <a href="/" className="simple-link-blue">
                             形象網站
                           </a>
-                          <a href="/journal" className="simple-link-blue">
+                          <a href="/" className="simple-link-blue">
                             RWD網站
                           </a>
-                          <a href="/store" className="simple-link-blue">
+                          <a href="/" className="simple-link-blue">
                             Seo行銷
                           </a>
                         </div>
@@ -248,20 +249,7 @@ export default function MyApp({ Component, pageProps, router }) {
                         role="list"
                         className="footer-socials-list w-dyn-items"
                       >
-                        <div role="listitem" className="w-dyn-item">
-                          <a
-                            aria-label="Social link"
-                            href="#"
-                            className="footer-social-link w-inline-block"
-                          >
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abed6/6697c3a8b2f927ce7f896c3a_youtube-logo-black.svg"
-                              loading="lazy"
-                              alt=""
-                              className="icon is-footer-social"
-                            />
-                          </a>
-                        </div>
+                        
                         <div role="listitem" className="w-dyn-item">
                           <a
                             aria-label="Social link"
@@ -292,48 +280,7 @@ export default function MyApp({ Component, pageProps, router }) {
                         </div>
                       </div>
                     </div>
-                    <div
-                      id="w-node-_4b3c50e8-fd47-cca7-b90c-0c893a2a7de9-cdf922c7"
-                      className="footer-utility-wrapper"
-                    >
-                      <div className="footer-utility-links">
-                        <a
-                          href="/utility-pages/instructions"
-                          className="footer-utility-link"
-                        >
-                        Website
-                        </a>
-                        <a
-                          href="/utility-pages/licenses"
-                          className="footer-utility-link"
-                        >
-                          Banner
-                        </a>
-                        <a
-                          href="http://www.webflow.com"
-                          target="_blank"
-                          className="footer-utility-link"
-                        >
-                           DM
-                        </a>
-                      </div>
-                      <div className="footer-utility-links">
-                        <a
-                          href="https://www.metrik.studio/webflow-templates"
-                          target="_blank"
-                          className="footer-utility-link"
-                        >
-                          More Template
-                        </a>
-                        <a
-                          href="https://webflow.com/templates/designers/metrik"
-                          target="_blank"
-                          className="footer-utility-link"
-                        >
-                          Logo.Deaign.io
-                        </a>
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
                 <div className="footer-bg">

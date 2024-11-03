@@ -97,7 +97,7 @@ const Section2 = ({ scrollYProgress }) => {
           }}
         >
           <a
-            href="/about"
+            href="/quotation"
             className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#fcfcfc]"
           >
             <Image
@@ -120,7 +120,7 @@ const Section2 = ({ scrollYProgress }) => {
             </div>
           </a>
           <a
-            href="/about"
+            href="/quotation"
             data-aos-delay="150"
             className="border mt-[10px] md:mt-[500px] h-full md:h-auto  duration-100 hover:border-white border-black  rounded-xl w-full group md:w-1/3 m-1 p-6 bg-[#262626]"
           >
@@ -145,7 +145,7 @@ const Section2 = ({ scrollYProgress }) => {
             </div>
           </a>
           <a
-            href="/about"
+            href="/quotation"
             data-aos-delay="300"
             className="border mt-[10px] md:mt-[500px] h-full md:h-auto border-black  duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
           >

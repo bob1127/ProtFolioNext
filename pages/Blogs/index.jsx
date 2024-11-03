@@ -9,7 +9,7 @@ import { NextSeo } from "next-seo";
 import HorizontalScroll from "../../components/HorizontalScroll/page.jsx";
 import PortfolioSample from "../../components/PortfolioSample/page.jsx";
 import { useEffect } from "react";
-import Clock from "../../components/Clock";
+import Clock from "../../components/Clock.js";
 
 // import Carousel from "../../components/EmblaCarousel06/index.jsx";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
@@ -106,7 +106,7 @@ export default function Blog() {
             <div className="nav-label">Home</div>
           </a>
           <a
-            href="/Blog-02"
+            href="/blog-02"
             className="nav-link _2 w-inline-block"
             style={{
               transform:
@@ -118,7 +118,7 @@ export default function Blog() {
             <div className="nav-label">Articles</div>
           </a>
           <a
-            href="/Blog-01"
+            href="/blog-01"
             className="nav-link _1 w-inline-block"
             style={{
               transform:
@@ -137,7 +137,7 @@ export default function Blog() {
           style={{ display: "none" }}
         >
           <a
-            href="/about"
+            href="/quotation"
             className="nav-link _1 w-inline-block"
             style={{
               transform:
@@ -283,7 +283,7 @@ export default function Blog() {
               <div className="left-section w-full md:w-[80%] xl:w-[70%]">
                 <div className="Hot-article flex md:flex-row flex-col">
                   <a
-                    href="/Blog-05"
+                    href="/blog-05"
                     className=" w-full  md:w-1/2 m-2 group rounded-xl overflow-hidden relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
@@ -306,7 +306,7 @@ export default function Blog() {
                     />
                   </a>
                   <a
-                    href="/Blog-01"
+                    href="/blog-01"
                     className="w-full group md:w-1/2 m-2 rounded-xl overflow-hidden  relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full "></div>
@@ -326,7 +326,7 @@ export default function Blog() {
                 </div>
                 <div className="others-article pt-8 ">
                   <a
-                    href="/Blog-05"
+                    href="/blog-05"
                     className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
@@ -356,7 +356,7 @@ export default function Blog() {
                   </a>
 
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
@@ -489,7 +489,7 @@ export default function Blog() {
                       />
                     </div>
                     <a
-                      href="/Blog-05"
+                      href="/blog-05"
                       className="w-full m-2 group rounded-md overflow-hidden relative"
                     >
                       <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>

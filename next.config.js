@@ -48,7 +48,7 @@ module.exports = {
   async exportPathMap(defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
       '/': { page: '/' },
-      '/about': { page: '/about' },
+      '/quotation': { page: '/quotation' },
       '/posts/six-posts': { page: '/posts/[slug]', query: { slug: 'six-posts' } },
       '/posts/the-five-posts': { page: '/posts/[slug]', query: { slug: 'the-five-posts' } },
       '/posts/the-first-post': { page: '/posts/[slug]', query: { slug: 'the-first-post' } },

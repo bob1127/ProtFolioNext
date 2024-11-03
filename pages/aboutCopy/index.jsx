@@ -52,7 +52,7 @@ export default function Blog() {
         }}
       />
       <div className="relative">
-        <div className="md:flex hidden flex-col fixed z-[99999999999] hover:right-0 duration-500 right-[-100px] top-1/2 ">
+        {/* <div className="md:flex hidden flex-col fixed z-[99999999999] hover:right-0 duration-500 right-[-100px] top-1/2 ">
           <div className="sidebar bg-blue-700 text-white border border-black  p-1 hover:scale-105 duration-500 ">
             <b>Welcom to JEEK !!</b>
           </div>
@@ -64,7 +64,7 @@ export default function Blog() {
           <div className="sidebar bg-blue-700 border border-black  p-1 hover:scale-105 text-white  duration-500 ">
             <b>Contact with Line</b>
           </div>
-        </div>
+        </div> */}
         <Head>
           {/* <script
             type="application/ld+json"
@@ -81,7 +81,7 @@ export default function Blog() {
                 url: "https://www.ultraehp.com",
                 potentialAction: {
                   "@type": "SearchAction",
-                  target: "https://prot-folio-next.vercel.app/about",
+                  target: "https://prot-folio-next.vercel.app/quotation",
                   "query-input": "required name=search_term_string",
                 },
               }),
@@ -949,7 +949,7 @@ export default function Blog() {
                         ></h2>
                         <a
                           id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
-                          href="/about"
+                          href="/quotation"
                           className="simple-link"
                         >
                           「創新設計，讓您的網站脫穎而出」
@@ -1393,7 +1393,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/Blogs"
+                        href="/blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1446,7 +1446,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/Blogs"
+                        href="/blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1499,7 +1499,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/Blogs"
+                        href="/blogs"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1552,7 +1552,7 @@ export default function Blog() {
                 <div className="main-container medium-paddings">
                   <a
                     id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                    href="/Blogs"
+                    href="/blogs"
                     className="simple-link"
                   >
                     全部文章

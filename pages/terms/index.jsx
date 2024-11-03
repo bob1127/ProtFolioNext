@@ -213,28 +213,28 @@ export default function Home() {
           </span>
         </div>
         <div className="terms-wrap  bg-white border w-[80vw] mx-auto p-10  shadow-xl rounded-xl">
-          <h2>2.確認雙方需求 (Scope of Work)</h2>
-          <div className="grid bg-gray-100 p-10 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-2">
-            <div className="content">
+          <h2>1.合作流程</h2>
+          <div className="grid  p-10 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-2">
+            <div className="content p-10">
               <b className="text-[20px]">Step01</b>
               <p className="text-[20px]">確認雙方需求</p>
-              <Button onPress={onOpen}>
-                {" "}
-                <Image
-                  src="/images/terms/確認合約需求01-極客網頁設計.png"
-                  loading="lazy"
-                  width={300}
-                  height={500}
-                  placeholder="empty"
-                  alt="step1確認雙方需求"
-                />
-              </Button>
+
+              <Image
+                className="mt-3"
+                src="/images/icon/collaboration.png"
+                loading="lazy"
+                width={300}
+                height={300}
+                placeholder="empty"
+                alt="step1確認雙方需求"
+              />
             </div>
-            <div className="content">
+            <div className="content p-10">
               <b className="text-[20px]">Step02</b>
               <p className="text-[20px]">支付訂金</p>
               <Image
-                src="/images/terms/支付訂金-極客網頁設計.png"
+                className="mt-3"
+                src="/images/icon/payment-method.png"
                 loading="lazy"
                 width={300}
                 height={500}
@@ -242,11 +242,12 @@ export default function Home() {
                 alt="step02. 支付訂金-極客網頁設計"
               />
             </div>
-            <div className="content">
+            <div className="content p-10">
               <b className="text-[20px]">Step03</b>
               <p className="text-[20px]">開始製作</p>
               <Image
-                src="/images/terms/開始製作-極客網頁設計.png"
+                className="mt-3"
+                src="/images/icon/ux.png"
                 loading="lazy"
                 width={300}
                 height={500}
@@ -254,11 +255,12 @@ export default function Home() {
                 alt="step03. 開始製作"
               />
             </div>
-            <div className="content">
+            <div className="content p-10">
               <b className="text-[20px]">Step04</b>
-              <p className="text-[20px]">結案</p>
+              <p className="text-[20px]">支付尾款-結案</p>
               <Image
-                src="/images/terms/支付訂金-極客網頁設計.png"
+                className="mt-3"
+                src="/images/icon/positive-vote.png"
                 loading="lazy"
                 width={300}
                 height={500}
@@ -270,10 +272,15 @@ export default function Home() {
 
           <h2>2.服務範圍 (Scope of Work)</h2>
           <div>
-            <ul>
-              <li className="text-[20px] font-bold">網頁製作</li>
-              <li className="text-[20px] font-bold">seo優化</li>
-              <li className="text-[20px] font-bold">網頁結構優化</li>
+            <ul className=" ">
+              <li className="text-[20px] mt-4 font-bold">• 網頁設計</li>
+              <li className="text-[20px] mt-4 font-bold">• seo優化</li>
+              <li className="text-[20px] mt-4 font-bold">• 3D建模</li>
+              <li className="text-[20px] mt-4 font-bold">• 各項商品拍攝</li>
+              <li className="text-[20px] mt-4 font-bold">
+                • Banner、DM、產品圖上架、圖片美化{" "}
+              </li>
+              <li className="text-[20px] mt-4 font-bold">• 空拍攝影</li>
             </ul>
           </div>
           <h2>3.項目時間表 (Timeline)</h2>

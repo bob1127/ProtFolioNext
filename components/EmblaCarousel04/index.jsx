@@ -9,13 +9,13 @@ const App = () => {
       image: "/images/新網站SEO規劃-極客網頁設計.webp",
       title: "建立設計一個新網站-我該如何做seo規劃?",
       description: "SEO，全名是「搜尋引擎優化」（Search Engine Optimization）.",
-      link: "/Blog-01",
+      link: "/blog-01",
     },
     {
       image: "/images/blog/spline3d.png",
       title: "建Spline 3D 入門指南",
       description: "什麼是 Spline 3D？",
-      link: "/Blog-04",
+      link: "/blog-04",
     },
     {
       image:

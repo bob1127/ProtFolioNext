@@ -180,7 +180,7 @@ export default function Blog() {
                   className="button-wrapper w-inline-block"
                 >
                   <div className="button-layout">
-                    <p href="/about" className="button-text" style={{}}>
+                    <p href="/quotation" className="button-text" style={{}}>
                       立即聯絡
                     </p>
                     <div className="button-bg" style={{}} />
@@ -225,7 +225,7 @@ export default function Blog() {
                     <a
                       id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
                       target="_blank"
-                      href="https://search.google.com/search-console/about"
+                      href="https://search.google.com/search-console/quotation"
                       className="simple-link"
                     >
                       學習如何使用 Midjurney 生成圖片
@@ -339,7 +339,7 @@ export default function Blog() {
                 {/* <a
                   id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
                   target="_blank"
-                  href="https://search.google.com/search-console/about"
+                  href="https://search.google.com/search-console/quotation"
                   className="simple-link"
                 >
                   前往Google search console

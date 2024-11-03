@@ -57,11 +57,9 @@ export default function App() {
         </div>
         <div className="txt-bottom py-[10%] 2xl:py-[10%] pl-[10%] w-full ">
           <h1 className="text-white text-[32px] sm:text-[45px] lg:text-[80px]">
-            Designing Brand
+            WEB DESIGN
           </h1>
-          <p className="text-[18px] mt-8 text-white">
-            ブランドの黄金をデザインする。
-          </p>
+          <p className="text-[18px] mt-8 text-white">致力於優化您的網頁</p>
         </div>
       </div>
       <div className="black-cover absolute z-[9999] left-0 top-0 h-full lg:h-[2080px] w-full bg-[#000] opacity-40"></div>

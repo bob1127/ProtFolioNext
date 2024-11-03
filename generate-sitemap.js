@@ -9,16 +9,16 @@ const path = require('path');
   const staticPaths = [
     { url: '/', changefreq: 'daily', priority: 1.0 },
     { url: '/contact', changefreq: 'daily', priority: 0.8 },
-    { url: '/about', changefreq: 'daily', pridority: 0.8 },
+    { url: '/quotation', changefreq: 'daily', pridority: 0.8 },
     { url: '/service', changefreq: 'daily', priority: 0.8 },
-    { url: '/Blog-01', changefreq: 'daily', priority: 0.8 },
-    { url: '/Blog-02', changefreq: 'daily', priority: 0.8 },
-    { url: '/Blog-03', changefreq: 'daily', priority: 0.8 },
-    { url: '/Blog-04', changefreq: 'daily', priority: 0.8 },
-  { url: '/Blog-02', changefreq: 'daily', priority: 0.8 },
-   { url: '/Blog-03', changefreq: 'daily', priority: 0.8 },
-    { url: '/Blog-04', changefreq: 'daily', priority: 0.8 },
-     { url: '/Blog-05', changefreq: 'daily', priority: 0.8 },
+    { url: '/blog-01', changefreq: 'daily', priority: 0.8 },
+    { url: '/blog-02', changefreq: 'daily', priority: 0.8 },
+    { url: '/blog-03', changefreq: 'daily', priority: 0.8 },
+    { url: '/blog-04', changefreq: 'daily', priority: 0.8 },
+  { url: '/blog-02', changefreq: 'daily', priority: 0.8 },
+   { url: '/blog-03', changefreq: 'daily', priority: 0.8 },
+    { url: '/blog-04', changefreq: 'daily', priority: 0.8 },
+     { url: '/blog-05', changefreq: 'daily', priority: 0.8 },
     // 您可以加入更多靜態頁面，或從 API 獲取動態路徑
   ];
 

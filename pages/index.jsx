@@ -197,9 +197,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white  w-full md:max-w-[600px]  p-0 lg:p-8">
-            <p className="text-[20px] text-center p-8 mt-4">
-              (自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者)
+          <div className=" py-10  w-full md:max-w-[600px]  p-0 lg:p-8">
+            <p className="text-[24px] text-white text-center p-8 mt-4">
+              自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者
             </p>
           </div>
 
@@ -214,38 +214,41 @@ export default function Home() {
                 Template for Exceptional Outcomes.
               </p> */}
                 <ul className="p-0  m-0 w-full rounded-md">
-                  <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                  <div className="ButtonBackgroundColor text-white flex justify-between mt-2  rounded-[30px] border px-[20px] border-[#373737] text-center py-2 w-[270px]">
                     <div className=" ">
                       <Image
-                        src=""
+                        src="/images/icon/exclamation-mark.png"
                         placeholder="empty"
                         width={22}
                         height={22}
-                        alt=""
+                        alt="sigh-icon"
+                        loading="lazy"
                       ></Image>
                     </div>
                     <div classNaem="text-white">品牌一致性與設計品質的欠缺</div>
                   </div>
-                  <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                  <div className="ButtonBackgroundColor text-white flex justify-between mt-2  rounded-[30px] border px-[20px] border-[#373737] text-center py-2 w-[270px]">
                     <div className=" ">
                       <Image
-                        src=""
+                        src="/images/icon/exclamation-mark.png"
                         placeholder="empty"
                         width={22}
                         height={22}
-                        alt=""
+                        alt="sigh-icon"
+                        loading="lazy"
                       ></Image>
                     </div>
                     <div classNaem="text-white">Seo和網站結構專業優化</div>
                   </div>
-                  <div className="ButtonBackgroundColor text-white flex justify-around mt-2 px-3 rounded-[30px] border border-[#373737] text-center py-2 w-[270px]">
+                  <div className="ButtonBackgroundColor text-white flex justify-between mt-2  rounded-[30px] border px-[20px] border-[#373737] text-center py-2 w-[270px]">
                     <div className=" ">
                       <Image
-                        src=""
+                        src="/images/icon/exclamation-mark.png"
                         placeholder="empty"
                         width={22}
                         height={22}
-                        alt=""
+                        alt="sigh-icon"
+                        loading="lazy"
                       ></Image>
                     </div>
                     <div classNaem="text-white"> 擴展與專業需求的困難</div>
@@ -258,7 +261,7 @@ export default function Home() {
                 </h3>
                 <div className="flex justify-start md:justify-end ">
                   <button
-                    href="#"
+                    href="/service"
                     className="button w-[160px] rounded-md bg-white py-2 px-2 text-center text-black"
                   >
                     See Our Work
@@ -266,7 +269,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-full  rounded-sm lg:rounded-xl overflow-hidden">
+            <div className="w-full mt-6  rounded-sm lg:rounded-xl overflow-hidden">
               <Image
                 width={2600}
                 height={1000}
@@ -378,7 +381,7 @@ export default function Home() {
             <div className="border-2 overflow-hidden border-black w-full relative">
               <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
                 <a
-                  href="/about"
+                  href="/quotation"
                   className="text-[#ffffff]   text-[22px] text-center"
                 >
                   產品攝影
@@ -472,7 +475,7 @@ export default function Home() {
               <div className=" overflow-x-scroll py-5 w-full  ">
                 <div className="w-[1000px] 2xl:w-full grid grid-cols-4 2xl:grid-cols-2  gap-2">
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">
@@ -483,7 +486,7 @@ export default function Home() {
                     </p>
                   </a>
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">
@@ -494,7 +497,7 @@ export default function Home() {
                     </p>
                   </a>
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">3. 集中管理SEO</b>
@@ -503,7 +506,7 @@ export default function Home() {
                     </p>
                   </a>
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">
@@ -541,16 +544,16 @@ export default function Home() {
                 className={styles.container}
               >
                 <div ref={plane} className={styles.body}>
-                  <a href="/about-2">
+                  <a href="/quotation-2">
                     <Text3d primary={"3D 視覺網站"} secondary={"3D 視覺網站"} />
                   </a>
-                  <a href="/Blogs">
+                  <a href="/blogs">
                     <Text3d primary={"客製化網站"} secondary={"客製化網站"} />
                   </a>
                   <a href="Blog-03">
                     <Text3d primary={"商業攝影"} secondary={"商業攝影"} />
                   </a>
-                  <a href="/about">
+                  <a href="/quotation">
                     <Text3d primary={"SEO行銷"} secondary={"SEO行銷"} />
                   </a>
                 </div>
@@ -617,7 +620,7 @@ export default function Home() {
               <div className=" overflow-x-scroll py-5 w-full  ">
                 <div className="w-[1000px] 2xl:w-full grid grid-cols-4 2xl:grid-cols-2  gap-2">
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">
@@ -628,7 +631,7 @@ export default function Home() {
                     </p>
                   </a>
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">
@@ -639,7 +642,7 @@ export default function Home() {
                     </p>
                   </a>
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">3. 集中管理SEO</b>
@@ -648,7 +651,7 @@ export default function Home() {
                     </p>
                   </a>
                   <a
-                    href="/Blog-04"
+                    href="/blog-04"
                     className="mt-5 hover:rotate-[5deg]  hover:scale-95 hover:border-2 duration-300  hover:border-r-4 hover:border-b-4 hover:border-blue-500 border border-black  rounded-xl p-5"
                   >
                     <b className="text-[20px] font-extrabold">
@@ -718,7 +721,7 @@ export default function Home() {
                 <a href="/" className="simple-link-blue">
                   形象影片
                 </a>
-                <a href="/about" className="simple-link-blue">
+                <a href="/quotation" className="simple-link-blue">
                   產品攝影{" "}
                 </a>
                 <a href="/journal" className="simple-link-blue">
@@ -758,7 +761,7 @@ export default function Home() {
               
                 <div className="txt left-[46%] z-[99999] absolute top-[50%] items-center left-40% z-3  flex justify-center">
                   <a
-                    href="/about"
+                    href="/quotation"
                     className="text-white  text-[22px] text-center"
                   >
                     3d-model
@@ -871,7 +874,7 @@ export default function Home() {
                   className="button-wrapper  w-inline-block"
                 >
                   <div className="button-layout">
-                    <p href="/about" className="button-text" style={{}}>
+                    <p href="/quotation" className="button-text" style={{}}>
                       READ
                     </p>
                     <div className="button-bg" style={{}} />
@@ -966,7 +969,7 @@ export default function Home() {
                   className="button-wrapper  w-inline-block"
                 >
                   <div className="button-layout">
-                    <p href="/about" className="button-text" style={{}}>
+                    <p href="/quotation" className="button-text" style={{}}>
                       Contact
                     </p>
                     <div className="button-bg" style={{}} />
