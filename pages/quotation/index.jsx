@@ -280,23 +280,15 @@ export default function Blog() {
                 </main>
               </div>
               <Lottie options={defaultOptions} height={220} width={220} />
-              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto py-8 text-[76px] leading-[32px] font-normal border bg-white rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
-                <div>網頁建置費用</div>
+              <div className="w-full xl:w-[80%] 2xl:w-[50%]   mt-[40px] mx-auto py-8 text-[76px] leading-[32px] font-normal border bg-white rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
+                <div>
+                  <h1 className="text-[2.5rem]">網頁建置費用</h1>
+                </div>
                 <div className="flex justify-center">
                   <div className="text-[22px]">
                     商品拍攝 | 形象影片 | 主視覺圖片 | 客製化設計
                   </div>
                 </div>
-
-                {/* HELLO！我是一位懷抱夢想的網頁接案者，開始了自由接案的路程，
-                上一份工作任職於一家化學生技公司創業基地擔任"網頁工程師 一職"
-                主要負責網頁的維護和seo優化，擅長前端效能優化 結構化資料、
-                所以公司網頁的設計和商品拍攝影片剪輯SEO的優化
-                都是由我完成，但這也讓我學習不同的技能。而我秉持的觀念也是不斷精進
-                我是一個追求理想和目標的人 希望有理想、想法
-                、和目標想要讓公司網頁更好的客戶 與我聯繫。
-                能跟你們合作，為您服務 讓我的專業能讓您的 業務更上一層
-                如果有任何想法請跟我 聯絡 */}
               </div>
               <div className="text-[80px] text-center">+</div>
               <div className="w-full xl:w-[80%]   mt-[40px] mx-auto   leading-[32px] font-normal  rounded-xl  md:p-[30px] p-[20px] flex  md:items-start flex-col md:flex-row justify-center items-center xl:p-[50px] text-center  text-[#171717] ">
@@ -752,7 +744,7 @@ export default function Blog() {
                     </p>
                   </div>
                   <a
-                    href="/Contact"
+                    href="/contact"
                     className="bg-[#fdb932] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-white-100 hover:scale-95 shadow-xl text-center py-3 mb-5 w-[140px]"
                   >
                     Contact
@@ -785,7 +777,7 @@ export default function Blog() {
                     </p>
                   </div>
                   <a
-                    href="/Contact"
+                    href="/contact"
                     className="bg-[#ffffff] mt-3 duration-200 text-[50px] rounded-md px-4 text-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
                   >
                     40,000
@@ -914,7 +906,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 550,000
+                    NT 55,000
                   </div>
                   <p>E-Coomerce</p>
                   <h3 className="text-[40px]">購物網站</h3>
@@ -1011,7 +1003,7 @@ export default function Blog() {
                   </p>
                   <div className="flex  justify-center items-center">
                     <a
-                      href="/Contact"
+                      href="/contact"
                       data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
                       className="button-wrapper  w-inline-block mb-5 mt-4"
                     >
@@ -1049,15 +1041,15 @@ export default function Blog() {
               </div>
             </section> */}
 
-            {/* <a href="/Contact" className="text-[20px]">
+            {/* <a href="/contact" className="text-[20px]">
               實際價格可以再討論 請聯繫我
             </a> */}
             <div className="flex flex-col ">
-              <div className="p-10">
-                <div className="form rounded-[40px] p-10 flex-col mb-[100px]  lg:flex-row  flex bg-white h-auto border-2 border-black">
-                  <div className="left w-full lg:w-[40%] p-[40px] h-full items-center flex-col flex justify-center">
+              <div className="p-2 md:p-10">
+                <div className="form rounded-[40px] p-0 md:p-10 flex-col mb-[100px]  lg:flex-row  flex bg-white h-auto border-2 border-black">
+                  <div className="left w-full lg:w-[40%] p-5 md:p-[40px] h-full items-center flex-col flex justify-center">
                     <div className="txt flex flex-col items-center justify-center">
-                      <p className="text-[30px] font-bold  mt-3">
+                      <p className="text-[30px] font-bold text-center mt-3">
                         聯繫Jeek-極客網頁設計
                       </p>
                       <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">

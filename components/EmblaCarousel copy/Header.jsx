@@ -19,7 +19,7 @@ const Header = () => (
     </div>
     <div className="h-full flex my-auto justify-center items-center">
       <a
-        href="/Contact"
+        href="/contact"
         data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
         className="button-wrapper  w-inline-block"
       >

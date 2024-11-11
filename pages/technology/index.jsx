@@ -58,7 +58,7 @@ export default function Blog() {
             <b>Welcom to JEEK !!</b>
           </div>
           <div className="sidebar border bg-blue-100 text-white border-black  p-1 hover:scale-105 duration-500 ">
-            <a href="/Contact" className="text-whtie font-bold">
+            <a href="/contact" className="text-whtie font-bold">
               Send Message to Email
             </a>
           </div>
@@ -922,7 +922,7 @@ export default function Blog() {
                           data-aos="fade-down"
                           id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c26b-c41abecd"
                           data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c26b"
-                          className="card"
+                          className="card group duration-500 hover:bg-[#f7d54c]"
                           style={{}}
                         >
                           <a href="/blog-01" className="card-paragraph">
@@ -946,11 +946,12 @@ export default function Blog() {
                             </p>
                           </a>
                         </div>
-                        <div
+                        <a
+                          href="/blog-02"
                           data-aos="fade-right"
                           id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c274-c41abecd"
                           data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c274"
-                          className="card"
+                          className="card group hover:bg-[#f7d54c] duration-150"
                           style={{}}
                         >
                           {/* <div className="card-icon">
@@ -962,7 +963,9 @@ export default function Blog() {
                             />
                           </div> */}
                           <div className="card-content">
-                            <p className="card-paragraph">降低營銷成本</p>
+                            <p className="card-paragraph group-hover:text-white duration-500">
+                              降低營銷成本
+                            </p>
                             <a href="/blog-02" className="card-text-small">
                               <Image
                                 className="mb-4"
@@ -976,12 +979,13 @@ export default function Blog() {
                               相比傳統廣告，SEO和社交媒體營銷成本更低且效果持久，能以更少的投入產生更多潛在客戶。
                             </a>
                           </div>
-                        </div>
-                        <div
+                        </a>
+                        <a
+                          href="/blog-03"
                           data-aos="fade-left"
                           id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c27c-c41abecd"
                           data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c27c"
-                          className="card group hover:bg-[#ede653] duration-150"
+                          className="card group hover:bg-[#f7d54c] duration-150"
                           style={{}}
                         >
                           <div className="card-content">
@@ -1001,7 +1005,7 @@ export default function Blog() {
                               提高網站曝光度能幫助中小企業增強客戶信任、提升銷售、降低成本，並在競爭中獲得優勢。
                             </p>
                           </div>
-                        </div>
+                        </a>
                       </div>
                     </div>
                     <p
@@ -1088,7 +1092,7 @@ export default function Blog() {
                   </div>
                 </section>
               </section>
-              <section className="md:px-[50px] px-[20px] xl:px-[100px]">
+              <section className="md:px-[50px] w-full 2xl:w-[80%] mx-auto px-[20px] xl:px-[100px]">
                 <div>
                   <div className="pl-8">
                     <h1 className="">產品建模、3D形象影片</h1>

@@ -478,32 +478,6 @@ export default function Blog() {
                         SEO
                         優化，快速提升品牌曝光度，吸引精準客群，助您實現銷售成長。
                       </p>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p
-                            href="/quotation"
-                            className="button-text"
-                            style={{}}
-                          >
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <Image
-                            src=""
-                            placeholder="empty"
-                            loading="lazy"
-                            alt=""
-                            width={800}
-                            height={800}
-                          />
-                        </div>
-                      </a>
                     </div>
 
                     <div
@@ -581,32 +555,6 @@ export default function Blog() {
                           </p>
                         </div>
                       </div>
-                      <a
-                        href="/Contact"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p
-                            href="/quotation"
-                            className="button-text"
-                            style={{}}
-                          >
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          {/* <Image
-                            src=""
-                            width={500}
-                            height={600}
-                            placeholder=""
-                            loading="lazy"
-                            alt=""
-                          ></Image> */}
-                        </div>
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -749,31 +697,6 @@ export default function Blog() {
                           </p>
                         </div>
                       </div>
-                      <a
-                        href="/Contact"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p
-                            href="/quotation"
-                            className="button-text"
-                            style={{}}
-                          >
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -795,31 +718,6 @@ export default function Blog() {
                         <h3>為什麼產品攝影對於網頁設計很重要？</h3>
                         在數位時代，產品攝影不僅僅是展示商品，更是吸引顧客的關鍵。想像一下，當你進入一個網頁，看到的第一眼就是高質感的產品圖片，這不僅能立即抓住你的注意力，還能提升你對品牌的信任感。好的產品攝影能清晰展示細節、顯示產品的實際效果，讓顧客感受到真實的購買體驗。這種視覺上的吸引力直接影響購買決策，讓你的產品在眾多競爭對手中脫穎而出。所以，投資高品質的產品攝影，是提升網頁設計效果的明智選擇！
                       </p>
-                      <a
-                        href="/"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p
-                            href="/quotation"
-                            className="button-text"
-                            style={{}}
-                          >
-                            案例sample
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          {/* <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          /> */}
-                        </div>
-                      </a>
                     </div>
 
                     <div
@@ -862,12 +760,20 @@ export default function Blog() {
                             transformStyle: "preserve-3d",
                           }}
                         /> */}
-                        <iframe
+                        {/* <iframe
                           src="https://my.spline.design/iphone14procopy-fdd3e2365e4a03f380783eb3384cb838/"
                           frameborder="0"
                           width="100%"
                           height="800"
-                        ></iframe>
+                        ></iframe> */}
+                        <Image
+                          src="/images/截圖-2024-09-24-上午8.33.55.png"
+                          height={1200}
+                          width={1000}
+                          loading="lazy"
+                          alt=""
+                          placeholder="empty"
+                        ></Image>
                         <div
                           className="bg-for-animation"
                           style={{ display: "block" }}
@@ -921,31 +827,6 @@ export default function Blog() {
                           />
                         </div>
                       </div>
-                      <a
-                        href="/Contact"
-                        data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                        className="button-wrapper w-inline-block"
-                      >
-                        <div className="button-layout">
-                          <p
-                            href="/quotation"
-                            className="button-text"
-                            style={{}}
-                          >
-                            立即聯絡
-                          </p>
-                          <div className="button-bg" style={{}} />
-                        </div>
-                        <div className="button-icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          />
-                        </div>
-                      </a>
                     </div>
                   </div>
                   <section className="section">
@@ -1005,31 +886,6 @@ export default function Blog() {
                                 </p>
                               </div>
                             </div>
-                            <a
-                              href="/"
-                              data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                              className="button-wrapper w-inline-block"
-                            >
-                              <div className="button-layout">
-                                <p
-                                  href="/quotation"
-                                  className="button-text"
-                                  style={{}}
-                                >
-                                  案例sample
-                                </p>
-                                <div className="button-bg" style={{}} />
-                              </div>
-                              <div className="button-icon-block">
-                                {/* <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="button-icon"
-                            style={{}}
-                          /> */}
-                              </div>
-                            </a>
                           </div>
 
                           <div
@@ -1292,7 +1148,7 @@ export default function Blog() {
                 
               duration-300
               hover:border-3
-              hover:translate-x-4 hover:translate-y-4  p-10"
+              hover:translate-x-4 hover:translate-y-4  p-3 md:p-10"
               >
                 <div className="flex w-full  flex-col items-start">
                   <Image
@@ -1322,11 +1178,13 @@ export default function Blog() {
                 </p>
               </a>
               <a
-                href="/blog-02"
-                className="xl:w-1/2 w-full border-[#7a7a7a]  mt-5 md:mt-0 ml-0 xl:ml-4 
-              duration-300
+                href="/blog-01"
+                className="xl:w-1/2 mt-5 w-full mr-4 
               
-              hover:translate-x-4 hover:translate-y-4   p-10 "
+                
+              duration-300
+              hover:border-3
+              hover:translate-x-4 hover:translate-y-4  p-3 md:p-10"
               >
                 <div className="flex w-full  flex-col items-start">
                   <Image

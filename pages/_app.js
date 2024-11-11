@@ -162,10 +162,12 @@ export default function MyApp({ Component, pageProps, router }) {
                         style={{}}
                       >
                         <div className="footer-small-text">Get in touch</div>
-                        <a href="#" className="footer-contact-link">
-                          bob112722761236tom@gmail.com
+                     <a href="mailto:jeekdesign@gmail.com" className="footer-contact-link">
+
+                          jeekdesign@gmail.com
                         </a>
-                        <a href="#" className="footer-contact-link">
+                      <a href="tel:+886939767977" className="footer-contact-link">
+
                           0939767977
                         </a>
                       </div>
@@ -267,7 +269,7 @@ export default function MyApp({ Component, pageProps, router }) {
                         <div role="listitem" className="w-dyn-item">
                           <a
                             aria-label="Social link"
-                            href="#"
+                            href="https://www.facebook.com/profile.php?id=61566748097967&locale=zh_TW"
                             className="footer-social-link w-inline-block"
                           >
                             <img

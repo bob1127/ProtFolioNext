@@ -98,6 +98,15 @@ export default function Blog() {
         <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
+              <section className="section_navgation pt-[50px] flex">
+                <a className="hover:font-black duration-300" href="/blogs">
+                  文章總覽
+                </a>{" "}
+                ←
+                <a href="/blog-01" className="hover:font-black duration-300">
+                  建立設計一個新網站-我該如何做seo規劃？
+                </a>
+              </section>
               <h1
                 data-aos="fade-blur"
                 className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  "

@@ -277,7 +277,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <div className="w-full border-t-black border  py-[50px] ">
+        <div className="w-full border-t-black border  px-0  lg:px-[30px] 2xl:px-[100px]  py-[50px] ">
           <div className="txt my-5  md:px-[30px] px-[15px] w-full  md:w-[3/4] h-auto  mx-auto border-1 border-rose-500">
             <div className="flex  flex-col   xl:flex-row ">
               <div className="left-section w-full md:w-[80%] xl:w-[70%]">
@@ -289,21 +289,24 @@ export default function Blog() {
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
                     <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
                       <h3 className="text-white text-[18px]">
-                        カスタマイズ性が高い「電子カルテ/問診票ツール」
+                        分析網頁 SEO 成效指標
                       </h3>
                       <p className="text-white text-[14px]">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Minima velit quos illum, commodi quasi sint
+                        深入解析 SEO 成效指標，助您精準優化網站
                       </p>
                       <div className="type-tag  rounded-2xl w-[100px] text-center inline-block text-white px-3 py-1 bg-[#1498da] mt-3">
                         Design
                       </div>
                     </div>
-                    <img
-                      src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
-                      alt=""
+                    <Image
+                      width={600}
+                      height={400}
+                      placeholder="empty"
+                      loading="lazy"
+                      alt="深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計"
+                      src="/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.png"
                       className="w-full group-hover:scale-105 duration-300"
-                    />
+                    ></Image>
                   </a>
                   <a
                     href="/blog-01"
@@ -356,15 +359,17 @@ export default function Blog() {
                   </a>
 
                   <a
-                    href="/blog-04"
+                    href="/blog-08"
                     className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
-                      <img
-                        src="https://i.ytimg.com/vi/BMGirukzOPU/maxresdefault.jpg"
+                      <Image
+                        src="/images/2024photoshop.jpg"
                         alt=""
-                        className="w-full rounded-md"
-                      />
+                        width={800}
+                        height={600}
+                        className="fill rounded-md"
+                      ></Image>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[20px] font-semibold">
@@ -378,21 +383,21 @@ export default function Blog() {
                       </p>
                     </div>
                   </a>
-                  <div className="article-item group border-t-2 border-b-2 flex flex-col md:flex-row py-8">
-                    <div className="img w-full overflow-hidden md:w-[35%] p-5">
-                      <div className="w-[450px] h-[200px]">
-                        <figure>
-                          <Image
-                            src="/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png"
-                            placeholder="empty"
-                            className="group-hover:scale-105  overflow-hidden duration-700"
-                            loading="lazy"
-                            width={330}
-                            height={200}
-                            alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
-                          ></Image>
-                        </figure>
-                      </div>
+
+                  <a
+                    href="/blog-02"
+                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                  >
+                    <div className="img w-full md:w-[35%] p-5">
+                      <Image
+                        src="/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png"
+                        alt="頁設計很花錢嗎-極客網頁設計_網頁seo行銷"
+                        width={800}
+                        height={600}
+                        placeholder="empty"
+                        loading="lazy"
+                        className="fill rounded-md"
+                      ></Image>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[18px]">網頁設計很花錢嗎？</h3>
@@ -400,23 +405,22 @@ export default function Blog() {
                         網頁設計真的很花錢嗎？透過精心規劃和明智選擇，不僅能控制成本，還能有效提升品牌形象與業務效益。
                       </p>
                     </div>
-                  </div>
-                  <div className="article-item border-t-2 border-b-2 flex flex-col group md:flex-row py-8">
-                    <div className="img w-full overflow-hidden md:w-[35%] p-5">
-                      <div className="w-[450px] h-[200px]">
-                        <figure>
-                          {" "}
-                          <Image
-                            src="/images/blog/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.webp"
-                            placeholder="empty"
-                            className="group-hover:scale-105  overflow-hidden duration-700"
-                            loading="lazy"
-                            width={330}
-                            height={200}
-                            alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
-                          ></Image>
-                        </figure>
-                      </div>
+                  </a>
+
+                  <a
+                    href="/blog-03"
+                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                  >
+                    <div className="img w-full md:w-[35%] p-5">
+                      <Image
+                        src="/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.webp"
+                        alt="如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化"
+                        width={800}
+                        height={600}
+                        placeholder="empty"
+                        loading="lazy"
+                        className="fill rounded-md"
+                      ></Image>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[18px]">
@@ -426,26 +430,22 @@ export default function Blog() {
                         優化網站內容與結構，快速提升搜尋引擎排名，增加線上曝光
                       </p>
                     </div>
-                  </div>
-                  <div
-                    c
-                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row group py-8"
+                  </a>
+
+                  <a
+                    href="/blog-06"
+                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
                   >
-                    <div className="img w-full overflow-hidden md:w-[38%] p-5">
-                      <div className="w-[410px] h-[220px]">
-                        <figure>
-                          {" "}
-                          <Image
-                            src="/images/blog/SEO能帶來哪些好-極客網頁設計.png"
-                            placeholder="empty"
-                            className="group-hover:scale-105  overflow-hidden duration-700"
-                            loading="lazy"
-                            width={330}
-                            height={200}
-                            alt="網頁設計很花錢嗎?-極客網頁設計_網頁seo行銷_網站建置"
-                          ></Image>
-                        </figure>
-                      </div>
+                    <div className="img w-full md:w-[35%] p-5">
+                      <Image
+                        src="/images/SEO能帶來哪些好-極客網頁設計.webp"
+                        alt="SEO能帶來哪些好-極客網頁設計"
+                        width={800}
+                        height={600}
+                        placeholder="empty"
+                        loading="lazy"
+                        className="fill rounded-md"
+                      ></Image>
                     </div>
                     <div className="text w-full md:w-[65%] p-5">
                       <h3 className="text-[18px]">SEO能帶來哪些好處？ </h3>
@@ -453,7 +453,7 @@ export default function Blog() {
                         SEO能顯著提高網站的搜尋引擎排名，增加有機流量，提升品牌知名度，並促進業務增長。透過優化策略，您能獲得更高的曝光率和轉換率。
                       </p>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="px-0 right-section w-full  md:w-[60%] xl:w-[30%] md:px-6">
@@ -475,34 +475,45 @@ export default function Blog() {
                     </div>
                   </div>
                   <div className="bottom flex flex-col">
-                    <div className="w-full m-2 group rounded-md overflow-hidden relative">
-                      <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
-                      <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
-                        <h3 className="text-white text-[14px]">
-                          カスタマイズ性が高い「電子カルテ/問診票ツール」
-                        </h3>
-                      </div>
-                      <img
-                        src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
-                        alt=""
-                        className="w-full group-hover:scale-105 duration-300"
-                      />
-                    </div>
                     <a
-                      href="/blog-05"
+                      href="/blog-10"
                       className="w-full m-2 group rounded-md overflow-hidden relative"
                     >
                       <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
                       <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
                         <h3 className="text-white text-[14px]">
-                          カスタマイズ性が高い「電子カルテ/問診票ツール」
+                          無頭網站：高性能網站，seo友善
                         </h3>
                       </div>
-                      <img
-                        src="https://liginc.co.jp/wp-content/uploads/2024/01/7c4e866123723e03ef075d660bf377c4-768x512.png"
-                        alt=""
-                        className="w-full group-hover:scale-105 duration-300"
-                      />
+                      <Image
+                        src="/images/無頭網站_高性能seo有善-極客網頁設計.webp"
+                        alt="無頭網站_高性能seo有善-極客網頁設計"
+                        placeholder="empty"
+                        loading="lazy"
+                        width={700}
+                        height={500}
+                        className="w-full object-contain group-hover:scale-105 duration-300"
+                      ></Image>
+                    </a>
+                    <a
+                      href="/blog-04"
+                      className="w-full m-2 group rounded-md overflow-hidden relative"
+                    >
+                      <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
+                      <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
+                        <h3 className="text-white text-[14px]">
+                          輕鬆進入 AI 藝術世界，MidJourney 快速上手指南
+                        </h3>
+                      </div>
+                      <Image
+                        src="/images/midjourney.jpg"
+                        alt="無頭網站_高性能seo有善-極客網頁設計"
+                        placeholder="empty"
+                        loading="lazy"
+                        width={700}
+                        height={500}
+                        className="w-full object-contain group-hover:scale-105 duration-300"
+                      ></Image>
                     </a>
                   </div>
                 </div>

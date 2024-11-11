@@ -23,27 +23,29 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title=""
-        description=""
+        title="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        description="透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。"
         openGraph={{
-          url: "",
-          title: "",
-          description: "",
+          title:
+            "網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這",
+          description:
+            "透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。",
           images: [
             {
-              url: "",
-              width: 1200,
-              height: 630,
-              alt: "社交媒體行銷策略",
+              url: "https://www.jeek-webdesign.com.tw/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
-          site_name: "你的網站名稱",
         }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "網站設計, SEO優化, 成本控制, 網頁設計公司, 行動友善, 3D建模, 品牌形象提升, 自然流量, 搜尋引擎排名, 網站速度優化, 外部連結, Google PageSpeed Insights, 關鍵字規劃, 網站可見性, 數位行銷, 網站建置",
+          },
+        ]}
       />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
@@ -94,16 +96,25 @@ export default function Blog() {
         </div>
         <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
-            <div className="title  py-[50px] flex flex-col ">
-              <h1 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  ">
-                「快速上手 Tailwind CSS：打造高效且靈活的網站樣式
+            <div className="title  pb-[50px] flex flex-col ">
+              <section className="section_navgation pt-[50px] flex">
+                <a className="hover:font-black duration-300" href="/blogs">
+                  文章總覽
+                </a>{" "}
+                ←
+                <a href="/blog-01" className="hover:font-black duration-300">
+                  SEO能帶來哪些好處呢？
+                </a>
+              </section>
+              <h1
+                className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
+                data-aos="fade-blur"
+              >
+                SEO能帶來哪些好處呢？
               </h1>
               <div className="title-content-date">
                 <div></div>
-                <div className="text-[14px]">
-                  <b className="mr-3">Spline 3d</b>
-                  <b>2024/04/05</b>
-                </div>
+                <div className="text-[14px]"></div>
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
@@ -111,139 +122,129 @@ export default function Blog() {
                     網頁設計
                   </div>
                   <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
-                    3d 軟體應用
+                    網頁行銷｜SEO
                   </div>
                 </div>
                 <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
-                  設計
+                  優化
                 </div>
               </div>
             </div>
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/blog/tailwindcss01.png"
-              width={900}
-              height={500}
+              src="/images/SEO能帶來哪些好-極客網頁設計.webp"
+              width={1500}
+              height={800}
               placeholder="empty"
-              className="shadow-md"
+              loading="lazy"
+              className="rounded-md"
             ></Image>
           </div>
 
           <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
-            <h2>如何使用 Tailwind CSS 快速打造網站？</h2>
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-              Tailwind CSS 是一個功能強大且直觀的 CSS 框架，它與傳統的 CSS
-              框架不同，專注於實用工具類別，這讓開發者可以快速設計具有高度客製化的網站。在這篇文章中，我們將帶你快速上手
-              Tailwind CSS，並學習如何利用它輕鬆打造漂亮的網頁設計。
+              <h2>SEO 的力量：為什麼你需要優化你的網站</h2>
+              在數位時代，擁有一個網站已不再是選擇，而是必須。那麼，如何讓你的網站在眾多競爭者中脫穎而出？答案就是搜索引擎優化（SEO）。以下是
+              SEO 為你帶來的幾大好處：
             </div>
-            <a
-              target="_blank"
-              className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
-              href="https://tailwindcss.com/"
-            >
-              前往 Tailwind css 官方網站
-            </a>
-
-            <br></br>
+            =<br></br>
             <div className="">
               <div className="imgText mt-[50px]">
-                <div className=" text-[32px]  leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
-                    一.
-                  </span>
-                  什麼是 Tailwind CSS？
-                </div>
+                <h2 className="text-[32px] font-bold"> ㄧ. 提高可見性和流量</h2>
+
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-                  Tailwind CSS 是一個「實用為中心」的 CSS
-                  框架，意思是它沒有預設的 UI
-                  組件（例如按鈕、卡片樣式），而是提供大量的工具類別（utility
-                  classes），讓你能自由組合這些類別來完成設計。
-                  這樣做的好處是，你可以靈活地創建符合你需求的設計，而不受限制於框架預設的樣式。這與像
-                  Bootstrap 這類有明確 UI 組件的框架非常不同。
-                </div>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]"></div>
-                <Image
-                  src="/images/blog/tailwindcssUI.png"
-                  width={900}
-                  height={500}
-                  loading="lazy"
-                  className="rounded-md mt-3"
-                  placeholder="empty"
-                ></Image>
-              </div>
-
-              <div className="imgText mt-[60px]">
-                <h2 className="text-[32px] font-bold"> 二.快速安裝</h2>
-
-                <h3 className="text-[20px] ">1.使用 CDN 安裝</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  在這段 HTML 中，我們在 head 標籤內引入了 Tailwind CSS 的 CDN：
-                </div>
-
-                <div className="bg-[#d6d6d6] mb-4">
-                  <Snippet>
-                    這將會創建一個 tailwind.config.js 文件，讓你可以客製化
-                    Tailwind 的設定。
-                  </Snippet>
-                </div>
-                <b className="text-[14px] font-bold mt-3">
-                  這個 CDN 來自 jsDelivr，它提供了一個可以即時加載的 Tailwind
-                  CSS 完整版本。你只需要複製這行代碼並貼到你的 HTML 頁面中即可。
-                </b>
-
-                <h3 className="text-[20px] ">1.使用 npm 安裝</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  使用 Tailwind CSS
-                  非常簡單，首先你需要將它添加到你的專案中。假設你已經有一個專案，可以使用
-                  npm 進行安裝：
-                </div>
-
-                <div className="bg-[#d6d6d6] mb-4">
-                  <Snippet>
-                    npm install -D tailwindcss npx tailwindcss init
-                  </Snippet>
-                  <Snippet>npx tailwindcss init</Snippet>
-                </div>
-
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  這將會創建一個 tailwind.config.js 文件，讓你可以客製化
-                  Tailwind 的設定。 接著，將 Tailwind 引入到你的 CSS 文件中：
-                </div>
-                <div className="bg-[#d6d6d6] mb-4">
-                  <Snippet>
-                    npm install -D tailwindcss npx tailwindcss init
-                  </Snippet>
-                  <Snippet>npx tailwindcss init</Snippet>
-                </div>
-              </div>
-              <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                這樣就完成了基本的安裝步驟，你可以開始使用 Tailwind
-                的各種工具類別來設計你的網頁了！
-              </div>
-
-              <div className="imgText mt-[60px]">
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
-                  步驟三：進入新手頻道 在 Midjourney Discord
-                  伺服器中，找到新手頻道（通常是 #newbies
-                  頻道）。你可以在這裡輸入指令來生成圖像。
+                  SEO
+                  可以幫助你的網站在搜索引擎結果頁面（SERP）中獲得更高的排名。這意味著更多的潛在客戶會看到你的網站，從而增加訪問量。
                 </div>
                 <Image
-                  src="/images/blog/mid02.png"
+                  src="/images/blog/blog06/網頁結構話資料_seo搜索排名-極客網頁設計.png"
                   width={900}
-                  className="rounded-md"
+                  alt="網頁結構話資料_seo搜索排名-極客網頁設計"
                   placeholder="empty"
+                  className="rounded-md my-5"
                   height={600}
                 ></Image>
+                <br></br>
               </div>
-              <div className="imgText mt-[60px]">
-                <div className="text-[20px] font-normal text-[#242424]  leading-[32px] xl:leading-[36px]">
-                  Midjourney
-                  提供了多種指令與參數，讓使用者可以更靈活地生成和自訂圖像。以下將詳細介紹幾個常見且強大的指令功能，幫助你在創作過程中充分利用這些工具。
+              <div className="imgText mt-[50px]">
+                <h2 className="text-[32px] font-bold"> 二. 增強品牌信任度</h2>
+
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  當用戶在搜索結果中看到你的網站排名高於其他競爭對手時，他們會更信任你的品牌。良好的排名往往被視為行業權威的象徵。
+                </div>
+                <br></br>
+              </div>
+              <div className="imgText mt-[50px]">
+                <h2 className="text-[32px] font-bold"> 三. 更高的轉換率</h2>
+
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  通過針對特定關鍵詞進行優化，SEO
+                  可以吸引更具針對性的流量。這意味著這些訪問者更有可能轉化為客戶，從而提高銷售和業務增長。
+                </div>
+                <Image
+                  src="/images/GoogleSearchConsole分析-極客網頁設計_seo成效分析工具.png"
+                  width={900}
+                  alt="GoogleSearchConsole分析-極客網頁設計_seo成效分析工具"
+                  placeholder="empty"
+                  className="rounded-md my-5"
+                  height={600}
+                ></Image>
+                <br></br>
+              </div>
+              <div className="imgText mt-[50px]">
+                <h2 className="text-[32px] font-bold"> 四. 長期效果</h2>
+
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  與付費廣告相比，SEO
+                  的效果更持久。雖然初期需要時間來建立排名，但一旦達到目標，穩定的流量和曝光將持續更長時間。
+                </div>
+                <a
+                  id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                  target="_blank"
+                  href="/blog-01"
+                  className="simple-link "
+                >
+                  我該如何做SEO規劃？
+                </a>
+                <br></br>
+              </div>
+              <div className="imgText mt-[50px]">
+                <h2 className="text-[32px] font-bold"> 五. 提高用戶體驗</h2>
+
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  一個良好的 SEO
+                  策略不僅僅是關於關鍵詞。它還包括提升網站的整體結構和內容質量，這將直接改善用戶體驗，增加用戶在網站上的停留時間。
+                </div>
+                <br></br>
+              </div>
+              <div className="imgText mt-[50px]">
+                <h2 className="text-[32px] font-bold"> 六. 數據分析與調整</h2>
+
+                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                  SEO
+                  提供的數據分析工具能幫助你瞭解受眾的行為和偏好。透過這些數據，你可以不斷調整和優化你的行銷策略，達到最佳效果。
+                </div>
+                <a
+                  id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                  target="_blank"
+                  href="/blog-09"
+                  className="simple-link "
+                >
+                  如何分析seo成效？
+                </a>
+                <br></br>
+              </div>
+              <div className="imgText  border border-black mt-[60px] p-8 bg-white">
+                <div className="imgText ">
+                  <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                    總結來說，投資 SEO
+                    是提升品牌影響力、增加網站流量以及促進業務增長的重要途徑。無論你是小型企業還是大型企業，SEO
+                    都是你數位行銷策略中不可或缺的一環。讓我們開始優化你的網站，迎接更多商機吧！
+                  </div>
                 </div>
               </div>
-
-              <div className="imgText mt-[60px]">
+              {/* <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   2.1 /imagine 指令 這是 Midjourney
                   最核心的指令，所有圖像生成過程都從這裡開始。通過提供「提示詞」（prompt），你可以告訴
@@ -264,7 +265,7 @@ export default function Blog() {
                   簡短提示詞：如 "sunset over the
                   mountains"（山上日落），適合基本生成。
                 </div>
-              </div>
+              </div> 
 
               <div className="imgText mt-[60px]">
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
@@ -443,11 +444,11 @@ export default function Blog() {
                     height={600}
                   ></Image>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
 
-          <div className="patagrph p-2 xl:p-10">
+          {/* <div className="patagrph p-2 xl:p-10">
             <h2>內容行銷如何幫助網站提升搜索引擎排名？</h2>
 
             <br></br>
@@ -543,7 +544,7 @@ export default function Blog() {
                 內容行銷不僅僅是創建吸引人的內容，更是建立品牌信任、提升網站排名的核心策略之一。透過持續的內容行銷，企業能夠有效吸引目標受眾，提升網站在搜索引擎中的表現，最終帶來更多的潛在客戶和商業機會。
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="page-wrap">

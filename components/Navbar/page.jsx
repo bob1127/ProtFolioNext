@@ -204,7 +204,7 @@ export default function Index() {
               </a>
               <a
                 data-w-id="4f963323-4aa1-e2d1-d1f7-b679d51590a7"
-                href="/Contact"
+                href="/contact"
                 className="menu-link hover:text-[#f3f3f3] duration-400 w-inline-block"
               >
                 <div
@@ -442,7 +442,7 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="dropdown-2nd-links">
-                    <a href="/Contact" className="simple-link" tabIndex={0}>
+                    <a href="/contact" className="simple-link" tabIndex={0}>
                       我的Email
                     </a>
                     <a href="/contact" className="simple-link" tabIndex={0}>
@@ -475,7 +475,7 @@ export default function Index() {
                 <div className="nav-text">關於我們</div>
               </a>
               {/* <link rel="prefetch" href="/quotation" /> */}
-              <a href="/Contact" className="nav-link-block w-inline-block">
+              <a href="/contact" className="nav-link-block w-inline-block">
                 <div className="nav-text">方案價格</div>
               </a>
               {/* <a

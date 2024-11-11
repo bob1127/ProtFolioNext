@@ -317,7 +317,7 @@ export default function Home() {
             </div> */}
 
             {/* <a
-              href="/Contact"
+              href="/contact"
               className="hero-middle border duration-500 border-blac  ease-in-out lg:hover:w-[50%]  overflow-hidden delay-150 w-full lg:w-[20%]  flex h-[450px] xl:h-auto justify-center relative flex-col group items-center pt-[50px] border-1 bg-cover bg-center"
               style={{
                 backgroundImage:
@@ -333,7 +333,7 @@ export default function Home() {
               </div>
             </a>
             <a
-              href="/Contact"
+              href="/contact"
               className="hero-right duration-500 border-blac  ease-in-out lg:hover:w-[35%] group overflow-hidden delay-150  border-1 border-black border pt-[50px] flex flex-col justify-center bg-cover bg-no-repeat h-[450px] xl:h-auto bg-center items-center  w-full lg:w-[15%]"
               style={{
                 backgroundImage:
@@ -358,7 +358,7 @@ export default function Home() {
           <div className="flex  flex-col justify-center items-center">
             <h1
               className="header text-[#1e1e1e] xl:text-[100px]
-    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[250px] text-[32px]"
+    font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] lg:mt-[250px]  sm:mt-[340px] mt-[240px] text-[32px]"
             >
               <GsapText
                 text=" 讓您的品牌脫穎而出"
@@ -869,7 +869,7 @@ export default function Home() {
               </p>
               <div className="h-full mt-5 flex my-auto justify-center items-center">
                 <a
-                  href="/Contact"
+                  href="/contact"
                   data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
                   className="button-wrapper  w-inline-block"
                 >
@@ -964,7 +964,7 @@ export default function Home() {
               </p>
               <div className="h-full mt-5 flex my-auto justify-center items-center">
                 <a
-                  href="/Contact"
+                  href="/contact"
                   data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
                   className="button-wrapper  w-inline-block"
                 >

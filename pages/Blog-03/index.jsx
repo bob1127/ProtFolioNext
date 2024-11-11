@@ -97,6 +97,15 @@ export default function Blog() {
         <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
+              <section className="section_navgation pt-[50px] flex">
+                <a className="hover:font-black duration-300" href="/blogs">
+                  文章總覽
+                </a>{" "}
+                ←
+                <a href="/blog-01" className="hover:font-black duration-300">
+                  如何增加搜尋引擎曝光度和排名?
+                </a>
+              </section>
               <h1
                 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
                 data-aos="fade-blur"

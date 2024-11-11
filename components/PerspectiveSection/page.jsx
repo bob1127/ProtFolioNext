@@ -76,12 +76,12 @@ const Section2 = ({ scrollYProgress }) => {
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className="border py-[100px]  z-[-1] bg-black h-[350vh] md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#333] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+      <div className="border py-[100px]  z-[-1] bg-white h-[350vh] md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#fff] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
         <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
-          <h2 className="text-white text-[30px] md:text-[50px] xl:text-[70px] font-bold">
+          <h2 className="text-black text-[30px] md:text-[50px] xl:text-[70px] font-bold">
             提升網站品牌形象
           </h2>
-          <h3 className="text-[16px] font-normal text-center w-full md:w-1/2 mx-auto md:text-[22px] text-white">
+          <h3 className="text-[16px] font-normal text-center w-full md:w-1/2 mx-auto md:text-[22px] text-black">
             提升網站品牌形象，實現更高利潤。優化網站體驗與視覺風格，增強消費者信任感，從而提升品牌影響力和獲利能力。
           </h3>
         </div>

@@ -159,10 +159,17 @@ export default function NewsletterForm() {
                     data-gtm-form-interact-field-id="0"
                   ></input>
                   <div>
-                    <h4 className="text-white text-[22px]">基本網站</h4>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <h4 className="text-white text-[22px]">精選方案</h4>
+
+                    <b className="text-white">價格：NT20000 up</b>
+
+                    <p className="text-[14px] text-white mt-3">
+                      - 精美網站版型設計
+                    </p>
+                    <p className="text-[14px] text-white">- 簡易後台編輯操作</p>
+                    <p className="text-[14px] text-white">
+                      - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
+                    </p>
                     <p className="text-[14px] text-white">- 基本seo優化</p>
                   </div>
                 </li>
@@ -173,8 +180,11 @@ export default function NewsletterForm() {
                     id="mce-group[43793]-43793-1"
                   ></input>
                   <div>
-                    <h4 className="text-white text-[22px]">基本網站</h4>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
+                    <h4 className="text-white text-[22px]">客製化網站</h4>
+                    <b className="text-white">價格：NT40000 up</b>
+                    <p className="text-[14px] text-white mt-3">
+                      - 精選網頁設計版型
+                    </p>
                     <p className="text-[14px] text-white">- 基本seo優化</p>
                     <p className="text-[14px] text-white">- 精選網頁設計版型</p>
                     <p className="text-[14px] text-white">- 基本seo優化</p>
@@ -187,11 +197,13 @@ export default function NewsletterForm() {
                     id="mce-group[43793]-43793-0"
                   ></input>
                   <div>
-                    <h4 className="text-white text-[22px]">基本網站</h4>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <h4 className="text-white text-[22px]">一頁式網站</h4>
+                    <b className="text-white mb-[30px]">價格：NT15000 up</b>
+                    <p className="text-[14px] text-white mt-3">- 高轉化率</p>
+                    <p className="text-[14px] text-white">
+                      - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
+                    </p>
+                    <p className="text-[14px] text-white">- 客製化設計</p>
                   </div>
                 </li>
                 <li className="bg-black p-8 rounded-md ">
@@ -201,11 +213,18 @@ export default function NewsletterForm() {
                     id="mce-group[43793]-43793-2"
                   ></input>
                   <div>
-                    <h4 className="text-white text-[22px]">基本網站</h4>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <h4 className="text-white text-[22px]">購物網站</h4>
+                    <b className="text-white">價格：NT50000 up</b>
+                    <p className="text-[14px] text-white mt-3">
+                      - 客製化網站規劃與設計
+                    </p>
+                    <p className="text-[14px] text-white">
+                      - 包含基本商品去背上架
+                    </p>
+                    <p className="text-[14px] text-white">- 商品 形象 Banner</p>
+                    <p className="text-[14px] text-white">
+                      - 公司形象(產品)影片拍攝
+                    </p>
                   </div>
                 </li>
               </ul>

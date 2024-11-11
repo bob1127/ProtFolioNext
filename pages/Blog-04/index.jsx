@@ -94,6 +94,15 @@ export default function Blog() {
         <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
+              <section className="section_navgation pt-[50px] flex">
+                <a className="hover:font-black duration-300" href="/blogs">
+                  文章總覽
+                </a>{" "}
+                ←
+                <a href="/blog-01" className="hover:font-black duration-300">
+                  MidJourney 快速上手指南
+                </a>
+              </section>
               <h1 className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  ">
                 輕鬆進入 AI 藝術世界，MidJourney <br></br> 快速上手指南
               </h1>

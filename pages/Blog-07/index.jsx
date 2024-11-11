@@ -95,6 +95,15 @@ export default function Blog() {
         <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
+              <section className="section_navgation pt-[50px] flex">
+                <a className="hover:font-black duration-300" href="/blogs">
+                  文章總覽
+                </a>{" "}
+                ←
+                <a href="/blog-01" className="hover:font-black duration-300">
+                  分析網頁 SEO 成效指標
+                </a>
+              </section>
               <h1 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  ">
                 我能夠使用 Illustrator 的新功能 Mockup（測試版）在 5 秒內建立 3D
                 模型。

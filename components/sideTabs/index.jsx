@@ -50,7 +50,7 @@ const SlideTabs = () => {
 
   return (
     <motion.div
-      className="w-full px-[20px] fixed top-0 border border-black md:w-[65%] md:relative md:border-[#a2a2a2] z-[999999] mx-auto flex justify-center items-center bg-[#181818] md:bg-white rounded-b-[20px] sm:rounded-b-[20px]"
+      className="w-full px-[20px] 2xl:w-[65%] fixed top-0 border border-black lg:w-[90%]  md:relative md:border-[#a2a2a2] z-[999999] mx-auto flex justify-center items-center bg-[#181818] md:bg-white rounded-b-[20px] sm:rounded-b-[20px]"
       initial={isDesktop ? { marginTop: "-40px" } : {}}
       animate={isDesktop ? { marginTop } : {}}
       transition={
@@ -120,7 +120,7 @@ const SlideTabs = () => {
           <MobileHeader />
         </div>
         <a
-          href=""
+          href="/contact"
           className="border hidden md:flex justify-center items-center text-center text-white bg-black rounded-[30px] py-2 px-5"
         >
           Contact

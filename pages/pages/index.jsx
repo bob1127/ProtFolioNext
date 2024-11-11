@@ -84,7 +84,7 @@ const Blog = ({ posts, categories, tags }) => {
           <div className="border-b-2 py-3 mb-3 border-black">
             <b className="text-[24px]">專案項目 / 精選網頁設計</b>
           </div>
-          <ul className=" flex flex-wrap justify-center w-full ">
+          <ul className=" flex flex-wrap  w-full ">
             <AnimatePresence>
               {filteredPosts.map((post) => (
                 <div className=" w-[400px] md:w-[330px]">

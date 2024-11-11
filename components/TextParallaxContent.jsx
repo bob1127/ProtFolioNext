@@ -300,12 +300,20 @@ export default function App() {
                       <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
                         選擇極客!!
                       </h3>
+                      <div className="block md:hidden">
+                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                          用工作室的價格
+                        </h3>
+                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                          建立專業級的網站
+                        </h3>
+                      </div>
                     </div>
                     <div className="slogan-footer flex justify-end py-[20px]">
                       Design By Jeek
                     </div>
                   </div>{" "}
-                  <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-full sm:w-[450px] rotate-3 justify-center items-center flex-col ">
+                  <div className="txt p-8 bg-white rounded-xl  hidden md:flex  pt-[40px]  w-full sm:w-[450px] rotate-3 justify-center items-center flex-col ">
                     <div className="slogan-title w-full flex justify-between">
                       <div>
                         {" "}
@@ -331,7 +339,7 @@ export default function App() {
                         ></Image>
                       </div>
                     </div>
-                    <div className="slogan-content border-b-2 border-gray-400 flex py-[30px] flex-wrap">
+                    <div className="slogan-content border-b-2 border-gray-400  py-[30px] hidden md:block flex-wrap">
                       <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
                         用工作室的價格
                       </h3>

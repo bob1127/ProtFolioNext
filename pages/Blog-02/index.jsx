@@ -75,6 +75,15 @@ export default function Blog() {
         <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
+              <section className="section_navgation pt-[50px] flex">
+                <a className="hover:font-black duration-300" href="/blogs">
+                  文章總覽
+                </a>{" "}
+                ←
+                <a href="/blog-01" className="hover:font-black duration-300">
+                  網頁設計很花錢嗎？
+                </a>
+              </section>
               <h1
                 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
                 data-aos="fade-blur"
@@ -175,7 +184,7 @@ export default function Blog() {
               </div>
               <div className=" w-full sm:w-[200px] justify-center">
                 <a
-                  href="/Contact"
+                  href="/contact"
                   data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
                   className="button-wrapper w-inline-block"
                 >
@@ -203,20 +212,20 @@ export default function Blog() {
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   <ul className="p-0 m-0">
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
                       內容撰寫：
                     </p>
                     <li>
                       您最了解您的品牌和服務，編寫網站的基本介紹、產品描述、服務項目和常見問題等內容，有助於節省成本。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
                       基本排版：
                     </p>
                     <li>
                       透過一些免費的網站建置工具，如 WordPress 或
                       Wix，您可以選擇基本的排版和佈局。這些工具提供許多現成模板，讓您能輕鬆上手設計基礎頁面。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
                       圖片與影片素材：
                     </p>
                     <li>
@@ -241,29 +250,30 @@ export default function Blog() {
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   <ul className="p-0 m-0">
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
                       專業設計與客製化：
                     </p>
                     <li>
                       我們可以為您的網站量身訂製專業設計，確保品牌形象在網站上完整呈現，並且根據您的需求調整版面和功能。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
                       SEO 優化：
                     </p>
                     <li>
                       如果您希望網站能在搜尋引擎上有良好的排名，專業的 SEO
                       優化是必須的。Jeek能夠針對關鍵字、頁面結構和網站速度進行全面的優化，提高您的網站曝光率。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
                       專業商業圖片拍攝與後製：
                     </p>
                     <li>
                       Jeek可協助您拍攝高品質的產品或形象照，並進行專業的後製處理，以確保圖片完美呈現於網站上，提升視覺效果。這不僅讓您的產品看起來更吸引人，也能增強品牌的專業形象。
                     </li>
-                    <div className="flex mb-[38px]">
+                    <div className="grid grid-cols-1  gap-2  md:grid-cols-3 mb-[38px]">
                       <Image
-                        src="/images/The Smallest Wireless Potentiostat- wireless charging.webp"
+                        src="/images/Untitled-Camera-2.png"
                         width={200}
+                        className="my-2 w-full fill object-contain mx-3"
                         alt="  商業3D建模-img01"
                         loading="lazy"
                         placeholder="empty"
@@ -272,6 +282,7 @@ export default function Blog() {
                       <Image
                         src="/images/The Smallest Wireless Potentiostat- wireless charging.webp"
                         width={200}
+                        className="my-2 w-full fill object-contain mx-3"
                         alt="  商業3D建模-img01"
                         loading="lazy"
                         placeholder="empty"
@@ -280,6 +291,7 @@ export default function Blog() {
                       <Image
                         src="/images/The Smallest Wireless Potentiostat-Smart Hub .webp"
                         width={200}
+                        className="my-2 w-full fill object-contain mx-3"
                         alt="  商業3D建模-img01"
                         loading="lazy"
                         placeholder="empty"
@@ -288,6 +300,7 @@ export default function Blog() {
                       <Image
                         src="/images/The Smallest Wireless Potentiostat-Box.webp"
                         width={200}
+                        className="my-2 w-full fill object-contain mx-3"
                         alt="  商業3D建模-img01"
                         loading="lazy"
                         placeholder="empty"
@@ -300,18 +313,20 @@ export default function Blog() {
                     <li>
                       想要展示產品的3D視覺效果嗎？我們提供商業3D建模服務，讓您的顧客能更直觀地查看產品細節。無論是用於互動展示還是產品展示頁面，3D模型都能為您的網站增添現代感，提升顧客體驗。
                     </li>
-                    <div className="flex mb-[38px]">
+                    <div className="grid grid-cols-1  gap-2  md:grid-cols-3 mb-[38px]">
                       <Image
                         src="/images/3d產品模型08-極客網頁設計|Blender3D.png"
                         width={200}
                         alt="  商業3D建模-img01"
                         loading="lazy"
+                        className="my-2 w-full fill object-contain mx-3"
                         placeholder="empty"
                         height={200}
                       ></Image>
                       <Image
                         src="/images/3d產品模型09-極客網頁設計|Blender3D.webp"
                         width={200}
+                        className="my-2 w-full fill object-contain mx-3"
                         alt="  商業3D建模-img01"
                         loading="lazy"
                         placeholder="empty"
@@ -320,6 +335,7 @@ export default function Blog() {
                       <Image
                         src="/images/3d產品模型06-極客網頁設計|Blender3D.webp"
                         width={200}
+                        className="my-2 w-full fill object-contain mx-3"
                         alt="  商業3D建模-img01"
                         loading="lazy"
                         placeholder="empty"

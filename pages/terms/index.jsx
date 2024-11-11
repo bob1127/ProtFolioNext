@@ -212,9 +212,9 @@ export default function Home() {
             />
           </span>
         </div>
-        <div className="terms-wrap  bg-white border w-[80vw] mx-auto p-10  shadow-xl rounded-xl">
+        <div className="terms-wrap  bg-white border w-[97%] md:w-[80vw] mx-auto p-8 md:p-10  shadow-xl rounded-xl">
           <h2>1.合作流程</h2>
-          <div className="grid  p-10 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-2">
+          <div className="grid  p-0 md:p-10 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-2">
             <div className="content p-10">
               <b className="text-[20px]">Step01</b>
               <p className="text-[20px]">確認雙方需求</p>
@@ -272,7 +272,7 @@ export default function Home() {
 
           <h2>2.服務範圍 (Scope of Work)</h2>
           <div>
-            <ul className=" ">
+            <ul className="p-0 m-0 ">
               <li className="text-[20px] mt-4 font-bold">• 網頁設計</li>
               <li className="text-[20px] mt-4 font-bold">• seo優化</li>
               <li className="text-[20px] mt-4 font-bold">• 3D建模</li>
@@ -283,9 +283,18 @@ export default function Home() {
               <li className="text-[20px] mt-4 font-bold">• 空拍攝影</li>
             </ul>
           </div>
-          <h2>3.項目時間表 (Timeline)</h2>
-          <ul></ul>
-          <h2>4.付款條款 (Payment Terms)</h2>
+          <h2>3.合約內容</h2>
+          <div>
+            <Image
+              src="/images/contract.png"
+              alt="合約內容下載"
+              placeholder="empty"
+              loading="lazy"
+              className=""
+              width={400}
+              height={400}
+            ></Image>
+          </div>
         </div>
       </div>
     </div>

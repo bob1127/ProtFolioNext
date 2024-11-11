@@ -57,7 +57,7 @@ export default function Blog() {
             <b>Welcom to JEEK !!</b>
           </div>
           <div className="sidebar border bg-blue-100 text-white border-black  p-1 hover:scale-105 duration-500 ">
-            <a href="/Contact" className="text-whtie font-bold">
+            <a href="/contact" className="text-whtie font-bold">
               Send Message to Email
             </a>
           </div>

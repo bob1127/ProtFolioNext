@@ -53,7 +53,7 @@ export default function App() {
           <section className="RWD  ">
             <div className="w-full flex-col items-center justify-center lg:flex-row flex">
               <div className="w-full bg-white lg:w-1/2  p-[25px] sm:p-[60px] flex justify-center items-center flex-col lg:p-[70px] ">
-                <div className="txt h-auto md:h-[60vh]">
+                <div className="txt h-auto ">
                   <h2 className="">"網頁設計-Website Design"</h2>
                   <h3>客製化網頁設計</h3>
                   <h3>響應式設計與行動裝置優先</h3>
@@ -81,10 +81,10 @@ export default function App() {
           </section>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center items-center text-lg">
-          <section className="RWD   ">
-            <div className="w-full flex-col items-center justify-center bg-white lg:flex-row flex">
-              <div className="w-full  lg:w-1/2 border-r-2 border-black p-[25px] sm:p-[60px] lg:p-[70px] overflow-y-scroll">
-                <div className="txt h-auto md:h-[60vh]">
+          <section className="RWD ">
+            <div className="w-full bg-white flex-col items-center justify-center lg:flex-row flex">
+              <div className="w-full lg:w-1/2  p-[25px] sm:p-[60px] lg:p-[70px] ">
+                <div className="txt h-auto ">
                   <h2 className="">"品牌與企業形象規劃"</h2>
                   <h3>CIS企業視覺識別</h3>
                   <h3>名片設計</h3>
@@ -93,24 +93,12 @@ export default function App() {
                     品牌規劃是一個系統性的過程，旨在創建、建立和管理一個品牌的形象、定位和價值。涉及品牌的核心價值、目標受眾和與消費者的長期關係。
                   </p>
                 </div>
-                {/* <div className="img my-5">
-                  <figure>
-                    <Image
-                      src="realistic-set-monitor-laptop-tablet-260nw-2430661189.jpg"
-                      loader={imageLoader01}
-                      loading="lazy"
-                      alt="realistic-set-monitor"
-                      width={500}
-                      height={300}
-                    />
-                  </figure>
-                </div> */}
               </div>
               <div className="w-full lg:w-1/2 overflow-hidden">
                 <figure>
                   {" "}
                   <Image
-                    src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.webp"
+                    src="/images/商業攝影_產品_banner-極客網頁設計.webp"
                     loading="lazy"
                     alt="製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計"
                     placeholder="empty"
@@ -125,8 +113,8 @@ export default function App() {
         <SwiperSlide className="flex justify-center items-center text-lg">
           <section className="RWD ">
             <div className="w-full bg-white flex-col items-center justify-center lg:flex-row flex">
-              <div className="w-full lg:w-1/2 border-r-2 border-black p-[25px] sm:p-[60px] lg:p-[70px] overflow-y-scroll">
-                <div className="txt h-auto md:h-[60vh]">
+              <div className="w-full lg:w-1/2  p-[25px] sm:p-[60px] lg:p-[70px] ">
+                <div className="txt h-auto ">
                   <h2 className="">"SEO行銷-Optimization"</h2>
                   <h3>網站速度優化、網站結構優化、行動裝置優化、用戶體驗</h3>
                   <p>
@@ -145,7 +133,7 @@ export default function App() {
                     />
                   </figure>
                 </div> */}
-                <div className=" overflow-x-scroll py-5 w-full  ">
+                <div className="  py-5 w-full  ">
                   <div className="w-[1000px] 2xl:w-full grid grid-cols-4 2xl:grid-cols-2  gap-2"></div>
                 </div>
               </div>
