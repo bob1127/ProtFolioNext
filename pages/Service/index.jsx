@@ -33,6 +33,17 @@ import Carousel04 from "../../components/EmblaCarousel04/EmblaCarousel.jsx";
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export default function Blog() {
+  const webpage = {
+    name: "我們提供的服務-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    description:
+      "極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。",
+    url: "https://www.jeek-webdesign.com.tw/terms",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "jeekdesign@gmail.com",
+    },
+  };
   // const defaultOptions02 = {
   //   loop: true,
   //   autoplay: true,
@@ -140,28 +151,35 @@ export default function Blog() {
     <div data-aos="fade-up">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="我們提供的服務-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。"
         />
         <meta
           property="og:image"
           content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
         />
-        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta
+          property="og:url"
+          content="https://www.jeek-webdesign.com.tw/service"
+        />
         <meta property="og:type" content="website" />
       </Head>
       <NextSeo
-        title="服務項目-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 高CP網站｜你的創意，我來實踐"
-        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        title="我們提供的服務-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        description="極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。"
         openGraph={{
-          title: "服務項目-極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          title:
+            "我們提供的服務-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
           description:
-            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+            "極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。",
           images: [
             {
-              url: "https://www.example.com/og-home.jpg",
+              url: "https://www.example.com/images/我們提供的服務-極客網頁設計.png",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -1178,7 +1196,7 @@ export default function Blog() {
                 </p>
               </a>
               <a
-                href="/blog-01"
+                href="/blog-02"
                 className="xl:w-1/2 mt-5 w-full mr-4 
               
                 

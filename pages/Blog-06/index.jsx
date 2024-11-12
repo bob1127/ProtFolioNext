@@ -9,6 +9,17 @@ import { Snippet } from "@nextui-org/react";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const webpage = {
+    name: "SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    description:
+      "SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。",
+    url: "https://www.jeek-webdesign.com.tw/blog-06",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "i.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
@@ -49,16 +60,22 @@ export default function Blog() {
       />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="SEO能帶來哪些好處呢？-極客網頁設計"
+        />
         <meta
           property="og:description"
           content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/SEO能帶來哪些好-極客網頁設計.webp"
         />
-        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta
+          property="og:url"
+          content="https://www.jeek-webdesign.com.tw/blog-06"
+        />
         <meta property="og:type" content="website" />
       </Head>
 
@@ -118,14 +135,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
                     網頁設計
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-white  ">
                     網頁行銷｜SEO
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   優化
                 </div>
               </div>

@@ -9,6 +9,17 @@ import { Snippet } from "@nextui-org/react";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const webpage = {
+    name: "無頭網站-高性能、SEO友善｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    description:
+      "Next.js 和 WordPress 結合打造無頭網站，能提升網站性能、內容管理和開發靈活性。透過靜態生成（SSG）、伺服器端渲染（SSR）和 CDN 優化，網站速度顯著提高，並透過 API 支援多渠道發佈。使用無頭架構，開發者可自由設計前端，同時利用 WordPress 強大的內容管理功能。相比傳統 WordPress 網站，無頭網站具有更好的 SEO 和安全性，適合需要高效性能和自訂設計的專案。",
+    url: "https://www.jeek-webdesign.com.tw/blog-10",
+    logo: "https://www.jeek-webdesign.com.tw/images/無頭網站_高性能seo有善-極客網頁設計.webp",
+    contact: {
+      phone: "+0939767977",
+      email: "i.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
@@ -49,17 +60,49 @@ export default function Blog() {
       />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="Next.js 和 WordPress 結合打造無頭網站，能提升網站性能、內容管理和開發靈活性。透過靜態生成（SSG）、伺服器端渲染（SSR）和 CDN 優化，網站速度顯著提高，並透過 API 支援多渠道發佈。使用無頭架構，開發者可自由設計前端，同時利用 WordPress 強大的內容管理功能。相比傳統 WordPress 網站，無頭網站具有更好的 SEO 和安全性，適合需要高效性能和自訂設計的專案。"
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/無頭網站_高性能seo有善-極客網頁設計.webp"
         />
-        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta
+          property="og:url"
+          content="https://www.jeek-webdesign.com.tw/blog-10"
+        />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
 
       {/* <Script
@@ -121,14 +164,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] text-black px-3 py-1 bg-[#80aad9]  ">
                     網頁設計
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] text-black px-3 py-1 bg-white  ">
                     框架架構
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   建置
                 </div>
               </div>

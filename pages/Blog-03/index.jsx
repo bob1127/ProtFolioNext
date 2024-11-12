@@ -6,6 +6,17 @@ import { NextSeo } from "next-seo";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const webpage = {
+    name: "如何增加搜尋引擎曝光度和排名？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    description:
+      "透過關鍵字研究、內容優化、網站速度提升、行動友善設計及外部連結建立等策略，您可以顯著提升網站在搜尋引擎中的排名和曝光度。這些方法不僅能增加網站的可見性，還能有效吸引目標客戶並提升品牌影響力",
+    url: "https://www.jeek-webdesign.com.tw/blog-03",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "i.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
@@ -58,6 +69,32 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
 
       {/* <Script
@@ -121,14 +158,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
                     網頁設計
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-white  ">
                     SEO
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   搜尋引擎排名
                 </div>
               </div>

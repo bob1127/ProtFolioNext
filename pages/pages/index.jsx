@@ -46,7 +46,7 @@ const Blog = ({ posts, categories, tags }) => {
           width={2000}
           height={1080}
         ></Image>
-        <div className="txt absolute left-[10%] top-[20%] ">
+        <div className="txt absolute z-[999999999999] left-[10%] top-[20%] ">
           <h1 className="text-white">精選專案</h1>
           <div className="btn-wrap">
             <button className="bg-white">Clik Me</button>

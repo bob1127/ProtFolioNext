@@ -6,6 +6,17 @@ import { NextSeo } from "next-seo";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const webpage = {
+    name: "網頁設計很花錢嗎？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    description:
+      "SEO（搜尋引擎優化）是一套策略，透過選擇可靠主機、使用HTTPS、提升網站速度與行動端體驗等方法，幫助網站在搜尋結果中獲得更高排名。透過關鍵詞規劃和內容優化，SEO能提升曝光度，吸引精準流量。SEO是長期策略，但能帶來持久效果，讓網站獲得穩定流量並促進業務成長。",
+    url: "https://www.jeek-webdesign.com.tw/blog-02",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "i.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
@@ -32,6 +43,32 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
       <NextSeo
         title="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
@@ -99,14 +136,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
                     網頁設計
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-white  ">
                     SEO
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   搜尋引擎排名
                 </div>
               </div>
@@ -133,7 +170,9 @@ export default function Blog() {
                 大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
                 <br></br> <br></br>
                 行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
-                <span className="bg-blue-100">網站設計和SEO優化</span>
+                <span className="bg-[#fad335] text-black">
+                  網站設計和SEO優化
+                </span>
                 ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
               </p>
             </div>
@@ -307,7 +346,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                     </div>
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
                       商業3D建模：
                     </p>
                     <li>
@@ -342,7 +381,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                     </div>
-                    <p className="inline-block text-[18px] mt-3 bg-blue-600 text-white">
+                    <p className="inline-block text-[18px] mt-3bg-[#fad335] text-black">
                       進階功能開發：
                     </p>
                     <li>

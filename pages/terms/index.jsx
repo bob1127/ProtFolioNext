@@ -19,7 +19,7 @@ export default function Home() {
     description:
       "    需求確認後，雙方應共同制定書面合約，該合約將包括具體的服務內容、預計交付時間、付款方式及其他相關條款，並經雙方簽字確認後生效。",
     url: "https://www.jeek-webdesign.com.tw/terms",
-    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo_web_title.png",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
     contact: {
       phone: "+0939767977",
       email: "jeekdesign@gmail.com",

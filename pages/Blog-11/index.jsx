@@ -9,6 +9,17 @@ import { Snippet } from "@nextui-org/react";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const webpage = {
+    name: "如何創建並串接GoogleTagManager?｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    description:
+      "Google Tag Manager (GTM) 和 Google Analytics 4 (GA4) 的整合能有效提升網站數據追蹤和分析。首先，註冊並設置 GTM，安裝代碼到網站後，新增 GA4 標籤並設置測量 ID。接著，在 GA4 中創建帳戶並獲取測量 ID，將其與 GTM 進行對接。完成後，測試標籤觸發是否正常，並發布更新。這樣便可開始收集並分析網站數據，提升行銷和用戶體驗。",
+    url: "https://www.jeek-webdesign.com.tw/blog-11",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "i.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
@@ -23,18 +34,17 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title="分析網頁 SEO 成效指標-Blog文章｜極客網頁設計
-"
-        description="了解如何透過關鍵 SEO 成效指標來提升網站排名，並獲得更多流量。本文深入解析網站數據分析，為您帶來更精準的 SEO 策略建議！"
+        title="如何創建並串接GoogleTagManager?｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐"
+        description="Google Tag Manager (GTM) 和 Google Analytics 4 (GA4) 的整合能有效提升網站數據追蹤和分析。首先，註冊並設置 GTM，安裝代碼到網站後，新增 GA4 標籤並設置測量 ID。接著，在 GA4 中創建帳戶並獲取測量 ID，將其與 GTM 進行對接。完成後，測試標籤觸發是否正常，並發布更新。這樣便可開始收集並分析網站數據，提升行銷和用戶體驗。"
         openGraph={{
           url: "www.jeek-webdesign.com",
           title:
-            "   如何創建 Google Tag Manager (GTM) 並串接 Google Analytics 4 ",
+            "如何創建並串接GoogleTagManager?｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
           description:
-            "了解如何透過關鍵 SEO 成效指標來提升網站排名，並獲得更多流量。本文深入解析網站數據分析，為您帶來更精準的 SEO 策略建議！",
+            "Google Tag Manager (GTM) 和 Google Analytics 4 (GA4) 的整合能有效提升網站數據追蹤和分析。首先，註冊並設置 GTM，安裝代碼到網站後，新增 GA4 標籤並設置測量 ID。接著，在 GA4 中創建帳戶並獲取測量 ID，將其與 GTM 進行對接。完成後，測試標籤觸發是否正常，並發布更新。這樣便可開始收集並分析網站數據，提升行銷和用戶體驗。",
           images: [
             {
-              url: "www.jeek-webdesign.com.tw/",
+              url: "www.jeek-webdesign.com.tw/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.png",
               width: 1200,
               height: 630,
               alt: "",
@@ -50,17 +60,49 @@ export default function Blog() {
       />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="如何創建並串接GoogleTagManager?-極客網頁設計"
+        />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="Google Tag Manager (GTM) 和 Google Analytics 4 (GA4) 的整合能有效提升網站數據追蹤和分析。首先，註冊並設置 GTM，安裝代碼到網站後，新增 GA4 標籤並設置測量 ID。接著，在 GA4 中創建帳戶並獲取測量 ID，將其與 GTM 進行對接。完成後，測試標籤觸發是否正常，並發布更新。這樣便可開始收集並分析網站數據，提升行銷和用戶體驗。"
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="www.jeek-webdesign.com.tw/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.png"
         />
-        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta
+          property="og:url"
+          content="https://www.jeek-webdesign.com.tw/blog-11"
+        />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
 
       <div>
@@ -99,14 +141,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] text-black px-3 py-1 bg-[#80aad9]  ">
                     網頁行銷
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] text-black px-3 py-1 bg-white  ">
                     數據追蹤
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   GTM / GA4
                 </div>
               </div>

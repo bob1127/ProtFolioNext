@@ -8,11 +8,11 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    name: "Spline 3D 入門指南｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
-      "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
-    url: "https://www.jeek-webdesign.com.tw",
-    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo_web_title.png",
+      "Spline 3D 是一款雲端 3D 設計工具，適合各級設計師和開發者使用。透過其直觀介面，使用者可輕鬆創建與編輯3D模型，包括基本形狀、材質設定、光源控制及動畫製作。Spline 支援多種模型格式，並提供互動設計功能，讓模型隨著用戶操作觸發動畫效果，增強參與感。從註冊到操作，Spline 為用戶提供全面的 3D 創作體驗，是入門 3D 設計的理想工具。",
+    url: "https://www.jeek-webdesign.com.tw/blog-05",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
     contact: {
       phone: "+0939767977",
       email: "i.com",
@@ -67,6 +67,32 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
 
       {/* <Script
@@ -131,14 +157,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
                     網頁設計
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-white  ">
                     3d 軟體應用
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   設計
                 </div>
               </div>

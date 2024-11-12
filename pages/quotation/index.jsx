@@ -42,6 +42,17 @@ const Lottie = dynamic(() => import("react-lottie"), {
 });
 
 export default function Blog() {
+  const webpage = {
+    name: "精選方案報價-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 超優惠內容專案，歡迎聯繫",
+    description:
+      "極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。",
+    url: "https://www.jeek-webdesign.com.tw/quotation",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "jeekdesign@gmail.com",
+    },
+  };
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [backdrop, setBackdrop] = React.useState("opaque");
 
@@ -159,14 +170,17 @@ export default function Blog() {
     <div className="bg-[#faf9f8]" data-aos="fade-up">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="精選方案報價-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 超優惠內容專案，歡迎聯繫"
+        />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。"
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/自由工作接案者-極客網頁設計.webp"
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
@@ -182,7 +196,7 @@ export default function Blog() {
             "專業的網頁設計與SEO優化服務，靈活的自由接案者提供客製化解決方案，讓您的網站脫穎而出。聯繫我們，讓我們幫助您提升品牌形象，實現業務目標！",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png",
+              url: "https://www.jeek-webdesign.com.tw/images/自由工作接案者-極客網頁設計.webp",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -693,6 +707,25 @@ export default function Blog() {
                 }}
               >
                 <GsapText
+                  text=' "什麼！？ 網站只要20000?" '
+                  lineHeight="70px"
+                  id="text2"
+                  fontSize="60px"
+                />
+                {/* "為什麼要選擇自由接案者？" */}
+              </h2>
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="400"
+                className="  md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
+                style={{
+                  marginBottom: 30,
+                  display: "flex",
+                  justifyContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                <GsapText
                   text=' "客製化網頁設計" '
                   lineHeight="70px"
                   id="text2"
@@ -724,9 +757,9 @@ export default function Blog() {
                 </span>
                 。 */}
               </p>
-              <p className="text-center mb-[60px] mt-[30px]  xl:text-[22px] md:text-[26px] text-[15px] ">
+              {/* <p className="text-center mb-[60px] mt-[30px]  xl:text-[22px] md:text-[26px] text-[15px] ">
                 選擇JEEK 幫助您實現創意發想
-              </p>
+              </p> */}
               <section className="section-carousel   flex-col   px-0 xl:px-[70px] md:flex-row flex ">
                 <div className="left-txt flex-col flex justify-start items-center  w-full mt-5 md:w-[30%]">
                   <div>
@@ -752,7 +785,7 @@ export default function Blog() {
                 </div>
                 <div className="img mt-4 xl:mt-0 xl:my-0  mb-0 xl:mb-[30px] w-full md:w-[40%] overflow-hidden">
                   <Image
-                    src="/images/自由工作接案者-極客網頁設計.webp"
+                    src="/images/fantastic_hare_36410_3d_Characters_Surprised_Face_34f30a33-5f17-46e5-a437-01b7825d03ec-Photoroom.png"
                     alt="自由接案工作者-freeLancer-極客網頁設計"
                     placeholder="empty"
                     data-aos="zoom-in-up"

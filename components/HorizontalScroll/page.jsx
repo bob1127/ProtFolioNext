@@ -89,7 +89,7 @@ const HorizontalScroll = () => {
           </g>
         </svg>
         <a
-          href="Blog-01"
+          href="/blog-01"
           className="w-[400px] mt-[80px] duration-150 hover:scale-95"
         >
           <section className="w-[40vw] xl:w-[24vw] bg-white mx-1 xl:mx-5 border border-black p-2">
@@ -113,7 +113,7 @@ const HorizontalScroll = () => {
           </section>
         </a>
         <a
-          href="Blog-03"
+          href="/blog-03"
           className=" mt-[80px]  w-[400px] duration-150 hover:scale-95"
         >
           <section className="w-[40vw] xl:w-[22vw] bg-white border xl:mx-5 mx-1 border-black p-2">
@@ -139,7 +139,7 @@ const HorizontalScroll = () => {
           <b className="text-[70px] font-extrabold">WEBSITE</b>
         </div>
         <a
-          href="Blog-02"
+          href="/blog-02"
           className=" mt-[80px]  w-[400px] duration-150 hover:scale-95"
         >
           <section className="w-[40vw] xl:w-[27vw] bg-white border xl:mx-5 mx-1 border-black p-2">

@@ -9,6 +9,17 @@ import { Snippet } from "@nextui-org/react";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const webpage = {
+    name: " Hotjar：深入洞察用戶行為，助力網站轉換率提升",
+    description:
+      "Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。",
+    url: "https://www.jeek-webdesign.com.tw/blog-07",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "jeekdesign@gmail.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
@@ -23,12 +34,13 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title=""
-        description=""
+        title="Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計"
+        description="Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。"
         openGraph={{
           url: "",
           title: "",
-          description: "",
+          description:
+            "Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。",
           images: [
             {
               url: "",
@@ -47,10 +59,14 @@ export default function Blog() {
       />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計"
+        />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="
+Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。"
         />
         <meta
           property="og:image"
@@ -58,6 +74,32 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
 
       {/* <Script
@@ -88,6 +130,7 @@ export default function Blog() {
             src="https://www.ultraehp.com/images/test-portfolio/blog-cover.png"
             width={1920}
             height={768}
+            alt="cover-img"
             placeholder="empty"
             className="rounded-md"
           ></Image>
@@ -116,14 +159,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
                     數據分析
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] border-black text-black px-3 py-1 bg-white  ">
                     數據分析軟體
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   seo
                 </div>
               </div>
@@ -133,6 +176,7 @@ export default function Blog() {
             <Image
               src="/images/phppeon8m-6317b85f04714.svg"
               width={700}
+              alt="HotjarLogo"
               height={500}
               loading="lazy"
               className="rounded-md mt-3"
@@ -199,7 +243,7 @@ export default function Blog() {
                   alt="hotjar熱點圖-極客設計"
                   loading="lazy"
                   placeholder="empty"
-                  className=""
+                  className="mt-4"
                   width={800}
                   height={500}
                 ></Image>
@@ -213,6 +257,7 @@ export default function Blog() {
                   alt="hotjar訪客錄像-recording"
                   width={700}
                   height={500}
+                  className="mt-4"
                   placeholder="empty"
                   loading="lazy"
                 ></Image>

@@ -109,7 +109,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="right w-full md:w-[60%] border  h-full overflow-scroll py-10">
+          <div className="right w-full md:w-[60%]   h-full overflow-scroll py-10">
             <div className="from flex justify-center items-center  overflow-y-scroll md:h-auto h-[170vh] bg-white p-2 xl:p-[40px] border-black-rgba ">
               <NewsletterForm />
             </div>

@@ -9,6 +9,17 @@ import { Snippet } from "@nextui-org/react";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const webpage = {
+    name: "Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    description:
+      "Photoshop 2024 推出的 AI 漸進式填充功能，利用 Adobe Sensei 的生成式 AI 技術，能智能地填補圖像中的空白區域，相較於傳統的內容感知填充更精確自然。設計師可以靈活控制填充細節，適用於修補、擴展和創造性生成，讓設計過程更加高效。此功能不僅提升了自動化程度，還拓展了創意可能，縮短了工作時間，為設計師帶來全新的創作體驗，是設計效率的革命性進展。",
+    url: "https://www.jeek-webdesign.com.tw/blog-08",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "i.com",
+    },
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
@@ -33,7 +44,7 @@ export default function Blog() {
             "精準提升網站成效！深入解析 SEO 指標，從 GA4 用戶數、有機流量到跳出率，並結合 Google Search Console 的 CTR 和平均排名，助您有效優化流量、提升品牌曝光及網站排名。",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/1695104289033.png",
+              url: "https://www.jeek-webdesign.com.tw/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.png",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -57,10 +68,36 @@ export default function Blog() {
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.png"
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
 
       {/* <Script
@@ -119,14 +156,14 @@ export default function Blog() {
               </div>
               <div className="pb-[40px] title-content mt-4 flex flex-row justify-between border-b border-[#d1d1d1]">
                 <div className="flex flex-row">
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-[#80aad9]  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] text-black px-3 py-1 bg-[#80aad9]  ">
                     SEO行銷
                   </div>
-                  <div className="border mx-3 font-bold  text-[16px] border-black text-black px-3 py-1 bg-white  ">
+                  <div className="border mx-3 font-bold  text-[14px] md:text-[20px] text-black px-3 py-1 bg-white  ">
                     網頁行銷｜SEO
                   </div>
                 </div>
-                <div className="border border-black text-[20px] bg-white px-3 py-1 text-black">
+                <div className="border border-black text-[14px] md:text-[20px] bg-white px-3 py-1 text-black">
                   數據分析
                 </div>
               </div>

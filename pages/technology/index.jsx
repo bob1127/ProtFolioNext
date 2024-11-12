@@ -14,9 +14,9 @@ export default function Blog() {
   const webpage = {
     name: "網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
-      " JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。。",
+      "極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。",
     url: "https://www.jeek-webdesign.com.tw/terms",
-    logo: "https://www.jeek-webdesign.com.tw/images/JeekLogo_web_title.png",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
     contact: {
       phone: "+0939767977",
       email: "jeekdesign@gmail.com",
@@ -37,17 +37,18 @@ export default function Blog() {
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
       <NextSeo
         title="網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
-        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        description="極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。"
         openGraph={{
-          title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
+          title:
+            "網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
           description:
-            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+            "極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/",
+              url: "https://www.jeek-webdesign.com.tw/images/peromace.webp",
               width: 800,
               height: 600,
-              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+              alt: "網頁技術介紹_極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
         }}
@@ -68,16 +69,22 @@ export default function Blog() {
         </div> */}
         <Head>
           <link rel="icon" href="/favicon/favicon.ico" />
-          <meta property="og:title" content="關於我們-極客網頁設計" />
+          <meta
+            property="og:title"
+            content="網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+          />
           <meta
             property="og:description"
-            content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+            content="極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。"
           />
           <meta
             property="og:image"
-            content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+            content="https://www.jeek-webdesign.com.tw/images/peromace.webp"
           />
-          <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+          <meta
+            property="og:url"
+            content="https://www.jeek-webdesign.com.tw/technology"
+          />
           <meta property="og:type" content="website" />
         </Head>
 
@@ -907,7 +914,7 @@ export default function Blog() {
                         />{" "}
                         <h2
                           data-aos="fade-up"
-                          className="heading is-extralarge text-[]"
+                          className="heading leading-normal text-[30px] is-extralarge "
                         ></h2>
                         <a
                           id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
@@ -941,7 +948,7 @@ export default function Blog() {
                               alt=""
                             /> */}
                             <br></br>
-                            <p className="text-[20px] font-normal">
+                            <p className="text-[16px] font-normal">
                               高曝光率的搜索排名有助於提高品牌知名度，使潛在客戶更容易記住你的品牌。
                             </p>
                           </a>
@@ -1238,7 +1245,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blogs"
+                        href="/blog-01"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1291,7 +1298,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blogs"
+                        href="/blog-02"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
@@ -1344,7 +1351,7 @@ export default function Blog() {
                         aria-label="Blog post link"
                         id="w-node-_0ba56e40-3053-ed79-2168-e6c34377f6cf-c41abecd"
                         data-w-id="0ba56e40-3053-ed79-2168-e6c34377f6cf"
-                        href="/blogs"
+                        href="/blog-06"
                         className="main-container is-blog-container w-inline-block"
                       >
                         <div
