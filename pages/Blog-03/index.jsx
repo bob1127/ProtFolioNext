@@ -102,7 +102,7 @@ export default function Blog() {
                   文章總覽
                 </a>{" "}
                 ←
-                <a href="/blog-01" className="hover:font-black duration-300">
+                <a href="/blog-03" className="hover:font-black duration-300">
                   如何增加搜尋引擎曝光度和排名?
                 </a>
               </section>

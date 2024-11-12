@@ -126,7 +126,7 @@ const SlideTabs = () => {
           Contact
         </a>
       </div>
-      <div className="fixed z-[99999] bg-white/60 bg-blue-50 right-[20px] px-2 border top-[30%] flex flex-col justify-center items-center border-[#b0b0b0] rounded-xl">
+      <div className="fixed bottom- z-[99999] bg-white/60 bg-blue-50  px-2 border sm:top-[30%] flex  flex-row  w-[94vw] mx-auto sm:mx-0   top-[85vh] h-[90px] sm:h-auto sm:bottom sm:right-[20px] sm:w-auto  sm:flex-col justify-center items-center right-[0px] border-[#b0b0b0] rounded-xl">
         <a href="#">
           <div className="flex flex-col justify-center items-center my-2">
             <Image

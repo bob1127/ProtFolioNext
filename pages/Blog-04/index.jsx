@@ -99,7 +99,7 @@ export default function Blog() {
                   文章總覽
                 </a>{" "}
                 ←
-                <a href="/blog-01" className="hover:font-black duration-300">
+                <a href="/blog-04" className="hover:font-black duration-300">
                   MidJourney 快速上手指南
                 </a>
               </section>

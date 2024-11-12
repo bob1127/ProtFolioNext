@@ -80,7 +80,7 @@ export default function Blog() {
                   文章總覽
                 </a>{" "}
                 ←
-                <a href="/blog-01" className="hover:font-black duration-300">
+                <a href="/blog-02" className="hover:font-black duration-300">
                   網頁設計很花錢嗎？
                 </a>
               </section>

@@ -112,7 +112,7 @@ export default function Blog() {
                   文章總覽
                 </a>{" "}
                 ←
-                <a href="/blog-01" className="hover:font-black duration-300">
+                <a href="/blog-05" className="hover:font-black duration-300">
                   Spline 3D 入門指南
                 </a>
               </section>

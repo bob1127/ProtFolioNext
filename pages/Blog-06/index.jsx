@@ -102,7 +102,7 @@ export default function Blog() {
                   文章總覽
                 </a>{" "}
                 ←
-                <a href="/blog-01" className="hover:font-black duration-300">
+                <a href="/blog-06" className="hover:font-black duration-300">
                   SEO能帶來哪些好處呢？
                 </a>
               </section>

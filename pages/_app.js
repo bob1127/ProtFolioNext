@@ -13,6 +13,7 @@ import Image from 'next/image';
 import Nav from '../components/sideTabs/index'
 import { useEffect } from 'react';
 import { NextSeo } from 'next-seo';
+import PrivacyPopup from '../components/PrivacyPopup.jsx'
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
 // import MobileHeader from '../components/MobileHeader/page'
 
@@ -129,6 +130,7 @@ export default function MyApp({ Component, pageProps, router }) {
          </div>
 
         <div className='main overflow-hidden'>
+          <PrivacyPopup/>
           <div className=''>
             <NextUIProvider>
               <AnimatePresence mode='wait'>

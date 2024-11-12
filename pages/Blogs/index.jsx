@@ -40,7 +40,7 @@ export default function Blog() {
               url: "https://www.jeek-webdesign.com.tw/images/新網站SEO規劃-極客網頁設計.webp",
               width: 800,
               height: 600,
-              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+              alt: "極客網頁設計文章｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
         }}
@@ -284,7 +284,7 @@ export default function Blog() {
                 <div className="Hot-article flex md:flex-row flex-col">
                   <a
                     href="/blog-05"
-                    className=" w-full  md:w-1/2 m-2 group rounded-xl overflow-hidden relative"
+                    className=" w-full duration-300 hover:scale-105   md:w-1/2 m-2 group rounded-xl overflow-hidden relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
                     <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
@@ -310,7 +310,7 @@ export default function Blog() {
                   </a>
                   <a
                     href="/blog-01"
-                    className="w-full group md:w-1/2 m-2 rounded-xl overflow-hidden  relative"
+                    className="w-full duration-300 hover:scale-105  group md:w-1/2 m-2 rounded-xl overflow-hidden  relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full "></div>
                     <figure>
@@ -330,7 +330,7 @@ export default function Blog() {
                 <div className="others-article pt-8 ">
                   <a
                     href="/blog-05"
-                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -360,7 +360,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-08"
-                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -386,7 +386,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-02"
-                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -408,8 +408,33 @@ export default function Blog() {
                   </a>
 
                   <a
+                    href="/blog-07"
+                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
+                  >
+                    <div className="img w-full md:w-[35%] p-5">
+                      <Image
+                        src="/images/phppeon8m-6317b85f04714.svg"
+                        alt="頁設計很花錢嗎-極客網頁設計_網頁seo行銷"
+                        width={800}
+                        height={600}
+                        placeholder="empty"
+                        loading="lazy"
+                        className="fill rounded-md"
+                      ></Image>
+                    </div>
+                    <div className="text w-full md:w-[65%] p-5">
+                      <h3 className="text-[18px]">
+                        Hotjar：深入洞察用戶行為， 助力網站轉換率提升
+                      </h3>
+                      <p className="text-[14px] mt-3 w-[80%]">
+                        使用它可以更了解訪客在你的網站上是如何互動的。
+                      </p>
+                    </div>
+                  </a>
+
+                  <a
                     href="/blog-03"
-                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -434,7 +459,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-06"
-                    className="article-item border-t-2 border-b-2 flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
