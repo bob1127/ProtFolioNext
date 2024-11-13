@@ -35,18 +35,18 @@ export default function Blog() {
         title=""
         description=""
         openGraph={{
-          url: "",
-          title: "",
+          url: "https://www.jeek-webdesign.com.tw/blog-04",
+          title: "輕鬆進入 AI 藝術世界，MidJourney快速上手指南",
           description: "",
           images: [
             {
-              url: "",
+              url: "https://www.jeek-webdesign.com.tw/images/midjourney.jpg",
               width: 1200,
               height: 630,
-              alt: "社交媒體行銷策略",
+              alt: "MidJourney快速上手指南",
             },
           ],
-          site_name: "你的網站名稱",
+          site_name: "極客網頁設計",
         }}
         twitter={{
           handle: "@twitterhandle",
@@ -63,7 +63,7 @@ export default function Blog() {
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/midjourney.jpg"
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />

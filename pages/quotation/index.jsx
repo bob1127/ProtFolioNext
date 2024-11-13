@@ -215,10 +215,10 @@ export default function Blog() {
         backdrop={backdrop}
         isOpen={isOpen}
         onClose={onClose}
-        className="bg-white   p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-scroll  absolute w-[100%]  sm:w-[500px] z-[9999999999999999999999999] lg:w-[65%] border-2 border-black rounded-xl"
+        className="bg-white   p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-scroll   absolute w-[100%]  sm:w-[500px] z-[9999999999999999999999999] lg:w-[65%] border-2 border-black rounded-xl"
       >
         <ModalContent
-          className="bg-white fixed top-[10%] border-t-1  p-10  rounded-t-[30px] h-auto z-[99999999999999999999999999]"
+          className="bg-white fixed top-[10%] border-t-1  p-1 lg:p-10   py-2 rounded-t-[30px] h-auto z-[99999999999999999999999999]"
           style={{
             width: "auto",
             maxWidth: "98vw",
@@ -707,32 +707,14 @@ export default function Blog() {
                 }}
               >
                 <GsapText
-                  text=' "什麼！？ 網站只要20000?" '
+                  text=' "什麼！？ 網站只要30000?" '
                   lineHeight="70px"
                   id="text2"
                   fontSize="60px"
                 />
                 {/* "為什麼要選擇自由接案者？" */}
               </h2>
-              <h2
-                data-aos="fade-up"
-                data-aos-delay="400"
-                className="  md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
-                style={{
-                  marginBottom: 30,
-                  display: "flex",
-                  justifyContent: "center",
-                  textAlign: "center",
-                }}
-              >
-                <GsapText
-                  text=' "客製化網頁設計" '
-                  lineHeight="70px"
-                  id="text2"
-                  fontSize="60px"
-                />
-                {/* "為什麼要選擇自由接案者？" */}
-              </h2>
+
               <p className="text-[16px]  mt-4 md:w-[80%] w-full xl:w-[60%] mx-auto px-[30px] leading-[32px] text-center ">
                 {" "}
                 {/* freelancer 比起設計公司，更有時間處理您的專案。
@@ -813,12 +795,94 @@ export default function Blog() {
                     href="/contact"
                     className="bg-[#ffffff] mt-3 duration-200 text-[50px] rounded-md px-4 text-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
                   >
-                    40,000
+                    30,000
                   </a>
                 </div>
               </section>
             </section>
             {/* <Carousel04 /> */}
+            <section className="image-carousel mt-[80px]">
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="400"
+                className=" md:w-2/3 leading-normal sm:w-full lg:w-1/2  text-[32px] w-[90%]  md:text-[45px] xl:text-[50px]  mx-auto"
+                style={{
+                  marginBottom: 30,
+                  display: "flex",
+                  justifyContent: "center",
+                  textAlign: "center",
+                }}
+              >
+                現在購買任一專案即贈送免費商業攝影10張(含後製)!!!
+              </h2>
+              <Marquee>
+                <div>
+                  <Image
+                    src="/images/The Smallest Wireless Potentiostat-Box.webp"
+                    placeholder="empty"
+                    width={350}
+                    height={400}
+                    className="mx-2"
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/The Smallest Wireless Potentiostat-Soil testing.webp"
+                    placeholder="empty"
+                    width={350}
+                    className="mx-2"
+                    height={400}
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/The Smallest Wireless Potentiostat-Open Box.webp"
+                    placeholder="empty"
+                    width={350}
+                    height={400}
+                    className="mx-2"
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/The Smallest Wireless Potentiostat-FingerSize.webp"
+                    placeholder="empty"
+                    width={350}
+                    height={400}
+                    className="mx-2"
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/3dmodel01.png"
+                    placeholder="empty"
+                    width={350}
+                    height={400}
+                    className="mx-2"
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/A25M0121-DT03-V1_DTC_3078x.jpg.png"
+                    placeholder="empty"
+                    width={350}
+                    height={400}
+                    className="mx-2"
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/Untitled-Camera-2.png"
+                    placeholder="empty"
+                    width={350}
+                    height={400}
+                    className="mx-2"
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                </div>
+              </Marquee>
+            </section>
 
             <section className="section relative">
               <div className="container">

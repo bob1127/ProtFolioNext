@@ -32,16 +32,22 @@ export default function Blog() {
     <div className="bg-[#f9f9f8]">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+        />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。"
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png"
         />
-        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta
+          property="og:url"
+          content="https://www.jeek-webdesign.com.tw/blog-02"
+        />
         <meta property="og:type" content="website" />
         <script
           type="application/ld+json"
@@ -80,7 +86,7 @@ export default function Blog() {
             "透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp",
+              url: "https://www.jeek-webdesign.com.tw/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -272,8 +278,7 @@ export default function Blog() {
                     </li>
                     <a
                       id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      target="_blank"
-                      href="https://search.google.com/search-console/quotation"
+                      href="/blog-04"
                       className="simple-link"
                     >
                       學習如何使用 Midjurney 生成圖片

@@ -44,7 +44,7 @@ export default function Blog() {
             "Google Tag Manager (GTM) 和 Google Analytics 4 (GA4) 的整合能有效提升網站數據追蹤和分析。首先，註冊並設置 GTM，安裝代碼到網站後，新增 GA4 標籤並設置測量 ID。接著，在 GA4 中創建帳戶並獲取測量 ID，將其與 GTM 進行對接。完成後，測試標籤觸發是否正常，並發布更新。這樣便可開始收集並分析網站數據，提升行銷和用戶體驗。",
           images: [
             {
-              url: "www.jeek-webdesign.com.tw/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.png",
+              url: "www.jeek-webdesign.com.tw/images/",
               width: 1200,
               height: 630,
               alt: "",

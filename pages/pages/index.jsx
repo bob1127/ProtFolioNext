@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Head from "next/head";
+import { NextSeo } from "next-seo";
 export async function getStaticProps() {
   const postsRes = await fetch(
     "https://zensorrd.com/portfolio/wp-json/wp/v2/posts?_embed"
@@ -29,6 +31,18 @@ export async function getStaticProps() {
 }
 
 const Blog = ({ posts, categories, tags }) => {
+  const webpage = {
+    name: "精選案例－極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    description:
+      "極客網頁設計（JEEK Webdesign）提供專業形象官網、商業攝影、客製化及套版網站設計服務，專注於實現創意，助企業提升品牌形象。我們位於台中，提供從設計到開發的全面支援，讓您的網站更具吸引力與競爭力。",
+    url: "https://www.jeek-webdesign.com.tw/pages",
+    logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
+    contact: {
+      phone: "+0939767977",
+      email: "i.com",
+    },
+  };
+
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const filteredPosts = selectedCategory
@@ -37,6 +51,57 @@ const Blog = ({ posts, categories, tags }) => {
 
   return (
     <div className=" flex border border-black justify-center w-full flex-col">
+      <NextSeo
+        title="精選案例－極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐"
+        description="極客網頁設計（JEEK Webdesign）提供專業形象官網、商業攝影、客製化及套版網站設計服務，專注於實現創意，助企業提升品牌形象。我們位於台中，提供從設計到開發的全面支援，讓您的網站更具吸引力與競爭力。"
+        openGraph={{
+          title:
+            "精選案例－極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+          description:
+            "極客網頁設計（JEEK Webdesign）提供專業形象官網、商業攝影、客製化及套版網站設計服務，專注於實現創意，助企業提升品牌形象。我們位於台中，提供從設計到開發的全面支援，讓您的網站更具吸引力與競爭力。",
+          images: [
+            {
+              url: "https://www.jeek-webdesign.com.tw/images/精選案例-極客網頁設計.png",
+              width: 800,
+              height: 600,
+              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+            },
+          ],
+        }}
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "網站設計, SEO優化, 成本控制, 網頁設計公司, 行動友善, 3D建模, 品牌形象提升, 自然流量, 搜尋引擎排名, 網站速度優化, 外部連結, Google PageSpeed Insights, 關鍵字規劃, 網站可見性, 數位行銷, 網站建置",
+          },
+        ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: webpage.name,
+            description: webpage.description,
+            url: webpage.url,
+            publisher: {
+              "@type": "Organization",
+              name: webpage.name,
+              logo: {
+                "@type": "ImageObject",
+                url: webpage.logo,
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: webpage.contact.phone,
+                contactType: "Customer Service",
+                email: webpage.contact.email,
+              },
+            },
+          }),
+        }}
+      />
       <section className="section_Hero overflow-hidden relative">
         <div className="cover absolute top-0 left-0  w-full h-full bg-black z-[999] opacity-50"></div>
         <Image

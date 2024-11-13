@@ -720,7 +720,82 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            <section className="section">
+            <section>
+              <Marquee>
+                <div>
+                  <Image
+                    src="/images/3dmodel05.png"
+                    placeholder="empty"
+                    width={500}
+                    height={500}
+                    className="mx-auto"
+                    alt="3d建模產品"
+                    loading="lazy"
+                  ></Image>
+                </div>
+                <div className="text-[18px] font-bold">3D Model.</div>
+                <div>
+                  <Image
+                    src="/images/3d產品模型04-極客網頁設計_Blender3D.png-removebg-preview.png"
+                    placeholder="empty"
+                    width={500}
+                    height={500}
+                    className="mx-auto"
+                    alt="3d建模產品"
+                    loading="lazy"
+                  ></Image>
+                </div>
+                <div className="text-[18px] font-bold">3D Model.</div>
+                <div>
+                  <Image
+                    src="/images/3d產品模型01-極客網頁設計_Blender3D-removebg-preview.png"
+                    placeholder="empty"
+                    width={500}
+                    height={500}
+                    className="mx-auto"
+                    alt="3d建模產品"
+                    loading="lazy"
+                  ></Image>
+                </div>
+                <div className="text-[18px] font-bold">3D Model.</div>
+                <div>
+                  <Image
+                    src="/images/3d產品模型07-極客網頁設計|Blender3D.webp"
+                    placeholder="empty"
+                    width={500}
+                    height={500}
+                    className="mx-auto"
+                    alt="3d建模產品"
+                    loading="lazy"
+                  ></Image>
+                </div>
+                <div className="text-[18px] font-bold">3D Model.</div>
+                <div>
+                  <Image
+                    src="/images/up100-12-removebg-preview.png"
+                    placeholder="empty"
+                    width={500}
+                    height={500}
+                    className="mx-auto"
+                    alt="3d建模產品"
+                    loading="lazy"
+                  ></Image>
+                </div>
+                <div className="text-[18px] font-bold">3D Model.</div>
+                <div>
+                  <Image
+                    src="/images/bag-removebg-preview.png"
+                    placeholder="empty"
+                    width={500}
+                    height={500}
+                    className="mx-auto"
+                    alt="3d建模產品"
+                    loading="lazy"
+                  ></Image>
+                </div>
+              </Marquee>
+            </section>
+            <section className="section mt-[80px]">
               <div className="container">
                 <div className="padding">
                   <div className="w-layout-grid about-content">

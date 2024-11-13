@@ -10,7 +10,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: " Hotjar：深入洞察用戶行為，助力網站轉換率提升",
+    name: " Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計",
     description:
       "Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。",
     url: "https://www.jeek-webdesign.com.tw/blog-07",
@@ -37,19 +37,19 @@ export default function Blog() {
         title="Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計"
         description="Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。"
         openGraph={{
-          url: "",
-          title: "",
+          url: "https://www.jeek-webdesign.com.tw/blog-07",
+          title: "Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計",
           description:
             "Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。",
           images: [
             {
-              url: "",
+              url: "https://www.jeek-webdesign.com.tw/blog/photoshop2024-01.jpeg",
               width: 1200,
               height: 630,
-              alt: "社交媒體行銷策略",
+              alt: "Hotjar 是一款強大的免費網站分析工具",
             },
           ],
-          site_name: "你的網站名稱",
+          site_name: "極客網頁設計",
         }}
         twitter={{
           handle: "@twitterhandle",

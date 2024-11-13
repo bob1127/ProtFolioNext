@@ -32,21 +32,22 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title="網頁設計"
-        description=""
+        title="Spline 3D 入門指南-極客網頁設計"
+        description="Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和開發者。它提供直觀介面和豐富功能，包括基礎模型創建、材質設置、光源控制、動畫設計和互動效果，讓使用者輕鬆製作和分享3D內容。Spline 支持多種格式的3D模型匯入，並能為模型添加表面細節和光影效果。透過設置動畫和互動事件，使用者能創建動態且具吸引力的3D展示，提升用戶的參與體驗。"
         openGraph={{
-          url: "",
-          title: "",
-          description: "",
+          url: "https://www.jeek-webdesign.com.tw/blog-05",
+          title: "Spline 3D 入門指南-極客網頁設計",
+          description:
+            "Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和開發者。它提供直觀介面和豐富功能，包括基礎模型創建、材質設置、光源控制、動畫設計和互動效果，讓使用者輕鬆製作和分享3D內容。Spline 支持多種格式的3D模型匯入，並能為模型添加表面細節和光影效果。透過設置動畫和互動事件，使用者能創建動態且具吸引力的3D展示，提升用戶的參與體驗。",
           images: [
             {
-              url: "",
+              url: "https://www.jeek-webdesign.com.tw/blog/spline3d.png",
               width: 1200,
               height: 630,
-              alt: "社交媒體行銷策略",
+              alt: "Spline 3D 入門指南-極客網頁設計",
             },
           ],
-          site_name: "你的網站名稱",
+          site_name: "極客網頁設計",
         }}
         twitter={{
           handle: "@twitterhandle",
@@ -56,16 +57,20 @@ export default function Blog() {
       />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="關於我們-極客網頁設計" />
+        <meta property="og:title" content="Spline 3D 入門指南-極客網頁設計" />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="
+Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和開發者。它提供直觀介面和豐富功能，包括基礎模型創建、材質設置、光源控制、動畫設計和互動效果，讓使用者輕鬆製作和分享3D內容。Spline 支持多種格式的3D模型匯入，並能為模型添加表面細節和光影效果。透過設置動畫和互動事件，使用者能創建動態且具吸引力的3D展示，提升用戶的參與體驗。"
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/blog/spline3d.png"
         />
-        <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
+        <meta
+          property="og:url"
+          content="https://www.jeek-webdesign.com.tw/blog-05"
+        />
         <meta property="og:type" content="website" />
         <script
           type="application/ld+json"

@@ -7,13 +7,13 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
-@font-face {
+/* @font-face {
   font-family: 'Anton Placeholder';
-  src: url('/fonts/Antonio-VariableFont_wght.ttf') format('ttf'), /* 或使用你下载的字体格式 */
-       url('/fonts/Antonio-VariableFont_wght.ttf') format('ttf');
+  src: url('/fonts/Antonio-VariableFont_wght.ttf') format('ttf'), 或使用你下载的字体格式 */
+       /* url('/fonts/Antonio-VariableFont_wght.ttf') format('ttf');
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; 
+}*/
 /* Start purging... */
 @tailwind utilities;
 *{
