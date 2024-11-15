@@ -687,15 +687,15 @@ export default function Blog() {
                   <td className="px-2 py-4 sm:px-6">
                     <p className="text-[12px] sm:text-[14px]">
                       優點：可用 React
-                      构建自定义组件，灵活搭配现代前端工具，适合高度定制化设计。
+                      構建自定義組件，靈活搭配現代前端工具，適合高度定制化設計。
                     </p>
                     <p className="text-[12px] sm:text-[14px]">
-                      缺點：需具备前端开发经验，对非技术人员较不友好。
+                      缺點：需具備前端開發經驗，對非技術人員較不友好。
                     </p>
                   </td>
                   <td className="px-2 py-4 sm:px-6">
                     <p className="text-[12px] sm:text-[14px]">
-                      缺點：定制化受限，插件冲突和样式限制可能影响设计效果。
+                      缺點：定制化受限，插件沖突和樣式限制可能影響設計效果。
                     </p>
                   </td>
                   <td className="px-2 py-4 text-right sm:px-6"></td>
@@ -719,10 +719,10 @@ export default function Blog() {
                   </td>
                   <td className="px-2 py-4 sm:px-6">
                     <p className="text-[12px] sm:text-[14px]">
-                      優點：有大量插件和主题支持，即使不具备编程能力也能轻松构建网站。
+                      優點：有大量插件和主題支持，即使不具備編程能力也能輕松構建網站。
                     </p>
                     <p className="text-[12px] sm:text-[14px]">
-                      缺點：定制化受限，插件冲突和样式限制可能影响设计效果。
+                      缺點：定制化受限，插件沖突和樣式限制可能影響設計效果。
                     </p>
                   </td>
                   <td className="px-2 py-4 text-right sm:px-6"></td>

@@ -280,10 +280,10 @@ const EmblaCarousel = () => {
       {/* Modal Component */}
       <div className="bg-black">
         <Modal isOpen={isOpen} onClose={onClose} className="">
-          <div className="fixed top-0 left-0 backdrop-blur-md bg-black bg-opacity-60 w-[100vw] h-[100vh] "></div>
+          <div className="fixed top-0 left-0 backdrop-blur-md bg-black bg-opacity-60 w-[100vw]   2xl:p-[140px]  h-[100vh] "></div>
 
           <ModalContent
-            className="modal-enter bg-white fixed border-t-1 p-10 bottom-[-50px] rounded-t-[30px]  h-[97vh] z-[9999999999999]"
+            className="modal-enter bg-white fixed border-t-1 p-[100px] md:p-10 bottom-[-50px]  2xl:p-[220px] rounded-t-[30px]  h-[97vh] z-[9999999999999]"
             style={{
               width: "100vw",
               maxWidth: "100vw",
@@ -291,7 +291,7 @@ const EmblaCarousel = () => {
           >
             <ModalHeader></ModalHeader>
             <ModalBody>
-              <h3 className="pl-5">{currentTitle}</h3>
+              <h3 className="pl-5 ">{currentTitle}</h3>
               <div className="flex-col flex md:flex-row">
                 <div className="w-full md:w-[55%] p-3 md:p-5">
                   <a target="_blank" href="https://www.zensor.com.tw">

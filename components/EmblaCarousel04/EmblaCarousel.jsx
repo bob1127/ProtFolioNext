@@ -179,6 +179,7 @@ const EmblaCarousel = (props) => {
             {scrollSnaps.map((_, index) => (
               <DotButton
                 key={index}
+                aria-label={`滑動到第 ${index + 1} 項目`}
                 onClick={() => onDotButtonClick(index)}
                 className={"embla__dot".concat(
                   index === selectedIndex ? " embla__dot--selected" : ""

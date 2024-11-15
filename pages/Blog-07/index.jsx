@@ -230,7 +230,7 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                   熱點圖能夠直觀地顯示使用者在網頁上點擊、滑動和停留的區域。透過熱點圖，你可以清楚看到哪些內容最吸引訪客注意，哪些區域可能無法引起興趣，從而更好地調整設計和內容佈局。
                 </div>
                 <Image
-                  src="/images/hotjar熱點圖.png"
+                  src="/images/hotjar熱點圖.webp"
                   alt="hotjar熱點圖-極客設計"
                   loading="lazy"
                   placeholder="empty"
@@ -239,7 +239,7 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                   height={500}
                 ></Image>
                 <Image
-                  src="/images/hotjar熱點圖-02.png"
+                  src="/images/hotjar熱點圖-02.webp"
                   alt="hotjar熱點圖-極客設計"
                   loading="lazy"
                   placeholder="empty"

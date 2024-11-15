@@ -111,10 +111,14 @@ const Blog = ({ posts, categories, tags }) => {
           width={2000}
           height={1080}
         ></Image>
-        <div className="txt absolute z-[999999999999] left-[10%] top-[20%] ">
-          <h1 className="text-white">精選專案</h1>
+        <div className="txt absolute z-[999999999999] left-[10%] bottom-[20%] ">
+          <h1 className="text-white font-normal text-[22px] md:text-[3rem] xl:text-[4rem]">
+            精選專案-極客網頁設計
+          </h1>
           <div className="btn-wrap">
-            <button className="bg-white">Clik Me</button>
+            <button className="bg-white mt-2 text-[14px] md:text-[16px]">
+              致力於製作出更優良的網頁作品
+            </button>
           </div>
         </div>
       </section>
@@ -145,7 +149,7 @@ const Blog = ({ posts, categories, tags }) => {
             ))}
           </div>
         </div>
-        <div className="projects pt-10 pl-3 pr-8 w-full md:w-[80%]">
+        <div className="projects pt-0 lg:pt-10 pl-3 pr-8 w-full md:w-[80%]">
           <div className="border-b-2 py-3 mb-3 border-black">
             <b className="text-[24px]">專案項目 / 精選網頁設計</b>
           </div>
@@ -156,7 +160,7 @@ const Blog = ({ posts, categories, tags }) => {
                   <Link href={`/blog/${post.id}`}>
                     <motion.li
                       key={post.id}
-                      className=" scale-100 p-4  hover:scale-105 rounded-xl h-[400px]  "
+                      className=" scale-100 p-4  hover:scale-105 rounded-xl   h-auto lg:h-[400px]  "
                       initial={{ opacity: 0, x: 50 }}
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -50 }}

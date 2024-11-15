@@ -1,8 +1,28 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useEffect } from "react";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
+
 import { Accordion, AccordionItem } from "@nextui-org/react";
 export default function NewsletterForm() {
+  const [isOpen, setIsOpen] = useState(null); // 紀錄當前開啟的 Modal 編號
+
+  // 處理開啟或關閉 Modal
+  const handleOpen = (id) => {
+    setIsOpen(id);
+  };
+  const handleClose = () => {
+    setIsOpen(null);
+  };
+
   useEffect(() => {
     // 动态加载 Mailchimp 验证脚本
     const script1 = document.createElement("script");
@@ -181,7 +201,7 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">客製化網站</h4>
-                    <b className="text-white">價格：NT40000 up</b>
+                    <b className="text-white">找我談談！</b>
                     <p className="text-[14px] text-white mt-3">
                       - 精選網頁設計版型
                     </p>
@@ -230,31 +250,124 @@ export default function NewsletterForm() {
               </ul>
             </div>
             <div className="mc-field-group input-group py-[40px]">
-              <strong className="">您接受的聯繫方式</strong>
+              <strong className="">其他聯繫方式：</strong>
               <ul className="p-0 m-0 flex ">
                 <li className="mr-5 mt-3">
-                  <input
-                    type="checkbox"
-                    name="group[43794][8]"
-                    id="mce-group[43794]-43794-0"
-                  />
-                  <label htmlFor="mce-group[43794]-43794-0">Line</label>
+                  <Button
+                    onPress={() => handleOpen(1)}
+                    className="w-[130px] h-[130px]"
+                  >
+                    {" "}
+                    <Image
+                      src="/images/ig-qrCode.png"
+                      width={100}
+                      height={100}
+                      loading="lazy"
+                      alt="contact-line-qrcode"
+                      placeholder="empty"
+                    ></Image>
+                  </Button>
+                  <Modal isOpen={isOpen === 1} onOpenChange={handleClose}>
+                    <ModalContent className="border p-[100px] rounded-[30px] bg-white border-black">
+                      {(onClose) => (
+                        <>
+                          <ModalHeader className="flex  flex-col  gap-1"></ModalHeader>
+                          <ModalBody>
+                            <div className="">
+                              <Image
+                                src="/images/ig-qrCode.png"
+                                width={1000}
+                                height={1000}
+                                loading="lazy"
+                                alt="contact-line-qrcode"
+                                placeholder="empty"
+                              ></Image>
+                              <p>Line Qr code</p>
+                              <p>掃描加入好友</p>
+                            </div>
+                          </ModalBody>
+                        </>
+                      )}
+                    </ModalContent>
+                  </Modal>
+
+                  <label htmlFor="mce-group[43794]-43794-0">Instagram</label>
                 </li>
                 <li className="mr-5 mt-3">
-                  <input
-                    type="checkbox"
-                    name="group[43794][16]"
-                    id="mce-group[43794]-43794-1"
-                  />
+                  {/* Button 2 */}
+                  <Button
+                    onPress={() => handleOpen(2)}
+                    className="w-[130px] h-[130px]"
+                  >
+                    <Image
+                      src="/images/fb-qrCode.png"
+                      width={100}
+                      height={100}
+                      loading="lazy"
+                      alt="contact-fb-qrcode"
+                      placeholder="empty"
+                    />
+                  </Button>
+                  <Modal isOpen={isOpen === 2} onOpenChange={handleClose}>
+                    <ModalContent className="border p-[100px] rounded-[30px] bg-white border-black">
+                      <ModalBody>
+                        <div>
+                          <Image
+                            src="/images/fb-qrCode.png"
+                            width={1000}
+                            height={1000}
+                            loading="lazy"
+                            alt="contact-fb-qrcode"
+                            placeholder="empty"
+                          />
+                          <p>Instagram QR code</p>
+                          <p>掃描加入 Facebook</p>
+                        </div>
+                      </ModalBody>
+                    </ModalContent>
+                  </Modal>
+
                   <label htmlFor="mce-group[43794]-43794-1">Facebook</label>
                 </li>
                 <li className="mr-5 mt-3">
-                  <input
-                    type="checkbox"
-                    name="group[43794][32]"
-                    id="mce-group[43794]-43794-2"
-                  />
-                  <label htmlFor="mce-group[43794]-43794-2">Email</label>
+                  <Button
+                    onPress={() => handleOpen(1)}
+                    className="w-[130px] h-[130px]"
+                  >
+                    {" "}
+                    <Image
+                      src="/images/ig-qrCode.png"
+                      width={100}
+                      height={100}
+                      loading="lazy"
+                      alt="contact-line-qrcode"
+                      placeholder="empty"
+                    ></Image>
+                  </Button>
+                  <Modal isOpen={isOpen === 1} onOpenChange={handleClose}>
+                    <ModalContent className="border p-[100px] rounded-[30px] bg-white border-black">
+                      {(onClose) => (
+                        <>
+                          <ModalHeader className="flex  flex-col  gap-1"></ModalHeader>
+                          <ModalBody>
+                            <div className="">
+                              <Image
+                                src="/images/ig-qrCode.png"
+                                width={1000}
+                                height={1000}
+                                loading="lazy"
+                                alt="contact-line-qrcode"
+                                placeholder="empty"
+                              ></Image>
+                              <p>Facebook Qr code</p>
+                              <p>掃描加入好友</p>
+                            </div>
+                          </ModalBody>
+                        </>
+                      )}
+                    </ModalContent>
+                  </Modal>
+                  <label htmlFor="mce-group[43794]-43794-2">Line</label>
                 </li>
               </ul>
             </div>

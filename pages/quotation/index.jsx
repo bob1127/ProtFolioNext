@@ -184,6 +184,33 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
       <NextSeo
         title="關於極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
@@ -296,7 +323,7 @@ export default function Blog() {
               <Lottie options={defaultOptions} height={220} width={220} />
               <div className="w-full xl:w-[80%] 2xl:w-[50%]   mt-[40px] mx-auto py-8 text-[76px] leading-[32px] font-normal border bg-white rounded-xl  md:p-[30px] p-[20px]  xl:p-[50px] text-center  text-[#171717] ">
                 <div>
-                  <h1 className="text-[2.5rem]">網頁建置費用</h1>
+                  <h1 className="text-[2.5rem] py-[30px]">網頁建置費用</h1>
                 </div>
                 <div className="flex justify-center">
                   <div className="text-[22px]">
@@ -707,7 +734,7 @@ export default function Blog() {
                 }}
               >
                 <GsapText
-                  text=' "什麼！？ 網站只要30000?" '
+                  text=' "什麼！？ 網站只要 一萬？" '
                   lineHeight="70px"
                   id="text2"
                   fontSize="60px"
@@ -767,7 +794,7 @@ export default function Blog() {
                 </div>
                 <div className="img mt-4 xl:mt-0 xl:my-0  mb-0 xl:mb-[30px] w-full md:w-[40%] overflow-hidden">
                   <Image
-                    src="/images/fantastic_hare_36410_3d_Characters_Surprised_Face_34f30a33-5f17-46e5-a437-01b7825d03ec-Photoroom.png"
+                    src="/images/專案優惠只要一萬.png"
                     alt="自由接案工作者-freeLancer-極客網頁設計"
                     placeholder="empty"
                     data-aos="zoom-in-up"
@@ -877,6 +904,24 @@ export default function Blog() {
                     width={350}
                     height={400}
                     className="mx-2"
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/電化學分析儀-模擬器-散熱孔.webp"
+                    placeholder="empty"
+                    width={350}
+                    className="mx-2"
+                    height={400}
+                    loading="lazy"
+                    alt="portfolio-image-display"
+                  ></Image>
+                  <Image
+                    src="/images/電化學分析儀-模擬器-防滑材質.webp"
+                    placeholder="empty"
+                    width={350}
+                    className="mx-2"
+                    height={400}
                     loading="lazy"
                     alt="portfolio-image-display"
                   ></Image>

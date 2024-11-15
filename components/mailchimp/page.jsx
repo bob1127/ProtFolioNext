@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Image from "next/image";
 const MailchimpForm = () => {
   return (
     <div id="mc_embed_shell">
@@ -91,6 +91,14 @@ const MailchimpForm = () => {
                     id="mce-group[43794]-43794-0"
                   />
                   <label htmlFor="mce-group[43794]-43794-0">Line</label>
+                  <Image
+                    src="/images/"
+                    height={400}
+                    alt="contact with line"
+                    loading="lazy"
+                    width={400}
+                    placeholder=""
+                  ></Image>
                 </li>
                 <li>
                   <input

@@ -86,6 +86,32 @@ export default function Blog() {
             content="https://www.jeek-webdesign.com.tw/technology"
           />
           <meta property="og:type" content="website" />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                name: webpage.name,
+                description: webpage.description,
+                url: webpage.url,
+                publisher: {
+                  "@type": "Organization",
+                  name: webpage.name,
+                  logo: {
+                    "@type": "ImageObject",
+                    url: webpage.logo,
+                  },
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: webpage.contact.phone,
+                    contactType: "Customer Service",
+                    email: webpage.contact.email,
+                  },
+                },
+              }),
+            }}
+          />
         </Head>
 
         <div className="about-root">
@@ -439,7 +465,7 @@ export default function Blog() {
                   data-delay="400"
                   className="w-full px-4 sm:w-[90%] md:w-[80%] mx-auto"
                 >
-                  <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+                  <div className="relative flex justify-center items-center  md:w-[80%] w-full 2xl:w-[50%] mx-auto overflow-x-auto shadow-md sm:rounded-lg">
                     <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                       <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr className="bg-[#f3be3a]">
@@ -489,6 +515,19 @@ export default function Blog() {
                           </td>
                           <td className="px-2 py-4 text-right sm:px-6"></td>
                         </tr>
+                        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                          <th
+                            scope="row"
+                            className="px-2 text-[18px]  py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                          >
+                            開發成本
+                          </th>
+                          <td className="px-2 py-4 text-[18px] sm:px-6">高</td>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[18px]">低</p>
+                          </td>
+                          <td className="px-2 py-4 text-right sm:px-6"></td>
+                        </tr>
 
                         <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                           <th
@@ -522,7 +561,7 @@ export default function Blog() {
                 </div>
               </section>
 
-              <section className="px-[20px] md:px-[50px] xl:px-[100px]">
+              <section className="px-[20px] w-full md:w-[90%] 2xl:w-[70%] mx-auto md:px-[50px] xl:px-[100px]">
                 <div className="top mt-4 mb-4 text-[40px] text-center"></div>
 
                 <div className="flex flex-col md:flex-row ">
@@ -919,7 +958,7 @@ export default function Blog() {
                         <a
                           id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
                           href="/quotation"
-                          className="simple-link"
+                          className="simple-link mx-auto w-full flex justify-center inline-block"
                         >
                           「創新設計，讓您的網站脫穎而出」
                         </a>
@@ -929,7 +968,7 @@ export default function Blog() {
                           data-aos="fade-down"
                           id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c26b-c41abecd"
                           data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c26b"
-                          className="card group duration-500 hover:bg-[#f7d54c]"
+                          className="card flex flex-col justify-center items-center group duration-500 hover:bg-[#f7d54c]"
                           style={{}}
                         >
                           <a href="/blog-01" className="card-paragraph">
@@ -937,7 +976,7 @@ export default function Blog() {
                               className="mb-4"
                               alt="新網站SEO規劃-極客網頁設計"
                               src="/images/新網站SEO規劃-極客網頁設計.png"
-                              width={800}
+                              width={2000}
                               height={800}
                               placeholder="empty"
                               loading="lazy"

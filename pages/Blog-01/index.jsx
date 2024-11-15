@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
+
 import Marquee from "react-fast-marquee";
 import { useEffect } from "react";
 import Image from "next/image";

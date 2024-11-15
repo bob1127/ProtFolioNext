@@ -20,7 +20,7 @@ const App = () => {
       link: "/blog-04",
     },
     {
-      image: "/images/shopping-online.png",
+      image: "/images/shopping-online.webp",
       title: " 你想完整收集客戶資料，再行銷嗎？",
       description:
         "  擁有獨立網站，完整掌握客戶數據，實現精準行銷、提升轉化率，建立長期品牌關係，持續創造價值。",

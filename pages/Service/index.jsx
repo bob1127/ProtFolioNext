@@ -168,6 +168,32 @@ export default function Blog() {
           content="https://www.jeek-webdesign.com.tw/service"
         />
         <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+            }),
+          }}
+        />
       </Head>
       <NextSeo
         title="我們提供的服務-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
@@ -748,7 +774,7 @@ export default function Blog() {
                 <div className="text-[18px] font-bold">3D Model.</div>
                 <div>
                   <Image
-                    src="/images/3d產品模型01-極客網頁設計_Blender3D-removebg-preview.png"
+                    src="/images/3d產品模型01-極客網頁設計_Blender3D-removebg-preview.webp"
                     placeholder="empty"
                     width={500}
                     height={500}
@@ -760,7 +786,7 @@ export default function Blog() {
                 <div className="text-[18px] font-bold">3D Model.</div>
                 <div>
                   <Image
-                    src="/images/3d產品模型07-極客網頁設計|Blender3D.webp"
+                    src="/images/3d產品模型07-極客網頁設計|Blender3D.png"
                     placeholder="empty"
                     width={500}
                     height={500}
@@ -796,9 +822,9 @@ export default function Blog() {
               </Marquee>
             </section>
             <section className="section mt-[80px]">
-              <div className="container">
+              <div className="p-[20px]">
                 <div className="padding">
-                  <div className="w-layout-grid about-content">
+                  <div className="w-layout-grid px-[30px] xl:px-[200px] about-content">
                     <div
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
                       className="about-grid-content"
@@ -821,7 +847,7 @@ export default function Blog() {
                         <img
                           loading="lazy"
                           alt="Portrait of the team"
-                          src="/images/商業攝影_產品_banner-極客網頁設計.webp"
+                          src="/images/商業攝影_產品_banner-極客網頁設計.png"
                           sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
                           className="cover-image"
                           style={{
@@ -836,7 +862,7 @@ export default function Blog() {
                         />
                       </div>
                     </div>
-                    <div className="about-grid-image">
+                    <div className="about-grid-image ">
                       <div className="reveal-image-trigger">
                         {/* <img
                           loading="lazy"
@@ -875,7 +901,7 @@ export default function Blog() {
                     </div>
                     <div
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
+                      className="about-grid-content "
                     >
                       {/* <div className="text-dot-block">
                         <div className="dot" />
@@ -923,7 +949,7 @@ export default function Blog() {
                     </div>
                   </div>
                   <section className="section">
-                    <div className="container">
+                    <div className="p-[20px]">
                       <div className="padding">
                         <div className="w-layout-grid about-content">
                           <div
@@ -956,9 +982,9 @@ export default function Blog() {
                               <h5 className="text-[20px] text-left mt-4 font-black">
                                 有效的標題標籤 (Heading Tags) 使用
                               </h5>
-                              結構化數據
+
                               <div className="flex items-start flex-col">
-                                <b className="mt-2 text-[18px] font-extrabold">
+                                <b className="mt-2 text-left text-[18px] font-extrabold">
                                   添加結構化數據標記 (Schema.org)：
                                 </b>
                                 <p className="text-[14px] text-left">
@@ -987,7 +1013,7 @@ export default function Blog() {
                           >
                             <div className="reveal-image-trigger">
                               <Image
-                                src="/images/fantastic_hare_36410_Web_page_structure_optimization_._890fced3-3b5d-40d8-b509-e2ae72356184.png"
+                                src="/images/fantastic_hare_36410_Web_page_structure_optimization_._890fced3-3b5d-40d8-b509-e2ae72356184.webp"
                                 placeholder="empty"
                                 loading="lazy"
                                 width={1000}
@@ -1024,7 +1050,7 @@ export default function Blog() {
               </div>
             </section> */}
             <section className="marketing ">
-              <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 mx-auto">
+              <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 2xl:w-[60%] mx-auto">
                 {/* <h2 className="heading is-medium-title text-center">
                   "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
                 </h2> */}
@@ -1166,7 +1192,7 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px]  py-[20px] md:py-[80px]  lg:px-[50px]  xl:px-[70px] 2xl:px-[100px]">
+            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px]   py-[20px] md:py-[80px]  lg:px-[50px]  xl:px-[70px] 2xl:px-[200px]">
               <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
                 <div className="txt">
                   <div className="logo pl-[20px]">

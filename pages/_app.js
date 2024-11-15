@@ -3,16 +3,14 @@ import Script from 'next/script';
 import '../styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
 import { NextUIProvider } from "@nextui-org/react";
-import Navbar from '../components/sideTabs/index.jsx';
-import Footer from '../components/Footer/index.jsx';
+
 import Marquee from 'react-fast-marquee';
 import AOS from 'aos';
-import Policy  from '../components/Policy.jsx'
 import Head from 'next/head';
 import Image from 'next/image';
 import Nav from '../components/sideTabs/index'
 import { useEffect } from 'react';
-import { NextSeo } from 'next-seo';
+
 import PrivacyPopup from '../components/PrivacyPopup.jsx'
 import 'aos/dist/aos.css'; // 导入 AOS 的 CSS 文件
 // import MobileHeader from '../components/MobileHeader/page'
@@ -98,7 +96,10 @@ export default function MyApp({ Component, pageProps, router }) {
        
       <div className='bg-[#ffffff] max-w-[3860px] overflow-hidden mx-auto '>
         {/* <Policy/> */}
-        
+        <Head>
+        {/* 加载多个 Elementor 样式文件，确保所有容器样式都能显示 */}
+       
+      </Head>
 
         <Script
           src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
@@ -136,23 +137,15 @@ export default function MyApp({ Component, pageProps, router }) {
               <AnimatePresence mode='wait'>
                 <Component key={router.route} {...pageProps} />
 
-                <div className='border-t-2 border-black'>
+                {/* <div className='border-t-2 border-black'>
                   <PhysicsAnimationApp />
-                </div>
+                </div> */}
 
                 <div className=''>
                   {/* <PhysicsAnimationApp/> */}
                 </div>
 
-                <Marquee>
-                  <a href='/quotation'>
-                    <div className='border-3 border-white'>
-                      <p className='text-black font-normal w-full p-2'>
-                        JEEK像您的好夥伴一樣，會與您一同探索、設計，打造出真正適合您的網站和品牌形象。不管您是 <span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"餐飲業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"美業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"中小企業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"服飾業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"傳統產業"</span>，我們都在這裡，為您提供簡單、實用且有效的解決方案。
-                      </p>
-                    </div>
-                  </a>
-                </Marquee>
+                
  <div className="footer border-t-3 border-white">
                 <div className="footer-layout bg-[#121212]">
                   <div className="footer-wrapper">
@@ -243,6 +236,7 @@ export default function MyApp({ Component, pageProps, router }) {
                     </div>
                   </div>
                 </div>
+                
                 <div className="footer-utility-section">
                   <div className="main-container align-center">
                     <div
@@ -287,6 +281,7 @@ export default function MyApp({ Component, pageProps, router }) {
                    
                   </div>
                 </div>
+                
                 <div className="footer-bg">
                   <div className="parallax-trigger">
                     <div
@@ -309,7 +304,17 @@ export default function MyApp({ Component, pageProps, router }) {
                   </div>
                   <div className="footer-bg-gradient" />
                 </div>
+                
               </div>
+              <Marquee>
+                  <a href='/quotation'>
+                    <div className='border-3 border-white'>
+                      <p className='text-black font-normal w-full p-2'>
+                        JEEK像您的好夥伴一樣，會與您一同探索、設計，打造出真正適合您的網站和品牌形象。不管您是 <span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"餐飲業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"美業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"中小企業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"服飾業"</span>、<span className='bg-black rounded-[30px] w-auto px-3 py-1 inline-block  text-white font-bold'>"傳統產業"</span>，我們都在這裡，為您提供簡單、實用且有效的解決方案。
+                      </p>
+                    </div>
+                  </a>
+                </Marquee>
                 {/* <Footer /> */}
               </AnimatePresence>
             </NextUIProvider>

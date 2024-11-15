@@ -120,7 +120,7 @@ export default function App() {
             }
           >
             <Image
-              src="/images/Hero-img-01.png"
+              src="/images/Hero-img-01.webp"
               alt="hero-blur-img_green"
               placeholder="empty"
               loading="eager"
@@ -155,7 +155,7 @@ export default function App() {
             }
           >
             <Image
-              src="/images/Hero-img-02.png"
+              src="/images/Hero-img-02.webp"
               alt="hero-blur-img_blue"
               placeholder="empty"
               loading="eager"
@@ -190,7 +190,7 @@ export default function App() {
             }
           >
             <Image
-              src="/images/Hero-img-03.png"
+              src="/images/Hero-img-03.webp"
               alt="hero-blur-img_yellow"
               placeholder="empty"
               loading="eager"
@@ -201,7 +201,7 @@ export default function App() {
         </div>
         <div className="absolute  bottom-0 sm:bottom-[-30%] md:bottom-[-22%] lg:bottom-[-10%] right-[-23%] md:right-[-15%] lg:right-[-5%] z-[99999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
           <Image
-            src="/images/Hero-img-11.png"
+            src="/images/Hero-img-11.webp"
             alt="hero-blur-img_desktop"
             placeholder="empty"
             loading="eager"
@@ -231,13 +231,14 @@ export default function App() {
         </div>
         <div className="absolute top-0 left-0 z-[99999999]">
           <Image
-            src="/images/Hero-img.png"
+            src="/images/Hero-img.webp"
             alt="hero-blur-img"
-            placeholder="empty"
             loading="eager"
+            priority={true}
             width={2300}
             height={1080}
-          ></Image>
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
         <div
           className="arrow flex justify-start pt-[35px] items-center left-[50%] sm:bottom-[80px] absolute z-[999999999] bg-white rounded-full   sm:bg-transparent flex-col sm:justify-center w-[50%] bottom-[-18%] h-[30%] sm:items-center transform -translate-x-1/2"
