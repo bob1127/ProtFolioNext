@@ -76,7 +76,7 @@ const Section2 = ({ scrollYProgress }) => {
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className=" px-[20px] py-[40px] lg:py-[100px] bg-[#ffffff]  rounded-[45px] border border-black md:rounded-[60px]  h-auto md:h-[250vh] xl:h-[200vh] 2xl:h-[160vh] xl:rounded-[80px] 2xl:rounded-[120px]">
+      <div className=" px-[20px] py-[40px] lg:py-[100px] bg-[#ffffff]  rounded-[45px] border border-black md:rounded-[60px]  h-auto md:h-full xl:h-[200vh] 2xl:h-[160vh] xl:rounded-[80px] 2xl:rounded-[120px]">
         <div className="txt flex items-center flex-col justify-center py-4">
           <h2 className="text-black text-[35px] md:text-[50px] xl:text-[70px] text-center font-bold">
             讓您的品牌擁有獨立網站！
@@ -90,7 +90,7 @@ const Section2 = ({ scrollYProgress }) => {
 
         <motion.div
           style={{ y: yOffset }}
-          className="project-plan flex-col md:flex-row mx-auto mt-[160px] md:flex px-[30px] hidden md:px-[10px] w-full"
+          className="project-plan flex-col sm:flex-row mx-auto mt-[160px] md:flex px-[30px] hidden 2xl:w-[80%] md:px-[10px] w-full"
           transition={{
             duration: 2.8,
             ease: [0.1, 0.7, 1.0, 0.1], // Custom cubic-bezier timing function for the floating effect

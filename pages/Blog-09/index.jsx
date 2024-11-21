@@ -132,8 +132,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -179,8 +178,10 @@ export default function Blog() {
               className="rounded-md"
             ></Image>
           </div>
-
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>深入解析 SEO 成效指標，助您精準優化網站</h2>
             </div>

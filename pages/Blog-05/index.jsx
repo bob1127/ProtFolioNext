@@ -135,7 +135,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -149,7 +149,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
               </section>
               <h1
                 data-aos="fade-blur"
-                className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  "
+                className="text-[#333] leaing-[80px] text-center font-black mt-[50px]  "
               >
                 Spline 3D 入門指南
               </h1>
@@ -184,8 +184,10 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
               src="/images/blog/spline3d.png"
             ></Image>
           </div>
-
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <h2>什麼是 Spline 3D？</h2>
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               Spline 3D 是一個基於雲端的 3D
@@ -254,6 +256,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                   width={800}
                   height={500}
                 ></Image>
+                <br></br>
                 <b className="text-[14px] font-bold mt-3">
                   支援多種格式模型匯入
                 </b>
@@ -270,6 +273,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                   width={800}
                   height={500}
                 ></Image>
+                <br></br>
                 <b className="text-[14px] font-bold mt-3">
                   支援多種格式模型匯入
                 </b>
@@ -303,6 +307,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                     loading="lazy"
                     src="/images/blog/Blog05/互動動畫_定義初始狀態-極客網頁設計.png"
                   ></Image>
+                  <br></br>
                   <b>為物件添加一個 Basic State（基本狀態）。定義初始狀態</b>
                 </div>
                 <div className="mt-[35px]">
@@ -314,6 +319,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                     loading="lazy"
                     src="/images/blog/Blog05/互動動畫_更改物件狀態-極客網頁設計.png"
                   ></Image>
+                  <br></br>
                   <b>
                     新增初始狀態後，可以開始調整你的物件的狀態，現在更改的狀態是之後事件觸發時物件會產生的變化狀態。這裡我們把物件往右下移動並且縮放。
                   </b>
@@ -327,6 +333,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                     loading="lazy"
                     src="/images/blog/Blog05/互動動畫01-極客網頁設計.png"
                   ></Image>
+                  <br></br>
                   <b>選擇添加事件(Events)</b>
                 </div>
                 <div className="mt-[35px]">
@@ -338,6 +345,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                     loading="lazy"
                     src="/images/blog/Blog05/互動動畫02-極客網頁設計.png"
                   ></Image>
+                  <br></br>
                   <b className="text-[16px]">
                     事件(Events)可以選擇當滑鼠移入、點擊、或者當頁面載入時，觸發動畫效果
                   </b>
@@ -351,6 +359,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                     loading="lazy"
                     src="/images/blog/Blog05/互動動畫_添加transition-極客網頁設計.png.gif"
                   ></Image>
+                  <br></br>
                   <b className="text-[16px]">
                     開始定義你的transition:我這裡選擇當頁面載入時(start)及觸發動畫，transition設定ease-in-out，不重複播放
                   </b>
@@ -364,6 +373,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                     loading="lazy"
                     src="/images/blog/Blog05/互動動畫_更改物件狀態-極客網頁設計.png"
                   ></Image>
+                  <br></br>
                   <b className="text-[16px]">
                     接下來來看看會有什麼改變吧！ 點擊播放鈕
                   </b>

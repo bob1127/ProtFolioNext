@@ -6,7 +6,7 @@ import { menuSlide } from "../anim";
 import Link from "./Link";
 import Curve from "./Curve";
 import Footer from "./Footer";
-
+import Image from "next/image";
 export default function index() {
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
@@ -27,7 +27,14 @@ export default function index() {
           className={styles.nav}
         >
           <div className={styles.header}>
-            <p>Navigation</p>
+            <Image
+              width={100}
+              height={40}
+              loading="lazy"
+              placeholder="empty"
+              alt="company-logo"
+              src="/images/company-logo/JeekLogo-white.png"
+            ></Image>
           </div>
 
           <ul>

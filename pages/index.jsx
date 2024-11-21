@@ -74,7 +74,7 @@ export default function Home() {
     <div className="">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-
+        {/* 
         <meta
           property="og:title"
           content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、客製化網站、套版網站、商業攝影、seo優化 - 你的網站不想在跟別人一樣嗎？｜你的創意，我來實踐"
@@ -82,7 +82,7 @@ export default function Home() {
         <meta
           property="og:description"
           content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
-        />
+        /> */}
         <meta
           property="og:image"
           content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
@@ -126,9 +126,9 @@ export default function Home() {
               "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
             images: [
               {
-                url: "https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png",
-                width: 800,
-                height: 600,
+                url: "https://www.jeek-webdesign.com.tw/images/facebook.png",
+                width: 1200,
+                height: 630,
                 alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
               },
             ],
@@ -192,7 +192,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full flex-col md:flex-row xl:px-[100px] md:px-[50px]  mb-0 pb-[80px]  xl:mb-[-50vh] bg-black  2xl:px-[200px] ">
+          <div className="w-full flex-col md:flex-row xl:px-[100px] md:px-[50px]  mb-[-80vh] pb-[80px]  xl:mb-[-50vh] bg-black  2xl:px-[200px] ">
             <div className="flex md:flex-row flex-col mt-[50px] justify-center">
               <div className="txt px-[20px] flex flex-col w-full md:w-1/2">
                 <h3 className=" text-[2.5rem] text-white leading-normal ">
@@ -279,7 +279,7 @@ export default function Home() {
         <SuffleHero /> */}
         <PerspectiveSection02 />
 
-        <section className="section_brand  2xl:mt-[-303px] mt-[-300px] md:mt-0">
+        <section className="section_brand  2xl:mt-[-303px]  mt-[-180px] sm:mt-[-220px] md:mt-0">
           <div className="flex  flex-col justify-center items-center">
             <h1
               className="header text-[#1e1e1e] xl:text-[100px]
@@ -292,7 +292,7 @@ export default function Home() {
                 fontSize="70px"
               />
             </h1>
-            <p className="text-[16px] w-[80%] text-center mx-auto">
+            <p className="text-[16px] mb-6 w-[80%] text-center mx-auto">
               專注打造符合您品牌形象的網站，量身定制 ，細緻呈現品牌價值
             </p>
           </div>

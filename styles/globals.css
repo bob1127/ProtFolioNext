@@ -15,6 +15,13 @@
   font-style: normal; 
 }*/
 /* Start purging... */
+.circle-text span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform-origin: 0 100px;
+  font-size: 1rem;
+}
 @tailwind utilities;
 *{
     line-height: normal;

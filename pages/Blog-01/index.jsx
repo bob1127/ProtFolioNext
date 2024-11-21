@@ -131,7 +131,7 @@ export default function Blog() {
             height={768}
             alt="img"
             placeholder="empty"
-            className="rounded-md"
+            className="rounded-xl"
           ></Image>
         </div>
         <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
@@ -148,7 +148,7 @@ export default function Blog() {
               </section>
               <h1
                 data-aos="fade-blur"
-                className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  "
+                className="text-[#333] leaing-[80px] text-center font-black mt-[50px]  "
               >
                 建立設計一個新網站-我該如何做seo規劃？
               </h1>
@@ -168,18 +168,22 @@ export default function Blog() {
               </div>
             </div>
           </div>
-          <div data-aos="fade-blur" className="flex justify-center">
+          <div data-aos="fade-blur" className="flex justify-center ">
             <Image
               placeholder="empty"
               loading="lazy"
-              width={800}
-              height={500}
+              width={900}
+              height={600}
+              className="rounded-lg"
               alt="新網站SEO規劃-極客網頁設計"
               src="/images/blog/新網站SEO規劃-極客網頁設計.png"
             ></Image>
           </div>
 
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <h2>什麼是SEO？</h2>
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               SEO，全名是「搜尋引擎優化」（Search Engine

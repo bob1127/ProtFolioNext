@@ -3,6 +3,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import AOS from "aos"; // Import AOS
+import CircleText from "../../components/CircleText.jsx";
 import "aos/dist/aos.css"; // Import AOS styles
 import Image from "next/image";
 export default function Home() {
@@ -70,13 +71,17 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="relative z-[99999999999999] h-screen"
+      className="relative z-[999999999] h-screen"
       transition={{
         duration: 6.8,
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className="border py-[100px]  z-[-1] bg-white h-[350vh] md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#fff] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+      <div className="circle-logo"></div>
+      <div className="border py-[100px]  z-[-1] bg-white h-[320vh] md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#fff] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+        <div className="absolute   hidden md:block top-[5%] right-[6%]">
+          <CircleText />
+        </div>
         <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
           <h2 className="text-black text-[30px] md:text-[50px] xl:text-[70px] font-bold">
             提升網站品牌形象
@@ -88,7 +93,7 @@ const Section2 = ({ scrollYProgress }) => {
         <div className=" max-w-[1920px] mx-auto  justify-between  px-[30px] flex"></div>
         <motion.div
           style={{ y: yOffset }}
-          className="project-plan flex-col md:flex-row mx-auto mt-[160px] flex px-[30px] md:px-[10px] w-full lg:w-[80%]"
+          className="project-plan flex-col md:flex-row mx-auto mt-[140px] flex px-[30px] md:px-[10px] w-full lg:w-[80%]"
           transition={{
             duration: 2.8,
             ease: [0.1, 0.7, 1.0, 0.1], // Custom cubic-bezier timing function for the floating effect

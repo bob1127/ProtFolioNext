@@ -128,7 +128,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -140,7 +140,7 @@ export default function Blog() {
                   MidJourney 快速上手指南
                 </a>
               </section>
-              <h1 className="text-[#333] leaing-[80px] text-center font-black mt-[100px]  ">
+              <h1 className="text-[#333] leaing-[80px] text-center font-black mt-[50px]  ">
                 輕鬆進入 AI 藝術世界，MidJourney <br></br> 快速上手指南
               </h1>
               <div className="title-content-date">
@@ -175,7 +175,10 @@ export default function Blog() {
             />
           </div>
 
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <h2>1.註冊 Midjourney</h2>
             <a
               target="_blank"

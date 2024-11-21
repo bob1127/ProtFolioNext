@@ -116,7 +116,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -170,7 +170,10 @@ export default function Blog() {
             是不可或缺的工具。通過這兩者的整合，可以更有效地追蹤網站訪客行為，並且靈活設置各種標籤追蹤項目。本文將引導您一步步創建
             GTM 並串接到 GA4。
           </div>
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>深一、什麼是 Google Tag Manager 和 Google Analytics 4？</h2>
             </div>
@@ -245,6 +248,7 @@ export default function Blog() {
                   className="mt-[40px]"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">帳戶名稱設定</b>
                 <Image
                   src="/images/blog/Blog11/容器名稱-裝置類型.png"
@@ -255,6 +259,7 @@ export default function Blog() {
                   alt="容器名稱-裝置類型"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">選擇類型</b>
 
                 <h3 className="mt-[30px]">2. 安裝 GTM 程式碼到您的網站</h3>
@@ -297,6 +302,7 @@ export default function Blog() {
                   alt="點擊標籤並新增-極客網頁設計"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">
                   點擊左側的 "標籤" 選項，再點擊 "新增"
                 </b>
@@ -329,6 +335,7 @@ export default function Blog() {
                   alt="選擇ga4-極客網頁設計"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">選擇ga4</b>
 
                 <h3 className="mt-[30px]">
@@ -359,6 +366,7 @@ export default function Blog() {
                   alt="點擊左下角管理員-極客網頁設計"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">點擊左下角管理員</b>
 
                 <Image
@@ -370,6 +378,7 @@ export default function Blog() {
                   alt="找到你的評估id-極客網頁設計"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">
                   找到你的評估id 並複製，這個 ID 將用於 GTM 中標籤設定。
                 </b>
@@ -382,6 +391,7 @@ export default function Blog() {
                   alt="找不到google代碼.png"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">
                   如出現找不到google代碼 及案右邊建立代碼按鈕
                 </b>
@@ -395,11 +405,11 @@ export default function Blog() {
                   alt="順利新增ga4代碼.png"
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[16px] mt-2">順利新增ga4代碼</b>
               </div>
               <div></div>
               <h3 className="mt-[30px]">4. 測試和發佈標籤</h3>
-
               <h4 className="mt-5">在 GTM 中測試標籤</h4>
               <ul>
                 <li className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
@@ -421,7 +431,6 @@ export default function Blog() {
                   Analytics 的報告中看到即時數據。
                 </li>
               </ul>
-
               <Image
                 src="/images/blog/Blog11/發布代碼-極客網頁設計.png"
                 width={800}
@@ -431,6 +440,7 @@ export default function Blog() {
                 alt="發布代碼-極客網頁設計"
                 height={600}
               ></Image>
+              <br></br>
               <b className="text-[16px] mt-2">
                 點擊發布代碼，可以新增版本名稱和內容
               </b>
@@ -443,8 +453,8 @@ export default function Blog() {
                 alt="發布此版本代碼-極客網頁設計"
                 height={600}
               ></Image>
-              <b className="text-[16px] mt-2">發布此版本代碼</b>
-
+              <br></br>
+              <b className="text-[16px] mt-2">發布此版本代碼</b> <br></br>
               <Image
                 src="/images/blog/Blog11/成功新增發布的代碼-極客網頁設計.png"
                 width={800}
@@ -454,7 +464,6 @@ export default function Blog() {
                 alt="成功新增發布的代碼-極客網頁設計.png"
                 height={600}
               ></Image>
-
               <Image
                 src="/images/blog/Blog11/成功新增發布的代碼02-極客網頁設計.png"
                 width={800}
@@ -464,6 +473,7 @@ export default function Blog() {
                 alt="成功新增發布的代碼-極客網頁設計.png"
                 height={600}
               ></Image>
+              <br></br>
               <b className="text-[26px] mt-[20px]">
                 這樣就順利新增ga4代碼啦！！
               </b>

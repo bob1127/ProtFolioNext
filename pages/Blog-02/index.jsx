@@ -115,7 +115,7 @@ export default function Blog() {
             data-aos="fade-blur"
           ></Image>
         </div>
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -162,12 +162,15 @@ export default function Blog() {
               height={500}
               placeholder="empty"
               loading="lazy"
-              className="rounded-md"
+              className="rounded-lg mb-6"
               data-aos="fade-blur"
             ></Image>
           </div>
 
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <div>
               <h2 className="heading mt-[50px] is-medium-title">
                 "不要再認為自己的品牌做網頁行銷很花錢了！"

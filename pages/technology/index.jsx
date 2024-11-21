@@ -418,7 +418,7 @@ export default function Blog() {
                 </a>
               </section>
               <section className="high-performance mt-5 flex  flex-col xl:flex-row justify-center">
-                <div className="justify-center items-center w-full flex-col xl:w-4/5 md:flex-row flex">
+                <div className="justify-center items-center mx-auto w-[90%] flex-col xl:w-4/5 md:flex-row flex">
                   <div className=" w-full xl:w-1/2" data-aos="fade-up">
                     {/* <img
                       className="w-full"
@@ -437,7 +437,7 @@ export default function Blog() {
                   </div>
                   <div className="w-full xl:w-1/2  flex justify-center  items-center">
                     <div
-                      className="txt p-[20px] xl:p-[40px]"
+                      className="txt  2xl:w-[80%]  w-full  p-[20px] xl:p-[40px]"
                       data-aos="fade-up"
                       data-aos-delay="300"
                     >
@@ -494,7 +494,7 @@ export default function Blog() {
                             scope="row"
                             className="px-2 py-4 font-medium text-gray-900 text-[18px] whitespace-nowrap dark:text-white sm:px-6"
                           >
-                            性能
+                            網頁速度
                           </th>
                           <td className="px-2 py-4 sm:px-6">
                             <p className="text-[18px] ">快</p>
@@ -534,7 +534,7 @@ export default function Blog() {
                             scope="row"
                             className="px-2 text-[18px]  py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                           >
-                            SEO
+                            SEO(網頁優化排名)
                           </th>
                           <td className="px-2 py-4 sm:px-6">
                             <p className="text-[18px]">SEO範圍全面</p>
@@ -1082,8 +1082,9 @@ export default function Blog() {
                       </h3>
                       <p className="mt-3 leading-[26px] xl:text-[18px] text-[16px] w-[100%] md:w-4/5  xl:w-1/2 text-center">
                         在數位時代，網站速度不僅影響使用者體驗，更是影響 SEO
-                        排名的重要因素。Google Speed Insight
-                        是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，精確指出需要改進的地方，讓您能輕鬆優化網站。
+                        排名的重要因素。<br></br>Google Speed Insight
+                        是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，
+                        精確指出需要改進的地方，讓您能輕鬆優化網站。
                       </p>
 
                       <a
@@ -1148,10 +1149,12 @@ export default function Blog() {
                       id="text3"
                       fontSize="60px"
                     />{" "}
-                    <p className="w-[95%] xl:w-1/2 md:w-2/3">
+                    <p className="w-[95%] mb-5 xl:w-1/2 md:w-2/3">
                       {" "}
                       3D
-                      網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
+                      網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。
+                      <br></br>
+                      這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
                     </p>
                     <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
                       Spline

@@ -137,7 +137,7 @@ const EmblaCarousel = (props) => {
                       alt={`Slide ${index + 1}`}
                     />
                   )}
-                  <p className="text-[14px] font-light mt-2">產品後製圖片</p>
+                  <p className="text-[14px] font-light mt-2">3d建模＋後製</p>
                   <div className="txt mt-[20px] flex-col flex justify-center items-center w-[80%] mx-auto">
                     <b className="text-[18px] text-center">{slide.title}</b>
                     <p className="text-[14px] font-normal text-center">

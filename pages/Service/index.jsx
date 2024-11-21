@@ -451,49 +451,62 @@ export default function Blog() {
               <div className=" bg-black flex w-[100vw] w-full py-[40px]">
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   WEBSITE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                  <Image
+                    src="/images/hotjar熱點圖.webp"
                     alt=""
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
                     className="mx-3 w-[220px]"
                   />
                 </div>
-                <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white border-r border-[#b6b6b6] font-black">
-                  SEO
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
-                    alt=""
-                    className="mx-3 w-[220px]"
-                  />
-                </div>
+
                 <div className="text-[20px] border-r border-[#b6b6b6] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   PHOTOGRAPHY
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                  <Image
+                    src="/images/portfolio-zensor.webp"
                     alt=""
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
                     className="mx-3 w-[220px]"
                   />
                 </div>
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white border-r border-[#b0b0b0] font-black">
-                  STAGE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                  SEO
+                  <Image
+                    src="/images/3d產品模型09-極客網頁設計_Blender3D.png"
                     alt=""
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
                     className="mx-3 w-[220px]"
                   />
                 </div>
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  STAGE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                  Photography
+                  <Image
+                    src="/images/3791116_0ef4_7 (1).webp"
                     alt=""
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
                     className="mx-3 w-[220px]"
                   />
                 </div>
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
-                  STAGE
-                  <img
-                    src="https://cdn.prod.website-files.com/61789b489343c8242282a0ae/645df56142dc74d7ef923a31_E-InOL4cmnITHd7zaXBc-MMustwJUO9rs-SOjehZj7Q.jpeg"
+                  Design
+                  <Image
+                    src="/images/midjourney.webp"
                     alt=""
+                    width={800}
+                    height={600}
+                    placeholder="empty"
+                    loading="lazy"
                     className="mx-3 w-[220px]"
                   />
                 </div>
@@ -822,9 +835,9 @@ export default function Blog() {
               </Marquee>
             </section>
             <section className="section mt-[80px]">
-              <div className="p-[20px]">
+              <div className="p-[20px] xl:p-0">
                 <div className="padding">
-                  <div className="w-layout-grid px-[30px] xl:px-[200px] about-content">
+                  <div className="w-layout-grid px-[0px] xl:px-[160px] about-content">
                     <div
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
                       className="about-grid-content"
@@ -1049,7 +1062,7 @@ export default function Blog() {
                 </p>
               </div>
             </section> */}
-            <section className="marketing ">
+            <section className="marketing  lg:w-full 2xl:w-[80%]  mx-auto ">
               <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 2xl:w-[60%] mx-auto">
                 {/* <h2 className="heading is-medium-title text-center">
                   "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
@@ -1192,154 +1205,170 @@ export default function Blog() {
               </div>
             </section>
 
-            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px]   py-[20px] md:py-[80px]  lg:px-[50px]  xl:px-[70px] 2xl:px-[200px]">
-              <div className="w-full  xl:w-[40%] p-[10px] xl:p-[40px]">
-                <div className="txt">
-                  <div className="logo pl-[20px]">
-                    <b className="font-bold text-[30px]">JEEK</b>
-                  </div>
-                  <div className="bottom " data-aos="fade-up">
-                    <p className="text-[12px] font-bold">Design by Website</p>
-                    {/* 
+            <section className="w-full flex flex-col xl:flex-row justify-center px-[30px] md:px-[150px] xl:px-0 py-[20px] md:py-[80px]    ">
+              <div className="flex justify-center w-full lg:w-[90%] xl:flex-row flex-col  2xl:w-[70%]">
+                <div className="w-full  xl:w-[35%] p-[10px] xl:p-[40px]">
+                  <div className="txt">
+                    <div className="logo pl-[20px]">
+                      <b className="font-bold text-[30px]">JEEK</b>
+                    </div>
+                    <div className="bottom " data-aos="fade-up">
+                      <p className="text-[12px] font-bold">Design by Website</p>
+                      {/* 
 
                     <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
                       使用 3D 模型製作網頁橫幅和產品圖的好處
                     </h3> */}
 
-                    <GsapText
-                      text="Seo成效分析"
-                      lineHeight="60px"
-                      id="text7"
-                      fontSize="50px"
-                    />
+                      <GsapText
+                        text="Seo成效分析"
+                        lineHeight="60px"
+                        id="text7"
+                        fontSize="50px"
+                      />
 
-                    <div class="flex md:flex-wrap flex-col mt-5">
-                      <span class="bg-[#fad335] text-center w-[210px] border mt-3 md:mt-0 border-black text-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        google analytics 4
-                      </span>
-                      <span class="bg-[#fad335] text-center w-[210px] text-black  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        Google Search Console
-                      </span>
-                      <span class="bg-[#fad335] text-center w-[150px] text-black border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                        Hotjar
-                      </span>
+                      <div class="flex md:flex-wrap flex-col mt-5">
+                        <span class="bg-[#fad335] text-center w-[210px] border mt-3 md:mt-0 border-black text-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          google analytics 4
+                        </span>
+                        <span class="bg-[#fad335] text-center w-[210px] text-black  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          Google Search Console
+                        </span>
+                        <span class="bg-[#fad335] text-center w-[150px] text-black border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                          Hotjar
+                        </span>
+                      </div>
+
+                      <p className="text-[16px]  w-full md:w-2/3  xl:w-full mt-[40px]">
+                        使用 GA4、Google Search Console 和
+                        Hotjar，您可以全方位分析和優化網站的 SEO 成效。GA4
+                        提供用戶行為和目標追蹤，Google Search Console
+                        追蹤關鍵字排名與索引狀況，Hotjar
+                        則透過熱圖和錄影視覺化使用者互動。這些工具能幫助您提升網站曝光率和使用者體驗，達到最佳
+                        SEO 效果。
+                      </p>
+                      <a
+                        id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                        href="/blog-09"
+                        className="simple-link"
+                      >
+                        Seo成效分析
+                      </a>
                     </div>
-
-                    <p className="text-[16px]  w-full md:w-2/3  xl:w-full mt-[40px]">
-                      使用 GA4、Google Search Console 和
-                      Hotjar，您可以全方位分析和優化網站的 SEO 成效。GA4
-                      提供用戶行為和目標追蹤，Google Search Console
-                      追蹤關鍵字排名與索引狀況，Hotjar
-                      則透過熱圖和錄影視覺化使用者互動。這些工具能幫助您提升網站曝光率和使用者體驗，達到最佳
-                      SEO 效果。
-                    </p>
-                    <a
-                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      href="/blog-09"
-                      className="simple-link"
-                    >
-                      Seo成效分析
-                    </a>
                   </div>
                 </div>
-              </div>
-              <div className="w-full  flex-col pt-10 flex  justify-center items-center  xl:w-[60%]">
-                <DragCaroudelSlider />
+                <div className="w-full  flex-col pt-10 flex  justify-center items-center  xl:w-[65%]">
+                  <DragCaroudelSlider />
 
-                <div className="txt">
-                  <div className="main-container medium-paddings ">
-                    <a
-                      id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                      href="/blog-01"
-                      className="simple-link"
-                    >
-                      新網站如何做Seo
-                    </a>
+                  <div className="txt">
+                    <div className="main-container medium-paddings ">
+                      <a
+                        id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                        href="/blog-01"
+                        className="simple-link"
+                      >
+                        新網站如何做Seo
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
-            <section className="w-full  px-[15px] xl:px-[100px] xl:flex-row mt-[100px] pb-[100px] flex-col flex">
-              <a
-                href="/blog-01"
-                className="xl:w-1/2 w-full mr-4 
+            <section className="w-full  px-[15px]  xl:flex-row  justify-center mt-[100px] pb-[100px] flex-col flex">
+              <div className="flex xl:flex-row flex-col w-full mx-auto lg:w-[70%] 2xl:w-[80%] justify-center">
+                <a
+                  href="/blog-01"
+                  className="xl:w-1/2 w-full mr-4 
               
                 
               duration-300
               hover:border-3
               hover:translate-x-4 hover:translate-y-4  p-3 md:p-10"
-              >
-                <div className="flex w-full  flex-col items-start">
-                  <Image
-                    alt="新網站SEO規劃-極客網頁設計"
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    className="rounded-[18px]"
-                    placeholder="empty"
-                    src="/images/新網站SEO規劃-極客網頁設計.webp"
-                  />
-                </div>
-                <div className="flex mt-6">
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    搜尋引擎優化
-                  </span>
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    網頁結構優化
-                  </span>
-                </div>
-                <h4 className="text-[40px] font-light text-black leading-normal">
-                  網頁SEO很重要嗎？
-                </h4>
+                >
+                  <div className="flex w-full  flex-col items-start">
+                    <Image
+                      alt="新網站SEO規劃-極客網頁設計"
+                      width={700}
+                      height={700}
+                      loading="lazy"
+                      className="rounded-[18px]"
+                      placeholder="empty"
+                      src="/images/新網站SEO規劃-極客網頁設計.webp"
+                    />
+                  </div>
+                  <div className="flex mt-6">
+                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      搜尋引擎優化
+                    </span>
+                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      網頁結構優化
+                    </span>
+                  </div>
+                  <div className="txt w-full 2xl:w-[80%]">
+                    <h4 className="text-[40px] font-light text-black leading-normal">
+                      網頁SEO很重要嗎？
+                    </h4>
 
-                <p className=" text-[16px] mt-3">
-                  在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
-                </p>
-              </a>
-              <a
-                href="/blog-02"
-                className="xl:w-1/2 mt-5 w-full mr-4 
+                    <p className=" text-[16px] mt-3">
+                      在當今數位時代，擁有一個專業、美觀的網站只是成功的第一步。
+                      <br></br>
+                      然而，無論網站設計得多麼出色，如果它在搜尋引擎上沒有可見度，就無法有效吸引潛在客戶。
+                      <br></br>
+                      這就是為什麼網頁SEO（搜尋引擎優化）至關重要的原因。
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="/blog-02"
+                  className=" xl:w-1/2 mt-5 w-full mr-4 
               
                 
               duration-300
               hover:border-3
               hover:translate-x-4 hover:translate-y-4  p-3 md:p-10"
-              >
-                <div className="flex w-full  flex-col items-start">
-                  <Image
-                    alt="網頁設計很花錢嗎-極客網頁設計"
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    className="rounded-[18px]"
-                    placeholder="empty"
-                    src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp"
-                  />
-                </div>
-                <div className="flex mt-6">
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    目標明確
-                  </span>
-                  <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
-                    選擇效益最大化
-                  </span>
-                </div>
-                <h4 className="text-[40px] leading-normal font-light text-black">
-                  網頁設計其實沒有很花錢
-                </h4>
+                >
+                  <div className="flex w-full  flex-col items-start">
+                    <Image
+                      alt="網頁設計很花錢嗎-極客網頁設計"
+                      width={700}
+                      height={700}
+                      loading="lazy"
+                      className="rounded-[18px]"
+                      placeholder="empty"
+                      src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp"
+                    />
+                  </div>
+                  <div className="flex mt-6">
+                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      目標明確
+                    </span>
+                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                      選擇效益最大化
+                    </span>
+                  </div>
+                  <div className="txt w-full 2xl:w-[80%]">
+                    <h4 className="text-[40px] leading-normal font-light text-black">
+                      網頁設計其實沒有很花錢
+                    </h4>
 
-                <p className="  font-bold text-[20px] mt-3">確認需求：</p>
-                <div className="flex w-full  flex-col items-start">
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    在開始架設網頁之前，必須先確認好自己的網站需求。有些網頁公司會為您添加許多額外的功能或插件，結果卻發現這些功能用不上，還拖慢了網頁速度，增加了後續維護的困難。
-                  </b>
-                  <p className=" font-bold text-[20px] mt-3">
-                    尋找合適的合作夥伴:
-                  </p>
-                  <b className="mb-3 text-[14px] font-normal leading-normal">
-                    外包與兼職：如果需要專業協助，可以考慮聘請自由職業者或兼職設計師，他們通常比全職團隊更具成本效益。
-                  </b>
-                  {/* 
+                    <p className="  font-bold text-[20px] mt-3">確認需求：</p>
+                    <div className="flex w-full  flex-col items-start">
+                      <b className="mb-3 text-[14px] font-normal leading-normal">
+                        在開始架設網頁之前，必須先確認好自己的網站需求。
+                        <br></br>
+                        有些網頁公司會為您添加許多額外的功能或插件，<br></br>
+                        結果卻發現這些功能用不上，還拖慢了網頁速度，增加了後續維護的困難。
+                      </b>
+                      <p className=" font-bold text-[20px] mt-3">
+                        尋找合適的合作夥伴:
+                      </p>
+                      <b className="mb-3 text-[14px] font-normal leading-normal">
+                        外包與兼職：如果需要專業協助，可以考慮聘請自由職業者或兼職設計師，
+                        <br></br>他們通常比全職團隊更具成本效益。
+                      </b>
+                    </div>
+
+                    {/* 
                   <Image
                     loader={imageLoader02}
                     width={700}
@@ -1348,8 +1377,9 @@ export default function Blog() {
                     placeholder="empty"
                     src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
                   /> */}
-                </div>
-              </a>
+                  </div>
+                </a>
+              </div>
             </section>
 
             {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}

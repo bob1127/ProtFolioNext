@@ -202,9 +202,9 @@ export default function Blog() {
           >
             {" "}
             <Image
-              alt=""
+              alt="網頁這些大小事-你所想知道的都在這-極客網頁設計"
               loading="eager"
-              src="/images/fantastic_hare_36410_web_dwsigner_working_First_Person_Perspect_65e77a8a-51f3-45d9-9822-ec78af4b1d7d.webp"
+              src="/images/網頁這些大小事-你所想知道的都在這-極客網頁設計.png"
               width={1200}
               height={780}
               sizes="100%"
@@ -296,7 +296,7 @@ export default function Blog() {
                 <div className="Hot-article flex md:flex-row flex-col">
                   <a
                     href="/blog-05"
-                    className=" w-full duration-300 hover:scale-105   md:w-1/2 m-2 group rounded-xl overflow-hidden relative"
+                    className=" w-full duration-300 hover:scale-[1.01]   md:w-1/2 m-2 group rounded-xl overflow-hidden relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full bg-[#000000] opacity-50"></div>
                     <div className="txt absolute bottom-[30px] left-0 px-6 w-full  z-[999999] bg-transparent  flex flex-col">
@@ -317,12 +317,12 @@ export default function Blog() {
                       loading="lazy"
                       alt="深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計"
                       src="/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.png"
-                      className="w-full group-hover:scale-105 duration-300"
+                      className="w-full group-hover:scale-[1.03] duration-300"
                     ></Image>
                   </a>
                   <a
                     href="/blog-01"
-                    className="w-full duration-300 hover:scale-105  group md:w-1/2 m-2 rounded-xl overflow-hidden  relative"
+                    className="w-full duration-300 hover:scale-[1.03]  group md:w-1/2 m-2 rounded-xl overflow-hidden  relative"
                   >
                     <div className="cover absolute top-0 left-0 z-[999] w-full h-full "></div>
                     <figure>
@@ -334,7 +334,7 @@ export default function Blog() {
                         loading="lazy"
                         alt="網站SEO規劃-極客網頁設計"
                         src="/images/新網站SEO規劃-極客網頁設計.webp"
-                        className="w-full group-hover:scale-105 duration-300"
+                        className="w-full group-hover:scale-[1.03] duration-300"
                       ></Image>
                     </figure>
                   </a>
@@ -342,7 +342,7 @@ export default function Blog() {
                 <div className="others-article pt-8 ">
                   <a
                     href="/blog-05"
-                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 my-3  bg-[#fafaf8] hover:scale-[1.03]  flex flex-col md:flex-row bg-[#fafaf8] py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -372,7 +372,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-08"
-                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 my-3  bg-[#fafaf8] hover:scale-[1.03]  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -398,7 +398,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-02"
-                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 my-3  bg-[#fafaf8] hover:scale-[1.03]  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -421,7 +421,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-07"
-                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 my-3  bg-[#fafaf8] hover:scale-[1.03]  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -446,7 +446,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-03"
-                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 my-3  bg-[#fafaf8] hover:scale-[1.03]  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -471,7 +471,7 @@ export default function Blog() {
 
                   <a
                     href="/blog-06"
-                    className="article-item duration-300 hover:scale-105  flex flex-col md:flex-row py-8"
+                    className="article-item duration-300 my-3  bg-[#fafaf8] hover:scale-[1.03]  flex flex-col md:flex-row py-8"
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
@@ -488,6 +488,29 @@ export default function Blog() {
                       <h3 className="text-[18px]">SEO能帶來哪些好處？ </h3>
                       <p className="text-[14px] mt-3 w-[80%]">
                         SEO能顯著提高網站的搜尋引擎排名，增加有機流量，提升品牌知名度，並促進業務增長。透過優化策略，您能獲得更高的曝光率和轉換率。
+                      </p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="/blog-13"
+                    className="article-item duration-300 my-3  bg-[#fafaf8] hover:scale-[1.03]  flex flex-col md:flex-row py-8"
+                  >
+                    <div className="img w-full md:w-[35%] p-5">
+                      <Image
+                        src="/images/blog/blog13/scremingFrog.png"
+                        alt="SEO能帶來哪些好-極客網頁設計"
+                        width={800}
+                        height={600}
+                        placeholder="empty"
+                        loading="lazy"
+                        className="fill rounded-md"
+                      ></Image>
+                    </div>
+                    <div className="text w-full md:w-[65%] p-5">
+                      <h3 className="text-[18px]">進行網站SEO檢測 </h3>
+                      <p className="text-[14px] mt-3 w-[80%]">
+                        如何使用Screaming Frog 進行網站SEO檢測與問題修復
                       </p>
                     </div>
                   </a>
@@ -529,7 +552,7 @@ export default function Blog() {
                         loading="lazy"
                         width={700}
                         height={500}
-                        className="w-full object-contain group-hover:scale-105 duration-300"
+                        className="w-full object-contain group-hover:scale-[1.03] duration-300"
                       ></Image>
                     </a>
                     <a
@@ -549,7 +572,7 @@ export default function Blog() {
                         loading="lazy"
                         width={700}
                         height={500}
-                        className="w-full object-contain group-hover:scale-105 duration-300"
+                        className="w-full object-contain group-hover:scale-[1.03] duration-300"
                       ></Image>
                     </a>
                   </div>

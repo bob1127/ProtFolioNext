@@ -119,7 +119,7 @@ export default function NewsletterForm() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="    2xl:w-[800px]  md:h-full   w-full mx-auto  bg-white rounded-lg">
+    <div className="   overflow-y-scroll  2xl:w-[800px]  md:h-full   w-full mx-auto  bg-white rounded-lg">
       <div id="mc_embed_signup ">
         <form
           action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"
@@ -176,12 +176,28 @@ export default function NewsletterForm() {
                     type="checkbox"
                     name="group[43793][1]"
                     id="mce-group[43793]-43793-0"
+                  ></input>
+                  <div>
+                    <h4 className="text-white text-[22px]">一頁式網站</h4>
+                    <b className="text-white mb-[30px]">價格：NT10,000 up</b>
+                    <p className="text-[14px] text-white mt-3">- 高轉化率</p>
+                    <p className="text-[14px] text-white">
+                      - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
+                    </p>
+                    <p className="text-[14px] text-white">- 客製化設計</p>
+                  </div>
+                </li>
+                <li className="bg-black p-8 rounded-md ">
+                  <input
+                    type="checkbox"
+                    name="group[43793][1]"
+                    id="mce-group[43793]-43793-0"
                     data-gtm-form-interact-field-id="0"
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">精選方案</h4>
 
-                    <b className="text-white">價格：NT20000 up</b>
+                    <b className="text-white">價格：NT30,000 up</b>
 
                     <p className="text-[14px] text-white mt-3">
                       - 精美網站版型設計
@@ -191,6 +207,28 @@ export default function NewsletterForm() {
                       - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
                     </p>
                     <p className="text-[14px] text-white">- 基本seo優化</p>
+                  </div>
+                </li>
+
+                <li className="bg-black p-8 rounded-md ">
+                  <input
+                    type="checkbox"
+                    name="group[43793][4]"
+                    id="mce-group[43793]-43793-2"
+                  ></input>
+                  <div>
+                    <h4 className="text-white text-[22px]">購物網站</h4>
+                    <b className="text-white">價格：NT60,000 up</b>
+                    <p className="text-[14px] text-white mt-3">
+                      - 客製化網站規劃與設計
+                    </p>
+                    <p className="text-[14px] text-white">
+                      - 包含基本商品去背上架
+                    </p>
+                    <p className="text-[14px] text-white">- 商品 形象 Banner</p>
+                    <p className="text-[14px] text-white">
+                      - 公司形象(產品)影片拍攝
+                    </p>
                   </div>
                 </li>
                 <li className="bg-black p-8 rounded-md ">
@@ -210,43 +248,6 @@ export default function NewsletterForm() {
                     <p className="text-[14px] text-white">- 基本seo優化</p>
                   </div>
                 </li>
-                <li className="bg-black p-8 rounded-md ">
-                  <input
-                    type="checkbox"
-                    name="group[43793][1]"
-                    id="mce-group[43793]-43793-0"
-                  ></input>
-                  <div>
-                    <h4 className="text-white text-[22px]">一頁式網站</h4>
-                    <b className="text-white mb-[30px]">價格：NT15000 up</b>
-                    <p className="text-[14px] text-white mt-3">- 高轉化率</p>
-                    <p className="text-[14px] text-white">
-                      - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
-                    </p>
-                    <p className="text-[14px] text-white">- 客製化設計</p>
-                  </div>
-                </li>
-                <li className="bg-black p-8 rounded-md ">
-                  <input
-                    type="checkbox"
-                    name="group[43793][4]"
-                    id="mce-group[43793]-43793-2"
-                  ></input>
-                  <div>
-                    <h4 className="text-white text-[22px]">購物網站</h4>
-                    <b className="text-white">價格：NT50000 up</b>
-                    <p className="text-[14px] text-white mt-3">
-                      - 客製化網站規劃與設計
-                    </p>
-                    <p className="text-[14px] text-white">
-                      - 包含基本商品去背上架
-                    </p>
-                    <p className="text-[14px] text-white">- 商品 形象 Banner</p>
-                    <p className="text-[14px] text-white">
-                      - 公司形象(產品)影片拍攝
-                    </p>
-                  </div>
-                </li>
               </ul>
             </div>
             <div className="mc-field-group input-group py-[40px]">
@@ -259,7 +260,7 @@ export default function NewsletterForm() {
                   >
                     {" "}
                     <Image
-                      src="/images/ig-qrCode.png"
+                      src="/images/line-qrcode.jpg"
                       width={100}
                       height={100}
                       loading="lazy"
@@ -274,14 +275,14 @@ export default function NewsletterForm() {
                           <ModalHeader className="flex  flex-col  gap-1"></ModalHeader>
                           <ModalBody>
                             <div className="">
-                              <Image
-                                src="/images/ig-qrCode.png"
+                              {/* <Image
+                                src="/images/line-qrcode.jpg"
                                 width={1000}
                                 height={1000}
                                 loading="lazy"
                                 alt="contact-line-qrcode"
                                 placeholder="empty"
-                              ></Image>
+                              ></Image> */}
                               <p>Line Qr code</p>
                               <p>掃描加入好友</p>
                             </div>
@@ -352,14 +353,14 @@ export default function NewsletterForm() {
                           <ModalBody>
                             <div className="">
                               <Image
-                                src="/images/ig-qrCode.png"
+                                src="/images/line-qrcode.jpg"
                                 width={1000}
                                 height={1000}
                                 loading="lazy"
                                 alt="contact-line-qrcode"
                                 placeholder="empty"
                               ></Image>
-                              <p>Facebook Qr code</p>
+                              <p>Line Qr code</p>
                               <p>掃描加入好友</p>
                             </div>
                           </ModalBody>

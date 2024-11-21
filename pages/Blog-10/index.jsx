@@ -137,7 +137,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -188,7 +188,10 @@ export default function Blog() {
             ></Image>
           </div>
 
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>前端框架Next.js + 最受歡迎的內容管理系統Wordpress</h2>
               Next.js 和 WordPress 結合能顯著提升性能。利用 Next.js
@@ -626,7 +629,7 @@ export default function Blog() {
         </Marquee>
         <div id="article-content" className="article-content-section"></div>
       </div> */}
-      <section className="my-[100px]">
+      <section className="my-[100px]  lg:mx-[50px]  xl:mx-[150px] 2xl:mx-[300px]">
         <h2 className="mt-10 text-center text-xl sm:text-2xl md:text-3xl my-5 lg:text-4xl">
           "無頭網站 跟 Wordpress網站 比較"
         </h2>

@@ -131,7 +131,7 @@ export default function Blog() {
             data-aos="fade-blur"
           ></Image>
         </div>
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -183,7 +183,10 @@ export default function Blog() {
             ></Image>
           </div>
 
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>優化網站內容與結構，快速提升搜尋引擎排名，增加線上曝光</h2>
               許多企業面臨著一個共同的挑戰：如何讓自己的網站在眾多競爭者中脫穎而出。

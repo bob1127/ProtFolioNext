@@ -28,8 +28,15 @@ module.exports = {
       animation: {
         moveit: 'moveit 900ms ease forwards',
         moveitback: 'moveitback 400ms ease forwards',
+                textRotation: "textRotation 8s linear infinite",
+
       },
       keyframes: {
+        textRotation: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
         moveit: {
           '0%': { transform: 'translateY(0) scale(0.96)' },
           '20%': { transform: 'translateY(80px) scale(1.1)' },

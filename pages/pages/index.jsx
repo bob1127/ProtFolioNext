@@ -116,7 +116,7 @@ const Blog = ({ posts, categories, tags }) => {
             精選專案-極客網頁設計
           </h1>
           <div className="btn-wrap">
-            <button className="bg-white mt-2 text-[14px] md:text-[16px]">
+            <button className="text-white mt-2 text-[14px] md:text-[16px]">
               致力於製作出更優良的網頁作品
             </button>
           </div>
@@ -136,17 +136,19 @@ const Blog = ({ posts, categories, tags }) => {
             >
               All
             </button>
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`tab ${
-                  selectedCategory === category.id ? "active" : ""
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
+            <div className="flex md:flex-col flex-row">
+              {categories.map((category) => (
+                <button
+                  key={category.id}
+                  onClick={() => setSelectedCategory(category.id)}
+                  className={`tab ${
+                    selectedCategory === category.id ? "active" : ""
+                  } `}
+                >
+                  {category.name}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
         <div className="projects pt-0 lg:pt-10 pl-3 pr-8 w-full md:w-[80%]">

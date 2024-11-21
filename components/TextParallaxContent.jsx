@@ -52,12 +52,12 @@ export default function App() {
 
   return (
     <div className=" ">
-      <div className="h-[100vh] bg-[#c8c8c8] w-full relative overflow-hidden">
+      <div className="h-[100vh] md:h-[80vh] lg:h-[100vh] xl-[100vh] bg-[#c8c8c8] w-full relative overflow-hidden">
         <div
-          className="absolute top-0 opacity-10 left-0 w-[100vw] h-[100vh]  z-[9999999] bg-center bg-no-repeat bg-cover "
+          className="absolute top-0 opacity-10 left-0  w-[100vw] h-[100vh]  z-[9999999] bg-center bg-no-repeat bg-cover "
           style={{ backgroundImage: "url('/images/Hero-backgorund.png')" }}
         ></div>
-        <div className="absolute left-0 md:left-[20%] top-[20%] w-full md:w-[80%] lg:w-[60%] z-[999999999]">
+        <div className="absolute left-0  md:left-[22%] top-[20%] w-full md:w-[80%] lg:w-[60%] z-[999999999]">
           <div className="font-anton relative  line flex justify-center items-center mt-[-80px] h-[180px] overflow-hidden ">
             <h1 className="font-black text-[40px] md:text-[80px] xl:text-[100px] 2xl:text-[125px] absolute  line">
               {["極", "客", "網", "頁", "設", "計"].map((char, index) => (
@@ -67,7 +67,7 @@ export default function App() {
               ))}
             </h1>
           </div>
-          <div className="font-anton relative  line flex justify-center items-center mt-[-80px] h-[80px] md:h-[180px] overflow-hidden ">
+          <div className="font-anton relative  line flex justify-center items-center mt-[-80px] sm:mt-[-50px]  h-[80px] md:h-[180px] overflow-hidden ">
             <h1 className="font-black text-[40px] md:text-[80px] xl:text-[100px] 2xl:text-[125px] absolute  line">
               {["J", "E", "E", "K", " -", "D", "E", "S", "I", "G", "N"].map(
                 (char, index) => (
@@ -78,18 +78,22 @@ export default function App() {
               )}
             </h1>
           </div>
-          <div className="feature relative z-[9999999999999] mb-[40px] py-2 px-3 lg:w-[65%] w-[85%] md:w-[90%] mx-auto grid border-r-2 border-l-2 border-black rounded-[40px] grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="flex flex-col justify-center items-center text-center h-full">
+          <div className="feature relative z-[9999999999999] mb-[40px] py-2 px-3 lg:w-[65%] w-[85%] md:w-[100%] mx-auto grid border-r-2 border-l-2 border-black rounded-[40px] grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="flex flex-col justify-center h-full">
               <p>Website Design</p>
               <b>網頁設計</b>
             </div>
-            <div className="flex flex-col justify-center items-center text-center h-full">
+            <div className="flex flex-col justify-center h-full">
               <p>SEO Optimization</p>
               <b>專業SEO優化</b>
             </div>
-            <div className="flex flex-col justify-center items-center text-center h-full">
+            <div className="flex flex-col justify-center h-full">
               <p>Photography</p>
               <b>產品攝影｜圖片後製</b>
+            </div>
+            <div className="flex flex-col justify-center h-full">
+              <p>3D建模</p>
+              <b>產品3d商業建模｜建模產品圖片應用</b>
             </div>
           </div>
         </div>
@@ -199,7 +203,7 @@ export default function App() {
             ></Image>
           </motion.div>
         </div>
-        <div className="absolute  bottom-0 sm:bottom-[-30%] md:bottom-[-22%] lg:bottom-[-10%] right-[-23%] md:right-[-15%] lg:right-[-5%] z-[99999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
+        <div className="absolute  bottom-0 sm:bottom-[-30%] md:bottom-[-22%] lg:bottom-[-10%] right-[-23%] md:right-[-15%] lg:right-[-5%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
           <Image
             src="/images/Hero-img-11.webp"
             alt="hero-blur-img_desktop"

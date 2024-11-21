@@ -135,7 +135,7 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content  p-[20px] md:px-[50px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  py-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -184,7 +184,10 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
             ></Image>
           </div>
 
-          <div className="patagrph p-2 xl:px-[150px]" data-aos="fade">
+          <div
+            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
+            data-aos="fade"
+          >
             <div className=" mt-5 text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               使用它可以更了解訪客在你的網站上是如何互動的。首先，它能夠揭示使用者在網頁上的點擊、滑動和停留位置，讓你清楚知道哪裡是他們關注的焦點。這有助於最佳化網頁設計，確保重要資訊不被忽略。
             </div>

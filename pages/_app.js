@@ -97,10 +97,10 @@ export default function MyApp({ Component, pageProps, router }) {
       <div className='bg-[#ffffff] max-w-[3860px] overflow-hidden mx-auto '>
         {/* <Policy/> */}
         <Head>
-        {/* 加载多个 Elementor 样式文件，确保所有容器样式都能显示 */}
+      
        
       </Head>
-
+   
         <Script
           src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
           type="text/javascript"

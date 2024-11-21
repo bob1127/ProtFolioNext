@@ -172,7 +172,7 @@ export default function Blog() {
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
           property="og:title"
-          content="精選方案報價-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 超優惠內容專案，歡迎聯繫"
+          content="專案報價-給您最合理的報價內容｜極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         />
         <meta
           property="og:description"
@@ -213,12 +213,12 @@ export default function Blog() {
         />
       </Head>
       <NextSeo
-        title="關於極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        title="專案報價-給您最合理的報價內容｜極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         description="專業的網頁設計與SEO優化服務，靈活的自由接案者提供客製化解決方案，讓您的網站脫穎而出。聯繫我們，讓我們幫助您提升品牌形象，實現業務目標！
 "
         openGraph={{
           title:
-            "關於極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+            "專案報價-給您最合理的報價內容｜極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
           description:
             "專業的網頁設計與SEO優化服務，靈活的自由接案者提供客製化解決方案，讓您的網站脫穎而出。聯繫我們，讓我們幫助您提升品牌形象，實現業務目標！",
           images: [
@@ -278,7 +278,7 @@ export default function Blog() {
             <section className="slider-hero">
               <SwiperScroll />
             </section>
-            <section className="Hero-title px-[10px] md:px-[70px] pt-[90px] md:pt-[150px] py-6 ">
+            <section className="Hero-title mt-[30px] md:mt-0 px-[10px] md:px-[70px]  pt-[0px] md:pt-[150px] py-6 ">
               <div className="container duration-500  bg-[#f3c13a]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[40vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
                 <div className="sign flex py-2 sm:py-[40px] justify-center">
                   <div className="border flex justify-center items-center border-gray-500 bg-white rounded-[30px] w-full px-8 py-3">
@@ -719,7 +719,7 @@ export default function Blog() {
             </section>
 
             <section
-              className="mt-0 pt-[90px]  md:mt-[100px] mx-[20px] md:px-0"
+              className="mt-0 pt-0  md:mt-[40px] mx-[20px] md:px-0"
               id="free"
             >
               <h2
@@ -929,12 +929,12 @@ export default function Blog() {
               </Marquee>
             </section>
 
-            <section className="section relative">
-              <div className="container">
-                <div className="padding small-paddings">
+            <section className="section mt-[50px]">
+              <div className="">
+                <div className="">
                   <div className=" ">
                     <div
-                      className="vertical-flex flex flex-col justify-center items-center with-small-gap plans-wrap "
+                      className="vertical-flex mt-[25px] flex flex-col justify-center items-center with-small-gap plans-wrap "
                       style={{ display: "flex", justifyContent: "center" }}
                     >
                       <h2
@@ -958,30 +958,17 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-              <div className="flex p-[30px] justify-center pb-6">
-                {/* <b className="mx-auto text-[18px]">
-                  * 以下方案都包含 1. 第一年 網域和主機費用(除非有特殊要求){" "}
-                  <br></br> 2. GA google tag manager 串接 <br></br>{" "}
-                  3.基本網頁就夠
-                  <br></br>
-                  <p className="text-[16px]">
-                    有權決定最終方案價格，所以 匯款
-                    資訊及合約表特可以看關於我裡面 資訊
-                  </p>
-                  <p>關於我們聯絡表單可以跟我們說</p>
-                </b> */}
-              </div>
             </section>
 
             <section className="section-plan">
-              <div className="flex md:flex-row flex-wrap justify-center items-start mt-10  flex-row">
+              <div className="flex md:flex-row flex-wrap justify-center items-start   flex-row">
                 <div
-                  className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
+                  className="border pb-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <p>Basic</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] bg-[#ffc532] w-[120px] font-bold text-whitebg-[#ffc532] border border-black">
-                    NT 40,000
+                    NT 30,000
                   </div>
                   <h3 className="text-[40px]">精選方案</h3>
 
@@ -1016,7 +1003,7 @@ export default function Blog() {
                 >
                   <p className="font-bold">Landing Page</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 35,000
+                    NT 20,000
                   </div>
                   <h3 className="text-[40px]">一頁式網站</h3>
 
@@ -1048,7 +1035,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 55,000
+                    NT 60,000
                   </div>
                   <p>E-Coomerce</p>
                   <h3 className="text-[40px]">購物網站</h3>
@@ -1122,7 +1109,85 @@ export default function Blog() {
                 </div>
               </div>
             </section>
+            <section className="coroperation my-[60px]">
+              <div className="flex flex-col ">
+                <span
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  className="md:text-[30px] text-[26px] xl:text-[50px] mx-auto"
+                  style={{
+                    marginBottom: 30,
+                    display: "flex",
+                    justifyContent: "center",
+                    textAlign: "center",
+                  }}
+                >
+                  <GsapText
+                    text="合作須知-terms"
+                    lineHeight="70px"
+                    id="text2"
+                    fontSize="60px"
+                  />
+                </span>
+              </div>
+              <div className="terms-wrap  bg-white border w-[97%] md:w-[80vw] mx-auto p-8 md:p-10  shadow-xl rounded-xl">
+                <div className="grid  p-0 md:p-10 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-2">
+                  <div className="content p-10">
+                    <b className="text-[20px]">Step01</b>
+                    <p className="text-[20px]">確認雙方需求</p>
 
+                    <Image
+                      className="mt-3"
+                      src="/images/icon/collaboration.png"
+                      loading="lazy"
+                      width={300}
+                      height={300}
+                      placeholder="empty"
+                      alt="step1確認雙方需求"
+                    />
+                  </div>
+                  <div className="content p-10">
+                    <b className="text-[20px]">Step02</b>
+                    <p className="text-[20px]">支付訂金</p>
+                    <Image
+                      className="mt-3"
+                      src="/images/icon/payment-method.png"
+                      loading="lazy"
+                      width={300}
+                      height={500}
+                      placeholder="empty"
+                      alt="step02. 支付訂金-極客網頁設計"
+                    />
+                  </div>
+                  <div className="content p-10">
+                    <b className="text-[20px]">Step03</b>
+                    <p className="text-[20px]">開始製作</p>
+                    <Image
+                      className="mt-3"
+                      src="/images/icon/ux.png"
+                      loading="lazy"
+                      width={300}
+                      height={500}
+                      placeholder="empty"
+                      alt="step03. 開始製作"
+                    />
+                  </div>
+                  <div className="content p-10">
+                    <b className="text-[20px]">Step04</b>
+                    <p className="text-[20px]">支付尾款-結案</p>
+                    <Image
+                      className="mt-3"
+                      src="/images/icon/positive-vote.png"
+                      loading="lazy"
+                      width={300}
+                      height={500}
+                      placeholder="empty"
+                      alt="step04. 結案"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
             {/* <section className="  py-[70px] px-[20px] flex flex-col ">
               <div className="flex justify-center w-full">
                 <div className="">
@@ -1223,7 +1288,7 @@ export default function Blog() {
                     </div>
                   </div>
                   <div className="right w-full lg:w-[60%] border  h-full py-10">
-                    <div className="from flex justify-center items-center  h-auto bg-white p-[40px] border-black-rgba  ">
+                    <div className="from flex justify-center items-center  h-auto bg-white p-[10px] lg:p-[40px] border-black-rgba  ">
                       <NewsletterForm />
                     </div>
                   </div>

@@ -27,10 +27,14 @@ const PrivacyPopup = () => {
   if (!isVisible) return null; // 如果不需要顯示，返回 null
 
   return (
-    <div className="fixed  w-[97%] lg:w-[40%] py-[30px] bottom-[10px] lg:bottom-[20px] right-[20px]  bg-white border rounded-md z-[999999999999999999] text-white p-4">
+    <div className="fixed  md:left-[70%] lg:left-[80%] left-[50%] md:w-[40%] -translate-x-1/2  w-[97%]  lg:max-w-[500px] py-[30px] bottom-[6px] lg:bottom-[20px]    bg-white border rounded-md z-[999999999999999999] text-white p-4">
       <div className="container text-center mx-auto flex flex-col text-black justify-between items-center">
+        <b className="text-[20px]">隱私權政策</b>
         <span>
-          我們使用 cookies 改善您的體驗。點擊 "同意" 以接受我們的隱私條款。
+          本網站使用cookies和相關技術用於網站運營、分析和第三方廣告目的。你可以選擇同意我們使用這些技術。{" "}
+          <br></br>
+          您可以選擇同意我們使用這些技術，拒絕非必要的技術，或進一步管理您的偏好。
+          .
         </span>
         <div className="mt-6">
           <button
