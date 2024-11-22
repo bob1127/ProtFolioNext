@@ -41,7 +41,7 @@ export default function index() {
             <a href="/">
               <li className="border-spacing-3">首頁</li>
             </a>
-            <a href="/pages">
+            <a href="/project">
               <li className="border-spacing-3">精選案例</li>
             </a>
             <a href="/blogs">

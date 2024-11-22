@@ -107,69 +107,75 @@ const Blog = ({ posts, categories, tags }) => {
       <section className="hero "></section>
       <section className="projext-container py-[100px]  px-[40px] 2xl:px-[100px]">
         <div className="flex w-full flex-col">
-          <div className="flex w-full flex-col">
+          <div className="flex w-full py-[80px] md:py-5 flex-col">
             <Tabs aria-label="Options">
               <Tab key="精選網站" title="精選網站">
                 <Card>
                   <CardBody>
                     <div className="flex flex-wrap">
-                      <div className="project-item flex flex-col mx-3">
-                        <div className="img-wrap  rounded-lg border w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
-                          placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
+                      <a
+                        href="https://www.zensor.com.tw"
+                        target="_blank"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                          <img
+                            src="/images/portfolio-zensor.webp"
+                            alt="專案01-禪譜科技"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
                         <div className="txt py-5">
                           <b>禪譜科技股份有限公司</b> <br></br>
                           <a href="text-blue hover:font-bold text-[16px] text-blue">
                             live demo
                           </a>
                         </div>
-                      </div>
-                      <div className="project-item flex flex-col mx-3">
-                        <div className="img-wrap border   rounded-lg w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
-                          placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
+                      </a>
+                      <a
+                        href="https://www.ultraehp.com"
+                        target="_blank"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                          <img
+                            src="/images/ultraehp01.png"
+                            alt="專案01-禪譜科技"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
                         <div className="txt py-5">
-                          <b>禪譜科技股份有限公司</b> <br></br>
+                          <b>超極生技股份有限公司</b> <br></br>
                           <a href="text-blue hover:font-bold text-[16px] text-blue">
                             live demo
                           </a>
                         </div>
-                      </div>
-                      <div className="project-item flex  flex-col">
-                        <div className="img-wrap border rounded-lg w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
-                          placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
+                      </a>
+                      <a
+                        href="https://www.king-newton.com"
+                        target="_blank"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                          <img
+                            src="/images/king.png"
+                            alt="專案01-禪譜科技"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
                         <div className="txt py-5">
-                          <b>禪譜科技股份有限公司</b> <br></br>
+                          <b>金牛頓股份有限公司</b> <br></br>
                           <a href="text-blue hover:font-bold text-[16px] text-blue">
                             live demo
                           </a>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   </CardBody>
                 </Card>
@@ -178,63 +184,27 @@ const Blog = ({ posts, categories, tags }) => {
                 <Card>
                   <CardBody>
                     <div className="flex flex-wrap">
-                      <div className="project-item flex flex-col mx-3">
-                        <div className="img-wrap  rounded-lg border w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
-                          placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
+                      <a
+                        href="https://domc.com.tw"
+                        target="_blank"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                          <img
+                            src="/images/多利安.png"
+                            alt="專案05-多利安音樂藝術"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
                         <div className="txt py-5">
-                          <b>禪譜科技股份有限公司</b> <br></br>
+                          <b>多利安音樂藝術</b> <br></br>
                           <a href="text-blue hover:font-bold text-[16px] text-blue">
                             live demo
                           </a>
                         </div>
-                      </div>
-                      <div className="project-item flex flex-col mx-3">
-                        <div className="img-wrap border   rounded-lg w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
-                          placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
-                        <div className="txt py-5">
-                          <b>禪譜科技股份有限公司</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </div>
-                      <div className="project-item flex  flex-col">
-                        <div className="img-wrap border rounded-lg w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
-                          placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
-                        <div className="txt py-5">
-                          <b>禪譜科技股份有限公司</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </div>
+                      </a>
                     </div>
                   </CardBody>
                 </Card>
@@ -242,46 +212,28 @@ const Blog = ({ posts, categories, tags }) => {
               <Tab key="商業網站" title="商業網站">
                 <Card>
                   <CardBody>
-                    <div className="flex flex-wrap">
-                      <div className="project-item flex flex-col mx-3">
-                        <div className="img-wrap  rounded-lg border w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
+                    {" "}
+                    <a
+                      href="https://cxuan.com.tw"
+                      target="_blank"
+                      className="project-item flex flex-col mx-3"
+                    >
+                      <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                        <img
+                          src="/images/quan.png"
+                          alt="專案04-澄軒飲水"
+                          className="w-full"
                           placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
-                        <div className="txt py-5">
-                          <b>禪譜科技股份有限公司</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
+                        ></img>
                       </div>
-                      <div className="project-item flex flex-col mx-3">
-                        <div className="img-wrap border   rounded-lg w-[400px] h-[300px] border-black"></div>
-                        {/* <Image
-                          src="/images/banner-Wireless-Potentiostats.png"
-                          loading="lazy"
-                          alt="專案01-禪譜科技"
-                          width={800}
-                          height={600}
-                          placeholder="empty"
-                        >
-                          {" "}
-                        </Image> */}
-                        <div className="txt py-5">
-                          <b>禪譜科技股份有限公司</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
+
+                      <div className="txt py-5">
+                        <b>澄軒飲水</b> <br></br>
+                        <a href="text-blue hover:font-bold text-[16px] text-blue">
+                          live demo
+                        </a>
                       </div>
-                    </div>
+                    </a>
                   </CardBody>
                 </Card>
               </Tab>

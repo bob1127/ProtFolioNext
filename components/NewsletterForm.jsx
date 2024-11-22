@@ -179,7 +179,7 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">一頁式網站</h4>
-                    <b className="text-white mb-[30px]">價格：NT10,000 up</b>
+                    <b className="text-white mb-[30px]">價格：NT35,000 up</b>
                     <p className="text-[14px] text-white mt-3">- 高轉化率</p>
                     <p className="text-[14px] text-white">
                       - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
@@ -197,7 +197,7 @@ export default function NewsletterForm() {
                   <div>
                     <h4 className="text-white text-[22px]">精選方案</h4>
 
-                    <b className="text-white">價格：NT30,000 up</b>
+                    <b className="text-white">價格：NT50,000 up</b>
 
                     <p className="text-[14px] text-white mt-3">
                       - 精美網站版型設計
@@ -218,7 +218,7 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">購物網站</h4>
-                    <b className="text-white">價格：NT60,000 up</b>
+                    <b className="text-white">價格：NT90,000 up</b>
                     <p className="text-[14px] text-white mt-3">
                       - 客製化網站規劃與設計
                     </p>

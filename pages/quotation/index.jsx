@@ -822,7 +822,7 @@ export default function Blog() {
                     href="/contact"
                     className="bg-[#ffffff] mt-3 duration-200 text-[50px] rounded-md px-4 text-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
                   >
-                    30,000
+                    50,000
                   </a>
                 </div>
               </section>
@@ -968,7 +968,7 @@ export default function Blog() {
                 >
                   <p>Basic</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] bg-[#ffc532] w-[120px] font-bold text-whitebg-[#ffc532] border border-black">
-                    NT 30,000
+                    NT 50,000
                   </div>
                   <h3 className="text-[40px]">精選方案</h3>
 
@@ -1003,7 +1003,7 @@ export default function Blog() {
                 >
                   <p className="font-bold">Landing Page</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 20,000
+                    NT 35,000
                   </div>
                   <h3 className="text-[40px]">一頁式網站</h3>
 
@@ -1035,7 +1035,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 60,000
+                    NT 90,000
                   </div>
                   <p>E-Coomerce</p>
                   <h3 className="text-[40px]">購物網站</h3>

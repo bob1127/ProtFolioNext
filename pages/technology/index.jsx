@@ -375,7 +375,7 @@ export default function Blog() {
               <section id="services" className="section">
                 <a
                   data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfd9"
-                  href="https://next-wp0004.vercel.app"
+                  href="/blog-10"
                   className="fullwidth-link  w-inline-block"
                   style={{}}
                 >
@@ -884,7 +884,7 @@ export default function Blog() {
                   data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfd9"
                   className="fullwidth-link text-black w-inline-block"
                   style={{}}
-                  href="https://www.zensor.com.tw"
+                  href="/blog-02"
                 >
                   <h2
                     data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfda"
