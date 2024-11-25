@@ -10,6 +10,7 @@ import {
 } from "@nextui-org/react";
 // import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
 import { NextSeo } from "next-seo";
+import VerticalAccordion from "../../components/VerticalAccordion/index.jsx";
 import SwiperHero from "../../components/SwiperHero/index.jsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
@@ -250,8 +251,116 @@ export default function Blog() {
       />
       <div>
         <div id="webpage" className="page-wrapper">
-          <div className="pt-[30px]">
+          {/* <div className="pt-[30px]">
             <SwiperHero />
+          </div> */}
+          <section className="section">
+            <div className="container">
+              <div className="padding">
+                <div className="w-layout-grid about-content">
+                  <div
+                    id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
+                    className="about-grid-content"
+                  >
+                    <h2 className="heading is-medium-title">
+                      "不要再認為自己的品牌做網頁行銷很花錢了！"
+                    </h2>
+                    <p className=" text-[16px] leading-normal text-left ">
+                      許多人以為網站設計和行銷需要大筆預算才能有效，但 Jeek
+                      的方案讓品牌在有限預算內也能脫穎而出。我們專為初創企業與中小型商家量身打造行銷策略，使行銷成為可負擔的投資。透過專業網站設計與
+                      SEO
+                      優化，快速提升品牌曝光度，吸引精準客群，助您實現銷售成長。
+                    </p>
+                  </div>
+
+                  <div
+                    id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
+                    className="about-grid-image"
+                  >
+                    <div className="reveal-image-trigger">
+                      <Image
+                        src="/images/不要再以為網頁行銷很花錢了.png"
+                        alt="不要再以為網頁行銷很花錢了"
+                        placeholder="empty"
+                        loading="lazy"
+                        width={1300}
+                        height={1300}
+                      ></Image>
+                      <div
+                        className="bg-for-animation"
+                        style={{ display: "block" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="about-grid-image">
+                    <div className="reveal-image-trigger">
+                      <Image
+                        src="/images/fantastic_hare_36410__in_office_ba72e105-06e2-4e9a-a51b-5baa01d260d4.png"
+                        loading="lazy"
+                        height={1000}
+                        width={1000}
+                        placeholder="empty"
+                      ></Image>
+                      <div
+                        className="bg-for-animation"
+                        style={{ display: "block" }}
+                      />
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
+                    className="about-grid-content"
+                  >
+                    {/* <div className="text-dot-block">
+                        <div className="dot" />
+                        <p className="paragraph">網頁設計</p>
+                      </div> */}
+                    <h2 className="heading is-medium-title">
+                      "工作室，彈性更高，效率更高"
+                    </h2>
+                    <div className="flex items-start flex-col ">
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]">成本效益高</b>
+                        <p className="text-left leading-normal mt-3">
+                          -
+                          由於沒有大型團隊和高額管理費用，網頁工作室能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
+                        </p>
+                      </div>
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]">專注度高</b>
+                        <p className="text-left leading-normal mt-3">
+                          -
+                          網頁工作室通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
+                        </p>
+                      </div>
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]">靈活性強</b>
+                        <p className="text-left leading-normal mt-3">
+                          -
+                          作為網頁工作室，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
+                        </p>
+                      </div>
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]">溝通便捷</b>
+                        <p className="text-left leading-normal mt-3">
+                          -
+                          您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div className="flex flex-col pb-[30vh]">
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="heading is-medium-title">
+                我們提供專業的服務項目
+              </h2>
+              <p></p>
+            </div>
+            <VerticalAccordion />
           </div>
           <main className="main">
             <section className="discount hidden px-[10px] md:px-[70px] pt-[30px] md:pt-[50px] flex justify-center items-center py-0 lg:py-6 ">
@@ -289,7 +398,7 @@ export default function Blog() {
                     </div>
                   </a>
                 </div>
-
+                {/* 
                 <div className="bg-white mt-3  w-full lg:w-1/2 border-4 border-gray-800 section-hidden  rounded-2xl ">
                   <div className="top py-8">
                     <Marquee>
@@ -323,7 +432,7 @@ export default function Blog() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </section>
 
@@ -447,7 +556,7 @@ export default function Blog() {
               </section>
             </div> */}
 
-            <Marquee>
+            {/* <Marquee>
               <div className=" bg-black flex w-[100vw] w-full py-[40px]">
                 <div className="text-[20px] md:text-[30px] lg:text-[60px] mx-5  text-white font-black">
                   WEBSITE
@@ -518,105 +627,7 @@ export default function Blog() {
                 </div>
               </div>
             </Marquee>
-            <section className="section">
-              <div className="container">
-                <div className="padding">
-                  <div className="w-layout-grid about-content">
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                      className="about-grid-content"
-                    >
-                      <h2 className="heading is-medium-title">
-                        "不要再認為自己的品牌做網頁行銷很花錢了！"
-                      </h2>
-                      <p className=" text-[16px] leading-normal text-left ">
-                        許多人以為網站設計和行銷需要大筆預算才能有效，但 Jeek
-                        的方案讓品牌在有限預算內也能脫穎而出。我們專為初創企業與中小型商家量身打造行銷策略，使行銷成為可負擔的投資。透過專業網站設計與
-                        SEO
-                        優化，快速提升品牌曝光度，吸引精準客群，助您實現銷售成長。
-                      </p>
-                    </div>
 
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                      className="about-grid-image"
-                    >
-                      <div className="reveal-image-trigger">
-                        <Image
-                          src="/images/不要再以為網頁行銷很花錢了.png"
-                          alt="不要再以為網頁行銷很花錢了"
-                          placeholder="empty"
-                          loading="lazy"
-                          width={1300}
-                          height={1300}
-                        ></Image>
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="about-grid-image">
-                      <div className="reveal-image-trigger">
-                        <Image
-                          src="/images/fantastic_hare_36410__in_office_ba72e105-06e2-4e9a-a51b-5baa01d260d4.png"
-                          loading="lazy"
-                          height={1000}
-                          width={1000}
-                          placeholder="empty"
-                        ></Image>
-                        <div
-                          className="bg-for-animation"
-                          style={{ display: "block" }}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                      className="about-grid-content"
-                    >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                      <h2 className="heading is-medium-title">
-                        "工作室，彈性更高，效率更高"
-                      </h2>
-                      <div className="flex items-start flex-col ">
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">成本效益高</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            由於沒有大型團隊和高額管理費用，網頁工作室能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">專注度高</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            網頁工作室通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">靈活性強</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            作為網頁工作室，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
-                          </p>
-                        </div>
-                        <div className="mb-6 flex flex-col items-start">
-                          <b className="text-[22px]">溝通便捷</b>
-                          <p className="text-left leading-normal mt-3">
-                            -
-                            您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
             <section id="services" className="section">
               <a
                 data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfd9"
@@ -670,21 +681,7 @@ export default function Blog() {
                     <div className="about-grid-image">
                       <div className="reveal-image-trigger">
                         <SwiperScroll01 />
-                        {/* <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          srcSet="
-                                        
-                                      "
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        /> */}
+                        
                         <div
                           className="bg-for-animation"
                           style={{ display: "block" }}
@@ -696,13 +693,7 @@ export default function Blog() {
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
                       className="about-grid-content"
                     >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-
-                      {/* </h2> */}
-
+                    
                       <GsapText
                         text=' "3D 建模" '
                         lineHeight="60px"
@@ -877,27 +868,7 @@ export default function Blog() {
                     </div>
                     <div className="about-grid-image ">
                       <div className="reveal-image-trigger">
-                        {/* <img
-                          loading="lazy"
-                          alt="Portrait of the team"
-                          src="https://www.avatarz.design/assets/images/image06.jpg?v=7b7356d5"
-                          sizes="(max-width: 479px) 84vw, (max-width: 1919px) 90vw, 1440px"
-                          srcSet="
-                                        
-                                      "
-                          className="cover-image"
-                          style={{
-                            transform:
-                              "translate3d(0px, 0px, 0px) scale3d(1.3, 1.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                            transformStyle: "preserve-3d",
-                          }}
-                        /> */}
-                        {/* <iframe
-                          src="https://my.spline.design/iphone14procopy-fdd3e2365e4a03f380783eb3384cb838/"
-                          frameborder="0"
-                          width="100%"
-                          height="800"
-                        ></iframe> */}
+                      
                         <Image
                           src="/images/截圖-2024-09-24-上午8.33.55.png"
                           height={1200}
@@ -916,16 +887,7 @@ export default function Blog() {
                       id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
                       className="about-grid-content "
                     >
-                      {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                      {/* <h2
-                        className="heading is-medium-title"
-                        data-aos="fade-up"
-                      >
-                        "移動設備體驗優化 "
-                      </h2> */}
+                   
                       <GsapText text=' "移動設備體驗優化" ' id="text1" />
                       <div className="flex items-start flex-col ">
                         <div className="mb-6 flex flex-col items-start">
@@ -969,9 +931,7 @@ export default function Blog() {
                             id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
                             className="about-grid-content"
                           >
-                            {/* <h2 className="heading is-medium-title">
-                        "網頁結構優化"
-                      </h2> */}
+                          
                             <GsapText
                               text=' "網頁結構優化" '
                               lineHeight="60px"
@@ -1045,29 +1005,10 @@ export default function Blog() {
                 </div>
               </div>
             </section>
-            {/* <div className="h-[100vh] bg-green-300">
-              <threeDCarousel />
-            </div> */}
-
-            {/* <section className="bg-blue-700 my-[50px] py-[80px]">
-              <div className="txt flex flex-col justify-center items-center">
-                <h1 className="text-white text-center text-[60px]">
-                  歡迎聯繫我
-                </h1>
-                <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero accusantium eaque ipsum culpa porro. Ab minima
-                  consectetur recusandae facilis, omnis nemo maxime quis illum
-                  ad. Provident sint sunt ex debitis.
-                </p>
-              </div>
-            </section> */}
+           
             <section className="marketing  lg:w-full 2xl:w-[80%]  mx-auto ">
               <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 2xl:w-[60%] mx-auto">
-                {/* <h2 className="heading is-medium-title text-center">
-                  "對於增加網路曝光度，<br></br>我該如何選擇我的行銷方式"
-                </h2> */}
-
+             
                 <h2 className="text-center">我該如何選擇行銷方式</h2>
                 <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
                   在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
@@ -1156,12 +1097,7 @@ export default function Blog() {
                           width={400}
                         />
                       </div>
-                      {/* <iframe
-                        src="https://my.spline.design/hands3duicopy-70ff0d7fc77708d58279d2e35d8b3771/"
-                        frameborder="0"
-                        width="100%"
-                        height="240px"
-                      ></iframe> */}
+                     
                     </div>
                   </div>
                 </div>
@@ -1214,11 +1150,7 @@ export default function Blog() {
                     </div>
                     <div className="bottom " data-aos="fade-up">
                       <p className="text-[12px] font-bold">Design by Website</p>
-                      {/* 
-
-                    <h3 className="text-[30px] xl:text-[40px] mt-[40px] leading-normal font-extrabold">
-                      使用 3D 模型製作網頁橫幅和產品圖的好處
-                    </h3> */}
+                    
 
                       <GsapText
                         text="Seo成效分析"
@@ -1273,8 +1205,8 @@ export default function Blog() {
                   </div>
                 </div>
               </div>
-            </section>
-            <section className="w-full  px-[15px]  xl:flex-row  justify-center mt-[100px] pb-[100px] flex-col flex">
+            </section> */}
+            {/* <section className="w-full  px-[15px]  xl:flex-row  justify-center mt-[100px] pb-[100px] flex-col flex">
               <div className="flex xl:flex-row flex-col w-full mx-auto lg:w-[70%] 2xl:w-[80%] justify-center">
                 <a
                   href="/blog-01"
@@ -1367,25 +1299,10 @@ export default function Blog() {
                         <br></br>他們通常比全職團隊更具成本效益。
                       </b>
                     </div>
-
-                    {/* 
-                  <Image
-                    loader={imageLoader02}
-                    width={700}
-                    height={700}
-                    loading="lazy"
-                    placeholder="empty"
-                    src="659c39bd34df1a7dc8eb9b82_Platz%201%20Auf%20der%20google%20suche.png"
-                  /> */}
                   </div>
                 </a>
               </div>
-            </section>
-
-            {/* <div className="border-3 border-black bg-[url('https://www.ultraehp.com/images/test-portfolio/banner0445.png')] h-[80vh] bg-cover bg-center "></div> */}
-            {/* <div>
-              <BannerSwiper />
-            </div> */}
+            </section> */}
           </main>
         </div>
       </div>

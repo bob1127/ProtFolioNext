@@ -220,7 +220,7 @@ export default function App() {
         </div>
         <div className="absolute bottom-[0px] sm:bottom-[-20%] lg:bottom-0 left-[-22%] md:left-[-27%] lg:left-[-10%] 2xl:left-[-10%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
           <Image
-            src="/images/Hero-img-09.png"
+            src="/images/Hero-img-09-human.png"
             alt="hero-blur-img_desktop"
             placeholder="empty"
             loading="eager"
@@ -366,7 +366,7 @@ export default function App() {
       {/* Rest of your component */}
       <div className="mt-[100px]  bg-[#ffffff]">
         <TextParallaxContent
-          imgUrl="https://cdn.prod.website-files.com/60e5f2de011b86acebc30db7/6671a0268447eb8c30f699b0_Cinematic%204.webp"
+          imgUrl="/images/WebOptimization-Hero-Img.png"
           subheading="Best Web Experience"
           heading={
             <span className="text-[32px] md:text-[40px] lg:text-[60px]">

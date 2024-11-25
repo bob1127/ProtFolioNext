@@ -128,7 +128,7 @@ export default function Home() {
               {
                 url: "https://www.jeek-webdesign.com.tw/images/facebook.png",
                 width: 1200,
-                height: 630,
+                height: 780,
                 alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
               },
             ],
