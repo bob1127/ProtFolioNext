@@ -116,6 +116,8 @@ const Blog = ({ posts, categories, tags }) => {
                       <a
                         href="https://www.zensor.com.tw"
                         target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
                         <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
@@ -137,6 +139,9 @@ const Blog = ({ posts, categories, tags }) => {
                       <a
                         href="https://www.ultraehp.com"
                         target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        data-aos-delay="100"
                         className="project-item flex flex-col mx-3"
                       >
                         <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
@@ -158,6 +163,9 @@ const Blog = ({ posts, categories, tags }) => {
                       <a
                         href="https://www.king-newton.com"
                         target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        data-aos-delay="200"
                         className="project-item flex flex-col mx-3"
                       >
                         <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
@@ -187,6 +195,8 @@ const Blog = ({ posts, categories, tags }) => {
                       <a
                         href="https://domc.com.tw"
                         target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
                         <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
@@ -216,6 +226,8 @@ const Blog = ({ posts, categories, tags }) => {
                     <a
                       href="https://cxuan.com.tw"
                       target="_blank"
+                      data-aos="fade-up"
+                      data-duration="300"
                       className="project-item flex flex-col mx-3"
                     >
                       <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">

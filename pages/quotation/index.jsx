@@ -242,10 +242,10 @@ export default function Blog() {
         backdrop={backdrop}
         isOpen={isOpen}
         onClose={onClose}
-        className="bg-white   p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-scroll   absolute w-[100%]  sm:w-[500px] z-[9999999999999999999999999] lg:w-[65%] border-2 border-black rounded-xl"
+        className="bg-white   p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-y-scroll    w-[100%]  sm:w-[500px] z-[9999999999999999999999999] lg:w-[65%] border-2 border-blue-400 border-3 rounded-xl"
       >
         <ModalContent
-          className="bg-white fixed top-[10%] border-t-1  p-1 lg:p-10   py-2 rounded-t-[30px] h-auto z-[99999999999999999999999999]"
+          className="bg-white  xl:top-[50%] 2xl:top-[40%]  md:top-[70%] border-t-1  lg:top-[50%] p-1 lg:p-10  border border-black  py-2 rounded-t-[30px] h-auto z-[99999999999999999999999999]"
           style={{
             width: "auto",
             maxWidth: "98vw",
@@ -822,7 +822,7 @@ export default function Blog() {
                     href="/contact"
                     className="bg-[#ffffff] mt-3 duration-200 text-[50px] rounded-md px-4 text-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
                   >
-                    50,000
+                    30,000 up
                   </a>
                 </div>
               </section>
@@ -968,7 +968,7 @@ export default function Blog() {
                 >
                   <p>Basic</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] bg-[#ffc532] w-[120px] font-bold text-whitebg-[#ffc532] border border-black">
-                    NT 50,000
+                    NT 30,000 up
                   </div>
                   <h3 className="text-[40px]">精選方案</h3>
 
@@ -1003,7 +1003,7 @@ export default function Blog() {
                 >
                   <p className="font-bold">Landing Page</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 35,000
+                    NT 10,000 up
                   </div>
                   <h3 className="text-[40px]">一頁式網站</h3>
 
@@ -1035,7 +1035,7 @@ export default function Blog() {
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
-                    NT 90,000
+                    NT 50,000 up
                   </div>
                   <p>E-Coomerce</p>
                   <h3 className="text-[40px]">購物網站</h3>
@@ -1287,8 +1287,8 @@ export default function Blog() {
                       </div>
                     </div>
                   </div>
-                  <div className="right w-full lg:w-[60%] border  h-full py-10">
-                    <div className="from flex justify-center items-center  h-auto bg-white p-[10px] lg:p-[40px] border-black-rgba  ">
+                  <div className="right w-full lg:w-[60%] border  h-full overflow-y-scroll py-10">
+                    <div className="from flex justify-center items-center  overflow-y-scroll   h-auto bg-white p-[10px] lg:p-[40px] border-black-rgba  ">
                       <NewsletterForm />
                     </div>
                   </div>

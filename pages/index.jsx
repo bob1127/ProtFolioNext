@@ -85,7 +85,7 @@ export default function Home() {
         /> */}
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
+          content="https://www.jeek-webdesign.com.tw/images/facebook_og_image.jpg"
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
@@ -249,12 +249,12 @@ export default function Home() {
                   不如讓專業的我們<br></br>來幫助您建置網站
                 </h3>
                 <div className="flex justify-start md:justify-end ">
-                  <button
+                  <a
                     href="/service"
                     className="button w-[160px] rounded-md bg-white py-2 px-2 text-center text-black"
                   >
                     See Our Work
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

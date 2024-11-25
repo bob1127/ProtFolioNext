@@ -140,7 +140,7 @@ const EmblaCarousel = (props) => {
                     <Image
                       src={slide.image} // Use the image from the slide object
                       alt={slide.title} // Use title as alt text
-                      className="xl:rounded-[30px] rounded-[16px]"
+                      className="xl:rounded-[30px] rounded-[16px] w-full"
                       width={800}
                       height={800}
                       placeholder="empty"

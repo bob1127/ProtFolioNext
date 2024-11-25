@@ -24,7 +24,7 @@ const Header = () => (
         className="button-wrapper  w-inline-block"
       >
         <div className="button-layout">
-          <p href="/quotation" className="button-text" style={{}}>
+          <p href="/project" className="button-text" style={{}}>
             更多網頁設計案例
           </p>
           <div className="button-bg" style={{}} />

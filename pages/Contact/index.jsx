@@ -122,7 +122,7 @@ export default function Home() {
           height={700}
           src="/images/contact關於我們heroImg-極客網頁設計.jpg"
         ></Image> */}
-        <div className="form rounded-[40px] bg-white  overflow-visible lg:overflow-hidden flex-col  py-[25px] md:flex-row  flex h-auto  border-2 border-black  px-[10px] md:px-[25px]">
+        <div className="form rounded-[40px] bg-white  overflow-visible lg:overflow-hidden flex-col  py-[25px] md:flex-row  w-full flex h-auto  border-2 border-black  px-[10px] md:px-[25px]">
           <div className="left w-full md:w-[40%] p-0 md:p-[40px] h-full items-center flex-col flex justify-center">
             <div className="txt flex flex-col items-center justify-center">
               <p className="text-[30px] font-bold  mt-3">

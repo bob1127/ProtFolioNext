@@ -119,7 +119,7 @@ export default function NewsletterForm() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <div className="   overflow-y-scroll  2xl:w-[800px]  md:h-full   w-full mx-auto  bg-white rounded-lg">
+    <div className="   2xl:w-[800px]  md:h-full   w-full mx-auto  bg-white rounded-lg">
       <div id="mc_embed_signup ">
         <form
           action="https://gmail.us9.list-manage.com/subscribe/post?u=e4fe6f68e70ec50f3def8801d&amp;id=9042884b3e&amp;f_id=007753e1f0"
@@ -179,7 +179,7 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">一頁式網站</h4>
-                    <b className="text-white mb-[30px]">價格：NT35,000 up</b>
+                    <b className="text-white mb-[30px]">價格：NT10,000 up</b>
                     <p className="text-[14px] text-white mt-3">- 高轉化率</p>
                     <p className="text-[14px] text-white">
                       - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
@@ -197,7 +197,7 @@ export default function NewsletterForm() {
                   <div>
                     <h4 className="text-white text-[22px]">精選方案</h4>
 
-                    <b className="text-white">價格：NT50,000 up</b>
+                    <b className="text-white">價格：NT30,000 up</b>
 
                     <p className="text-[14px] text-white mt-3">
                       - 精美網站版型設計
@@ -218,7 +218,7 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">購物網站</h4>
-                    <b className="text-white">價格：NT90,000 up</b>
+                    <b className="text-white">價格：NT30,000 up</b>
                     <p className="text-[14px] text-white mt-3">
                       - 客製化網站規劃與設計
                     </p>
@@ -252,7 +252,7 @@ export default function NewsletterForm() {
             </div>
             <div className="mc-field-group input-group py-[40px]">
               <strong className="">其他聯繫方式：</strong>
-              <ul className="p-0 m-0 flex ">
+              <ul className="p-0 flex-col md:flex-row m-0 flex ">
                 <li className="mr-5 mt-3">
                   <Button
                     onPress={() => handleOpen(1)}
@@ -294,42 +294,7 @@ export default function NewsletterForm() {
 
                   <label htmlFor="mce-group[43794]-43794-0">Instagram</label>
                 </li>
-                <li className="mr-5 mt-3">
-                  {/* Button 2 */}
-                  <Button
-                    onPress={() => handleOpen(2)}
-                    className="w-[130px] h-[130px]"
-                  >
-                    <Image
-                      src="/images/fb-qrCode.png"
-                      width={100}
-                      height={100}
-                      loading="lazy"
-                      alt="contact-fb-qrcode"
-                      placeholder="empty"
-                    />
-                  </Button>
-                  <Modal isOpen={isOpen === 2} onOpenChange={handleClose}>
-                    <ModalContent className="border p-[100px] rounded-[30px] bg-white border-black">
-                      <ModalBody>
-                        <div>
-                          <Image
-                            src="/images/fb-qrCode.png"
-                            width={1000}
-                            height={1000}
-                            loading="lazy"
-                            alt="contact-fb-qrcode"
-                            placeholder="empty"
-                          />
-                          <p>Instagram QR code</p>
-                          <p>掃描加入 Facebook</p>
-                        </div>
-                      </ModalBody>
-                    </ModalContent>
-                  </Modal>
 
-                  <label htmlFor="mce-group[43794]-43794-1">Facebook</label>
-                </li>
                 <li className="mr-5 mt-3">
                   <Button
                     onPress={() => handleOpen(1)}

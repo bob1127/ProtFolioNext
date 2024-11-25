@@ -24,12 +24,12 @@ const Header = () => (
     </div> */}
     <div className="h-full flex my-auto justify-center items-center">
       <a
-        href="/pages"
+        href="/project"
         data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
         className="button-wrapper  w-inline-block"
       >
         <div className="button-layout">
-          <p href="/pages" className="button-text" style={{}}>
+          <p href="/project" className="button-text" style={{}}>
             更多網頁設計案例
           </p>
           <div className="button-bg" style={{}} />
