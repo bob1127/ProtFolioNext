@@ -188,7 +188,7 @@ export default function Home() {
   };
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const webpage = {
-    name: "聯絡我們｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "致力於優化您的網站，使網站排名更靠前！- 極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
     description:
       "Next.js 和 WordPress 結合打造無頭網站，能提升網站性能、內容管理和開發靈活性。透過靜態生成（SSG）、伺服器端渲染（SSR）和 CDN 優化，網站速度顯著提高，並透過 API 支援多渠道發佈。使用無頭架構，開發者可自由設計前端，同時利用 WordPress 強大的內容管理功能。相比傳統 WordPress 網站，無頭網站具有更好的 SEO 和安全性，適合需要高效性能和自訂設計的專案。",
     url: "https://www.jeek-webdesign.com.tw/blog-10",
@@ -216,7 +216,10 @@ export default function Home() {
     <div className=" py-[100px] flex justify-center  items-center">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="聯絡我們-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="致力於優化您的網站，使網站排名更靠前！-極客網頁設計"
+        />
         <meta
           property="og:description"
           content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
@@ -255,10 +258,10 @@ export default function Home() {
         />
       </Head>
       <NextSeo
-        title="聯絡我們-極客網頁設計｜JEEK WEBDESIGN"
+        title="致力於優化您的網站，使網站排名更靠前！-極客網頁設計"
         description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
         openGraph={{
-          title: "聯絡我們-極客網頁設計｜JEEK WEBDESIGN",
+          title: "致力於優化您的網站，使網站排名更靠前！-極客網頁設計",
           description:
             "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
           images: [
@@ -607,6 +610,219 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="section">
+          <div className="padding">
+            <div className="main-container">
+              <div id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c261-c41abecd">
+                <div className="eyebrow-block">
+                  <div className="icon-block">
+                    <img
+                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f61d3e81308165ce58_responsive_layout_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
+                      loading="lazy"
+                      alt=""
+                      className="icon is-eyebrow-icon"
+                    />
+                  </div>
+                  <p className="eyebrow-text">Company</p>
+                </div>
+              </div>
+
+              <div
+                id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c264-c41abecd"
+                className="cards-wrapper"
+              >
+                <div className="card-title-block">
+                  <GsapText
+                    text=" 你的產品很好，但卻沒讓更多人看見？"
+                    id="text4"
+                  />{" "}
+                  <h2
+                    data-aos="fade-up"
+                    className="heading leading-normal text-[30px] is-extralarge "
+                  ></h2>
+                  <a
+                    id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
+                    href="/quotation"
+                    className="simple-link mx-auto w-full flex justify-center inline-block"
+                  >
+                    「創新設計，讓您的網站脫穎而出」
+                  </a>
+                </div>
+                <div className="cards">
+                  <div
+                    data-aos="fade-down"
+                    id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c26b-c41abecd"
+                    data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c26b"
+                    className="card flex flex-col justify-center items-center group duration-500 hover:bg-[#f7d54c]"
+                    style={{}}
+                  >
+                    <a href="/blog-01" className="card-paragraph">
+                      <Image
+                        className="mb-4"
+                        alt="新網站SEO規劃-極客網頁設計"
+                        src="/images/新網站SEO規劃-極客網頁設計.png"
+                        width={2000}
+                        height={800}
+                        placeholder="empty"
+                        loading="lazy"
+                      />
+                      {/* <img
+                              className="w-full my-3 rounded-2xl mx-auto"
+                              src="https://blog-cdn.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/2024/08/How-Do-Lottie-Animations-Help-with-SEO_.png"
+                              alt=""
+                            /> */}
+                      <br></br>
+                      <p className="text-[16px] font-normal">
+                        高曝光率的搜索排名有助於提高品牌知名度，使潛在客戶更容易記住你的品牌。
+                      </p>
+                    </a>
+                  </div>
+                  <a
+                    href="/blog-02"
+                    data-aos="fade-right"
+                    id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c274-c41abecd"
+                    data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c274"
+                    className="card group hover:bg-[#f7d54c] duration-150"
+                    style={{}}
+                  >
+                    {/* <div className="card-icon">
+                            <img
+                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6844afe9fcdf5a1af_thumb_up_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
+                              loading="lazy"
+                              alt=""
+                              className="icon is-card-icon"
+                            />
+                          </div> */}
+                    <div className="card-content">
+                      <p className="card-paragraph group-hover:text-white duration-500">
+                        降低營銷成本
+                      </p>
+                      <a href="/blog-02" className="card-text-small">
+                        <Image
+                          className="mb-4"
+                          src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.png"
+                          width={800}
+                          height={800}
+                          alt="網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置"
+                          placeholder="empty"
+                          loading="lazy"
+                        />
+                        相比傳統廣告，SEO和社交媒體營銷成本更低且效果持久，能以更少的投入產生更多潛在客戶。
+                      </a>
+                    </div>
+                  </a>
+                  <a
+                    href="/blog-03"
+                    data-aos="fade-left"
+                    id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c27c-c41abecd"
+                    data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c27c"
+                    className="card group hover:bg-[#f7d54c] duration-150"
+                    style={{}}
+                  >
+                    <div className="card-content">
+                      <p className="card-paragraph group-hover:text-white duration-500">
+                        增加搜尋引擎曝光度和排名
+                      </p>
+                      <p className="card-text-small">
+                        <img
+                          alt="如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化"
+                          className="mb-4"
+                          src="/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
+                          width={800}
+                          height={800}
+                          placeholder="empty"
+                          loading="lazy"
+                        />
+                        提高網站曝光度能幫助中小企業增強客戶信任、提升銷售、降低成本，並在競爭中獲得優勢。
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <p
+                id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c284-c41abecd"
+                className="paragraph is-sticky"
+              >
+                SEO 優化
+              </p>
+            </div>
+          </div>
+
+          <section>
+            <div className="flex flex-col items-center justify-center">
+              <div className="txt px-[20px]  flex justify-center items-center flex-col">
+                <GsapText text="更快、更優化 " id="text09" />
+                <h2 className="text-center">提升網站效能，贏得搜尋排名</h2>
+
+                <h3 className="leading-[40px] text-center">
+                  {" "}
+                  使用{" "}
+                  <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-3   mt-4 md:mt-0 text-center">
+                    {" "}
+                    Page Speed Insight{" "}
+                  </span>{" "}
+                  檢測您的網站
+                </h3>
+                <p className="mt-3 leading-[26px] xl:text-[18px] text-[16px] w-[100%] md:w-4/5  xl:w-1/2 text-center">
+                  在數位時代，網站速度不僅影響使用者體驗，更是影響 SEO
+                  排名的重要因素。<br></br>Google Speed Insight
+                  是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，
+                  精確指出需要改進的地方，讓您能輕鬆優化網站。
+                </p>
+
+                <a
+                  id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
+                  href="/blog-09"
+                  className="simple-link mb-[50px]"
+                >
+                  相關文章
+                </a>
+              </div>
+              <div className=" md:flex-row flex-col   flex w-full mx-auto md:w-2/3 xl:w-3/4 p-10 justify-center bottom-section">
+                <div className="left p-0 md:p-4 w-full md:w-1/2">
+                  <ul className="pl-0 md:pl-5">
+                    <li className="font-bold text-[20px]  mt-5">
+                      ◉ 提升速度 = 提升排名
+                    </li>
+                    <li className="leading-[26px]">
+                      網站速度是 Google
+                      排名算法中的關鍵因素之一。透過優化速度，您將有更高的機會排在搜尋結果的前列。
+                    </li>
+                    <li className="font-bold text-[20px]  mt-5">
+                      ◉ 改善用戶體驗
+                    </li>
+                    <li className="leading-[26px]">
+                      速度慢的網站容易流失訪客。Google Speed Insight
+                      幫助您確保網站以最佳效能運行，提供順暢的使用者體驗，提升訪客的停留時間。
+                    </li>
+                    <li className="font-bold text-[20px]  mt-5">
+                      ◉ 優化指引一步到位
+                    </li>
+                    <li className="leading-[26px]">
+                      不只檢測，還提供實際可行的優化建議。從圖片壓縮、程式碼精簡到資源載入管理，所有細節都能輕鬆掌握。
+                    </li>
+                  </ul>
+                </div>
+                <div className="right w-full md:w-1/2">
+                  {/* <img
+                          className="w-full"
+                          src="http://localhost:3000/_next/image?url=https%3A%2F%2Fwww.ultraehp.com%2Fimages%2Fperomace.webp&w=1200&q=75"
+                          alt=""
+                        /> */}
+                  <Image
+                    src="/images/網頁結構優化_UI設計_banner設計-極客網頁設計_seo優化.webp"
+                    loading="lazy"
+                    alt="img"
+                    width={800}
+                    placeholder="empty"
+                    height={500}
+                  ></Image>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
         <section className="w-full  px-[15px]  xl:flex-row  justify-center mt-[100px] pb-[100px] flex-col flex">
           <div className="flex xl:flex-row flex-col w-full mx-auto lg:w-[70%] 2xl:w-[80%] justify-center">

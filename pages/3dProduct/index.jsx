@@ -1,6 +1,7 @@
 // import Seo from '@/components/Seo';
 // "use client"
 // import CustomLink from '@/components/CustomLink';
+import Carousel05 from "../../components/EmblaCarousel05/index.jsx";
 // import Inner from "../components/Inner/index.jsx";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -363,6 +364,91 @@ export default function Home() {
               ></Image>
             </div>
           </Marquee>
+        </section>
+        <section className="md:px-[50px] w-full 2xl:w-[80%] mx-auto px-[20px] xl:px-[100px]">
+          <div>
+            <div className="pl-8">
+              <h1 className="">產品建模、3D形象影片</h1>
+              <GsapText
+                text="  3D-Interactive"
+                lineHeight="70px"
+                id="text3"
+                fontSize="60px"
+              />{" "}
+              <p className="w-[95%] mb-5 xl:w-1/2 md:w-2/3">
+                {" "}
+                3D
+                網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。
+                <br></br>
+                這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
+              </p>
+              <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
+                Spline
+              </span>
+              <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mt-2 text-center">
+                Blender
+              </span>
+              {/* <p className="bg-blue-700 inline-block text-white  border-black border">
+                      Spline
+                    </p> */}
+            </div>
+          </div>
+          <div className="flex">
+            <div className=" hidden md:block w-full md:w-1/2">
+              <Carousel05 />
+            </div>
+            <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
+              <iframe
+                className="absolute top-0 left-0 z-[999]"
+                src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                frameborder="0"
+                width="100%"
+                height="500px"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
+          <h2
+            data-aos="fade-up"
+            className="text-[26px] hidden md:block xl:text-[50px] font-extrabold"
+          >
+            "3D運用-交互式網頁"
+          </h2>
+          <p
+            data-aos="fade-up"
+            className="bg-blue-600 px-6  hidden md:block py-2 text-white border-black border mt-2"
+            data-aos-delay="300"
+          >
+            3d 建模產品運用在網頁上
+          </p>
+          <div className="flex mt-[25px] justify-center">
+            {/* <img
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className=" w-full xl:w-[80%] rounded-none md:rounded-xl mx-auto"
+                    src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
+                    alt=""
+                  /> */}
+            <Image
+              src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
+              loading="lazy"
+              alt="3d互動式網站-極客網頁設計_3dModel_Blender"
+              width={800}
+              height={600}
+              placeholder="empty"
+            ></Image>
+            {/* <div>
+                    <div className="left"></div>
+                    <div className="right">
+                      <img
+                        className="w-[80%] mx-auto"
+                        src="https://www.vectary.com/website_assets/636cc984003871e3cda597bb/6644c6a1cff6e0d6b867232f_Vectary%20Business%20plan.png"
+                        alt=""
+                      />
+                    </div>
+                  </div> */}
+          </div>
         </section>
       </div>
     </div>

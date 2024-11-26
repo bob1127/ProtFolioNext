@@ -2,6 +2,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
+import Carousel09 from "../../components/EmblaCarousel09/index";
 import AOS from "aos"; // Import AOS
 import CircleText from "../../components/CircleText.jsx";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -71,14 +72,14 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="relative z-[999999999] h-screen"
+      className="relative z-[999999999]   h-screen"
       transition={{
         duration: 6.8,
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
       <div className="circle-logo"></div>
-      <div className="border py-[100px]  z-[-1] bg-white h-[320vh] md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#fff] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+      <div className="border py-[100px]  z-[-1] bg-white h-[100vh] md:h-[400vh] 2xl:h-[100vh] border-black  static rounded-[45px] xl:bg-[#fff] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
         <div className="absolute   hidden md:block top-[5%] right-[6%]">
           <CircleText />
         </div>
@@ -93,88 +94,93 @@ const Section2 = ({ scrollYProgress }) => {
         <div className=" max-w-[1920px] mx-auto  justify-between  px-[30px] flex"></div>
         <motion.div
           style={{ y: yOffset }}
-          className="project-plan flex-col md:flex-row mx-auto mt-[140px] flex px-[30px] md:px-[10px] w-full lg:w-[80%]"
+          className="project-plan flex-col md:flex-row mx-auto md:mt-[170px] mt-[650px] flex px-[30px] md:px-[10px] w-full lg:w-[80%]"
           transition={{
             duration: 2.8,
             ease: [0.1, 0.7, 1.0, 0.1], // Custom cubic-bezier timing function for the floating effect
           }}
         >
-          <a
-            href="/service"
-            className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#5082b8]"
-          >
-            <Image
-              src="/images/SEO優化行銷-極客網頁設計.png"
-              alt="SEO優化行銷-極客網頁設計"
-              width={500}
-              height={500}
-              className="group-hover:scale-105 group-hover:rotate-12 duration-500"
-              placeholder="empty"
-              loading="lazy"
-            ></Image>
-            <div className="txt p-5">
-              <h2 className="text-white text-[35px] font-black">SEO行銷</h2>
+          <div className="block md:hidden">
+            <Carousel09 />
+          </div>
+          <div className="hidden  md:flex  md:flex-row flex-col">
+            <a
+              href="/WebOptimization"
+              className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#5082b8]"
+            >
+              <Image
+                src="/images/SEO優化行銷-極客網頁設計.png"
+                alt="SEO優化行銷-極客網頁設計"
+                width={500}
+                height={500}
+                className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                placeholder="empty"
+                loading="lazy"
+              ></Image>
+              <div className="txt p-5">
+                <h2 className="text-white text-[35px] font-black">SEO行銷</h2>
 
-              <p className="text-white  text-[18px] md:text-[22px]">
-                網頁結構優化｜網頁速度優化｜使用者體驗優化｜網頁內容
-              </p>
-              <div className="content mt-3 ">
-                不管您的企業商家需要建置新的網頁或者對於目前網頁不滿意，需要改版重構，我們提供最優惠的方案價格
+                <p className="text-white  text-[18px] md:text-[22px]">
+                  網頁結構優化｜網頁速度優化｜使用者體驗優化｜網頁內容
+                </p>
+                <div className="content mt-3 ">
+                  不管您的企業商家需要建置新的網頁或者對於目前網頁不滿意，需要改版重構，我們提供最優惠的方案價格
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
 
-          <a
-            href="/service"
-            data-aos-delay="150"
-            className="border mt-[10px] md:mt-[500px] h-full md:h-auto  duration-100 hover:border-white border-black  rounded-xl w-full group md:w-1/3 m-1 p-6 bg-[#262626]"
-          >
-            <Image
-              src="/images/網頁設計_我們的服務內容-極客網頁設計.png"
-              alt="SEO優化行銷-極客網頁設計"
-              width={500}
-              height={500}
-              className="group-hover:scale-105 group-hover:rotate-12 duration-500"
-              placeholder="empty"
-              loading="lazy"
-            ></Image>
-            <div className="txt p-5">
-              <h2 className="text-white text-[35px] font-black">網頁設計</h2>
+            <a
+              href="/WebOptimization"
+              data-aos-delay="150"
+              className="border mt-[10px] md:mt-[500px] h-full md:h-auto  duration-100 hover:border-white border-black  rounded-xl w-full group md:w-1/3 m-1 p-6 bg-[#262626]"
+            >
+              <Image
+                src="/images/網頁設計_我們的服務內容-極客網頁設計.png"
+                alt="SEO優化行銷-極客網頁設計"
+                width={500}
+                height={500}
+                className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                placeholder="empty"
+                loading="lazy"
+              ></Image>
+              <div className="txt p-5">
+                <h2 className="text-white text-[35px] font-black">網頁設計</h2>
 
-              <p className="text-white  text-[18px] md:text-[22px]">
-                網頁版型設計｜客製化網頁｜一頁式網頁｜購物網站
-              </p>
-              <div className="content text-gray-100 mt-3 ">
-                專業wordpress網頁設計，另有對於seo有優勢的無頭網站網頁建置(前後端分離)
-                方案
+                <p className="text-white  text-[18px] md:text-[22px]">
+                  網頁版型設計｜客製化網頁｜一頁式網頁｜購物網站
+                </p>
+                <div className="content text-gray-100 mt-3 ">
+                  專業wordpress網頁設計，另有對於seo有優勢的無頭網站網頁建置(前後端分離)
+                  方案
+                </div>
               </div>
-            </div>
-          </a>
-          <a
-            href="/quotation"
-            data-aos-delay="300"
-            className="border group mt-[10px] md:mt-[500px] h-full md:h-auto border-black  duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
-          >
-            <Image
-              src="/images/商業產品攝影-極客網頁設計.png"
-              alt="SEO優化行銷-極客網頁設計"
-              width={500}
-              height={500}
-              className="group-hover:scale-105 group-hover:rotate-12 duration-500"
-              placeholder="empty"
-              loading="lazy"
-            ></Image>
-            <div className="txt group p-5">
-              <h2 className="text-white text-[35px] font-black">形象設計</h2>
+            </a>
+            <a
+              href="/3dProduct"
+              data-aos-delay="300"
+              className="border group mt-[10px] md:mt-[500px] h-full md:h-auto border-black  duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
+            >
+              <Image
+                src="/images/商業產品攝影-極客網頁設計.png"
+                alt="SEO優化行銷-極客網頁設計"
+                width={500}
+                height={500}
+                className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                placeholder="empty"
+                loading="lazy"
+              ></Image>
+              <div className="txt group p-5">
+                <h2 className="text-white text-[35px] font-black">形象設計</h2>
 
-              <p className="text-white  text-[18px] md:text-[22px]">
-                3D商品建模｜形象攝影｜商品攝影
-              </p>
-              <div className="content mt-3 ">
-                提供電商平台圖片設計美化，或是產品攝影的需求。也提供3d建模商品，可以供網頁使用。
+                <p className="text-white  text-[18px] md:text-[22px]">
+                  3D商品建模｜形象攝影｜商品攝影
+                </p>
+                <div className="content mt-3 ">
+                  提供電商平台圖片設計美化，或是產品攝影的需求。也提供3d建模商品，可以供網頁使用。
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </motion.div>
       </div>
     </motion.div>

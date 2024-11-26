@@ -254,7 +254,7 @@ export default function App() {
       </div>
 
       <div>
-        <section className="bg-[#ffd446] z-[9999999] overflow-hidden h-[350vh] sm:h-[450vh] md:h-[230vh] relative">
+        <section className="bg-[#ffd446] z-[9999999] overflow-hidden h-[200vh] sm:h-[450vh] md:h-[230vh] relative">
           <div className="text z-[9999999999999] absolute w-[85%] md:w-[70%] xl:w-[57%] md:z-[-1] left-0  py-[50px] right-0  mx-auto">
             <TypewriterEffect />
           </div>
