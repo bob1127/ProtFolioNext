@@ -193,10 +193,7 @@ export default function Home() {
           property="og:title"
           content="商業攝影-讓您的網站看起來截然不同｜極客網頁設計"
         />
-        <meta
-          property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
-        />
+        <meta property="og:description" content="" />
         <meta
           property="og:image"
           content="https://www.jeek-webdesign.com.tw/images/網頁設計製作_網頁seo-極客網頁設計.png"
@@ -232,12 +229,11 @@ export default function Home() {
       </Head>
       <NextSeo
         title="商業攝影-讓您的網站看起來截然不同-產品攝影、商品去背、形象圖後製、精緻banner製作｜極客網頁設計"
-        description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+        description=""
         openGraph={{
           title:
             "商業攝影-讓您的網站看起來截然不同-產品攝影、商品去背、形象圖後製、精緻banner製作｜極客網頁設計",
-          description:
-            "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+          description: "",
           images: [
             {
               url: "https://www.example.com/og-home.jpg",

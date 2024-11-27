@@ -143,7 +143,7 @@ export default function Home() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,";
 
   return (
-    <div className=" py-[100px] flex justify-center  items-center">
+    <div className=" ">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta property="og:title" content="聯絡我們-極客網頁設計" />
@@ -201,244 +201,245 @@ export default function Home() {
           ],
         }}
       />
-      <div>
-        <div className="mt-[50px]  bg-[#ffffff]">
-          <TextParallaxContent
-            imgUrl="/images/行動電源02.png"
-            subheading="Best Web Experience"
-            heading={
-              <span className="text-[32px] md:text-[40px] lg:text-[60px]">
-                打造不一樣的網站<br></br>3d產品交互式網站
-              </span>
-            }
-          >
-            <ExampleContent />
-          </TextParallaxContent>
-        </div>
-        <section className="section">
-          <div className="container">
-            <div className="padding">
-              <div className="w-layout-grid about-content">
-                <div className="about-grid-image">
-                  <div className="reveal-image-trigger">
-                    <SwiperScroll01 />
+      <div className="pb-[100px]">
+        <div>
+          <div className="mt-[50px]  bg-[#ffffff]">
+            <TextParallaxContent
+              imgUrl="/images/行動電源02.png"
+              subheading="Best Web Experience"
+              heading={
+                <span className="text-[32px] md:text-[40px] lg:text-[60px]">
+                  打造不一樣的網站<br></br>3d產品交互式網站
+                </span>
+              }
+            >
+              <ExampleContent />
+            </TextParallaxContent>
+          </div>
+          <section className="section">
+            <div className="container">
+              <div className="padding">
+                <div className="w-layout-grid about-content">
+                  <div className="about-grid-image">
+                    <div className="reveal-image-trigger">
+                      <SwiperScroll01 />
 
-                    <div
-                      className="bg-for-animation"
-                      style={{ display: "block" }}
+                      <div
+                        className="bg-for-animation"
+                        style={{ display: "block" }}
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
+                    className="about-grid-content"
+                  >
+                    <GsapText
+                      text=' "3D 建模" '
+                      lineHeight="60px"
+                      id="text6"
+                      fontSize="50px"
                     />
-                  </div>
-                </div>
-
-                <div
-                  id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                  className="about-grid-content"
-                >
-                  <GsapText
-                    text=' "3D 建模" '
-                    lineHeight="60px"
-                    id="text6"
-                    fontSize="50px"
-                  />
-                  <div className="flex w-full  flex-col items-start">
-                    <b className="mb-3 text-[16px]">3d model for website</b>
-                    <div className="flex">
-                      <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
-                        3D 形象影片
-                      </span>
-                      <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
-                        交互式網站
-                      </span>
-                      <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
-                        產品展示
-                      </span>
+                    <div className="flex w-full  flex-col items-start">
+                      <b className="mb-3 text-[16px]">3d model for website</b>
+                      <div className="flex">
+                        <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          3D 形象影片
+                        </span>
+                        <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          交互式網站
+                        </span>
+                        <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          產品展示
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start flex-col ">
-                    <div className="mb-6 flex flex-col items-start">
-                      <b className="text-[22px]">視覺衝擊力強</b>
-                      <p className="text-left leading-normal mt-3">
-                        - 3D
-                        建模能夠創建出極具深度和細節的視覺效果，這種真實感和立體感可以吸引訪客的注意，提升網站的視覺吸引力，進而增加用戶的停留時間和互動率。
-                      </p>
-                    </div>
-                    <div className="mb-6 flex flex-col items-start">
-                      <b className="text-[22px]"> 多元應用場景</b>
-                      <p className="text-left leading-normal mt-3">
-                        - 3D
-                        模型可以在不同平台和媒體上使用，包括網站、社交媒體、動畫視頻等，這種多功能性使得投資於
-                        3D 建模的回報更具價值。
-                      </p>
-                    </div>
-                    <div className="mb-6 flex flex-col items-start">
-                      <b className="text-[22px]">靈活性強</b>
-                      <p className="text-left leading-normal mt-3">
-                        -
-                        作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
-                      </p>
-                    </div>
-                    <div className="mb-6 flex flex-col items-start">
-                      <b className="text-[22px]">提升互動體驗</b>
-                      <p className="text-left leading-normal mt-3">
-                        - 3D
-                        圖片或動畫可以與用戶進行互動，如滑動或旋轉產品視圖，這種互動性不僅增加了用戶的參與感，還能讓用戶更深入了解產品。
-                      </p>
+                    <div className="flex items-start flex-col ">
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]">視覺衝擊力強</b>
+                        <p className="text-left leading-normal mt-3">
+                          - 3D
+                          建模能夠創建出極具深度和細節的視覺效果，這種真實感和立體感可以吸引訪客的注意，提升網站的視覺吸引力，進而增加用戶的停留時間和互動率。
+                        </p>
+                      </div>
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]"> 多元應用場景</b>
+                        <p className="text-left leading-normal mt-3">
+                          - 3D
+                          模型可以在不同平台和媒體上使用，包括網站、社交媒體、動畫視頻等，這種多功能性使得投資於
+                          3D 建模的回報更具價值。
+                        </p>
+                      </div>
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]">靈活性強</b>
+                        <p className="text-left leading-normal mt-3">
+                          -
+                          作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
+                        </p>
+                      </div>
+                      <div className="mb-6 flex flex-col items-start">
+                        <b className="text-[22px]">提升互動體驗</b>
+                        <p className="text-left leading-normal mt-3">
+                          - 3D
+                          圖片或動畫可以與用戶進行互動，如滑動或旋轉產品視圖，這種互動性不僅增加了用戶的參與感，還能讓用戶更深入了解產品。
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <Marquee>
+          </section>
+          <section>
+            <Marquee>
+              <div>
+                <Image
+                  src="/images/3dmodel05.png"
+                  placeholder="empty"
+                  width={500}
+                  height={500}
+                  className="mx-auto"
+                  alt="3d建模產品"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="text-[18px] font-bold">3D Model.</div>
+              <div>
+                <Image
+                  src="/images/3d產品模型04-極客網頁設計_Blender3D.png-removebg-preview.png"
+                  placeholder="empty"
+                  width={500}
+                  height={500}
+                  className="mx-auto"
+                  alt="3d建模產品"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="text-[18px] font-bold">3D Model.</div>
+              <div>
+                <Image
+                  src="/images/3d產品模型01-極客網頁設計_Blender3D-removebg-preview.webp"
+                  placeholder="empty"
+                  width={500}
+                  height={500}
+                  className="mx-auto"
+                  alt="3d建模產品"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="text-[18px] font-bold">3D Model.</div>
+              <div>
+                <Image
+                  src="/images/3d產品模型07-極客網頁設計|Blender3D.png"
+                  placeholder="empty"
+                  width={500}
+                  height={500}
+                  className="mx-auto"
+                  alt="3d建模產品"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="text-[18px] font-bold">3D Model.</div>
+              <div>
+                <Image
+                  src="/images/up100-12-removebg-preview.png"
+                  placeholder="empty"
+                  width={500}
+                  height={500}
+                  className="mx-auto"
+                  alt="3d建模產品"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="text-[18px] font-bold">3D Model.</div>
+              <div>
+                <Image
+                  src="/images/bag-removebg-preview.png"
+                  placeholder="empty"
+                  width={500}
+                  height={500}
+                  className="mx-auto"
+                  alt="3d建模產品"
+                  loading="lazy"
+                ></Image>
+              </div>
+            </Marquee>
+          </section>
+          <section className="md:px-[50px] w-full 2xl:w-[80%] mx-auto px-[20px] xl:px-[100px]">
             <div>
-              <Image
-                src="/images/3dmodel05.png"
-                placeholder="empty"
-                width={500}
-                height={500}
-                className="mx-auto"
-                alt="3d建模產品"
-                loading="lazy"
-              ></Image>
-            </div>
-            <div className="text-[18px] font-bold">3D Model.</div>
-            <div>
-              <Image
-                src="/images/3d產品模型04-極客網頁設計_Blender3D.png-removebg-preview.png"
-                placeholder="empty"
-                width={500}
-                height={500}
-                className="mx-auto"
-                alt="3d建模產品"
-                loading="lazy"
-              ></Image>
-            </div>
-            <div className="text-[18px] font-bold">3D Model.</div>
-            <div>
-              <Image
-                src="/images/3d產品模型01-極客網頁設計_Blender3D-removebg-preview.webp"
-                placeholder="empty"
-                width={500}
-                height={500}
-                className="mx-auto"
-                alt="3d建模產品"
-                loading="lazy"
-              ></Image>
-            </div>
-            <div className="text-[18px] font-bold">3D Model.</div>
-            <div>
-              <Image
-                src="/images/3d產品模型07-極客網頁設計|Blender3D.png"
-                placeholder="empty"
-                width={500}
-                height={500}
-                className="mx-auto"
-                alt="3d建模產品"
-                loading="lazy"
-              ></Image>
-            </div>
-            <div className="text-[18px] font-bold">3D Model.</div>
-            <div>
-              <Image
-                src="/images/up100-12-removebg-preview.png"
-                placeholder="empty"
-                width={500}
-                height={500}
-                className="mx-auto"
-                alt="3d建模產品"
-                loading="lazy"
-              ></Image>
-            </div>
-            <div className="text-[18px] font-bold">3D Model.</div>
-            <div>
-              <Image
-                src="/images/bag-removebg-preview.png"
-                placeholder="empty"
-                width={500}
-                height={500}
-                className="mx-auto"
-                alt="3d建模產品"
-                loading="lazy"
-              ></Image>
-            </div>
-          </Marquee>
-        </section>
-        <section className="md:px-[50px] w-full 2xl:w-[80%] mx-auto px-[20px] xl:px-[100px]">
-          <div>
-            <div className="pl-8">
-              <h1 className="">產品建模、3D形象影片</h1>
-              <GsapText
-                text="  3D-Interactive"
-                lineHeight="70px"
-                id="text3"
-                fontSize="60px"
-              />{" "}
-              <p className="w-[95%] mb-5 xl:w-1/2 md:w-2/3">
-                {" "}
-                3D
-                網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。
-                <br></br>
-                這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
-              </p>
-              <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
-                Spline
-              </span>
-              <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mt-2 text-center">
-                Blender
-              </span>
-              {/* <p className="bg-blue-700 inline-block text-white  border-black border">
+              <div className="pl-8">
+                <h1 className="">產品建模、3D形象影片</h1>
+                <GsapText
+                  text="  3D-Interactive"
+                  lineHeight="70px"
+                  id="text3"
+                  fontSize="60px"
+                />{" "}
+                <p className="w-[95%] mb-5 xl:w-1/2 md:w-2/3">
+                  {" "}
+                  3D
+                  網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。
+                  <br></br>
+                  這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
+                </p>
+                <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
+                  Spline
+                </span>
+                <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mt-2 text-center">
+                  Blender
+                </span>
+                {/* <p className="bg-blue-700 inline-block text-white  border-black border">
                       Spline
                     </p> */}
+              </div>
             </div>
-          </div>
-          <div className="flex">
-            <div className=" hidden md:block w-full md:w-1/2">
-              <Carousel05 />
+            <div className="flex">
+              <div className=" hidden md:block w-full md:w-1/2">
+                <Carousel05 />
+              </div>
+              <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
+                <iframe
+                  className="absolute top-0 left-0 z-[999]"
+                  src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
+                  frameborder="0"
+                  width="100%"
+                  height="500px"
+                ></iframe>
+              </div>
             </div>
-            <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
-              <iframe
-                className="absolute top-0 left-0 z-[999]"
-                src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
-                frameborder="0"
-                width="100%"
-                height="500px"
-              ></iframe>
-            </div>
-          </div>
-        </section>
-        <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
-          <h2
-            data-aos="fade-up"
-            className="text-[26px] hidden md:block xl:text-[50px] font-extrabold"
-          >
-            "3D運用-交互式網頁"
-          </h2>
-          <p
-            data-aos="fade-up"
-            className="bg-blue-600 px-6  hidden md:block py-2 text-white border-black border mt-2"
-            data-aos-delay="300"
-          >
-            3d 建模產品運用在網頁上
-          </p>
-          <div className="flex mt-[25px] justify-center">
-            {/* <img
+          </section>
+          <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
+            <h2
+              data-aos="fade-up"
+              className="text-[26px] hidden md:block xl:text-[50px] font-extrabold"
+            >
+              "3D運用-交互式網頁"
+            </h2>
+            <p
+              data-aos="fade-up"
+              className="bg-[#ffc13b] px-6  hidden md:block py-2 text-white border-black border mt-2"
+              data-aos-delay="300"
+            >
+              3d 建模產品運用在網頁上
+            </p>
+            <div className="flex mt-[25px] justify-center">
+              {/* <img
                     data-aos="fade-up"
                     data-aos-delay="500"
                     className=" w-full xl:w-[80%] rounded-none md:rounded-xl mx-auto"
                     src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
                     alt=""
                   /> */}
-            <Image
-              src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
-              loading="lazy"
-              alt="3d互動式網站-極客網頁設計_3dModel_Blender"
-              width={800}
-              height={600}
-              placeholder="empty"
-            ></Image>
-            {/* <div>
+              <Image
+                src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
+                loading="lazy"
+                alt="3d互動式網站-極客網頁設計_3dModel_Blender"
+                width={800}
+                height={600}
+                placeholder="empty"
+              ></Image>
+              {/* <div>
                     <div className="left"></div>
                     <div className="right">
                       <img
@@ -448,8 +449,9 @@ export default function Home() {
                       />
                     </div>
                   </div> */}
-          </div>
-        </section>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

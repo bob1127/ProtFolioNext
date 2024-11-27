@@ -6,6 +6,7 @@ import { NextSeo } from "next-seo";
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
+  const [isZoomed, setIsZoomed] = useState(false);
   const webpage = {
     name: "網頁設計很花錢嗎？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
     description:
@@ -317,15 +318,22 @@ export default function Blog() {
                       Jeek可協助您拍攝高品質的產品或形象照，並進行專業的後製處理，以確保圖片完美呈現於網站上，提升視覺效果。這不僅讓您的產品看起來更吸引人，也能增強品牌的專業形象。
                     </li>
                     <div className="grid grid-cols-1  gap-2  md:grid-cols-3 mb-[38px]">
-                      <Image
-                        src="/images/Untitled-Camera-2.png"
-                        width={200}
-                        className="my-2 w-full fill object-contain mx-3"
-                        alt="  商業3D建模-img01"
-                        loading="lazy"
-                        placeholder="empty"
-                        height={200}
-                      ></Image>
+                      <div
+                        className={`image-container ${
+                          isZoomed ? "zoomed" : ""
+                        }`}
+                        onClick={() => setIsZoomed(!isZoomed)}
+                      >
+                        <Image
+                          src="/images/Untitled-Camera-2.png"
+                          width={200}
+                          className="my-2 w-full fill object-contain mx-3"
+                          alt="  商業3D建模-img01"
+                          loading="lazy"
+                          placeholder="empty"
+                          height={200}
+                        ></Image>
+                      </div>
                       <Image
                         src="/images/The Smallest Wireless Potentiostat- wireless charging.webp"
                         width={200}
@@ -412,6 +420,7 @@ export default function Blog() {
           </div>
         </div>
       </div>
+
       {/* <div className="page-wrap">
         <div
           data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"

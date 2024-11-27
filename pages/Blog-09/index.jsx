@@ -200,9 +200,7 @@ export default function Blog() {
                   提供的與 SEO 相關的數據：
                 </div>
                 <fieldset></fieldset>
-
                 <h3>1.使用者數量</h3>
-
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   此指標代表訪問您網站的獨立使用者數量，可以反映網站的流量來源與受歡迎程度。
                   使用者人數是網站剛開始可以最簡單判別網頁流量的依據
@@ -213,11 +211,9 @@ export default function Blog() {
                   width={800}
                   height={600}
                 ></Image>
-
                 <h3 className="mt-[30px]">
                   2.自然搜尋流量-有機流量(Organic Search)
                 </h3>
-
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   有機流量被視為高質量的流量 因為用戶主動搜索相關資訊或產品
                   這使得他們更有可能轉換為客戶。
@@ -242,13 +238,12 @@ export default function Blog() {
                   width={800}
                   height={600}
                   className="mt-4"
-                ></Image>
+                ></Image>{" "}
+                <br></br>
                 <b className="mt-2 text-[16px]">
                   針對這些來源進行優化，能夠有效提升有機流量，增加網站的可見性和訪問量
                 </b>
-
                 <h3 className="mt-[30px]">3.參與度</h3>
-
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   互動率可以顯示初使用者對於網頁的參與熱度：例如：頁面轉換點擊，頁面滾動，填寫表單等等的使用者行為
                 </div>
@@ -274,9 +269,7 @@ export default function Blog() {
                   height={600}
                   className="mt-4"
                 ></Image>
-
                 <h3 className="mt-[30px]">4.跳出率（Bounce Rate）</h3>
-
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   跳出率是指用戶在訪問網站後未進行任何互動就離開的比例。具體而言，當用戶訪問一個頁面並在沒有進一步互動的情況下關閉頁面時，這就算作一次跳出。
                 </div>
@@ -297,7 +290,8 @@ export default function Blog() {
                   width={800}
                   height={600}
                   className="mt-4 mb-[30px]"
-                ></Image>
+                ></Image>{" "}
+                <br></br>
                 <b className="text-[16px] mt-[30px]">
                   「跳出率」是「參與度」的相對概念。因此，我們可以通過查看報表上的「參與度」來簡單計算跳出率：使用公式
                   100% - 參與度 = 跳出率，這樣就能輕鬆得出結果。

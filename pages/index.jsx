@@ -71,7 +71,7 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className="bg-[#fff]">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         {/* 
@@ -139,7 +139,7 @@ export default function Home() {
         <section className="section_HeroImg ">
           <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-white"></div>
         </section>
-        <div className="flex bg-[#000000] pb-[80px] flex-col justify-center items-center">
+        <div className="flex mb-[-300px] bg-[#000000] pb-[80px] flex-col justify-center items-center">
           <h2
             className="header text-[#f6f6f6] xl:text-[100px]
     font-extrabold xl:leading-[90px] leading-normal text-center md:text-[62px] mt-[100px] text-[32px]"
@@ -182,91 +182,6 @@ export default function Home() {
                 placeholder="empty"
                 width={2000}
                 height={600}
-              ></Image>
-            </div>
-          </div>
-
-          <div className=" py-10  w-full md:max-w-[600px]  p-0 lg:p-8">
-            <p className="text-[24px] text-white text-center p-8 mt-4">
-              自學網站確實可利用wordpress或者其他建站軟體快速搭建一個網頁，適合預算有限的創業者
-            </p>
-          </div>
-
-          <div className="w-full flex-col md:flex-row xl:px-[100px] md:px-[50px]  mb-[-80vh] pb-[80px]  xl:mb-[-50vh] bg-black  2xl:px-[200px] ">
-            <div className="flex md:flex-row flex-col mt-[50px] justify-center">
-              <div className="txt px-[20px] flex flex-col w-full md:w-1/2">
-                <h3 className=" text-[2.5rem] text-white leading-normal ">
-                  但你有想過自學網站建置<br></br>也有局限性嗎!!!
-                </h3>
-                {/* <p className="text-white font-normal">
-                Transform Your Online Presence with Our Top-tier Web Agency
-                Template for Exceptional Outcomes.
-              </p> */}
-                <ul className="p-0   m-0 w-full rounded-md">
-                  <div className="ButtonBackgroundColor text-white flex justify-between mt-2  rounded-[30px] border px-[20px] border-[#373737] text-center py-2 w-[270px]">
-                    <div className=" ">
-                      <Image
-                        src="/images/icon/exclamation-mark.png"
-                        placeholder="empty"
-                        width={22}
-                        height={22}
-                        alt="sigh-icon"
-                        loading="lazy"
-                      ></Image>
-                    </div>
-                    <div classNaem="text-white">品牌一致性與設計品質的欠缺</div>
-                  </div>
-                  <div className="ButtonBackgroundColor text-white flex justify-between mt-2  rounded-[30px] border px-[20px] border-[#373737] text-center py-2 w-[270px]">
-                    <div className=" ">
-                      <Image
-                        src="/images/icon/exclamation-mark.png"
-                        placeholder="empty"
-                        width={22}
-                        height={22}
-                        alt="sigh-icon"
-                        loading="lazy"
-                      ></Image>
-                    </div>
-                    <div classNaem="text-white">Seo和網站結構專業優化</div>
-                  </div>
-                  <div className="ButtonBackgroundColor text-white flex justify-between mt-2  rounded-[30px] border px-[20px] border-[#373737] text-center py-2 w-[270px]">
-                    <div className=" ">
-                      <Image
-                        src="/images/icon/exclamation-mark.png"
-                        placeholder="empty"
-                        width={22}
-                        height={22}
-                        alt="sigh-icon"
-                        loading="lazy"
-                      ></Image>
-                    </div>
-                    <div classNaem="text-white"> 擴展與專業需求的困難</div>
-                  </div>
-                </ul>
-              </div>
-              <div className="txt px-[20px]  flex flex-col w-full md:w-1/2">
-                <h3 className="text-white leading-normal  text-left md:text-right text-[2.5rem]">
-                  不如讓專業的我們<br></br>來幫助您建置網站
-                </h3>
-                <div className="flex justify-start md:justify-end ">
-                  <a
-                    href="/service"
-                    className="button w-[160px] rounded-md bg-white py-2 px-2 text-center text-black"
-                  >
-                    See Our Work
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="w-full mt-6  rounded-sm lg:rounded-xl overflow-hidden">
-              <Image
-                width={2600}
-                height={1000}
-                placeholder="empty"
-                loading="lazy"
-                className="scale-100  hover:scale-105 duration-500 rounded-sm lg:rounded-xl  w-full object-contain"
-                src="/images/Hero-slider04.png"
-                alt="交給專頁的我們-極客網頁設計"
               ></Image>
             </div>
           </div>
@@ -332,13 +247,13 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="p-4 md:p-10  mb-[100px]">
+        <div className="p-4 md:p-10  ">
           <div className="flex flex-col ">
             <h2 className="leading-normal text-[50px] sm:text-[70px] xl:text-[120px] mb-0 md:mb-[-35px]">
               CONTACT US。{" "}
             </h2>
             <div className="form rounded-[40px] bg-gray-100  overflow-hidden flex-col  md:flex-row  flex h-full border-2 border-black">
-              <div className="left w-full md:w-[40%] p-[10px] md:p-[40px] h-full items-center flex-col flex justify-center">
+              <div className="left  w-full md:w-[40%] p-[10px] md:p-[40px] h-full items-center flex-col flex justify-center">
                 <div className="txt pt-[100px] flex flex-col items-center justify-center">
                   <p className="text-[30px] font-bold  mt-3">
                     聯繫Jeek-極客網頁設計
@@ -372,7 +287,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="right w-full md:w-[60%] border  h-full overflow-scroll py-10">
+              <div className="right w-full bg-white md:w-[60%] border  h-full overflow-scroll py-10">
                 <div className="from flex justify-center items-center  overflow-y-scroll h-full bg-white p-[10px] md:p-[40px] border-black-rgba  ">
                   <NewsletterForm />
                 </div>
@@ -380,15 +295,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <section className="section_matter">
-          <div className="top"></div>
-          <div className="bottom">{/* <PhysicsAnimation /> */}</div>
-        </section>
-
-        <footer>
-          <h2 className="text-white">lorem</h2>
-        </footer>
       </div>
     </div>
   );

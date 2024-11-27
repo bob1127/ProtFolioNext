@@ -332,11 +332,11 @@ export default function Blog() {
                 </div>
               </div>
               <div className="text-[80px] text-center">+</div>
-              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto   leading-[32px] font-normal  rounded-xl  md:p-[30px] p-[20px] flex  md:items-start flex-col md:flex-row justify-center items-center xl:p-[50px] text-center  text-[#171717] ">
-                <div className="w-full md:w-1/3 " data-aos="zoom-in">
-                  <div className="p-5 m-3">
+              <div className="w-full xl:w-[80%]   mt-[40px] mx-auto   leading-[32px] font-normal grid-cols-2 md:grid-cols-3 grid  rounded-xl  md:p-[30px] p-[20px]   md:items-start justify-center items-center xl:p-[50px] text-center  text-[#171717] ">
+                <div className=" " data-aos="zoom-in">
+                  <div className="p-1 m-1">
                     <div className="txt font-bold text-[30px]">網址註冊費</div>
-                    <p className="text-[20px] mt-5">購買網域</p>
+                    <p className=" text-[16px] md:text-[20px] mt-5">購買網域</p>
 
                     <div className="p-4 sm:p-10 xl:p-5">
                       <Image
@@ -350,15 +350,11 @@ export default function Blog() {
                     </div>
                   </div>
                 </div>
-                <div
-                  className="w-full md:w-1/3 "
-                  data-aos="zoom-in"
-                  data-aos-delay="300"
-                >
-                  <div className=" p-5 m-3">
+                <div className=" " data-aos="zoom-in" data-aos-delay="300">
+                  <div className=" p-1 m-1">
                     <div className="txt font-bold text-[30px]">主機費用</div>
-                    <p className="text-[20px] mt-5">本地主機</p>
-                    <p className="text-[20px]">雲端主機</p>
+                    <p className=" text-[16px] md:text-[20px] mt-5">本地主機</p>
+                    <p className=" text-[16px] md:text-[20px]">雲端主機</p>
 
                     <div className="p-4 sm:p-10 xl:p-5">
                       <Image
@@ -372,16 +368,16 @@ export default function Blog() {
                     </div>
                   </div>
                 </div>
-                <div
-                  className="w-full md:w-1/3 "
-                  data-aos="zoom-in"
-                  data-aos-delay="600"
-                >
-                  <div className=" p-5 m-3">
-                    <div className="txt font-bold text-[30px]">SEO費用</div>
-                    <p className="text-[20px] mt-5">每年 seo優化</p>
-                    <p className="text-[20px]">關鍵字 調正</p>
-                    <p className="text-[20px]">網站流量分析追蹤</p>
+                <div className=" " data-aos="zoom-in" data-aos-delay="600">
+                  <div className=" p-1 m-1">
+                    <div className="txt font-bold text-[30px]">維護費用</div>
+                    <p className=" text-[16px] md:text-[20px] mt-5">
+                      每年 seo優化
+                    </p>
+                    <p className=" text-[16px] md:text-[20px]">關鍵字 調正</p>
+                    <p className=" text-[16px] md:text-[20px]">
+                      網站流量分析追蹤
+                    </p>
                     <div className="p-4 sm:p-10 xl:p-5">
                       <Image
                         src="/images/SEO費用.png"
@@ -460,7 +456,7 @@ export default function Blog() {
                       <p className="text-[40px] font-light text-black">
                         免費基本SEO 優化
                       </p>
-                      <p className="w-4/5 text-center text-[20px] mt-3">
+                      <p className="w-4/5 text-center  text-[16px] md:text-[20px] mt-3">
                         SEO
                         優化能提升網站可見性，增加搜尋引擎排名，吸引更多自然流量。
                       </p>
@@ -733,12 +729,12 @@ export default function Blog() {
                   textAlign: "center",
                 }}
               >
-                <GsapText
+                {/* <GsapText
                   text=' "什麼！？ 網站只要 一萬？" '
                   lineHeight="70px"
                   id="text2"
                   fontSize="60px"
-                />
+                /> */}
                 {/* "為什麼要選擇自由接案者？" */}
               </h2>
 
@@ -781,23 +777,30 @@ export default function Blog() {
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
                       SEO 技術
                     </h2>
-                    <p className="text-[16px]  w-[90%]  xl:w-full       mx-auto text-center mt-3">
-                      根據客戶的時間表和需求快速調整工作安排，適應變化。
+                    <p className="text-[32px]   w-[90%] mx-auto      md:w-full text-center mt-8">
+                      更專業
                     </p>
                   </div>
                   <a
                     href="/contact"
-                    className="bg-[#fdb932] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-white-100 hover:scale-95 shadow-xl text-center py-3 mb-5 w-[140px]"
+                    className="bg-[#fdb932] mt-3 duration-200 text-[50px] rounded-md px-4 text-black  inline-block shadow-gray-100 hover:scale-95 shadow-xl text-center py-3 "
                   >
                     Contact
                   </a>
+                  {/* <a
+                    href="/contact"
+                    className="bg-[#fdb932] mt-3 duration-200 text-[18px] rounded-md text-white inline-block shadow-white-100 hover:scale-95 shadow-xl text-center py-3 mb-5 w-[140px]"
+                  >
+                    Contact
+                  </a> */}
                 </div>
-                <div className="img mt-4 xl:mt-0 xl:my-0  mb-0 xl:mb-[30px] w-full md:w-[40%] overflow-hidden">
+                <div className="img mt-4 xl:mt-0 xl:my-0  mb-0 xl:mb-[30px] w-full md:w-[40%] flex justify-center overflow-hidden">
                   <Image
                     src="/images/專案優惠只要一萬.png"
                     alt="自由接案工作者-freeLancer-極客網頁設計"
                     placeholder="empty"
                     data-aos="zoom-in-up"
+                    className="mx-auto"
                     data-aos-delay="200"
                     width={600}
                     height={600}
@@ -812,10 +815,10 @@ export default function Blog() {
                       精選方案
                     </h2>
                     <h2 className="text-[#222222] text-center md:leading-[40px] xl:leading-[60px] xl:text-[70px] md:text-[40px] text-[32px] font-extrabold">
-                      價格透明
+                      優惠價格
                     </h2>
                     <p className="text-[32px]   w-[90%] mx-auto      md:w-full text-center mt-8">
-                      第一年主機+網域+網站 只要
+                      網頁設計建製 只要
                     </p>
                   </div>
                   <a
@@ -963,7 +966,7 @@ export default function Blog() {
             <section className="section-plan">
               <div className="flex md:flex-row flex-wrap justify-center items-start   flex-row">
                 <div
-                  className="border pb-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
+                  className="border pb-[60px] h-[450px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <p>Basic</p>
@@ -998,7 +1001,7 @@ export default function Blog() {
                 </div>
 
                 <div
-                  className="border py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
+                  className="border h-[450px] py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <p className="font-bold">Landing Page</p>
@@ -1031,7 +1034,7 @@ export default function Blog() {
                   </div>
                 </div>
                 <div
-                  className="border py-[60px] px-[40px] bg-white  w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
+                  className="border h-[450px] py-[60px] px-[40px] bg-white  w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
@@ -1039,7 +1042,7 @@ export default function Blog() {
                   </div>
                   <p>E-Coomerce</p>
                   <h3 className="text-[40px]">購物網站</h3>
-                  {/* <p className="text-[20px]">
+                  {/* <p className=" text-[16px] md:text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p> */}
 
@@ -1067,7 +1070,7 @@ export default function Blog() {
                   </div>
                 </div>
                 <div
-                  className="border py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex relative w-[400px]  justify-center flex-col items-center mx-4"
+                  className="border h-[450px] py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex relative w-[400px]  justify-center flex-col items-center mx-4"
                   data-aos="fade-bur"
                 >
                   <p>Customized</p>
@@ -1076,7 +1079,7 @@ export default function Blog() {
                   </div>
                   <h3 className="text-[40px]">客製化方案</h3>
 
-                  {/* <p className="text-[20px]">
+                  {/* <p className=" text-[16px] md:text-[20px]">
                     價格： <span className="font-extrabold">20000up</span>
                   </p> */}
 
@@ -1131,10 +1134,10 @@ export default function Blog() {
                 </span>
               </div>
               <div className="terms-wrap  bg-white border w-[97%] md:w-[80vw] mx-auto p-8 md:p-10  shadow-xl rounded-xl">
-                <div className="grid  p-0 md:p-10 grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-2">
-                  <div className="content p-10">
-                    <b className="text-[20px]">Step01</b>
-                    <p className="text-[20px]">確認雙方需求</p>
+                <div className="grid  p-0 md:p-10 grid-cols-2 xl:grid-cols-4 md:grid-cols-4  gap-0 md:gap-2">
+                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
+                    <b className=" text-[16px] md:text-[20px]">Step01</b>
+                    <p className=" text-[16px] md:text-[20px]">確認雙方需求</p>
 
                     <Image
                       className="mt-3"
@@ -1146,9 +1149,9 @@ export default function Blog() {
                       alt="step1確認雙方需求"
                     />
                   </div>
-                  <div className="content p-10">
-                    <b className="text-[20px]">Step02</b>
-                    <p className="text-[20px]">支付訂金</p>
+                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
+                    <b className=" text-[16px] md:text-[20px]">Step02</b>
+                    <p className=" text-[16px] md:text-[20px]">支付訂金</p>
                     <Image
                       className="mt-3"
                       src="/images/icon/payment-method.png"
@@ -1159,9 +1162,9 @@ export default function Blog() {
                       alt="step02. 支付訂金-極客網頁設計"
                     />
                   </div>
-                  <div className="content p-10">
-                    <b className="text-[20px]">Step03</b>
-                    <p className="text-[20px]">開始製作</p>
+                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
+                    <b className=" text-[16px] md:text-[20px]">Step03</b>
+                    <p className=" text-[16px] md:text-[20px]">開始製作</p>
                     <Image
                       className="mt-3"
                       src="/images/icon/ux.png"
@@ -1172,9 +1175,9 @@ export default function Blog() {
                       alt="step03. 開始製作"
                     />
                   </div>
-                  <div className="content p-10">
-                    <b className="text-[20px]">Step04</b>
-                    <p className="text-[20px]">支付尾款-結案</p>
+                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
+                    <b className=" text-[16px] md:text-[20px]">Step04</b>
+                    <p className=" text-[16px] md:text-[20px]">支付尾款-結案</p>
                     <Image
                       className="mt-3"
                       src="/images/icon/positive-vote.png"
@@ -1185,6 +1188,33 @@ export default function Blog() {
                       alt="step04. 結案"
                     />
                   </div>
+                </div>
+                <h2>2.服務範圍 (Scope of Work)</h2>
+                <div>
+                  <ul className="p-0 m-0 ">
+                    <li className="text-[20px] mt-4 font-bold">• 網頁設計</li>
+                    <li className="text-[20px] mt-4 font-bold">• seo優化</li>
+                    <li className="text-[20px] mt-4 font-bold">• 3D建模</li>
+                    <li className="text-[20px] mt-4 font-bold">
+                      • 各項商品拍攝
+                    </li>
+                    <li className="text-[20px] mt-4 font-bold">
+                      • Banner、DM、產品圖上架、圖片美化{" "}
+                    </li>
+                    <li className="text-[20px] mt-4 font-bold">• 空拍攝影</li>
+                  </ul>
+                </div>
+                <h2>3.合約內容</h2>
+                <div>
+                  <Image
+                    src="/images/contract.png"
+                    alt="合約內容下載"
+                    placeholder="empty"
+                    loading="lazy"
+                    className=""
+                    width={400}
+                    height={400}
+                  ></Image>
                 </div>
               </div>
             </section>
@@ -1248,7 +1278,7 @@ export default function Blog() {
               </div>
             </section> */}
 
-            {/* <a href="/contact" className="text-[20px]">
+            {/* <a href="/contact" className=" text-[16px] md:text-[20px]">
               實際價格可以再討論 請聯繫我
             </a> */}
             <div className="flex flex-col ">

@@ -234,7 +234,6 @@ export default function Blog() {
                   {" "}
                   二.如何使用 AI 漸進式填充？
                 </h2>
-
                 <h3 className="text-[20px] ">1.選擇要填充的區域</h3>
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   開啟 Photoshop
@@ -244,12 +243,11 @@ export default function Blog() {
                   src="/images/blog/photoshop-demo01.jpg"
                   width={800}
                   height={600}
-                ></Image>
-
+                ></Image>{" "}
+                <br></br>
                 <b className="text-[14px] font-bold mt-3">
                   這裡就拿一張暗色系教堂來當範例
                 </b>
-
                 <h3 className="text-[20px] ">2. 啟用漸進式填充</h3>
                 <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   使用舉行選取畫面工具，匡出你想要填充的區域範圍
@@ -259,6 +257,7 @@ export default function Blog() {
                   width={800}
                   height={600}
                 ></Image>
+                <br></br>
                 <b className="text-[14px] font-bold mt-3">
                   這裡的生成關鍵字我們先留空，直接按產生
                 </b>

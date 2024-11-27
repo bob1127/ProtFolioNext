@@ -162,7 +162,7 @@ export default function NewsletterForm() {
             <div className="mc-field-group mt-[15px]   xl:w-3/4 2xl:w-2/3">
               <label htmlFor="mce-PHONE">聯絡電話</label>
               <input
-                type="number"
+                type="text"
                 name="PHONE"
                 className="number p-3 border-2 border-black w-full py-2 rounded-md"
                 id="mce-PHONE"
@@ -218,7 +218,7 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">購物網站</h4>
-                    <b className="text-white">價格：NT30,000 up</b>
+                    <b className="text-white">價格：NT50,000 up</b>
                     <p className="text-[14px] text-white mt-3">
                       - 客製化網站規劃與設計
                     </p>
@@ -283,8 +283,7 @@ export default function NewsletterForm() {
                                 alt="contact-line-qrcode"
                                 placeholder="empty"
                               ></Image> */}
-                              <p>Line Qr code</p>
-                              <p>掃描加入好友</p>
+                              <p>Facebook</p>
                             </div>
                           </ModalBody>
                         </>
@@ -292,24 +291,10 @@ export default function NewsletterForm() {
                     </ModalContent>
                   </Modal>
 
-                  <label htmlFor="mce-group[43794]-43794-0">Instagram</label>
+                  <label htmlFor="mce-group[43794]-43794-0">Line</label>
                 </li>
 
                 <li className="mr-5 mt-3">
-                  <Button
-                    onPress={() => handleOpen(1)}
-                    className="w-[130px] h-[130px]"
-                  >
-                    {" "}
-                    <Image
-                      src="/images/ig-qrCode.png"
-                      width={100}
-                      height={100}
-                      loading="lazy"
-                      alt="contact-line-qrcode"
-                      placeholder="empty"
-                    ></Image>
-                  </Button>
                   <Modal isOpen={isOpen === 1} onOpenChange={handleClose}>
                     <ModalContent className="border p-[100px] rounded-[30px] bg-white border-black">
                       {(onClose) => (
@@ -325,15 +310,13 @@ export default function NewsletterForm() {
                                 alt="contact-line-qrcode"
                                 placeholder="empty"
                               ></Image>
-                              <p>Line Qr code</p>
-                              <p>掃描加入好友</p>
+                              <p>line官方</p>
                             </div>
                           </ModalBody>
                         </>
                       )}
                     </ModalContent>
                   </Modal>
-                  <label htmlFor="mce-group[43794]-43794-2">Line</label>
                 </li>
               </ul>
             </div>
@@ -363,10 +346,10 @@ export default function NewsletterForm() {
               <div className="clear foot">
                 <input
                   type="submit"
-                  name="subscribe"
+                  name="送出"
                   id="mc-embedded-subscribe"
                   className="button border border-black text-center  w-full md:w-[140px] text-white rounded-md py-4 md:py-2 bg-gray-900"
-                  value="Subscribe"
+                  value="送出"
                 />
                 <p style={{ margin: "0px auto" }}>
                   <a

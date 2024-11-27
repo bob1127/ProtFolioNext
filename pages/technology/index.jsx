@@ -12,9 +12,9 @@ import { useState, useEffect } from "react";
 
 export default function Blog() {
   const webpage = {
-    name: "網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    name: "網頁技術介紹-wordpres網頁設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
-      "極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。",
+      "極客網頁設計專注於提供專業的WordPress網站設計服務，幫助企業建立具吸引力且高效的網站。我們結合先進的無頭網站技術，提供靈活的內容管理方案，讓您的網站在各種設備上流暢運行並提升SEO排名。無論是全新網站開發，或是現有網站的改進與優化，我們都能根據您的需求提供定制化設計，助您提升品牌曝光度並吸引更多潛在客戶。",
     url: "https://www.jeek-webdesign.com.tw/terms",
     logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
     contact: {
@@ -36,19 +36,19 @@ export default function Blog() {
   return (
     <div className={`content ${isVisible ? "fade-in" : ""}`}>
       <NextSeo
-        title="網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
-        description="極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。"
+        title="網頁技術介紹-wordpres網頁設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        description="極客網頁設計專注於提供專業的WordPress網站設計服務，幫助企業建立具吸引力且高效的網站。我們結合先進的無頭網站技術，提供靈活的內容管理方案，讓您的網站在各種設備上流暢運行並提升SEO排名。無論是全新網站開發，或是現有網站的改進與優化，我們都能根據您的需求提供定制化設計，助您提升品牌曝光度並吸引更多潛在客戶。"
         openGraph={{
           title:
-            "網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+            "網頁技術介紹-wordpres網頁設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
           description:
-            "極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。",
+            "極客網頁設計專注於提供專業的WordPress網站設計服務，幫助企業建立具吸引力且高效的網站。我們結合先進的無頭網站技術，提供靈活的內容管理方案，讓您的網站在各種設備上流暢運行並提升SEO排名。無論是全新網站開發，或是現有網站的改進與優化，我們都能根據您的需求提供定制化設計，助您提升品牌曝光度並吸引更多潛在客戶。",
           images: [
             {
               url: "https://www.jeek-webdesign.com.tw/images/peromace.webp",
               width: 800,
               height: 600,
-              alt: "網頁技術介紹_極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
+              alt: "網頁技術介紹-wordpres網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
             },
           ],
         }}
@@ -71,11 +71,11 @@ export default function Blog() {
           <link rel="icon" href="/favicon/favicon.ico" />
           <meta
             property="og:title"
-            content="網頁技術介紹-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+            content="網頁技術介紹-wordpres網頁設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
           />
           <meta
             property="og:description"
-            content="極客網頁設計提供高效能的無頭網站解決方案，結合 Next.js 和 WordPress，讓您的網站不僅快速、SEO友好，還具備高度靈活性。利用PageSpeed Insights優化網站速度，提升搜尋引擎排名，並透過3D交互式設計提升用戶體驗。這些現代化設計不僅能增加網站的吸引力，還能幫助提高轉換率和品牌形象，降低營銷成本，實現業務增長。"
+            content="極客網頁設計專注於提供專業的WordPress網站設計服務，幫助企業建立具吸引力且高效的網站。我們結合先進的無頭網站技術，提供靈活的內容管理方案，讓您的網站在各種設備上流暢運行並提升SEO排名。無論是全新網站開發，或是現有網站的改進與優化，我們都能根據您的需求提供定制化設計，助您提升品牌曝光度並吸引更多潛在客戶。"
           />
           <meta
             property="og:image"
@@ -879,392 +879,7 @@ export default function Blog() {
                   </div>
                 </div>
               </section> */}
-              <section id="services" className="section">
-                <a
-                  data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfd9"
-                  className="fullwidth-link text-black w-inline-block"
-                  style={{}}
-                  href="/blog-02"
-                >
-                  <h2
-                    data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfda"
-                    className="heading is-fullwidth-title"
-                    style={{
-                      transform:
-                        "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      transformStyle: "preserve-3d",
-                      opacity: 1,
-                    }}
-                  >
-                    網頁行銷
-                  </h2>
-                  <br />
-                  <br />
-                  <div className="rounded-[30px] bg-[#333] text-[20px] text-white inline-block p-3">
-                    (結構優化｜SEO行銷)
-                  </div>
-                  <div
-                    data-w-id="a0ca9c58-17ca-f4ed-b1bb-53cff360cfdc"
-                    className="circle-button"
-                    style={{
-                      transform:
-                        "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                      transformStyle: "preserve-3d",
-                      opacity: 1,
-                    }}
-                  >
-                    <div className="circle-button-bg" style={{}} />
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="circle-button-icon"
-                      style={{}}
-                    />
-                  </div>
-                  <div className="fullwidth-link-bg" style={{}} />
-                </a>
-              </section>
-              <section className="section">
-                <div className="padding">
-                  <div className="main-container">
-                    <div id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c261-c41abecd">
-                      <div className="eyebrow-block">
-                        <div className="icon-block">
-                          <img
-                            src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f61d3e81308165ce58_responsive_layout_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                            loading="lazy"
-                            alt=""
-                            className="icon is-eyebrow-icon"
-                          />
-                        </div>
-                        <p className="eyebrow-text">Company</p>
-                      </div>
-                    </div>
 
-                    <div
-                      id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c264-c41abecd"
-                      className="cards-wrapper"
-                    >
-                      <div className="card-title-block">
-                        <GsapText
-                          text=" 你的產品很好，但卻沒讓更多人看見？"
-                          id="text4"
-                        />{" "}
-                        <h2
-                          data-aos="fade-up"
-                          className="heading leading-normal text-[30px] is-extralarge "
-                        ></h2>
-                        <a
-                          id="w-node-_4f18f1da-1e0a-2dad-3a97-4b92f5bc2c75-c41abecd"
-                          href="/quotation"
-                          className="simple-link mx-auto w-full flex justify-center inline-block"
-                        >
-                          「創新設計，讓您的網站脫穎而出」
-                        </a>
-                      </div>
-                      <div className="cards">
-                        <div
-                          data-aos="fade-down"
-                          id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c26b-c41abecd"
-                          data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c26b"
-                          className="card flex flex-col justify-center items-center group duration-500 hover:bg-[#f7d54c]"
-                          style={{}}
-                        >
-                          <a href="/blog-01" className="card-paragraph">
-                            <Image
-                              className="mb-4"
-                              alt="新網站SEO規劃-極客網頁設計"
-                              src="/images/新網站SEO規劃-極客網頁設計.png"
-                              width={2000}
-                              height={800}
-                              placeholder="empty"
-                              loading="lazy"
-                            />
-                            {/* <img
-                              className="w-full my-3 rounded-2xl mx-auto"
-                              src="https://blog-cdn.lottiefiles.com/cdn-cgi/image/width=640,quality=80,format=auto/2024/08/How-Do-Lottie-Animations-Help-with-SEO_.png"
-                              alt=""
-                            /> */}
-                            <br></br>
-                            <p className="text-[16px] font-normal">
-                              高曝光率的搜索排名有助於提高品牌知名度，使潛在客戶更容易記住你的品牌。
-                            </p>
-                          </a>
-                        </div>
-                        <a
-                          href="/blog-02"
-                          data-aos="fade-right"
-                          id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c274-c41abecd"
-                          data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c274"
-                          className="card group hover:bg-[#f7d54c] duration-150"
-                          style={{}}
-                        >
-                          {/* <div className="card-icon">
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/669692f6844afe9fcdf5a1af_thumb_up_24dp_FFFFFF_FILL0_wght500_GRAD0_opsz24.svg"
-                              loading="lazy"
-                              alt=""
-                              className="icon is-card-icon"
-                            />
-                          </div> */}
-                          <div className="card-content">
-                            <p className="card-paragraph group-hover:text-white duration-500">
-                              降低營銷成本
-                            </p>
-                            <a href="/blog-02" className="card-text-small">
-                              <Image
-                                className="mb-4"
-                                src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.png"
-                                width={800}
-                                height={800}
-                                alt="網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置"
-                                placeholder="empty"
-                                loading="lazy"
-                              />
-                              相比傳統廣告，SEO和社交媒體營銷成本更低且效果持久，能以更少的投入產生更多潛在客戶。
-                            </a>
-                          </div>
-                        </a>
-                        <a
-                          href="/blog-03"
-                          data-aos="fade-left"
-                          id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c27c-c41abecd"
-                          data-w-id="0f1a54fb-6925-5097-5e99-5f4ecfa8c27c"
-                          className="card group hover:bg-[#f7d54c] duration-150"
-                          style={{}}
-                        >
-                          <div className="card-content">
-                            <p className="card-paragraph group-hover:text-white duration-500">
-                              增加搜尋引擎曝光度和排名
-                            </p>
-                            <p className="card-text-small">
-                              <img
-                                alt="如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化"
-                                className="mb-4"
-                                src="/images/如何增加搜尋引擎曝光度和排名-極客網頁設計_網頁結構優化_seo優化.png"
-                                width={800}
-                                height={800}
-                                placeholder="empty"
-                                loading="lazy"
-                              />
-                              提高網站曝光度能幫助中小企業增強客戶信任、提升銷售、降低成本，並在競爭中獲得優勢。
-                            </p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <p
-                      id="w-node-_0f1a54fb-6925-5097-5e99-5f4ecfa8c284-c41abecd"
-                      className="paragraph is-sticky"
-                    >
-                      SEO 優化
-                    </p>
-                  </div>
-                </div>
-
-                <section>
-                  <div className="flex flex-col items-center justify-center">
-                    <div className="txt px-[20px]  flex justify-center items-center flex-col">
-                      <GsapText text="更快、更優化 " id="text09" />
-                      <h2 className="text-center">
-                        提升網站效能，贏得搜尋排名
-                      </h2>
-
-                      <h3 className="leading-[40px] text-center">
-                        {" "}
-                        使用{" "}
-                        <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-3   mt-4 md:mt-0 text-center">
-                          {" "}
-                          Page Speed Insight{" "}
-                        </span>{" "}
-                        檢測您的網站
-                      </h3>
-                      <p className="mt-3 leading-[26px] xl:text-[18px] text-[16px] w-[100%] md:w-4/5  xl:w-1/2 text-center">
-                        在數位時代，網站速度不僅影響使用者體驗，更是影響 SEO
-                        排名的重要因素。<br></br>Google Speed Insight
-                        是您檢測網站效能的首選工具，透過分析頁面載入速度、互動性及穩定性等關鍵指標，
-                        精確指出需要改進的地方，讓您能輕鬆優化網站。
-                      </p>
-
-                      <a
-                        id="w-node-_0205bcef-2d26-8503-8f33-85d57d1fb7b2-c41abecd"
-                        href="/blog-09"
-                        className="simple-link mb-[50px]"
-                      >
-                        相關文章
-                      </a>
-                    </div>
-                    <div className=" md:flex-row flex-col   flex w-full mx-auto md:w-2/3 xl:w-3/4 p-10 justify-center bottom-section">
-                      <div className="left p-0 md:p-4 w-full md:w-1/2">
-                        <ul className="pl-0 md:pl-5">
-                          <li className="font-bold text-[20px]  mt-5">
-                            ◉ 提升速度 = 提升排名
-                          </li>
-                          <li className="leading-[26px]">
-                            網站速度是 Google
-                            排名算法中的關鍵因素之一。透過優化速度，您將有更高的機會排在搜尋結果的前列。
-                          </li>
-                          <li className="font-bold text-[20px]  mt-5">
-                            ◉ 改善用戶體驗
-                          </li>
-                          <li className="leading-[26px]">
-                            速度慢的網站容易流失訪客。Google Speed Insight
-                            幫助您確保網站以最佳效能運行，提供順暢的使用者體驗，提升訪客的停留時間。
-                          </li>
-                          <li className="font-bold text-[20px]  mt-5">
-                            ◉ 優化指引一步到位
-                          </li>
-                          <li className="leading-[26px]">
-                            不只檢測，還提供實際可行的優化建議。從圖片壓縮、程式碼精簡到資源載入管理，所有細節都能輕鬆掌握。
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="right w-full md:w-1/2">
-                        {/* <img
-                          className="w-full"
-                          src="http://localhost:3000/_next/image?url=https%3A%2F%2Fwww.ultraehp.com%2Fimages%2Fperomace.webp&w=1200&q=75"
-                          alt=""
-                        /> */}
-                        <Image
-                          src="/images/網頁結構優化_UI設計_banner設計-極客網頁設計_seo優化.webp"
-                          loading="lazy"
-                          alt="img"
-                          width={800}
-                          placeholder="empty"
-                          height={500}
-                        ></Image>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </section>
-              <section className="md:px-[50px] w-full 2xl:w-[80%] mx-auto px-[20px] xl:px-[100px]">
-                <div>
-                  <div className="pl-8">
-                    <h1 className="">產品建模、3D形象影片</h1>
-                    <GsapText
-                      text="  3D-Interactive"
-                      lineHeight="70px"
-                      id="text3"
-                      fontSize="60px"
-                    />{" "}
-                    <p className="w-[95%] mb-5 xl:w-1/2 md:w-2/3">
-                      {" "}
-                      3D
-                      網頁設計正在引領新的網頁趨勢！網站不再只是平面展示，而是讓內容更加立體、生動。
-                      <br></br>
-                      這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
-                    </p>
-                    <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
-                      Spline
-                    </span>
-                    <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mt-2 text-center">
-                      Blender
-                    </span>
-                    {/* <p className="bg-blue-700 inline-block text-white  border-black border">
-                      Spline
-                    </p> */}
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className=" hidden md:block w-full md:w-1/2">
-                    <Carousel05 />
-                  </div>
-                  <div className=" w-full hiden md:block md:w-1/2 h-[400px] overflow-hidden hidden  flex justify-center items-center relative border-black mt-[20px]">
-                    <iframe
-                      className="absolute top-0 left-0 z-[999]"
-                      src="https://my.spline.design/untitled-e17fbea8704fb0489b816ed0e8953c2b/"
-                      frameborder="0"
-                      width="100%"
-                      height="500px"
-                    ></iframe>
-                  </div>
-                </div>
-              </section>
-              <section className="3Dmodel-interaction flex-col flex justify-center px-[20px]  md:p-0 mt-10 items-center">
-                <h2
-                  data-aos="fade-up"
-                  className="text-[26px] hidden md:block xl:text-[50px] font-extrabold"
-                >
-                  "3D運用-交互式網頁"
-                </h2>
-                <p
-                  data-aos="fade-up"
-                  className="bg-blue-600 px-6  hidden md:block py-2 text-white border-black border mt-2"
-                  data-aos-delay="300"
-                >
-                  3d 建模產品運用在網頁上
-                </p>
-                <div className="flex mt-[25px] justify-center">
-                  {/* <img
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                    className=" w-full xl:w-[80%] rounded-none md:rounded-xl mx-auto"
-                    src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104"
-                    alt=""
-                  /> */}
-                  <Image
-                    src="/images/3d互動式網站-極客網頁設計_3dModel_Blender.png"
-                    loading="lazy"
-                    alt="3d互動式網站-極客網頁設計_3dModel_Blender"
-                    width={800}
-                    height={600}
-                    placeholder="empty"
-                  ></Image>
-                  {/* <div>
-                    <div className="left"></div>
-                    <div className="right">
-                      <img
-                        className="w-[80%] mx-auto"
-                        src="https://www.vectary.com/website_assets/636cc984003871e3cda597bb/6644c6a1cff6e0d6b867232f_Vectary%20Business%20plan.png"
-                        alt=""
-                      />
-                    </div>
-                  </div> */}
-                </div>
-              </section>
-              <section className="coding-section">
-                <div className="container items-center justify-center  flex-col xl:flex-row py-[50px]  px-0 xl:px-[100px] flex">
-                  <div className="left   w-full xl:w-1/2  p-0 xl:p-[50px]">
-                    <div
-                      className="txt  xl:w-4/5 md:w-2/3 w-full"
-                      data-aos="fade-up"
-                    >
-                      <h4 className="text-[26px] md:text-[50px]  leading-normal font-bold">
-                        3d 交互式網站優點
-                      </h4>
-                      <p className="text-[22px] font-bold">
-                        Interection Website Design{" "}
-                      </p>
-                      <b className="text-[20px] mt-3"> 提升用戶體驗：</b>
-                      <p>
-                        3D
-                        環境讓用戶感受到沉浸式體驗，增加與產品的互動，吸引他們更長時間停留在網站上。
-                      </p>
-                      <b className="text-[20px] mt-3"> 增加轉換率：</b>
-                      <p>
-                        用戶能夠更直觀地查看產品細節，這有助於消除購物時的疑慮，從而提高購買意願。
-                      </p>
-                      <b className="text-[20px] mt-3"> 增強品牌形象：</b>
-                      <p>
-                        獨特的 3D
-                        設計可以讓品牌更具吸引力，給人留下深刻印象，從而提升品牌忠誠度。
-                      </p>
-                    </div>
-                  </div>
-                  <div className="right mt-5 md:mt-0 flex w-full xl:w-1/2">
-                    <Image
-                      src="/images/3d設計_UI設計_banner設計-極客網頁設計_seo優化.png"
-                      loading="lazy"
-                      alt="3d設計_UI設計_banner設計"
-                      width={800}
-                      height={600}
-                      placeholder="empty"
-                    ></Image>
-                  </div>
-                </div>
-              </section>
               <section className="section">
                 <div className="w-full md:w-2/3  flex justify-center items-center flex-col mx-auto pt-[60px] px-[20px] pb-[30px]">
                   <GsapText

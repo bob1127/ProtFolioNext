@@ -33,26 +33,6 @@ export default function App() {
             <div className="text-white">
               網頁設計｜SEO行銷｜網頁優化｜產品攝影｜
             </div>
-            <div className="social">
-              <p className="text-white text-[12px] mt-2">
-                Line:{" "}
-                <a href="#" className="text-white">
-                  dishfoisdofijsod
-                </a>
-              </p>
-              <p className="text-white text-[12px] mt-2">
-                Instagram:{" "}
-                <a href="#" className="text-white">
-                  dishfoisdofijsod
-                </a>
-              </p>
-              <p className="text-white text-[12px] mt-2">
-                Facebook:{" "}
-                <a href="#" className="text-white">
-                  dishfoisdofijsod
-                </a>
-              </p>
-            </div>
           </div>
         </div>
         <div className="txt-bottom py-[10%] 2xl:py-[10%] pl-[10%] w-full ">

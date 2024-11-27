@@ -79,22 +79,34 @@ export default function App() {
             </h1>
           </div>
           <div className="feature relative z-[9999999999999] mb-[40px] py-2 px-3 lg:w-[65%] w-[85%] md:w-[100%] mx-auto grid border-r-2 border-l-2 border-black rounded-[40px] grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="flex flex-col justify-center h-full">
+            <a
+              href="/WebOptimization"
+              className="flex flex-col justify-center h-full"
+            >
               <p>Website Design</p>
               <b>網頁設計</b>
-            </div>
-            <div className="flex flex-col justify-center h-full">
+            </a>
+            <a
+              href="/WebOptimization"
+              className="flex flex-col justify-center h-full"
+            >
               <p>SEO Optimization</p>
               <b>專業SEO優化</b>
-            </div>
-            <div className="flex flex-col justify-center h-full">
+            </a>
+            <a
+              href="/Photography"
+              className="flex flex-col justify-center h-full"
+            >
               <p>Photography</p>
               <b>產品攝影｜圖片後製</b>
-            </div>
-            <div className="flex flex-col justify-center h-full">
+            </a>
+            <a
+              href="/3dProduct"
+              className="flex flex-col justify-center h-full"
+            >
               <p>3D建模</p>
               <b>產品3d商業建模｜建模產品圖片應用</b>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -463,7 +475,7 @@ const OverlayCopy = ({ subheading, heading }) => {
 };
 
 const ExampleContent = () => (
-  <div className="mx-auto  mt-[-50px] md:mt-[100px]   px-4 pb-24 pt-12 flex flex-col ">
+  <div className="mx-auto  mt-[-50px] md:mt-[100px]    pb-24 pt-12 flex flex-col ">
     <section className="section-embla my-[60px  md:my-0">
       <EmblaCarousel />
     </section>

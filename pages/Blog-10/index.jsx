@@ -790,6 +790,51 @@ export default function Blog() {
             </table>
           </div>
         </div>
+        <section className="others-navbar   flex-col md:flex-row justify-center py-[80px] f px-[10px] flex">
+          <a
+            href="/blog-09"
+            className=" flex group justify-center w-full md:w-1/2 items-center left-section border border-black"
+          >
+            <div className="txt group-hover:mr-5 duration-500 flex flex-col  mr-2">
+              <p className="text-[14px]">上一篇文章：</p>
+              <b className="font-bold text-[14px]">深入解析 SEO 成效指標</b>
+            </div>
+            <div className="img">
+              <Image
+                alt="深入解析SEO成效指標，助您精準優化網站-極客網頁設計"
+                loading="lazy"
+                src="/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.webp"
+                className="w-[180px] rounded-xl"
+                width={700}
+                height={300}
+                placeholder="empty"
+              ></Image>
+            </div>
+          </a>
+          <a
+            className="right-section relative border border-black group  w-full md:w-1/2 flex group justify-center   items-center"
+            href="/blog-11"
+          >
+            <div className="img ">
+              <Image
+                alt="深入解析SEO成效指標，助您精準優化網站-極客網頁設計"
+                loading="lazy"
+                src="/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.webp"
+                className="w-[180px] rounded-xl"
+                width={700}
+                height={300}
+                placeholder="empty"
+              ></Image>
+            </div>
+
+            <div className="txt  group-hover:ml-5  ml-4 duration-500 flex flex-col items-end mr-2">
+              <p className="text-[14px]">下一篇文章：</p>
+              <b className="font-bold text-[14px]">
+                如何創建 Google Tag Manager (GTM)
+              </b>
+            </div>
+          </a>
+        </section>
       </section>
     </div>
   );

@@ -105,9 +105,9 @@ const Blog = ({ posts, categories, tags }) => {
         }}
       />
       <section className="hero "></section>
-      <section className="projext-container py-[100px]  px-[40px] 2xl:px-[100px]">
+      <section className="projext-container py-[70px] md:py-[100px]  px-0 md:px-[40px] 2xl:px-[100px]">
         <div className="flex w-full flex-col">
-          <div className="flex w-full py-[80px] md:py-5 flex-col">
+          <div className="flex w-full  py-4  md:py-[80px] xl:py-5 flex-col">
             <Tabs aria-label="Options">
               <Tab key="精選網站" title="精選網站">
                 <Card>

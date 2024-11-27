@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const ShuffleHero = () => {
   return (
-    <section className="w-full 2xl:w-[80%] mx-auto px-[20px] md:px-[30px] xl:px-[150px]  mb-[-500px] pt-[100px] grid grid-cols-1 md:grid-cols-2 items-center gap-8 ">
+    <section className="w-full 2xl:w-[80%] mx-auto px-[20px] md:px-[30px] xl:px-[150px]  mb-[-500px]  pt-[-80px] md:pt-[100px] grid grid-cols-1 md:grid-cols-2 items-center gap-8 ">
       <div className="p-2 md:p-5">
         {/* <span className="block mb-4 text-xs md:text-sm text-[#ffb74b] font-medium">
           Design

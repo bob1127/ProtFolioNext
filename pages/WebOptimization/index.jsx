@@ -855,7 +855,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="txt w-full 2xl:w-[80%]">
-                <h4 className="text-[40px] font-light text-black leading-normal">
+                <h4 className=" text-[25px] md:text-[40px] font-light text-black leading-normal">
                   網頁SEO很重要嗎？
                 </h4>
 
@@ -897,7 +897,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="txt w-full 2xl:w-[80%]">
-                <h4 className="text-[40px] leading-normal font-light text-black">
+                <h4 className="text-[25px] md:text-[40px] leading-normal font-light text-black">
                   網頁設計其實沒有很花錢
                 </h4>
 

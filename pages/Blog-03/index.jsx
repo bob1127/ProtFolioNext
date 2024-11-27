@@ -128,7 +128,6 @@ export default function Blog() {
             placeholder="empty"
             className="rounded-md"
             loading="eager"
-            data-aos="fade-blur"
           ></Image>
         </div>
         <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
@@ -143,10 +142,7 @@ export default function Blog() {
                   如何增加搜尋引擎曝光度和排名?
                 </a>
               </section>
-              <h1
-                className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
-                data-aos="fade-blur"
-              >
+              <h1 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  ">
                 如何增加搜尋引擎曝光度和排名?
               </h1>
               <div className="title-content-date">
@@ -179,7 +175,6 @@ export default function Blog() {
               placeholder="empty"
               loading="lazy"
               className="rounded-md"
-              data-aos="fade-blur"
             ></Image>
           </div>
 
@@ -231,7 +226,6 @@ export default function Blog() {
                   placeholder="empty"
                   className="my-4"
                   alt="分析搜尋查詢-GooleSearchConsole"
-                  data-aos="fade-blur"
                 ></Image>
               </div>
 
@@ -247,7 +241,6 @@ export default function Blog() {
                 placeholder="empty"
                 className="my-4"
                 alt="新增篩選器-GooleSearchConsole"
-                data-aos="fade-blur"
               ></Image>
               <b className="text-[16px]">新增篩選器</b>
               <Image
@@ -258,7 +251,6 @@ export default function Blog() {
                 placeholder="empty"
                 className="mt-[50px]"
                 alt="新增篩選器-GooleSearchConsole"
-                data-aos="fade-blur"
               ></Image>
               <Image
                 src="/images/blog/blog03/查詢相關關鍵字02.png"
@@ -268,7 +260,6 @@ export default function Blog() {
                 placeholder="empty"
                 className="my-4"
                 alt="新增篩選器-GooleSearchConsole"
-                data-aos="fade-blur"
               ></Image>
               <b>查詢相關關鍵字</b>
               <br></br>
@@ -279,7 +270,6 @@ export default function Blog() {
                 現在，報告中只會顯示包含你搜尋的關鍵字的搜尋查詢結果。
               </b>
               <Image
-                data-aos="fade-blur"
                 src="/images/blog/blog03/查詢相關關鍵字結果.png"
                 width={1000}
                 height={600}
@@ -415,7 +405,6 @@ export default function Blog() {
                     width={1000}
                     height={600}
                     placeholder="empty"
-                    data-aos="fade-blur"
                     alt="查看外部連結數量-GoogleSearchConsole"
                   ></Image>
                   <br></br>
@@ -438,6 +427,7 @@ export default function Blog() {
           </div>
         </div>
       </div>
+
       {/* <div className="page-wrap">
         <div
           data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"

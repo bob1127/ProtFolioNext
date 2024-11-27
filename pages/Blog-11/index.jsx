@@ -190,9 +190,7 @@ export default function Blog() {
               <div className="imgText mt-[50px]">
                 <h2>什麼是 Google Tag Manager 和 Google Analytics 4？</h2>
                 <fieldset></fieldset>
-
                 {/* <h3>1.使用者數量</h3> */}
-
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   Google Tag Manager
                   是一個免費工具，可以幫助您在網站上輕鬆添加和管理多種標籤（Tags）。無論是分析代碼、追蹤代碼還是行為追蹤，GTM
@@ -210,12 +208,10 @@ export default function Blog() {
                   width={800}
                   height={600}
                 ></Image> */}
-
                 <h3 className="mt-[30px]">
                   二、創建並設置 Google Tag Manager (GTM)
                 </h3>
                 <b className="text-[18px]">註冊並登錄 GTM 帳號</b>
-
                 <ul>
                   <li className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                     - 註冊並登錄 GTM 帳號
@@ -237,7 +233,8 @@ export default function Blog() {
                   alt="建立帳戶-極客網頁設計"
                   className="mt-4"
                   height={600}
-                ></Image>
+                ></Image>{" "}
+                <br></br>
                 <b className="text-[16px] mt-2">建立一個容器帳戶</b>
                 <Image
                   src="/images/blog/Blog11/新增帳戶名稱-極客網頁設計.png"
@@ -261,19 +258,15 @@ export default function Blog() {
                 ></Image>
                 <br></br>
                 <b className="text-[16px] mt-2">選擇類型</b>
-
                 <h3 className="mt-[30px]">2. 安裝 GTM 程式碼到您的網站</h3>
-
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   GTM 會生成兩段代碼（Head 和 Body
                   部分）。將這兩段代碼分別粘貼到您網站的 head 和 body 部分。
                   完成後，儲存並發佈。
                 </div>
-
                 <h3 className="mt-[30px]">
                   3. 在 GTM 中新增 Google Analytics 4 標籤
                 </h3>
-
                 <ul>
                   <li className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                     - 進入 GTM 的儀表板，點擊左側的“標籤”選項，再點擊“新增”。
@@ -315,7 +308,6 @@ export default function Blog() {
                   alt="選擇代碼類型-極客網頁設計"
                   height={600}
                 ></Image>
-
                 <Image
                   src="/images/blog/Blog11/選擇ga4-極客網頁設計.png"
                   width={800}
@@ -325,7 +317,6 @@ export default function Blog() {
                   alt="選擇ga4-極客網頁設計"
                   height={600}
                 ></Image>
-
                 <Image
                   src="/images/blog/Blog11/選擇ga4-極客網頁設計02.png"
                   width={800}
@@ -337,7 +328,6 @@ export default function Blog() {
                 ></Image>
                 <br></br>
                 <b className="text-[16px] mt-2">選擇ga4</b>
-
                 <h3 className="mt-[30px]">
                   3. 、創建並設置 Google Analytics 4 (GA4) 帳戶
                 </h3>
@@ -368,7 +358,6 @@ export default function Blog() {
                 ></Image>
                 <br></br>
                 <b className="text-[16px] mt-2">點擊左下角管理員</b>
-
                 <Image
                   src="/images/blog/Blog11/找到你的評估id-極客網頁設計.png"
                   width={800}
@@ -395,7 +384,6 @@ export default function Blog() {
                 <b className="text-[16px] mt-2">
                   如出現找不到google代碼 及案右邊建立代碼按鈕
                 </b>
-
                 <Image
                   src="/images/blog/Blog11/順利新增ga4代碼.png"
                   width={800}
