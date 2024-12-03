@@ -5,6 +5,7 @@ import { NextSeo } from "next-seo";
 import Marquee from "react-fast-marquee";
 import { useEffect } from "react";
 import { Snippet } from "@nextui-org/react";
+import BlogCarousel from "../../components/EmblaCarousel10/index";
 
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
@@ -44,7 +45,7 @@ export default function Blog() {
             "Google Tag Manager (GTM) 和 Google Analytics 4 (GA4) 的整合能有效提升網站數據追蹤和分析。首先，註冊並設置 GTM，安裝代碼到網站後，新增 GA4 標籤並設置測量 ID。接著，在 GA4 中創建帳戶並獲取測量 ID，將其與 GTM 進行對接。完成後，測試標籤觸發是否正常，並發布更新。這樣便可開始收集並分析網站數據，提升行銷和用戶體驗。",
           images: [
             {
-              url: "www.jeek-webdesign.com.tw/images/",
+              url: "https://www.jeek-webdesign.com.tw/images/scremingFrog-debug.png",
               width: 1200,
               height: 630,
               alt: "",
@@ -117,7 +118,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[200px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -159,7 +160,7 @@ export default function Blog() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/blog/blog13/scremingFrog.png"
+              src="/images/scremingFrog-debug.png"
               width={900}
               height={500}
               placeholder="empty"

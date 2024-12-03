@@ -2,7 +2,7 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
-import EmblaCarousel08 from "../../components/EmblaCarousel08/index.jsx";
+
 import SwiperScroll from "../../components/SwiperScroll02/page";
 import PortFolioCarousel from "../EmblaCarousel/index";
 import Marquee from "react-fast-marquee";
@@ -30,7 +30,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main ref={container} className="relative  ">
+    <main
+      ref={container}
+      className="relative  mt-[-700px] md:mt-[-500px] 2xl:mt-[-800px]"
+    >
       <Section1 scrollYProgress={scrollYProgress} />
       <Section2 scrollYProgress={scrollYProgress} />
     </main>
@@ -70,18 +73,20 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="relative h-screen"
+      className="relative h-[105vh]"
       transition={{
         duration: 6.8,
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className=" px-[20px] py-[40px] lg:py-[100px] bg-[#ffffff]  rounded-[45px] border border-black md:rounded-[60px]  h-auto md:h-full xl:h-[200vh] 2xl:h-[160vh] xl:rounded-[80px] 2xl:rounded-[120px]">
+      <div className="px-[20px] border-t-2 border-black border  py-[40px]  lg:py-[100px] bg-[#ffffff] rounded-[45px] md:rounded-[60px] h-auto md:h-[150vh] xl:h-[200vh] xl:rounded-[80px] 2xl:rounded-[120px] portrait:xl:h-[50vh]">
         <div className="txt flex items-center flex-col justify-center py-4">
           <h2 className="text-black text-[35px] md:text-[50px] xl:text-[70px] text-center font-bold">
             讓您的品牌擁有獨立網站！
           </h2>
-          <h3 className="text-black">您是否為其困擾？？</h3>
+          <p className="text-[16px] font-normal text-center w-full mt-4 md:w-1/2 mx-auto md:text-[22px] text-black">
+            您是否為其困擾？？
+          </p>
         </div>
         <div className="w-full justify-between  px-[30px] flex"></div>
         <div className="block md:hidden">
@@ -98,7 +103,7 @@ const Section2 = ({ scrollYProgress }) => {
         >
           <a
             href="/quotation"
-            className="border mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1 border-black duration-100 group  p-6 bg-[#fcfcfc]"
+            className=" mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1  duration-100 group  p-6 bg-[#1a84ef]"
           >
             <Image
               src="/images/SEO優化行銷-極客網頁設計.png"
@@ -110,9 +115,9 @@ const Section2 = ({ scrollYProgress }) => {
               loading="lazy"
             ></Image>
             <div className="txt p-5">
-              <h2 className="text-black text-[35px] font-black">
+              <h3 className="text-black text-[35px] font-black">
                 電商平台的高抽成
-              </h2>
+              </h3>
 
               <p className="text-black">
                 電商平台手續費越抽越多？選擇我們的網頁設計服務，擺脫高額手續費的束縛！
@@ -134,9 +139,9 @@ const Section2 = ({ scrollYProgress }) => {
               loading="lazy"
             ></Image>
             <div className="txt p-5">
-              <h2 className="text-white text-[35px] font-black">
+              <h3 className="text-white text-[35px] font-black">
                 對現有網站不滿意
-              </h2>
+              </h3>
 
               <p className="text-white">
                 您的網站設計過時，技術已落後趨勢，缺乏維護，這可能正拖累您的 SEO
@@ -147,7 +152,7 @@ const Section2 = ({ scrollYProgress }) => {
           <a
             href="/quotation"
             data-aos-delay="300"
-            className="border mt-[10px] md:mt-[500px] h-full md:h-auto border-black  duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
+            className=" mt-[10px] md:mt-[500px] h-full md:h-auto   duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
           >
             <Image
               src="/images/商業產品攝影-極客網頁設計.png"
@@ -159,9 +164,9 @@ const Section2 = ({ scrollYProgress }) => {
               loading="lazy"
             ></Image>
             <div className="txt p-5">
-              <h2 className="text-white text-[35px] font-black">
+              <h3 className="text-white text-[35px] font-black leading-normal">
                 你想完整收集客戶資料，再行銷嗎？
-              </h2>
+              </h3>
 
               <p className="text-white">
                 擁有獨立網站，完整掌握客戶數據，實現精準行銷、提升轉化率，建立長期品牌關係，持續創造價值。

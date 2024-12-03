@@ -498,7 +498,7 @@ export default function Blog() {
                   >
                     <div className="img w-full md:w-[35%] p-5">
                       <Image
-                        src="/images/blog/blog13/scremingFrog.png"
+                        src="/images/scremingFrog-debug.png"
                         alt="SEO能帶來哪些好-極客網頁設計"
                         width={800}
                         height={600}
@@ -546,7 +546,7 @@ export default function Blog() {
                         </h3>
                       </div>
                       <Image
-                        src="/images/無頭網站_高性能seo有善-極客網頁設計.webp"
+                        src="/images/無頭網站_高性能seo有善-極客網頁設計.png"
                         alt="無頭網站_高性能seo有善-極客網頁設計"
                         placeholder="empty"
                         loading="lazy"

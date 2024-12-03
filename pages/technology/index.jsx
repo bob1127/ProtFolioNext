@@ -426,7 +426,7 @@ export default function Blog() {
                       alt=""
                     /> */}
                     <Image
-                      src="/images/3791116_0ef4_7 (1).webp"
+                      src="/images/無頭網站_高性能seo有善-極客網頁設計.png"
                       width={700}
                       loading="eager"
                       placeholder="empty"

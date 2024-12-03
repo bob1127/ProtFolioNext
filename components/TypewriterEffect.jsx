@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import VelocityText from "../components/VelocityText/page.jsx";
 const TypewriterEffect = () => {
   const phrases = ["客製化網站", "一頁式網站", "購物網站"];
   const [text, setText] = useState("");
@@ -46,22 +46,7 @@ const TypewriterEffect = () => {
 
   return (
     <div className="w-full">
-      <h2
-        className="text-[32px] sm:text-[40px] lg:text-[60px]"
-        style={{ textAlign: "center" }}
-      >
-        網頁設計不用很花錢 💰
-        <br /> <br />
-        就可以建立您的{" "}
-        <span id="typewriter" style={{ color: "#0072ef", fontWeight: "bold" }}>
-          {text}
-        </span>
-        {cursorVisible && (
-          <span id="cursor" style={{ color: "#0072ef" }}>
-            |
-          </span>
-        )}
-      </h2>
+      <VelocityText />
     </div>
   );
 };

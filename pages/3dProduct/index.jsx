@@ -366,7 +366,7 @@ export default function Home() {
               </div>
             </Marquee>
           </section>
-          <section className="md:px-[50px] w-full 2xl:w-[80%] mx-auto px-[20px] xl:px-[100px]">
+          <section className="md:px-[50px] w-full 2xl:w-[80%] mx-auto mt-[80px] px-[20px] xl:px-[100px]">
             <div>
               <div className="pl-8">
                 <h1 className="">產品建模、3D形象影片</h1>

@@ -5,6 +5,7 @@ import { NextSeo } from "next-seo";
 import Marquee from "react-fast-marquee";
 import { useEffect } from "react";
 import { Snippet } from "@nextui-org/react";
+import BlogCarousel from "../../components/EmblaCarousel10/index";
 
 import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
@@ -43,7 +44,7 @@ export default function Blog() {
             "Next.js 和 WordPress 結合打造無頭網站，能提升網站性能、內容管理和開發靈活性。透過靜態生成（SSG）、伺服器端渲染（SSR）和 CDN 優化，網站速度顯著提高，並透過 API 支援多渠道發佈。使用無頭架構，開發者可自由設計前端，同時利用 WordPress 強大的內容管理功能。相比傳統 WordPress 網站，無頭網站具有更好的 SEO 和安全性，適合需要高效性能和自訂設計的專案。",
           images: [
             {
-              url: "https://www.jeek-webdesign.com.tw/images/無頭網站_高性能seo有善-極客網頁設計.webp",
+              url: "https://www.jeek-webdesign.com.tw/images/無頭網站_高性能seo有善-極客網頁設計.png",
               width: 800,
               height: 600,
               alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
@@ -70,7 +71,7 @@ export default function Blog() {
         />
         <meta
           property="og:image"
-          content="https://www.jeek-webdesign.com.tw/images/無頭網站_高性能seo有善-極客網頁設計.webp"
+          content="https://www.jeek-webdesign.com.tw/images/無頭網站_高性能seo有善-極客網頁設計.png"
         />
         <meta
           property="og:url"
@@ -137,7 +138,7 @@ export default function Blog() {
             className="rounded-md"
           ></Image>
         </div>
-        <div className="article-content 2xl:px-[400px] p-[20px] md:px-[110px] xl:px-[200px]">
+        <div className="article-content 2xl:px-[200px] p-[20px] md:px-[110px] xl:px-[200px]">
           <div className="patagrph p-2  ">
             <div className="title  pb-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
@@ -179,7 +180,7 @@ export default function Blog() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/3791116_0ef4_7 (1).webp"
+              src="/images/無頭網站_高性能seo有善-極客網頁設計.png"
               width={900}
               height={500}
               placeholder="empty"
@@ -790,50 +791,13 @@ export default function Blog() {
             </table>
           </div>
         </div>
-        <section className="others-navbar   flex-col md:flex-row justify-center py-[80px] f px-[10px] flex">
-          <a
-            href="/blog-09"
-            className=" flex group justify-center w-full md:w-1/2 items-center left-section border border-black"
-          >
-            <div className="txt group-hover:mr-5 duration-500 flex flex-col  mr-2">
-              <p className="text-[14px]">上一篇文章：</p>
-              <b className="font-bold text-[14px]">深入解析 SEO 成效指標</b>
-            </div>
-            <div className="img">
-              <Image
-                alt="深入解析SEO成效指標，助您精準優化網站-極客網頁設計"
-                loading="lazy"
-                src="/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.webp"
-                className="w-[180px] rounded-xl"
-                width={700}
-                height={300}
-                placeholder="empty"
-              ></Image>
-            </div>
-          </a>
-          <a
-            className="right-section relative border border-black group  w-full md:w-1/2 flex group justify-center   items-center"
-            href="/blog-11"
-          >
-            <div className="img ">
-              <Image
-                alt="深入解析SEO成效指標，助您精準優化網站-極客網頁設計"
-                loading="lazy"
-                src="/images/深入解析 SEO 成效指標，助您精準優化網站-極客網頁設計.webp"
-                className="w-[180px] rounded-xl"
-                width={700}
-                height={300}
-                placeholder="empty"
-              ></Image>
-            </div>
-
-            <div className="txt  group-hover:ml-5  ml-4 duration-500 flex flex-col items-end mr-2">
-              <p className="text-[14px]">下一篇文章：</p>
-              <b className="font-bold text-[14px]">
-                如何創建 Google Tag Manager (GTM)
-              </b>
-            </div>
-          </a>
+        <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+          <div className="title">
+            <h3 className=" text-[28px] md:text-[34px]">
+              你可能也有興趣其他文章
+            </h3>
+          </div>
+          <BlogCarousel />
         </section>
       </section>
     </div>

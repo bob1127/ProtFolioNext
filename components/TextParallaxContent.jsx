@@ -4,6 +4,9 @@ import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import GsapText from "../components/RevealText/index";
 import { gsap } from "gsap";
+
+import PerspectiveSection02 from "../components/PerspectiveSection02/page";
+import EmblaCarousel08 from "../components/EmblaCarousel08/index.jsx";
 import { useCallback } from "react";
 import TypewriterEffect from "../components/TypewriterEffect";
 import EmblaCarousel from "../components/EmblaCarousel/index";
@@ -52,10 +55,10 @@ export default function App() {
 
   return (
     <div className=" ">
-      <div className="h-[100vh] md:h-[80vh] lg:h-[100vh] xl-[100vh] bg-[#c8c8c8] w-full relative overflow-hidden">
+      <div className="h-[100vh] md:h-[80vh] lg:h-[700px] xl-[100vh] bg-[#c8c8c8] w-full relative overflow-hidden">
         <div
-          className="absolute top-0 opacity-10 left-0  w-[100vw] h-[100vh]  z-[9999999] bg-center bg-no-repeat bg-cover "
-          style={{ backgroundImage: "url('/images/Hero-backgorund.png')" }}
+          className="absolute top-0 opacity-10 left-0  w-[100vw] h-[100vh]  z-[9999999] bg-center bg-repeat  "
+          style={{ backgroundImage: "url('/images/Hero-backgorund-03.png')" }}
         ></div>
         <div className="absolute left-0  md:left-[22%] top-[20%] w-full md:w-[80%] lg:w-[60%] z-[999999999]">
           <div className="font-anton relative  line flex justify-center items-center mt-[-80px] h-[180px] overflow-hidden ">
@@ -78,34 +81,31 @@ export default function App() {
               )}
             </h1>
           </div>
-          <div className="feature relative z-[9999999999999] mb-[40px] py-2 px-3 lg:w-[65%] w-[85%] md:w-[100%] mx-auto grid border-r-2 border-l-2 border-black rounded-[40px] grid-cols-2 md:grid-cols-4 gap-4">
-            <a
-              href="/WebOptimization"
-              className="flex flex-col justify-center h-full"
+
+          <div className="feature relative z-[9999999999999] mb-[40px] py-2 hidden sm:grid  w-[400px] mx-auto  border-r-2 border-l-2 border-black rounded-[40px] px-[40px]  overflow-scroll  grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
+            <div
+              href="/"
+              className="bg-white border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3  rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
             >
-              <p>Website Design</p>
-              <b>網頁設計</b>
+              產品攝影
+            </div>
+            <a
+              href="/"
+              className="bg-white  border border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]  text-nowrap   text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+            >
+              seo 優化
             </a>
             <a
-              href="/WebOptimization"
-              className="flex flex-col justify-center h-full"
+              href="/"
+              className="bg-white border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
             >
-              <p>SEO Optimization</p>
-              <b>專業SEO優化</b>
+              網頁設計
             </a>
             <a
-              href="/Photography"
-              className="flex flex-col justify-center h-full"
+              href="/"
+              className="bg-white border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
             >
-              <p>Photography</p>
-              <b>產品攝影｜圖片後製</b>
-            </a>
-            <a
-              href="/3dProduct"
-              className="flex flex-col justify-center h-full"
-            >
-              <p>3D建模</p>
-              <b>產品3d商業建模｜建模產品圖片應用</b>
+              3d建模
             </a>
           </div>
         </div>
@@ -266,8 +266,8 @@ export default function App() {
       </div>
 
       <div>
-        <section className="bg-[#ffd446] z-[9999999] overflow-hidden h-[200vh] sm:h-[450vh] md:h-[230vh] relative">
-          <div className="text z-[9999999999999] absolute w-[85%] md:w-[70%] xl:w-[57%] md:z-[-1] left-0  py-[50px] right-0  mx-auto">
+        <section className="bg-[#ffd446] z-[9999999] overflow-hidden hidden xl:block  md:h-[130vh] xl:portrait:h-[100vh] lg:h-[160vh] xl:h-[240vh] 2xl:h-[170vh] relative">
+          <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
             <TypewriterEffect />
           </div>
           <div className=" absolute w-[100vw] top-[-70px] z-[9999999999]">
@@ -277,14 +277,29 @@ export default function App() {
           <div className="relative w-[100vw] ">
             {/* 确保父元素为相对定位 */}
 
-            <div className="w-full h-screen flex justify-center">
+            <div className="w-full  h-screen flex justify-center">
               <div
                 data-aos="zoom-in"
                 data-aos-duration="1000"
-                className="Hero-ball sm:w-[900px] sm:h-[900px] lg:w-[1200px] mt-[265px] static z-[-1] lg:h-[1200px] 2xl:w-[2000px] 2xl:h-[2000px] w-[500px] h-[500px] "
+                className=" w-[100vw] "
               >
+                <div className="flex w-[100vw]   left-0 absolute  top-1/3">
+                  <div className="bg-white  w-[500px]  z-[999999999999] border border-black rounded-xl   p-10">
+                    <h3>選擇極客，提供完整網站維護服務</h3>
+                    <p>讓您的網站隨時保持在高效能</p>
+                  </div>
+                </div>
+                <Image
+                  src="/images/fantastic_hare_36410_Planets_surface_solid_color_background_zoo_c3daab53-e930-403f-a0aa-eb10908a7372.png"
+                  className=" max-w-[2500px] left-[-90vw] z-[99] md:left-[-10vw]  mt-20 absolute"
+                  alt=" "
+                  width={3000}
+                  height={1000}
+                  placeholder="empty"
+                  loading="lazy"
+                ></Image>
                 <div className="flex justify-between flex-wrap">
-                  <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-full sm:w-[450px] rotate-[-10deg] justify-center items-center flex-col ">
+                  {/* <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-[95%] mx-auto sm:w-[450px] 2xl:w-[33vw] justify-center items-center flex-col ">
                     <div className="slogan-title w-full flex justify-between">
                       <div>
                         {" "}
@@ -329,8 +344,8 @@ export default function App() {
                     <div className="slogan-footer flex justify-end py-[20px]">
                       Design By Jeek
                     </div>
-                  </div>{" "}
-                  <div className="txt p-8 bg-white rounded-xl  hidden md:flex  pt-[40px]  w-full sm:w-[450px] rotate-3 justify-center items-center flex-col ">
+                  </div>{" "} */}
+                  {/* <div className="txt p-8 bg-white rounded-xl  hidden md:flex  pt-[40px]  w-full sm:w-[450px] 2xl:w-[32vw] rotate-3 justify-center items-center flex-col ">
                     <div className="slogan-title w-full flex justify-between">
                       <div>
                         {" "}
@@ -367,16 +382,212 @@ export default function App() {
                     <div className="slogan-footer flex justify-end py-[20px]">
                       Design By Jeek
                     </div>
-                  </div>{" "}
+                  </div>{" "} */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg-[#ffd446]   h-[120vh] z-[9999999] overflow-hidden bock xl:hidden  relative">
+          <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
+            <TypewriterEffect />
+          </div>
+          <div className=" absolute w-[100vw] top-[-70px] z-[9999999999]">
+            {" "}
+            <PerspectiveSection />
+          </div>
+          <div className="relative w-[100vw] ">
+            {/* 确保父元素为相对定位 */}
+
+            <div className="w-full  h-screen flex justify-center">
+              <div data-aos="zoom-in" data-aos-duration="1000" className=" ">
+                <Image
+                  src="/images/fantastic_hare_36410_Planets_surface_solid_color_background_zoo_c3daab53-e930-403f-a0aa-eb10908a7372.png"
+                  className=" max-w-[2500px] left-[-90vw] md:left-[-80vw] z-[-1] mt-20 absolute"
+                  alt=" "
+                  width={3000}
+                  height={1000}
+                  placeholder="empty"
+                  loading="lazy"
+                ></Image>
+                <div className="flex justify-between flex-wrap">
+                  {/* <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-[95%] mx-auto sm:w-[450px] 2xl:w-[33vw] justify-center items-center flex-col ">
+                    <div className="slogan-title w-full flex justify-between">
+                      <div>
+                        {" "}
+                        <Image
+                          src="/images/icon/edit.png"
+                          alt="close-icon"
+                          width={35}
+                          className="mr-3"
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                        <b> Magic Write</b>
+                      </div>
+                      <div className="close mt-[-15px]">
+                        <Image
+                          src="/images/icon/pin.png"
+                          alt="close-icon"
+                          width={35}
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                      </div>
+                    </div>
+                    <div className="slogan-content border-b-2 border-gray-400 flex py-[30px] flex-wrap">
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        您還在比價嗎？
+                      </h3>
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        選擇極客!!
+                      </h3>
+                      <div className="block md:hidden">
+                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                          用工作室的價格
+                        </h3>
+                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                          建立專業級的網站
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="slogan-footer flex justify-end py-[20px]">
+                      Design By Jeek
+                    </div>
+                  </div>{" "} */}
+                  {/* <div className="txt p-8 bg-white rounded-xl  hidden md:flex  pt-[40px]  w-full sm:w-[450px] 2xl:w-[32vw] rotate-3 justify-center items-center flex-col ">
+                    <div className="slogan-title w-full flex justify-between">
+                      <div>
+                        {" "}
+                        <Image
+                          src="/images/icon/edit.png"
+                          alt="close-icon"
+                          width={35}
+                          className="mr-3"
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                        <b> Magic Write</b>
+                      </div>
+                      <div className="close mt-[-15px]">
+                        <Image
+                          src="/images/icon/pin.png"
+                          alt="close-icon"
+                          width={35}
+                          height={35}
+                          placeholder="empty"
+                          loading="lazy"
+                        ></Image>
+                      </div>
+                    </div>
+                    <div className="slogan-content border-b-2 border-gray-400  py-[30px] hidden md:block flex-wrap">
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        用工作室的價格
+                      </h3>
+                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
+                        建立專業級的網站
+                      </h3>
+                    </div>
+                    <div className="slogan-footer flex justify-end py-[20px]">
+                      Design By Jeek
+                    </div>
+                  </div>{" "} */}
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
-
+      {/* <div className="hidden xl:block">
+        <PerspectiveSection02 />
+      </div> */}
       {/* Rest of your component */}
-      <div className="mt-[100px]  bg-[#ffffff]">
+      <div className=" mt-0  sm:mt-[50px] md:mt-[40px] xl:mt-[100px]  bg-[#ffffff]">
+        {/* <PerspectiveSection02 /> */}
+        <section className="section-brand-mobile block sm:hidden">
+          <EmblaCarousel08 />
+        </section>
+        <section className="section-brand hidden sm:block   pt-5  ">
+          <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
+            <h2 className="text-black text-[30px] md:text-[50px] xl:text-[70px] font-bold">
+              讓您的品牌擁有獨立網站！
+            </h2>
+            <p className="text-[16px] font-normal text-center w-full mt-4 md:w-1/2 mx-auto md:text-[22px] text-black">
+              您是否為其困擾？？
+            </p>
+          </div>
+          <div className="bottom-wrap w-[95%] mx-auto flex  pb-5 ">
+            <div className="border px-[30px] py-[50px] border-black bg-[#e79a2e] w-1/3 rounded-xl m-2">
+              <div className="flex  flex-col justify-center items-center">
+                <Image
+                  src="/images/電商平台的高抽成01.png"
+                  alt="SEO優化行銷-極客網頁設計"
+                  width={500}
+                  height={500}
+                  className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                  placeholder="empty"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="flex flex-col justify-center items-center p-5">
+                <h3 className="text-white text-[30px] text-center font-black">
+                  電商平台的高抽成
+                </h3>
+
+                <p className="text-white  text-[14px] xl:text-[22px] md:text-[20px]  text-center">
+                  "電商平台手續費越抽越多？選擇我們的網頁設計服務，擺脫高額手續費的束縛！
+                </p>
+              </div>
+            </div>
+            <div className="border px-[30px] py-[50px] border-black w-1/3 bg-[#262626] rounded-xl m-2">
+              <div className="flex flex-col justify-center items-center">
+                <Image
+                  src="/images/對現有網站不滿意.png"
+                  alt="SEO優化行銷-極客網頁設計"
+                  width={500}
+                  height={500}
+                  className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                  placeholder="empty"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="flex flex-col justify-center p-5 items-center">
+                <h3 className="text-white text-[35px]  font-black">
+                  對現有網站不滿意
+                </h3>
+
+                <p className="text-white  text-[14px] xl:text-[22px] md:text-[20px] text-center">
+                  您的網站設計過時，技術已落後趨勢，缺乏維護，這可能正拖累您的排名和企業盈利
+                </p>
+              </div>
+            </div>
+            <div className="border px-[30px] py-[50px] border-black bg-[#5082b8] w-1/3 rounded-xl m-2">
+              <div className="flex flex-col justify-center items-center">
+                <Image
+                  src="/images/收集客戶資料再行銷.png"
+                  alt="SEO優化行銷-極客網頁設計"
+                  width={500}
+                  height={500}
+                  className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                  placeholder="empty"
+                  loading="lazy"
+                ></Image>
+              </div>
+              <div className="flex flex-col justify-center p-5 items-center">
+                <h3 className="text-white text-[30px] text-center font-black">
+                  你想完整收集客戶資料，再行銷嗎？
+                </h3>
+
+                <p className="text-white  text-[14px] xl:text-[22px] md:text-[20px]  text-center">
+                  擁有獨立網站，完整掌握客戶數據，實現精準行銷、提升轉化率，建立長期品牌關係，持續創造價值。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         <TextParallaxContent
           imgUrl="/images/WebOptimization-Hero-Img.png"
           subheading="Best Web Experience"
@@ -385,9 +596,7 @@ export default function App() {
               為您提供全方位策略的<br></br>網站設計。
             </span>
           }
-        >
-          <ExampleContent />
-        </TextParallaxContent>
+        ></TextParallaxContent>
       </div>
 
       {/* Additional sections */}
@@ -405,7 +614,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
         paddingRight: IMG_PADDING,
       }}
     >
-      <div className="relative h-[100vh] xl:h-[80vh] lg:h-[150vh]">
+      <div className="relative h-auto">
         <StickyImage imgUrl={imgUrl} />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>

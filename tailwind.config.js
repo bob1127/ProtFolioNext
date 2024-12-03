@@ -1,35 +1,33 @@
-// tailwind.config.js
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./styles/**/*.{css,scss}", // Include your styles directory
+    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./styles/**/*.{css,scss}",
   ],
   theme: {
-      darkMode: 'class', // 启用 class-based dark mode
-
+    darkMode: 'class', // 启用 class-based dark mode
     extend: {
-      ButtonBackgroundImage: {
-        'custom-gradient': 'linear-gradient(90.76deg, #28282b 0%, rgba(40, 40, 43, 0) 100%)',
+      screens: {
+        portrait: { raw: '(orientation: portrait)' }, // 定义 portrait 屏幕断点
       },
       colors: {
         'black-rgba': 'rgba(0, 0, 0, 0.25)',
         blue: {
-          100: '#2ddcff', // 将此值替换为你想要的颜色
+          100: '#2ddcff', // 自定义蓝色
         },
       },
-       
       fontFamily: {
-        'anton': ['"Anton Placeholder"', 'sans-serif'], // 添加自定义字体
+        anton: ['"Anton Placeholder"', 'sans-serif'], // 添加自定义字体
+        primary: ['Inter', 'sans-serif'], // 默认字体
       },
-       boxShadow: {
-        'custom': '8px 8px 0px rgba(45, 85, 255 ,.9)',
+      boxShadow: {
+        custom: '8px 8px 0px rgba(45, 85, 255 ,.9)',
       },
       animation: {
         moveit: 'moveit 900ms ease forwards',
         moveitback: 'moveitback 400ms ease forwards',
-                textRotation: "textRotation 8s linear infinite",
-
+        textRotation: "textRotation 8s linear infinite",
       },
       keyframes: {
         textRotation: {
@@ -50,10 +48,13 @@ module.exports = {
           '100%': { transform: 'translateY(0) scale(0.96)' },
         },
       },
-      fontFamily: {
-        primary: ['Inter', 'sans-serif'], // Ensure 'Inter' is defined
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(90.76deg, #28282b 0%, rgba(40, 40, 43, 0) 100%)',
+      },
+      height: {
+        'screen-50': '50vh', // 自定义高度类
       },
     },
   },
   plugins: [],
-}
+};

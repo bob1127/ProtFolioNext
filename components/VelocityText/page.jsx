@@ -29,12 +29,12 @@ export default function Home() {
 
   return (
     <section ref={targetRef} className="h-full text-neutral-950">
-      <div className="sticky top-0 flex py-0 sm:py-[50px] h-[300px] items-center overflow-hidden">
+      <div className="sticky top-0 flex mt-[-70px]  py-0 sm:py-[50px]  h-[300px] items-center overflow-hidden">
         <motion.p
           style={{ skewX, x }}
-          className="origin-bottom-left whitespace-nowrap text-5xl font-black  leading-[0.85] md:text-7xl md:leading-[0.85]"
+          className="origin-bottom-left whitespace-nowrap text-5xl font-black  leading-[0.85] md:text-[80px] 2xl:text-[100px] md:leading-[0.85]"
         >
-          "Slick Click, Designs That Stick - 流暢互動，令人銘記的設計"
+          "探索無限可能，極致客戶體驗 - 使您的業績一飛沖天"
         </motion.p>
       </div>
     </section>

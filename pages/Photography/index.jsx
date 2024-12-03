@@ -186,7 +186,7 @@ export default function Home() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,";
 
   return (
-    <div className=" py-[100px] flex justify-center  items-center">
+    <div className=" py-[100px] flex  p-0 m-0 justify-center  items-center">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
