@@ -42,7 +42,7 @@ export default function Home() {
           paddingRight: IMG_PADDING,
         }}
       >
-        <div className="relative h-[100vh] xl:h-[80vh] lg:h-[150vh]">
+        <div className="relative ">
           <StickyImage imgUrl={imgUrl} />
           <OverlayCopy heading={heading} subheading={subheading} />
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
 
   const IMG_PADDING = 12;
   const ExampleContent = () => (
-    <div className="mx-auto  mt-[-50px] md:mt-[100px]   px-4 pb-24 pt-12 flex flex-col ">
+    <div className=" ">
       <section className="section-embla my-[60px  md:my-0"></section>
       <section className="section_portfolio mx-auto max-w-[2000px] w-full flex flex-wrap justify-center items-center"></section>
     </div>

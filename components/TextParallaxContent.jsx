@@ -82,28 +82,28 @@ export default function App() {
             </h1>
           </div>
 
-          <div className="feature relative z-[9999999999999] mb-[40px] py-2 hidden sm:grid  w-[400px] mx-auto  border-r-2 border-l-2 border-black rounded-[40px] px-[40px]  overflow-scroll  grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
+          <div className="feature relative z-[9999999999999] mb-[40px] py-2 hidden sm:grid  w-[70%] mx-auto    rounded-[40px] px-[40px]  overflow-scroll  grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
             <div
-              href="/"
-              className="bg-white border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3  rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+              href="/Photography"
+              className="bg-white text-center border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3  rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
             >
               產品攝影
             </div>
             <a
-              href="/"
-              className="bg-white  border border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]  text-nowrap   text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+              href="/WebOptimization"
+              className="bg-white text-center  inline-block border border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]     text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
             >
               seo 優化
             </a>
             <a
-              href="/"
-              className="bg-white border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+              href="/project"
+              className="bg-white text-center border  border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
             >
               網頁設計
             </a>
             <a
-              href="/"
-              className="bg-white border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+              href="/3dProduct"
+              className="bg-white text-center border  border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
             >
               3d建模
             </a>

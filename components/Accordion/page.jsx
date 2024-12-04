@@ -86,7 +86,7 @@ export default function App() {
       <Accordion>
         <AccordionItem className="w-full">
           <AccordionHeader className="w-full">
-            <h3 className="txet-[14px] text-center md:text-[20px] p-0  font-normal lg:font-bold">
+            <h3 className="text-[16px] text-center md:text-[20px] p-0  font-bold lg:font-bold">
               做好一個網站要花費多少？
             </h3>
           </AccordionHeader>
@@ -106,7 +106,7 @@ export default function App() {
         </AccordionItem>
         <AccordionItem>
           <AccordionHeader>
-            <h3 className=" text-center txet-[14px] md:text-[20px] p-0 font-normal lg:font-bold">
+            <h3 className=" text-center text-[16px] md:text-[20px] p-0 font-bold lg:font-bold">
               要怎麼提升我的網站曝光度？
             </h3>
           </AccordionHeader>
@@ -126,27 +126,21 @@ export default function App() {
         </AccordionItem>
         <AccordionItem>
           <AccordionHeader>
-            <h3 className=" font-normal text-center txet-[14px] md:text-[20px] p-0 lg:font-bold">
-              我適合哪一種網站？
+            <h3 className=" font-bold text-center text-[16px] md:text-[20px] p-0 lg:font-bold">
+              是否擔心做好網站之後無人服務？
             </h3>
           </AccordionHeader>
           <AccordionPanel>
             <div className="mt-5">
               <p className="text-md text-gray-500">
-                提升網站曝光度可通過優化SEO、提高網站速度、定期更新內容、使用社交媒體宣傳以及增加反向鏈接來達成。持續關注分析數據並調整策略，有助於提高搜尋引擎排名，吸引更多潛在客戶。
+                選擇極客，極客提供完整網站維護服務，讓您的網站隨時保持高效能運作。
               </p>
-              <a
-                href="/blog-01"
-                className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 py-2"
-              >
-                試試無頭客製化網站
-              </a>
             </div>
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
           <AccordionHeader>
-            <h3 className=" font-normal text-center txet-[14px] md:text-[20px] p-0 lg:font-bold">
+            <h3 className=" font-bold text-center text-[16px] md:text-[20px] p-0 lg:font-bold">
               網站做好後，接下來要做什麼？
             </h3>
           </AccordionHeader>
@@ -166,21 +160,24 @@ export default function App() {
         </AccordionItem>
         <AccordionItem>
           <AccordionHeader>
-            <h3 className=" font-normal text-center txet-[14px] md:text-[20px] p-0 lg:font-bold">
-              關於合約和退退款
+            <h3 className=" font-bold text-center text-[16px] md:text-[20px] p-0 lg:font-bold">
+              網站建設好之後需要什麼成本？
             </h3>
           </AccordionHeader>
           <AccordionPanel>
             <div className="mt-5">
+              <p className="text-md text-gray-500"> 網域費用：一年約1~2000</p>
+              <p className="text-md text-gray-500"> 主機費用：一年約5000</p>
               <p className="text-md text-gray-500">
-                提升網站曝光度可通過優化SEO、提高網站速度、定期更新內容、使用社交媒體宣傳以及增加反向鏈接來達成。持續關注分析數據並調整策略，有助於提高搜尋引擎排名，吸引更多潛在客戶。
+                維護費用：市面上維護費用一年約20000~50000不等，
               </p>
-              <a
-                href="/blog-01"
-                className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 py-2"
-              >
-                試試無頭客製化網站
-              </a>
+              <p className="text-md text-gray-500">
+                極客推出一年{" "}
+                <span className="text-[22px] font-bold text-[#f6b23b]">
+                  12,000
+                </span>
+                高品質維護服務。
+              </p>
             </div>
           </AccordionPanel>
         </AccordionItem>

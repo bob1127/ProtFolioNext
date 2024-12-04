@@ -180,11 +180,11 @@ export default function NewsletterForm() {
                   <div>
                     <h4 className="text-white text-[22px]">一頁式網站</h4>
                     <b className="text-[#ffbd52] text-[32px]">NT10,000 up</b>
-                    <p className="text-[14px] text-white mt-3">- 高轉化率</p>
-                    <p className="text-[14px] text-white">
-                      - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
+                    <p className="text-[18px] mt-2 text-white ">- 高轉化率</p>
+                    <p className="text-[18px] mt-2 text-white">
+                      - 商業授權圖庫 x 10
                     </p>
-                    <p className="text-[14px] text-white">- 客製化設計</p>
+                    <p className="text-[18px] mt-2 text-white">- 客製化設計</p>
                   </div>
                 </li>
                 <li className="bg-black p-8 rounded-md ">
@@ -199,14 +199,16 @@ export default function NewsletterForm() {
 
                     <b className="text-[#ffbd52] text-[32px]">NT30,000 up</b>
 
-                    <p className="text-[14px] text-white mt-3">
+                    <p className="text-[18px] mt-2 text-white mt-3">
                       - 精美網站版型設計
                     </p>
-                    <p className="text-[14px] text-white">- 簡易後台編輯操作</p>
-                    <p className="text-[14px] text-white">
-                      - 商業授權圖庫 x 10 (另有商業攝影服務可提供)
+                    <p className="text-[18px] mt-2 text-white">
+                      - 簡易後台編輯操作
                     </p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <p className="text-[18px] mt-2 text-white">
+                      - 商業授權圖庫 x 10
+                    </p>
+                    <p className="text-[18px] mt-2 text-white">- 基本seo優化</p>
                   </div>
                 </li>
 
@@ -219,16 +221,16 @@ export default function NewsletterForm() {
                   <div>
                     <h4 className="text-white text-[22px]">購物網站</h4>
                     <b className="text-[#ffbd52] text-[32px]">NT50,000 up</b>
-                    <p className="text-[14px] text-white mt-3">
+                    <p className="text-[18px] mt-2 text-white mt-3">
                       - 客製化網站規劃與設計
                     </p>
-                    <p className="text-[14px] text-white">
+                    <p className="text-[18px] mt-2 text-white">
                       - 包含基本商品去背上架
                     </p>
-                    <p className="text-[14px] text-white">- 商品 形象 Banner</p>
-                    <p className="text-[14px] text-white">
-                      - 公司形象(產品)影片拍攝
+                    <p className="text-[18px] mt-2 text-white">
+                      - 商品形象Banner製作
                     </p>
+                    <p className="text-[18px] mt-2 text-white">- 專業seo優化</p>
                   </div>
                 </li>
                 <li className="bg-black p-8 rounded-md ">
@@ -240,12 +242,16 @@ export default function NewsletterForm() {
                   <div>
                     <h4 className="text-white text-[22px]">客製化網站</h4>
                     <b className="text-[#ffbd52] text-[32px]">找我談談！</b>
-                    <p className="text-[14px] text-white mt-3">
-                      - 精選網頁設計版型
+                    <p className="text-[18px] mt-2 text-white ">
+                      - 依客戶需求客製化版型
                     </p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
-                    <p className="text-[14px] text-white">- 精選網頁設計版型</p>
-                    <p className="text-[14px] text-white">- 基本seo優化</p>
+                    <p className="text-[18px] mt-2 text-white">- 專業seo優化</p>
+                    <p className="text-[18px] mt-2 text-white">
+                      - 商品攝影/形象影片
+                    </p>
+                    <p className="text-[18px] mt-2 text-white">
+                      - 商品圖像合成後製
+                    </p>
                   </div>
                 </li>
               </ul>

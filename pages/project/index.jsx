@@ -120,7 +120,7 @@ const Blog = ({ posts, categories, tags }) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
                           <img
                             src="/images/portfolio-zensor.webp"
                             alt="專案01-禪譜科技"
@@ -144,7 +144,7 @@ const Blog = ({ posts, categories, tags }) => {
                         data-aos-delay="100"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
                           <img
                             src="/images/ultraehp01.png"
                             alt="專案01-禪譜科技"
@@ -168,7 +168,7 @@ const Blog = ({ posts, categories, tags }) => {
                         data-aos-delay="200"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
                           <img
                             src="/images/king.png"
                             alt="專案01-禪譜科技"
@@ -199,7 +199,7 @@ const Blog = ({ posts, categories, tags }) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
                           <img
                             src="/images/多利安.png"
                             alt="專案05-多利安音樂藝術"
@@ -230,7 +230,7 @@ const Blog = ({ posts, categories, tags }) => {
                       data-duration="300"
                       className="project-item flex flex-col mx-3"
                     >
-                      <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px] border-black">
+                      <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
                         <img
                           src="/images/quan.png"
                           alt="專案04-澄軒飲水"

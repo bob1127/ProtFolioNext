@@ -246,51 +246,62 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="mb-[20px] overflow-x-auto w-full border border-black mt-[30px]">
-          <div className=" max-w-[1200px] sm:w-[90%] lg:w-[70%] mx-auto">
+        <section className="mb-[20px] w-full border border-black mt-[30px]">
+          <div className="max-w-[1200px] sm:w-[90%] lg:w-[70%] mx-auto">
             <h2 className="mt-10 text-center text-xl sm:text-xl md:text-xl my-5 lg:text-2xl">
-              "無頭網站 跟 Wordpress網站 比較"
+              我適合哪一種網站？
             </h2>
             <div
               data-aos="fade-up"
               data-delay="400"
-              className="w-full px-4  mx-auto"
+              className="w-full px-4 mx-auto mb-5"
             >
-              <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <div className="relative overflow-x-auto">
+                <table className="min-w-[800px] w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                   <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr className="bg-[#f3be3a]">
-                      <th scope="col" className="px-2 text-black py-3 sm:px-6">
-                        Product name
+                      <th
+                        scope="col"
+                        className="px-2 text-[16px] text-black py-3 sm:px-6"
+                      >
+                        類型
                       </th>
-                      <th scope="col" className="px-2  text-black py-3 sm:px-6">
+                      <th
+                        scope="col"
+                        className="px-2 text-[16px] text-black py-3 text-center  sm:px-6"
+                      >
                         一頁式網站
                       </th>
-                      <th scope="col" className="px-2 text-black py-3 sm:px-6">
+                      <th
+                        scope="col"
+                        className="px-2 text-[16px] text-black py-3 text-center  sm:px-6"
+                      >
                         形象網站
                       </th>
-
-                      <th scope="col" className="px-2  text-black py-3 sm:px-6">
+                      <th
+                        scope="col"
+                        className="px-2 text-[16px] text-black py-3  text-center  sm:px-6"
+                      >
                         購物網站
                       </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <tr className="bg-gray-100 border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
                         className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
-                        性能
+                        特性
                       </th>
-                      <td className="px-2 py-4 sm:px-6">
-                        單頁結構，捲動瀏覽； 簡單直接
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        單頁結構，捲動瀏覽；簡單直接
                       </td>
-                      <td className="px-2 py-4 sm:px-6">
-                        多頁結構，設計精美， 內容豐富
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        多頁結構，設計精美，內容豐富
                       </td>
-                      <td className="px-2 py-4 text-right sm:px-6">
-                        包含購物車、產品頁面、 支付系統
+                      <td className="text-center  px-2 py-4 text-right sm:px-6">
+                        包含購物車、產品頁面、支付系統
                       </td>
                     </tr>
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -298,48 +309,33 @@ export default function Home() {
                         scope="row"
                         className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
-                        開發靈活性
+                        主要用途
                       </th>
-                      <td className="px-2 py-4 sm:px-6">
+                      <td className="text-center  px-2 py-4 sm:px-6">
                         活動宣傳、單一產品推廣
                       </td>
-                      <td className="px-2 py-4 sm:px-6">
+                      <td className="text-center  px-2 py-4 sm:px-6">
                         公司形象展示、品牌宣傳
                       </td>
-                      <td className="px-2 py-4 text-right sm:px-6">
+                      <td className="text-center  px-2 py-4 text-center sm:px-6">
                         線上銷售商品與服務
                       </td>
                     </tr>
-                    <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
                         className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
-                        內容管理
+                        目標受眾
                       </th>
-                      <td className="px-2 py-4 text-right sm:px-6">
+                      <td className="text-center  px-2 py-4 sm:px-6">
                         尋求快速資訊的訪客
                       </td>
-                      <td className="px-2 py-4 sm:px-6">
+                      <td className="text-center  px-2 py-4 sm:px-6">
                         欲了解品牌故事或服務的潛在客戶
                       </td>
-                      <td className="px-2 py-4 sm:px-6">購買商品的消費者</td>
-                    </tr>
-                    <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                      <th
-                        scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
-                      >
-                        SEO
-                      </th>
-                      <td className="px-2 py-4 sm:px-6">
-                        精簡；重視核心資訊與 行動呼籲
-                      </td>
-                      <td className="px-2 py-4 sm:px-6">
-                        詳細；介紹品牌、案例、 服務範疇等
-                      </td>
-                      <td className="px-2 py-4 text-right sm:px-6">
-                        多樣化；含產品資訊、 規格、評論等
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        購買商品的消費者
                       </td>
                     </tr>
                     <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -347,16 +343,33 @@ export default function Home() {
                         scope="row"
                         className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
-                        安全性
+                        內容深度
                       </th>
-                      <td className="px-2 py-4 sm:px-6">
-                        基本互動性，例如 表單或按鈕
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        精簡；重視核心資訊與行動呼籲
                       </td>
-                      <td className="px-2 py-4 sm:px-6">
-                        中等互動性，例如 輪播圖、影片展示
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        詳細；介紹品牌、案例、服務範疇等
                       </td>
-                      <td className="px-2 py-4 text-right sm:px-6">
-                        高互動性，包括 會員系統、支付流程
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        多樣化；含產品資訊、規格、評論等
+                      </td>
+                    </tr>
+                    <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                      <th
+                        scope="row"
+                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                      >
+                        互動性
+                      </th>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        基本互動性，例如表單或按鈕
+                      </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        中等互動性，例如輪播圖、影片展示
+                      </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        高互動性，包括會員系統、支付流程
                       </td>
                     </tr>
                     <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -366,36 +379,78 @@ export default function Home() {
                       >
                         設計難度
                       </th>
-                      <td className="px-2 py-4 sm:px-6">
-                        中等，需兼顧品牌調性與多頁結構
-                      </td>
-                      <td className="px-2 py-4 sm:px-6">
-                        複雜，需整合系統與流程
-                      </td>
-                      <td className="px-2 py-4 text-right sm:px-6">
+                      <td className="text-center  px-2 py-4 sm:px-6">
                         簡單至中等，專注於視覺與可用性
                       </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        中等，需兼顧品牌調性與多頁結構
+                      </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        複雜，需整合系統與流程
+                      </td>
                     </tr>
-                    <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
                         className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         SEO表現
                       </th>
-                      <td className="px-2 py-4 sm:px-6">
+                      <td className="text-center  px-2 py-4 sm:px-6">
                         一般，關鍵字與頁面數量有限
                       </td>
-                      <td className="px-2 py-4 sm:px-6">
-                        良好，可透過多頁面強化特定關鍵字
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        良好，可透過多頁面強化特定關鍵字{" "}
                       </td>
-                      <td className="px-2 py-4 text-right sm:px-6">
-                        優秀，商品頁面多且有利於長尾關鍵字優化
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        優秀，商品頁面多且有利於長尾關鍵字優化{" "}
+                      </td>
+                    </tr>
+
+                    <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                      <th
+                        scope="row"
+                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                      >
+                        優點{" "}
+                      </th>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        快速上線；開發成本低 用戶體驗直觀
+                      </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        展現專業形象；內容多樣化，提升品牌信任感
+                      </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        全面服務；直接銷售，創造盈利
+                      </td>
+                    </tr>
+
+                    <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                      <th
+                        scope="row"
+                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                      >
+                        缺點{" "}
+                      </th>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        適用範圍有限，資訊過多易混亂
+                      </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        建設時間較長；維護成本較高{" "}
+                      </td>
+                      <td className="text-center  px-2 py-4 sm:px-6">
+                        開發複雜；系統安全、運營成本高{" "}
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+            </div>
+            <div className="px-[40px] md:px-[40px]">
+              <b className="text-[20px] ">
+                *
+                客製化網站：針對以上3種類型網站進行客製，打造屬於自己的風格，獨一無二的網站
+              </b>
             </div>
           </div>
         </section>
