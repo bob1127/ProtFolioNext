@@ -122,8 +122,8 @@ export default function Home() {
           height={700}
           src="/images/contact關於我們heroImg-極客網頁設計.jpg"
         ></Image> */}
-        <div className="form rounded-[40px] bg-white  overflow-visible lg:overflow-hidden flex-col  py-[25px] md:flex-row  w-full flex h-auto  border-2 border-black  px-[10px] md:px-[25px]">
-          <div className="left w-full md:w-[40%] p-0 md:p-[40px] h-full items-center flex-col flex justify-center">
+        <div className="form  rounded-[40px] bg-[#f3f4f6]  overflow-hidden flex-col   md:flex-row  w-full flex h-auto  border-2 border-black ">
+          <div className="left bg-[#f3f4f6] w-full md:w-[40%]  md:p-[40px] p-10 h-full items-center flex-col flex justify-center">
             <div className="txt flex flex-col items-center justify-center">
               <p className="text-[30px] font-bold  mt-3">
                 聯繫Jeek-極客網頁設計
@@ -156,8 +156,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="right w-full md:w-[60%]    py-10">
-            <div className="from flex justify-center items-center  overflow-y-scroll md:h-auto h-[170vh] bg-white p-2 xl:p-[40px] border-black-rgba ">
+          <div className="right w-full md:w-[60%]">
+            <div className="from flex justify-center items-center  p-10  overflow-y-scroll md:h-auto h-[170vh] bg-white  xl:p-[40px] border-black-rgba ">
               <NewsletterForm />
             </div>
           </div>

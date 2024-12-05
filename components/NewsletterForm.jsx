@@ -126,7 +126,7 @@ export default function NewsletterForm() {
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
-          className="validate "
+          className="validate  bg-white"
           target="_blank"
         >
           <div id="mc_embed_signup_scroll ">

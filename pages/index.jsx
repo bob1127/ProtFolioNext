@@ -246,9 +246,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="mb-[20px] w-full border border-black mt-[30px]">
+        <section className="mb-[20px] w-full mt-[30px]">
           <div className="max-w-[1200px] sm:w-[90%] lg:w-[70%] mx-auto">
-            <h2 className="mt-10 text-center text-xl sm:text-xl md:text-xl my-5 lg:text-2xl">
+            <h2 className="mt-10 px-[20px] text-center text-xl sm:text-xl md:text-xl my-5 lg:text-2xl">
               我適合哪一種網站？
             </h2>
             <div
@@ -257,8 +257,8 @@ export default function Home() {
               className="w-full px-4 mx-auto mb-5"
             >
               <div className="relative overflow-x-auto">
-                <table className="min-w-[800px] w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                  <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <table className="min-w-[800px] w-full text-sm text-left rounded-md rtl:text-right text-gray-500 dark:text-gray-400">
+                  <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 rounded-md">
                     <tr className="bg-[#f3be3a]">
                       <th
                         scope="col"

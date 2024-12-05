@@ -283,12 +283,12 @@ export default function App() {
                 data-aos-duration="1000"
                 className=" w-[100vw] "
               >
-                <div className="flex w-[100vw]   left-0 absolute  top-1/3">
+                {/* <div className="flex w-[100vw]   left-0 absolute  top-1/3">
                   <div className="bg-white  w-[500px]  z-[999999999999] border border-black rounded-xl   p-10">
                     <h3>選擇極客，提供完整網站維護服務</h3>
                     <p>讓您的網站隨時保持在高效能</p>
                   </div>
-                </div>
+                </div> */}
                 <Image
                   src="/images/fantastic_hare_36410_Planets_surface_solid_color_background_zoo_c3daab53-e930-403f-a0aa-eb10908a7372.png"
                   className=" max-w-[2500px] left-[-90vw] z-[99] md:left-[-10vw]  mt-20 absolute"
@@ -519,20 +519,20 @@ export default function App() {
               您是否為其困擾？？
             </p>
           </div>
-          <div className="bottom-wrap w-[95%] mx-auto flex  pb-5 ">
-            <div className="border px-[30px] py-[50px] border-black bg-[#e79a2e] w-1/3 rounded-xl m-2">
+          <div className="bottom-wrap w-[95%]  mx-auto flex  pb-5 ">
+            <div className="border px-[30px] py-[50px] border-black group bg-[#e79a2e] w-1/3 rounded-xl m-2">
               <div className="flex  flex-col justify-center items-center">
                 <Image
                   src="/images/電商平台的高抽成01.png"
                   alt="SEO優化行銷-極客網頁設計"
                   width={500}
                   height={500}
-                  className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                  className="group-hover:scale-105 group-hover:rotate-[-10deg]  duration-500"
                   placeholder="empty"
                   loading="lazy"
                 ></Image>
               </div>
-              <div className="flex flex-col justify-center items-center p-5">
+              <div className="flex group flex-col justify-center items-center p-5">
                 <h3 className="text-white text-[30px] text-center font-black">
                   電商平台的高抽成
                 </h3>
@@ -540,16 +540,16 @@ export default function App() {
                 <p className="text-white  text-[14px] xl:text-[22px] md:text-[20px]  text-center">
                   "電商平台手續費越抽越多？選擇我們的網頁設計服務，擺脫高額手續費的束縛！
                 </p>
-              </div>
+              </div>{" "}
             </div>
-            <div className="border px-[30px] py-[50px] border-black w-1/3 bg-[#262626] rounded-xl m-2">
+            <div className="border group px-[30px] py-[50px] border-black w-1/3 bg-[#262626] rounded-xl m-2">
               <div className="flex flex-col justify-center items-center">
                 <Image
                   src="/images/對現有網站不滿意.png"
                   alt="SEO優化行銷-極客網頁設計"
                   width={500}
                   height={500}
-                  className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                  className="group-hover:scale-105 group-hover:rotate-[-10deg]  duration-500"
                   placeholder="empty"
                   loading="lazy"
                 ></Image>
@@ -571,7 +571,7 @@ export default function App() {
                   alt="SEO優化行銷-極客網頁設計"
                   width={500}
                   height={500}
-                  className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                  className="group-hover:scale-105 group-hover:rotate-[-10deg]  duration-500"
                   placeholder="empty"
                   loading="lazy"
                 ></Image>
