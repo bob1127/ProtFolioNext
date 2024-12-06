@@ -143,7 +143,7 @@ export default function Home() {
         {/* <PerspectiveSection02 /> */}
         <section className="section_QA  py-[10px] sm:py-[20px] flex lg:flex-row  my-[100px] flex-col ">
           <div className="flex w-[80%] lg:flex-row  flex-col mx-auto">
-            <div className=" w-full lg:w-1/2">
+            <div className=" pr-10 w-full lg:w-1/2">
               <Image
                 src="/images/你想要自學網頁設計嗎.webp"
                 loading="lazy"
@@ -155,94 +155,6 @@ export default function Home() {
             </div>
             <div className=" w-full lg:w-1/2">
               <Accordion />
-            </div>
-          </div>
-        </section>
-        <section className="section-discount flex flex-col md:flex-row h-[80vh] md:h-[70vh] xl:h-screen">
-          <div className="relative  h-1/2  w-full md:w-[50%] md:h-auto">
-            <div className="absolute  md:top-[10%] left-[0%] sm:left-[10%] md:left-[15%] xl::left-[-60px] z-[3]">
-              <Image
-                src="/images/astronaut.webp"
-                alt=""
-                className="w-[400px] sm:w-[400px] xl:w-[1200px]"
-                width={800}
-                height={800}
-                placeholder="empty"
-                loading="lazy"
-              ></Image>
-            </div>
-            <div className="absolute left-[0%] md:left-[10%] xl:left-0 sm:left-[10%] top-[-50px]   xl::top-[9%] z-[1]">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 500 500"
-                id="blobSvg"
-                className="w-[450px] h-[450px] xl:w-[800px] xl:h-[800px] 2xl:w-[1200px] 2xl:h-[1200px]"
-              >
-                <defs>
-                  <linearGradient
-                    id="gradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="0%"
-                    y2="100%"
-                  >
-                    <stop
-                      offset="0%"
-                      style={{ stopColor: "rgb(248, 121, 21)" }}
-                    ></stop>
-                    <stop
-                      offset="100%"
-                      style={{ stopColor: "rgb(255, 201, 69)" }}
-                    ></stop>
-                  </linearGradient>
-                </defs>
-                <path id="blob" fill="url(#gradient)">
-                  <animate
-                    attributeName="d"
-                    dur="4s"
-                    repeatCount="indefinite"
-                    values="M421.63508,307.39005Q364.7801,364.7801,307.39005,427.43403Q250,490.08796,191.6822,428.36178Q133.3644,366.6356,70.9089,308.3178Q8.4534,250,54.21728,174.99058Q99.98115,99.98115,174.99058,81.49686Q250,63.01257,330.66021,75.84607Q411.32042,88.67958,444.90524,169.33979Q478.49006,250,421.63508,307.39005Z;M395.5,320Q390,390,320,400Q250,410,172,408Q94,406,59,328Q24,250,70.5,183.5Q117,117,183.5,108Q250,99,335,89.5Q420,80,410.5,165Q401,250,395.5,320Z;M408.24461,332.63257Q415.26513,415.26513,332.63257,434.71568Q250,454.16622,179.33614,422.74697Q108.67228,391.32772,65.87585,320.66386Q23.07942,250,63.27221,176.73251Q103.46501,103.46501,176.73251,63.02288Q250,22.58075,311.86507,74.4253Q373.73015,126.26985,387.47712,188.13493Q401.22409,250,408.24461,332.63257Z;M418.08664,320.33435Q390.6687,390.6687,320.33435,427.91946Q250,465.17023,188.27506,419.31005Q126.55013,373.44987,106.38448,311.72494Q86.21883,250,84.09726,165.98785Q81.9757,81.9757,165.98785,53.98938Q250,26.00305,311.1687,76.83282Q372.3374,127.6626,408.92099,188.8313Q445.50458,250,418.08664,320.33435Z;M421.63508,307.39005Q364.7801,364.7801,307.39005,427.43403Q250,490.08796,191.6822,428.36178Q133.3644,366.6356,70.9089,308.3178Q8.4534,250,54.21728,174.99058Q99.98115,99.98115,174.99058,81.49686Q250,63.01257,330.66021,75.84607Q411.32042,88.67958,444.90524,169.33979Q478.49006,250,421.63508,307.39005Z"
-                  ></animate>
-                </path>
-              </svg>
-            </div>
-          </div>
-          <div className="w-full  static z-[999999] pl-0 md:pl-[50px] pt-[200px]  md:pt-0 md:w-[50%] flex flex-col justify-center items-center md:items-start ">
-            <div className="title">
-              <h2 className="italic text-[45px] md:text-[55px] xl:text-[80px] font-extrabold tracking-tighter ">
-                RWD
-              </h2>
-              <h2 className="italic text-[32px] sm:text-[35px] xl:text-[80px] font-extrabold text-wrap xl:text-nowrap leading-[30px] xl:leading-normal tracking-tighter ">
-                Website Design
-              </h2>
-            </div>
-            <div className="txt flex flex-col items-start">
-              <h3 className=" text-[20px] md:text-[3rem]">精選方案</h3>
-              <p className=" text-[20px] md:text-[3rem] font-bold">優惠價格</p>
-              <div className="flex  justify-center items-center">
-                <a
-                  href="/terms"
-                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                  className="button-wrapper  w-inline-block mb-5 mt-4"
-                >
-                  <div className="button-layout">
-                    <p className="button-text" style={{}}>
-                      立即了解！
-                    </p>
-                    <div className="button-bg" style={{}} />
-                  </div>
-                  <div className="button-icon-block">
-                    <img
-                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                      loading="lazy"
-                      alt=""
-                      className="button-icon"
-                      style={{}}
-                    />
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
         </section>
@@ -451,6 +363,94 @@ export default function Home() {
                 *
                 客製化網站：針對以上3種類型網站進行客製，打造屬於自己的風格，獨一無二的網站
               </b>
+            </div>
+          </div>
+        </section>
+        <section className="section-discount flex flex-col md:flex-row h-[80vh] md:h-[70vh] xl:h-screen">
+          <div className="relative  h-1/2  w-full md:w-[50%] md:h-auto">
+            <div className="absolute  md:top-[10%] left-[0%] sm:left-[10%] md:left-[15%] xl::left-[-60px] z-[3]">
+              <Image
+                src="/images/astronaut.webp"
+                alt=""
+                className="w-[400px] sm:w-[400px] xl:w-[1200px]"
+                width={800}
+                height={800}
+                placeholder="empty"
+                loading="lazy"
+              ></Image>
+            </div>
+            <div className="absolute left-[0%] md:left-[10%] xl:left-0 sm:left-[10%] top-[-50px]   xl::top-[9%] z-[1]">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 500 500"
+                id="blobSvg"
+                className="w-[450px] h-[450px] xl:w-[800px] xl:h-[800px] 2xl:w-[1200px] 2xl:h-[1200px]"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style={{ stopColor: "rgb(248, 121, 21)" }}
+                    ></stop>
+                    <stop
+                      offset="100%"
+                      style={{ stopColor: "rgb(255, 201, 69)" }}
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path id="blob" fill="url(#gradient)">
+                  <animate
+                    attributeName="d"
+                    dur="4s"
+                    repeatCount="indefinite"
+                    values="M421.63508,307.39005Q364.7801,364.7801,307.39005,427.43403Q250,490.08796,191.6822,428.36178Q133.3644,366.6356,70.9089,308.3178Q8.4534,250,54.21728,174.99058Q99.98115,99.98115,174.99058,81.49686Q250,63.01257,330.66021,75.84607Q411.32042,88.67958,444.90524,169.33979Q478.49006,250,421.63508,307.39005Z;M395.5,320Q390,390,320,400Q250,410,172,408Q94,406,59,328Q24,250,70.5,183.5Q117,117,183.5,108Q250,99,335,89.5Q420,80,410.5,165Q401,250,395.5,320Z;M408.24461,332.63257Q415.26513,415.26513,332.63257,434.71568Q250,454.16622,179.33614,422.74697Q108.67228,391.32772,65.87585,320.66386Q23.07942,250,63.27221,176.73251Q103.46501,103.46501,176.73251,63.02288Q250,22.58075,311.86507,74.4253Q373.73015,126.26985,387.47712,188.13493Q401.22409,250,408.24461,332.63257Z;M418.08664,320.33435Q390.6687,390.6687,320.33435,427.91946Q250,465.17023,188.27506,419.31005Q126.55013,373.44987,106.38448,311.72494Q86.21883,250,84.09726,165.98785Q81.9757,81.9757,165.98785,53.98938Q250,26.00305,311.1687,76.83282Q372.3374,127.6626,408.92099,188.8313Q445.50458,250,418.08664,320.33435Z;M421.63508,307.39005Q364.7801,364.7801,307.39005,427.43403Q250,490.08796,191.6822,428.36178Q133.3644,366.6356,70.9089,308.3178Q8.4534,250,54.21728,174.99058Q99.98115,99.98115,174.99058,81.49686Q250,63.01257,330.66021,75.84607Q411.32042,88.67958,444.90524,169.33979Q478.49006,250,421.63508,307.39005Z"
+                  ></animate>
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div className="w-full  static z-[999999] pl-0 md:pl-[50px] pt-[200px]  md:pt-0 md:w-[50%] flex flex-col justify-center items-center md:items-start ">
+            <div className="title">
+              <h2 className="italic text-[45px] md:text-[55px] xl:text-[80px] font-extrabold tracking-tighter ">
+                RWD
+              </h2>
+              <h2 className="italic text-[32px] sm:text-[35px] xl:text-[80px] font-extrabold text-wrap xl:text-nowrap leading-[30px] xl:leading-normal tracking-tighter ">
+                Website Design
+              </h2>
+            </div>
+            <div className="txt flex flex-col items-start">
+              <h3 className=" text-[20px] md:text-[3rem]">精選方案</h3>
+              <p className=" text-[20px] md:text-[3rem] font-bold">優惠價格</p>
+              <div className="flex  justify-center items-center">
+                <a
+                  href="/terms"
+                  data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
+                  className="button-wrapper  w-inline-block mb-5 mt-4"
+                >
+                  <div className="button-layout">
+                    <p className="button-text" style={{}}>
+                      立即了解！
+                    </p>
+                    <div className="button-bg" style={{}} />
+                  </div>
+                  <div className="button-icon-block">
+                    <img
+                      src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
+                      loading="lazy"
+                      alt=""
+                      className="button-icon"
+                      style={{}}
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </section>

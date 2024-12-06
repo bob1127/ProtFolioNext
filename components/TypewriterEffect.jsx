@@ -46,7 +46,16 @@ const TypewriterEffect = () => {
 
   return (
     <div className="w-full">
-      <VelocityText />
+      <div className="hidden lg:block">
+        <VelocityText />
+      </div>
+
+      <div className="block px-[20px] lg:hidden">
+        <h2 className="text-[34px] leading-normal w-full font-black text-[#333]">
+          {" "}
+          "探索無限可能，極致客戶體驗 - 使您的業績扶搖直上"
+        </h2>
+      </div>
     </div>
   );
 };

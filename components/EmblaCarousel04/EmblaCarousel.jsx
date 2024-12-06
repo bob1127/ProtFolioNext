@@ -134,9 +134,9 @@ const EmblaCarousel = (props) => {
 
                     userSelect: "none",
                   }}
-                  className="embla__slide__number bg-white  shadow-2xl border border-black  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto lg:h-[350px] 2xl:h-[500px]   flex flex-col  items-center justify-center font-semibold"
+                  className="embla__slide__number bg-[#f2f2f5]  shadow-2xl border border-black  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto lg:h-[350px] 2xl:h-[500px]   flex flex-col  items-center justify-center font-semibold"
                 >
-                  <div className="flex  rounded-xl   bg-white flex-col h-auto lg:flex-row lg:h-[300px] p-1 md:p-3 justify-center items-center">
+                  <div className="flex  rounded-xl    flex-col h-auto lg:flex-row lg:h-[300px] p-1 md:p-3 justify-center items-center">
                     <Image
                       src={slide.image} // Use the image from the slide object
                       alt={slide.title} // Use title as alt text
@@ -146,7 +146,7 @@ const EmblaCarousel = (props) => {
                       placeholder="empty"
                       loading="lazy"
                     />
-                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl p-2 md:p-[45px]   items-center w-full  md:w-[80%] mx-auto bg-white ">
+                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl p-2 md:p-[45px]   items-center w-full  md:w-[80%] mx-auto  ">
                       <b className="  text-[14px] md:text-[26px] text-center">
                         {slide.title} {/* Display the title */}
                       </b>
