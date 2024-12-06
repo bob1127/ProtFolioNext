@@ -31,10 +31,22 @@ const PrivacyPopup = () => {
       <div className="container text-center mx-auto flex flex-col text-black justify-between items-center">
         <b className="text-[20px]">隱私權政策</b>
         <span>
-          本網站使用cookies和相關技術用於網站運營、分析和第三方廣告目的。你可以選擇同意我們使用這些技術。{" "}
+          我們尊重您的隱私，並致力於保護您的個人資料。我們使用 Mailchimp
+          收集和處理您的資料，以便提供您相關的服務和市場行銷資訊。
           <br></br>
-          您可以選擇同意我們使用這些技術，拒絕非必要的技術，或進一步管理您的偏好。
-          .
+          <p>
+            {" "}
+            <b>資料使用：</b>{" "}
+            您的資訊僅用於聯繫您、發送電子郵件及改進我們的服務。
+          </p>
+          <p>
+            {" "}
+            <b> 第三方處理：</b>
+            我們使用 Mailchimp，這是一個符合隱私保護標準的電子郵件行銷平台。
+          </p>
+          <p>
+            請點擊"接受"來同意我們的隱私政策，或點擊「更多資訊」來查看詳細的隱私政策。
+          </p>
         </span>
         <div className="mt-6">
           <button

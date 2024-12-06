@@ -145,7 +145,7 @@ export default function Home() {
           <div className="flex w-[80%] lg:flex-row  flex-col mx-auto">
             <div className=" w-full lg:w-1/2">
               <Image
-                src="/images/你想要自學網頁設計嗎.png"
+                src="/images/你想要自學網頁設計嗎.webp"
                 loading="lazy"
                 width={800}
                 height={800}
@@ -162,7 +162,7 @@ export default function Home() {
           <div className="relative  h-1/2  w-full md:w-[50%] md:h-auto">
             <div className="absolute  md:top-[10%] left-[0%] sm:left-[10%] md:left-[15%] xl::left-[-60px] z-[3]">
               <Image
-                src="/images/astronaut.png"
+                src="/images/astronaut.webp"
                 alt=""
                 className="w-[400px] sm:w-[400px] xl:w-[1200px]"
                 width={800}
@@ -617,7 +617,7 @@ export default function Home() {
                 alt="portfolio-image-display"
               ></Image>
               <Image
-                src="/images/3dmodel01.png"
+                src="/images/3dmodel01.webp"
                 placeholder="empty"
                 width={350}
                 height={400}
@@ -626,7 +626,7 @@ export default function Home() {
                 alt="portfolio-image-display"
               ></Image>
               <Image
-                src="/images/A25M0121-DT03-V1_DTC_3078x.jpg.png"
+                src="/images/A25M0121-DT03-V1_DTC_3078x.jpg.webp"
                 placeholder="empty"
                 width={350}
                 height={400}
@@ -635,7 +635,7 @@ export default function Home() {
                 alt="portfolio-image-display"
               ></Image>
               <Image
-                src="/images/Untitled-Camera-2.png"
+                src="/images/Untitled-Camera-2.webp"
                 placeholder="empty"
                 width={350}
                 height={400}

@@ -106,7 +106,7 @@ const Section2 = ({ scrollYProgress }) => {
             className=" mt-[500px] h-full md:h-auto  hover:border-white rounded-xl w-full  md:w-1/3 m-1  duration-100 group  p-6 bg-[#1a84ef]"
           >
             <Image
-              src="/images/SEO優化行銷-極客網頁設計.png"
+              src="/images/SEO優化行銷-極客網頁設計.webp"
               alt="SEO優化行銷-極客網頁設計"
               width={500}
               height={500}
@@ -130,7 +130,7 @@ const Section2 = ({ scrollYProgress }) => {
             className="border mt-[10px] md:mt-[500px] h-full md:h-auto  duration-100 hover:border-white border-black  rounded-xl w-full group md:w-1/3 m-1 p-6 bg-[#262626]"
           >
             <Image
-              src="/images/網頁設計_我們的服務內容-極客網頁設計.png"
+              src="/images/網頁設計_我們的服務內容-極客網頁設計.webp"
               alt="SEO優化行銷-極客網頁設計"
               width={500}
               height={500}
@@ -155,7 +155,7 @@ const Section2 = ({ scrollYProgress }) => {
             className=" mt-[10px] md:mt-[500px] h-full md:h-auto   duration-100 hover:border-white rounded-xl w-full  md:w-1/3 group m-1 p-6 bg-[#e79a2e]"
           >
             <Image
-              src="/images/商業產品攝影-極客網頁設計.png"
+              src="/images/商業產品攝影-極客網頁設計.webp"
               alt="SEO優化行銷-極客網頁設計"
               width={500}
               height={500}

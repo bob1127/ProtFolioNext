@@ -22,7 +22,19 @@ export default function Blog() {
     },
   };
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
+  // 在 client-side 判斷是否為手機設備
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // 根據需要調整這個值
+    };
+
+    handleResize(); // 頁面加載時立即判斷
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // useEffect(() => {
   //   // 延遲 300ms 來啟動動畫
   //   const timer = setTimeout(() => {
@@ -181,7 +193,7 @@ export default function Blog() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/blog/photoshop2024-01.jpeg"
+              src="/images/blog/photoshop2024-01.webp"
               width={900}
               height={500}
               placeholder="empty"
@@ -240,11 +252,28 @@ export default function Blog() {
                   開啟 Photoshop
                   2024，選擇你希望填充的區域，無論是破損的照片角落，還是需要擴展的背景。
                 </div>
-                <Image
-                  src="/images/blog/photoshop-demo01.jpg"
+                <div>
+                  {isMobile ? (
+                    <Image
+                      src="/images/blog/photoshop-demo01.webp"
+                      alt="Mobile Image"
+                      width={800}
+                      height={600}
+                    />
+                  ) : (
+                    <Image
+                      src="/images/blog/photoshop-demo01.jpg"
+                      alt="Desktop Image"
+                      width={800}
+                      height={600}
+                    />
+                  )}
+                </div>
+                {/* <Image
+                  src="/images/blog/photoshop-demo01.webp"
                   width={800}
                   height={600}
-                ></Image>{" "}
+                ></Image>{" "} */}
                 <br></br>
                 <b className="text-[14px] font-bold mt-3">
                   這裡就拿一張暗色系教堂來當範例
@@ -266,7 +295,7 @@ export default function Blog() {
                   開始ai判斷背景圖片，並填充空白部分
                 </div>
                 <Image
-                  src="/images/blog/photoshop-demo03.jpg"
+                  src="/images/blog/photoshop-demo03.webp"
                   width={800}
                   height={600}
                 ></Image>
@@ -275,7 +304,7 @@ export default function Blog() {
                   填充完成，是不是很神奇！
                 </div>
                 <Image
-                  src="/images/blog/photoshop-demo04.jpg"
+                  src="/images/blog/photoshop-demo04.webp"
                   width={800}
                   height={600}
                 ></Image>
@@ -296,7 +325,7 @@ export default function Blog() {
                   漸進式填充還可以幫助創意工作者擴展圖像邊界、延伸視覺範圍，為設計增添無限可能。
                 </div>
                 <Image
-                  src="/images/blog/photoshop-demo02.jpg"
+                  src="/images/blog/photoshop-demo02.webp"
                   width={800}
                   height={600}
                 ></Image>
@@ -305,7 +334,7 @@ export default function Blog() {
                   這裡我們是要使用生成填充出創造的東西。所以我們必須要下關鍵字。
                 </div>
                 <Image
-                  src="/images/blog/photoshop-demo06.jpg"
+                  src="/images/blog/photoshop-demo06.webp"
                   width={800}
                   height={600}
                 ></Image>
@@ -315,7 +344,7 @@ export default function Blog() {
                   這裡我們是要使用生成填充出創造的東西。所以我們必須要下關鍵字。
                 </div>
                 <Image
-                  src="/images/blog/photoshop-demo06.jpg"
+                  src="/images/blog/photoshop-demo06.webp"
                   width={800}
                   height={600}
                 ></Image>
@@ -323,7 +352,7 @@ export default function Blog() {
                   等待生成完成
                 </div>
                 <Image
-                  src="/images/blog/photoshop-demo07.jpg"
+                  src="/images/blog/photoshop-demo07.webp"
                   width={800}
                   height={600}
                 ></Image>

@@ -523,7 +523,7 @@ export default function App() {
             <div className="border px-[30px] py-[50px] border-black group bg-[#e79a2e] w-1/3 rounded-xl m-2">
               <div className="flex  flex-col justify-center items-center">
                 <Image
-                  src="/images/電商平台的高抽成01.png"
+                  src="/images/電商平台的高抽成01.webp"
                   alt="SEO優化行銷-極客網頁設計"
                   width={500}
                   height={500}
@@ -545,7 +545,7 @@ export default function App() {
             <div className="border group px-[30px] py-[50px] border-black w-1/3 bg-[#262626] rounded-xl m-2">
               <div className="flex flex-col justify-center items-center">
                 <Image
-                  src="/images/對現有網站不滿意.png"
+                  src="/images/對現有網站不滿意.webp"
                   alt="SEO優化行銷-極客網頁設計"
                   width={500}
                   height={500}
@@ -567,7 +567,7 @@ export default function App() {
             <div className="border px-[30px] py-[50px] border-black bg-[#5082b8] w-1/3 rounded-xl m-2">
               <div className="flex flex-col justify-center items-center">
                 <Image
-                  src="/images/收集客戶資料再行銷.png"
+                  src="/images/收集客戶資料再行銷.webp"
                   alt="SEO優化行銷-極客網頁設計"
                   width={500}
                   height={500}
