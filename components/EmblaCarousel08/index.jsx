@@ -32,15 +32,15 @@ const App = () => {
 
   return (
     <>
-      <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
-        <h2 className="text-black text-[30px] md:text-[50px] text-center xl:text-[70px] font-bold">
+      <div className="txt  px-[25px] flex items-center flex-col justify-center py-4"></div>
+      {/* <h2 className="text-black text-[30px] md:text-[50px] text-center xl:text-[70px] font-bold">
           讓您的品牌擁有獨立網站！
         </h2>
         <p className="text-[16px] font-normal text-center w-full mt-4 md:w-1/2 mx-auto md:text-[22px] text-black">
           您是否為其困擾？？
         </p>
       </div>
-      <EmblaCarousel slides={slides} options={OPTIONS} />
+      <EmblaCarousel slides={slides} options={OPTIONS} /> */}
     </>
   );
 };

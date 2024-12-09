@@ -11,7 +11,7 @@ import Accordion from "../components/Accordion/page.jsx";
 import TextPsrrallac from "../components/TextParallaxContent";
 import Head from "next/head";
 import NewsletterForm from "../components/NewsletterForm";
-
+import EmblaCarouselIndex from "../components/EmblaCarouselIndex/index.jsx";
 // import { Roboto } from "@next/font/google";
 
 const imageLoader = ({ src, width, quality }) => {
@@ -72,7 +72,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#ffffff]">
+    <div className="bg-[#001e5a]">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         {/* 
@@ -138,7 +138,7 @@ export default function Home() {
 
         <TextPsrrallac />
         <section className="section_HeroImg ">
-          <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-white"></div>
+          <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-[#001e5a]"></div>
         </section>
         {/* <PerspectiveSection02 /> */}
         <section className="section_QA  py-[10px] sm:py-[20px] flex lg:flex-row  my-[100px] flex-col ">
@@ -160,7 +160,7 @@ export default function Home() {
         </section>
         <section className="mb-[20px] w-full mt-[30px]">
           <div className="max-w-[1200px] sm:w-[90%] lg:w-[70%] mx-auto">
-            <h2 className="mt-10 px-[20px] text-center text-xl sm:text-xl md:text-xl my-5 lg:text-2xl">
+            <h2 className="mt-10 text-white px-[20px] text-center text-xl sm:text-xl md:text-xl my-5 lg:text-2xl">
               我適合哪一種網站？
             </h2>
             <div
@@ -169,12 +169,12 @@ export default function Home() {
               className="w-full px-4 mx-auto mb-5"
             >
               <div className="relative overflow-x-auto">
-                <table className="min-w-[800px] w-full text-sm text-left rounded-md rtl:text-right text-gray-500 dark:text-gray-400">
+                <table className="min-w-[800px] w-full text-sm text-left rounded-[20px] rtl:text-right  p-[30px] overflow-hidden text-gray-500 dark:text-gray-400">
                   <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 rounded-md">
                     <tr className="bg-[#f3be3a]">
                       <th
                         scope="col"
-                        className="px-2 text-[16px] text-black py-3 sm:px-6"
+                        className="px-[20px] text-[16px] text-black py-3 sm:px-6"
                       >
                         類型
                       </th>
@@ -202,7 +202,7 @@ export default function Home() {
                     <tr className="bg-gray-100 border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         特性
                       </th>
@@ -219,7 +219,7 @@ export default function Home() {
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         主要用途
                       </th>
@@ -236,7 +236,7 @@ export default function Home() {
                     <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         目標受眾
                       </th>
@@ -253,7 +253,7 @@ export default function Home() {
                     <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         內容深度
                       </th>
@@ -270,7 +270,7 @@ export default function Home() {
                     <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         互動性
                       </th>
@@ -287,7 +287,7 @@ export default function Home() {
                     <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         設計難度
                       </th>
@@ -304,7 +304,7 @@ export default function Home() {
                     <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         SEO表現
                       </th>
@@ -322,7 +322,7 @@ export default function Home() {
                     <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         優點{" "}
                       </th>
@@ -340,7 +340,7 @@ export default function Home() {
                     <tr className="bg-gray-100 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
                       <th
                         scope="row"
-                        className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                        className="px-[20px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
                       >
                         缺點{" "}
                       </th>
@@ -359,7 +359,7 @@ export default function Home() {
               </div>
             </div>
             <div className="px-[40px] md:px-[40px]">
-              <b className="text-[20px] ">
+              <b className="md:text-[20px] mb-[90px] sm:mb-0 text-[16px] text-gray-100">
                 *
                 客製化網站：針對以上3種類型網站進行客製，打造屬於自己的風格，獨一無二的網站
               </b>
@@ -418,16 +418,20 @@ export default function Home() {
           </div>
           <div className="w-full  static z-[999999] pl-0 md:pl-[50px] pt-[200px]  md:pt-0 md:w-[50%] flex flex-col justify-center items-center md:items-start ">
             <div className="title">
-              <h2 className="italic text-[45px] md:text-[55px] xl:text-[80px] font-extrabold tracking-tighter ">
+              <h2 className="italic text-[45px] md:text-[55px] xl:text-[80px] font-extrabold text-[#fdb715] tracking-tighter ">
                 RWD
               </h2>
-              <h2 className="italic text-[32px] sm:text-[35px] xl:text-[80px] font-extrabold text-wrap xl:text-nowrap leading-[30px] xl:leading-normal tracking-tighter ">
+              <h2 className="italic text-[32px] sm:text-[35px] xl:text-[80px] font-extrabold text-wrap xl:text-nowrap leading-[30px] xl:leading-normal text-white tracking-tighter ">
                 Website Design
               </h2>
             </div>
             <div className="txt flex flex-col items-start">
-              <h3 className=" text-[20px] md:text-[3rem]">精選方案</h3>
-              <p className=" text-[20px] md:text-[3rem] font-bold">優惠價格</p>
+              <h3 className=" text-[20px] md:text-[3rem] text-white">
+                精選方案
+              </h3>
+              <p className=" text-[20px] text-white md:text-[3rem] font-bold">
+                優惠價格
+              </p>
               <div className="flex  justify-center items-center">
                 <a
                   href="/terms"
@@ -568,7 +572,7 @@ export default function Home() {
           <h2
             data-aos="fade-up"
             data-aos-delay="400"
-            className=" md:w-2/3 leading-normal sm:w-full lg:w-1/2  text-[32px] w-[90%]  md:text-[45px] xl:text-[50px]  mx-auto"
+            className=" text-[#ffffff] md:w-2/3 leading-normal sm:w-full lg:w-1/2  text-[32px] w-[90%]  md:text-[45px] xl:text-[50px]  mx-auto"
             style={{
               marginBottom: 30,
               display: "flex",
@@ -576,7 +580,7 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            現在購買任一專案即贈送免費商業攝影10張(含後製)!!!
+            現在購買任一專案即贈送 免費商業攝影10張(含後製)!!!
           </h2>
           <Marquee>
             <div>
@@ -669,7 +673,7 @@ export default function Home() {
         </div>
         <div className="p-4 md:p-10  ">
           <div className="flex flex-col ">
-            <h2 className="leading-normal text-[50px] sm:text-[70px] xl:text-[120px] mb-0 md:mb-[-35px]">
+            <h2 className="leading-normal text-[#fdb715] text-[50px] sm:text-[70px] xl:text-[120px] mb-0 md:mb-[-35px]">
               CONTACT US。{" "}
             </h2>
             <div className="form rounded-[40px] bg-gray-100  overflow-hidden flex-col  md:flex-row  flex h-full border-2 border-black">

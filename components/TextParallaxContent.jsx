@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import GsapText from "../components/RevealText/index";
 import { gsap } from "gsap";
-
+import EmblaCarouselIndex from "../components/EmblaCarouselIndex/index";
 import PerspectiveSection02 from "../components/PerspectiveSection02/page";
 import EmblaCarousel08 from "../components/EmblaCarousel08/index.jsx";
 import { useCallback } from "react";
@@ -12,6 +12,59 @@ import TypewriterEffect from "../components/TypewriterEffect";
 import EmblaCarousel from "../components/EmblaCarousel/index";
 import PerspectiveSection from "../components/PerspectiveSection/page";
 export default function App() {
+  useEffect(() => {
+    // 啟動 GSAP 旋轉動畫
+    gsap.to(".earth", {
+      rotation: 360,
+      duration: 60, // 每次完成旋轉的時間
+      repeat: -1, // 無限重複
+      ease: "none", // 無緩動效果，使得旋轉速度保持一致
+      transformOrigin: "center center", // 設定旋轉中心
+    });
+  }, []);
+
+  useEffect(() => {
+    const element = document.querySelector(".spring-pop");
+
+    // 使用 Intersection Observer 來監視圖片是否進入視窗
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          // 當圖片進入視窗時觸發動畫
+          if (entry.isIntersecting) {
+            gsap.fromTo(
+              element, // 目標元素
+              { scale: 0, opacity: 0 },
+              {
+                scale: 1,
+                opacity: 1,
+                duration: 1.8,
+
+                ease: "elastic.out(1, 0.7)", // 彈簧效果
+              }
+            );
+            // 停止監視該元素（可以避免不必要的重複觸發）
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // 當元素 50% 進入視窗時觸發動畫
+      }
+    );
+
+    // 開始監視元素
+    if (element) {
+      observer.observe(element);
+    }
+
+    // 清理監視器
+    return () => {
+      if (element) {
+        observer.unobserve(element);
+      }
+    };
+  }, []);
   useEffect(() => {
     const tl = gsap.timeline();
     tl.from(".line span", 1.8, {
@@ -55,538 +108,192 @@ export default function App() {
 
   return (
     <div className=" ">
-      <div className="h-[100vh] md:h-[80vh] lg:h-[700px] xl-[100vh] bg-[#c8c8c8] w-full relative overflow-hidden">
-        <div
-          className="absolute top-0 opacity-10 left-0  w-[100vw] h-[100vh]  z-[9999999] bg-center bg-repeat  "
-          style={{ backgroundImage: "url('/images/Hero-backgorund-03.png')" }}
-        ></div>
-        <div className="absolute left-0  md:left-[22%] top-[20%] w-full md:w-[80%] lg:w-[60%] z-[999999999]">
-          <div className="font-anton relative  line flex justify-center items-center mt-[-80px] h-[180px] overflow-hidden ">
-            <h1 className="font-black text-[40px] md:text-[80px] xl:text-[100px] 2xl:text-[125px] absolute  line">
-              {["極", "客", "網", "頁", "設", "計"].map((char, index) => (
-                <span key={index} className="inline-block overflow-hidden">
-                  {char}
-                </span>
-              ))}
-            </h1>
-          </div>
-          <div className="font-anton relative  line flex justify-center items-center mt-[-80px] sm:mt-[-50px]  h-[80px] md:h-[180px] overflow-hidden ">
-            <h1 className="font-black text-[40px] md:text-[80px] xl:text-[100px] 2xl:text-[125px] absolute  line">
-              {["J", "E", "E", "K", " -", "D", "E", "S", "I", "G", "N"].map(
-                (char, index) => (
-                  <span key={index} className="inline-block overflow-hidden">
-                    {char}
-                  </span>
-                )
-              )}
-            </h1>
-          </div>
-
-          <div className="feature relative z-[9999999999999] mb-[40px] py-2 hidden sm:grid  w-[70%] mx-auto    rounded-[40px] px-[40px]  overflow-scroll  grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
-            <div
-              href="/Photography"
-              className="bg-white text-center border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3  rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
-            >
-              產品攝影
-            </div>
-            <a
-              href="/WebOptimization"
-              className="bg-white text-center  inline-block border border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]     text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
-            >
-              seo 優化
-            </a>
-            <a
-              href="/project"
-              className="bg-white text-center border  border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
-            >
-              網頁設計
-            </a>
-            <a
-              href="/3dProduct"
-              className="bg-white text-center border  border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
-            >
-              3d建模
-            </a>
-          </div>
-        </div>
-
-        <div className="absolute  top-[36%] md:top-[15%] right-0 md:right-[10%] z-[99999999]">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }} // 初始狀態
-            animate={{ opacity: 1, scale: 1 }} // 最終狀態
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              delay: 0.4, // 延遲 400 毫秒
-              duration: 1, // 持續時間 1000 毫秒
-            }}
-            // 根據狀態決定是否啟用呼吸動畫
-            whileInView={
-              isAnimated
-                ? {
-                    scale: [1, 1.05, 1],
-                    transition: {
-                      duration: 2,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                      repeatType: "loop",
-                    },
-                  }
-                : {}
-            }
-          >
-            <Image
-              src="/images/Hero-img-01.webp"
-              alt="hero-blur-img_green"
-              placeholder="empty"
-              loading="eager"
-              width={200}
-              height={200}
-            ></Image>
-          </motion.div>
-        </div>
-        <div className="absolute top-[26%] md:top-[0%] left-[0%] z-[99999999]">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }} // 初始狀態
-            animate={{ opacity: 1, scale: 1 }} // 最終狀態
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              delay: 1, // 延遲 400 毫秒
-              duration: 1, // 持續時間 1000 毫秒
-            }}
-            // 根據狀態決定是否啟用呼吸動畫
-            whileInView={
-              isAnimated
-                ? {
-                    scale: [1, 1.05, 1],
-                    transition: {
-                      duration: 2,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                      repeatType: "loop",
-                    },
-                  }
-                : {}
-            }
-          >
-            <Image
-              src="/images/Hero-img-02.webp"
-              alt="hero-blur-img_blue"
-              placeholder="empty"
-              loading="eager"
-              width={200}
-              height={200}
-            />
-          </motion.div>
-        </div>
-        <div className="absolute bottom-[30%] sm:bottom-[11%] lg:bottom-[10%]  left-[20%] lg:left-[30%] z-[99999999]">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }} // 初始狀態
-            animate={{ opacity: 1, scale: 1 }} // 最終狀態
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              delay: 0.8, // 延遲 400 毫秒
-              duration: 1, // 持續時間 1000 毫秒
-            }}
-            // 根據狀態決定是否啟用呼吸動畫
-            whileInView={
-              isAnimated
-                ? {
-                    scale: [1, 1.25, 1],
-                    transition: {
-                      duration: 3.6,
-                      ease: "easeInOut",
-                      repeat: Infinity,
-                      repeatType: "loop",
-                    },
-                  }
-                : {}
-            }
-          >
-            <Image
-              src="/images/Hero-img-03.webp"
-              alt="hero-blur-img_yellow"
-              placeholder="empty"
-              loading="eager"
-              width={200}
-              height={200}
-            ></Image>
-          </motion.div>
-        </div>
-        <div className="absolute  bottom-0 sm:bottom-[-30%] md:bottom-[-22%] lg:bottom-[-10%] right-[-23%] md:right-[-15%] lg:right-[-5%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
-          <Image
-            src="/images/Hero-img-11.webp"
-            alt="hero-blur-img_desktop"
-            placeholder="empty"
-            loading="eager"
-            layout="responsive"
-            width={500}
-            height={500}
-            className="object-contain" // 根據需求選擇 object-contain 或 object-cover
-            data-aos="zoom-in"
-            data-aos-delay="800"
-            data-aos-duration="1200"
-          />
-        </div>
-        <div className="absolute bottom-[0px] sm:bottom-[-20%] lg:bottom-0 left-[-22%] md:left-[-27%] lg:left-[-10%] 2xl:left-[-10%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
-          <Image
-            src="/images/Hero-img-09-human.png"
-            alt="hero-blur-img_desktop"
-            placeholder="empty"
-            loading="eager"
-            layout="responsive"
-            width={500}
-            height={500}
-            className="object-contain" // 根據需求選擇 object-contain 或 object-cover
-            data-aos="zoom-in"
-            data-aos-delay="800"
-            data-aos-duration="1200"
-          />
-        </div>
-        <div className="absolute top-0 left-0 z-[99999999]">
-          <Image
-            src="/images/Hero-img.webp"
-            alt="hero-blur-img"
-            loading="eager"
-            priority={true}
-            width={2300}
-            height={1080}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-        <div
-          className="arrow flex justify-start pt-[35px] items-center left-[50%] sm:bottom-[80px] absolute z-[999999999] bg-white rounded-full   sm:bg-transparent flex-col sm:justify-center w-[50%] bottom-[-18%] h-[30%] sm:items-center transform -translate-x-1/2"
-          onClick={handleScroll}
-        >
-          <div>Scroll Down</div>
-          <div>↓</div>
-        </div>
-      </div>
-
       <div>
-        <section className="bg-[#ffd446] z-[9999999] overflow-hidden hidden xl:block  md:h-[130vh] xl:portrait:h-[100vh] lg:h-[160vh] xl:h-[240vh] 2xl:h-[170vh] relative">
-          <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
+        <section className="bg-cover bg-center bg-no-repeat  bg-[url('/images/space01.jpg')] z-[9999999]    md:h-[130vh] xl:portrait:h-[100vh] lg:h-[160vh] h-[100vh] xl:h-[240vh] 2xl:h-[170vh] relative">
+          {/* <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
             <TypewriterEffect />
-          </div>
+          </div> */}
           <div className=" absolute w-[100vw] top-[-70px] z-[9999999999]">
-            {" "}
             <PerspectiveSection />
           </div>
           <div className="relative w-[100vw] ">
-            {/* 确保父元素为相对定位 */}
-
-            <div className="w-full  h-screen flex justify-center">
-              <div
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                className=" w-[100vw] "
-              >
-                {/* <div className="flex w-[100vw]   left-0 absolute  top-1/3">
-                  <div className="bg-white  w-[500px]  z-[999999999999] border border-black rounded-xl   p-10">
-                    <h3>選擇極客，提供完整網站維護服務</h3>
-                    <p>讓您的網站隨時保持在高效能</p>
+            <div className="w-full relative  h-screen flex justify-center">
+              <div className=" w-[100vw] relative">
+                <div className="relative">
+                  <Image
+                    src="/images/titlePopup.png"
+                    className="spring-pop z-[99] left-1/2 -translate-x-1/2 mt-[20px] absolute"
+                    alt="Spring Animation"
+                    width={600}
+                    height={600}
+                    loading="lazy"
+                  />
+                  <div className="absolute z-[9999999999] mt-[35vh] lg:mt-[50vh]">
+                    <EmblaCarouselIndex />
                   </div>
-                </div> */}
-                <Image
-                  src="/images/fantastic_hare_36410_Planets_surface_solid_color_background_zoo_c3daab53-e930-403f-a0aa-eb10908a7372.png"
-                  className=" max-w-[2500px] left-[-90vw] z-[99] md:left-[-10vw]  mt-20 absolute"
-                  alt=" "
-                  width={3000}
-                  height={1000}
-                  placeholder="empty"
-                  loading="lazy"
-                ></Image>
-                <div className="flex justify-between flex-wrap">
-                  {/* <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-[95%] mx-auto sm:w-[450px] 2xl:w-[33vw] justify-center items-center flex-col ">
-                    <div className="slogan-title w-full flex justify-between">
-                      <div>
-                        {" "}
-                        <Image
-                          src="/images/icon/edit.png"
-                          alt="close-icon"
-                          width={35}
-                          className="mr-3"
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                        <b> Magic Write</b>
-                      </div>
-                      <div className="close mt-[-15px]">
-                        <Image
-                          src="/images/icon/pin.png"
-                          alt="close-icon"
-                          width={35}
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                      </div>
-                    </div>
-                    <div className="slogan-content border-b-2 border-gray-400 flex py-[30px] flex-wrap">
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        您還在比價嗎？
-                      </h3>
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        選擇極客!!
-                      </h3>
-                      <div className="block md:hidden">
-                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                          用工作室的價格
-                        </h3>
-                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                          建立專業級的網站
-                        </h3>
-                      </div>
-                    </div>
-                    <div className="slogan-footer flex justify-end py-[20px]">
-                      Design By Jeek
-                    </div>
-                  </div>{" "} */}
-                  {/* <div className="txt p-8 bg-white rounded-xl  hidden md:flex  pt-[40px]  w-full sm:w-[450px] 2xl:w-[32vw] rotate-3 justify-center items-center flex-col ">
-                    <div className="slogan-title w-full flex justify-between">
-                      <div>
-                        {" "}
-                        <Image
-                          src="/images/icon/edit.png"
-                          alt="close-icon"
-                          width={35}
-                          className="mr-3"
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                        <b> Magic Write</b>
-                      </div>
-                      <div className="close mt-[-15px]">
-                        <Image
-                          src="/images/icon/pin.png"
-                          alt="close-icon"
-                          width={35}
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                      </div>
-                    </div>
-                    <div className="slogan-content border-b-2 border-gray-400  py-[30px] hidden md:block flex-wrap">
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        用工作室的價格
-                      </h3>
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        建立專業級的網站
-                      </h3>
-                    </div>
-                    <div className="slogan-footer flex justify-end py-[20px]">
-                      Design By Jeek
-                    </div>
-                  </div>{" "} */}
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="bg-[#ffd446]   h-[120vh] z-[9999999] overflow-hidden bock xl:hidden  relative">
-          <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
-            <TypewriterEffect />
-          </div>
-          <div className=" absolute w-[100vw] top-[-70px] z-[9999999999]">
-            {" "}
-            <PerspectiveSection />
-          </div>
-          <div className="relative w-[100vw] ">
-            {/* 确保父元素为相对定位 */}
 
-            <div className="w-full  h-screen flex justify-center">
-              <div data-aos="zoom-in" data-aos-duration="1000" className=" ">
                 <Image
-                  src="/images/fantastic_hare_36410_Planets_surface_solid_color_background_zoo_c3daab53-e930-403f-a0aa-eb10908a7372.png"
-                  className=" max-w-[2500px] left-[-90vw] md:left-[-80vw] z-[-1] mt-20 absolute"
-                  alt=" "
-                  width={3000}
+                  src="/images/spaceMan.png"
+                  className=" w-[150px] sm:w-[250px] z-[99999] top-[20%] right-[0%] -translate-x-1/2  mt-[20px] absolute"
+                  width={250}
+                  height={250}
+                  loading="lazy"
+                />
+                <Image
+                  src="/images/fantastic_hare_36410_Planet_Surface_Solid_Color_Background_23f9a17b-e22b-4d2d-91cd-bd02d5f6a80d.png"
+                  className="opacity-60 w-[120px] sm:w-[250px] z-[99999] top-[20%] left-[0%] -translate-x-1/2 mt-[20px] absolute"
+                  width={250}
+                  height={250}
+                  loading="lazy"
+                />
+                <Image
+                  src="/images/fantastic_hare_36410_Planet_Solid_Color_Background_6576d313-40aa-4ead-8f00-7e9ec156890e.png"
+                  className="w-[80px]  opacity-90 sm:w-[200px] z-[99999] top-[-2%] right-[-10%] -translate-x-1/2 mt-[20px] absolute"
+                  alt="Spring Animation"
+                  width={200}
+                  height={200}
+                  loading="lazy"
+                />
+                <Image
+                  src="/images/earth.png"
+                  className="earth z-[99] left-1/2 -translate-x-1/2 mt-[250px] absolute"
+                  alt="Earth"
+                  width={1500}
                   height={1000}
                   placeholder="empty"
                   loading="lazy"
-                ></Image>
-                <div className="flex justify-between flex-wrap">
-                  {/* <div className="txt p-8 bg-white rounded-xl  pt-[40px] flex w-[95%] mx-auto sm:w-[450px] 2xl:w-[33vw] justify-center items-center flex-col ">
-                    <div className="slogan-title w-full flex justify-between">
-                      <div>
-                        {" "}
-                        <Image
-                          src="/images/icon/edit.png"
-                          alt="close-icon"
-                          width={35}
-                          className="mr-3"
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                        <b> Magic Write</b>
-                      </div>
-                      <div className="close mt-[-15px]">
-                        <Image
-                          src="/images/icon/pin.png"
-                          alt="close-icon"
-                          width={35}
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                      </div>
-                    </div>
-                    <div className="slogan-content border-b-2 border-gray-400 flex py-[30px] flex-wrap">
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        您還在比價嗎？
-                      </h3>
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        選擇極客!!
-                      </h3>
-                      <div className="block md:hidden">
-                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                          用工作室的價格
-                        </h3>
-                        <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                          建立專業級的網站
-                        </h3>
-                      </div>
-                    </div>
-                    <div className="slogan-footer flex justify-end py-[20px]">
-                      Design By Jeek
-                    </div>
-                  </div>{" "} */}
-                  {/* <div className="txt p-8 bg-white rounded-xl  hidden md:flex  pt-[40px]  w-full sm:w-[450px] 2xl:w-[32vw] rotate-3 justify-center items-center flex-col ">
-                    <div className="slogan-title w-full flex justify-between">
-                      <div>
-                        {" "}
-                        <Image
-                          src="/images/icon/edit.png"
-                          alt="close-icon"
-                          width={35}
-                          className="mr-3"
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                        <b> Magic Write</b>
-                      </div>
-                      <div className="close mt-[-15px]">
-                        <Image
-                          src="/images/icon/pin.png"
-                          alt="close-icon"
-                          width={35}
-                          height={35}
-                          placeholder="empty"
-                          loading="lazy"
-                        ></Image>
-                      </div>
-                    </div>
-                    <div className="slogan-content border-b-2 border-gray-400  py-[30px] hidden md:block flex-wrap">
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        用工作室的價格
-                      </h3>
-                      <h3 className="text-[2.2rem] 2xl:text-[2.5rem] mx-3">
-                        建立專業級的網站
-                      </h3>
-                    </div>
-                    <div className="slogan-footer flex justify-end py-[20px]">
-                      Design By Jeek
-                    </div>
-                  </div>{" "} */}
-                </div>
+                />
+                <div className="flex justify-between flex-wrap"></div>
               </div>
             </div>
           </div>
         </section>
       </div>
-      {/* <div className="hidden xl:block">
-        <PerspectiveSection02 />
-      </div> */}
-      {/* Rest of your component */}
-      <div className=" mt-0  sm:mt-[50px] md:mt-[40px] xl:mt-[100px]  bg-[#ffffff]">
-        {/* <PerspectiveSection02 /> */}
+
+      <div className=" mt-[100px]  sm:mt-[50px] md:mt-[40px] xl:mt-[100px]  bg-[#001e5a]">
         <section className="section-brand-mobile block sm:hidden">
           <EmblaCarousel08 />
         </section>
-        <section className="section-brand hidden sm:block   pt-5  ">
-          <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
-            <h2 className="text-black text-[30px] md:text-[50px] xl:text-[70px] font-bold">
+        <section className="section-brand  relative hidden sm:block   pt-5  ">
+          <Image
+            width={140}
+            height={140}
+            alt="space-03"
+            placeholder="empty"
+            className=""
+            loading="lazy"
+            src="/images/—Pngtree—astronaut picking the star_6454372.png"
+          ></Image>
+          {/* <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
+            <h2 className="text-[#fdb715] text-[30px] md:text-[50px] xl:text-[70px] font-bold">
               讓您的品牌擁有獨立網站！
             </h2>
-            <p className="text-[16px] font-normal text-center w-full mt-4 md:w-1/2 mx-auto md:text-[22px] text-black">
+            <p className="text-[16px] font-normal text-center w-full mt-4 md:w-1/2 mx-auto md:text-[22px] text-white">
               您是否為其困擾？？
             </p>
           </div>
           <div className="bottom-wrap w-[95%]  mx-auto flex  pb-5 ">
-            <div className="border px-[30px] py-[50px] border-black group bg-[#e79a2e] w-1/3 rounded-xl m-2">
-              <div className="flex  flex-col justify-center items-center">
+            <a
+              href="/3dProduct"
+              data-aos-delay="300"
+              className="group shadow-xl mt-[10px] md:mt-[0px] h-full md:h-auto relative shadow-black duration-100 bg-white group hover:bg-[#11203f] rounded-xl w-full md:w-1/3 group m-1 p-6"
+            >
+              <div className="right-[-15px] absolute top-[-40px] hidden group-hover:block">
                 <Image
-                  src="/images/電商平台的高抽成01.webp"
-                  alt="SEO優化行銷-極客網頁設計"
-                  width={500}
-                  height={500}
-                  className="group-hover:scale-105 group-hover:rotate-[-10deg]  duration-500"
-                  placeholder="empty"
+                  width={100}
+                  height={100}
                   loading="lazy"
-                ></Image>
-              </div>
-              <div className="flex group flex-col justify-center items-center p-5">
-                <h3 className="text-white text-[30px] text-center font-black">
-                  電商平台的高抽成
-                </h3>
-
-                <p className="text-white  text-[14px] xl:text-[22px] md:text-[20px]  text-center">
-                  "電商平台手續費越抽越多？選擇我們的網頁設計服務，擺脫高額手續費的束縛！
-                </p>
-              </div>{" "}
-            </div>
-            <div className="border group px-[30px] py-[50px] border-black w-1/3 bg-[#262626] rounded-xl m-2">
-              <div className="flex flex-col justify-center items-center">
-                <Image
-                  src="/images/對現有網站不滿意.webp"
-                  alt="SEO優化行銷-極客網頁設計"
-                  width={500}
-                  height={500}
-                  className="group-hover:scale-105 group-hover:rotate-[-10deg]  duration-500"
                   placeholder="empty"
-                  loading="lazy"
-                ></Image>
+                  alt="popup-chatBox"
+                  src="/images/spaceMan01.png"
+                />
               </div>
-              <div className="flex flex-col justify-center p-5 items-center">
-                <h3 className="text-white text-[35px]  font-black">
-                  對現有網站不滿意
+              <Image
+                src="/images/商業產品攝影-極客網頁設計.png"
+                alt="SEO優化行銷-極客網頁設計"
+                width={500}
+                height={500}
+                className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                placeholder="empty"
+                loading="lazy"
+              />
+              <div className="txt group p-5">
+                <h3 className="text-[#fdb715] text-[35px] font-black">
+                  形象設計
                 </h3>
-
-                <p className="text-white  text-[14px] xl:text-[22px] md:text-[20px] text-center">
-                  您的網站設計過時，技術已落後趨勢，缺乏維護，這可能正拖累您的排名和企業盈利
+                <p className="text-[#131313] duration-500 group-hover:text-[#fdb715] text-[18px] md:text-[22px]">
+                  3D商品建模｜形象攝影｜商品攝影
                 </p>
               </div>
-            </div>
-            <div className="border px-[30px] py-[50px] border-black bg-[#5082b8] w-1/3 rounded-xl m-2">
-              <div className="flex flex-col justify-center items-center">
+            </a>
+            <a
+              href="/3dProduct"
+              data-aos-delay="300"
+              className="group shadow-xl mt-[10px] md:mt-[0px] h-full md:h-auto relative shadow-black duration-100 bg-white group hover:bg-[#11203f] rounded-xl w-full md:w-1/3 group m-1 p-6"
+            >
+              <div className="right-[-15px] absolute top-[-40px] hidden group-hover:block">
                 <Image
-                  src="/images/收集客戶資料再行銷.webp"
-                  alt="SEO優化行銷-極客網頁設計"
-                  width={500}
-                  height={500}
-                  className="group-hover:scale-105 group-hover:rotate-[-10deg]  duration-500"
-                  placeholder="empty"
+                  width={100}
+                  height={100}
                   loading="lazy"
-                ></Image>
+                  placeholder="empty"
+                  alt="popup-chatBox"
+                  src="/images/spaceMan01.png"
+                />
               </div>
-              <div className="flex flex-col justify-center p-5 items-center">
-                <h3 className="text-white text-[30px] text-center font-black">
-                  你想完整收集客戶資料，再行銷嗎？
+              <Image
+                src="/images/商業產品攝影-極客網頁設計.png"
+                alt="SEO優化行銷-極客網頁設計"
+                width={500}
+                height={500}
+                className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                placeholder="empty"
+                loading="lazy"
+              />
+              <div className="txt group p-5">
+                <h3 className="text-[#fdb715] text-[35px] font-black">
+                  形象設計
                 </h3>
-
-                <p className="text-white  text-[14px] xl:text-[22px] md:text-[20px]  text-center">
-                  擁有獨立網站，完整掌握客戶數據，實現精準行銷、提升轉化率，建立長期品牌關係，持續創造價值。
+                <p className="text-[#131313] duration-500 group-hover:text-[#fdb715] text-[18px] md:text-[22px]">
+                  3D商品建模｜形象攝影｜商品攝影
                 </p>
               </div>
-            </div>
-          </div>
+            </a>
+            <a
+              href="/3dProduct"
+              data-aos-delay="300"
+              className="group shadow-xl mt-[10px] md:mt-[0px] h-full md:h-auto relative shadow-black duration-100 bg-white group hover:bg-[#11203f] rounded-xl w-full md:w-1/3 group m-1 p-6"
+            >
+              <div className="right-[-15px] absolute top-[-40px] hidden group-hover:block">
+                <Image
+                  width={100}
+                  height={100}
+                  loading="lazy"
+                  placeholder="empty"
+                  alt="popup-chatBox"
+                  src="/images/spaceMan01.png"
+                />
+              </div>
+              <Image
+                src="/images/商業產品攝影-極客網頁設計.png"
+                alt="SEO優化行銷-極客網頁設計"
+                width={500}
+                height={500}
+                className="group-hover:scale-105 group-hover:rotate-12 duration-500"
+                placeholder="empty"
+                loading="lazy"
+              />
+              <div className="txt group p-5">
+                <h3 className="text-[#fdb715] text-[35px] font-black">
+                  形象設計
+                </h3>
+                <p className="text-[#131313] duration-500 group-hover:text-[#fdb715] text-[18px] md:text-[22px]">
+                  3D商品建模｜形象攝影｜商品攝影
+                </p>
+              </div>
+            </a>
+          </div> */}
         </section>
         <TextParallaxContent
           imgUrl="/images/WebOptimization-Hero-Img.png"
@@ -673,7 +380,7 @@ const OverlayCopy = ({ subheading, heading }) => {
         opacity,
       }}
       ref={targetRef}
-      className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
+      className="absolute   left-0 top-0  flex h-screen w-full flex-col items-center justify-center text-white"
     >
       <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
         {subheading}

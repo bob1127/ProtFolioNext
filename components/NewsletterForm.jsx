@@ -302,7 +302,7 @@ export default function NewsletterForm() {
 
                 <li className="mr-5 mt-3">
                   <Modal isOpen={isOpen === 1} onOpenChange={handleClose}>
-                    <ModalContent className="border p-[100px] rounded-[30px] bg-white border-black">
+                    <ModalContent className="border bg-[#fdb715] p-[100px] rounded-[30px]  border-black">
                       {(onClose) => (
                         <>
                           <ModalHeader className="flex  flex-col  gap-1"></ModalHeader>
@@ -316,7 +316,7 @@ export default function NewsletterForm() {
                                 alt="contact-line-qrcode"
                                 placeholder="empty"
                               ></Image>
-                              <p>line官方</p>
+                              <p className="text-white">line官方</p>
                             </div>
                           </ModalBody>
                         </>

@@ -10,10 +10,13 @@ import {
 } from "@nextui-org/react";
 // import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
 import { NextSeo } from "next-seo";
+
 import VerticalAccordion from "../../components/VerticalAccordion/index.jsx";
 import SwiperHero from "../../components/SwiperHero/index.jsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
+import { motion } from "framer-motion";
+
 import Script from "next/script";
 import Head from "next/head";
 import GsapText from "../../components/RevealText/index";
@@ -22,7 +25,7 @@ import SwiperScroll01 from "../../components/SwiperScroll01/page.jsx";
 import BannerSwiper from "../../components/BannerSwiper/page.jsx";
 import SpringModal from "../../components/SpringModal/page.jsx";
 import SwiperScroll from "../../components/SwiperScroll/page.jsx";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link.js";
 import VanishList from "../../components/VanishList/page.jsx";
 import RevealLinks from "../../components/RevealLinks/page.jsx";
@@ -34,6 +37,26 @@ import Carousel04 from "../../components/EmblaCarousel04/EmblaCarousel.jsx";
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 export default function Blog() {
+  const [isAnimated, setIsAnimated] = useState(false);
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+  // Set up the scroll event listener
+  const plane = useRef(null);
+  const maxRotate = 45;
+
+  const manageMouseMove = (e) => {
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+    const perspective = window.innerWidth * 4;
+    const rotateX = maxRotate * x - maxRotate / 2;
+    const rotateY = (maxRotate * y - maxRotate / 2) * -1;
+    plane.current.style.transform = `perspective(${perspective}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg)`;
+  };
+
   const webpage = {
     name: "我們提供的服務-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
@@ -254,6 +277,221 @@ export default function Blog() {
           {/* <div className="pt-[30px]">
             <SwiperHero />
           </div> */}
+          <div className="h-[100vh] md:h-[80vh] lg:h-[700px] xl-[100vh]  w-full relative overflow-hidden">
+            <div
+              className="absolute top-0 opacity-10 left-0  w-[100vw] h-[100vh]  z-[9999999] bg-center bg-repeat  "
+              style={{
+                backgroundImage: "url('/images/Hero-backgorund-03.png')",
+              }}
+            ></div>
+            <div className="absolute left-0  md:left-[22%] top-[20%] w-full md:w-[80%] lg:w-[60%] z-[999999999]">
+              <div className="font-anton relative  line flex justify-center items-center mt-[-80px] h-[180px] overflow-hidden ">
+                <h1 className="font-black text-[40px] md:text-[80px] xl:text-[100px] 2xl:text-[125px] absolute  line">
+                  {["極", "客", "網", "頁", "設", "計"].map((char, index) => (
+                    <span key={index} className="inline-block overflow-hidden">
+                      {char}
+                    </span>
+                  ))}
+                </h1>
+              </div>
+              <div className="font-anton relative  line flex justify-center items-center mt-[-80px] sm:mt-[-50px]  h-[80px] md:h-[180px] overflow-hidden ">
+                <h1 className="font-black text-[40px] md:text-[80px] xl:text-[100px] 2xl:text-[125px] absolute  line">
+                  {["J", "E", "E", "K", " -", "D", "E", "S", "I", "G", "N"].map(
+                    (char, index) => (
+                      <span
+                        key={index}
+                        className="inline-block overflow-hidden"
+                      >
+                        {char}
+                      </span>
+                    )
+                  )}
+                </h1>
+              </div>
+
+              <div className="feature relative z-[9999999999999] mb-[40px] py-2 hidden sm:grid  w-[70%] mx-auto    rounded-[40px] px-[40px]  overflow-scroll  grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
+                <div
+                  href="/Photography"
+                  className="bg-white text-center border text-nowrap border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3  rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+                >
+                  產品攝影
+                </div>
+                <a
+                  href="/WebOptimization"
+                  className="bg-white text-center  inline-block border border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]     text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+                >
+                  seo 優化
+                </a>
+                <a
+                  href="/project"
+                  className="bg-white text-center border  border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+                >
+                  網頁設計
+                </a>
+                <a
+                  href="/3dProduct"
+                  className="bg-white text-center border  border-black shadow-[4px_4px_0px_rgba(0,0,0,0.25)] px-3 rounded-[14px]    text-[14px] hover:shadow-[2px_2px_0px_rgba(0,0,0,0.85)] py-2"
+                >
+                  3d建模
+                </a>
+              </div>
+            </div>
+
+            <div className="absolute  top-[36%] md:top-[15%] right-0 md:right-[10%] z-[99999999]">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }} // 初始狀態
+                animate={{ opacity: 1, scale: 1 }} // 最終狀態
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  delay: 0.4, // 延遲 400 毫秒
+                  duration: 1, // 持續時間 1000 毫秒
+                }}
+                // 根據狀態決定是否啟用呼吸動畫
+                whileInView={
+                  isAnimated
+                    ? {
+                        scale: [1, 1.05, 1],
+                        transition: {
+                          duration: 2,
+                          ease: "easeInOut",
+                          repeat: Infinity,
+                          repeatType: "loop",
+                        },
+                      }
+                    : {}
+                }
+              >
+                <Image
+                  src="/images/Hero-img-01.webp"
+                  alt="hero-blur-img_green"
+                  placeholder="empty"
+                  loading="eager"
+                  width={200}
+                  height={200}
+                ></Image>
+              </motion.div>
+            </div>
+            <div className="absolute top-[26%] md:top-[0%] left-[0%] z-[99999999]">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }} // 初始狀態
+                animate={{ opacity: 1, scale: 1 }} // 最終狀態
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  delay: 1, // 延遲 400 毫秒
+                  duration: 1, // 持續時間 1000 毫秒
+                }}
+                // 根據狀態決定是否啟用呼吸動畫
+                whileInView={
+                  isAnimated
+                    ? {
+                        scale: [1, 1.05, 1],
+                        transition: {
+                          duration: 2,
+                          ease: "easeInOut",
+                          repeat: Infinity,
+                          repeatType: "loop",
+                        },
+                      }
+                    : {}
+                }
+              >
+                <Image
+                  src="/images/Hero-img-02.webp"
+                  alt="hero-blur-img_blue"
+                  placeholder="empty"
+                  loading="eager"
+                  width={200}
+                  height={200}
+                />
+              </motion.div>
+            </div>
+            <div className="absolute bottom-[30%] sm:bottom-[11%] lg:bottom-[10%]  left-[20%] lg:left-[30%] z-[99999999]">
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }} // 初始狀態
+                animate={{ opacity: 1, scale: 1 }} // 最終狀態
+                transition={{
+                  type: "spring",
+                  stiffness: 100,
+                  delay: 0.8, // 延遲 400 毫秒
+                  duration: 1, // 持續時間 1000 毫秒
+                }}
+                // 根據狀態決定是否啟用呼吸動畫
+                whileInView={
+                  isAnimated
+                    ? {
+                        scale: [1, 1.25, 1],
+                        transition: {
+                          duration: 3.6,
+                          ease: "easeInOut",
+                          repeat: Infinity,
+                          repeatType: "loop",
+                        },
+                      }
+                    : {}
+                }
+              >
+                <Image
+                  src="/images/Hero-img-03.webp"
+                  alt="hero-blur-img_yellow"
+                  placeholder="empty"
+                  loading="eager"
+                  width={200}
+                  height={200}
+                ></Image>
+              </motion.div>
+            </div>
+            <div className="absolute  bottom-0 sm:bottom-[-30%] md:bottom-[-22%] lg:bottom-[-10%] right-[-23%] md:right-[-15%] lg:right-[-5%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
+              <Image
+                src="/images/Hero-img-11.webp"
+                alt="hero-blur-img_desktop"
+                placeholder="empty"
+                loading="eager"
+                layout="responsive"
+                width={500}
+                height={500}
+                className="object-contain" // 根據需求選擇 object-contain 或 object-cover
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-duration="1200"
+              />
+            </div>
+            <div className="absolute bottom-[0px] sm:bottom-[-20%] lg:bottom-0 left-[-22%] md:left-[-27%] lg:left-[-10%] 2xl:left-[-10%] z-[999999999] w-[80%] md:w-[60%] lg:w-[40%] max-w-[2500px]">
+              <Image
+                src="/images/Hero-img-09-human.png"
+                alt="hero-blur-img_desktop"
+                placeholder="empty"
+                loading="eager"
+                layout="responsive"
+                width={500}
+                height={500}
+                className="object-contain" // 根據需求選擇 object-contain 或 object-cover
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                data-aos-duration="1200"
+              />
+            </div>
+            <div className="absolute top-0 left-0 z-[99999999]">
+              <Image
+                src="/images/Hero-img.webp"
+                alt="hero-blur-img"
+                loading="eager"
+                priority={true}
+                width={2300}
+                height={1080}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+            {/* <div
+              className="arrow flex justify-start pt-[35px] items-center left-[50%] sm:bottom-[80px] absolute z-[999999999] bg-white rounded-full   sm:bg-transparent flex-col sm:justify-center w-[50%] bottom-[-18%] h-[30%] sm:items-center transform -translate-x-1/2"
+              onClick={handleScroll}
+            >
+              <div>Scroll Down</div>
+              <div>↓</div>
+            </div> */}
+          </div>
+
           <section className="section">
             <div className="container">
               <div className="padding">

@@ -73,13 +73,13 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="relative h-[105vh]"
+      className="hidden relative h-[105vh]"
       transition={{
         duration: 6.8,
         ease: [0.1, 3.7, 3.0, 3.1], // Custom cubic-bezier timing function
       }}
     >
-      <div className="px-[20px] border-t-2 border-black border  py-[40px]  lg:py-[100px] bg-[#ffffff] rounded-[45px] md:rounded-[60px] h-auto md:h-[150vh] xl:h-[200vh] xl:rounded-[80px] 2xl:rounded-[120px] portrait:xl:h-[50vh]">
+      <div className="px-[20px] border-t-2 border-black border  py-[40px]  lg:py-[100px] bg-[#001e5a] rounded-[45px] md:rounded-[60px] h-auto md:h-[150vh] xl:h-[200vh] xl:rounded-[80px] 2xl:rounded-[120px] portrait:xl:h-[50vh]">
         <div className="txt flex items-center flex-col justify-center py-4">
           <h2 className="text-black text-[35px] md:text-[50px] xl:text-[70px] text-center font-bold">
             讓您的品牌擁有獨立網站！

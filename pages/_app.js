@@ -140,7 +140,17 @@ export default function MyApp({ Component, pageProps, router }) {
                 {/* <div className='border-t-2 border-black'>
                   <PhysicsAnimationApp />
                 </div> */}
-
+{/* <div className="footer-city relative overflow-hidden h-[800px]">
+            <Image
+              placeholder="empty"
+              width={1500}
+              height={800}
+              alt="footer-city"
+              loading="lazy"
+              className=""
+              src="/images/pngwing.com-88.png"
+            ></Image>
+          </div> */}
                 <div className='border border-black'>
                  <Marquee>   
                   <a href='/quotation'>
