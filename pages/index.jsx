@@ -6,10 +6,15 @@ import SwiperScroll from "../components/SwiperScroll02/page";
 import { useRef, useEffect } from "react";
 import GsapText from "../components/RevealText/index";
 import Image from "next/image.js";
+import "swiper/css";
 import { NextSeo } from "next-seo";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Accordion from "../components/Accordion/page.jsx";
 import TextPsrrallac from "../components/TextParallaxContent";
 import Head from "next/head";
+
+import DragCarousel from "../components/DragCarousel/index.jsx";
+import SlickCarousel from "../components/ThreeDCarousel/page.jsx";
 import NewsletterForm from "../components/NewsletterForm";
 import EmblaCarouselIndex from "../components/EmblaCarouselIndex/index.jsx";
 // import { Roboto } from "@next/font/google";
@@ -31,6 +36,15 @@ const imageLoader02 = ({ src, width, quality }) => {
 };
 
 export default function Home() {
+  const settings = {
+    dots: true, // 顯示分頁點
+    infinite: true, // 無限輪播
+    loop: true,
+
+    speed: 500, // 動畫速度
+    slidesToShow: 3, // 顯示幾個滑塊
+    slidesToScroll: 1, // 每次滾動多少個滑塊
+  };
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -137,12 +151,285 @@ export default function Home() {
         />
 
         <TextPsrrallac />
-        <section className="section_HeroImg ">
+        <DragCarousel />
+
+        {/* <section className="section_HeroImg ">
           <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-[#001e5a]"></div>
+        </section> */}
+        <section className="py-[200px]">
+          <div className="flex justify-center flex-col">
+            <div className="txt w-[800px] mx-auto">
+              <h2 className="text-[#fdb715] text-center">大台中網頁設計</h2>
+              <p className="text-white text-center w-1/2 mx-auto">
+                如果有一個這樣的設計室就好了。我相信一切都會好起來的。
+                我想創造一個這樣的世界。Tommyverse 透過設計創造世界，
+              </p>
+              <p className="text-white mt-4 text-center w-1/2 mx-auto">
+                如果有一個這樣的設計室就好了。我相信一切都會好起來的。
+                我想創造一個這樣的世界。Tommyverse 透過設計創造世界，
+              </p>
+              <div
+                className="circle  flex justify-center items-center mx-auto mt-10 w-[200px] rounded-full h-[200px] text-white bg-white"
+                style={{ boxShadow: "8px 8px 0 0 rgba(0,0,0,.9)" }}
+              >
+                <div className="txt flex flex-col justify-center items-center">
+                  <h4 className="text-[20px]  text-[#ffca38]">title</h4>
+                  <p className="text-black text-center">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section className="h-[100vh] bg-center bg-cover bg-no-repeat bg-[url(/images/48347574252_77a06552a6_b.jpg)]"></section>
         </section>
+        <section className="section_parallaxScroll py-10  bg-[#ebcf98] h-auto flex flex-col justify-center items-center lg:flex-row">
+          <div
+            className="left relative h-[600px] ml-[-10vw] w-full lg:w-[80%] duration-500 hover:w-[100%] rounded-[40px] border-[20px] md:border-[30px]  py-0 bg-[#1b9b12] border-10             border-[#5cdd3c]"
+            style={{ boxShadow: "0 4px 8px 0 rgba(111, 78, 55, 5)" }}
+          >
+            <div>
+              <div className="txt z-[999999999] top-[20%] w-[70%] lg:w-[40%] absolute lg:top-[40%]  left-[20%] lg:left-1/2 ">
+                <h3 className="text-white font-black" data-aos="fade-up">
+                  我想腳踏實地， 勇往直前。
+                </h3>
+                <p className="text-white mt-5 text-[14px]" data-aos="fade-up">
+                  Tommyverse 是一家位於千葉縣的設計公司。
+                  我很喜歡千葉，所以主要在當地工作。
+                  當然，如果我們接到電話，我們歡迎來自全國各地的請求。
+                  無論我在哪裡，我都會用愛盡力而為。
+                </p>
+              </div>
+            </div>
+            <div className="img01 top-0  lg:left-[10%] left-[-10%] absolute">
+              <Image
+                src="/images/0d857afdc1e66a48db18c4ba5fb1e0b3-2-2.png"
+                width={220}
+                height={1000}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div>
+            <div className="img01  bottom-0 lg:left-[40%] left-[40%] absolute">
+              <Image
+                src="/images/giphy.gif"
+                width={160}
+                height={200}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div>
+
+            <div className="img01 bottom-[0px] absolute">
+              <Image
+                src="/images/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_00ajmdtaghsne8dq3zuw.gif"
+                width={190}
+                height={190}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div>
+          </div>
+          <div
+            className="left h-[600px] duration-500 mr-[-10vw] ml-[80px] mt-[40px] lg:mt-0 w-full lg:w-[50%] rounded-[40px] hover:w-[100%] border-[20px]  md:border-[30px]  py-0 bg-[#1b9b12] relative border-10             border-[#5cdd3c]"
+            style={{ boxShadow: "-10px 7px 0 0 rgba(111, 78, 55)" }}
+          >
+            <div className="img01 bottom-[140px] absolute">
+              <Image
+                src="/images/pixel-art-12824_512.gif"
+                width={190}
+                height={190}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div>
+            <div className="img01 bottom-0 absolute">
+              <Image
+                src="/images/—Pngtree—pixel scene background grass_6021560.png"
+                width={1000}
+                height={100}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div>
+            <div className="img01 right-[40%] bottom-[20%] absolute">
+              <div className="flex flex-col justify-center items-center">
+                <div>
+                  <div className="chatbox">
+                    <p data-aos="zoom-in" className="text-white  font-bold">
+                      網頁設計-
+                      <br />
+                      <span className="font-black text-black"> Web Design</span>
+                    </p>
+                  </div>
+                </div>
+                <Image
+                  src="/images/iofjgoidfjgo.gif"
+                  width={240}
+                  height={100}
+                  loading="lazy"
+                  placeholder="empty"
+                  alt="pexiel-img"
+                ></Image>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section_parallaxScroll py-10  bg-[#ebcf98] h-auto flex flex-col justify-center items-center lg:flex-row">
+          <div className="left h-[400px] w-[1900px]  mt-[40px] lg:mt-0   py-0 bg-[#1b9b12] relative border-b-[30px] border-t-[30px]    mx-auto  rounded-none       border-[#5cdd3c]">
+            <div className="img01 w-[30%] left-[10%] bottom-[0px] relative lg:absolute">
+              <Image
+                src="/images/fgfdg.png"
+                width={350}
+                height={800}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div>
+            <div className="w-[70%] pl-[100px] pb-[30px] -translate-y-1/2 relative top-1/2  lg:absolute right-0">
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={3}
+                dots={true}
+                loop={true} // 啟用無限輪播
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+                navigation={{
+                  // 設置箭頭
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                }}
+              >
+                <SwiperSlide>
+                  <a href="#">
+                    <div
+                      style={{ boxShadow: "8px 8px 0 0 rgba(0,0,0,.9)" }}
+                      className="rounded-[30px]  overflow-hidden mb-6 flex flex-row  bg-white shadow"
+                    >
+                      <Image
+                        width={300}
+                        height={100}
+                        loading="lazy"
+                        className="rounded-lg"
+                        placeholder="empty"
+                        alt="swiper-img"
+                        src="/images/scremingFrog-debug.png"
+                      ></Image>
+                    </div>
+                    <div className="txt">
+                      <h3 className="text-white">title</h3>
+                      <p className="text-white">Lorem, ipsum dolor.</p>
+                    </div>
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#">
+                    <div
+                      style={{ boxShadow: "8px 8px 0 0 rgba(0,0,0,.9)" }}
+                      className="rounded-[30px]  overflow-hidden mb-6 flex flex-row  bg-white shadow"
+                    >
+                      <Image
+                        width={300}
+                        height={100}
+                        loading="lazy"
+                        className="rounded-lg"
+                        placeholder="empty"
+                        alt="swiper-img"
+                        src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp"
+                      ></Image>
+                    </div>
+                    <div className="txt">
+                      <h3 className="text-white">title</h3>
+                      <p className="text-white">Lorem, ipsum dolor.</p>
+                    </div>
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#">
+                    <div
+                      style={{ boxShadow: "8px 8px 0 0 rgba(0,0,0,.9)" }}
+                      className="rounded-[30px]  overflow-hidden mb-6 flex flex-row  bg-white shadow"
+                    >
+                      <Image
+                        width={300}
+                        height={100}
+                        loading="lazy"
+                        className="rounded-lg"
+                        placeholder="empty"
+                        alt="swiper-img"
+                        src="/images/新網站SEO規劃-極客網頁設計.webp"
+                      ></Image>
+                    </div>
+                    <div className="txt">
+                      <h3 className="text-white">title</h3>
+                      <p className="text-white">Lorem, ipsum dolor.</p>
+                    </div>
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#">
+                    <div
+                      style={{ boxShadow: "8px 8px 0 0 rgba(0,0,0,.9)" }}
+                      className="rounded-[30px]  overflow-hidden mb-6 flex flex-row  bg-white shadow"
+                    >
+                      <Image
+                        width={300}
+                        height={100}
+                        loading="lazy"
+                        className="rounded-lg"
+                        placeholder="empty"
+                        alt="swiper-img"
+                        src="/images/ec_240723_h-min-768x512.png"
+                      ></Image>
+                    </div>
+                    <div className="txt">
+                      <h3 className="text-white">title</h3>
+                      <p className="text-white">Lorem, ipsum dolor.</p>
+                    </div>
+                  </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <a href="#">
+                    <div
+                      style={{ boxShadow: "8px 8px 0 0 rgba(0,0,0,.9)" }}
+                      className="rounded-[30px]  overflow-hidden mb-6 flex flex-row  bg-white shadow"
+                    >
+                      <Image
+                        width={300}
+                        height={100}
+                        loading="lazy"
+                        className="rounded-lg"
+                        placeholder="empty"
+                        alt="swiper-img"
+                        src="/images/無頭網站_高性能seo有善-極客網頁設計.png"
+                      ></Image>
+                    </div>
+                    <div className="txt">
+                      <h3 className="text-white">title</h3>
+                      <p className="text-white">Lorem, ipsum dolor.</p>
+                    </div>
+                  </a>
+                </SwiperSlide>
+                <div className="swiper-button-next">Next</div>
+                <div className="swiper-button-prev">Prev</div>
+              </Swiper>
+            </div>
+          </div>
+        </section>
+        <section className="bg-white  shadow-2xl h-[100vh]"></section>
+        <section className="bg-gradient-to-t from-yellow-400 to-sky-400 h-[500px]"></section>
+
         {/* <PerspectiveSection02 /> */}
-        <section className="section_QA  py-[10px] sm:py-[20px] flex lg:flex-row  my-[100px] flex-col ">
-          <div className="flex w-[80%] lg:flex-row  flex-col mx-auto">
+        <section className="section_QA  relative py-[10px] sm:py-[20px] flex lg:flex-row  my-[100px] flex-col ">
+          <div className="flex w-[90%] lg:flex-row  flex-col mx-auto">
             <div className=" pr-10 w-full lg:w-1/2">
               <Image
                 src="/images/你想要自學網頁設計嗎.webp"
@@ -153,11 +440,13 @@ export default function Home() {
                 placeholder="empty"
               ></Image>
             </div>
+
             <div className=" w-full lg:w-1/2">
               <Accordion />
             </div>
           </div>
         </section>
+
         <section className="mb-[20px] w-full mt-[30px]">
           <div className="max-w-[1200px] sm:w-[90%] lg:w-[70%] mx-auto">
             <h2 className="mt-10 text-white px-[20px] text-center text-xl sm:text-xl md:text-xl my-5 lg:text-2xl">

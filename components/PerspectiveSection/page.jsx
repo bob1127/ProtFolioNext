@@ -101,7 +101,7 @@ const Section2 = ({ scrollYProgress }) => {
         }}
       >
         <div className="circle-logo"></div>
-        <div className="border overflow-visible md:overflow-hidden  xl:pt-[250px] pt-[50px]   z-[-1] bg-[#001e5a] h-[100vh]  md:h-[350vh] 2xl:h-[220vh] border-[#222222]  static rounded-[45px]  md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+        <div className="border overflow-visible md:overflow-hidden  xl:pt-[250px] pt-[50px]   z-[-1] bg-[#001e5a]  h-[100vh]  md:h-[350vh] 2xl:h-[220vh] border-[#222222]  static rounded-[45px]  md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
           <div className="absolute   hidden md:block top-[10%] right-[14%]">
             <div className="flex flex-col items-center justify-center">
               <p className="text-white mb-5">scroll down</p>
@@ -249,7 +249,7 @@ const Section2 = ({ scrollYProgress }) => {
         }}
       >
         <div className="circle-logo"></div>
-        <div className="  xl:pt-[250px] pt-[100px]  h-[100vh]  z-[-1] bg-[#001e5a]  static rounded-[0px] py-[50px] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+        <div className="  xl:pt-[250px] pt-[100px]  h-[100vh]  z-[-1] bg-[#001e5a]  static rounded-[0px] py-[50px] mt-[140px] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
           <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
             <h2 className="text-white text-[30px] md:text-[50px] xl:text-[70px] font-bold">
               提升網站品牌形象
