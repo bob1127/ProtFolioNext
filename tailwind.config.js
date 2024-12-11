@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     darkMode: 'class', // 启用 class-based dark mode
     extend: {
+      boxShadow: {
+        'custom-inset': 'inset -3px -7px 0 0.2rem rgba(0, 0, 128, 0.8)',
+        'custom-hover': 'inset -1px -5px 0 0.2rem rgba(0, 0, 128, 0.8)',
+      },
       screens: {
         portrait: { raw: '(orientation: portrait)' }, // 定义 portrait 屏幕断点
       },

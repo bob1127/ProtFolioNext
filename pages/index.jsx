@@ -151,15 +151,51 @@ export default function Home() {
         />
 
         <TextPsrrallac />
-        <DragCarousel />
+        <section className="section_analysis sm:mt-[50vh] lg:mt-[40vh] xl:mt-0 relative flex flex-col justify-center items-end">
+          <di className="space-02 absolute top-[-10%] z-[999999999] lg:left-[10%] left-[0%]">
+            <Image
+              src="/images/orbital-international-space-station-flat-composition-is-space-is-very-large_1284-56581.png"
+              alt="space03"
+              className="rotate-[30deg]"
+              width={120}
+              height={120}
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </di>
+          <di className="space-02 absolute top-[-20%] z-[999999999] lg:right-[10%] right-[0%]">
+            <Image
+              src="/images/—Pngtree—pink planet universe star_3815558.png"
+              alt="space03"
+              className="rotate-[30deg]"
+              width={120}
+              height={120}
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </di>
+          <div className="title mb-[70px] w-[80%] pr-[100px]">
+            <h2 className="text-[32px] md:text-[40px] lg:text-[70px] text-right text-[#fdb715] ">
+              幫助您業務成效分析
+            </h2>
+            <p className="mt-7 text-white text-[16px] md:text-[20px]   text-right ">
+              網站建置好了，接下來開始分析您網站的成效，並且找出問題，<br></br>
+              持續更新精進網站，提升網站排名！！
+            </p>
+          </div>
+          <DragCarousel />
+        </section>
 
         {/* <section className="section_HeroImg ">
           <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-[#001e5a]"></div>
         </section> */}
+
         <section className="py-[200px]">
           <div className="flex justify-center flex-col">
             <div className="txt w-[800px] mx-auto">
-              <h2 className="text-[#fdb715] text-center">大台中網頁設計</h2>
+              <h2 className="text-[#fdb715] text-center">
+                我們有豐富的設計經驗
+              </h2>
               <p className="text-white text-center w-1/2 mx-auto">
                 如果有一個這樣的設計室就好了。我相信一切都會好起來的。
                 我想創造一個這樣的世界。Tommyverse 透過設計創造世界，
@@ -169,36 +205,192 @@ export default function Home() {
                 我想創造一個這樣的世界。Tommyverse 透過設計創造世界，
               </p>
               <div
-                className="circle  flex justify-center items-center mx-auto mt-10 w-[200px] rounded-full h-[200px] text-white bg-white"
-                style={{ boxShadow: "8px 8px 0 0 rgba(0,0,0,.9)" }}
+                href="/blogs"
+                className="w-[310px]  mt-[60px] relative  h-[310px] m-5 border border-white "
               >
-                <div className="txt flex flex-col justify-center items-center">
-                  <h4 className="text-[20px]  text-[#ffca38]">title</h4>
-                  <p className="text-black text-center">
-                    Lorem ipsum dolor sit amet.
-                  </p>
+                <div className="absolute w-[300px] h-[300px] group z-[1] top-0  left-0  hover:bg-[#f5bc52] duration-300 hover:translate-y-2 px-[20px] rounded-full py-[55px] bg-white">
+                  <div className=" top-0 left-0 z-[1]">
+                    <div className="txt">
+                      <b className="text-[15px] text-[#91dcd7] text-center">
+                        Blog
+                      </b>
+                      <p className="text-[18px] duration-200 group-hover:text-[#91dcd7] font-bold text-center">
+                        網頁相關知識
+                      </p>
+                    </div>
+                    <div>
+                      <Image
+                        width={200}
+                        height={100}
+                        src="/images/service_link_icon03.png"
+                        loading="lazy"
+                        alt="project-item"
+                        placeholder="empty"
+                      ></Image>
+                    </div>
+                  </div>
                 </div>
+                <div className="absolte  ml-[2px] w-[300px] h-[300px]  bg-[#212121] top-[20%] mt-[15px] left-[10%] z-[9999] rounded-full "></div>
               </div>
             </div>
           </div>
-
-          <section className="h-[100vh] bg-center bg-cover bg-no-repeat bg-[url(/images/48347574252_77a06552a6_b.jpg)]"></section>
         </section>
+        <section class="relative  bg-[#91dcd7] z-[9999999999999] pb-[200px] w-full  py-[80px] ">
+          <div className="img02 absolute top-0 left-0">
+            <Image
+              src="/images/service_link_icon03.png"
+              width={300}
+              height={200}
+              alt="img03"
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </div>
+          <div className="txt flex flex-col justify-center items-center w-[50%] mx-auto">
+            <h3 className="text-[40px] text-[#16123c]">您的創意，我來實現。</h3>
+            <p>The Various Worlds Seriously And Enjoyably.</p>
+            <p className="text-[18px] leading-[38px] font-bold mt-[40px] w-[70%] text-center">
+              以設計為切入點創造世界。 以此為基礎進行活動，
+              如果不設計也能幫上忙的話 什麼都想商量。 我是這麼想的。
+              把湯米巴斯作為入口， 和創造各種世界的夥伴 連線起來，互相聊天，一起
+              致力於製造。
+            </p>
+            <b className="text-[30px] mt-[50px]">服務</b>
+          </div>
+          <div className="project-wrap  mx-auto border border-black  w-[80%] xl:w-[66%] relative justify-center flex-wrap items-center flex">
+            <div className="w-[210px]  mt-[60px] relative  h-[220px] m-5 border border-white ">
+              <div className="absolute group z-[1] top-0 hover:bg-[#001e5a] left-0 rounded-[30px] duration-300 hover:translate-y-2 px-[20px] py-[55px] bg-white">
+                <div className=" top-0 left-0 z-[1]">
+                  <div className="txt">
+                    <b className="text-[15px] text-[#91dcd7] text-center">
+                      專案總數量
+                    </b>
+                    <p className="text-[18px] duration-200 group-hover:text-[#91dcd7] font-bold text-center">
+                      品牌推廣整體製作
+                    </p>
+                  </div>
+                  <div>
+                    <Image
+                      width={200}
+                      height={100}
+                      src="/images/service_link_icon03.png"
+                      loading="lazy"
+                      alt="project-item"
+                      placeholder="empty"
+                    ></Image>
+                  </div>
+                </div>
+              </div>
+              <div className="absolte bg-[#52a8bb] top-[20%] mt-[25px] w-[213px] h-[260px] left-[10%] z-[9999] rounded-[30px] "></div>
+            </div>
+            <a
+              href="/service"
+              className="w-[210px]  mt-[60px] relative  h-[220px] m-5 border border-white "
+            >
+              <div className="absolute group z-[1] top-0 hover:bg-[#001e5a] left-0 rounded-[30px] duration-300 hover:translate-y-2 px-[20px] py-[55px] bg-white">
+                <div className=" top-0 left-0 z-[1]">
+                  <div className="txt">
+                    <b className="text-[15px] text-[#91dcd7] text-center">
+                      Servie
+                    </b>
+                    <p className="text-[18px] duration-200 group-hover:text-[#91dcd7] font-bold text-center">
+                      我們專業的服務項目
+                    </p>
+                  </div>
+                  <div>
+                    <Image
+                      width={200}
+                      height={100}
+                      src="/images/service_link_icon03.png"
+                      loading="lazy"
+                      alt="project-item"
+                      placeholder="empty"
+                    ></Image>
+                  </div>
+                  {/* <div className="border px-[10px] text-center mt-3 text-white py-3 bg-[#333] rounded-[30px] button">
+                    more Info
+                  </div> */}
+                </div>
+              </div>
+              <div className="absolte bg-[#52a8bb] top-[20%] mt-[25px] w-[213px] h-[260px] left-[10%] z-[9999] rounded-[30px] "></div>
+            </a>
+            <a
+              href="/blogs"
+              className="w-[210px]  mt-[60px] relative  h-[220px] m-5 border border-white "
+            >
+              <div className="absolute group z-[1] top-0 hover:bg-[#001e5a] left-0 rounded-[30px] duration-300 hover:translate-y-2 px-[20px] py-[55px] bg-white">
+                <div className=" top-0 left-0 z-[1]">
+                  <div className="txt">
+                    <b className="text-[15px] text-[#91dcd7] text-center">
+                      Blog
+                    </b>
+                    <p className="text-[18px] duration-200 group-hover:text-[#91dcd7] font-bold text-center">
+                      網頁相關知識
+                    </p>
+                  </div>
+                  <div>
+                    <Image
+                      width={200}
+                      height={100}
+                      src="/images/service_link_icon03.png"
+                      loading="lazy"
+                      alt="project-item"
+                      placeholder="empty"
+                    ></Image>
+                  </div>
+                </div>
+              </div>
+              <div className="absolte bg-[#52a8bb] top-[20%] mt-[25px] w-[213px] h-[260px] left-[10%] z-[9999] rounded-[30px] "></div>
+            </a>
+            <a
+              href="/contact"
+              className="w-[210px]  mt-[60px] relative  h-[220px] m-5 border border-white "
+            >
+              <div className="absolute group z-[1] top-0 hover:bg-[#001e5a] left-0 rounded-[30px] duration-300 hover:translate-y-2 px-[20px] py-[55px] bg-white">
+                <div className=" top-0 left-0 z-[1]">
+                  <div className="txt">
+                    <b className="text-[15px] text-[#91dcd7] text-center">
+                      Contact
+                    </b>
+                    <p className="text-[18px] duration-200 group-hover:text-[#91dcd7] font-bold text-center">
+                      快速聯絡我們
+                    </p>
+                  </div>
+                  <div>
+                    <Image
+                      width={200}
+                      height={100}
+                      src="/images/service_link_icon03.png"
+                      loading="lazy"
+                      alt="project-item"
+                      placeholder="empty"
+                    ></Image>
+                  </div>
+                </div>
+              </div>
+              <div className="absolte bg-[#52a8bb] top-[20%] mt-[25px] w-[213px] h-[260px] left-[10%] z-[9999] rounded-[30px] "></div>
+            </a>
+          </div>
+        </section>
+
         <section className="section_parallaxScroll py-10  bg-[#ebcf98] h-auto flex flex-col justify-center items-center lg:flex-row">
           <div
             className="left relative h-[600px] ml-[-10vw] w-full lg:w-[80%] duration-500 hover:w-[100%] rounded-[40px] border-[20px] md:border-[30px]  py-0 bg-[#1b9b12] border-10             border-[#5cdd3c]"
             style={{ boxShadow: "0 4px 8px 0 rgba(111, 78, 55, 5)" }}
           >
             <div>
-              <div className="txt z-[999999999] top-[20%] w-[70%] lg:w-[40%] absolute lg:top-[40%]  left-[20%] lg:left-1/2 ">
-                <h3 className="text-white font-black" data-aos="fade-up">
-                  我想腳踏實地， 勇往直前。
-                </h3>
-                <p className="text-white mt-5 text-[14px]" data-aos="fade-up">
-                  Tommyverse 是一家位於千葉縣的設計公司。
-                  我很喜歡千葉，所以主要在當地工作。
-                  當然，如果我們接到電話，我們歡迎來自全國各地的請求。
-                  無論我在哪裡，我都會用愛盡力而為。
+              <div className="txt z-[999999999] top-[20%] w-[70%] lg:w-[40%] absolute lg:top-[40%]  left-[20%]  lg:left-1/2 ">
+                <h3 className="text-white font-black">您的創意，我來實現</h3>
+                <p className="text-white mt-5 text-[20px]">
+                  {" "}
+                  極客網頁工作室，致力於設計優質的網站。
+                </p>
+                <p className="text-white mt-5 text-[20px]">
+                  {" "}
+                  用工作室的價格，幫您建立專業級的網站。
+                </p>
+                <p className="text-white mt-5 text-[14px]">
+                  不管你是本身沒有網站卻又想增加公司業務，又或者對現有網站不滿意想要改版網站，都歡迎聯繫我們、
                 </p>
               </div>
             </div>
@@ -240,7 +432,7 @@ export default function Home() {
           >
             <div className="img01 bottom-[140px] absolute">
               <Image
-                src="/images/pixel-art-12824_512.gif"
+                src="/images/service_link_icon03.png"
                 width={190}
                 height={190}
                 loading="lazy"
@@ -294,10 +486,10 @@ export default function Home() {
                 alt="pexiel-img"
               ></Image>
             </div>
-            <div className="w-[70%] pl-[100px] pb-[30px] -translate-y-1/2 relative top-1/2  lg:absolute right-0">
+            <div className="w-full md:w-[70%] pl-[100px] pb-[30px]  md:-translate-y-1/2 relative top-1/2  lg:absolute right-0">
               <Swiper
                 spaceBetween={50}
-                slidesPerView={3}
+                slidesPerView={3} // 預設在大螢幕顯示3個
                 dots={true}
                 loop={true} // 啟用無限輪播
                 onSlideChange={() => console.log("slide change")}
@@ -306,6 +498,15 @@ export default function Home() {
                   // 設置箭頭
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",
+                }}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 2,
+                  },
+
+                  480: {
+                    slidesPerView: 2,
+                  },
                 }}
               >
                 <SwiperSlide>
@@ -318,7 +519,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="rounded-lg"
+                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/scremingFrog-debug.png"
@@ -340,7 +541,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="rounded-lg"
+                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp"
@@ -362,7 +563,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="rounded-lg"
+                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/新網站SEO規劃-極客網頁設計.webp"
@@ -384,7 +585,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="rounded-lg"
+                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/ec_240723_h-min-768x512.png"
@@ -406,7 +607,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="rounded-lg"
+                        className="w-[150px] md:w-[300px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/無頭網站_高性能seo有善-極客網頁設計.png"
@@ -424,8 +625,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="bg-white  shadow-2xl h-[100vh]"></section>
-        <section className="bg-gradient-to-t from-yellow-400 to-sky-400 h-[500px]"></section>
+        {/* <section className="bg-white  shadow-2xl h-[100vh]"></section>
+        <section className="bg-gradient-to-t from-yellow-400 to-sky-400 h-[500px]"></section> */}
 
         {/* <PerspectiveSection02 /> */}
         <section className="section_QA  relative py-[10px] sm:py-[20px] flex lg:flex-row  my-[100px] flex-col ">
@@ -441,13 +642,13 @@ export default function Home() {
               ></Image>
             </div>
 
-            <div className=" w-full lg:w-1/2">
+            <div className=" w-full  lg:w-1/2">
               <Accordion />
             </div>
           </div>
         </section>
 
-        <section className="mb-[20px] w-full mt-[30px]">
+        <section className="mb-[20px] bg-white w-full mt-[30px]">
           <div className="max-w-[1200px] sm:w-[90%] lg:w-[70%] mx-auto">
             <h2 className="mt-10 text-white px-[20px] text-center text-xl sm:text-xl md:text-xl my-5 lg:text-2xl">
               我適合哪一種網站？
@@ -655,7 +856,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="section-discount flex flex-col md:flex-row h-[80vh] md:h-[70vh] xl:h-screen">
+        <section className="section-discount bg-white flex flex-col md:flex-row h-[80vh] md:h-[70vh] xl:h-screen">
           <div className="relative  h-1/2  w-full md:w-[50%] md:h-auto">
             <div className="absolute  md:top-[10%] left-[0%] sm:left-[10%] md:left-[15%] xl::left-[-60px] z-[3]">
               <Image

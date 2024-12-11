@@ -111,7 +111,7 @@ const EmblaCarousel = (props) => {
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
-                flex: "0 0 48%", // Increase this value to widen the slide
+                flex: "0 0 35%", // Increase this value to widen the slide
                 paddingLeft: "var(--slide-spacing)",
               }}
             >
@@ -125,32 +125,24 @@ const EmblaCarousel = (props) => {
                   color: "inherit", // Inherit text color
                 }}
               >
-                <div
-                  style={{
-                    boxShadow:
-                      "inset 0 0 0 0.2rem var(--detail-medium-contrast)",
-                    borderRadius: "1.8rem",
-                    fontSize: "4rem",
-
-                    userSelect: "none",
-                  }}
-                  className="embla__slide__number bg-[#f2f2f5]  shadow-2xl border border-black  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto   flex flex-col  items-center justify-center font-semibold"
-                >
-                  <div className="flex  rounded-xl     h-auto   p-1 md:p-2 justify-center items-center">
-                    <Image
-                      src={slide.image} // Use the image from the slide object
-                      alt={slide.title} // Use title as alt text
-                      className="xl:rounded-[30px] w-[130px] md:w-[150px] xl:w-[300px] rounded-[16px] "
-                      width={300}
-                      height={300}
-                      placeholder="empty"
-                      loading="lazy"
-                    />
-                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl p-2 md:p-[45px]   items-center w-full  md:w-[80%] mx-auto  ">
-                      <b className="  text-[14px] md:text-[26px] text-center">
+                <div className="embla__slide__number bg-[#f8f8f8] shadow-[inset_-3px_-7px_0_0.2rem_rgba(0,0,128,0.8)]  hover:shadow-[inset_-1px_-5px_0_0.2rem_rgba(0,0,128,0.8)] border border-black p-3 overflow-visible lg:overflow-hidden rounded-[33px] h-auto flex flex-col items-center justify-center font-semibold">
+                  <div className="flex  rounded-[33px]     p-1 md:p-2 justify-center items-center">
+                    <div className="w-[35%]">
+                      <Image
+                        src={slide.image} // Use the image from the slide object
+                        alt={slide.title} // Use title as alt text
+                        className="xl:rounded-[22px] w-[130px] md:w-[150px] xl:w-[300px] rounded-[16px] "
+                        width={300}
+                        height={300}
+                        placeholder="empty"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl   items-center  w-1/2 mx-auto  ">
+                      <b className="  text-[14px] text-black md:text-[20px] text-center">
                         {slide.title} {/* Display the title */}
                       </b>
-                      <p className="hidden md:block  text-[13px] md:text-[18px]  font-normal text-center">
+                      <p className="hidden md:block text-gray-900  text-[13px] md:text-[16px]  font-normal text-center">
                         {slide.description} {/* Display the description */}
                       </p>
                     </div>
