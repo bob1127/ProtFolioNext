@@ -82,6 +82,7 @@ function AccordionPanel({ children }) {
 export default function App() {
   return (
     <section className="App">
+      <p className="text-[30px] text-white">QA</p>
       <h2 className="text-white">QA</h2>
       <Accordion>
         <AccordionItem className="w-full">

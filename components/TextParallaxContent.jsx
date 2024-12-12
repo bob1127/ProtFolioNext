@@ -113,7 +113,7 @@ export default function App() {
           {/* <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
             <TypewriterEffect />
           </div> */}
-          <div className=" absolute w-[100vw] top-[-70px] z-[9999999999]">
+          <div className=" absolute  mt-[50px] w-[100vw] top-[-70px] z-[9999999999]">
             <PerspectiveSection />
           </div>
           <div className="relative w-[100vw] ">
@@ -122,7 +122,7 @@ export default function App() {
                 <div className="relative">
                   <Image
                     src="/images/titlePopup.png"
-                    className="spring-pop z-[99] left-1/2 -translate-x-1/2 mt-[20px] absolute"
+                    className="spring-pop z-[99] mt-[50px] left-1/2 -translate-x-1/2 absolute"
                     alt="Spring Animation"
                     width={600}
                     height={600}
@@ -140,9 +140,17 @@ export default function App() {
                   height={250}
                   loading="lazy"
                 />
+
+                <Image
+                  src="/images/astronaut.webp"
+                  className=" w-[150px] sm:w-[250px] z-[99999] top-[30%] right-[10%] -translate-x-1/2  mt-[0px] absolute"
+                  width={250}
+                  height={250}
+                  loading="lazy"
+                />
                 <Image
                   src="/images/fantastic_hare_36410_Planet_Surface_Solid_Color_Background_23f9a17b-e22b-4d2d-91cd-bd02d5f6a80d.png"
-                  className="opacity-60 w-[120px] sm:w-[250px] z-[99999] top-[20%] left-[0%] -translate-x-1/2 mt-[20px] absolute"
+                  className="opacity-60 w-[120px] sm:w-[250px]  top-[20%]  z-[99999999] left-[0%] -translate-x-1/2 mt-[20px] absolute"
                   width={250}
                   height={250}
                   loading="lazy"

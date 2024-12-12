@@ -191,7 +191,7 @@ export default function Home() {
         </section> */}
 
         <section className="py-[200px]">
-          <div className="flex justify-center flex-col">
+          {/* <div className="flex justify-center flex-col">
             <div className="txt w-[800px] mx-auto">
               <h2 className="text-[#fdb715] text-center">
                 我們有豐富的設計經驗
@@ -206,7 +206,7 @@ export default function Home() {
               </p>
               <div
                 href="/blogs"
-                className="w-[310px]  mt-[60px] relative  h-[310px] m-5 border border-white "
+                className="w-[310px]  mt-[60px] mx-auto relative  h-[310px] m-5 border border-white "
               >
                 <div className="absolute w-[300px] h-[300px] group z-[1] top-0  left-0  hover:bg-[#f5bc52] duration-300 hover:translate-y-2 px-[20px] rounded-full py-[55px] bg-white">
                   <div className=" top-0 left-0 z-[1]">
@@ -218,7 +218,7 @@ export default function Home() {
                         網頁相關知識
                       </p>
                     </div>
-                    <div>
+                    <div className="mx-auto">
                       <Image
                         width={200}
                         height={100}
@@ -233,9 +233,98 @@ export default function Home() {
                 <div className="absolte  ml-[2px] w-[300px] h-[300px]  bg-[#212121] top-[20%] mt-[15px] left-[10%] z-[9999] rounded-full "></div>
               </div>
             </div>
+          </div> */}
+        </section>
+        <section className="relative title-wrap-section">
+          <div className="absolte top-0  right-[20%] z-[9999999]">
+            <Image
+              loading="lazy"
+              placeholder="empty"
+              width={250}
+              height={250}
+              src="/images/istockphoto-940792796-612x612.png"
+              alt=""
+            ></Image>
+          </div>
+
+          <div className="down-section absolute top-[-30%] left-1/2 -translate-x-1/2 ">
+            <div className="txt w-[800px] mx-auto">
+              <h2 className="tetx-[70px]  md:text-[40px] sm:text-[50px] text-[#fdb715] text-center">
+                我們有豐富的設計經驗
+              </h2>
+              <p className="text-white text-center w-1/2 mx-auto">
+                如果有一個這樣的設計室就好了。我相信一切都會好起來的。
+                我想創造一個這樣的世界。Tommyverse 透過設計創造世界，
+              </p>
+              <p className="text-white mt-4 text-center w-1/2 mx-auto">
+                如果有一個這樣的設計室就好了。我相信一切都會好起來的。
+                我想創造一個這樣的世界。Tommyverse 透過設計創造世界，
+              </p>
+              <div
+                href="/blogs"
+                className="w-[310px]   mt-[60px] mx-auto relative  h-[310px] m-5 border border-white "
+              >
+                <div className="relative">
+                  <div className="  w-[300px] h-[300px] group z-[1] tleft-0  hover:bg-[#f5bc52] duration-300 hover:translate-y-2 px-[20px] rounded-full py-[55px] bg-white">
+                    <div className=" top-0 left-0 z-[1]">
+                      <div className="txt">
+                        <b className="text-[15px] text-[#91dcd7] text-center">
+                          Blog
+                        </b>
+                        <p className="text-[18px] duration-200 group-hover:text-[#91dcd7] font-bold text-center">
+                          網頁相關知識
+                        </p>
+                      </div>
+                      <div className="mx-auto">
+                        <Image
+                          width={200}
+                          height={100}
+                          src="/images/service_link_icon03.png"
+                          loading="lazy"
+                          alt="project-item"
+                          placeholder="empty"
+                        ></Image>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolte  ml-[2px] w-[300px] h-[300px]  bg-[#212121] top-[-20%] mt-[15px] left-[10%] z-[9999] rounded-full "></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <Image
+              src="/images/fantastic_hare_36410_blue_sky_in_the_upper_half_skyline_city_in_59f47677-412d-4ea8-ab3f-7e5a236ddad1.png"
+              width={1920}
+              height={768}
+              alt="img03"
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </div>
+          <div className="absolte top-0  right-[-80%] z-[9999999]">
+            <Image
+              loading="lazy"
+              placeholder="empty"
+              width={250}
+              height={250}
+              src="/images/pngtree-a-stunning-hot-air-balloon-png-image_13063695-2.png"
+              alt=""
+            ></Image>
           </div>
         </section>
-        <section class="relative  bg-[#91dcd7] z-[9999999999999] pb-[200px] w-full  py-[80px] ">
+
+        <section class="relative  mt-[-68vh]   pb-[200px] w-full py-[80px]">
+          <div className="z-[9999] absolute top-0 left-0">
+            <Image
+              src="/images/ocean-bg02.png.png"
+              width={1920}
+              height={768}
+              alt="img03"
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </div>
           <div className="img02 absolute top-0 left-0">
             <Image
               src="/images/service_link_icon03.png"
@@ -246,10 +335,44 @@ export default function Home() {
               loading="lazy"
             ></Image>
           </div>
-          <div className="txt flex flex-col justify-center items-center w-[50%] mx-auto">
-            <h3 className="text-[40px] text-[#16123c]">您的創意，我來實現。</h3>
+
+          <div className="img02 absolute z-[99999] bottom-[20%] left-[15%]">
+            <Image
+              src="/images/1938390_e5726.gif"
+              width={150}
+              height={200}
+              alt="img03"
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </div>
+          <div className="img02 absolute z-[99999] bottom-[12%] right-[15%]">
+            <Image
+              src="/images/12.gif"
+              width={110}
+              height={200}
+              alt="img03"
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </div>
+          <div className="img02 absolute z-[99999] bottom-[15%] right-[15%]">
+            <Image
+              src="/images/6e65f624ea8ec549680c4ee7b5816845_w200.gif"
+              width={150}
+              height={200}
+              alt="img03"
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+          </div>
+
+          <div className="txt flex flex-col z-[99999] relative justify-center items-center lg:w-[70%]    top-[-50%]  w-[90%] xl:w-[40%] mx-auto">
+            <h3 className="  text-[30px] text-white lg:text-[30px] xl:text-[40px]">
+              您的創意，我來實現。
+            </h3>
             <p>The Various Worlds Seriously And Enjoyably.</p>
-            <p className="text-[18px] leading-[38px] font-bold mt-[40px] w-[70%] text-center">
+            <p className="text-[16px]  lg:text-[18px] leading-[38px] font-bold mt-[40px] w-[70%] text-center">
               以設計為切入點創造世界。 以此為基礎進行活動，
               如果不設計也能幫上忙的話 什麼都想商量。 我是這麼想的。
               把湯米巴斯作為入口， 和創造各種世界的夥伴 連線起來，互相聊天，一起
@@ -257,7 +380,17 @@ export default function Home() {
             </p>
             <b className="text-[30px] mt-[50px]">服務</b>
           </div>
-          <div className="project-wrap  mx-auto border border-black  w-[80%] xl:w-[66%] relative justify-center flex-wrap items-center flex">
+          <div className="absolute eft-[20%] z-[999999] top-[20%]">
+            <Image
+              src="/images/b3ecf4bda9fa77f2240797ce6f04183c.gif"
+              placeholder="empty"
+              width={200}
+              height={100}
+              loading="lazy"
+              alt="coomputerGif"
+            ></Image>
+          </div>
+          <div className="project-wrap  z-[99999] mx-auto border border-black  w-[80%] xl:w-[66%] relative justify-center flex-wrap items-center flex">
             <div className="w-[210px]  mt-[60px] relative  h-[220px] m-5 border border-white ">
               <div className="absolute group z-[1] top-0 hover:bg-[#001e5a] left-0 rounded-[30px] duration-300 hover:translate-y-2 px-[20px] py-[55px] bg-white">
                 <div className=" top-0 left-0 z-[1]">
@@ -269,6 +402,7 @@ export default function Home() {
                       品牌推廣整體製作
                     </p>
                   </div>
+
                   <div>
                     <Image
                       width={200}
@@ -379,8 +513,10 @@ export default function Home() {
             style={{ boxShadow: "0 4px 8px 0 rgba(111, 78, 55, 5)" }}
           >
             <div>
-              <div className="txt z-[999999999] top-[20%] w-[70%] lg:w-[40%] absolute lg:top-[40%]  left-[20%]  lg:left-1/2 ">
-                <h3 className="text-white font-black">您的創意，我來實現</h3>
+              <div className="txt z-[999999999] top-[20%] w-[70%] lg:w-[40%] absolute lg:top-[22%]  left-[20%]  lg:left-1/2 ">
+                <h3 className="text-white text-[30px] font-black">
+                  您的創意，我來實現
+                </h3>
                 <p className="text-white mt-5 text-[20px]">
                   {" "}
                   極客網頁工作室，致力於設計優質的網站。
@@ -394,6 +530,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
             <div className="img01 top-0  lg:left-[10%] left-[-10%] absolute">
               <Image
                 src="/images/0d857afdc1e66a48db18c4ba5fb1e0b3-2-2.png"
@@ -404,9 +541,45 @@ export default function Home() {
                 alt="pexiel-img"
               ></Image>
             </div>
-            <div className="img01  bottom-0 lg:left-[40%] left-[40%] absolute">
+            <div className="img01 bottom-0  lg:left-[70%] left-[-10%] absolute">
+              <Image
+                src="/images/dfk3vrs-63ff1093-ddfa-41d2-9de2-8dff7deb3834.gif"
+                loading="lazy"
+                width={200}
+                height={100}
+                placeholder="empty"
+                alt="gif-img"
+              ></Image>
+              <div className="txt items-center flex flex-col justify-center">
+                <b className="text-[14px] text-white">網頁結構優化</b>
+                <p className="text-[12px]  mt-3  px-2 py-1 rounded-[30px] bg-[#f5be35] text-gray-900 font-bold">
+                  seo優化
+                </p>
+              </div>
+            </div>
+            {/* <div className="img01 top-0  lg:left-[10%] left-[-10%] absolute">
+              <Image
+                src="/images/0d857afdc1e66a48db18c4ba5fb1e0b3-2-2.png"
+                width={220}
+                height={1000}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div> */}
+            {/* <div className="img01  bottom-0 lg:left-[40%] left-[40%] absolute">
               <Image
                 src="/images/giphy.gif"
+                width={160}
+                height={200}
+                loading="lazy"
+                placeholder="empty"
+                alt="pexiel-img"
+              ></Image>
+            </div> */}
+            <div className="img01  bottom-0 lg:left-[40%] left-[40%] absolute">
+              <Image
+                src="/images/dbego2w-b564d0f5-7663-4467-84a3-3b49690d9586.gif"
                 width={160}
                 height={200}
                 loading="lazy"
@@ -471,6 +644,27 @@ export default function Home() {
                 ></Image>
               </div>
             </div>
+            <div className="img01 left-[10%] top-[10%] absolute">
+              <div className="flex flex-col justify-center items-center">
+                <div>
+                  <div className="chatbox">
+                    <p data-aos="zoom-in" className="text-white  font-bold">
+                      seo優化-
+                      <br />
+                      <span className="font-black text-black"> Web Design</span>
+                    </p>
+                  </div>
+                </div>
+                <Image
+                  src="/images/giphy.gif"
+                  width={120}
+                  height={100}
+                  loading="lazy"
+                  placeholder="empty"
+                  alt="pexiel-img"
+                ></Image>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -519,7 +713,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
+                        className="w-[150px] md:w-[350px] lg:w-[400px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/scremingFrog-debug.png"
@@ -541,7 +735,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
+                        className="w-[150px] md:w-[350px] lg:w-[400px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷_網站建置.webp"
@@ -563,7 +757,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
+                        className="w-[150px] md:w-[350px] lg:w-[400px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/新網站SEO規劃-極客網頁設計.webp"
@@ -585,7 +779,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="w-[150px] md:w-[300px] lg:w-[350px] rounded-lg"
+                        className="w-[150px] md:w-[350px] lg:w-[400px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/ec_240723_h-min-768x512.png"
@@ -607,7 +801,7 @@ export default function Home() {
                         width={300}
                         height={100}
                         loading="lazy"
-                        className="w-[150px] md:w-[300px] rounded-lg"
+                        className="w-[150px] md:w-[350px] rounded-lg"
                         placeholder="empty"
                         alt="swiper-img"
                         src="/images/無頭網站_高性能seo有善-極客網頁設計.png"
@@ -849,7 +1043,7 @@ export default function Home() {
               </div>
             </div>
             <div className="px-[40px] md:px-[40px]">
-              <b className="md:text-[20px] mb-[90px] sm:mb-0 text-[16px] text-gray-100">
+              <b className="md:text-[20px] mb-[90px] sm:mb-0 text-[16px] text-gray-900">
                 *
                 客製化網站：針對以上3種類型網站進行客製，打造屬於自己的風格，獨一無二的網站
               </b>
@@ -911,15 +1105,15 @@ export default function Home() {
               <h2 className="italic text-[45px] md:text-[55px] xl:text-[80px] font-extrabold text-[#fdb715] tracking-tighter ">
                 RWD
               </h2>
-              <h2 className="italic text-[32px] sm:text-[35px] xl:text-[80px] font-extrabold text-wrap xl:text-nowrap leading-[30px] xl:leading-normal text-white tracking-tighter ">
+              <h2 className="italic text-[32px] sm:text-[35px] xl:text-[80px] font-extrabold text-wrap xl:text-nowrap leading-[30px] xl:leading-normal text-black tracking-tighter ">
                 Website Design
               </h2>
             </div>
             <div className="txt flex flex-col items-start">
-              <h3 className=" text-[20px] md:text-[3rem] text-white">
+              <h3 className=" text-[20px] md:text-[3rem] text-black">
                 精選方案
               </h3>
-              <p className=" text-[20px] text-white md:text-[3rem] font-bold">
+              <p className=" text-[20px] text-black md:text-[3rem] font-bold">
                 優惠價格
               </p>
               <div className="flex  justify-center items-center">
