@@ -93,15 +93,21 @@ export default function MyApp({ Component, pageProps, router }) {
     );
   }
     return (
-       
-      <div className=' max-w-[3860px] overflow-hidden mx-auto '>
+
+     <div className=' max-w-[3860px] overflow-hidden mx-auto bg-blue-500 '>
+
         {/* <Policy/> */}
         <Head>
       
        
       </Head>
    
-        <Script
+        {/* <Script
+
+      */}
+
+        {/* <Script
+ 73c286d4e3948e977c227aa5eb0b92c80260facd
           src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
           type="text/javascript"
           integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -111,7 +117,7 @@ export default function MyApp({ Component, pageProps, router }) {
         <Script
           src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
           type="text/javascript"
-        />
+        /> */}
 <Script
         id="gtm-script"
         strategy="afterInteractive"
