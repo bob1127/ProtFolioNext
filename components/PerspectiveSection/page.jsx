@@ -249,7 +249,7 @@ const Section2 = ({ scrollYProgress }) => {
         }}
       >
         <div className="circle-logo"></div>
-        <div className="  xl:pt-[250px] pt-[100px]  h-[100vh]  z-[-1] bg-[#001e5a]  static rounded-[0px] py-[50px] mt-[140px] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
+        <div className="  xl:pt-[250px] pt-[100px]  h-auto  z-[-1] bg-[#001e5a]  static rounded-[0px] py-[50px] sm:mt-[140px] mt-[-140px] md:rounded-[60px] xl:rounded-[120px] 2xl:rounded-[120px]">
           <div className="txt  px-[25px] flex items-center flex-col justify-center py-4">
             <h2 className="text-white text-[30px] md:text-[50px] xl:text-[70px] font-bold">
               提升網站品牌形象

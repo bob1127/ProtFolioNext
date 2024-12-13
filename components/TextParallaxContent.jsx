@@ -109,7 +109,7 @@ export default function App() {
   return (
     <div className=" ">
       <div>
-        <section className="bg-cover bg-center bg-no-repeat  bg-[url('/images/space01.jpg')] z-[9999999]    md:h-[130vh] xl:portrait:h-[100vh] lg:h-[160vh] h-[150vh] xl:h-[240vh] 2xl:h-[170vh] relative">
+        <section className="bg-cover bg-center bg-no-repeat  bg-[url('/images/space01.jpg')] z-[9999999]    md:h-[130vh] xl:portrait:h-[100vh] lg:h-[160vh] h-[110vh] xl:h-[240vh] 2xl:h-[170vh] relative">
           {/* <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
             <TypewriterEffect />
           </div> */}

@@ -107,11 +107,11 @@ const EmblaCarousel = (props) => {
         >
           {slides.map((slide, index) => (
             <div
-              className="embla__slide transform flex-none min-w-0"
+              className="sm:flex-[0_0_35%] 2xl:flex-[0_0_35%] flex-[0_0_75%] embla__slide transform  min-w-0"
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
-                flex: "0 0 35%", // Increase this value to widen the slide
+
                 paddingLeft: "var(--slide-spacing)",
               }}
             >
@@ -126,8 +126,8 @@ const EmblaCarousel = (props) => {
                 }}
               >
                 <div className="embla__slide__number bg-[#f8f8f8] shadow-[inset_-3px_-7px_0_0.2rem_rgba(0,0,128,0.8)]  hover:shadow-[inset_-1px_-5px_0_0.2rem_rgba(0,0,128,0.8)] border border-black p-3 overflow-visible lg:overflow-hidden rounded-[33px] h-auto flex flex-col items-center justify-center font-semibold">
-                  <div className="flex  rounded-[33px]     p-1 md:p-2 justify-center items-center">
-                    <div className="w-[35%]">
+                  <div className="flex  sm:flex-row flex-col rounded-[33px]     p-1 md:p-2 justify-center items-center">
+                    <div className=" w-full sm:w-[35%]">
                       <Image
                         src={slide.image} // Use the image from the slide object
                         alt={slide.title} // Use title as alt text
@@ -138,7 +138,7 @@ const EmblaCarousel = (props) => {
                         loading="lazy"
                       />
                     </div>
-                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl   items-center  w-1/2 mx-auto  ">
+                    <div className="txt mt-[20px] flex-col flex justify-center rounded-xl   items-center  w-full sm:w-1/2 mx-auto  ">
                       <b className="  text-[14px] text-black md:text-[20px] text-center">
                         {slide.title} {/* Display the title */}
                       </b>

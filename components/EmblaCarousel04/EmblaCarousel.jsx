@@ -111,7 +111,7 @@ const EmblaCarousel = (props) => {
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
-                flex: "0 0 70%", // Increase this value to widen the slide
+                flex: "0 0 50%", // Increase this value to widen the slide
                 paddingLeft: "var(--slide-spacing)",
               }}
             >
