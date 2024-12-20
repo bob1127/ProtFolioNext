@@ -21,7 +21,7 @@ import {
 import MailchimpForm from "../../components/NewsletterForm.jsx";
 import NewsletterForm from "../../components/NewsletterForm.jsx";
 // import GsapText from "../components/RevealText/index";
-
+import Accordion from "../../components/AccordionWorkFlow/page.jsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
 import Script from "next/script";
@@ -242,10 +242,10 @@ export default function Blog() {
         backdrop={backdrop}
         isOpen={isOpen}
         onClose={onClose}
-        className="bg-white   p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[50%] overflow-y-scroll    w-[100%]  sm:w-[500px] z-[9999999999999999999999999] lg:w-[65%] border-2 border-blue-400 border-3 rounded-xl"
+        className=" h-auto  w-[100%]   relative p-0 md:p-[30px] m-5 sm:p-0 2xl:w-[80%]   sm:w-[500px] z-[999999999999999] lg:w-[65%]  rounded-xl"
       >
         <ModalContent
-          className="bg-white  xl:top-[50%] 2xl:top-[40%]  md:top-[70%] border-t-1  lg:top-[50%] p-1 lg:p-10  border border-black  py-2 rounded-t-[30px] h-auto z-[99999999999999999999999999]"
+          className="bg-white   top-[390vmin] sm:top-[55%]  border-t-1  p-1 lg:p-10  border border-black  py-2 rounded-t-[30px] h-auto z-[99999999999]"
           style={{
             width: "auto",
             maxWidth: "98vw",
@@ -264,7 +264,7 @@ export default function Blog() {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1"></ModalHeader>
-              <ModalBody>
+              <ModalBody className=" ">
                 <MailchimpForm />
               </ModalBody>
               <ModalFooter></ModalFooter>
@@ -293,30 +293,34 @@ export default function Blog() {
                     </h1>
                     <RevealLinks />
                   </div>
-                  <div className="box01  hidden lg:block z-1 top-[100px] absolute left-[-260px] border border-black">
-                    <img
-                      className="w-[500px]"
-                      src="https://media.licdn.com/dms/image/D5612AQEAXBUF9txcjQ/article-cover_image-shrink_720_1280/0/1709307865856?e=2147483647&v=beta&t=IWJyj-6VYXqlKL3eKwETQ0G9yCXU9nV-28efGNqSlCs"
-                      alt=""
-                    />
-                    <img
-                      className="w-[260px] ml-[290px] mt-[40px]"
-                      src="https://s3-alpha.figma.com/hub/file/1188292808/e5d4b24f-8e61-4ef0-8989-a2cd8b6509c6-cover.png"
-                      alt=""
-                    />
+                  <div className="box01  hidden sm:block z-1 lg:bottom-[-20px] sm:bottom-[-30%] absolute left-[-180px] ">
+                    <Image
+                      src="/images/Hero-img-05.webp"
+                      alt="popup-img"
+                      placeholder="empty"
+                      loading="lazy"
+                      width={600}
+                      height={400}
+                    ></Image>
                   </div>
 
-                  <div className="box02 hidden lg:block absolute top-[220px] right-[-200px]">
-                    <img
-                      className="w-[260px] mt-[-170px] ml-[190px]"
-                      src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/9ab726b26517ca0e2eb4572832bf7920d59d4a53"
-                      alt=""
-                    />
-                    <img
-                      className="w-[400px]"
-                      src="https://www.sgidigi.com/wp-content/uploads/2023/11/Spline-輕鬆製作網頁3D模型.png"
-                      alt=""
-                    />
+                  <div className="box02 hidden lg:block absolute top-0 xl:top-[220px] sm:flex sm:flex-col  right-[-40%] xl:right-[-200px]">
+                    <Image
+                      src="/images/SEO費用.webp"
+                      alt="popup-img"
+                      placeholder="empty"
+                      loading="lazy"
+                      width={200}
+                      height={200}
+                    ></Image>
+                    <Image
+                      src="/images/網址註冊費用.webp"
+                      alt="popup-img"
+                      placeholder="empty"
+                      loading="lazy"
+                      width={300}
+                      height={200}
+                    ></Image>
                   </div>
                 </main>
               </div>
@@ -1126,205 +1130,17 @@ export default function Blog() {
                   }}
                 >
                   <GsapText
-                    text="合作須知-terms"
+                    text="網站製作流程與合作須知"
                     lineHeight="70px"
                     id="text2"
                     fontSize="60px"
                   />
                 </span>
               </div>
-              <div className="terms-wrap  bg-white border w-[97%] md:w-[80vw] mx-auto p-8 md:p-10  shadow-xl rounded-xl">
-                <div className="grid  p-0 md:p-10 grid-cols-2 xl:grid-cols-4 md:grid-cols-4  gap-0 md:gap-2">
-                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
-                    <b className=" text-[16px] md:text-[20px]">Step01</b>
-                    <p className=" text-[16px] md:text-[20px]">確認雙方需求</p>
-
-                    <Image
-                      className="mt-3"
-                      src="/images/icon/collaboration.png"
-                      loading="lazy"
-                      width={300}
-                      height={300}
-                      placeholder="empty"
-                      alt="step1確認雙方需求"
-                    />
-                  </div>
-                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
-                    <b className=" text-[16px] md:text-[20px]">Step02</b>
-                    <p className=" text-[16px] md:text-[20px]">支付訂金</p>
-                    <Image
-                      className="mt-3"
-                      src="/images/icon/payment-method.png"
-                      loading="lazy"
-                      width={300}
-                      height={500}
-                      placeholder="empty"
-                      alt="step02. 支付訂金-極客網頁設計"
-                    />
-                  </div>
-                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
-                    <b className=" text-[16px] md:text-[20px]">Step03</b>
-                    <p className=" text-[16px] md:text-[20px]">開始製作</p>
-                    <Image
-                      className="mt-3"
-                      src="/images/icon/ux.png"
-                      loading="lazy"
-                      width={300}
-                      height={500}
-                      placeholder="empty"
-                      alt="step03. 開始製作"
-                    />
-                  </div>
-                  <div className="content  p-4 md:p-10 flex flex-col justify-center items-center ">
-                    <b className=" text-[16px] md:text-[20px]">Step04</b>
-                    <p className=" text-[16px] md:text-[20px]">支付尾款-結案</p>
-                    <Image
-                      className="mt-3"
-                      src="/images/icon/positive-vote.png"
-                      loading="lazy"
-                      width={300}
-                      height={500}
-                      placeholder="empty"
-                      alt="step04. 結案"
-                    />
-                  </div>
-                </div>
-                <h2>2.服務範圍 (Scope of Work)</h2>
-                <div>
-                  <ul className="p-0 m-0 ">
-                    <li className="text-[20px] mt-4 font-bold">• 網頁設計</li>
-                    <li className="text-[20px] mt-4 font-bold">• seo優化</li>
-                    <li className="text-[20px] mt-4 font-bold">• 3D建模</li>
-                    <li className="text-[20px] mt-4 font-bold">
-                      • 各項商品拍攝
-                    </li>
-                    <li className="text-[20px] mt-4 font-bold">
-                      • Banner、DM、產品圖上架、圖片美化{" "}
-                    </li>
-                    <li className="text-[20px] mt-4 font-bold">• 空拍攝影</li>
-                  </ul>
-                </div>
-                <h2>3.合約內容</h2>
-                <div>
-                  <Image
-                    src="/images/contract.png"
-                    alt="合約內容下載"
-                    placeholder="empty"
-                    loading="lazy"
-                    className=""
-                    width={400}
-                    height={400}
-                  ></Image>
-                </div>
+              <div className=" w-[95%] sm:w-[85%] md:w-[70%] mx-auto">
+                <Accordion />
               </div>
             </section>
-            {/* <section className="  py-[70px] px-[20px] flex flex-col ">
-              <div className="flex justify-center w-full">
-                <div className="">
-                  <p className=""></p>
-                </div>
-                <div className="title flex flex-col  items-center mb-6 ">
-                  <h2 className="text-[40px]  text-black font-extrabold">
-                    <GsapText
-                      text=' " 網頁設計流程" '
-                      lineHeight="70px"
-                      id="text4"
-                      fontSize="60px"
-                    />
-                  </h2>
-                  <p className="text-[22px] mx-auto">
-                    您可以跟我們溝通需求，並確認流程
-                  </p>
-                  <p className="mt-3 text-[22px] mx-auto">
-                    有特殊需求 可用下列表格 試算價格
-                  </p>
-                  <div className="flex  justify-center items-center">
-                    <a
-                      href="/contact"
-                      data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                      className="button-wrapper  w-inline-block mb-5 mt-4"
-                    >
-                      <div className="button-layout">
-                        <p className="button-text" style={{}}>
-                          立即聯絡
-                        </p>
-                        <div className="button-bg" style={{}} />
-                      </div>
-                      <div className="button-icon-block">
-                        <img
-                          src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                          loading="lazy"
-                          alt=""
-                          className="button-icon"
-                          style={{}}
-                        />
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-full flex flex-col xl:flex-row">
-                <div className="w-full lg:w-1/2">
-                  <div className="flex  flex-col  pl-0 md:pl-3  xl:pl-10  mx-auto">
-                    <div className="px-4">
-                      <SwiperScroll />
-                    </div>
-                  </div>
-                </div>
-                <div className=" w-full lg:w-1/2">
-                  <VanishList />
-                </div>
-              </div>
-            </section> */}
-
-            {/* <a href="/contact" className=" text-[16px] md:text-[20px]">
-              實際價格可以再討論 請聯繫我
-            </a> */}
-            <div className="flex flex-col ">
-              <div className="p-2 md:p-10">
-                <div className="form rounded-[40px] p-0 md:p-10 flex-col mb-[100px]  lg:flex-row  flex bg-white h-auto border-2 border-black">
-                  <div className="left w-full lg:w-[40%] p-5 md:p-[40px] h-full items-center flex-col flex justify-center">
-                    <div className="txt flex flex-col items-center justify-center">
-                      <p className="text-[30px] font-bold text-center mt-3">
-                        聯繫Jeek-極客網頁設計
-                      </p>
-                      <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">
-                        如果您聯繫我並無即時收到回覆，請耐心等候。Jeek會盡快回覆您！！！
-                      </span>
-                      <div className="flex  justify-center items-center">
-                        <a
-                          href="/terms"
-                          data-w-id="effe7372-cb77-165a-ca8a-daed52fe2ee6"
-                          className="button-wrapper  w-inline-block mb-5 mt-4"
-                        >
-                          <div className="button-layout">
-                            <p className="button-text" style={{}}>
-                              合作須知
-                            </p>
-                            <div className="button-bg" style={{}} />
-                          </div>
-                          <div className="button-icon-block">
-                            <img
-                              src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/668d5cc317612b6e859a4807_arrow_forward_24dp_17161F_FILL0_wght500_GRAD0_opsz24.svg"
-                              loading="lazy"
-                              alt=""
-                              className="button-icon"
-                              style={{}}
-                            />
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="right w-full lg:w-[60%] border  h-full overflow-y-scroll py-10">
-                    <div className="from flex justify-center items-center  overflow-y-scroll   h-auto bg-white p-[10px] lg:p-[40px] border-black-rgba  ">
-                      <NewsletterForm />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </main>
         </div>
       </div>

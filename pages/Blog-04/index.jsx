@@ -141,7 +141,7 @@ export default function Blog() {
                   MidJourney 快速上手指南
                 </a>
               </section>
-              <h1 className="text-[#333] leaing-[80px] text-center font-black mt-[50px]  ">
+              <h1 className="text-[#333] heading-title text-center  ">
                 輕鬆進入 AI 藝術世界，MidJourney <br></br> 快速上手指南
               </h1>
               <div className="title-content-date">
@@ -463,15 +463,16 @@ export default function Blog() {
                 </div>
               </div>
             </div>
+            <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+              <div className="title">
+                <h3 className=" text-[28px] md:text-[34px]">
+                  你可能也有興趣其他文章
+                </h3>
+              </div>
+              <BlogCarousel />
+            </section>
           </div>
-          <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
-            <div className="title">
-              <h3 className=" text-[28px] md:text-[34px]">
-                你可能也有興趣其他文章
-              </h3>
-            </div>
-            <BlogCarousel />
-          </section>
+
           {/* <div className="patagrph p-2 xl:p-10">
             <h2>內容行銷如何幫助網站提升搜索引擎排名？</h2>
 

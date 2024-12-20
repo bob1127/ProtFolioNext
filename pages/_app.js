@@ -94,7 +94,7 @@ export default function MyApp({ Component, pageProps, router }) {
   }
     return (
 
-     <div className=' max-w-[3860px] overflow-hidden mx-auto bg-blue-500 '>
+     <div className=' max-w-[3860px] overflow-hidden mx-auto  '>
 
         {/* <Policy/> */}
         <Head>
@@ -289,7 +289,7 @@ export default function MyApp({ Component, pageProps, router }) {
                         <div role="listitem" className="w-dyn-item">
                           <a
                             aria-label="Social link"
-                            href="https://www.facebook.com/profile.php?id=61566748097967&locale=zh_TW"
+                            href="https://www.facebook.com/profile.php?id=61568671321317&locale=zh_TW"
                             className="footer-social-link w-inline-block"
                           >
                             <img

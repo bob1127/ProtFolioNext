@@ -127,11 +127,11 @@ const EmblaCarousel = (props) => {
               >
                 <div className="embla__slide__number bg-[#f8f8f8] shadow-[inset_-3px_-7px_0_0.2rem_rgba(0,0,128,0.8)]  hover:shadow-[inset_-1px_-5px_0_0.2rem_rgba(0,0,128,0.8)] border border-black p-3 overflow-visible lg:overflow-hidden rounded-[33px] h-auto flex flex-col items-center justify-center font-semibold">
                   <div className="flex  sm:flex-row flex-col rounded-[33px]     p-1 md:p-2 justify-center items-center">
-                    <div className=" w-full sm:w-[35%]">
+                    <div className=" w-full 2xl:py-8 sm:w-[35%]">
                       <Image
                         src={slide.image} // Use the image from the slide object
                         alt={slide.title} // Use title as alt text
-                        className="xl:rounded-[22px] w-[130px] md:w-[150px] xl:w-[300px] rounded-[16px] "
+                        className="xl:rounded-[22px] w-[130px] md:w-[150px] xl:w-[300px]  rounded-[16px] "
                         width={300}
                         height={300}
                         placeholder="empty"

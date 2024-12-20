@@ -47,7 +47,12 @@ const SlideTabs = () => {
       window.removeEventListener("resize", updateIsDesktop);
     };
   }, [isDesktop]);
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // 平滑滾動
+    });
+  };
   return (
     <motion.div
       className="w-full px-[20px] 2xl:w-[65%] fixed top-0 border border-black lg:w-[90%]  md:relative md:border-[#a2a2a2] z-[999999999] mx-auto flex justify-center items-center bg-[#181818] md:bg-white rounded-b-[20px] sm:rounded-b-[20px]"
@@ -82,7 +87,7 @@ const SlideTabs = () => {
       <div className="w-[70%] flex justify-center items-center md:hidden">
         <div className="w-full border py-1 border-[#ffaf37] rounded-[30px]">
           <Marquee>
-            <p className="text-white"> 。Welcome to → Jeek Website Design</p>
+            <p className="text-white"> Welcome to → Jeek Website Design。</p>
           </Marquee>
         </div>
       </div>
@@ -153,6 +158,47 @@ const SlideTabs = () => {
             <span className="text-[14px]">FB</span>
           </div>
         </a>
+        <div className="w-[45px] h-[45px] overflow-hidden">
+          <Marquee>
+            <div className="w-[50px]"></div>
+            <Image
+              width={50}
+              height={50}
+              src="/images/fantastic_hare_36410_Fast_flying_white_plane_hand_drawn_style_c_1e2316e0-d9a9-451f-bf05-a429dbf362b4.png"
+              placeholder="empty"
+              loading="lazy"
+            ></Image>
+            <b>Jeek Design</b>
+            <div className="w-[50px]"></div>
+          </Marquee>
+        </div>
+      </div>
+      <div className="hidden relative  w-[80px] h-[80px] group duration-500  md:block">
+        <button
+          onClick={scrollToTop}
+          className="absolute rotate-[64deg] duration-300 hidden group-hover:block w-[80px] h-[80px] z-[9999999999]"
+          aria-label="Scroll to top"
+        >
+          <Image
+            src="/images/fantastic_hare_36410_Fast_flying_aircraft_hand-drawn_style_cart_ea4c3909-4772-4b34-9443-c83a2a8a2ec0.png"
+            alt="side-img-mobile"
+            placeholder="empty"
+            loading="lazy"
+            width={80}
+            height={80}
+          />
+        </button>
+        <div className="absolute  duration-500   top-0 left-0 w-[80px]  h-[80px] block z-[9] group-hover:hidden">
+          <Image
+            alt="sidebar-img"
+            width={80}
+            className=""
+            loading="lazy"
+            placeholder="empty"
+            height={80}
+            src="/images/fantastic_hare_3641jjjj0_The_pilot_opened_his_parachute_and_fell_ca_d7cc4a36-b482-4115-bf95-27224729f4b4-2.png"
+          ></Image>
+        </div>
       </div>
     </motion.div>
   );

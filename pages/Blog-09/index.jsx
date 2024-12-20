@@ -186,7 +186,7 @@ export default function Blog() {
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>深入解析 SEO 成效指標，助您精準優化網站</h2>
             </div>
-            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+            <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               Google Analytics 4 (GA4) 和 Google Search Console
               都可以用來分析網頁的 SEO
               成效指標，但它們的功能和側重點有所不同，各自提供的數據也相輔相成。
@@ -202,7 +202,7 @@ export default function Blog() {
                 </div>
                 <fieldset></fieldset>
                 <h3>1.使用者數量</h3>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className=" w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   此指標代表訪問您網站的獨立使用者數量，可以反映網站的流量來源與受歡迎程度。
                   使用者人數是網站剛開始可以最簡單判別網頁流量的依據
                 </div>
@@ -219,7 +219,7 @@ export default function Blog() {
                   有機流量被視為高質量的流量 因為用戶主動搜索相關資訊或產品
                   這使得他們更有可能轉換為客戶。
                 </div>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   有機流量通常具有持續性和長期的效益。一旦網站在搜索引擎上獲得良好排名，通常能夠持續吸引流量
                   跟依賴付費廣告的方式相比較，提供了更穩定的訪問來源。
                 </div>
@@ -271,7 +271,7 @@ export default function Blog() {
                   className="mt-4"
                 ></Image>
                 <h3 className="mt-[30px]">4.跳出率（Bounce Rate）</h3>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   跳出率是指用戶在訪問網站後未進行任何互動就離開的比例。具體而言，當用戶訪問一個頁面並在沒有進一步互動的情況下關閉頁面時，這就算作一次跳出。
                 </div>
                 <ul className="p-0 m-0 ">
@@ -293,10 +293,10 @@ export default function Blog() {
                   className="mt-4 mb-[30px]"
                 ></Image>{" "}
                 <br></br>
-                <b className="text-[16px] mt-[30px]">
+                <p className="w-full font-bold 2xl:w-[70%]  text-[16px] mt-[30px]">
                   「跳出率」是「參與度」的相對概念。因此，我們可以通過查看報表上的「參與度」來簡單計算跳出率：使用公式
                   100% - 參與度 = 跳出率，這樣就能輕鬆得出結果。
-                </b>
+                </p>
                 <Image
                   src="/images/blog/ga4-seo使用者行為-跳出率計算公式_極客網頁設計.png"
                   width={800}
@@ -309,7 +309,7 @@ export default function Blog() {
                   {" "}
                   Google Search Console
                 </h2>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   Google Search Console 專注於 <b>搜尋引擎的流量與可見性</b>
                   。它提供了有關網站在 Google 搜尋結果中的表現和技術 SEO
                   的重要信息：
@@ -375,15 +375,15 @@ export default function Blog() {
                 ></Image>
               </div>
             </div>
+            <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+              <div className="title">
+                <h3 className=" text-[28px] md:text-[34px]">
+                  你可能也有興趣其他文章
+                </h3>
+              </div>
+              <BlogCarousel />
+            </section>
           </div>
-          <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
-            <div className="title">
-              <h3 className=" text-[28px] md:text-[34px]">
-                你可能也有興趣其他文章
-              </h3>
-            </div>
-            <BlogCarousel />
-          </section>
         </div>
       </div>
 

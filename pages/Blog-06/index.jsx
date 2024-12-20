@@ -11,7 +11,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    name: "做好SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
       "SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。",
     url: "https://www.jeek-webdesign.com.tw/blog-06",
@@ -35,11 +35,11 @@ export default function Blog() {
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
-        title="SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        title="做好SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         description="SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。"
         openGraph={{
           title:
-            "SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+            "做好SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
           description:
             "SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。",
           images: [
@@ -63,7 +63,7 @@ export default function Blog() {
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
           property="og:title"
-          content="SEO能帶來哪些好處呢？-極客網頁設計"
+          content="做好SEO能帶來哪些好處呢？-極客網頁設計"
         />
         <meta
           property="og:description"
@@ -121,14 +121,14 @@ export default function Blog() {
                 </a>{" "}
                 ←
                 <a href="/blog-06" className="hover:font-black duration-300">
-                  SEO能帶來哪些好處呢？
+                  做好SEO能帶來哪些好處呢？
                 </a>
               </section>
               <h1
-                className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
+                className="text-[rgb(51,51,51)] text-center heading-title  "
                 data-aos="fade-blur"
               >
-                SEO能帶來哪些好處呢？
+                做好SEO能帶來哪些好處呢？
               </h1>
               <div className="title-content-date">
                 <div></div>

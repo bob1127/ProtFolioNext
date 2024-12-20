@@ -244,13 +244,13 @@ export default function Home() {
                     <div className="flex w-full  flex-col items-start">
                       <b className="mb-3 text-[16px]">3d model for website</b>
                       <div className="flex">
-                        <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                        <span className="bg-[#fdb715] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                           3D 形象影片
                         </span>
-                        <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                        <span className="bg-[#fdb715] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                           交互式網站
                         </span>
-                        <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                        <span className="bg-[#fdb715] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                           產品展示
                         </span>
                       </div>
@@ -383,10 +383,10 @@ export default function Home() {
                   <br></br>
                   這種設計方式能提升用戶互動體驗，吸引眼球，特別適合產品展示、品牌形象提升等用途
                 </p>
-                <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
+                <span className="bg-[#fdb715] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mr-3 mt-2 text-center">
                   Spline
                 </span>
-                <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mt-2 text-center">
+                <span className="bg-[#fdb715] inline-block px-4 border border-black text-white py-1   mt-4 md:mt-0 mt-2 text-center">
                   Blender
                 </span>
                 {/* <p className="bg-blue-700 inline-block text-white  border-black border">
@@ -418,7 +418,7 @@ export default function Home() {
             </h2>
             <p
               data-aos="fade-up"
-              className="bg-[#ffc13b] px-6  hidden md:block py-2 text-white border-black border mt-2"
+              className="bg-[#fdb715] px-6  hidden md:block py-2 text-white border-black border mt-2"
               data-aos-delay="300"
             >
               3d 建模產品運用在網頁上

@@ -82,8 +82,7 @@ function AccordionPanel({ children }) {
 export default function App() {
   return (
     <section className="App">
-      <p className="text-[30px] text-white">QA</p>
-      <h2 className="text-white">QA</h2>
+      <p className="text-[32px] font-black text-white">QA</p>
       <Accordion>
         <AccordionItem className="w-full">
           <AccordionHeader className="w-full">
@@ -92,16 +91,18 @@ export default function App() {
             </h3>
           </AccordionHeader>
           <AccordionPanel>
-            <p className="text-md text-gray-500">
-              網站設計費用依需求而異，簡單展示型網站較便宜，功能豐富的網站（如電子商務）則較貴。設計、功能需求和維護等因素會影響價格，通常從幾千元到數萬不等。
-            </p>
-            <div className="mt-5">
-              <a
-                href="/quotation"
-                className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 "
-              >
-                參考極客的報價
-              </a>
+            <div className="py-[30px]">
+              <p className="Accordion-body">
+                網站設計費用依需求而異，簡單展示型網站較便宜，功能豐富的網站（如電子商務）則較貴。設計、功能需求和維護等因素會影響價格，通常從幾千元到數萬不等。
+              </p>
+              <div className="mt-5 flex justify-center">
+                <a
+                  href="/quotation"
+                  className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 "
+                >
+                  參考極客的報價
+                </a>
+              </div>
             </div>
           </AccordionPanel>
         </AccordionItem>
@@ -112,16 +113,18 @@ export default function App() {
             </h3>
           </AccordionHeader>
           <AccordionPanel>
-            <p className="text-md text-gray-500">
-              提升網站曝光度可通過優化SEO、提高網站速度、定期更新內容、使用社交媒體宣傳以及增加反向鏈接來達成。持續關注分析數據並調整策略，有助於提高搜尋引擎排名，吸引更多潛在客戶。
-            </p>
-            <div className="mt-5">
-              <a
-                href="/blog-01"
-                className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 py-2"
-              >
-                幫您規劃網站seo
-              </a>
+            <div className="py-[30px]">
+              <p className="Accordion-body">
+                提升網站曝光度可通過優化SEO、提高網站速度、定期更新內容、使用社交媒體宣傳以及增加反向鏈接來達成。持續關注分析數據並調整策略，有助於提高搜尋引擎排名，吸引更多潛在客戶。
+              </p>
+              <div className="mt-5 flex mt-5 justify-center">
+                <a
+                  href="/blog-01"
+                  className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 py-2"
+                >
+                  幫您規劃網站seo
+                </a>
+              </div>
             </div>
           </AccordionPanel>
         </AccordionItem>
@@ -132,10 +135,12 @@ export default function App() {
             </h3>
           </AccordionHeader>
           <AccordionPanel>
-            <div className="mt-5">
-              <p className="text-md text-gray-500">
-                選擇極客，極客提供完整網站維護服務，讓您的網站隨時保持高效能運作。
-              </p>
+            <div className="py-[30px]">
+              <div className="mt-5">
+                <p className="Accordion-body">
+                  選擇極客，極客提供完整網站維護服務，讓您的網站隨時保持高效能運作。
+                </p>
+              </div>
             </div>
           </AccordionPanel>
         </AccordionItem>
@@ -146,16 +151,20 @@ export default function App() {
             </h3>
           </AccordionHeader>
           <AccordionPanel>
-            <div className="mt-5">
-              <p className="text-md text-gray-500">
-                提升網站曝光度可通過優化SEO、提高網站速度、定期更新內容、使用社交媒體宣傳以及增加反向鏈接來達成。持續關注分析數據並調整策略，有助於提高搜尋引擎排名，吸引更多潛在客戶。
-              </p>
-              <a
-                href="/blog-01"
-                className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 py-2"
-              >
-                試試無頭客製化網站
-              </a>
+            <div className="py-[30px]">
+              <div className="mt-5">
+                <p className="Accordion-body">
+                  提升網站曝光度可通過優化SEO、提高網站速度、定期更新內容、使用社交媒體宣傳以及增加反向鏈接來達成。持續關注分析數據並調整策略，有助於提高搜尋引擎排名，吸引更多潛在客戶。
+                </p>
+                <div className="flex justify-center mt-5">
+                  <a
+                    href="/blog-01"
+                    className="bg-[#ffc337] inline-block w-full md:w-auto text-center py-2 text-black rounded-[30px] px-4 py-2"
+                  >
+                    試試無頭客製化網站
+                  </a>
+                </div>
+              </div>
             </div>
           </AccordionPanel>
         </AccordionItem>
@@ -166,13 +175,13 @@ export default function App() {
             </h3>
           </AccordionHeader>
           <AccordionPanel>
-            <div className="mt-5">
-              <p className="text-md text-gray-500"> 網域費用：一年約1~2000</p>
-              <p className="text-md text-gray-500"> 主機費用：一年約5000</p>
-              <p className="text-md text-gray-500">
+            <div className="mt-5 py-[30px]">
+              <p className="Accordion-body"> 網域費用：一年約1~2000</p>
+              <p className="Accordion-body"> 主機費用：一年約5000</p>
+              <p className="Accordion-body">
                 維護費用：市面上維護費用一年約20000~50000不等，
               </p>
-              <p className="text-md text-gray-500">
+              <p className="Accordion-body">
                 極客推出一年{" "}
                 <span className="text-[22px] font-bold text-[#f6b23b]">
                   12,000

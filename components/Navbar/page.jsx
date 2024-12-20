@@ -35,7 +35,7 @@ export default function Index() {
                 </div>
                 <div role="listitem" className="menu-social-item w-dyn-item">
                   <a
-                    href="https://www.facebook.com/profile.php?id=61566748097967"
+                    href="https://www.facebook.com/profile.php?id=61568671321317"
                     className="menu-social-link w-inline-block"
                   >
                     <img
@@ -65,7 +65,7 @@ export default function Index() {
                   Line
                 </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61566748097967"
+                  href="https://www.facebook.com/profile.php?id=61568671321317"
                   className="menu-sesondary-link"
                 >
                   Facebook

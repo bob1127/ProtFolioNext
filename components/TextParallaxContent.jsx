@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FiArrowUpRight } from "react-icons/fi";
 import GsapText from "../components/RevealText/index";
 import { gsap } from "gsap";
+
 import EmblaCarouselIndex from "../components/EmblaCarouselIndex/index";
 import PerspectiveSection02 from "../components/PerspectiveSection02/page";
 import EmblaCarousel08 from "../components/EmblaCarousel08/index.jsx";
@@ -109,7 +110,7 @@ export default function App() {
   return (
     <div className=" ">
       <div>
-        <section className="bg-cover bg-center bg-no-repeat  bg-[url('/images/space01.jpg')] z-[9999999]    md:h-[130vh] xl:portrait:h-[100vh] lg:h-[160vh] h-[110vh] xl:h-[240vh] 2xl:h-[170vh] relative">
+        <section className="bg-cover bg-center bg-no-repeat  bg-[url('/images/space01.jpg')] selection: z-[9999999]  sm:h-[235vmin]  md:h-[150vmin]  lg:h-[100vmin] h-[200vmin] xl:h-[140vmin] 2xl:h-[190vmin] relative">
           {/* <div className="text z-[9999999999999] absolute w-full md:z-[-1] left-0  py-[50px] right-0  mx-auto">
             <TypewriterEffect />
           </div> */}
@@ -117,47 +118,57 @@ export default function App() {
             <PerspectiveSection />
           </div>
           <div className="relative w-[100vw] ">
-            <div className="w-full relative  h-screen flex justify-center">
-              <div className=" w-[100vw] relative">
-                <div className="relative">
+            <div className="w-full group relative h-screen flex justify-center">
+              <div className="w-[100vw] relative">
+                <div className="relative ">
                   <Image
                     src="/images/titlePopup.png"
-                    className="spring-pop z-[99] mt-[50px] left-1/2 -translate-x-1/2 absolute"
+                    className="spring-pop z-[99999999999] mt-[50px] left-1/2 2xl:w-[800px] 2xl:h-auto -translate-x-1/2 absolute"
                     alt="Spring Animation"
                     width={600}
                     height={600}
                     loading="lazy"
                   />
-                  <div className="absolute z-[9999999999] mt-[35vh] lg:mt-[50vh]">
+                  <div className="absolute z-[9999999999] mt-[45vh] sm:mt-[35vh] lg:mt-[50vh]">
                     <EmblaCarouselIndex />
                   </div>
                 </div>
 
+                {/* 彈簧動畫的 Image */}
+                <Image
+                  src="/images/ET.png"
+                  className="et-image w-[150px] rotate-[-30deg] sm:w-[250px] 2xl:w-[260px] sm:z-[-1] top-[20%] sm:top-[60%] sm:left-[24%] left-[6%] -translate-x-1/2 mt-[20px] absolute transition-transform duration-500 group-hover:animate-spring"
+                  width={250}
+                  height={250}
+                  loading="lazy"
+                  alt="ET"
+                />
+
+                {/* 其他 Image 保持不變 */}
                 <Image
                   src="/images/spaceMan.png"
-                  className=" w-[150px] sm:w-[250px] z-[99999] top-[20%] right-[0%] -translate-x-1/2  mt-[20px] absolute"
+                  className="w-[150px] sm:w-[250px] z-[99999] top-[26%] sm:top-[20%] sm:right-0 right-[-16%] -translate-x-1/2 mt-[20px] absolute"
                   width={250}
                   height={250}
                   loading="lazy"
                 />
-
                 <Image
                   src="/images/astronaut.webp"
-                  className=" w-[150px] sm:w-[250px] z-[99999] top-[30%] right-[10%] -translate-x-1/2  mt-[0px] absolute"
+                  className="w-[150px] sm:w-[250px] z-[99999] top-[30%] right-[10%] -translate-x-1/2 mt-[0px] absolute"
                   width={250}
                   height={250}
                   loading="lazy"
                 />
                 <Image
                   src="/images/fantastic_hare_36410_Planet_Surface_Solid_Color_Background_23f9a17b-e22b-4d2d-91cd-bd02d5f6a80d.png"
-                  className="opacity-60 w-[120px] sm:w-[250px]  top-[20%]  z-[99999999] left-[0%] -translate-x-1/2 mt-[20px] absolute"
+                  className="opacity-60 w-[120px] sm:w-[250px] top-0 sm:top-[20%] z-[99999999] left-[0%] -translate-x-1/2 mt-[20px] absolute"
                   width={250}
                   height={250}
                   loading="lazy"
                 />
                 <Image
                   src="/images/fantastic_hare_36410_Planet_Solid_Color_Background_6576d313-40aa-4ead-8f00-7e9ec156890e.png"
-                  className="w-[80px]  opacity-90 sm:w-[200px] z-[99999] top-[-2%] right-[-10%] -translate-x-1/2 mt-[20px] absolute"
+                  className="w-[80px] opacity-90 sm:w-[200px] z-[99999] top-[-2%] right-[-10%] -translate-x-1/2 mt-[20px] absolute"
                   alt="Spring Animation"
                   width={200}
                   height={200}
@@ -179,7 +190,7 @@ export default function App() {
         </section>
       </div>
 
-      <div className=" mt-[100px]  sm:mt-[50px] md:mt-[40px] xl:mt-[100px]  bg-[#001e5a]">
+      <div className="  bg-[#001e5a]">
         <section className="section-brand-mobile block sm:hidden">
           <EmblaCarousel08 />
         </section>

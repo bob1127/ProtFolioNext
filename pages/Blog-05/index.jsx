@@ -150,7 +150,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
               </section>
               <h1
                 data-aos="fade-blur"
-                className="text-[#333] leaing-[80px] text-center font-black mt-[50px]  "
+                className="text-[#333] heading-title text-center "
               >
                 Spline 3D 入門指南
               </h1>

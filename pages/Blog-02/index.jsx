@@ -125,12 +125,12 @@ export default function Blog() {
                   文章總覽
                 </a>{" "}
                 ←
-                <a href="/blog-02" className="hover:font-black duration-300">
+                <a href="/blog-02" className="hover:font-black duration-300 ">
                   網頁設計很花錢嗎？
                 </a>
               </section>
               <h1
-                className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  "
+                className="text-[rgb(51,51,51)]  text-center heading-title "
                 data-aos="fade-blur"
               >
                 網頁設計很花錢嗎？
@@ -181,7 +181,7 @@ export default function Blog() {
                 大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
                 <br></br> <br></br>
                 行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
-                <span className="bg-[#fad335] text-black">
+                <span className="bg-[#fdb715] text-black">
                   網站設計和SEO優化
                 </span>
                 ，您不僅能快速提升品牌曝光度，還能吸引到精準的目標客群，最終實現銷售成長。
@@ -262,20 +262,20 @@ export default function Blog() {
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   <ul className="p-0 m-0">
-                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       內容撰寫：
                     </p>
                     <li>
                       您最了解您的品牌和服務，編寫網站的基本介紹、產品描述、服務項目和常見問題等內容，有助於節省成本。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       基本排版：
                     </p>
                     <li>
                       透過一些免費的網站建置工具，如 WordPress 或
                       Wix，您可以選擇基本的排版和佈局。這些工具提供許多現成模板，讓您能輕鬆上手設計基礎頁面。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       圖片與影片素材：
                     </p>
                     <li>
@@ -299,20 +299,20 @@ export default function Blog() {
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   <ul className="p-0 m-0">
-                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       專業設計與客製化：
                     </p>
                     <li>
                       我們可以為您的網站量身訂製專業設計，確保品牌形象在網站上完整呈現，並且根據您的需求調整版面和功能。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       SEO 優化：
                     </p>
                     <li>
                       如果您希望網站能在搜尋引擎上有良好的排名，專業的 SEO
                       優化是必須的。Jeek能夠針對關鍵字、頁面結構和網站速度進行全面的優化，提高您的網站曝光率。
                     </li>
-                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       專業商業圖片拍攝與後製：
                     </p>
                     <li>
@@ -363,7 +363,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                     </div>
-                    <p className="inline-block text-[18px] mt-3 bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       商業3D建模：
                     </p>
                     <li>
@@ -398,7 +398,7 @@ export default function Blog() {
                         height={200}
                       ></Image>
                     </div>
-                    <p className="inline-block text-[18px] mt-3bg-[#fad335] text-black">
+                    <p className="inline-block text-[18px] mt-3bg-[#fdb715] text-black">
                       進階功能開發：
                     </p>
                     <li>

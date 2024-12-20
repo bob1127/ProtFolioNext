@@ -15,10 +15,86 @@
   font-style: normal; 
 }*/
 /* Start purging... */
+@font-face {
+  font-family: "ResourceHanRoundedCN-Heavy"; /* 自訂字型名稱 */
+  src: url("/fonts/ResourceHanRoundedCN-Heavy.ttf") format("truetype"); /* 字型文件的路徑 */
+  font-weight: bold;
+  font-style: normal;
+}
+@layer components{
+    .heading-title{
+        @apply   text-[26px] font-custom sm:text-[38px] xl:text-[45px]
+    }
 
+}
+@layer components{
+    .Blog_header{
+       @apply  mt-[50px] text-[30px] sm:text-[38px] text-gray-800   font-black 
+    }
 
+}
+@layer components{
+    .Blog_body{
+       @apply  leading-[40px] text-[18px] text-gray-700  mx-auto 
+    }
 
+}
+@layer components{
+    .Accordion_header{
+        @apply   text-center text-[16px] md:text-[20px] p-0 font-bold lg:font-bold
+    }
 
+}
+@layer components{
+    .Accordion_body{
+        @apply  leading-[28px] text-[16px] text-gray-800 w-full mx-auto sm:w-[80%] 
+    }
+
+}
+@keyframes spring {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-spring {
+  animation: spring 0.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+/* 搖桿震動效果 */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+.section-hidden{
+    display:none !important;
+}
 .circle-text span {
   position: absolute;
   left: 50%;

@@ -582,12 +582,8 @@ export default function Blog() {
           </div>
         </div>
         <section className="py-[80px] flex justify-center flex-col items-center">
-          <h3
-            className=" text-[26px] sm:text-[40px] 2xl:text-[50px]  font-bold"
-            data-ao-delay="300"
-            data-aos="fade-up"
-          >
-            "Others Articles"
+          <h3 className="heading-title" data-ao-delay="300" data-aos="fade-up">
+            Others Articles
           </h3>
           <div
             className="w-1/2 text-[22px] mt-5 text-center  "

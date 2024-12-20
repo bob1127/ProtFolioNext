@@ -89,9 +89,6 @@ const Section2 = ({ scrollYProgress }) => {
           </p>
         </div>
         <div className="w-full justify-between  px-[30px] flex"></div>
-        <div className="block md:hidden">
-          <EmblaCarousel08 />
-        </div>
 
         <motion.div
           style={{ y: yOffset }}

@@ -142,7 +142,7 @@ export default function Blog() {
                   如何增加搜尋引擎曝光度和排名?
                 </a>
               </section>
-              <h1 className="text-[rgb(51,51,51)] leaing-[80px] text-center font-black mt-[100px]  ">
+              <h1 className="text-[rgb(51,51,51)] text-center heading-title ">
                 如何增加搜尋引擎曝光度和排名?
               </h1>
               <div className="title-content-date">
@@ -424,15 +424,15 @@ export default function Blog() {
                 </a>
               </div>
             </div>
+            <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+              <div className="title">
+                <h3 className=" text-[28px] md:text-[34px]">
+                  你可能也有興趣其他文章
+                </h3>
+              </div>
+              <BlogCarousel />
+            </section>
           </div>
-          <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
-            <div className="title">
-              <h3 className=" text-[28px] md:text-[34px]">
-                你可能也有興趣其他文章
-              </h3>
-            </div>
-            <BlogCarousel />
-          </section>
         </div>
       </div>
 

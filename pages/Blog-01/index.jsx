@@ -135,7 +135,7 @@ export default function Blog() {
           ></Image>
         </div>
         <div className="article-content 2xl:px-[200px] p-[20px] md:px-[110px] xl:px-[200px]">
-          <div className="patagrph p-2  ">
+          <div className="patagrph mx-auto w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 aos-init aos-animate ">
             <div className="title  py-[50px] flex flex-col ">
               <section className="section_navgation pt-[50px] flex">
                 <a className="hover:font-black duration-300" href="/blogs">
@@ -146,10 +146,7 @@ export default function Blog() {
                   建立設計一個新網站-我該如何做seo規劃？
                 </a>
               </section>
-              <h1
-                data-aos="fade-blur"
-                className="text-[#333] leaing-[80px] text-center font-black mt-[50px]  "
-              >
+              <h1 data-aos="fade-blur" className=" heading-title  ">
                 建立設計一個新網站-我該如何做seo規劃？
               </h1>
 
@@ -181,7 +178,7 @@ export default function Blog() {
           </div>
 
           <div
-            className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[85%] p-2 "
+            className="patagrph mx-auto w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 aos-init aos-animate"
             data-aos="fade"
           >
             <h2>什麼是SEO？</h2>
@@ -359,15 +356,15 @@ export default function Blog() {
                 </div>
               </div>
             </div>
+            <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+              <div className="title">
+                <h3 className=" text-[28px] md:text-[34px]">
+                  你可能也有興趣其他文章
+                </h3>
+              </div>
+              <BlogCarousel />
+            </section>
           </div>
-          <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
-            <div className="title">
-              <h3 className=" text-[28px] md:text-[34px]">
-                你可能也有興趣其他文章
-              </h3>
-            </div>
-            <BlogCarousel />
-          </section>
         </div>
       </div>
     </div>

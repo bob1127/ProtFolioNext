@@ -41,12 +41,12 @@ export const PrevButton = (props) => {
 
   return (
     <button
-      className="embla__button embla__button--prev"
+      className="hidden sm:block embla__button embla__button--prev"
       type="button"
       {...restProps}
       aria-label="button"
     >
-      <p className="rotate-[180deg] hidden items-center rounded-full p-2 sm:flex justify-center  bg-[#fdb715] text-black text-[30px]">
+      <p className="rotate-[180deg] w-[35px] h-[35px] md:w-[50px] md:h-[50px] items-center rounded-full p-2 flex justify-center  bg-[#fdb715] text-black text-[18px] md:text-[30px]">
         →
       </p>
 
@@ -60,7 +60,7 @@ export const NextButton = (props) => {
 
   return (
     <button
-      className="embla__button bg-transparent inline-flex items-center justify-center cursor-pointer border-0 p-0 m-0 w-[3.6rem] h-[3.6rem]  rounded-full z-[1] text-body shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] embla__button--next"
+      className="hidden sm:block embla__button bg-transparent inline-flex items-center justify-center cursor-pointer border-0 p-0 m-0 w-[3.6rem] h-[3.6rem]  rounded-full z-[1] text-body shadow-[inset_0_0_0_0.2rem_var(--detail-medium-contrast)] embla__button--next"
       type="button"
       aria-label="button"
       style={{
@@ -73,7 +73,7 @@ export const NextButton = (props) => {
       }}
       {...restProps}
     >
-      <p className="items-center hidden rounded-full p-2  sm:flex justify-center  bg-[#fdb715] text-black inlin-block text-[30px]">
+      <p className="items-center rounded-full w-[35px] h-[35px] md:w-[50px] md:h-[50px] p-2 flex justify-center  bg-[#fdb715] text-black inlin-block text-[18px] md:text-[30px]">
         →
       </p>
     </button>

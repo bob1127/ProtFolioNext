@@ -790,15 +790,15 @@ export default function Blog() {
               </tbody>
             </table>
           </div>
+          <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+            <div className="title">
+              <h3 className=" text-[28px] md:text-[34px]">
+                你可能也有興趣其他文章
+              </h3>
+            </div>
+            <BlogCarousel />
+          </section>
         </div>
-        <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
-          <div className="title">
-            <h3 className=" text-[28px] md:text-[34px]">
-              你可能也有興趣其他文章
-            </h3>
-          </div>
-          <BlogCarousel />
-        </section>
       </section>
     </div>
   );

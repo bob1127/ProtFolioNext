@@ -46,7 +46,9 @@ export const PrevButton = (props) => {
       {...restProps}
       aria-label="button"
     >
-      <p className="rotate-[180deg] text-[30px]">→</p>
+      <p className="rotate-[180deg] w-[35px] h-[35px] md:w-[50px] md:h-[50px] items-center rounded-full p-2 flex justify-center  bg-[#fdb715] text-black text-[18px] md:text-[30px]">
+        →
+      </p>
 
       {children}
     </button>
@@ -71,7 +73,9 @@ export const NextButton = (props) => {
       }}
       {...restProps}
     >
-      <p className="text-[30px]">→</p>
+      <p className="items-center rounded-full w-[35px] h-[35px] md:w-[50px] md:h-[50px] p-2 flex justify-center  bg-[#fdb715] text-black inlin-block text-[18px] md:text-[30px]">
+        →
+      </p>
     </button>
   );
 };

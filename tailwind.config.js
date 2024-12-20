@@ -8,6 +8,13 @@ module.exports = {
   theme: {
     darkMode: 'class', // 启用 class-based dark mode
     extend: {
+       fontFamily: {
+        custom: ['"ResourceHanRoundedCN-Heavy"', 'sans-serif'],
+      },
+       screens: {
+        // 自定義斷點，名稱可以是任意的
+        'custom': '41px', // 例如，設定自定義斷點為 640px
+      },
       boxShadow: {
         'custom-inset': 'inset -3px -7px 0 0.2rem rgba(0, 0, 128, 0.8)',
         'custom-hover': 'inset -1px -5px 0 0.2rem rgba(0, 0, 128, 0.8)',
@@ -21,10 +28,7 @@ module.exports = {
           100: '#2ddcff', // 自定义蓝色
         },
       },
-      fontFamily: {
-        anton: ['"Anton Placeholder"', 'sans-serif'], // 添加自定义字体
-        primary: ['Inter', 'sans-serif'], // 默认字体
-      },
+    
       boxShadow: {
         custom: '8px 8px 0px rgba(45, 85, 255 ,.9)',
       },
@@ -33,7 +37,17 @@ module.exports = {
         moveitback: 'moveitback 400ms ease forwards',
         textRotation: "textRotation 8s linear infinite",
       },
+      animation: {
+        spring: 'spring 1s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+      },
       keyframes: {
+   spring: {
+          '0%': { top: '60%' },
+          '20%': { top: '30%' },
+          '50%': { top: '15%' },
+          '70%': { top: '22%' },
+          '100%': { top: '20%' },
+        },
         textRotation: {
           to: {
             transform: "rotate(360deg)",

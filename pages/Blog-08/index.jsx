@@ -205,7 +205,7 @@ export default function Blog() {
             className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
             data-aos="fade"
           >
-            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+            <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>Photoshop與AI技術浪潮：設計未來的融合與挑戰</h2>
               Photoshop 2024
               推出了令人期待的新功能之一：AI漸進式填充（Generative
@@ -228,13 +228,13 @@ export default function Blog() {
                   ㄧ. 什麼是 AI 漸進式填充？
                 </h2>
 
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   AI 漸進式填充（Gradual Fill）是 Photoshop 2024
                   中的一個全新工具，利用生成式 AI
                   技術，自動偵測畫面中的空白區域，並智能地填補內容。這個功能比傳統的內容感知填充更強大，因為它可以根據周圍環境逐步生成更自然、連貫的畫面，無需手動調整。
                 </div>
                 <br></br>
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   Photoshop 2024 的 AI 漸進式填充
                   相較於傳統的內容感知填充具有更高的準確性，能智能分析圖像上下文，生成更自然的填充內容。它還提供逐步控制功能，允許設計師靈活調整細節，特別適合處理複雜場景。此外，AI
                   漸進式填充減少了後期修正的需求，大幅提升設計效率，使整個創作過程更加流暢高效。
@@ -320,7 +320,7 @@ export default function Blog() {
 
               <div className="imgText mt-[60px]">
                 <h3 className="text-[20px] ">3. 創造性擴展</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   不僅限於修補功能，AI
                   漸進式填充還可以幫助創意工作者擴展圖像邊界、延伸視覺範圍，為設計增添無限可能。
                 </div>
@@ -329,7 +329,7 @@ export default function Blog() {
                   width={800}
                   height={600}
                 ></Image>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] mt-5 xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] mt-5 xl:leading-[36px]">
                   例如我在把椅子處匡選起來，並且使用生成式填充。注意：
                   這裡我們是要使用生成填充出創造的東西。所以我們必須要下關鍵字。
                 </div>
@@ -339,7 +339,7 @@ export default function Blog() {
                   height={600}
                 ></Image>
 
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] mt-5 xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] mt-5 xl:leading-[36px]">
                   例如我在把椅子處匡選起來，並且使用生成式填充。注意：
                   這裡我們是要使用生成填充出創造的東西。所以我們必須要下關鍵字。
                 </div>
@@ -377,7 +377,7 @@ export default function Blog() {
                   width={800}
                   height={600}
                 ></Image>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] mt-5 xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] mt-5 xl:leading-[36px]">
                   Photoshop 2024 的 AI
                   漸進式填充功能不僅大幅提升了圖像處理的自動化程度，還為設計師提供了更多創意的可能性。無論是修補、擴展，還是創造性生成，它都能極大縮短工作時間，同時保證出色的效果。讓我們一起迎接這場設計效率的革命性提升吧！
                 </div>

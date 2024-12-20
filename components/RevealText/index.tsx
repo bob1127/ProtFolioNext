@@ -70,7 +70,7 @@ const GsapText: React.FC<GsapTextProps> = ({ text, id }) => {
         fontSize, // 使用动态字体大小
         lineHeight: "80px", // 设置行高
         textTransform: "uppercase",
-        fontFamily: "'Bebas Neue', sans-serif",
+        fontFamily: "'ResourceHanRoundedCN-Heavy', sans-serif",
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
       }}
     >

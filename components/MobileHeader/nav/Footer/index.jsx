@@ -8,7 +8,7 @@ export default function index() {
       </a>
       <a
         className="text-white"
-        href="https://www.facebook.com/profile.php?id=61566748097967"
+        href="https://www.facebook.com/profile.php?id=61568671321317"
       >
         Facebook
       </a>

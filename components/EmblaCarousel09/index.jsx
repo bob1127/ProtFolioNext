@@ -6,21 +6,21 @@ const OPTIONS = { dragFree: true, loop: true };
 const App = () => {
   const slides = [
     {
-      image: "/images/SEO優化行銷-極客網頁設計.png",
-      title: "SEO行銷",
-      description: "網頁結構優化｜網頁速度優化｜使用者體驗優化｜網頁內容",
+      image: "/images/對現有網站不滿意.png",
+      title: "對現有網站不滿意",
+
       link: "/WebOptimization",
     },
     {
-      image: "/images/網頁設計_我們的服務內容-極客網頁設計.png",
-      title: " 網頁設計",
-      description: "網頁版型設計｜客製化網頁｜一頁式網頁｜購物網站",
+      image: "/images/收集客戶資料再行銷.png",
+      title: " 你想完整收集客戶資料，再行銷嗎？",
+
       link: "/WebOptimization",
     },
     {
-      image: "/images/商業產品攝影-極客網頁設計.png",
-      title: " 形象設計",
-      description: "  3D商品建模｜形象攝影｜商品攝影",
+      image: "/images/電商平台的高抽成01.png",
+      title: " 電商平台的高抽成",
+
       link: "/3dProduct",
     },
 

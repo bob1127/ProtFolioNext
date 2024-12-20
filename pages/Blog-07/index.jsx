@@ -148,7 +148,7 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                   Hotjar：深入洞察用戶行為，助力網站轉換率提升
                 </a>
               </section>
-              <h1 className="text-[rgb(51,51,51)]  leaing-normal text-center font-black mt-[100px]  ">
+              <h1 className="text-[rgb(51,51,51)]  text-center heading-title leading-[50px] ">
                 Hotjar：深入洞察用戶行為，<br></br>助力網站轉換率提升
               </h1>
               <div className="title-content-date">
@@ -189,7 +189,7 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
             className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
             data-aos="fade"
           >
-            <div className=" mt-5 text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+            <div className=" w-full 2xl:w-[70%] mt-5 text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               使用它可以更了解訪客在你的網站上是如何互動的。首先，它能夠揭示使用者在網頁上的點擊、滑動和停留位置，讓你清楚知道哪裡是他們關注的焦點。這有助於最佳化網頁設計，確保重要資訊不被忽略。
             </div>
 
@@ -223,14 +223,14 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                 <h2 className="text-[32px] font-bold"> 介紹</h2>
 
                 <h3 className="text-[20px] "></h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   其次，透過熱點分析，你可以發現使用者在填寫表單、點擊按鈕或進行購物過程中可能遇到的障礙，進而改進使用者體驗。這有助於提高轉換率，讓訪客更容易達成他們在網站上的目標。
                 </div>
 
                 <h2 className="text-[32px] font-bold"> 介紹</h2>
 
                 <h3 className="text-[20px] ">2-1 熱點圖 (Heatmaps)</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   熱點圖能夠直觀地顯示使用者在網頁上點擊、滑動和停留的區域。透過熱點圖，你可以清楚看到哪些內容最吸引訪客注意，哪些區域可能無法引起興趣，從而更好地調整設計和內容佈局。
                 </div>
                 <Image
@@ -253,7 +253,7 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                 ></Image>
 
                 <h3 className="text-[20px] ">2-2 訪客錄像 (Recordings)</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   訪客錄像可以錄製使用者在網站上的操作過程，例如滑動、點擊和停留的時間。這讓你能夠更真實地體驗訪客在使用網站時的體驗，發現並優化潛在的用戶體驗問題。
                 </div>
                 <Image
@@ -267,7 +267,7 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                 ></Image>
 
                 <h3 className="text-[20px] ">3.Hotjar優點</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
                   訪客錄像可以錄製使用者在網站上的操作過程，例如滑動、點擊和停留的時間。這讓你能夠更真實地體驗訪客在使用網站時的體驗，發現並優化潛在的用戶體驗問題。
                 </div>
                 <ul className="p-0 mt-5 ">
@@ -290,30 +290,30 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                 </ul>
               </div>
             </div>
-          </div>
+            <div className="patagrph p-2 xl:p-10">
+              <div className="px-[20px] p-[50px] bg-gray-100 xl:px-0">
+                <div className="text-[20px]  w-[100%]"></div>
+                <div className="p-[30px] text-[16px]">
+                  {" "}
+                  總結:
+                  最後，Hotjar提供實時的數據反饋，讓你能夠迅速適應使用者行為的變化，隨時調整網站內容和布局。總括而言，這不僅是提升用戶滿意度的關鍵一步，更是提高網站效能的不可或缺的工具。
+                </div>
 
-          <div className="patagrph p-2 xl:p-10">
-            <div className="px-[20px] p-[50px] bg-gray-100 xl:px-0">
-              <div className="text-[20px]  w-[100%]"></div>
-              <div className="p-[30px] text-[16px]">
-                {" "}
-                總結:
-                最後，Hotjar提供實時的數據反饋，讓你能夠迅速適應使用者行為的變化，隨時調整網站內容和布局。總括而言，這不僅是提升用戶滿意度的關鍵一步，更是提高網站效能的不可或缺的工具。
+                <br></br>
               </div>
-
-              <br></br>
             </div>
+            <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+              <div className="title">
+                <h3 className=" text-[28px] md:text-[34px]">
+                  你可能也有興趣其他文章
+                </h3>
+              </div>
+              <BlogCarousel />
+            </section>
           </div>
         </div>
       </div>
-      <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
-        <div className="title">
-          <h3 className=" text-[28px] md:text-[34px]">
-            你可能也有興趣其他文章
-          </h3>
-        </div>
-        <BlogCarousel />
-      </section>
+
       {/* <div className="page-wrap">
         <div
           data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"

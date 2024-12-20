@@ -146,7 +146,7 @@ export default function Blog() {
                       className="text-[#242424] text-[15px] md:text-[18px] xl:text-[22px]"
                     >
                       個人工作室 - 花費小預算，
-                      <span className="bg-[#ffc83d] inline-block px-4 border border-black text-white py-3  w-[150px] mt-4 md:mt-0 text-center">
+                      <span className="bg-[#fdb715] inline-block px-4 border border-black text-white py-3  w-[150px] mt-4 md:mt-0 text-center">
                         增加大收益
                       </span>
                     </a>
@@ -553,6 +553,30 @@ export default function Blog() {
                           </th>
                           <td className="px-2 py-4 text-[18px] sm:px-6">高</td>
                           <td className="px-2 py-4 text-[18px] sm:px-6">低</td>
+                          <td className="px-2 py-4 text-right sm:px-6"></td>
+                        </tr>
+                        <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                          <th
+                            scope="row"
+                            className="px-2 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white sm:px-6"
+                          >
+                            結構差異
+                          </th>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              前端和後端是分離的。前端（如 React、Vue
+                              等）負責顯示網站內容，後端則提供資料（通常是
+                              API）。無頭網站通常使用 API
+                              來獲取資料，並將資料渲染到前端。
+                            </p>
+                          </td>
+                          <td className="px-2 py-4 sm:px-6">
+                            <p className="text-[12px] sm:text-[14px]">
+                              WordPress 是一個整合型的
+                              CMS，前端和後端是緊密結合的。用戶通過 WordPress
+                              後台管理內容（如文章、頁面、媒體），並選擇或自定義主題來顯示這些內容。網站前端會自動顯示後台管理的內容，並且可以通過插件擴展功能。
+                            </p>
+                          </td>
                           <td className="px-2 py-4 text-right sm:px-6"></td>
                         </tr>
                       </tbody>

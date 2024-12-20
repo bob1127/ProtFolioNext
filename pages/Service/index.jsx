@@ -593,7 +593,7 @@ export default function Blog() {
           </section>
           <div className="flex flex-col pb-[30vh]">
             <div className="flex flex-col justify-center items-center">
-              <h2 className="heading is-medium-title">
+              <h2 className="heading font-custom is-medium-title">
                 我們提供專業的服務項目
               </h2>
               <p></p>
@@ -941,13 +941,13 @@ export default function Blog() {
                       <div className="flex w-full  flex-col items-start">
                         <b className="mb-3 text-[16px]">3d model for website</b>
                         <div className="flex">
-                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          <span className="bg-[#fdb715] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             3D 形象影片
                           </span>
-                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          <span className="bg-[#fdb715] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             交互式網站
                           </span>
-                          <span className="bg-[#fad335] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
+                          <span className="bg-[#fdb715] rounded-[30px] inline-block border border-black px-4 py-2 mr-2 ">
                             產品展示
                           </span>
                         </div>
@@ -1134,7 +1134,7 @@ export default function Blog() {
                           </b>
                           <p className="text-left leading-normal mt-3">
                             - Google 目前使用{" "}
-                            <span className="bg-[#fad335]">
+                            <span className="bg-[#fdb715]">
                               「移動優先索引」
                             </span>
                             Google
@@ -1145,9 +1145,9 @@ export default function Blog() {
                           <b className="text-[22px]"> 頁面加載速度</b>
                           <p className="text-left leading-normal mt-3">
                             Google 將頁面加載速度納入排名因素，尤其在{" "}
-                            <span className="bg-[#fad335]">「頁面體驗」</span>
+                            <span className="bg-[#fdb715]">「頁面體驗」</span>
                             更新後更重視移動端。建議使用{" "}
-                            <span className="bg-[#fad335]">
+                            <span className="bg-[#fdb715]">
                               Google PageSpeed Insights
                             </span>{" "}
                             測試並優化加載速度，以提升用戶體驗。
@@ -1398,13 +1398,13 @@ export default function Blog() {
                       />
 
                       <div class="flex md:flex-wrap flex-col mt-5">
-                        <span class="bg-[#fad335] text-center w-[210px] border mt-3 md:mt-0 border-black text-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        <span class="bg-[#fdb715] text-center w-[210px] border mt-3 md:mt-0 border-black text-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
                           google analytics 4
                         </span>
-                        <span class="bg-[#fad335] text-center w-[210px] text-black  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        <span class="bg-[#fdb715] text-center w-[210px] text-black  border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
                           Google Search Console
                         </span>
-                        <span class="bg-[#fad335] text-center w-[150px] text-black border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                        <span class="bg-[#fdb715] text-center w-[150px] text-black border mt-3 md:mt-3 border-black rounded-[30px] inline-block px-4 py-2 mr-2 ">
                           Hotjar
                         </span>
                       </div>
@@ -1467,10 +1467,10 @@ export default function Blog() {
                     />
                   </div>
                   <div className="flex mt-6">
-                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    <span className="bg-[#fdb715] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                       搜尋引擎優化
                     </span>
-                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    <span className="bg-[#fdb715] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                       網頁結構優化
                     </span>
                   </div>
@@ -1509,10 +1509,10 @@ export default function Blog() {
                     />
                   </div>
                   <div className="flex mt-6">
-                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    <span className="bg-[#fdb715] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                       目標明確
                     </span>
-                    <span className="bg-[#fad335] rounded-[30px] inline-block px-4 py-2 mr-2 ">
+                    <span className="bg-[#fdb715] rounded-[30px] inline-block px-4 py-2 mr-2 ">
                       選擇效益最大化
                     </span>
                   </div>

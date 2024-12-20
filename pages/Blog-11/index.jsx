@@ -165,16 +165,17 @@ export default function Blog() {
               className="rounded-md"
             ></Image>
           </div>
-          <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-            在現代網站數據分析中，Google Tag Manager (GTM) 和 Google Analytics 4
-            (GA4)
-            是不可或缺的工具。通過這兩者的整合，可以更有效地追蹤網站訪客行為，並且靈活設置各種標籤追蹤項目。本文將引導您一步步創建
-            GTM 並串接到 GA4。
-          </div>
+
           <div
             className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
             data-aos="fade"
           >
+            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+              在現代網站數據分析中，Google Tag Manager (GTM) 和 Google Analytics
+              4 (GA4)
+              是不可或缺的工具。通過這兩者的整合，可以更有效地追蹤網站訪客行為，並且靈活設置各種標籤追蹤項目。本文將引導您一步步創建
+              GTM 並串接到 GA4。
+            </div>
             <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
               <h2>深一、什麼是 Google Tag Manager 和 Google Analytics 4？</h2>
             </div>
@@ -237,6 +238,7 @@ export default function Blog() {
                 ></Image>{" "}
                 <br></br>
                 <b className="text-[16px] mt-2">建立一個容器帳戶</b>
+                <br></br>
                 <Image
                   src="/images/blog/Blog11/新增帳戶名稱-極客網頁設計.png"
                   width={800}
@@ -248,6 +250,7 @@ export default function Blog() {
                 ></Image>
                 <br></br>
                 <b className="text-[16px] mt-2">帳戶名稱設定</b>
+                <br></br>
                 <Image
                   src="/images/blog/Blog11/容器名稱-裝置類型.png"
                   width={800}
@@ -300,6 +303,7 @@ export default function Blog() {
                 <b className="text-[16px] mt-2">
                   點擊左側的 "標籤" 選項，再點擊 "新增"
                 </b>
+                <br></br>
                 <Image
                   src="/images/blog/Blog11/選擇代碼類型-極客網頁設計.png"
                   width={800}
@@ -359,6 +363,7 @@ export default function Blog() {
                 ></Image>
                 <br></br>
                 <b className="text-[16px] mt-2">點擊左下角管理員</b>
+                <br></br>
                 <Image
                   src="/images/blog/Blog11/找到你的評估id-極客網頁設計.png"
                   width={800}
@@ -372,6 +377,7 @@ export default function Blog() {
                 <b className="text-[16px] mt-2">
                   找到你的評估id 並複製，這個 ID 將用於 GTM 中標籤設定。
                 </b>
+                <br></br>
                 <Image
                   src="/images/blog/Blog11/找不到google代碼.png"
                   width={800}
@@ -385,6 +391,7 @@ export default function Blog() {
                 <b className="text-[16px] mt-2">
                   如出現找不到google代碼 及案右邊建立代碼按鈕
                 </b>
+                <br></br>
                 <Image
                   src="/images/blog/Blog11/順利新增ga4代碼.png"
                   width={800}
@@ -433,6 +440,7 @@ export default function Blog() {
               <b className="text-[16px] mt-2">
                 點擊發布代碼，可以新增版本名稱和內容
               </b>
+              <br></br>
               <Image
                 src="/images/blog/Blog11/發布此版本代碼-極客網頁設計.png"
                 width={800}
@@ -467,17 +475,18 @@ export default function Blog() {
                 這樣就順利新增ga4代碼啦！！
               </b>
             </div>
+            <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
+              <div className="title">
+                <h3 className=" text-[28px] md:text-[34px]">
+                  你可能也有興趣其他文章
+                </h3>
+              </div>
+              <BlogCarousel />
+            </section>
           </div>
         </div>
       </div>
-      <section className="others-blog mt-[60px] flex flex-col items-center justify-center">
-        <div className="title">
-          <h3 className=" text-[28px] md:text-[34px]">
-            你可能也有興趣其他文章
-          </h3>
-        </div>
-        <BlogCarousel />
-      </section>
+
       {/* <div className="page-wrap">
         <div
           data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"
