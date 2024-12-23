@@ -9,7 +9,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "輕鬆進入 AI 藝術世界，MidJourney快速上手指南｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "輕鬆進入 AI 藝術世界，MidJourney快速上手指南｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "JEEK Design 提供網站設計與品牌形象服務，專注於協助餐飲業、美業、中小企業等多種行業，打造簡單實用的解決方案。無論是購物網站、形象網站、響應式設計 (RWD) 或 SEO 行銷，我們致力於滿足您的需求，並透過清晰的合作流程提供專業的支持。歡迎聯絡我們了解更多。",
     url: "https://www.jeek-webdesign.com.tw/blog-04",

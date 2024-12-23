@@ -7,7 +7,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "如何增加搜尋引擎曝光度和排名？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "如何增加搜尋引擎曝光度和排名？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "透過關鍵字研究、內容優化、網站速度提升、行動友善設計及外部連結建立等策略，您可以顯著提升網站在搜尋引擎中的排名和曝光度。這些方法不僅能增加網站的可見性，還能有效吸引目標客戶並提升品牌影響力",
     url: "https://www.jeek-webdesign.com.tw/blog-03",

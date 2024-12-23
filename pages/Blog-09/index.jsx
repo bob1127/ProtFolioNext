@@ -11,7 +11,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "Photoshop 2024 推出的 AI 漸進式填充功能，利用 Adobe Sensei 的生成式 AI 技術，能智能地填補圖像中的空白區域，相較於傳統的內容感知填充更精確自然。設計師可以靈活控制填充細節，適用於修補、擴展和創造性生成，讓設計過程更加高效。此功能不僅提升了自動化程度，還拓展了創意可能，縮短了工作時間，為設計師帶來全新的創作體驗，是設計效率的革命性進展。",
     url: "https://www.jeek-webdesign.com.tw/blog-08",

@@ -9,7 +9,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "建立設計一個新網站-我該如何做seo規劃？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "建立設計一個新網站-我該如何做seo規劃？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "SEO（搜尋引擎優化）是一套策略，透過選擇可靠主機、使用HTTPS、提升網站速度與行動端體驗等方法，幫助網站在搜尋結果中獲得更高排名。透過關鍵詞規劃和內容優化，SEO能提升曝光度，吸引精準流量。SEO是長期策略，但能帶來持久效果，讓網站獲得穩定流量並促進業務成長。",
     url: "https://www.jeek-webdesign.com.tw/blog-01",
@@ -21,16 +21,6 @@ export default function Blog() {
   };
 
   const [isVisible, setIsVisible] = useState(false);
-
-  // useEffect(() => {
-  //   // 延遲 300ms 來啟動動畫
-  //   const timer = setTimeout(() => {
-  //     setIsVisible(true);
-  //   }, 300);
-
-  //   // 清除計時器
-  //   return () => clearTimeout(timer);
-  // }, []);
   return (
     <div className="bg-[#f9f9f8]">
       <NextSeo
@@ -93,32 +83,83 @@ export default function Blog() {
                   email: webpage.contact.email,
                 },
               },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "首頁-極客網頁設計",
+                    item: "https://www.jeek-webdesign.com.tw",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "文章列表",
+                    item: "https://www.jeek-webdesign.com.tw/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "建立設計一個新網站-我該如何做seo規劃？",
+                    item: "https://www.jeek-webdesign.com.tw/blog-01",
+                  },
+                ],
+              },
+              mainEntityOfPage: {
+                "@type": "Article",
+                headline: webpage.name,
+                description: webpage.description,
+                author: {
+                  "@type": "Person",
+                  name: "JEEK WEBDESIGN",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: webpage.logo,
+                  },
+                },
+                datePublished: "2024-12-23",
+                dateModified: "2024-12-23",
+              },
+              mainEntity: {
+                "@type": "Service",
+                name: "網頁設計相關知識",
+                description: "提供相關網頁方面知識",
+                provider: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                },
+              },
+              mainEntityOfPage: {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "什麼是SEO？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "SEO，全名是「搜尋引擎優化」（Search Engine Optimization），指的是透過一系列策略與技術，提升網站在搜尋引擎結果中的排名",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "建立設計一個新網站-我該如何做seo規劃？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "選擇可靠的主機商、確認網站網域名稱使用HTTPS（SSL加密）、現代化的網頁設計、安裝SEO分析工具：GA4和Google Search Console、優化網站速度和使用者體驗、移動端的支持與使用者體驗",
+                    },
+                  },
+                ],
+              },
             }),
           }}
         />
       </Head>
 
-      {/* <Script
-        src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=668bd563537f10fdc41abec9"
-        type="text/javascript"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"
-      />
-
-      <Script
-        src="https://cdn.prod.website-files.com/668bd563537f10fdc41abec9/js/webflow.765c1394c.js"
-        type="text/javascript"
-      /> */}
-      {/* 
-      <link
-        href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65c495d649cf47f81db6e449_webclip.png"
-        rel="shortcut icon"
-        type="image/x-icon"
-      /> */}
-      {/* <link
-        href="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65c495db397a444e7854eaa2_favicon.png"
-        rel="apple-touch-icon"
-      /> */}
       <div>
         <div className="article-title hidden md:black relative">
           <div
@@ -140,7 +181,7 @@ export default function Blog() {
               <section className="section_navgation pt-[50px] flex">
                 <a className="hover:font-black duration-300" href="/blogs">
                   文章總覽
-                </a>{" "}
+                </a>
                 ←
                 <a href="/blog-01" className="hover:font-black duration-300">
                   建立設計一個新網站-我該如何做seo規劃？

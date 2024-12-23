@@ -50,35 +50,14 @@ export default function App() {
           <Image width={700} src="bag.png" height={800} loader={imageLoader} />
         </SwiperSlide> */}
         <SwiperSlide className="flex justify-center items-center text-lg">
-          <section className="RWD  ">
-            <div className="w-full flex-col items-center justify-center lg:flex-row flex">
-              <div className="w-full bg-white lg:w-1/2  p-[25px] sm:p-[60px] flex justify-center items-center flex-col lg:p-[70px] ">
-                <div className="txt h-auto ">
-                  <h2 className="">"網頁設計-Website Design"</h2>
-                  <h3>客製化網頁設計</h3>
-                  <h3>響應式設計與行動裝置優先</h3>
-                  <h3>快速加載與性能優化</h3>
-                  <h3>使用者體驗（UX）、性能、科技發展和跨平台兼容性</h3>
-                  <p>
-                    隨著Google對移動端優化要求提升，優化您的網站以迎合移動設備，確保在搜尋結果中保持領先地位
-                  </p>
-                </div>
-              </div>
-              <div className="w-full lg:w-1/2">
-                <figure>
-                  {" "}
-                  <Image
-                    src="/images/製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計.webp"
-                    loading="lazy"
-                    alt="製作屬於你的專屬企業網站-極客網頁設計_網頁行銷_網頁建置設計"
-                    placeholder="empty"
-                    width={800}
-                    height={800}
-                  />
-                </figure>
-              </div>
-            </div>
-          </section>
+          <Image
+            src="/images/facebook_og_image.webp"
+            placeholder="empty"
+            loading="lazy"
+            alt="hero-img"
+            width={1920}
+            height={768}
+          ></Image>
         </SwiperSlide>
         <SwiperSlide className="flex justify-center items-center text-lg">
           <section className="RWD ">

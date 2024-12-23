@@ -34,7 +34,7 @@ export default function Home() {
   }, []);
 
   const webpage = {
-    name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
     url: "https://www.jeek-webdesign.com.tw",
@@ -1005,7 +1005,18 @@ export default function Home() {
         <section className="bg-gradient-to-t from-yellow-400 to-sky-400 h-[500px]"></section> */}
 
         {/* <PerspectiveSection02 /> */}
-
+        <section className="Hero-img">
+          <a href="service">
+            <Image
+              src="/images/banner02.png"
+              placeholder="empty"
+              alt="hero-img"
+              loading="lazy"
+              width={1920}
+              height={768}
+            ></Image>
+          </a>
+        </section>
         <section
           className="project_price_item_wrap py-[20vh]"
           style={{

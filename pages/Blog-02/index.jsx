@@ -9,9 +9,9 @@ import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const [isZoomed, setIsZoomed] = useState(false);
   const webpage = {
-    name: "網頁設計很花錢嗎？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "網頁設計很花錢嗎？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
-      "SEO（搜尋引擎優化）是一套策略，透過選擇可靠主機、使用HTTPS、提升網站速度與行動端體驗等方法，幫助網站在搜尋結果中獲得更高排名。透過關鍵詞規劃和內容優化，SEO能提升曝光度，吸引精準流量。SEO是長期策略，但能帶來持久效果，讓網站獲得穩定流量並促進業務成長。",
+      "不再讓網頁行銷成為負擔！Jeek提供量身定制的網站設計與SEO優化，助力品牌高效成長，無論是初創企業還是中小型商家，預算內實現高效行銷。",
     url: "https://www.jeek-webdesign.com.tw/blog-02",
     logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
     contact: {
@@ -40,7 +40,7 @@ export default function Blog() {
         />
         <meta
           property="og:description"
-          content="透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。"
+          content="不再讓網頁行銷成為負擔！Jeek提供量身定制的網站設計與SEO優化，助力品牌高效成長，無論是初創企業還是中小型商家，預算內實現高效行銷。"
         />
         <meta
           property="og:image"
@@ -51,6 +51,16 @@ export default function Blog() {
           content="https://www.jeek-webdesign.com.tw/blog-02"
         />
         <meta property="og:type" content="website" />
+
+        <meta
+          name="title"
+          content="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好"
+        />
+        <meta
+          name="description"
+          content="想要專業網頁設計卻預算有限？Jeek提供精準的網站設計與SEO優化服務，無論是中小型企業還是初創品牌，都能在有限預算內達成行銷效果。"
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -74,35 +84,66 @@ export default function Blog() {
                   email: webpage.contact.email,
                 },
               },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "首頁-極客網頁設計",
+                    item: "https://www.jeek-webdesign.com.tw",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "文章列表",
+                    item: "https://www.jeek-webdesign.com.tw/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "網頁設計很花錢嗎？",
+                    item: "https://www.jeek-webdesign.com.tw/blog-02",
+                  },
+                ],
+              },
+              mainEntityOfPage: {
+                "@type": "Article",
+                headline: webpage.name,
+                description: webpage.description,
+                author: {
+                  "@type": "Person",
+                  name: "JEEK WEBDESIGN",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: webpage.logo,
+                  },
+                },
+                datePublished: "2024-11-20",
+                dateModified: "2024-12-23",
+              },
+              mainEntity: {
+                "@type": "Service",
+                name: "網頁設計相關知識",
+                description: "提供相關網頁方面知識",
+                provider: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                },
+              },
             }),
           }}
         />
       </Head>
-      <NextSeo
+
+      {/* <NextSeo
         title="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
-        description="透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。"
-        openGraph={{
-          title:
-            "網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這",
-          description:
-            "透過精心規劃與適當的資源分配，控制成本並提升品牌形象。掌握基礎網站設計、SEO優化、行動友善設計和外部連結建立，讓您的網站在搜尋引擎中脫穎而出，成為穩定流量來源，促進業務增長。",
-          images: [
-            {
-              url: "https://www.jeek-webdesign.com.tw/images/blog/網頁設計很花錢嗎-極客網頁設計_網頁seo行銷.png",
-              width: 800,
-              height: 600,
-              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
-            },
-          ],
-        }}
-        additionalMetaTags={[
-          {
-            name: "keywords",
-            content:
-              "網站設計, SEO優化, 成本控制, 網頁設計公司, 行動友善, 3D建模, 品牌形象提升, 自然流量, 搜尋引擎排名, 網站速度優化, 外部連結, Google PageSpeed Insights, 關鍵字規劃, 網站可見性, 數位行銷, 網站建置",
-          },
-        ]}
-      />
+        description="不再讓網頁行銷成為負擔！Jeek提供量身定制的網站設計與SEO優化，助力品牌高效成長，無論是初創企業還是中小型商家，預算內實現高效行銷。"
+      /> */}
 
       <div>
         <div className="article-title hidden md:black relative">
@@ -174,10 +215,10 @@ export default function Blog() {
             data-aos="fade"
           >
             <div>
-              <h2 className="heading mt-[50px] is-medium-title">
+              <h2 className="Blog_header">
                 "不要再認為自己的品牌做網頁行銷很花錢了！"
               </h2>
-              <p className=" text-[16px] leading-normal text-left ">
+              <p className=" Blog_body ">
                 大家總是覺得，做網站和網頁行銷一定要花大錢才能有效果。但事實上，Jeek提供的方案，能讓您的品牌在預算內大放異彩！不論您是初創企業還是中小型商家，都可以為您量身打造專屬的網頁行銷策略，讓您的品牌在網路上脫穎而出。
                 <br></br> <br></br>
                 行銷不該是遙不可及的奢侈品，而是每一個有潛力的品牌都能負擔得起的投資。透過{" "}
@@ -189,44 +230,45 @@ export default function Blog() {
             </div>
             <br></br>
             <div className=" text-[16px] xl:text-[18px]  leading-normal xl:leading-[36px] text-[#171717]">
-              <h2>
-                透過精心規劃和明智選擇，不僅能控制成本，還能有效提升品牌形象與業務效益。
+              <h2 className="Blog_header ">
+                透過精心規劃和明智選擇，不僅能控制成本，<br></br>
+                還能有效提升品牌形象與業務效益。
               </h2>
-              很多人認為網頁設計一定要投入大筆資金，但其實並非如此。透過一些小技巧和合理的資源分配，網站設計的成本可以有效降低。事實上，有些步驟是可以自己來完成的，然而，為了達到專業效果，某些部分還是建議找專業的網頁設計公司來幫忙。我們就來看看哪些工作可以自己做，哪些部分可以交給我們吧！
+              <p className=" Blog_body ">
+                很多人認為網頁設計一定要投入大筆資金，但其實並非如此。透過一些小技巧和合理的資源分配，網站設計的成本可以有效降低。事實上，有些步驟是可以自己來完成的，然而，為了達到專業效果，某些部分還是建議找專業的網頁設計公司來幫忙。我們就來看看哪些工作可以自己做，哪些部分可以交給我們吧！
+              </p>
             </div>
             <div>
               {/* <div className="text-dot-block">
                         <div className="dot" />
                         <p className="paragraph">網頁設計</p>
                       </div> */}
-              <h2 className="heading is-medium-title">
-                "個人接案，彈性更高，效率更高"
-              </h2>
+              <h2 className="Blog_header">"個人接案，彈性更高，效率更高"</h2>
               <div className="flex items-start flex-col ">
                 <div className="mb-6 flex flex-col items-start">
                   <b className="text-[22px]">成本效益高</b>
-                  <p className="text-left leading-normal mt-3">
+                  <p className="Blog_body">
                     -
                     由於沒有大型團隊和高額管理費用，個人接案者能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
                   </p>
                 </div>
                 <div className="mb-6 flex flex-col items-start">
                   <b className="text-[22px]">專注度高</b>
-                  <p className="text-left leading-normal mt-3">
+                  <p className="Blog_body">
                     -
                     個人接案者通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
                   </p>
                 </div>
                 <div className="mb-6 flex flex-col items-start">
                   <b className="text-[22px]">靈活性強</b>
-                  <p className="text-left leading-normal mt-3">
+                  <p className="Blog_body">
                     -
                     作為個人接案者，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
                   </p>
                 </div>
                 <div className="mb-6 flex flex-col items-start">
                   <b className="text-[22px]">溝通便捷</b>
-                  <p className="text-left leading-normal mt-3">
+                  <p className="Blog_body">
                     -
                     您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
                   </p>
@@ -258,27 +300,27 @@ export default function Blog() {
             </div>
             <div className="">
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> 可以自己來的部分：</h2>
+                <h2 className="Blog_header"> 可以自己來的部分：</h2>
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   <ul className="p-0 m-0">
                     <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       內容撰寫：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       您最了解您的品牌和服務，編寫網站的基本介紹、產品描述、服務項目和常見問題等內容，有助於節省成本。
                     </li>
                     <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       基本排版：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       透過一些免費的網站建置工具，如 WordPress 或
                       Wix，您可以選擇基本的排版和佈局。這些工具提供許多現成模板，讓您能輕鬆上手設計基礎頁面。
                     </li>
                     <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       圖片與影片素材：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       如果您有品牌素材，建議自行準備。簡單的品牌圖片或影片展示可以在網站上直接使用，這樣能省去專業拍攝或影像處理的費用。
                     </li>
                     <a
@@ -292,30 +334,27 @@ export default function Blog() {
                 </div>
                 <br></br>
 
-                <h2 className="text-[32px] font-bold">
-                  {" "}
-                  建議尋求專業幫助的部分：
-                </h2>
+                <h2 className="Blog_header"> 建議尋求專業幫助的部分：</h2>
 
                 <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
                   <ul className="p-0 m-0">
                     <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       專業設計與客製化：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       我們可以為您的網站量身訂製專業設計，確保品牌形象在網站上完整呈現，並且根據您的需求調整版面和功能。
                     </li>
                     <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       SEO 優化：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       如果您希望網站能在搜尋引擎上有良好的排名，專業的 SEO
                       優化是必須的。Jeek能夠針對關鍵字、頁面結構和網站速度進行全面的優化，提高您的網站曝光率。
                     </li>
                     <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       專業商業圖片拍攝與後製：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       Jeek可協助您拍攝高品質的產品或形象照，並進行專業的後製處理，以確保圖片完美呈現於網站上，提升視覺效果。這不僅讓您的產品看起來更吸引人，也能增強品牌的專業形象。
                     </li>
                     <div className="grid grid-cols-1  gap-2  md:grid-cols-3 mb-[38px]">
@@ -366,7 +405,7 @@ export default function Blog() {
                     <p className="inline-block text-[18px] mt-3 bg-[#fdb715] text-black">
                       商業3D建模：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       想要展示產品的3D視覺效果嗎？我們提供商業3D建模服務，讓您的顧客能更直觀地查看產品細節。無論是用於互動展示還是產品展示頁面，3D模型都能為您的網站增添現代感，提升顧客體驗。
                     </li>
                     <div className="grid grid-cols-1  gap-2  md:grid-cols-3 mb-[38px]">
@@ -401,7 +440,7 @@ export default function Blog() {
                     <p className="inline-block text-[18px] mt-3bg-[#fdb715] text-black">
                       進階功能開發：
                     </p>
-                    <li>
+                    <li className="Blog_body">
                       如果您的網站需要整合購物車、會員系統或是表單等進階功能，這些複雜的程式開發與整合工作可以交給我們處理，確保網站運作順暢。
                     </li>
                   </ul>

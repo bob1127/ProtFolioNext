@@ -161,7 +161,7 @@ export default function Home() {
   };
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const webpage = {
-    name: "為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+    name: "為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "Next.js 和 WordPress 結合打造無頭網站，能提升網站性能、內容管理和開發靈活性。透過靜態生成（SSG）、伺服器端渲染（SSR）和 CDN 優化，網站速度顯著提高，並透過 API 支援多渠道發佈。使用無頭架構，開發者可自由設計前端，同時利用 WordPress 強大的內容管理功能。相比傳統 WordPress 網站，無頭網站具有更好的 SEO 和安全性，適合需要高效性能和自訂設計的專案。",
     url: "https://www.jeek-webdesign.com.tw/blog-10",
@@ -191,7 +191,7 @@ export default function Home() {
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
           property="og:title"
-          content="為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐"
+          content="為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐"
         />
         <meta
           property="og:description"
@@ -231,11 +231,11 @@ export default function Home() {
         />
       </Head>
       <NextSeo
-        title="為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐"
+        title="為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐"
         description="極客網頁設計為您的企業提供專業的CIS設計服務，幫助您塑造強而有力的品牌形象。我們的CIS設計方案涵蓋企業識別系統的所有層面，包括標誌設計、視覺風格、色彩搭配與品牌手冊，確保您的品牌在市場中保持一致性和辨識度。透過精心設計的CIS，我們協助您提升品牌的專業形象，增強與顧客的連結，並在競爭激烈的市場中脫穎而出。"
         openGraph={{
           title:
-            "為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
+            "為您的企業提供專業的CIS設計-極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
           description:
             "極客網頁設計為您的企業提供專業的CIS設計服務，幫助您塑造強而有力的品牌形象。我們的CIS設計方案涵蓋企業識別系統的所有層面，包括標誌設計、視覺風格、色彩搭配與品牌手冊，確保您的品牌在市場中保持一致性和辨識度。透過精心設計的CIS，我們協助您提升品牌的專業形象，增強與顧客的連結，並在競爭激烈的市場中脫穎而出。",
           images: [

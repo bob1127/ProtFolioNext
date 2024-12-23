@@ -30,6 +30,13 @@
 
 }
 @layer components{
+    .Blog_mark{
+          @apply  leading-[40px] text-[20px] text-gray-700  mx-auto 
+
+    }
+
+}
+@layer components{
     .Blog_header{
        @apply  mt-[50px] text-[30px] sm:text-[38px] text-gray-800   font-black 
     }
