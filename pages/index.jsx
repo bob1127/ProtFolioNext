@@ -1,8 +1,8 @@
 import Marquee from "react-fast-marquee";
 
 import EmblaCarousel02 from "../components/EmblaCarousel04/index.jsx";
-import PerspectiveSection02 from "../components/PerspectiveSection02/page";
-import SwiperScroll from "../components/SwiperScroll02/page";
+// import PerspectiveSection02 from "../components/PerspectiveSection02/page";
+// import SwiperScroll from "../components/SwiperScroll02/page";
 import IndexProjectSlider from "../components/IndexProjectSlider/page.jsx";
 import { useRef, useEffect } from "react";
 import GsapText from "../components/RevealText/index";
@@ -19,8 +19,8 @@ import Accordion from "../components/Accordion/page.jsx";
 import TextPsrrallac from "../components/TextParallaxContent";
 import Head from "next/head";
 import DigitalBtn from "../components/digitalBtn/page.jsx";
-import DragCarousel from "../components/DragCarousel/index.jsx";
-import SlickCarousel from "../components/ThreeDCarousel/page.jsx";
+// import DragCarousel from "../components/DragCarousel/index.jsx";
+// import SlickCarousel from "../components/ThreeDCarousel/page.jsx";
 import NewsletterForm from "../components/NewsletterForm";
 
 // import { Roboto } from "@next/font/google";
@@ -70,15 +70,7 @@ export default function Home() {
     <div className="bg-[#001e5a]">
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        {/* 
-        <meta
-          property="og:title"
-          content="極客網頁設計｜JEEK WEBDESIGN｜形象官網、客製化網站、套版網站、商業攝影、seo優化 - 你的網站不想在跟別人一樣嗎？｜你的創意，我來實踐"
-        />
-        <meta
-          property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
-        /> */}
+
         <meta
           property="og:image"
           content="https://www.jeek-webdesign.com.tw/images/facebook_og_image.jpg"
@@ -92,8 +84,50 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "WebPage",
               name: webpage.name,
+              alternateName: "JEEK WEBDESIGN - 網頁設計專家", // 別名
               description: webpage.description,
               url: webpage.url,
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "首頁",
+                    item: "https://www.jeek-webdesign.com.tw",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "服務內容",
+                    item: "https://www.jeek-webdesign.com.tw/service",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "精選案例",
+                    item: "https://www.jeek-webdesign.com.tw/project",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Blog",
+                    item: "https://www.jeek-webdesign.com.tw/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "專案報價",
+                    item: "https://www.jeek-webdesign.com.tw/quotation",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "使用技術",
+                    item: "https://www.jeek-webdesign.com.tw/technology",
+                  },
+                ],
+              },
               publisher: {
                 "@type": "Organization",
                 name: webpage.name,
@@ -101,12 +135,68 @@ export default function Home() {
                   "@type": "ImageObject",
                   url: webpage.logo,
                 },
+                sameAs: [
+                  "https://www.facebook.com/profile.php?id=61568671321317",
+                  "https://line.me/ti/p/@690cbklx",
+                  "https://www.instagram.com/jeek_webdesign/",
+                ],
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: webpage.contact.phone,
                   contactType: "Customer Service",
                   email: webpage.contact.email,
                 },
+              },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${webpage.url}/search?q={search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
+              mainEntity: {
+                "@type": "Service",
+                name: "網頁設計",
+                description: "提供客製化網頁設計、形象網站建置及SEO優化服務。",
+                provider: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                },
+              },
+              mainEntityOfPage: {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "網頁設計需要多久完成？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "網頁設計的完成時間取決於專案的複雜度，通常需要 2-6 週的時間來完成設計和開發。",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "做好一個網站要花費多少？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "網站設計費用依需求而異，簡單展示型網站較便宜，功能豐富的網站（如電子商務）則較貴。設計、功能需求和維護等因素會影響價格，通常從幾千元到數萬不等。",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "要怎麼提升我的網站曝光度？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "提升網站曝光度可通過優化SEO、提高網站速度、定期更新內容、使用社交媒體宣傳以及增加反向鏈接來達成。持續關注分析數據並調整策略，有助於提高搜尋引擎排名，吸引更多潛在客戶。",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "網站建設好之後需要什麼成本？",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "網域費用：一年約1000、主機費用：一年約3-5000、維護費用：市面上維護費用一年約20000~50000不等、極客推出一年 12,000維護服務。",
+                    },
+                  },
+                ],
               },
             }),
           }}
@@ -132,22 +222,6 @@ export default function Home() {
         />
 
         <TextPsrrallac />
-        {/* <section className="section_analysis mt-[40vh] sm:mt-[50vh] lg:mt-[40vh] xl:mt-0 relative flex flex-col justify-center ">
-          <div className="title mb-[70px] w-[80%] pl-[100px]">
-            <h2 className="text-[32px] md:text-[40px] lg:text-[70px]  text-[#fdb715] ">
-              幫助您業務成效分析
-            </h2>
-            <p className="mt-7 text-white text-[16px] md:text-[20px]   ">
-              網站建置好了，接下來開始分析您網站的成效，並且找出問題，<br></br>
-              持續更新精進網站，提升網站排名！！
-            </p>
-          </div>
-          <DragCarousel />
-        </section> */}
-
-        {/* <section className="section_HeroImg ">
-          <div className="white  w-full left-0 top-0 absolute z-[9999] h-[100vh] bg-[#001e5a]"></div>
-        </section> */}
 
         <section className="relative mt-[95vmin]  sm:mt-[0vmin] sm:pt-[50vmin] md:mt-[60vmin] xl:mt-[70vmin] 2xl:mt-[-20vmin]   title-wrap-section">
           <div className="txt absolute left-1/2 -translate-x-1/2   top-[0%]  sm:top-[40%]  md:top-[55%] xl:top-[55%] translate-y-0  sm:-translate-y-1/2  flex flex-col justify-center items-center">
@@ -204,7 +278,7 @@ export default function Home() {
               placeholder="empty"
               width={250}
               height={250}
-              src="/images/fantastic_hare_36410_The_pilot_opened_his_parachute_and_fell_ca_20055053-9da9-430a-ab63-e7e849588d4c.png"
+              src="/images/Parachute02.webp"
               alt=""
             />
           </div>
@@ -782,7 +856,7 @@ export default function Home() {
           <div className="left h-auto sm:h-[400px] md:h-[600px] 2xl:h-[800px] w-[100vw]  mt-[40px] lg:mt-0   py-0 bg-[#1b9b12] sm:pt-[80px]  flex  sm:flex-row flex-col  relative border-b-[30px] border-t-[30px]    mx-auto  rounded-none       border-[#5cdd3c]">
             <div className=" pl-0 sm:pl-10  relative  w-full sm:w-[30%]">
               <Image
-                src="/images/pexels-building.png"
+                src="/images/pexels-building.webp"
                 alt="pexels-building"
                 className=" relative z-[999999999] mt-[-20vh] sm:mt-0 sm:absolute bottom-0"
                 placeholder="empty"
@@ -1390,7 +1464,7 @@ export default function Home() {
             data-aos-delay="400"
             className="item-wrap bg-[url('/images/fantastic_hare_36414_Fast_flying_white_plane_hand_drawn_style_c_8a7e30b3-38c8-44b6-bf95-361aff7ff42c.png')] bg-contain md:bg-cover bg-no-repeat bg-center w-full md:w-[100%] mx-auto flex flex-wrap"
           >
-            <div className="price-item  sm:flex  hidden   w-full 2x:w-[80%] mx-auto  flex-wrap justify-center  mt-4 pb-[100px] relative">
+            <div className="price-item  sm:flex  hidden   w-full 2x:w-[80%] mx-auto pb-[50vh] flex-wrap justify-center  mt-4  relative">
               <div className="white-item py-[30px] group overflow-hidden  flex flex-col  items-center w-[90%] border-4 border-[#dcdcde]  sm:w-[350px] xl:w-[430px]   bg-[#eaeaee] rounded-[30px] mx-4 mt-4">
                 <div className="txt  flex flex-col justify-center items-center">
                   <p className="text-black font-bold text-[26px]">精選方案</p>
@@ -1409,17 +1483,7 @@ export default function Home() {
                     <li className="text-[16px] font-bold mt-2">seo優化</li>
                   </ul>
                 </div>
-                <div className="img-item group-hover:scale-[1.05] duration-1000 py-[20px]">
-                  <Image
-                    src="/images/Hero-img-0.png"
-                    width={600}
-                    alt="img-item"
-                    height={600}
-                    className="rounded-[15px]"
-                    loading="lazy"
-                    placeholder="empty"
-                  ></Image>
-                </div>
+
                 <b className="text-center mt-5">形象網站｜客製化網站</b>
               </div>
               <div className="white-item py-[30px] group overflow-hidden  w-[90%]  border-4 border-[#dcdcde] sm:w-[350px] xl:w-[430px]  flex flex-col  items-center  bg-[#eaeaee] rounded-[30px] mx-4 mt-4">
@@ -1442,17 +1506,7 @@ export default function Home() {
                     <li className="text-[16px] font-bold mt-2">基本seo優化</li>
                   </ul>
                 </div>
-                <div className="img-item group-hover:scale-[1.05] duration-1000 py-[20px]">
-                  <Image
-                    src="/images/Hero-img-0.png"
-                    width={600}
-                    alt="img-item"
-                    height={600}
-                    className="rounded-[15px]"
-                    loading="lazy"
-                    placeholder="empty"
-                  ></Image>
-                </div>
+
                 <b className="text-center mt-5">
                   活動頁面｜新產品頁面｜主打商品頁面
                 </b>
@@ -1484,17 +1538,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="img-item group-hover:scale-[1.05] duration-1000 py-[20px]">
-                  <Image
-                    src="/images/Hero-img-0.png"
-                    width={600}
-                    alt="img-item"
-                    height={600}
-                    className="rounded-[15px]"
-                    loading="lazy"
-                    placeholder="empty"
-                  ></Image>
-                </div>
+
                 <b className="text-center mt-5">
                   wordpress購物網站｜客製化購物網站
                 </b>
@@ -1522,17 +1566,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="img-item group-hover:scale-[1.05] duration-1000 py-[20px]">
-                  <Image
-                    src="/images/Hero-img-0.png"
-                    width={600}
-                    alt="img-item"
-                    height={600}
-                    className="rounded-[15px]"
-                    loading="lazy"
-                    placeholder="empty"
-                  ></Image>
-                </div>
+
                 <b className="text-center mt-5">特殊網頁設計版面｜無頭網頁</b>
               </div>
             </div>

@@ -429,7 +429,7 @@ export default function Home() {
 
         <section className="marketing  lg:w-full 2xl:w-[80%]  mx-auto ">
           <div className="Title flex flex-col justify-center items-center w-full px-[26px] lg:w-2/3 2xl:w-[60%] mx-auto">
-            <h2 className="text-center">我該如何選擇行銷方式</h2>
+            <h2 className="text-center font-custom">我該如何選擇行銷方式</h2>
             <p className="w-full lg:w-2/3 mb-3 text-[14px] mt-3 sm:text-[16px] lg:text-[16px] text-center mb-4 leading-normal">
               在當今數位化時代，增加網路曝光度對於任何企業或品牌都至關重要。選擇適合的行銷方式不僅能提高品牌知名度，還能有效吸引潛在客戶和促進銷售。然而，面對各種行銷手段，如何做出最佳選擇呢？
             </p>
@@ -855,7 +855,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="txt w-full 2xl:w-[80%]">
-                <h4 className=" text-[25px] md:text-[40px] font-light text-black leading-normal">
+                <h4 className="text-[25px] font-normal md:text-[30px] leading-normal  text-black">
                   網頁SEO很重要嗎？
                 </h4>
 

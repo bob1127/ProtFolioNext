@@ -196,7 +196,7 @@ const SlideTabs = () => {
             loading="lazy"
             placeholder="empty"
             height={80}
-            src="/images/fantastic_hare_3641jjjj0_The_pilot_opened_his_parachute_and_fell_ca_d7cc4a36-b482-4115-bf95-27224729f4b4-2.png"
+            src="/images/Parachute.webp"
           ></Image>
         </div>
       </div>

@@ -153,7 +153,7 @@ export default function Blog() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/ec_241210_m-min-768x512.png"
+              src="/images/製作網頁需要哪些費用-極客網頁設計.png"
               width={900}
               height={500}
               placeholder="empty"

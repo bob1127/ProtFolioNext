@@ -176,8 +176,8 @@ export default function App() {
           </AccordionHeader>
           <AccordionPanel>
             <div className="mt-5 py-[30px]">
-              <p className="Accordion-body"> 網域費用：一年約1~2000</p>
-              <p className="Accordion-body"> 主機費用：一年約5000</p>
+              <p className="Accordion-body"> 網域費用：一年約1000</p>
+              <p className="Accordion-body"> 主機費用：一年約3-5000</p>
               <p className="Accordion-body">
                 維護費用：市面上維護費用一年約20000~50000不等，
               </p>
@@ -186,7 +186,7 @@ export default function App() {
                 <span className="text-[22px] font-bold text-[#f6b23b]">
                   12,000
                 </span>
-                高品質維護服務。
+                維護服務。
               </p>
             </div>
           </AccordionPanel>

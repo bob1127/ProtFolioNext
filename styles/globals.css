@@ -16,11 +16,13 @@
 }*/
 /* Start purging... */
 @font-face {
-  font-family: "ResourceHanRoundedCN-Heavy"; /* 自訂字型名稱 */
-  src: url("/fonts/ResourceHanRoundedCN-Heavy.ttf") format("truetype"); /* 字型文件的路徑 */
+  font-family: "ResourceHanRoundedCN-Heavy";
+  src: url("/fonts/ResourceHanRoundedCN-Heavy.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;  /* 使用 swap 策略 */
 }
+
 @layer components{
     .heading-title{
         @apply   text-[26px] font-custom sm:text-[38px] xl:text-[45px]
