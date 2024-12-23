@@ -275,8 +275,16 @@ export default function Blog() {
       <div className="pb-[100px]">
         <div id="webpage" className="page-wrapper">
           <main className="main">
-            <section className="slider-hero">
-              <SwiperScroll />
+            <section className="slider-hero bg-[#e3fd68] pt-[100px]">
+              {/* <SwiperScroll /> */}
+              <Image
+                src="/images/banner03.png"
+                placeholder="empty"
+                alt="hero-img"
+                loading="lazy"
+                width={1920}
+                height={768}
+              ></Image>
             </section>
             <section className="Hero-title mt-[30px] md:mt-0 px-[10px] md:px-[70px]  pt-[0px] md:pt-[150px] py-6 ">
               <div className="container duration-500  bg-[#f3c13a]  border-2 border-gray-900 rounded-2xl overflow-hidden  h-[40vh] md:h-[85vh] xl:h-[90vh] 2xl:h-[65vh] flex justify-start flex-col items-center">
