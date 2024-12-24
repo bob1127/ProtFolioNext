@@ -38,7 +38,7 @@
 }
 @layer components{
     .Blog_header{
-       @apply  mt-[50px] text-[30px] sm:text-[38px] text-gray-800   font-black 
+       @apply  mt-[50px] leading-[55px] text-[30px] sm:text-[38px] text-gray-800   font-black 
     }
 
 }

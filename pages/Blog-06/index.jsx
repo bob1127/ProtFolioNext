@@ -11,7 +11,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "做好SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    name: "做好SEO能帶來哪些好處呢？｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
       "SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。",
     url: "https://www.jeek-webdesign.com.tw/blog-06",
@@ -34,40 +34,15 @@ export default function Blog() {
   // }, []);
   return (
     <div className="bg-[#f9f9f8]">
-      <NextSeo
-        title="做好SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
-        description="SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。"
-        openGraph={{
-          title:
-            "做好SEO能帶來哪些好處呢？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
-          description:
-            "SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。",
-          images: [
-            {
-              url: "https://www.jeek-webdesign.com.tw/images/blog/SEO能帶來哪些好-極客網頁設計.png",
-              width: 800,
-              height: 600,
-              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
-            },
-          ],
-        }}
-        additionalMetaTags={[
-          {
-            name: "keywords",
-            content:
-              "網站設計, SEO優化, 成本控制, 網頁設計公司, 行動友善, 3D建模, 品牌形象提升, 自然流量, 搜尋引擎排名, 網站速度優化, 外部連結, Google PageSpeed Insights, 關鍵字規劃, 網站可見性, 數位行銷, 網站建置",
-          },
-        ]}
-      />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
           property="og:title"
-          content="做好SEO能帶來哪些好處呢？-極客網頁設計"
+          content="做好SEO能帶來哪些好處呢？｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         />
         <meta
           property="og:description"
-          content="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          content="SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。"
         />
         <meta
           property="og:image"
@@ -78,6 +53,104 @@ export default function Blog() {
           content="https://www.jeek-webdesign.com.tw/blog-06"
         />
         <meta property="og:type" content="website" />
+        <meta
+          name="title"
+          content="做好SEO能帶來哪些好處呢？｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        />
+        <meta
+          name="description"
+          content="SEO 是數位行銷中不可或缺的工具，透過提高網站的可見性、增加流量、增強品牌信任度來吸引更多潛在客戶。優化特定關鍵字能提高轉換率，而 SEO 的持久效果可持續帶來穩定的曝光。此外，SEO 改善網站結構與用戶體驗，並通過數據分析不斷優化行銷策略，是提升品牌影響力和業務增長的有效方式。"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: webpage.name,
+              description: webpage.description,
+              url: webpage.url,
+              publisher: {
+                "@type": "Organization",
+                name: webpage.name,
+                logo: {
+                  "@type": "ImageObject",
+                  url: webpage.logo,
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: webpage.contact.phone,
+                  contactType: "Customer Service",
+                  email: webpage.contact.email,
+                },
+              },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "首頁-極客網頁設計",
+                    item: "https://www.jeek-webdesign.com.tw",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "文章列表",
+                    item: "https://www.jeek-webdesign.com.tw/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "做好SEO能帶來哪些好處呢？",
+                    item: "https://www.jeek-webdesign.com.tw/blog-06",
+                  },
+                ],
+              },
+              mainEntityOfPage: {
+                "@type": "Article",
+                headline: webpage.name,
+                description: webpage.description,
+                author: {
+                  "@type": "Person",
+                  name: "JEEK WEBDESIGN",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: webpage.logo,
+                  },
+                },
+                datePublished: "2024-11-20",
+                dateModified: "2024-12-23",
+              },
+              mainEntity: {
+                "@type": "Service",
+                name: "網頁設計相關知識",
+                description: "提供相關網頁方面知識",
+                provider: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                },
+              },
+              mainEntityOfPage: {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "做好SEO能帶來哪些好處呢?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "提高可見性和流量、增強品牌信任度、更高的轉換率、長期效果、提高用戶體驗、數據分析與調整",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
       </Head>
 
       {/* <Script
@@ -164,20 +237,24 @@ export default function Blog() {
             className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
             data-aos="fade"
           >
-            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
-              <h2>SEO 的力量：為什麼你需要優化你的網站</h2>
-              在數位時代，擁有一個網站已不再是選擇，而是必須。那麼，如何讓你的網站在眾多競爭者中脫穎而出？答案就是搜索引擎優化（SEO）。以下是
-              SEO 為你帶來的幾大好處：
+            <div className="">
+              <h2 className="Blog_header">
+                SEO 的力量：為什麼你需要優化你的網站
+              </h2>
+              <p className="Blog_body">
+                在數位時代，擁有一個網站已不再是選擇，而是必須。那麼，如何讓你的網站在眾多競爭者中脫穎而出？答案就是搜索引擎優化（SEO）。以下是
+                SEO 為你帶來的幾大好處：
+              </p>
             </div>
             =<br></br>
             <div className="">
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> ㄧ. 提高可見性和流量</h2>
+                <h2 className="Blog_header"> ㄧ. 提高可見性和流量</h2>
 
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <p className=" Blog_body">
                   SEO
                   可以幫助你的網站在搜索引擎結果頁面（SERP）中獲得更高的排名。這意味著更多的潛在客戶會看到你的網站，從而增加訪問量。
-                </div>
+                </p>
                 <Image
                   src="/images/blog/blog06/網頁結構話資料_seo搜索排名-極客網頁設計.png"
                   width={900}
@@ -189,20 +266,20 @@ export default function Blog() {
                 <br></br>
               </div>
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> 二. 增強品牌信任度</h2>
+                <h2 className="Blog_header"> 二. 增強品牌信任度</h2>
 
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <p className="Blog_body">
                   當用戶在搜索結果中看到你的網站排名高於其他競爭對手時，他們會更信任你的品牌。良好的排名往往被視為行業權威的象徵。
-                </div>
+                </p>
                 <br></br>
               </div>
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> 三. 更高的轉換率</h2>
+                <h2 className="Blog_header"> 三. 更高的轉換率</h2>
 
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <p className="Blog_body">
                   通過針對特定關鍵詞進行優化，SEO
                   可以吸引更具針對性的流量。這意味著這些訪問者更有可能轉化為客戶，從而提高銷售和業務增長。
-                </div>
+                </p>
                 <Image
                   src="/images/GoogleSearchConsole分析-極客網頁設計_seo成效分析工具.png"
                   width={900}
@@ -214,9 +291,9 @@ export default function Blog() {
                 <br></br>
               </div>
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> 四. 長期效果</h2>
+                <h2 className="Blog_header"> 四. 長期效果</h2>
 
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="Blog_body">
                   與付費廣告相比，SEO
                   的效果更持久。雖然初期需要時間來建立排名，但一旦達到目標，穩定的流量和曝光將持續更長時間。
                 </div>
@@ -231,18 +308,18 @@ export default function Blog() {
                 <br></br>
               </div>
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> 五. 提高用戶體驗</h2>
+                <h2 className="Blog_header"> 五. 提高用戶體驗</h2>
 
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="Blog_body">
                   一個良好的 SEO
                   策略不僅僅是關於關鍵詞。它還包括提升網站的整體結構和內容質量，這將直接改善用戶體驗，增加用戶在網站上的停留時間。
                 </div>
                 <br></br>
               </div>
               <div className="imgText mt-[50px]">
-                <h2 className="text-[32px] font-bold"> 六. 數據分析與調整</h2>
+                <h2 className="Blog_header"> 六. 數據分析與調整</h2>
 
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <div className="Blog_body">
                   SEO
                   提供的數據分析工具能幫助你瞭解受眾的行為和偏好。透過這些數據，你可以不斷調整和優化你的行銷策略，達到最佳效果。
                 </div>

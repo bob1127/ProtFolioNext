@@ -32,29 +32,6 @@ export default function Blog() {
   // }, []);
   return (
     <div className="bg-[#f9f9f8]">
-      <NextSeo
-        title=""
-        description=""
-        openGraph={{
-          url: "https://www.jeek-webdesign.com.tw/blog-04",
-          title: "輕鬆進入 AI 藝術世界，MidJourney快速上手指南",
-          description: "",
-          images: [
-            {
-              url: "https://www.jeek-webdesign.com.tw/images/midjourney.jpg",
-              width: 1200,
-              height: 630,
-              alt: "MidJourney快速上手指南",
-            },
-          ],
-          site_name: "極客網頁設計",
-        }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
-      />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta property="og:title" content="關於我們-極客網頁設計" />
@@ -68,6 +45,15 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <meta
+          name="title"
+          content="輕鬆進入 AI 藝術世界，MidJourney快速上手指南｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐"
+        />
+        <meta
+          name="description"
+          content="JEEK Design 提供網站設計與品牌形象服務，專注於協助餐飲業、美業、中小企業等多種行業，打造簡單實用的解決方案。無論是購物網站、形象網站、響應式設計 (RWD) 或 SEO 行銷，我們致力於滿足您的需求，並透過清晰的合作流程提供專業的支持。歡迎聯絡我們了解更多。"
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

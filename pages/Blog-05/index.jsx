@@ -9,7 +9,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "Spline 3D 入門指南｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
+    name: "Spline 3D 入門指南｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
       "Spline 3D 是一款雲端 3D 設計工具，適合各級設計師和開發者使用。透過其直觀介面，使用者可輕鬆創建與編輯3D模型，包括基本形狀、材質設定、光源控制及動畫製作。Spline 支援多種模型格式，並提供互動設計功能，讓模型隨著用戶操作觸發動畫效果，增強參與感。從註冊到操作，Spline 為用戶提供全面的 3D 創作體驗，是入門 3D 設計的理想工具。",
     url: "https://www.jeek-webdesign.com.tw/blog-05",
@@ -32,37 +32,15 @@ export default function Blog() {
   // }, []);
   return (
     <div className="bg-[#f9f9f8]">
-      <NextSeo
-        title="Spline 3D 入門指南-極客網頁設計"
-        description="Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和開發者。它提供直觀介面和豐富功能，包括基礎模型創建、材質設置、光源控制、動畫設計和互動效果，讓使用者輕鬆製作和分享3D內容。Spline 支持多種格式的3D模型匯入，並能為模型添加表面細節和光影效果。透過設置動畫和互動事件，使用者能創建動態且具吸引力的3D展示，提升用戶的參與體驗。"
-        openGraph={{
-          url: "https://www.jeek-webdesign.com.tw/blog-05",
-          title: "Spline 3D 入門指南-極客網頁設計",
-          description:
-            "Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和開發者。它提供直觀介面和豐富功能，包括基礎模型創建、材質設置、光源控制、動畫設計和互動效果，讓使用者輕鬆製作和分享3D內容。Spline 支持多種格式的3D模型匯入，並能為模型添加表面細節和光影效果。透過設置動畫和互動事件，使用者能創建動態且具吸引力的3D展示，提升用戶的參與體驗。",
-          images: [
-            {
-              url: "https://www.jeek-webdesign.com.tw/blog/spline3d.png",
-              width: 1200,
-              height: 630,
-              alt: "Spline 3D 入門指南-極客網頁設計",
-            },
-          ],
-          site_name: "極客網頁設計",
-        }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
-      />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
-        <meta property="og:title" content="Spline 3D 入門指南-極客網頁設計" />
+        <meta
+          property="og:title"
+          content="Spline 3D 入門指南｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        />
         <meta
           property="og:description"
-          content="
-Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和開發者。它提供直觀介面和豐富功能，包括基礎模型創建、材質設置、光源控制、動畫設計和互動效果，讓使用者輕鬆製作和分享3D內容。Spline 支持多種格式的3D模型匯入，並能為模型添加表面細節和光影效果。透過設置動畫和互動事件，使用者能創建動態且具吸引力的3D展示，提升用戶的參與體驗。"
+          content="Spline 3D 是一款雲端 3D 設計工具，適合各級設計師和開發者使用。透過其直觀介面，使用者可輕鬆創建與編輯3D模型，包括基本形狀、材質設定、光源控制及動畫製作。Spline 支援多種模型格式，並提供互動設計功能，讓模型隨著用戶操作觸發動畫效果，增強參與感。從註冊到操作，Spline 為用戶提供全面的 3D 創作體驗，是入門 3D 設計的理想工具。"
         />
         <meta
           property="og:image"
@@ -73,6 +51,14 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
           content="https://www.jeek-webdesign.com.tw/blog-05"
         />
         <meta property="og:type" content="website" />
+        <meta
+          name="title"
+          content="Spline 3D 入門指南｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        />
+        <meta
+          name="description"
+          content="Spline 3D 是一款雲端 3D 設計工具，適合各級設計師和開發者使用。透過其直觀介面，使用者可輕鬆創建與編輯3D模型，包括基本形狀、材質設定、光源控制及動畫製作。Spline 支援多種模型格式，並提供互動設計功能，讓模型隨著用戶操作觸發動畫效果，增強參與感。從註冊到操作，Spline 為用戶提供全面的 3D 創作體驗，是入門 3D 設計的理想工具。"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -94,6 +80,57 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                   telephone: webpage.contact.phone,
                   contactType: "Customer Service",
                   email: webpage.contact.email,
+                },
+              },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "首頁-極客網頁設計",
+                    item: "https://www.jeek-webdesign.com.tw",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "文章列表",
+                    item: "https://www.jeek-webdesign.com.tw/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Spline 3D 入門指南",
+                    item: "https://www.jeek-webdesign.com.tw/blog-05",
+                  },
+                ],
+              },
+              mainEntityOfPage: {
+                "@type": "Article",
+                headline: webpage.name,
+                description: webpage.description,
+                author: {
+                  "@type": "Person",
+                  name: "JEEK WEBDESIGN",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: webpage.logo,
+                  },
+                },
+                datePublished: "2024-11-20",
+                dateModified: "2024-12-23",
+              },
+              mainEntity: {
+                "@type": "Service",
+                name: "網頁設計相關知識",
+                description: "提供相關網頁方面知識",
+                provider: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
                 },
               },
             }),
@@ -148,10 +185,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                   Spline 3D 入門指南
                 </a>
               </section>
-              <h1
-                data-aos="fade-blur"
-                className="text-[#333] heading-title text-center "
-              >
+              <h1 data-aos="fade-blur" className="text-center Blog_header ">
                 Spline 3D 入門指南
               </h1>
               <div className="title-content-date">
@@ -189,18 +223,18 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
             className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
             data-aos="fade"
           >
-            <h2>什麼是 Spline 3D？</h2>
-            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+            <h2 className="Blog_header">什麼是 Spline 3D？</h2>
+            <p className="Blog_body">
               Spline 3D 是一個基於雲端的 3D
               設計工具，適合各種技能水平的使用者，特別是設計師和開發者。它使得創建和共享
               3D 內容變得簡單，並且提供直觀的介面和強大的功能。
-            </div>
-            <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+            </p>
+            <p className="Blog_body">
               3D
               設計已成為現代設計的重要趨勢，從網頁動畫到產品設計，三維圖形的應用越來越廣泛。如果你對
               3D 設計感興趣，但不確定從哪裡開始，那麼 Spline
               是一個非常適合新手的工具。
-            </div>
+            </p>
             <a
               target="_blank"
               className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
@@ -213,9 +247,7 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
             <div className="">
               <div className="imgText mt-[20px]">
                 <div className=" text-[32px]  leading-[32px]   text-[#000000]">
-                  <span className="text-[32px] font-bold text-black mt-[30px]">
-                    一.
-                  </span>
+                  <span className="Blog_header">一.</span>
                   註冊與登錄
                 </div>
                 <div
@@ -241,14 +273,14 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
               </div>
 
               <div className="imgText mt-[60px]">
-                <h2 className="text-[32px] font-bold"> 二.簡易的操作介面</h2>
+                <h2 className="Blog_header"> 二.簡易的操作介面</h2>
 
                 <h3 className="text-[20px] ">1. 3D 模型創建與編輯 Spline</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <p className="Blog_body">
                   提供了各種基礎形狀（如立方體、球體、圓柱等），你可以通過拉伸、旋轉和縮放來輕鬆調整這些形狀。此外，Spline
                   支持導入外部 3D 模型（如 .obj、.gltf
                   格式），讓你能夠更靈活地處理複雜的模型。
-                </div>
+                </p>
 
                 <Image
                   src="/images/blog/簡單拉伸.gif"
@@ -280,25 +312,25 @@ Spline 3D 是一款雲端3D設計工具，適合各技能水平的設計師和�
                 </b>
 
                 <h3 className="text-[20px] ">2.材質與光影效果</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <p className="Blog_body">
                   - 材質設置：Spline
                   提供多種材質選項，讓你能夠為模型添加表面細節，例如金屬質感、玻璃透明度、塑料質地等
-                </div>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                </p>
+                <p className=" Blog_body">
                   光源控制：你可以在場景中添加光源，並自定義其方向、強度和顏色，讓模型呈現出逼真的陰影與高光效果。
-                </div>
+                </p>
 
                 <h3 className="text-[20px] ">3.動畫製作</h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <p className="Blog_body">
                   Spline 支持為 3D
                   模型設置動畫。你可以設置對象的移動、旋轉、縮放等參數，並透過時間軸進行細節調整，讓你的模型不僅僅是靜態展示，還可以做出連續動作。
-                </div>
+                </p>
 
                 <h3 className="text-[20px] ">4 . 互動設計 </h3>
-                <div className=" text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <p className=" Blog_body">
                   使用 Spline 的互動功能，你可以為 3D
                   模型設置觸發效果。例如當使用者滑鼠懸停在某個對象上時，觸發對象的動畫或樣式變化，增加用戶參與感。
-                </div>
+                </p>
                 <div>
                   <Image
                     alt="互動動畫01-極客網頁設計"

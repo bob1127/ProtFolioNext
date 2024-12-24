@@ -1007,14 +1007,35 @@ export default function Home() {
         {/* <PerspectiveSection02 /> */}
         <section className="Hero-img">
           <a href="service">
-            <Image
-              src="/images/banner02.png"
-              placeholder="empty"
-              alt="hero-img"
-              loading="lazy"
-              width={1920}
-              height={768}
-            ></Image>
+            <div className="banner-wrap">
+              <Image
+                src="/images/banner02.png"
+                placeholder="empty"
+                alt="hero-img"
+                loading="lazy"
+                className="hidden xl:block"
+                width={1920}
+                height={768}
+              ></Image>
+              <Image
+                src="/images/banner02-laptop.png"
+                placeholder="empty"
+                alt="hero-img"
+                loading="lazy"
+                className="hidden xl:hidden  sm:block"
+                width={1920}
+                height={768}
+              ></Image>
+              <Image
+                src="/images/banner02-mobile.png"
+                placeholder="empty"
+                alt="hero-img"
+                loading="lazy"
+                className="block  sm:hidden"
+                width={1920}
+                height={768}
+              ></Image>
+            </div>
           </a>
         </section>
         <section

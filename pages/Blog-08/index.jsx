@@ -11,7 +11,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: "Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
+    name: "Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "Photoshop 2024 推出的 AI 漸進式填充功能，利用 Adobe Sensei 的生成式 AI 技術，能智能地填補圖像中的空白區域，相較於傳統的內容感知填充更精確自然。設計師可以靈活控制填充細節，適用於修補、擴展和創造性生成，讓設計過程更加高效。此功能不僅提升了自動化程度，還拓展了創意可能，縮短了工作時間，為設計師帶來全新的創作體驗，是設計效率的革命性進展。",
     url: "https://www.jeek-webdesign.com.tw/blog-08",
@@ -46,36 +46,11 @@ export default function Blog() {
   // }, []);
   return (
     <div className="bg-[#f9f9f8]">
-      <NextSeo
-        title="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
-        description="Photoshop 2024 推出的 AI 漸進式填充功能，利用 Adobe Sensei 的生成式 AI 技術，能智能地填補圖像中的空白區域，相較於傳統的內容感知填充更精確自然。設計師可以靈活控制填充細節，適用於修補、擴展和創造性生成，讓設計過程更加高效。此功能不僅提升了自動化程度，還拓展了創意可能，縮短了工作時間，為設計師帶來全新的創作體驗，是設計效率的革命性進展。"
-        openGraph={{
-          title:
-            "網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這",
-          description:
-            "Photoshop 2024 推出的 AI 漸進式填充功能，利用 Adobe Sensei 的生成式 AI 技術，能智能地填補圖像中的空白區域，相較於傳統的內容感知填充更精確自然。設計師可以靈活控制填充細節，適用於修補、擴展和創造性生成，讓設計過程更加高效。此功能不僅提升了自動化程度，還拓展了創意可能，縮短了工作時間，為設計師帶來全新的創作體驗，是設計效率的革命性進展。",
-          images: [
-            {
-              url: "https://www.jeek-webdesign.com.tw/images/2024photoshop.jpg",
-              width: 800,
-              height: 600,
-              alt: "極客網頁設計｜形象官網｜商業攝影｜客製化網站｜套版網站",
-            },
-          ],
-        }}
-        additionalMetaTags={[
-          {
-            name: "keywords",
-            content:
-              "網站設計, SEO優化, 成本控制, 網頁設計公司, 行動友善, 3D建模, 品牌形象提升, 自然流量, 搜尋引擎排名, 網站速度優化, 外部連結, Google PageSpeed Insights, 關鍵字規劃, 網站可見性, 數位行銷, 網站建置",
-          },
-        ]}
-      />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
           property="og:title"
-          content="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+          content="Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐"
         />
         <meta
           property="og:description"
@@ -90,6 +65,14 @@ export default function Blog() {
           content="https://www.jeek-webdesign.com.tw/blog-05"
         />
         <meta property="og:type" content="website" />
+        <meta
+          name="title"
+          content=" Photoshop 2024 全新 AI 漸進式填充功能：設計效率的革命性提升｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐"
+        />
+        <meta
+          name="description"
+          content="Photoshop 2024 推出的 AI 漸進式填充功能，利用 Adobe Sensei 的生成式 AI 技術，能智能地填補圖像中的空白區域，相較於傳統的內容感知填充更精確自然。設計師可以靈活控制填充細節，適用於修補、擴展和創造性生成，讓設計過程更加高效。此功能不僅提升了自動化程度，還拓展了創意可能，縮短了工作時間，為設計師帶來全新的創作體驗，是設計效率的革命性進展。"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -111,6 +94,57 @@ export default function Blog() {
                   telephone: webpage.contact.phone,
                   contactType: "Customer Service",
                   email: webpage.contact.email,
+                },
+              },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "首頁-極客網頁設計",
+                    item: "https://www.jeek-webdesign.com.tw",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "文章列表",
+                    item: "https://www.jeek-webdesign.com.tw/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Photoshop 2024 全新 AI 漸進式填充功能",
+                    item: "https://www.jeek-webdesign.com.tw/blog-08",
+                  },
+                ],
+              },
+              mainEntityOfPage: {
+                "@type": "Article",
+                headline: webpage.name,
+                description: webpage.description,
+                author: {
+                  "@type": "Person",
+                  name: "JEEK WEBDESIGN",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: webpage.logo,
+                  },
+                },
+                datePublished: "2024-11-20",
+                dateModified: "2024-12-23",
+              },
+              mainEntity: {
+                "@type": "Service",
+                name: "網頁設計相關知識",
+                description: "提供相關網頁方面知識",
+                provider: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
                 },
               },
             }),

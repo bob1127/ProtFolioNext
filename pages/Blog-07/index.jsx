@@ -11,7 +11,7 @@ import Image from "next/image";
 import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const webpage = {
-    name: " Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計",
+    name: " Hotjar：深入洞察用戶行為，助力網站轉換率提升｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐",
     description:
       "Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。",
     url: "https://www.jeek-webdesign.com.tw/blog-07",
@@ -34,40 +34,15 @@ export default function Blog() {
   // }, []);
   return (
     <div className="bg-[#f9f9f8]">
-      <NextSeo
-        title="Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計"
-        description="Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。"
-        openGraph={{
-          url: "https://www.jeek-webdesign.com.tw/blog-07",
-          title: "Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計",
-          description:
-            "Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。",
-          images: [
-            {
-              url: "https://www.jeek-webdesign.com.tw/blog/photoshop2024-01.jpeg",
-              width: 1200,
-              height: 630,
-              alt: "Hotjar 是一款強大的免費網站分析工具",
-            },
-          ],
-          site_name: "極客網頁設計",
-        }}
-        twitter={{
-          handle: "@twitterhandle",
-          site: "@twitterhandle",
-          cardType: "summary_large_image",
-        }}
-      />
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
           property="og:title"
-          content="Hotjar：深入洞察用戶行為，助力網站轉換率提升-極客網頁設計"
+          content=" Hotjar：深入洞察用戶行為，助力網站轉換率提升｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
         />
         <meta
           property="og:description"
-          content="
-Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。"
+          content="Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。"
         />
         <meta
           property="og:image"
@@ -75,6 +50,14 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
         />
         <meta property="og:url" content="https://www.jeek-webdesign.com.tw" />
         <meta property="og:type" content="website" />
+        <meta
+          name="title"
+          content=" Hotjar：深入洞察用戶行為，助力網站轉換率提升｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
+        />
+        <meta
+          name="description"
+          content="Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄像功能，幫助網站擁有者深入了解訪客行為。熱點圖顯示用戶點擊、滑動和停留的區域，有助於調整網頁設計和內容布局；訪客錄像則能真實呈現用戶操作過程，發現潛在問題並改善用戶體驗。操作簡單，適合無技術背景的人使用，並提供免費方案，非常適合小型網站和初創企業，幫助提升轉換率和網站效能。"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -96,6 +79,57 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                   telephone: webpage.contact.phone,
                   contactType: "Customer Service",
                   email: webpage.contact.email,
+                },
+              },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "首頁-極客網頁設計",
+                    item: "https://www.jeek-webdesign.com.tw",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "文章列表",
+                    item: "https://www.jeek-webdesign.com.tw/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Hotjar：深入洞察用戶行為，助力網站轉換率提升",
+                    item: "https://www.jeek-webdesign.com.tw/blog-07",
+                  },
+                ],
+              },
+              mainEntityOfPage: {
+                "@type": "Article",
+                headline: webpage.name,
+                description: webpage.description,
+                author: {
+                  "@type": "Person",
+                  name: "JEEK WEBDESIGN",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: webpage.logo,
+                  },
+                },
+                datePublished: "2024-11-20",
+                dateModified: "2024-12-23",
+              },
+              mainEntity: {
+                "@type": "Service",
+                name: "網頁設計相關知識",
+                description: "提供相關網頁方面知識",
+                provider: {
+                  "@type": "Organization",
+                  name: "JEEK WEBDESIGN",
                 },
               },
             }),
@@ -189,17 +223,17 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
             className="patagrph mx-auto  w-[95%] lg:w-[90%] xl:w-[90%] 2xl:w-[60%] p-2 "
             data-aos="fade"
           >
-            <div className=" w-full 2xl:w-[70%] mt-5 text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+            <p className="Blog_body">
               使用它可以更了解訪客在你的網站上是如何互動的。首先，它能夠揭示使用者在網頁上的點擊、滑動和停留位置，讓你清楚知道哪裡是他們關注的焦點。這有助於最佳化網頁設計，確保重要資訊不被忽略。
-            </div>
+            </p>
 
             <br></br>
             <div className="">
               <div className="imgText mt-[50px]">
-                <div className=" text-[16px] xl:text-[18px]  leading-[32px] xl:leading-[36px] text-[#4c4c4c]">
+                <p className="Blog_body">
                   來推薦一個常用的Seo 工具 ， 免費版的功能就很齊全了
                   他就是👉Hotjar
-                </div>
+                </p>
                 <a
                   target="_blank"
                   className="text-blue-600 font-bold text-[16px] duration-300 hover:text-blue-500"
@@ -220,19 +254,19 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
               </div>
 
               <div className="imgText mt-[60px]">
-                <h2 className="text-[32px] font-bold"> 介紹</h2>
+                <h2 className="Blog_header"> 介紹</h2>
 
                 <h3 className="text-[20px] "></h3>
-                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <div className="Blog_body">
                   其次，透過熱點分析，你可以發現使用者在填寫表單、點擊按鈕或進行購物過程中可能遇到的障礙，進而改進使用者體驗。這有助於提高轉換率，讓訪客更容易達成他們在網站上的目標。
                 </div>
 
-                <h2 className="text-[32px] font-bold"> 介紹</h2>
+                <h2 className="Blog_header"> 介紹</h2>
 
                 <h3 className="text-[20px] ">2-1 熱點圖 (Heatmaps)</h3>
-                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <p className="Blog_body">
                   熱點圖能夠直觀地顯示使用者在網頁上點擊、滑動和停留的區域。透過熱點圖，你可以清楚看到哪些內容最吸引訪客注意，哪些區域可能無法引起興趣，從而更好地調整設計和內容佈局。
-                </div>
+                </p>
                 <Image
                   src="/images/hotjar熱點圖.webp"
                   alt="hotjar熱點圖-極客設計"
@@ -253,9 +287,9 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                 ></Image>
 
                 <h3 className="text-[20px] ">2-2 訪客錄像 (Recordings)</h3>
-                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <p className="Blog_body">
                   訪客錄像可以錄製使用者在網站上的操作過程，例如滑動、點擊和停留的時間。這讓你能夠更真實地體驗訪客在使用網站時的體驗，發現並優化潛在的用戶體驗問題。
-                </div>
+                </p>
                 <Image
                   src="/images/hotjar訪客錄像recording.png"
                   alt="hotjar訪客錄像-recording"
@@ -267,24 +301,24 @@ Hotjar 是一款強大的免費網站分析工具，提供熱點圖和訪客錄�
                 ></Image>
 
                 <h3 className="text-[20px] ">3.Hotjar優點</h3>
-                <div className="w-full 2xl:w-[70%] text-[16px] xl:text-[18px] text-[#4c4c4c]  leading-[32px] xl:leading-[36px]">
+                <p className="Blog_body">
                   訪客錄像可以錄製使用者在網站上的操作過程，例如滑動、點擊和停留的時間。這讓你能夠更真實地體驗訪客在使用網站時的體驗，發現並優化潛在的用戶體驗問題。
-                </div>
+                </p>
                 <ul className="p-0 mt-5 ">
                   <li>
-                    <b>操作簡單：</b>
+                    <b className="Blog_body">操作簡單：</b>
                     <p>
                       不需要技術背景，管理介面清晰直觀，適合各種網站使用者。
                     </p>
                   </li>
                   <li className="mt-2">
-                    <b>深入了解用戶需求:</b>
+                    <b className="Blog_body">深入了解用戶需求:</b>
                     <p>
                       不僅有數據報表，更能看到實際行為和即時反饋，讓網站優化更具針對性。
                     </p>
                   </li>
                   <li className="mt-2">
-                    <b>免費計劃可用：</b>
+                    <b className="Blog_body">免費計劃可用：</b>
                     <p>提供基本免費方案，適合初創企業和小型網站。</p>
                   </li>
                 </ul>

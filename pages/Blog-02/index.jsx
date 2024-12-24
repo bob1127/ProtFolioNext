@@ -9,7 +9,7 @@ import "aos/dist/aos.css"; // 导入 AOS 的 CSS 文件
 export default function Blog() {
   const [isZoomed, setIsZoomed] = useState(false);
   const webpage = {
-    name: "網頁設計很花錢嗎？｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
+    name: "網頁設計很花錢嗎？｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
     description:
       "不再讓網頁行銷成為負擔！Jeek提供量身定制的網站設計與SEO優化，助力品牌高效成長，無論是初創企業還是中小型商家，預算內實現高效行銷。",
     url: "https://www.jeek-webdesign.com.tw/blog-02",
@@ -36,7 +36,7 @@ export default function Blog() {
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta
           property="og:title"
-          content="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好，你需要的知識都在這"
+          content="網頁設計很花錢嗎？｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐"
         />
         <meta
           property="og:description"
@@ -54,7 +54,7 @@ export default function Blog() {
 
         <meta
           name="title"
-          content="網頁設計很花錢嗎？-極客網頁設計_讓你的網頁變的更好"
+          content="網頁設計很花錢嗎？｜極客網頁設計 JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐"
         />
         <meta
           name="description"
