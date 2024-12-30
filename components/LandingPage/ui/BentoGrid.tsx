@@ -51,8 +51,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "TailwindCss", "Bootstrap5"];
+  const rightLists = ["RestApi", "NextJs", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -66,7 +66,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "jeekdesign@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -140,6 +140,7 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
+          <a href="#"></a>
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}

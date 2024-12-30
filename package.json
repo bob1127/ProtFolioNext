@@ -74,6 +74,7 @@
     "slick-carousel": "^1.8.1",
     "split-type": "^0.3.4",
     "swiper": "^11.1.12",
+    "tailwind-scrollbar-hide": "^2.0.0",
     "three": "^0.171.0",
     "three-globe": "^2.39.1",
     "typescript": "^4.7.4",

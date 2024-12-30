@@ -18,9 +18,9 @@ const Blog = ({ posts }) => {
   return (
     <div>
       <h1>Blog</h1>
-      {/* <ul>
+      <ul>
         {posts.map((post) => (
-          <Link href={`/blog/${post.id}`}>
+          <a href={`/blog/${post.id}`}>
             <li key={post.id}>
               <h2>
                 <a>{post.title.rendered}</a>
@@ -29,9 +29,9 @@ const Blog = ({ posts }) => {
                 dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
               />
             </li>
-          </Link>
+          </a>
         ))}
-      </ul> */}
+      </ul>
     </div>
   );
 };

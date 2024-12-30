@@ -1,19 +1,22 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
+// import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "../data";
 import { PinContainer } from "../ui/Pin";
-
+import Image from "next/image";
 const RecentProjects = () => {
   return (
     <div className="py-20">
       <h1 className="heading">
         精選 <span className="text-purple">網頁專案</span>
       </h1>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
-          <div
+          <a
+            href={item.link}
+            target="_blank"
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
@@ -26,10 +29,22 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    placeholder="empty"
+                    loading="lazy"
+                    width={80}
+                    height={80}
+                    alt="cover"
+                    className="z-10 absolute bottom-0"
+                  />
                 </div>
-                <img
+                <Image
                   src={item.img}
+                  placeholder="empty"
+                  loading="lazy"
+                  width={400}
+                  height={300}
                   alt="cover"
                   className="z-10 absolute bottom-0"
                 />
@@ -50,7 +65,7 @@ const RecentProjects = () => {
               </p>
 
               <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
@@ -62,17 +77,17 @@ const RecentProjects = () => {
                       <img src={icon} alt="icon5" className="p-2" />
                     </div>
                   ))}
-                </div>
+                </div> */}
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  {/* <FaLocationArrow className="ms-3" color="#CBACF9" /> */}
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </a>
         ))}
       </div>
     </div>

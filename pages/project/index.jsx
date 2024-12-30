@@ -118,9 +118,9 @@ const Blog = ({ posts, categories, tags }) => {
       </section>
       <section className="projext-container pb-[70px] md:py-[100px]  px-0 md:px-[40px] 2xl:px-[100px]">
         <div className="flex w-full flex-col">
-          <div className="flex w-full  py-4  md:pb-[80px] xl:py-5 flex-col">
+          <div className="flex mb-[30px] py-[30px] w-full overflow-x-scroll md:pb-[80px] xl:py-5 flex-col scrollbar-hide">
             <Tabs aria-label="Options">
-              <Tab key="精選網站" title="精選網站">
+              <Tab key="精選網站" title="精選網站" style={{ fontSize: "18px" }}>
                 <Card>
                   <CardBody>
                     <div className="flex flex-wrap">
@@ -199,7 +199,11 @@ const Blog = ({ posts, categories, tags }) => {
                   </CardBody>
                 </Card>
               </Tab>
-              <Tab key="客製化網站" title="客製化網站">
+              <Tab
+                key="客製化網站"
+                title="客製化網站"
+                style={{ fontSize: "18px" }}
+              >
                 <Card>
                   <CardBody>
                     <div className="flex flex-wrap">
@@ -230,33 +234,327 @@ const Blog = ({ posts, categories, tags }) => {
                   </CardBody>
                 </Card>
               </Tab>
-              <Tab key="商業網站" title="商業網站">
+              <Tab
+                key="wordpress形象網站"
+                title="wordpress形象網站"
+                style={{ fontSize: "18px" }}
+              >
                 <Card>
                   <CardBody>
                     {" "}
-                    <a
-                      href="https://cxuan.com.tw"
-                      target="_blank"
-                      data-aos="fade-up"
-                      data-duration="300"
-                      className="project-item flex flex-col mx-3"
-                    >
-                      <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
-                        <img
-                          src="/images/quan.png"
-                          alt="專案04-澄軒飲水"
-                          className="w-full"
-                          placeholder="empty"
-                        ></img>
-                      </div>
+                    <div className="flex flex-wrap">
+                      <a
+                        href="https://websitedemos.net/pub-and-lounge-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            loading="lazy"
+                            width={400}
+                            height={300}
+                            src="/images/WP-theme-demo/template/demo-01.jpg"
+                            alt="wp-模板範例"
+                            className="w-full"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
 
-                      <div className="txt py-5">
-                        <b>澄軒飲水</b> <br></br>
-                        <a href="text-blue hover:font-bold text-[16px] text-blue">
-                          live demo
-                        </a>
-                      </div>
-                    </a>
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/real-estate-company-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            loading="lazy"
+                            width={400}
+                            height={300}
+                            src="/images/WP-theme-demo/template/demo-02.jpg"
+                            alt="wp-模板範例"
+                            className="w-full"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/pizzeria-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            loading="lazy"
+                            width={400}
+                            height={300}
+                            src="/images/WP-theme-demo/template/demo-03.jpg"
+                            alt="wp-模板範例"
+                            className="w-full"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/fast-food-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            loading="lazy"
+                            width={400}
+                            height={300}
+                            src="/images/WP-theme-demo/template/demo-04.jpg"
+                            alt="wp-模板範例"
+                            className="w-full"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab
+                key="wordpress購物網站"
+                title="wordpress購物網站"
+                style={{ fontSize: "18px" }}
+              >
+                <Card>
+                  <b className="text-[18px] mb-[20px] mt-[30px] ml-[30px]">
+                    如對任何版型有興趣，歡迎與我們討論
+                  </b>
+                  <CardBody>
+                    {" "}
+                    <div className="flex flex-wrap">
+                      <a
+                        href="https://websitedemos.net/blingg-jewelry-store-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            src="/images/WP-theme-demo/e-commerce/demo-03.jpg"
+                            width={400}
+                            height={300}
+                            alt="wp-網頁版型範例"
+                            placeholder="empty"
+                            loading="lazy"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/recycled-shoe-store-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px]  border-black">
+                          <Image
+                            src="/images/WP-theme-demo/e-commerce/demo-04.jpg"
+                            width={400}
+                            loading="lazy"
+                            height={300}
+                            alt="wp-網頁版型範例"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/t-shirts-store-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            src="/images/WP-theme-demo/e-commerce/demo-05.jpg"
+                            width={400}
+                            loading="lazy"
+                            height={300}
+                            alt="wp-網頁版型範例"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/electric-scooter-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            src="/images/WP-theme-demo/e-commerce/demo-01.jpg"
+                            width={400}
+                            loading="lazy"
+                            height={300}
+                            alt="wp-網頁版型範例"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/home-decor-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            src="/images/WP-theme-demo/e-commerce/demo-02.jpg"
+                            width={400}
+                            loading="lazy"
+                            height={300}
+                            alt="wp-網頁版型範例"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                      <a
+                        href="https://websitedemos.net/sports-wear-store-04/?customize=template#"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            src="/images/WP-theme-demo/e-commerce/demo-06.jpg"
+                            width={400}
+                            loading="lazy"
+                            height={300}
+                            alt="wp-網頁版型範例"
+                            placeholder="empty"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Tab>
+              <Tab
+                key="wordpress一頁式"
+                title="wordpress一頁式"
+                style={{ fontSize: "18px" }}
+              >
+                <Card>
+                  <b className="text-[18px] mb-[20px] mt-[30px] ml-[30px]">
+                    如對任何版型有興趣，歡迎與我們討論
+                  </b>
+                  <CardBody>
+                    {" "}
+                    <div className="flex flex-wrap">
+                      <a
+                        href="https://websitedemos.net/blingg-jewelry-store-04/?customize=template"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                          <Image
+                            src="/images/WP-theme-demo/LandingPage/demo-01.jpg"
+                            width={400}
+                            height={300}
+                            alt="wp-網頁版型範例"
+                            placeholder="empty"
+                            loading="lazy"
+                          ></Image>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>template</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            live demo
+                          </a>
+                        </div>
+                      </a>
+                    </div>
                   </CardBody>
                 </Card>
               </Tab>

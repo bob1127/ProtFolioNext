@@ -3,9 +3,9 @@
 import Hero from "../../components/LandingPage/Hero/page";
 import Grid from "../../components/LandingPage/Grid/page";
 // import Footer from "@/components/Footer";
-// import Clients from "@/components/Clients";
+// import Clients from "../../components/LandingPage/Clients/page";
 // import Approach from "@/components/Approach";
-// import Experience from "@/components/Experience";
+// import Experience from "../../components/LandingPage/Experience/page";
 import RecentProjects from "../../components/LandingPage/RecentProjects/page";
 // import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
@@ -16,7 +16,8 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-        {/* <Clients /> */}
+        {/* <Clients />
+        <Experience /> */}
       </div>
     </main>
   );

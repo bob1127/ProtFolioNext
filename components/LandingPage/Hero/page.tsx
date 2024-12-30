@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="flex bg-black justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            有任何想法歡迎跟我們討論
           </p>
 
           {/**
@@ -53,7 +53,7 @@ const Hero = () => {
            */}
           <TextGenerateEffect
             words="致力於打造美觀、結構化、seo優良的網頁"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] md:text-5xl text-white lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
