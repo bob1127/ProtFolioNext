@@ -10,7 +10,7 @@ import {
 } from "@nextui-org/react";
 // import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
 import { NextSeo } from "next-seo";
-
+import Hero from "../../components/sections/hero.tsx";
 import VerticalAccordion from "../../components/VerticalAccordion/index.jsx";
 import SwiperHero from "../../components/SwiperHero/index.jsx";
 import Marquee from "react-fast-marquee";
@@ -491,7 +491,7 @@ export default function Blog() {
               <div>↓</div>
             </div> */}
           </div>
-
+          <Hero />
           <section className="section">
             <div className="container">
               <div className="padding">
