@@ -22,7 +22,7 @@ export default function PricingSection() {
   };
 
   return (
-    <Section title="Pricing" subtitle="Choose the plan that's right for you">
+    <Section title="網站維護" subtitle="選擇適合您的維護方案">
       <div className="flex justify-center mb-10">
         <span className="mr-2 font-semibold">Monthly</span>
         <label className="relative inline-flex items-center cursor-pointer">
@@ -78,7 +78,7 @@ export default function PricingSection() {
               <div className="absolute top-0 right-0 bg-primary py-0.5 px-2 rounded-bl-xl rounded-tr-xl flex items-center">
                 <FaStar className="text-white" />
                 <span className="text-white ml-1 font-sans font-semibold">
-                  Popular
+                  推薦
                 </span>
               </div>
             )}
@@ -98,7 +98,7 @@ export default function PricingSection() {
               </p>
 
               <p className="text-xs leading-5 text-muted-foreground">
-                {isMonthly ? "billed monthly" : "billed annually"}
+                {isMonthly ? "月計費方案" : "年計費方案"}
               </p>
 
               <ul className="mt-5 gap-2 flex flex-col">
@@ -112,8 +112,8 @@ export default function PricingSection() {
 
               <hr className="w-full my-4" />
 
-              <Link
-                href={plan.href}
+              <a
+                href="/contact"
                 className={cn(
                   buttonVariants({
                     variant: "outline",
@@ -126,7 +126,7 @@ export default function PricingSection() {
                 )}
               >
                 {plan.buttonText}
-              </Link>
+              </a>
               <p className="mt-6 text-xs leading-5 text-muted-foreground">
                 {plan.description}
               </p>

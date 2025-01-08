@@ -91,107 +91,102 @@ export const siteConfig = {
   ],
   pricing: [
     {
-      name: "BASIC",
+      name: "基本網站",
       href: "#",
-      price: "$19",
+      price: "NT 2,500",
       period: "month",
-      yearlyPrice: "$16",
+      yearlyPrice: "NT 2,000",
       features: [
-        "1 User",
-        "5GB Storage",
-        "Basic Support",
-        "Limited API Access",
-        "Standard Analytics",
+        "網頁運行維護",
+        "網頁備份",
+        "版面設計維護",
+        "主機維護",
+        "安全維護",
       ],
-      description: "Perfect for individuals and small projects",
-      buttonText: "Subscribe",
+      description: "有任何需求歡迎提出",
+      buttonText: "聯絡我",
       isPopular: false,
     },
     {
-      name: "PRO",
+      name: "購物網站/客製化網站",
       href: "#",
-      price: "$49",
+      price: "NT 4,500",
       period: "month",
-      yearlyPrice: "$40",
+      yearlyPrice: "NT 3,500",
       features: [
-        "5 Users",
-        "50GB Storage",
-        "Priority Support",
-        "Full API Access",
-        "Advanced Analytics",
+        "網站SEO優化",
+        "網站效能優化",
+        "數據分析、關鍵字分析報告",
+        "功能修改，(依難易度判斷是否額外收費)",
+        "專業網頁分析建議",
       ],
-      description: "Ideal for growing businesses and teams",
-      buttonText: "Subscribe",
+      description: "頁面、功能新增依難易度另外收取費用",
+      buttonText: "聯絡我",
       isPopular: true,
     },
     {
-      name: "ENTERPRISE",
+      name: "其他方案需求",
       href: "#",
-      price: "$99",
+      price: "找我聊聊",
       period: "month",
-      yearlyPrice: "$82",
+      yearlyPrice: "找我聊聊",
       features: [
-        "Unlimited Users",
-        "500GB Storage",
-        "24/7 Premium Support",
-        "Custom Integrations",
-        "AI-Powered Insights",
+        "固定剪輯短影音",
+        "長期美化網站(產品圖、Banner、DM)",
+        "3d產品圖",
+        "電商平台維護",
       ],
-      description: "For large-scale operations and high-volume users",
-      buttonText: "Subscribe",
+      description: "有任何需求歡迎提出",
+      buttonText: "聯絡我",
       isPopular: false,
     },
   ],
   faqs: [
     {
-      question: "What is acme.ai?",
+      question: "Step1.需求溝通與項目規劃",
       answer: (
         <span>
-          acme.ai is a platform that helps you build and manage your AI-powered
-          applications. It provides tools and services to streamline the
-          development and deployment of AI solutions.
+          設計師或網頁工程師將透過與您溝通，瞭解您的品牌定位、目標客群與網站功能需求，打造精準的網站架構與設計。
+          這一步不僅是奠定網站製作的基礎，更是降低未來修改成本的關鍵。
         </span>
       ),
     },
     {
-      question: "How can I get started with acme.ai?",
+      question: "Step02.視覺設計與雙方達成確認",
       answer: (
         <span>
-          You can get started with acme.ai by signing up for an account on our
-          website, creating a new project, and following our quick-start guide.
-          We also offer tutorials and documentation to help you along the way.
+          設計師或網頁工程師會以您的品牌核心，製作出符合您公司品牌需求的網頁設計稿。
+          平面稿件完成後，我們會與您確認視覺方向，確保每個細節都達到預期效果。
+          如果校稿或修改內容較多，製作時間可能會相應調整。在這個步驟中，為了確保項目的順利推進並保護雙方的權益，我們會與您簽訂合約，明確合作範圍、工作流程與時程規劃，讓雙方在合作的每一階段都有清晰的共識。
+          同時，可能會視情況斟酌收取訂金，例如設計需求較為複雜、頁面數量較多或需要投入大量創意與資源時，這樣可以保障設計師的工作投入並提高效率。
+          尾款部分則會在網站完成或正式上線前支付，確保您對最終成果感到滿意，並為項目的圓滿結束提供保障。這樣的安排能讓整個合作過程更具透明性與專業性。
         </span>
       ),
     },
     {
-      question: "What types of AI models does acme.ai support?",
+      question: "Step03. 前後端開發與整合",
       answer: (
         <span>
-          acme.ai supports a wide range of AI models, including but not limited
-          to natural language processing, computer vision, and predictive
-          analytics. We continuously update our platform to support the latest
-          AI technologies.
+          這階段技術工程師會專注於網站功能、網頁美工設計與動畫效果實現，
+          並建立易於使用的後台系統，確保使用者能輕鬆操作與管理。
         </span>
       ),
     },
     {
-      question: "Is acme.ai suitable for beginners in AI development?",
+      question: "Step04.內容整理與SEO設定",
       answer: (
         <span>
-          Yes, acme.ai is designed to be user-friendly for both beginners and
-          experienced developers. We offer intuitive interfaces, pre-built
-          templates, and extensive learning resources to help users of all skill
-          levels create AI-powered applications.
+          如有串接資料需求會在這個步驟進行，SEO優化，網站結構優化。
+          同時，我們會教您如何操作後台，讓網站維護變得更加高效簡單。
         </span>
       ),
     },
     {
-      question: "What kind of support does acme.ai provide?",
+      question: "Step05.網站上線與後續支援",
       answer: (
         <span>
-          acme.ai provides comprehensive support including documentation, video
-          tutorials, a community forum, and dedicated customer support. We also
-          offer premium support plans for enterprises with more complex needs.
+          最後，我們會協助您完成域名設定並將網站上線。
+          從此刻起，您的品牌有了全新數位形象，並可持續為企業創造更多價值。
         </span>
       ),
     },

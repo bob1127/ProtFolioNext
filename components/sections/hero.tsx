@@ -7,7 +7,7 @@ import HeroVideoDialog from "../magicui/hero-video";
 import { buttonVariants } from "../ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
+import Image from "next/image";
 const ease = [0.16, 1, 0.3, 1];
 
 function HeroPill() {
@@ -20,11 +20,9 @@ function HeroPill() {
       transition={{ duration: 0.8, ease }}
     >
       <div className="w-fit rounded-full bg-accent px-2 py-0.5 text-center text-xs font-medium text-primary sm:text-sm">
-        📣 Announcement
+        📣 優化方案
       </div>
-      <p className="text-xs font-medium text-primary sm:text-sm">
-        Introducing Acme.ai
-      </p>
+      <p className="text-xs font-medium text-primary sm:text-sm">聯絡我們</p>
       <svg
         width="12"
         height="12"
@@ -45,44 +43,56 @@ function HeroPill() {
 function HeroTitles() {
   return (
     <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
-      <motion.h1
-        className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl"
-        initial={{ filter: "blur(10px)", opacity: 0, y: 50 }}
-        animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-        transition={{
-          duration: 1,
-          ease,
-          staggerChildren: 0.2,
-        }}
-      >
-        {["Automate", "your", "workflow", "with AI"].map((text, index) => (
-          <motion.span
-            key={index}
-            className="inline-block px-1 md:px-2 text-balance font-semibold"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              delay: index * 0.2,
-              ease,
-            }}
-          >
-            {text}
-          </motion.span>
-        ))}
-      </motion.h1>
-      <motion.p
-        className="mx-auto max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 text-balance"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.6,
-          duration: 0.8,
-          ease,
-        }}
-      >
-        No matter what problem you have, our AI can help you solve it.
-      </motion.p>
+      <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
+        <motion.h1
+          className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl"
+          initial={{ filter: "blur(10px)", opacity: 0, y: 50 }}
+          whileInView={{
+            filter: "blur(0px)",
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1,
+            ease,
+            staggerChildren: 0.2,
+          }}
+        >
+          {["你的", "專業", "網頁", "顧問"].map((text, index) => (
+            <motion.span
+              key={index}
+              className="inline-block px-1 md:px-2 text-balance font-semibold"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.8,
+                delay: index * 0.2,
+                ease,
+              }}
+            >
+              {text}
+            </motion.span>
+          ))}
+        </motion.h1>
+        <motion.p
+          className="mx-auto max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 text-balance"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            delay: 0.6,
+            duration: 0.8,
+            ease,
+          }}
+        >
+          提供您單次收費的網頁顧問方案，網頁功能修改，網頁改版設計
+        </motion.p>
+      </div>
     </div>
   );
 }
@@ -104,7 +114,7 @@ function HeroCTA() {
           )}
         >
           <Icons.logo className="h-6 w-6" />
-          Get started for free
+          免費的網站健檢
         </Link>
       </motion.div>
       <motion.p
@@ -113,7 +123,7 @@ function HeroCTA() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.8 }}
       >
-        7 day free trial. No credit card required.
+        Wordpress,Shopify
       </motion.p>
     </>
   );
@@ -127,13 +137,15 @@ function HeroImage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.2, duration: 1, ease }}
     >
-      <HeroVideoDialog
-        animationStyle="from-center"
-        videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-        thumbnailSrc="/dashboard.png"
-        thumbnailAlt="Hero Video"
-        className="border rounded-lg shadow-lg max-w-screen-lg mt-16"
-      />
+      <Image
+        src="/images/WebOptimization-Hero-Img-mask.png"
+        className=""
+        width={1000}
+        alt=""
+        height={600}
+        placeholder="empty"
+        loading="lazy"
+      ></Image>
     </motion.div>
   );
 }

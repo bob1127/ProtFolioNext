@@ -6,77 +6,80 @@ import Safari from "../safari";
 import Section from "../section";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 const features = [
   {
-    title: "Advanced AI Algorithms",
+    title: "網頁UX規劃、UI設計",
     description:
-      "Our platform utilizes cutting-edge AI algorithms to provide accurate and efficient solutions for your business needs.",
+      "設計具有良好的互動體驗網站，不僅能留住您的顧客、也能讓您的網頁排名更加靠前",
     className: "hover:bg-red-500/10 transition-all duration-500 ease-out",
     content: (
       <>
-        <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
-          className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
-        />
+        <Image
+          src="/images/網頁ui設計_Figma-極客網頁設計.png"
+          alt="網頁ui設計-極客網頁設計"
+          width={400}
+          height={300}
+          placeholder="empty"
+          loading="lazy"
+        ></Image>
       </>
     ),
   },
   {
-    title: "Secure Data Handling",
+    title: "網頁seo優化",
     description:
-      "We prioritize your data security with state-of-the-art encryption and strict privacy protocols, ensuring your information remains confidential.",
+      "改善您的網頁結構，優化網頁速度。使您的網站在搜尋引擎排名更靠前！",
     className:
       "order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out",
     content: (
-      <Safari
-        src={`/dashboard.png`}
-        url="https://acme.ai"
-        className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
-      />
+      <Image
+        src="/images/網頁結構優化-極客網頁設計.png"
+        alt="網頁結構優化-極客網頁設計"
+        width={800}
+        height={600}
+        placeholder="empty"
+        loading="lazy"
+      ></Image>
     ),
   },
   {
-    title: "Seamless Integration",
+    title: "網頁數據分析",
     description:
-      "Easily integrate our AI solutions into your existing workflows and systems for a smooth and efficient operation.",
+      "分析使用者行為，使用者來訪數據。分析資料並且找出問題點改善，或加強。使您的網站行銷策略更有效率！",
     className:
       "md:row-span-2 hover:bg-orange-500/10 transition-all duration-500 ease-out",
     content: (
-      <>
-        <FlickeringGrid
-          className="z-0 absolute inset-0 [mask:radial-gradient(circle_at_center,#fff_400px,transparent_0)]"
-          squareSize={4}
-          gridGap={6}
-          color="#000"
-          maxOpacity={0.1}
-          flickerChance={0.1}
-          height={800}
+      <div className="overflow-hidden">
+        <Image
+          src="/images/數據分析GA4_GTM-極客網頁設計.png"
+          placeholder="empty"
+          loading="lazy"
+          className="absolute top-[20%] left-[30%] scale-150"
           width={800}
-        />
-        <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
-          className="-mb-48 ml-12 mt-16 h-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-x-[-10px] transition-all duration-300"
-        />
-      </>
+          height={600}
+          alt="數據分析GA4_GTM-極客網頁設計"
+        ></Image>
+      </div>
     ),
   },
   {
-    title: "Customizable Solutions",
+    title: "網頁美化｜版型設計",
     description:
-      "Tailor our AI services to your specific needs with flexible customization options, allowing you to get the most out of our platform.",
+      "重新設計您的網站，避免網站看起來設計感老舊，既可以增強品牌形象，也能更吸引顧客",
     className:
       "flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-green-500/10 transition-all duration-500 ease-out",
     content: (
       <>
         <Ripple className="absolute -bottom-full" />
-        <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
-          className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
-        />
+        <Image
+          src="/images/網頁版型設計＿網頁改版-極客網頁設計.png"
+          placeholder="empty"
+          loading="lazy"
+          width={800}
+          height={600}
+          alt="網頁版型設計＿網頁改版-極客網頁設計"
+        ></Image>
       </>
     ),
   },
@@ -85,9 +88,9 @@ const features = [
 export default function Component() {
   return (
     <Section
-      title="Solution"
-      subtitle="Empower Your Business with AI Workflows"
-      description="Generic AI tools won't suffice. Our platform is purpose-built to provide exceptional AI-driven solutions for your unique business needs."
+      title="Service"
+      subtitle="為您的網站提供專業的服務內容"
+      description="致力於打造使用者體驗良好的網頁，讓您的網站可以為您的企業帶來實質的收益"
       className="bg-neutral-100 dark:bg-neutral-900"
     >
       <div className="mx-auto mt-16 grid max-w-sm grid-cols-1 gap-6 text-gray-500 md:max-w-3xl md:grid-cols-2 xl:grid-rows-2 md:grid-rows-3 xl:max-w-6xl xl:auto-rows-fr xl:grid-cols-3">
@@ -115,7 +118,7 @@ export default function Component() {
               </h3>
               <p className="text-foreground">{feature.description}</p>
             </div>
-            {feature.content}
+            <div className="py-10">{feature.content}</div>
             <div className="absolute bottom-0 left-0 h-32 w-full bg-gradient-to-t from-neutral-50 dark:from-neutral-900 pointer-events-none"></div>
           </motion.div>
         ))}

@@ -9,10 +9,16 @@ import {
   getKeyValue,
 } from "@nextui-org/react";
 // import threeDCarousel from "../../components/ThreeDCarousel/page.jsx";
+import HowItWork from "../../components/sections/how-it-works.tsx";
+import QA from "../../components/sections/faq.tsx";
 import { NextSeo } from "next-seo";
 import Hero from "../../components/sections/hero.tsx";
 import VerticalAccordion from "../../components/VerticalAccordion/index.jsx";
 import SwiperHero from "../../components/SwiperHero/index.jsx";
+import Solution from "../../components/sections/solution.tsx";
+import { Button } from "../../components/ui/button.tsx";
+import BoxReveal from "../../components/ui/box-reveal.tsx";
+import Pricing from "../../components/sections/pricing.tsx";
 import Marquee from "react-fast-marquee";
 import React from "react";
 import { motion } from "framer-motion";
@@ -492,105 +498,127 @@ export default function Blog() {
             </div> */}
           </div>
           <Hero />
-          <section className="section">
-            <div className="container">
-              <div className="padding">
-                <div className="w-layout-grid about-content">
-                  <div
-                    id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad959-c41abf73"
-                    className="about-grid-content"
-                  >
-                    <h2 className="heading is-medium-title">
-                      "不要再認為自己的品牌做網頁行銷很花錢了！"
-                    </h2>
-                    <p className=" text-[16px] leading-normal text-left ">
-                      許多人以為網站設計和行銷需要大筆預算才能有效，但 Jeek
-                      的方案讓品牌在有限預算內也能脫穎而出。我們專為初創企業與中小型商家量身打造行銷策略，使行銷成為可負擔的投資。透過專業網站設計與
-                      SEO
-                      優化，快速提升品牌曝光度，吸引精準客群，助您實現銷售成長。
+          <section className="section-content">
+            <div className="row flex-col xl:flex-row flex w-[90%] md:w-[80%]  2xl:w-[70%]  mx-auto">
+              <div className="xl:w-1/2 p-2 md:p-20 w-full">
+                <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <p className="text-[2.5em] font-semibold">
+                      不要再認為自己的品牌做網頁行銷很花錢了！
+                      <span className="text-[#3e96fb]"></span>
                     </p>
-                  </div>
+                  </BoxReveal>
 
-                  <div
-                    id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad962-c41abf73"
-                    className="about-grid-image"
-                  >
-                    <div className="reveal-image-trigger">
-                      <Image
-                        src="/images/不要再以為網頁行銷很花錢了.png"
-                        alt="不要再以為網頁行銷很花錢了"
-                        placeholder="empty"
-                        loading="lazy"
-                        width={1300}
-                        height={1300}
-                      ></Image>
-                      <div
-                        className="bg-for-animation"
-                        style={{ display: "block" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="about-grid-image">
-                    <div className="reveal-image-trigger">
-                      <Image
-                        src="/images/fantastic_hare_36410__in_office_ba72e105-06e2-4e9a-a51b-5baa01d260d4.png"
-                        loading="lazy"
-                        height={1000}
-                        width={1000}
-                        placeholder="empty"
-                      ></Image>
-                      <div
-                        className="bg-for-animation"
-                        style={{ display: "block" }}
-                      />
-                    </div>
-                  </div>
-                  <div
-                    id="w-node-cfc4cd49-5733-23b2-3f75-0d0eec1ad968-c41abf73"
-                    className="about-grid-content"
-                  >
-                    {/* <div className="text-dot-block">
-                        <div className="dot" />
-                        <p className="paragraph">網頁設計</p>
-                      </div> */}
-                    <h2 className="heading is-medium-title">
-                      "工作室，彈性更高，效率更高"
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <h2 className="mt-[.5rem] text-[1rem]">
+                      許多人以為網站設計和行銷需要大筆預算才能有效
+                      <span className="text-[#3e96fb]">
+                        但我們的方案讓您在有限預算內也能做出好網站
+                      </span>
                     </h2>
-                    <div className="flex items-start flex-col ">
-                      <div className="mb-6 flex flex-col items-start">
-                        <b className="text-[22px]">成本效益高</b>
-                        <p className="text-left leading-normal mt-3">
-                          -
-                          由於沒有大型團隊和高額管理費用，網頁工作室能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
-                        </p>
-                      </div>
-                      <div className="mb-6 flex flex-col items-start">
-                        <b className="text-[22px]">專注度高</b>
-                        <p className="text-left leading-normal mt-3">
-                          -
-                          網頁工作室通常同時承接的項目較少，這意味著他們能夠更加專注於您的項目，投入更多的時間和精力，確保高品質的完成。
-                        </p>
-                      </div>
-                      <div className="mb-6 flex flex-col items-start">
-                        <b className="text-[22px]">靈活性強</b>
-                        <p className="text-left leading-normal mt-3">
-                          -
-                          作為網頁工作室，我們能夠迅速響應您的要求，並且在設計過程中更加靈活，隨時根據您的反饋進行調整，確保項目順利進行
-                        </p>
-                      </div>
-                      <div className="mb-6 flex flex-col items-start">
-                        <b className="text-[22px]">溝通便捷</b>
-                        <p className="text-left leading-normal mt-3">
-                          -
-                          您將直接與設計師溝通，避免了中間人傳遞信息的誤差和延誤，使得整個設計過程更加高效且準確。
-                        </p>
-                      </div>
+                  </BoxReveal>
+
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <div className="mt-6">
+                      <p>
+                        我們專為初創企業與中小型商家量身打造行銷策略
+                        <span className="font-semibold text-[#3e96fb]">
+                          {" "}
+                          透過專業網站設計與 SEO 優化
+                        </span>
+                        ,
+                        <span className="font-semibold text-[#3e96fb]">
+                          {" "}
+                          快速提升品牌曝光度
+                        </span>
+                        ,
+                        <span className="font-semibold text-[#3e96fb]">
+                          吸引精準客群
+                        </span>
+                        <span className="font-semibold text-[#3e96fb]">
+                          助您實現銷售成長。
+                        </span>
+                      </p>
                     </div>
-                  </div>
+                  </BoxReveal>
+
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <Button className="mt-[1.6rem] bg-[#3e96fb]">
+                      Explore
+                    </Button>
+                  </BoxReveal>
+                </div>
+              </div>
+              <div className="w-full pt-5 xl:w-1/2">
+                <Image
+                  src="/images/網頁結構優化_UI設計_banner設計-極客網頁設計_seo優化.webp"
+                  loading="lazy"
+                  height={1000}
+                  width={1000}
+                  placeholder="empty"
+                ></Image>
+              </div>
+            </div>
+            <div className="row mt-[100px] flex-col xl:flex-row flex w-[90%] md:w-[80%]  2xl:w-[70%]  mx-auto">
+              <div className="w-full pt-5 xl:w-1/2">
+                <Image
+                  src="/images/網頁SEO很重要嗎.png"
+                  loading="lazy"
+                  height={1000}
+                  width={1000}
+                  placeholder="empty"
+                ></Image>
+              </div>
+              <div className="xl:w-1/2 p-2 md:pl-20 md:pr-10 w-full">
+                <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <p className="text-[2.5em] font-semibold">
+                      工作室，彈性更高，效率更高
+                      <span className="text-[#3e96fb]"></span>
+                    </p>
+                  </BoxReveal>
+
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <h2 className="mt-[.5rem] text-[1rem]">
+                      成本效益高
+                      <span className="text-[#3e96fb]">
+                        網頁工作室能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
+                      </span>
+                    </h2>
+                  </BoxReveal>
+
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <div className="mt-6">
+                      <p>
+                        <span className="font-semibold text-[#3e96fb]">
+                          靈活性強
+                        </span>
+                        <p> 迅速響應您的要求，並且在設計過程中更加靈活</p>
+                        <p className="font-semibold "> 直接與設計師溝通</p>,
+                        <p className="font-semibold ">
+                          避免了中間人傳遞信息的誤差和延誤
+                        </p>
+                        <p className="font-semibold ">
+                          使得整個設計過程更加高效且準確。
+                        </p>
+                      </p>
+                    </div>
+                  </BoxReveal>
+
+                  <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                    <Button className="mt-[1.6rem] bg-[#3e96fb]">
+                      Explore
+                    </Button>
+                  </BoxReveal>
                 </div>
               </div>
             </div>
           </section>
+          <Pricing />
+          <QA />
+          <Solution />
+          <HowItWork />
+
           <div className="flex flex-col pb-[30vh]">
             <div className="flex flex-col justify-center items-center">
               <h2 className="heading font-custom is-medium-title">

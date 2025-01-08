@@ -256,7 +256,7 @@ export default function Features({
                           {item.title}
                         </AccordionTrigger>
 
-                        <AccordionTrigger className="justify-start text-left leading-4 text-[16px] pl-0">
+                        <AccordionTrigger className="justify-start text-left leading-4 text-[16px] font-normal pl-0">
                           {item.content}
                         </AccordionTrigger>
                       </div>
