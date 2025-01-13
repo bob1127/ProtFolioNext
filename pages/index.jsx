@@ -670,7 +670,7 @@ export default function Home() {
           <div className="bg-[#ebcf98] top-[-30px] left-[-10%] z-[999999] h-[80px] w-[120vw] absolute rotate-[180deg] shadow-xl shadow-[#ebcf98]"></div>
 
           <div
-            className="left relative h-[600px]  mt-4 2xl:h-[55vh] ml-[-10vw] w-full  my-6 lg:w-[80%] duration-500 hover:w-[100%] rounded-[40px] border-[20px] overflow-hidden md:border-[30px]  py-0 bg-[#1b9b12] border-10             border-[#5cdd3c]"
+            className="left relative h-[600px]  mt-4 2xl:h-[70vh] ml-[-10vw] w-full  my-6 lg:w-[80%] duration-500 hover:w-[100%] rounded-[40px] border-[20px] overflow-hidden md:border-[30px]  py-0 bg-[#1b9b12] border-10             border-[#5cdd3c]"
             style={{ boxShadow: "10px 10px 0 0 rgba(111, 78, 55)" }}
           >
             <div>
@@ -742,7 +742,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="left h-[600px] 2xl:h-[55vh] duration-500 mr-[-10vw] ml-[80px] my-6 lg:mt-0 w-full lg:w-[50%] rounded-[40px] hover:w-[100%] border-[20px]  md:border-[30px]  py-0 bg-[#1b9b12] relative border-10             border-[#5cdd3c]"
+            className="left h-[600px] 2xl:h-[70vh] duration-500 mr-[-10vw] ml-[80px] my-6 lg:mt-0 w-full lg:w-[50%] rounded-[40px] hover:w-[100%] border-[20px]  md:border-[30px]  py-0 bg-[#1b9b12] relative border-10             border-[#5cdd3c]"
             style={{ boxShadow: "-10px 7px 0 0 rgba(111, 78, 55)" }}
           >
             <div className="img01 hidden sm:block top-[30%] left-[5%] absolute">

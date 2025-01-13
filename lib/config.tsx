@@ -85,7 +85,7 @@ export const siteConfig = {
       },
     },
     {
-      href: "/blog",
+      href: "/",
       label: "Blog",
     },
   ],

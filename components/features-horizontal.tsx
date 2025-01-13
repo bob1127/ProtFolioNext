@@ -178,8 +178,8 @@ export default function Features({
 
   return (
     <section ref={ref} id="features">
-      <div className="container">
-        <div className="max-w-6xl mx-auto ">
+      <div className="container m-0 p-0">
+        <div className="max-w-full sm:max-w-6xl mx-auto  ">
           <div className="">
             <div
               className={`hidden md:flex order-1 md:order-[0]  ${

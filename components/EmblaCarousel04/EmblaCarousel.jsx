@@ -111,7 +111,7 @@ const EmblaCarousel = (props) => {
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
-                flex: "0 0 50%", // Increase this value to widen the slide
+                flex: "0 0 55%", // Increase this value to widen the slide
                 paddingLeft: "var(--slide-spacing)",
               }}
             >
@@ -134,13 +134,13 @@ const EmblaCarousel = (props) => {
 
                     userSelect: "none",
                   }}
-                  className="embla__slide__number bg-[#f2f2f5]  shadow-2xl border border-black  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto lg:h-[350px] 2xl:h-[500px]   flex flex-col  items-center justify-center font-semibold"
+                  className="embla__slide__number bg-[#f2f2f5]  shadow-2xl border border-black  p-3 overflow-visible lg:overflow-hidden  rounded-xl h-auto  2xl:h-auto py-10   flex flex-col  items-center justify-center font-semibold"
                 >
                   <div className="flex  rounded-xl    flex-col h-auto lg:flex-row lg:h-[300px] p-1 md:p-3 justify-center items-center">
                     <Image
                       src={slide.image} // Use the image from the slide object
                       alt={slide.title} // Use title as alt text
-                      className="xl:rounded-[30px] rounded-[16px] w-[500px]"
+                      className="xl:rounded-[30px] rounded-[16px] w-[320px] lg:w-[400px] 2xl:w-[500px]"
                       width={800}
                       height={800}
                       placeholder="empty"

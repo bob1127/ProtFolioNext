@@ -6,34 +6,16 @@ import Image from "next/image";
 import Head from "next/head";
 import HeroSlider from "../../components/SwiperScroll02/page";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import { WarpBackground } from "../../components/ui/warp-background.tsx";
 
 import { NextSeo } from "next-seo";
-export async function getStaticProps() {
-  const postsRes = await fetch(
-    "https://zensorrd.com/portfolio/wp-json/wp/v2/posts?_embed"
-  );
-  const categoriesRes = await fetch(
-    "https://zensorrd.com/portfolio/wp-json/wp/v2/categories"
-  );
-  const tagsRes = await fetch(
-    "https://zensorrd.com/portfolio/wp-json/wp/v2/tags"
-  );
+import {
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "../../components/ui/card.tsx";
 
-  const posts = await postsRes.json();
-  const categories = await categoriesRes.json();
-  const tags = await tagsRes.json(); // 獲取標籤數據
-
-  return {
-    props: {
-      posts,
-      categories,
-      tags, // 將標籤傳遞給組件
-    },
-    revalidate: 10, // 每隔10秒重新生成
-  };
-}
-
-const Blog = ({ posts, categories, tags }) => {
+const Blog = ({}) => {
   const webpage = {
     name: "精選案例－極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、台中網頁設計 - 你的創意，我來實踐",
     description:
@@ -45,12 +27,6 @@ const Blog = ({ posts, categories, tags }) => {
       email: "i.com",
     },
   };
-
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
-  const filteredPosts = selectedCategory
-    ? posts.filter((post) => post.categories.includes(selectedCategory))
-    : posts;
 
   return (
     <div className=" flex border border-black justify-center w-full flex-col">
@@ -106,15 +82,25 @@ const Blog = ({ posts, categories, tags }) => {
         }}
       />
       <section className="hero"></section>
-      <section className="hero-img mt-[80px]">
-        <Image
+      <section className="hero-img 2xl:px-[100px] mt-[80px]">
+        <WarpBackground>
+          <Card className="w-80">
+            <CardContent className="flex flex-col gap-2 p-4">
+              <CardTitle>Shopify | Wordress | 客製化</CardTitle>
+              <CardDescription>
+                各式版型設計，建立符合您需求的網站
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </WarpBackground>
+        {/* <Image
           placeholder="empty"
           alt="Hero-img"
           loading="lazy"
           src="/images/banner04.png"
           width={1920}
           height={768}
-        ></Image>
+        ></Image> */}
       </section>
       <section className="projext-container pb-[70px] md:py-[100px]  px-0 md:px-[40px] 2xl:px-[100px]">
         <div className="flex w-full flex-col">
