@@ -999,7 +999,7 @@ export default function Blog() {
             <section className="section-plan">
               <div className="flex md:flex-row flex-wrap justify-center items-start   flex-row">
                 <div
-                  className="border pb-[60px] h-[450px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
+                  className="border h-auto rounded-xl py-[60px] px-[40px] bg-white  w-[400px] border-black my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <p>Basic</p>
@@ -1009,12 +1009,37 @@ export default function Blog() {
                   <h3 className="text-[40px]">精選方案</h3>
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">精美網站版型設計</p>
-                    <p className="mt-4">簡易後台編輯操作</p>
-                    <p className="mt-4">
-                      商業授權圖庫 x 10 <br></br>(另有商業攝影服務可提供)
-                    </p>
-                    <p className="mt-4">基本seo優化</p>
+                    <div className="mt-4">
+                      <b className="mt-4 text-[20px] font-bold">
+                        網站規劃與設計
+                      </b>
+                      <p className="text-[14px]">
+                        以品牌形象為核心，設計高質感的視覺介面，打造專業形象。
+                      </p>
+                    </div>
+
+                    <div className="mt-4">
+                      <b className="mt-4 text-[20px] font-bold">
+                        SEO與品牌曝光
+                      </b>
+                      <p className="text-[14px]">
+                        串接數據分析工具GA4,GTM，增強品牌在搜尋引擎的能見度
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">後台管理</b>
+                      <p className="text-[14px]">
+                        提供直覺化的內容管理系統，讓用戶能快速更新文章、圖片和影片內容
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">安全性</b>
+                      <p className="text-[14px]">
+                        支援SSL加密和網站加速功能，確保網站穩定運
+                      </p>
+                    </div>
 
                     <div className="flex mt-5 bg-[#000000] text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
@@ -1034,7 +1059,7 @@ export default function Blog() {
                 </div>
 
                 <div
-                  className="border h-[450px] py-[60px] px-[40px] bg-white w-[400px] border-black rounded-md my-4 shadow-xl flex  relative justify-center flex-col items-center mx-4"
+                  className="border h-auto rounded-xl py-[60px] px-[40px] bg-white  w-[400px] border-black my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <p className="font-bold">Landing Page</p>
@@ -1044,12 +1069,38 @@ export default function Blog() {
                   <h3 className="text-[40px]">一頁式網站</h3>
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">活動一頁式網頁設計</p>
-                    <p className="mt-4">高轉化率</p>
-                    <p className="mt-4">
-                      商業授權圖庫 x 10 (另有商業攝影服務可提供)
-                    </p>
-                    <p className="mt-4">客製化設計</p>
+                    <div className="mt-4">
+                      <b className="mt-4 text-[20px] font-bold">
+                        精準設計與定位
+                      </b>
+                      <p className="text-[14px]">
+                        以行銷目標為核心，強調視覺吸引力和信息的清晰傳遞，適合促銷產品、活動推廣或吸引潛在客戶的頁面
+                      </p>
+                    </div>
+
+                    <div className="mt-4">
+                      <b className="mt-4 text-[20px] font-bold">
+                        快速載入的響應式設計
+                      </b>
+                      <p className="text-[14px]">
+                        優化網站性能，提供流暢的用戶體驗。
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">行銷工具整合</b>
+                      <p className="text-[14px]">
+                        支援電子郵件收集表單、CTA按鈕設計、廣告追蹤代碼植入（如Facebook
+                        Pixel和Google Ads），提高轉化率。
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">低成本高效益</b>
+                      <p className="text-[14px]">
+                        針對單一目標優化，適合初創企業、個人品牌或短期行銷活動，提供快速上線且價格合理的方案。
+                      </p>
+                    </div>
                     <div className="flex mt-5 bg-[#000000] text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
                         <Button
@@ -1067,7 +1118,7 @@ export default function Blog() {
                   </div>
                 </div>
                 <div
-                  className="border h-[450px] py-[60px] px-[40px] bg-white  w-[400px] border-black rounded-md my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
+                  className="border h-auto rounded-xl py-[60px] px-[40px] bg-white  w-[400px] border-black my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
                   data-aos="fade-blur"
                 >
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center   h-[120px] w-[120px] font-bold text-black bg-[#ffc532] border border-black">
@@ -1080,11 +1131,46 @@ export default function Blog() {
                   </p> */}
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">客製化網站規劃與設計</p>
-                    <p className="mt-4">包含基本商品去背上架</p>
-                    <p className="mt-4">商品後製精修圖</p>
-                    <p className="mt-4"> 商品 形象 Banner</p>
-                    <p className="mt-4">公司形象(產品)影片拍攝</p>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">
+                        客製化網站規劃與設計
+                      </b>
+                      <p className="text-[14px]">
+                        響應式介面、優化用戶體驗、確保網站結構對SEO友好
+                      </p>
+                    </div>
+
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">電子商務功能</b>
+                      <p className="text-[14px]">
+                        包含產品展示、購物車與結帳、多語言支持、促銷工具和庫存管理等核心功能
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">後台管理</b>
+                      <p className="text-[14px]">
+                        設計易於操作的管理系統，方便企業高效地管理商品、訂單和客戶數據，提升運營效率。
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">
+                        安全性與性能優化
+                      </b>
+                      <p className="text-[14px]">
+                        透過SSL證書、高速載入、備份機制及防駭客保護，確保網站在安全性和穩定性
+                      </p>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[20px] font-bold">行銷整合</b>
+                      <p className="text-[14px]">
+                        整合SEO優化、社交媒體連結、電子郵件行銷和廣告追蹤等工具，幫助網站提高曝光率並吸引更多潛在客戶。
+                      </p>
+                    </div>
 
                     <div className="flex mt-5 bg-[#000000] text-white flex-wrap  gap-3">
                       {backdrops.map((b) => (
@@ -1103,8 +1189,8 @@ export default function Blog() {
                   </div>
                 </div>
                 <div
-                  className="border h-[450px] py-[60px] px-[40px] bg-white border-black rounded-md my-4 flex relative w-[400px]  justify-center flex-col items-center mx-4"
-                  data-aos="fade-bur"
+                  className="border h-auto rounded-xl py-[60px] px-[40px] bg-white  w-[400px] border-black my-4 shadow-xl flex relative justify-center flex-col items-center mx-4"
+                  data-aos="fade-blur"
                 >
                   <p>Customized</p>
                   <div className="circle  rounded-full absolute top-[-30px] right-[-30px] flex flex-col justify-center items-center  h-[120px] bg-[#ffc532] w-[120px] font-bold text-whitebg-[#ffc532] border border-black">
@@ -1117,14 +1203,19 @@ export default function Blog() {
                   </p> */}
 
                   <div className="plan-content mt-5">
-                    <p className="mt-4">
-                      {" "}
-                      {/* <Image src="" width={50} height={50}></Image>{" "} */}
-                      包含第一年網域空間費用
-                    </p>
-                    <p className="mt-4">seo優化(進階)</p>
-                    <p className="mt-4">商品攝影｜形象影片</p>
-                    <p className="mt-4">客製化版型設計</p>
+                    <div className="mt-4">
+                      <b className="mt-4 text-[20px] font-bold">全定制化設計</b>
+                      <p className="text-[14px]">
+                        根據客戶需求從零開始設計，包括視覺風格、導航結構及互動功能，打造獨一無二的網站。
+                      </p>
+                    </div>
+
+                    <div className="mt-4">
+                      <b className="mt-4 text-[20px] font-bold">專業功能開發</b>
+                      <p className="text-[14px]">
+                        線上預約系統，串接API，各項客制化需求
+                      </p>
+                    </div>
 
                     <p className="mt-4"></p>
                     <div className="flex bg-[#000000]  mt-5 text-white flex-wrap  gap-3">

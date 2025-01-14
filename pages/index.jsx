@@ -34,9 +34,9 @@ export default function Home() {
   }, []);
 
   const webpage = {
-    name: "極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站、3D建模、網站改版、台中網頁設計 - 你的創意，我來實踐",
+    name: "極客網頁設計｜形象官網、網站seo優化、客製化網站、wordpress網站、台中網頁設計 - 你的創意，我來實踐",
     description:
-      "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+      "極客網頁設計專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇極客網頁設計，讓您的線上存在更具吸引力和實用性。",
     url: "https://www.jeek-webdesign.com.tw",
     logo: "https://www.jeek-webdesign.com.tw/images/company-logo/JeekLogo_web_title.png",
     contact: {
@@ -204,12 +204,12 @@ export default function Home() {
       </Head>
       <div>
         <NextSeo
-          title="極客網頁設計｜JEEK WEBDESIGN｜形象官網、商業攝影、客製化網站、套版網站 - 你的創意，我來實踐"
-          description="JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。"
+          title="極客網頁設計｜形象官網、網站seo優化、客製化網站、wordpress網站、台中網頁設計 - 你的創意，我來實踐"
+          description="極客網頁設計專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇極客網頁設計，讓您的線上存在更具吸引力和實用性。"
           openGraph={{
             title: "極客網頁設計｜JEEK WEBDESIGN - 你的創意，我來實踐",
             description:
-              "JEEK 專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇 JEEK，讓您的線上存在更具吸引力和實用性。",
+              "極客網頁設計專注於網頁設計和網頁結構優化，致力於為您打造視覺美觀、使用者友好的網站。通過精確的設計和優化策略，我們提升網站的加載速度和使用者體驗，幫助您的品牌在數位世界中脫穎而出。選擇極客網頁設計，讓您的線上存在更具吸引力和實用性。",
             images: [
               {
                 url: "https://www.jeek-webdesign.com.tw/images/facebook.png",
@@ -810,7 +810,7 @@ export default function Home() {
                 <div>
                   <div className="chatbox">
                     <p data-aos="zoom-in" className="text-white  font-bold">
-                      Html,Cssm,Js
+                      Html,Css,Js
                       <br />
                       <span className="font-black text-black">專業的服務</span>
                     </p>
@@ -1553,21 +1553,16 @@ export default function Home() {
                     <p className="font-black mb-5 text-[40px]">NT50,000</p>
                   </div>
                   <ul>
-                    <li className="text-[16px] font-bold mt-2">
-                      客製化網站規劃與設計
-                    </li>
-                    <li className="text-[16px] font-bold mt-2">
-                      簡單易用使用者後台
-                    </li>
-                    <li className="text-[16px] font-bold mt-2">
-                      包含基本商品去背上架
-                    </li>
-                    <li className="text-[16px] font-bold mt-2">
-                      簡單上下架產品
-                    </li>
-                    <li className="text-[16px] font-bold mt-2">
-                      商品圖｜Banner 製作
-                    </li>
+                    <h4 className="text-white text-[22px]">購物網站</h4>
+                    <b className="text-[#ffbd52] text-[32px]">NT50,000 up</b>
+                    <p className="text-[18px] mt-2 text-white mt-3">
+                      專業CMS後台管理系統
+                    </p>
+                    <p className="text-[18px] mt-2 text-white">SEO頁面優化</p>
+
+                    <p className="text-[18px] mt-2 text-white">
+                      產品攝影、Banner製作
+                    </p>
                   </ul>
                 </div>
 
@@ -1754,7 +1749,7 @@ export default function Home() {
                     </p>
                     <p>免費網站健檢，請在表格留下 </p>
                     <span className="text-[14px] mt-[60px] border border-black   bg-white  p-8">
-                      如果您聯繫我並無即時收到回覆，請耐心等候。Jeek會盡快回覆您！！！
+                      如果您聯繫我並無即時收到回覆，請耐心等候。會盡快回覆您
                     </span>
                     <div className="flex  justify-center items-center">
                       <a

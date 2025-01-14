@@ -179,7 +179,7 @@ const items = [
     title: "GraphicDesign",
     title02: "平面｜DM｜包裝｜企業形象CIS設計",
     Icon: FiBarChart,
-    imgSrc: "/images/searchgpt.jpg",
+    imgSrc: "/images/網頁設計02_極客網頁設計_網頁設計建置.webp",
     description:
       "打造獨特品牌形象，從平面設計、DM宣傳到包裝設計，精心塑造每一個細節。專業的企業形象CIS設計，讓您的品牌視覺更具辨識度",
     link: "/GraphicDesign", // Example link

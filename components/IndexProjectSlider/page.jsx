@@ -145,19 +145,16 @@ export default function App() {
                   <p className="font-black mb-5 text-[40px]">NT50,000</p>
                 </div>
                 <ul>
-                  <li className="text-[16px] font-bold mt-2">
-                    客製化網站規劃與設計
-                  </li>
-                  <li className="text-[16px] font-bold mt-2">
-                    簡單易用使用者後台
-                  </li>
-                  <li className="text-[16px] font-bold mt-2">
-                    包含基本商品去背上架
-                  </li>
-                  <li className="text-[16px] font-bold mt-2">簡單上下架產品</li>
-                  <li className="text-[16px] font-bold mt-2">
-                    商品圖｜Banner 製作
-                  </li>
+                  <h4 className="text-white text-[22px]">購物網站</h4>
+                  <b className="text-[#ffbd52] text-[32px]">NT50,000 up</b>
+                  <p className="text-[18px] mt-2 text-white mt-3">
+                    專業CMS後台管理系統
+                  </p>
+                  <p className="text-[18px] mt-2 text-white">SEO頁面優化</p>
+
+                  <p className="text-[18px] mt-2 text-white">
+                    產品攝影、Banner製作
+                  </p>
                 </ul>
               </div>
               <div className="img-item py-[20px] w-[80%] mx-auto">

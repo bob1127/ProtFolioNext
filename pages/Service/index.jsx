@@ -505,14 +505,14 @@ export default function Blog() {
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <p className="text-[2.5em] font-semibold">
                       不要再認為自己的品牌做網頁行銷很花錢了！
-                      <span className="text-[#3e96fb]"></span>
+                      <span className="text-[#000000]"></span>
                     </p>
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <h2 className="mt-[.5rem] text-[1rem]">
                       許多人以為網站設計和行銷需要大筆預算才能有效
-                      <span className="text-[#3e96fb]">
+                      <span className="text-[#000000]">
                         但我們的方案讓您在有限預算內也能做出好網站
                       </span>
                     </h2>
@@ -522,20 +522,20 @@ export default function Blog() {
                     <div className="mt-6">
                       <p>
                         我們專為初創企業與中小型商家量身打造行銷策略
-                        <span className="font-semibold text-[#3e96fb]">
+                        <span className="font-semibold text-[#000000]">
                           {" "}
                           透過專業網站設計與 SEO 優化
                         </span>
                         ,
-                        <span className="font-semibold text-[#3e96fb]">
+                        <span className="font-semibold text-[#000000]">
                           {" "}
                           快速提升品牌曝光度
                         </span>
                         ,
-                        <span className="font-semibold text-[#3e96fb]">
+                        <span className="font-semibold text-[#000000]">
                           吸引精準客群
                         </span>
-                        <span className="font-semibold text-[#3e96fb]">
+                        <span className="font-semibold text-[#000000]">
                           助您實現銷售成長。
                         </span>
                       </p>
@@ -543,7 +543,7 @@ export default function Blog() {
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
-                    <Button className="mt-[1.6rem] bg-[#3e96fb]">
+                    <Button className="mt-[1.6rem] bg-[#000000]">
                       Explore
                     </Button>
                   </BoxReveal>
@@ -574,14 +574,14 @@ export default function Blog() {
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <p className="text-[2.5em] font-semibold">
                       工作室，彈性更高，效率更高
-                      <span className="text-[#3e96fb]"></span>
+                      <span className="text-[#000000]"></span>
                     </p>
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <h2 className="mt-[.5rem] text-[1rem]">
                       成本效益高
-                      <span className="text-[#3e96fb]">
+                      <span className="text-[#000000]">
                         網頁工作室能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
                       </span>
                     </h2>
@@ -590,7 +590,7 @@ export default function Blog() {
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <div className="mt-6">
                       <p>
-                        <span className="font-semibold text-[#3e96fb]">
+                        <span className="font-semibold text-[#000000]">
                           靈活性強
                         </span>
                         <p> 迅速響應您的要求，並且在設計過程中更加靈活</p>
@@ -606,7 +606,7 @@ export default function Blog() {
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
-                    <Button className="mt-[1.6rem] bg-[#3e96fb]">
+                    <Button className="mt-[1.6rem] bg-[#000000]">
                       Explore
                     </Button>
                   </BoxReveal>

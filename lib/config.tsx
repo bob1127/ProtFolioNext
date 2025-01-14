@@ -145,7 +145,7 @@ export const siteConfig = {
     {
       question: "Step1.需求溝通與項目規劃",
       answer: (
-        <span>
+        <span className="text-[16px] ">
           設計師或網頁工程師將透過與您溝通，瞭解您的品牌定位、目標客群與網站功能需求，打造精準的網站架構與設計。
           這一步不僅是奠定網站製作的基礎，更是降低未來修改成本的關鍵。
         </span>
@@ -154,7 +154,7 @@ export const siteConfig = {
     {
       question: "Step02.視覺設計與雙方達成確認",
       answer: (
-        <span>
+        <span className="text-[16px] ">
           設計師或網頁工程師會以您的品牌核心，製作出符合您公司品牌需求的網頁設計稿。
           平面稿件完成後，我們會與您確認視覺方向，確保每個細節都達到預期效果。
           如果校稿或修改內容較多，製作時間可能會相應調整。在這個步驟中，為了確保項目的順利推進並保護雙方的權益，我們會與您簽訂合約，明確合作範圍、工作流程與時程規劃，讓雙方在合作的每一階段都有清晰的共識。
@@ -166,7 +166,7 @@ export const siteConfig = {
     {
       question: "Step03. 前後端開發與整合",
       answer: (
-        <span>
+        <span className="text-[16px] ">
           這階段技術工程師會專注於網站功能、網頁美工設計與動畫效果實現，
           並建立易於使用的後台系統，確保使用者能輕鬆操作與管理。
         </span>
@@ -175,7 +175,7 @@ export const siteConfig = {
     {
       question: "Step04.內容整理與SEO設定",
       answer: (
-        <span>
+        <span className="text-[16px] ">
           如有串接資料需求會在這個步驟進行，SEO優化，網站結構優化。
           同時，我們會教您如何操作後台，讓網站維護變得更加高效簡單。
         </span>
@@ -184,7 +184,7 @@ export const siteConfig = {
     {
       question: "Step05.網站上線與後續支援",
       answer: (
-        <span>
+        <span className="text-[16px] ">
           最後，我們會協助您完成域名設定並將網站上線。
           從此刻起，您的品牌有了全新數位形象，並可持續為企業創造更多價值。
         </span>

@@ -179,15 +179,31 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">一頁式網站</h4>
-                    <b className="text-[#ffbd52] text-[32px]">NT10,000 up</b>
-                    <p className="text-[18px] mt-2 text-white ">
-                      一頁式網頁設計
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">
-                      商業授權圖庫 x 10 (另有商業攝影服務可提供)
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">客製化設計</p>
-                    <p className="text-[18px] mt-2 text-white">基本seo優化</p>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        精準設計與定位
+                      </b>
+                    </div>
+
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        快速載入的響應式設計
+                      </b>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        行銷工具整合
+                      </b>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        低成本高效益
+                      </b>
+                    </div>
                   </div>
                 </li>
                 <li className="bg-black p-8 rounded-md ">
@@ -200,16 +216,31 @@ export default function NewsletterForm() {
                   <div>
                     <h4 className="text-white text-[22px]">精選方案</h4>
 
-                    <b className="text-[#ffbd52] text-[32px]">NT30,000 up</b>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        網站規劃與設計
+                      </b>
+                    </div>
 
-                    <p className="text-[18px] mt-2 text-white mt-3">
-                      串接GA4、GTM
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">
-                      商業授權圖庫 x 10 (另有商業攝影服務可提供)
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">客製化設計</p>
-                    <p className="text-[18px] mt-2 text-white">seo優化</p>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        SEO與品牌曝光
+                      </b>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        後台管理
+                      </b>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        安全性
+                      </b>
+                    </div>
                   </div>
                 </li>
 
@@ -221,22 +252,31 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">購物網站</h4>
-                    <b className="text-[#ffbd52] text-[32px]">NT50,000 up</b>
-                    <p className="text-[18px] mt-2 text-white mt-3">
-                      客製化網站規劃與設計
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">
-                      簡單易用使用者後台
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">
-                      包含基本商品去背上架
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">
-                      簡單上下架產品
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">
-                      商品圖｜Banner 製作
-                    </p>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        客製化網站規劃與設計
+                      </b>
+                    </div>
+
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        後台管理
+                      </b>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        安全性與性能優化
+                      </b>
+                    </div>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        行銷整合
+                      </b>
+                    </div>
                   </div>
                 </li>
                 <li className="bg-black p-8 rounded-md ">
@@ -247,17 +287,19 @@ export default function NewsletterForm() {
                   ></input>
                   <div>
                     <h4 className="text-white text-[22px]">客製化網站</h4>
-                    <b className="text-[#ffbd52] text-[32px]">找我談談！</b>
-                    <p className="text-[18px] mt-2 text-white ">
-                      網頁客製化設計版面｜圖文
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">seo優化</p>
-                    <p className="text-[18px] mt-2 text-white">
-                      商品攝影｜形象影片
-                    </p>
-                    <p className="text-[18px] mt-2 text-white">
-                      提供後續完整維護及流量追蹤
-                    </p>
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        全定制化設計
+                      </b>
+                    </div>
+
+                    <div className="mt-4">
+                      {" "}
+                      <b className="mt-4 text-[16px] font-normal text-white">
+                        專業功能開發
+                      </b>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -272,7 +314,7 @@ export default function NewsletterForm() {
                   >
                     {" "}
                     <Image
-                      src="/images/line-qrcode.jpg"
+                      src="/images/line-qrcode.png"
                       width={100}
                       height={100}
                       loading="lazy"
@@ -288,7 +330,7 @@ export default function NewsletterForm() {
                           <ModalBody>
                             <div className="">
                               {/* <Image
-                                src="/images/line-qrcode.jpg"
+                                src="/images/line-qrcode.png"
                                 width={1000}
                                 height={1000}
                                 loading="lazy"
@@ -315,7 +357,7 @@ export default function NewsletterForm() {
                           <ModalBody>
                             <div className="">
                               <Image
-                                src="/images/line-qrcode.jpg"
+                                src="/images/line-qrcode.png"
                                 width={1000}
                                 height={1000}
                                 loading="lazy"
