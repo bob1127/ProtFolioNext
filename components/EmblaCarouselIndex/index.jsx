@@ -25,9 +25,9 @@ const App = () => {
       link: "/blog-01",
     },
     {
-      image: "/images/商業產品攝影-極客網頁設計.png",
-      title: "商業攝影",
-      description: "好的網站也必須要有好看的圖片",
+      image: "/images/exp1.svg",
+      title: "近期專案",
+      description: "近期規劃中網站、完成網站",
       link: "/blog-01",
     },
     // Add more slides as needed

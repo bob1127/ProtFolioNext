@@ -6,8 +6,8 @@ import Image from "next/image";
 import Head from "next/head";
 import HeroSlider from "../../components/SwiperScroll02/page";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
-import { WarpBackground } from "../../components/ui/warp-background.tsx";
-
+// import { WarpBackground } from "../../components/ui/warp-background.tsx";
+import Flip from "../../components/Flip.jsx";
 import { NextSeo } from "next-seo";
 import {
   CardContent,
@@ -82,8 +82,10 @@ const Blog = ({}) => {
         }}
       />
       <section className="hero"></section>
+
       <section className="hero-img 2xl:px-[100px] mt-[80px]">
-        <WarpBackground>
+        <Flip />
+        {/* <WarpBackground>
           <Card className="w-80">
             <CardContent className="flex flex-col gap-2 p-4">
               <CardTitle>Shopify | Wordress | 客製化</CardTitle>
@@ -92,7 +94,7 @@ const Blog = ({}) => {
               </CardDescription>
             </CardContent>
           </Card>
-        </WarpBackground>
+        </WarpBackground> */}
         {/* <Image
           placeholder="empty"
           alt="Hero-img"
@@ -110,6 +112,29 @@ const Blog = ({}) => {
                 <Card>
                   <CardBody>
                     <div className="flex flex-wrap">
+                      <a
+                        href="https://www.starislandbaby.com"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2 xl:border-[8px] w-full md:w-[400px]  2xl:w-[800px] border-[#c1f06a]">
+                          <img
+                            src="/images/星嶼童裝-專案.jpg"
+                            alt="專案01-禪譜科技"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>星嶼童裝</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue">
+                            建置中....
+                          </a>
+                        </div>
+                      </a>
                       <a
                         href="https://www.zensor.com.tw"
                         target="_blank"
