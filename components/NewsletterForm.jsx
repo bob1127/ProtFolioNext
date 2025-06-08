@@ -350,17 +350,18 @@ export default function NewsletterForm() {
 
                 <li className="mr-5 mt-3">
                   <Modal isOpen={isOpen === 1} onOpenChange={handleClose}>
-                    <ModalContent className="border bg-[#fdb715] p-[100px] rounded-[30px]  border-black">
+                    <ModalContent className="border bg-[#fdb715] p-[10px] rounded-[30px]  border-black">
                       {(onClose) => (
                         <>
                           <ModalHeader className="flex  flex-col  gap-1"></ModalHeader>
                           <ModalBody>
-                            <div className="">
+                            <div className=" flex justify-center flex-col items-center">
                               <Image
                                 src="/images/line-qrcode.png"
                                 width={1000}
                                 height={1000}
                                 loading="lazy"
+                                className="w-[300px] max-w-[350px] mx-auto"
                                 alt="contact-line-qrcode"
                                 placeholder="empty"
                               ></Image>

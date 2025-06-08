@@ -504,39 +504,28 @@ export default function Blog() {
                 <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <p className="text-[2.5em] font-semibold">
-                      不要再認為自己的品牌做網頁行銷很花錢了！
-                      <span className="text-[#000000]"></span>
+                      <span className="text-[#000000]">網頁的花費？</span>
                     </p>
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <h2 className="mt-[.5rem] text-[1rem]">
-                      許多人以為網站設計和行銷需要大筆預算才能有效
-                      <span className="text-[#000000]">
-                        但我們的方案讓您在有限預算內也能做出好網站
-                      </span>
+                      Ai時代來臨，網頁製作的成本和門檻是越來越低，所以你如果想要自己製作一個網站可以是0成本！
                     </h2>
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <div className="mt-6">
                       <p>
-                        我們專為初創企業與中小型商家量身打造行銷策略
-                        <span className="font-semibold text-[#000000]">
+                        <span className="font-normal text-[#000000]">
                           {" "}
-                          透過專業網站設計與 SEO 優化
-                        </span>
-                        ,
-                        <span className="font-semibold text-[#000000]">
-                          {" "}
-                          快速提升品牌曝光度
-                        </span>
-                        ,
-                        <span className="font-semibold text-[#000000]">
-                          吸引精準客群
-                        </span>
-                        <span className="font-semibold text-[#000000]">
-                          助您實現銷售成長。
+                          但是就是因為大家人人都會，所以好的網站會更顯得突出。所以你如果只是想自己做個簡單的個人作品集網站或者簡單的形象或者購物網站，你完全可以自己動手來。
+                          <br></br>
+                          <br></br>
+                          但是好的網站牽扯到很多的問題：網頁結構、代碼的精簡度、形象設計、使用者的互動體驗、網頁效能。{" "}
+                          <br></br>
+                          <br></br>
+                          這些都是會真正影響網頁是否能曝光且排名靠前的因素
                         </span>
                       </p>
                     </div>
@@ -573,34 +562,25 @@ export default function Blog() {
                 <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <p className="text-[2.5em] font-semibold">
-                      工作室，彈性更高，效率更高
+                      工作室經營模式，小而美，符合您的效益
                       <span className="text-[#000000]"></span>
                     </p>
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <h2 className="mt-[.5rem] text-[1rem]">
-                      成本效益高
+                      控制您的預算成本
                       <span className="text-[#000000]">
-                        網頁工作室能夠提供更具競爭力的價格，讓您以較低的預算獲得專業的網站設計。
+                        通常網頁工作室會有更具有價格競爭力的方案內容提供給您
                       </span>
                     </h2>
                   </BoxReveal>
 
                   <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
                     <div className="mt-6">
+                      <b>及時溝通不需層層傳遞資訊</b>
                       <p>
-                        <span className="font-semibold text-[#000000]">
-                          靈活性強
-                        </span>
-                        <p> 迅速響應您的要求，並且在設計過程中更加靈活</p>
-                        <p className="font-semibold "> 直接與設計師溝通</p>,
-                        <p className="font-semibold ">
-                          避免了中間人傳遞信息的誤差和延誤
-                        </p>
-                        <p className="font-semibold ">
-                          使得整個設計過程更加高效且準確。
-                        </p>
+                        通常您可以直接與網頁工程師提出您的需求，我們會立即反饋給您可行性和建議。來達到節省資訊傳遞誤差和時間成本
                       </p>
                     </div>
                   </BoxReveal>

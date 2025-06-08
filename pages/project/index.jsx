@@ -113,13 +113,78 @@ const Blog = ({}) => {
                   <CardBody>
                     <div className="flex flex-wrap">
                       <a
+                        href="https://accelerashopify.vercel.app/"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                          <img
+                            src="/images/輪胎.jpg"
+                            alt="輪胎.jpg"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
+                        <div className="txt py-5 w-full   flex justify-between">
+                          <b>Accelera radial Canada</b>{" "}
+                          <b>
+                            <span className="bg-[#202020] text-[13px] rounded-full px-3 py-1 text-white">
+                              building..
+                            </span>
+                          </b>
+                        </div>
+                      </a>
+                      <a
+                        href="https://kuankoshi-nfeo.vercel.app/"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                          <img
+                            src="/images/寬越室內設計.jpg"
+                            alt="專案04-寬越室內設計"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>寬越室內設計</b> <br></br>
+                        </div>
+                      </a>
+                      <a
+                        href="https://yi-yuan.vercel.app/"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                          <img
+                            src="/images/Yi-Yuan.jpg"
+                            alt="專案01-禪譜科技"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
+                        <div className="txt py-5">
+                          <b>宜園建設</b> <br></br>
+                        </div>
+                      </a>
+                      <a
                         href="https://www.starislandbaby.com"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border-2 xl:border-[8px] w-full md:w-[400px]  2xl:w-[800px] border-[#c1f06a]">
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
                           <img
                             src="/images/星嶼童裝-專案.jpg"
                             alt="專案01-禪譜科技"
@@ -130,9 +195,6 @@ const Blog = ({}) => {
 
                         <div className="txt py-5">
                           <b>星嶼童裝</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            建置中....
-                          </a>
                         </div>
                       </a>
                       <a
@@ -142,7 +204,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
                           <img
                             src="/images/portfolio-zensor.webp"
                             alt="專案01-禪譜科技"
@@ -153,9 +215,6 @@ const Blog = ({}) => {
 
                         <div className="txt py-5">
                           <b>禪譜科技股份有限公司</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
                         </div>
                       </a>
                       <a
@@ -166,7 +225,7 @@ const Blog = ({}) => {
                         data-aos-delay="100"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
                           <img
                             src="/images/ultraehp01.png"
                             alt="專案01-禪譜科技"
@@ -177,9 +236,6 @@ const Blog = ({}) => {
 
                         <div className="txt py-5">
                           <b>超極生技股份有限公司</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
                         </div>
                       </a>
                       <a
@@ -190,7 +246,7 @@ const Blog = ({}) => {
                         data-aos-delay="200"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
                           <img
                             src="/images/king.png"
                             alt="專案01-禪譜科技"
@@ -201,9 +257,6 @@ const Blog = ({}) => {
 
                         <div className="txt py-5">
                           <b>金牛頓股份有限公司</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
                         </div>
                       </a>
                     </div>
@@ -225,7 +278,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
                           <img
                             src="/images/多利安.png"
                             alt="專案05-多利安音樂藝術"
@@ -236,9 +289,6 @@ const Blog = ({}) => {
 
                         <div className="txt py-5">
                           <b>多利安音樂藝術</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
                         </div>
                       </a>
                     </div>
@@ -255,7 +305,7 @@ const Blog = ({}) => {
                     {" "}
                     <div className="flex flex-wrap">
                       <a
-                        href="https://websitedemos.net/pub-and-lounge-04/?customize=template"
+                        href="https://www.chuan-wo.com.tw/"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
@@ -266,96 +316,16 @@ const Blog = ({}) => {
                             loading="lazy"
                             width={400}
                             height={300}
-                            src="/images/WP-theme-demo/template/demo-01.jpg"
-                            alt="wp-模板範例"
+                            src="/images/project/chuan-wo_室內設計官方網站.webp"
+                            alt="chuan-wo_室內設計官方網站"
                             className="w-full"
                             placeholder="empty"
                           ></Image>
                         </div>
 
                         <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/real-estate-company-04/?customize=template"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
-                          <Image
-                            loading="lazy"
-                            width={400}
-                            height={300}
-                            src="/images/WP-theme-demo/template/demo-02.jpg"
-                            alt="wp-模板範例"
-                            className="w-full"
-                            placeholder="empty"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/pizzeria-04/?customize=template"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
-                          <Image
-                            loading="lazy"
-                            width={400}
-                            height={300}
-                            src="/images/WP-theme-demo/template/demo-03.jpg"
-                            alt="wp-模板範例"
-                            className="w-full"
-                            placeholder="empty"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/fast-food-04/?customize=template"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
-                          <Image
-                            loading="lazy"
-                            width={400}
-                            height={300}
-                            src="/images/WP-theme-demo/template/demo-04.jpg"
-                            alt="wp-模板範例"
-                            className="w-full"
-                            placeholder="empty"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
+                          <b>chuan-wo 室內設計</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue"></a>
                         </div>
                       </a>
                     </div>
@@ -375,7 +345,7 @@ const Blog = ({}) => {
                     {" "}
                     <div className="flex flex-wrap">
                       <a
-                        href="https://websitedemos.net/blingg-jewelry-store-04/?customize=template"
+                        href="https://drwako.com.tw"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
@@ -383,145 +353,18 @@ const Blog = ({}) => {
                       >
                         <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
                           <Image
-                            src="/images/WP-theme-demo/e-commerce/demo-03.jpg"
+                            loading="lazy"
                             width={400}
                             height={300}
-                            alt="wp-網頁版型範例"
-                            placeholder="empty"
-                            loading="lazy"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/recycled-shoe-store-04/?customize=template"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px]  border-black">
-                          <Image
-                            src="/images/WP-theme-demo/e-commerce/demo-04.jpg"
-                            width={400}
-                            loading="lazy"
-                            height={300}
-                            alt="wp-網頁版型範例"
+                            src="/images/project/drwako-肌膚保養官方購物網站.webp"
+                            alt="drwako-肌膚保養官方購物網站"
+                            className="w-full"
                             placeholder="empty"
                           ></Image>
                         </div>
 
                         <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/t-shirts-store-04/?customize=template"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
-                          <Image
-                            src="/images/WP-theme-demo/e-commerce/demo-05.jpg"
-                            width={400}
-                            loading="lazy"
-                            height={300}
-                            alt="wp-網頁版型範例"
-                            placeholder="empty"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/electric-scooter-04/?customize=template"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
-                          <Image
-                            src="/images/WP-theme-demo/e-commerce/demo-01.jpg"
-                            width={400}
-                            loading="lazy"
-                            height={300}
-                            alt="wp-網頁版型範例"
-                            placeholder="empty"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/home-decor-04/?customize=template"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
-                          <Image
-                            src="/images/WP-theme-demo/e-commerce/demo-02.jpg"
-                            width={400}
-                            loading="lazy"
-                            height={300}
-                            alt="wp-網頁版型範例"
-                            placeholder="empty"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
-                        </div>
-                      </a>
-                      <a
-                        href="https://websitedemos.net/sports-wear-store-04/?customize=template#"
-                        target="_blank"
-                        data-aos="fade-up"
-                        data-duration="300"
-                        className="project-item flex flex-col mx-3"
-                      >
-                        <div className="img-wrap   rounded-lg border w-full overflow-hidden md:w-[400px]  2xl:w-[800px] border-black">
-                          <Image
-                            src="/images/WP-theme-demo/e-commerce/demo-06.jpg"
-                            width={400}
-                            loading="lazy"
-                            height={300}
-                            alt="wp-網頁版型範例"
-                            placeholder="empty"
-                          ></Image>
-                        </div>
-
-                        <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
+                          <b>drwako - 肌膚保養</b> <br></br>
                         </div>
                       </a>
                     </div>
@@ -547,7 +390,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
                           <Image
                             src="/images/WP-theme-demo/LandingPage/demo-01.jpg"
                             width={400}
@@ -560,9 +403,6 @@ const Blog = ({}) => {
 
                         <div className="txt py-5">
                           <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
                         </div>
                       </a>
                     </div>

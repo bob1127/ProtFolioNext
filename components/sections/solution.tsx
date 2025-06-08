@@ -34,8 +34,8 @@ const features = [
       "order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out",
     content: (
       <Image
-        src="/images/網頁結構優化-極客網頁設計.png"
-        alt="網頁結構優化-極客網頁設計"
+        src="/images/網頁seo優化-speed-insight-test-score.webp"
+        alt="網頁seo優化-speed-insight-test-score"
         width={800}
         height={600}
         placeholder="empty"
@@ -89,7 +89,7 @@ export default function Component() {
   return (
     <Section
       title="Service"
-      subtitle="為您的網站提供專業的服務內容"
+      subtitle="為您提供專業的服務內容"
       description="致力於打造使用者體驗良好的網頁，讓您的網站可以為您的企業帶來實質的收益"
       className="bg-neutral-100 dark:bg-neutral-900"
     >

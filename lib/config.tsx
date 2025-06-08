@@ -93,9 +93,9 @@ export const siteConfig = {
     {
       name: "基本網站",
       href: "#",
-      price: "NT 2,500",
+      price: "NT 1,000",
       period: "month",
-      yearlyPrice: "NT 2,000",
+      yearlyPrice: "NT 1,000",
       features: [
         "網頁運行維護",
         "網頁備份",
@@ -143,50 +143,49 @@ export const siteConfig = {
   ],
   faqs: [
     {
-      question: "Step1.需求溝通與項目規劃",
+      question: "Step1.了解客戶需求，並展開雙方溝通",
       answer: (
-        <span className="text-[16px] ">
-          設計師或網頁工程師將透過與您溝通，瞭解您的品牌定位、目標客群與網站功能需求，打造精準的網站架構與設計。
-          這一步不僅是奠定網站製作的基礎，更是降低未來修改成本的關鍵。
+        <span className="text-[16px]  leading-relaxed tracking-widest">
+          我們的業務、PM會好會大致上了解您的需球，並且迅速跟工程師討論可行性並且回覆您(包含簡單的報價)，
+          如客戶有近一步合作意願時我們才會根據需求內容展開更近一步的溝通和詳細報價內容
         </span>
       ),
     },
     {
-      question: "Step02.視覺設計與雙方達成確認",
+      question: "Step02.同意合作並開始規劃視覺外觀設計",
       answer: (
-        <span className="text-[16px] ">
-          設計師或網頁工程師會以您的品牌核心，製作出符合您公司品牌需求的網頁設計稿。
-          平面稿件完成後，我們會與您確認視覺方向，確保每個細節都達到預期效果。
-          如果校稿或修改內容較多，製作時間可能會相應調整。在這個步驟中，為了確保項目的順利推進並保護雙方的權益，我們會與您簽訂合約，明確合作範圍、工作流程與時程規劃，讓雙方在合作的每一階段都有清晰的共識。
-          同時，可能會視情況斟酌收取訂金，例如設計需求較為複雜、頁面數量較多或需要投入大量創意與資源時，這樣可以保障設計師的工作投入並提高效率。
-          尾款部分則會在網站完成或正式上線前支付，確保您對最終成果感到滿意，並為項目的圓滿結束提供保障。這樣的安排能讓整個合作過程更具透明性與專業性。
+        <div>
+          <span className="text-[16px]  leading-relaxed tracking-widest">
+            如果客戶同意合作後，我們會簽合約保障雙方，<br></br>
+            然後網頁設計師會開始大約拉個設計版型和ui/wirefram/Mockup，這段時間會即時跟客戶確認設計的方向，確保雙方的認知誤差在最小範圍。
+            通常我們會先跟您收取總款項的5-10%(會根據專案複雜程度和總報價金額做變動)來做為訂金預付，之後便會開始初版設計。
+          </span>
+        </div>
+      ),
+    },
+    {
+      question: "Step03. 版面效果呈現與資料和前後端整合",
+      answer: (
+        <span className="text-[16px]  leading-relaxed tracking-widest">
+          等到網頁版型出來後，網頁工程師會開始套效果做網頁結構優化，使用者互動體驗，並且如有CMS
+          後台需求，會開始串接整合api。 使網站達到可正式上線的地步。
         </span>
       ),
     },
     {
-      question: "Step03. 前後端開發與整合",
+      question: "Step04.內容版面再修改與SEO優化",
       answer: (
-        <span className="text-[16px] ">
-          這階段技術工程師會專注於網站功能、網頁美工設計與動畫效果實現，
-          並建立易於使用的後台系統，確保使用者能輕鬆操作與管理。
+        <span className="text-[16px]  leading-relaxed tracking-widest">
+          如客戶對於任何地方有想法意見，我們會即時與工程師做討論。如有合約上沒有註明的功能需求這時也可以提出，我們會再額外報價。
+          我們會先上測試環境給您確認網站的完整效果互動、功能或者呈現方式，待確認完成後開始進行網頁結構、圖片媒體的優化
         </span>
       ),
     },
     {
-      question: "Step04.內容整理與SEO設定",
+      question: "Step05.網站正式上線與後續維護",
       answer: (
-        <span className="text-[16px] ">
-          如有串接資料需求會在這個步驟進行，SEO優化，網站結構優化。
-          同時，我們會教您如何操作後台，讓網站維護變得更加高效簡單。
-        </span>
-      ),
-    },
-    {
-      question: "Step05.網站上線與後續支援",
-      answer: (
-        <span className="text-[16px] ">
-          最後，我們會協助您完成域名設定並將網站上線。
-          從此刻起，您的品牌有了全新數位形象，並可持續為企業創造更多價值。
+        <span className="text-[16px]  leading-relaxed tracking-widest">
+          正式上線後，1-2個月內會持續監控網站有無Bug和數據分析。如果您有維護需求也歡迎向我們詢問。
         </span>
       ),
     },

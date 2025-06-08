@@ -152,7 +152,7 @@ const items = [
     Icon: FiDollarSign,
     imgSrc: "/images/facebook.png",
     description:
-      "我們專注於設計美觀且高效的網站，並進行結構優化，提升使用者體驗。透過專業的SEO服務，讓您的網站在搜尋引擎中脫穎而出，吸引更多潛在客戶，助您業務增長。讓我們幫助您提升網站價值！",
+      "我們專精於設計符合使用者體驗且具有美觀和實質性效益的網站，並為您的網頁提供結構性上的優化，使其在尋引擎中立即被收錄且迅速排名靠前。",
     link: "/WebOptimization", // Example link
   },
   {
@@ -161,7 +161,8 @@ const items = [
     title02: "3D產品建模",
     Icon: FiPlay,
     imgSrc: "/images/3d產品模型05-極客網頁設計|Blender3D.png.png",
-    description: "我們提供3D建模服務，幫助您將產品概念轉化為真實視覺效果。",
+    description:
+      "不管工業零件的設計建模、或者準備上線或者已經銷售中的產品，為您的產品打造3D互動體驗。讓網頁呈現效果上更為吸睛以及增加客戶停留的意願",
     link: "/3dProduct", // Example link
   },
   {
@@ -171,7 +172,7 @@ const items = [
     Icon: FiBell,
     imgSrc: "/images/商業攝影_產品_banner-極客網頁設計.png",
     description:
-      "專業商業產品攝影，提升您的品牌形象。我們捕捉每個細節，呈現產品最佳狀態，無論是電商、廣告還是宣傳，讓您的產品在市場中脫穎而出，吸引更多目光。",
+      "商品攝影和情境照片，網站必須搭配吸引人的圖片設計，如果你有好的產品那就應該要好好設計形象圖片。讓效益和曝光達到最大化",
     link: "/Photography", // Example link
   },
   {
@@ -181,7 +182,7 @@ const items = [
     Icon: FiBarChart,
     imgSrc: "/images/網頁設計02_極客網頁設計_網頁設計建置.webp",
     description:
-      "打造獨特品牌形象，從平面設計、DM宣傳到包裝設計，精心塑造每一個細節。專業的企業形象CIS設計，讓您的品牌視覺更具辨識度",
+      "幫你的公司打造專業的品牌形象，品牌就等同於公司的形象門面，好的平面設計、DM設計、包裝設計 會讓你的企業看起來更具有專業度",
     link: "/GraphicDesign", // Example link
   },
 ];

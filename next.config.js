@@ -17,14 +17,16 @@ module.exports = {
   },
   compress: true, // Next.js 預設壓縮開啟
 
-  images: {
-    domains: [
-      'www.ultraehp.com',
-      'www.zensor.com.tw',
-      'i0.wp.com',
-      '1.gravatar.com',
-      '2.gravatar.com',
-      'secure.gravatar.com',
+   images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+      {
+        protocol: "http",
+        hostname: "**",
+      },
     ],
   },
 

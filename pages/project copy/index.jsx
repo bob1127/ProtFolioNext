@@ -232,7 +232,7 @@ const Blog = ({}) => {
                     {" "}
                     <div className="flex flex-wrap">
                       <a
-                        href="https://websitedemos.net/pub-and-lounge-04/?customize=template"
+                        href="https://drwako.com.tw"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
@@ -243,22 +243,19 @@ const Blog = ({}) => {
                             loading="lazy"
                             width={400}
                             height={300}
-                            src="/images/WP-theme-demo/template/demo-01.jpg"
-                            alt="wp-模板範例"
+                            src="/images/project/drwako-肌膚保養官方購物網站.webp"
+                            alt="drwako-肌膚保養官方購物網站"
                             className="w-full"
                             placeholder="empty"
                           ></Image>
                         </div>
 
                         <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
+                          <b>drwako - 肌膚保養</b> <br></br>
                         </div>
                       </a>
                       <a
-                        href="https://websitedemos.net/real-estate-company-04/?customize=template"
+                        href="https://www.chuan-wo.com.tw/"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
@@ -269,18 +266,16 @@ const Blog = ({}) => {
                             loading="lazy"
                             width={400}
                             height={300}
-                            src="/images/WP-theme-demo/template/demo-02.jpg"
-                            alt="wp-模板範例"
+                            src="/images/project/chuan-wo_室內設計官方網站.webp"
+                            alt="chuan-wo_室內設計官方網站"
                             className="w-full"
                             placeholder="empty"
                           ></Image>
                         </div>
 
                         <div className="txt py-5">
-                          <b>template</b> <br></br>
-                          <a href="text-blue hover:font-bold text-[16px] text-blue">
-                            live demo
-                          </a>
+                          <b>chuan-wo 室內設計</b> <br></br>
+                          <a href="text-blue hover:font-bold text-[16px] text-blue"></a>
                         </div>
                       </a>
                       <a

@@ -186,110 +186,14 @@ export default function Blog() {
           </a>
         </div>
       </nav>
-      <div className="page-wrap">
-        <div
-          data-w-id="70b8334f-07fe-5c06-c0a6-a8c8c2bd8205"
-          className="article-hero-section"
-        >
-          <div
-            style={{
-              opacity: 1,
-              transform:
-                "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-            }}
-            className="article-hero-bg"
-          >
-            {" "}
-            <Image
-              alt="網頁這些大小事-你所想知道的都在這-極客網頁設計"
-              loading="eager"
-              src="/images/網頁這些大小事-你所想知道的都在這-極客網頁設計.png"
-              width={1200}
-              height={780}
-              sizes="100%"
-              className="img-cover"
-            ></Image>
-            <div className="gradient-overlay-absolute" />
-          </div>
-          <div></div>
-          <div className="article-hero-wrap">
-            <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="tag-text-style category-white"
-            >
-              Articles
-            </div>
-            <Clock />
-            <h1
-              style={{
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                opacity: 1,
-              }}
-              className="title-medium text-align-center text-word-caps"
-            >
-              Blog
-            </h1>
-
-            <div
-              className="article-infos-wrap align-center"
-              style={{
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-                opacity: 1,
-              }}
-            >
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaec-ac15a7a8"
-                className="article-info-item"
-              >
-                <div className="opacity-50">Website</div>
-                <div>&nbsp;</div>
-                <div>Design</div>
-              </div>
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf3-ac15a7a8"
-                className="chip white opacity-50 hide-mobile-landscape"
-              />
-              <div
-                id="w-node-b3941e9a-44d7-b8cc-f34e-3e63aae2aaf4-ac15a7a8"
-                className="article-info-item"
-              >
-                <div className="opacity-50">Published by</div>
-                <div>&nbsp;</div>
-                <div>Jeek</div>
-              </div>
-            </div>
-            <a
-              href="#article-content"
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="button-large-icon margin-top w-inline-block w--current"
-            >
-              <div className="button-large-icon-bg" />
-              <img
-                src="https://assets-global.website-files.com/65a118d82cee7eeed8c90be2/65a4f4a44261408a71bdefc1_icon-arrow-down-black.svg"
-                loading="lazy"
-                alt=""
-                className="icon-16 div-relative"
-              />
-            </a>
-          </div>
+      <section className="pt-[10vh]">
+        <div className="title max-w-5xl w-[90%] mx-auto">
+          <h1>BLOG</h1>
+          <p>網頁設計大小事</p>
         </div>
-
-        <div className="w-full border-t-black border  px-0  lg:px-[30px] 2xl:px-[100px]  py-[50px] ">
+      </section>
+      <div className="page-wrap">
+        <div className="w-full   px-0  lg:px-[30px] 2xl:px-[100px]  py-[50px] ">
           <div className="txt my-5  md:px-[30px] px-[15px] w-full  md:w-[3/4] h-auto  mx-auto border-1 border-rose-500">
             <div className="flex  flex-col   xl:flex-row ">
               <div className="left-section w-full md:w-[80%] xl:w-[70%]">

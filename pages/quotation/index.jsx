@@ -17,8 +17,12 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
-
+import { ContainerScroll } from "../../components/ui/container-scroll-animation";
+import { Compare } from "../../components/ui/compare";
+import BoxReveal from "../../components/ui/box-reveal.tsx";
 import MailchimpForm from "../../components/NewsletterForm.jsx";
+import HeroVideoDialog from "../../src/components/magicui/hero-video-dialog.tsx";
+
 import NewsletterForm from "../../components/NewsletterForm.jsx";
 // import GsapText from "../components/RevealText/index";
 import Accordion from "../../components/AccordionWorkFlow/page.jsx";
@@ -28,7 +32,7 @@ import Script from "next/script";
 import Head from "next/head";
 // import DragCaroudelSlider from "../../components/DragCarouselSlider/page.jsx";
 import { NextSeo } from "next-seo";
-
+import { HeroParallax } from "../../components/ui/hero-parallax";
 import GsapText from "../../components/RevealText/index";
 import SwiperScroll from "../../components/SwiperScroll03/page.jsx";
 import { useState, useEffect } from "react";
@@ -964,7 +968,91 @@ export default function Blog() {
                 </div>
               </Marquee>
             </section>
+            <div className="flex flex-col overflow-hidden">
+              <ContainerScroll
+                titleComponent={
+                  <>
+                    <h1 className="text-4xl font-semibold text-black dark:text-white">
+                      Next.js + Wordpress <br />
+                      <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                        Headless
+                      </span>
+                    </h1>
+                  </>
+                }
+              >
+                <Image
+                  src={`/images/headless.jpg`}
+                  alt="hero"
+                  height={720}
+                  width={1400}
+                  className="mx-auto rounded-2xl object-cover h-full object-left-top"
+                  draggable={false}
+                />
+               
+              </ContainerScroll>
+              <HeroParallax products={products} />
+              <section className="flex py-[100px]">
+                <div className="flex w-[80%] mx-auto">
+                  <div className="w-1/2">
+                    <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
+                      <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                        <p className="text-[2.5em] font-semibold">
+                          網頁加載速度優勢
+                          <span className="text-[#000000]"></span>
+                        </p>
+                      </BoxReveal>
 
+                      <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                        <h2 className="mt-[.5rem] text-[1rem]">
+                          超高速加載：Next.js 提供 靜態生成 (SSG) + 伺服器端渲染
+                          (SSR)，確保頁面載入速度比傳統 WordPress 快 3 倍以上。
+                          <span className="text-[#000000]"></span>
+                        </h2>
+                      </BoxReveal>
+
+                      <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                        <div className="mt-6">
+                          <p>
+                            最佳 SEO：Next.js 提供最佳化的 SEO，提升 Google
+                            排名，帶來更多自然流量。
+                          </p>
+                        </div>
+                      </BoxReveal>
+
+                      {/* <BoxReveal boxColor={"#3e96fb"} duration={0.5}>
+                        <Button className="mt-[1.6rem] bg-[#000000]">
+                          Explore
+                        </Button>
+                      </BoxReveal> */}
+                    </div>
+                  </div>
+                  <div className="w-1/2">
+                    <div className="p-4 border rounded-3xl dark:bg-neutral-900 bg-neutral-100  border-neutral-200 dark:border-neutral-800 px-4">
+                      <Compare
+                        firstImage="/images/score-before.jpg"
+                        secondImage="/images/score-after.jpg"
+                        firstImageClassName="object-cover object-left-top"
+                        secondImageClassname="object-cover object-left-top"
+                        className="h-[250px] w-[200px] md:h-[500px] md:w-[500px]"
+                        slideMode="hover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            {/* <section className="section_dialog_video relative">
+              <div className="relative ">
+                <HeroVideoDialog
+                  className="block dark:hidden "
+                  animationStyle="from-center"
+                  videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+                  thumbnailSrc="https://startup-template-sage.vercel.app/hero-light.png"
+                  thumbnailAlt="Hero Video"
+                />
+              </div>
+            </section> */}
             <section className="section mt-[50px]">
               <div className="">
                 <div className="">
@@ -1267,5 +1355,80 @@ export default function Blog() {
     </div>
   );
 }
+export const products = [
+  {
+    title: "禪譜科技股份有限公司",
+    link: "https://www.zensor.com.tw",
+    thumbnail: "https://www.jeek-webdesign.com.tw/images/portfolio-zensor.webp",
+  },
+  {
+    title: "宜園建設",
+    link: "https://yi-yuan.vercel.app",
+    thumbnail: "https://www.jeek-webdesign.com.tw/images/Yi-Yuan.jpg",
+  },
+  {
+    title: "禪譜科技股份有限公司",
+    link: "https://www.zensor.com.tw",
+    thumbnail: "https://www.jeek-webdesign.com.tw/images/portfolio-zensor.webp",
+  },
+  {
+    title: "C&J Studio 室內設計",
+    link: "https://www.chuan-wo.com.tw/",
+    thumbnail: "/images/C&J-interior design.png",
+  },
 
+  {
+    title: "Algochurn",
+    link: "https://algochurn.com",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+  },
+  {
+    title: "多利安音樂藝術",
+    link: "https://domc.com.tw/",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+  },
+  {
+    title: "金牛頓股份有限公司",
+    link: "https://tailwindmasterkit.com",
+    thumbnail: "https://www.jeek-webdesign.com.tw/images/king.png",
+  },
+  {
+    title: "星語童裝",
+    link: "https://www.starislandbaby.com",
+    thumbnail:
+      "https://www.jeek-webdesign.com.tw/images/%E6%98%9F%E5%B6%BC%E7%AB%A5%E8%A3%9D-%E5%B0%88%E6%A1%88.jpg",
+  },
+  {
+    title: "超極生技股份有限公司",
+    link: "https://renderwork.studio",
+    thumbnail: "https://www.jeek-webdesign.com.tw/images/ultraehp01.png",
+  },
+
+  {
+    title: "Creme Digital",
+    link: "https://cremedigital.com",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+  },
+  {
+    title: "Golden Bells Academy",
+    link: "https://goldenbellsacademy.com",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+  },
+  {
+    title: "Invoker Labs",
+    link: "https://invoker.lol",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+  },
+  {
+    title: "E Free Invoice",
+    link: "https://efreeinvoice.com",
+    thumbnail:
+      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+  },
+];
 // reportWebVitals();
