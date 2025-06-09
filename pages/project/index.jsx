@@ -113,6 +113,31 @@ const Blog = ({}) => {
                   <CardBody>
                     <div className="flex flex-wrap">
                       <a
+                        href="https://esim-git-main-bob1127s-projects.vercel.app"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                          <img
+                            src="/images/esim.jpg"
+                            alt="esim"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
+                        <div className="txt py-5 w-full   flex justify-between">
+                          <b>Esim</b>{" "}
+                          <b>
+                            <span className="bg-[#202020] text-[13px] rounded-full px-3 py-1 text-white">
+                              building..
+                            </span>
+                          </b>
+                        </div>
+                      </a>
+                      <a
                         href="https://accelerashopify.vercel.app/"
                         target="_blank"
                         data-aos="fade-up"
