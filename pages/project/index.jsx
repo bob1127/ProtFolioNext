@@ -163,7 +163,7 @@ const Blog = ({}) => {
                         </div>
                       </a>
                       <a
-                        href="www.accelera-radial.ca"
+                        href="https://www.accelera-radial.ca"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
