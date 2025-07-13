@@ -113,13 +113,38 @@ const Blog = ({}) => {
                   <CardBody>
                     <div className="flex flex-wrap">
                       <a
+                        href="https://ximan-test.vercel.app"
+                        target="_blank"
+                        data-aos="fade-up"
+                        data-duration="300"
+                        className="project-item flex flex-col mx-3"
+                      >
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[390px]  2xl:w-[500px] ">
+                          <img
+                            src="/images/ximan.jpg"
+                            alt="esim"
+                            className="w-full"
+                            placeholder="empty"
+                          ></img>
+                        </div>
+
+                        <div className="txt py-5 w-full   flex justify-between">
+                          <b>喜曼精品</b>{" "}
+                          <b>
+                            <span className="bg-[#202020] text-[13px] rounded-full px-3 py-1 text-white">
+                              building..
+                            </span>
+                          </b>
+                        </div>
+                      </a>
+                      <a
                         href="https://esim-git-main-bob1127s-projects.vercel.app"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[390px]  2xl:w-[500px] ">
                           <img
                             src="/images/esim.jpg"
                             alt="esim"
@@ -138,13 +163,13 @@ const Blog = ({}) => {
                         </div>
                       </a>
                       <a
-                        href="https://accelerashopify.vercel.app/"
+                        href="www.accelera-radial.ca"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[390px]  2xl:w-[500px] ">
                           <img
                             src="/images/輪胎.jpg"
                             alt="輪胎.jpg"
@@ -163,13 +188,13 @@ const Blog = ({}) => {
                         </div>
                       </a>
                       <a
-                        href="https://kuankoshi-nfeo.vercel.app/"
+                        href="https://kuankoshi.com/"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[390px]  2xl:w-[500px] ">
                           <img
                             src="/images/寬越室內設計.jpg"
                             alt="專案04-寬越室內設計"
@@ -183,13 +208,13 @@ const Blog = ({}) => {
                         </div>
                       </a>
                       <a
-                        href="https://yi-yuan.vercel.app/"
+                        href="https://www.yiyuan-arch.com.tw"
                         target="_blank"
                         data-aos="fade-up"
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[390px]  2xl:w-[500px] ">
                           <img
                             src="/images/Yi-Yuan.jpg"
                             alt="專案01-禪譜科技"
@@ -209,7 +234,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[400px]  2xl:w-[600px] ">
+                        <div className="img-wrap overflow-hidden  rounded-lg border-2  w-full md:w-[390px]  2xl:w-[500px] ">
                           <img
                             src="/images/星嶼童裝-專案.jpg"
                             alt="專案01-禪譜科技"
@@ -229,7 +254,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[390px]  2xl:w-[500px] border-black">
                           <img
                             src="/images/portfolio-zensor.webp"
                             alt="專案01-禪譜科技"
@@ -250,7 +275,7 @@ const Blog = ({}) => {
                         data-aos-delay="100"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[390px]  2xl:w-[500px] border-black">
                           <img
                             src="/images/ultraehp01.png"
                             alt="專案01-禪譜科技"
@@ -271,7 +296,7 @@ const Blog = ({}) => {
                         data-aos-delay="200"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[390px]  2xl:w-[500px] border-black">
                           <img
                             src="/images/king.png"
                             alt="專案01-禪譜科技"
@@ -303,7 +328,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[390px]  2xl:w-[500px] border-black">
                           <img
                             src="/images/多利安.png"
                             alt="專案05-多利安音樂藝術"
@@ -336,7 +361,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[390px]  2xl:w-[800px] border-black">
                           <Image
                             loading="lazy"
                             width={400}
@@ -376,7 +401,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[800px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[390px]  2xl:w-[800px] border-black">
                           <Image
                             loading="lazy"
                             width={400}
@@ -415,7 +440,7 @@ const Blog = ({}) => {
                         data-duration="300"
                         className="project-item flex flex-col mx-3"
                       >
-                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[400px]  2xl:w-[600px] border-black">
+                        <div className="img-wrap overflow-hidden  rounded-lg border w-full md:w-[390px]  2xl:w-[500px] border-black">
                           <Image
                             src="/images/WP-theme-demo/LandingPage/demo-01.jpg"
                             width={400}
